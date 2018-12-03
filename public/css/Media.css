@@ -1,0 +1,214 @@
+@media screen and (max-width: 996px){
+	h2{
+		line-height: 35px;
+		font-size: 25px !important;
+	}
+	.header_small_text{
+		font-size: 11px;
+	}
+	.services_items{
+		height: 100px;
+		display:flex;
+    	justify-content: space-between;
+    	align-items: center;
+	}
+	.header_call-back p{
+		font-size: 18px;
+	}
+	.call-back_header{
+		font-size: 10px;
+	}
+	.advantages_items{
+		margin-top: 40px;
+	}
+	.advantages_items p{
+		margin: 20px 0;
+	}
+	.turnkey_product h2{
+		line-height: 44px;
+	}
+	.turnkey_items p{
+	
+	}
+	.footer_logo img{
+		width: 150px;
+	}
+	.contacts p{
+		font-size: 18px;
+	}
+}
+@media screen and (max-width: 767px){
+	h2{
+		line-height: 33px;
+		font-size: 25px !important;
+	}
+	.navbar-toggler{
+		margin-top: 0px;
+	}
+	.header_small_text{
+		display: none !important;
+	}
+	.bg_sections1, .bg_sections1_page2{
+		display: none !important;
+	}
+	.services_items{
+		padding: 30px 15px;
+	}
+	.services_items img{
+		margin-right: 95px
+	}
+	.advantages h2{
+		line-height: 35px;
+	}
+	.glass_reliability h2{
+		line-height: 35px
+	}
+	.video_glass img{
+		width: 100%;
+	}
+	.turnkey_items{
+		height: 115px;
+	}
+	.turnkey_items img{
+		height: 100%;
+		object-fit: cover;
+		padding: 0;
+	}
+	.turnkey_items p{
+		padding: 20px 70px;
+	}
+	.services_items{
+		margin-bottom: 5px;
+	}
+
+}
+@media screen and (max-width: 429px){
+	.navbar-toggler{
+		margin-top: -120px;
+	}
+}
+
+/*//////////////////// Page2////////////////////*/
+@media screen and (max-width: 767px){
+	.stairs_and_flooring{
+		margin-top: 85px;
+	}
+	.up_form, .down_form{
+		flex-direction: column;
+	}
+	.up_form input, .down_form input{
+		margin-top: 15px;
+		margin-left: 0;
+	}
+	.down_form div{
+		margin-right: 0;
+		margin: 15px auto;
+	}
+}
+/*.......................page-Contacts....................*/
+@media screen and (max-width: 767px){
+	.contacts_head-text h2{
+		text-align: center;
+	}
+	.contact_location{
+		width:  90%;
+	}
+}
+/*.......................page-Showers-glass....................*/
+@media screen and (max-width: 1200px) and (min-width: 992px){
+	.shower_type_items img{
+		display: none !important;
+	}
+}
+@media screen and (max-width: 1200px){
+	.shower_type_items{
+		width: auto;
+		margin-bottom: 50px;
+	}
+	.shower_type_item-left{
+		left: unset;
+		width: auto;
+	}
+	.shower_type_item-right {
+		width: auto;
+		left: unset;
+	}
+	
+	.glass_door_items img{
+		width: 450px;
+	}
+	.glass_door_items_down img{
+		width: 450px;
+	}
+	.help_glaas_type{
+		flex-wrap: wrap;
+   		justify-content: space-around;
+	}
+	.help_glass_items{
+		margin-bottom: 10px;
+	}
+
+}
+@media screen and (max-width: 991px) {
+	.iphone_calc img{
+		display: none !important;
+	}
+	.glass_door_item_buttons{
+		top: 365px;
+    left: 25%;
+	}
+	.shower_type_items img{
+		left: unset;
+	}
+	.glass_door_item{
+		left: unset;
+		padding: 10px 40px;
+	}
+	.glass_door_items img{
+		display: none !important;		
+	}
+	.glass_door_items_down img{
+		display: none !important;
+	}
+	.glass_door_item_down{
+		padding: 10px 40px;
+	}
+}
+@media screen and (max-width: 767px){
+	
+	.shower_type_item-left{
+		height: auto;
+	}
+	.shower_type_item-right{
+		height: auto;
+	}
+	.glass_door_item ul li{
+		width: auto;
+	}
+	.glass_door_item_down ul li{
+		width: auto;
+	}
+	.manufacture_items{
+		margin: 0;
+	}
+}
+@media screen and (max-width: 556px){
+	.shower_type_items img{
+		display: none !important;
+	}
+	.shower_type_item-left{
+		padding: 10px 5px 10px 30px;
+	}
+	.glass_door_item ul{
+		display: block;
+	}
+	.glass_door_item_down ul{
+		display: block;
+	}
+	.glass_door_item p:before {
+		display: none !important;
+	}
+	.glass_door_item_down p::before{
+		display: none !important;
+	}
+}

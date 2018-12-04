@@ -226,6 +226,12 @@ body .no-padding {
     width: 50px;
     z-index: -1;
 }
+.wellcome {
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
+}
 .reg-social-btns > li {
     float: left;
     margin-bottom: 10px;

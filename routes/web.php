@@ -18,10 +18,17 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::middleware('role:admin')->group(function () {
 
-    Route::get('/admin/dashboard', function () {
-        return view('admin/dashboard');
-    });
+
+//Admin Panel
+Route::middleware('role:admin|junior_admin|manager')->group(function () {
+
+    Route::get('admin/dashboard', 'Admin\AdminController@dashboard')->name('dashboard');
+
+    Route::get('logout', 'Auth\LoginController@logout')->name('logout' );
+
+
+
 
 });
+

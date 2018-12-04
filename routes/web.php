@@ -18,7 +18,10 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::middleware('role:admin')->group(function () {
 
-Route::get('/admin',function(){
-    return view('admin/admin');
+    Route::get('/admin/dashboard', function () {
+        return view('admin/dashboard');
+    });
+
 });

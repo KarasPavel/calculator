@@ -1,25 +1,35 @@
-version: '2'
-
+version: '3'
 services:
-
-  web:
-    build: /var/www/calculator/web
+  app:
+    build:
+      context: .
+      dockerfile: .docker/Dockerfile
+    image: laravel-docker
+    ports:
+      - 8080:80
+    volumes:
+      - .:/srv/app
+    links:
+      - mysql
+      - redis
     environment:
-      - APACHE_RUN_USER=www-data
-    volumes:
-      - ${APP_PATH_HOST}:${APP_PATH_CONTAINER}
+      DB_HOST: mysql
+      DB_DATABASE: calculator
+      DB_USERNAME: vlastit
+      DB_PASSWORD: 7773410rR
+      REDIS_HOST: redis
+      SESSION_DRIVER: redis
+      CACHE_DRIVER: redis
+  mysql:
+    image: mysql:5.7
     ports:
-      - 9080:80
-    working_dir: ${APP_PATH_CONTAINER}
-
-  adminer:
-    image: adminer
-    restart: always
+      - 13306:3306
+    environment:
+      MYSQL_DATABASE: calculator
+      MYSQL_USER: vlastit
+      MYSQL_PASSWORD: 7773410rR
+      MYSQL_ROOT_PASSWORD: root
+  redis:
+    image: redis:4.0-alpine
     ports:
-      - 6080:8080
-  composer:
-    image: composer:1.6
-    volumes:
-      - ${APP_PATH_HOST}:${APP_PATH_CONTAINER}
-    working_dir: ${APP_PATH_CONTAINER}
-    command: composer install
+      - 16379:6379

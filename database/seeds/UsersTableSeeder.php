@@ -14,6 +14,13 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
+        //create user role
+        $userRole = new Role();
+        $userRole->name = "user";
+        $userRole->display_name = "User";
+        $userRole->description = "see status of his orders";
+        $userRole->save();
+
         //create admin role
         $adminRole = new Role();
         $adminRole->name = "admin";

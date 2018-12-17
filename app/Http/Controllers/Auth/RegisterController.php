@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers\Auth;
 
+use App\Role;
 use App\User;
 use App\Http\Controllers\Controller;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
@@ -23,13 +25,10 @@ class RegisterController extends Controller
 
     use RegistersUsers;
 
-    /**
-     * Where to redirect users after registration.
-     *
-     * @var string
-     */
-    protected $redirectTo = '/home';
 
+    protected function redirectTo(){
+        return route('main');
+    }
     /**
      * Create a new controller instance.
      *
@@ -63,10 +62,25 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
+        //return
+       $userCreate = User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
-        ]);
+       ]);
+
+       $user = DB::table('users')
+           ->where('email','=',$data['email'])
+           ->get();
+
+        $userRole = DB::table('role_user')
+           ->insert([
+              'role_id' => 1,
+               'user_id' => $user[0]->id,
+               'user_type' => 'App\User',
+           ]);
+
+
+        return $userCreate;
     }
 }

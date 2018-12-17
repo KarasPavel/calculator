@@ -1,16 +1,67 @@
+
+
+
+function initializeCarusel(e, isShowing){
+	var ButtNext = $('.owl-next'),		
+		ButtPrev = $('.owl-prev');
+
+	if((e != null && e.relatedTarget._current === 0) || (e == null && isShowing)){
+		ButtPrev.hide();
+		ButtNext.show();
+	} else {
+		ButtPrev.show();
+		ButtNext.show();
+	}
+	if ((e != null && e.relatedTarget._current === 7) || (e== null && isShowing)) {
+		ButtPrev.show();
+		ButtNext.hide();
+	}	
+}
+
+
+
+
+function changeCarusel(e, isVisible){
+	var ButtNext = $('.owl-next'),		
+		ButtPrev = $('.owl-prev');
+
+	if((e != null && e.page.index == 0) || (e == null && isVisible)){
+		ButtPrev.hide();
+		ButtNext.show();
+	} else {
+		ButtPrev.show();
+		ButtNext.show();
+	}
+	if ((e != null && e.page.index == e.page.count - 1) || (e == null && !isVisible)) {
+		ButtPrev.show();
+		ButtNext.hide();
+	}			
+}
+
+
 $(document).ready(function(){
-    $(".owl-carousel").owlCarousel({
+	
+	var carusel = $(".owl-carousel").owlCarousel({
         items:1,
         autoHeight:true,
         nav:true,
-        lazyLoad:true,
+        lazyLoad:false,
         mouseDrag:false,
-        URLhashListener:true,
+		URLhashListener:true,
         startPosition: 'URLHash',
-        navText: ['<p onclick="topFunction()" id="myBtn">Название страници </br> Предидущая страница</p><img class="nav-next" src="images/prev_arrows.png" alt="">',
-            '<p onclick="topFunction()" id="myBtn">Название страници </br> Следующая страница</p><img src="images/arrow-next_owl.png" alt="">'],
-    });
+        onInitialized: function(e) {
+        	initializeCarusel(e, true);
+        },
+        navText: ['<p onclick="topFunction()" id="mybtn">Название страници </br> Предидущая страница</p><img class="nav-next" src="images/prev_arrows.png" alt="">',
+            '<p onclick="topFunction()" id="mybtn">Название страници </br> Следующая страница</p><img src="images/arrow-next_owl.png" alt="">'],
+		});
+
+	carusel.on('changed.owl.carousel', function(e){
+		changeCarusel(e, true);
+
+	});				
   });
+
 
 
 
@@ -19,9 +70,9 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("myBtn").style.display = "block";
+        document.getElementById("mybtn").style.display = "block";
     } else {
-        document.getElementById("myBtn").style.display = "block";
+        document.getElementById("mybtn").style.display = "block";
     }
 }
 
@@ -30,10 +81,16 @@ function topFunction() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+
+
 	$( document ).ready(function() {
     resize();
     $(window).on("resize", resize);
 });
+
+
+
 function resize(){
     var exp = $(".b");
     var expB = exp.width();
@@ -133,4 +190,14 @@ function resize(){
 			el.next().show();		
 	});
 });
+
+$(window).on('load', function () {
+    var $preloader = $('#p_prldr'),
+		$svg_anm   = $preloader.find('.svg_anm');
+		
+    $svg_anm.fadeOut();
+    $preloader.delay(500).fadeOut('slow');
+});
+$('.owl-dots').children().addClass('toltips').length;
+
 

@@ -5,6 +5,7 @@ namespace App;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Support\Facades\DB;
 use Laratrust\Traits\LaratrustUserTrait;
 
 class User extends Authenticatable
@@ -29,4 +30,15 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+
+    /**
+     * @return \Illuminate\Support\Collection
+     */
+    public static function getUsers(){
+        return DB::table('users')
+            ->join('role_user','user_id','=','users.id')
+            ->join('roles','role_id','=','roles.id')
+            ->get();
+    }
 }

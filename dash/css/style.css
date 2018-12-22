@@ -785,6 +785,7 @@ min-height: inherit;
     float: left;
     position: relative;
     width: 100%;
+    /*height: 100vh;*/
 }
 
 /* Sidebar */
@@ -1054,7 +1055,7 @@ aside.fixed {
 .menu-sec {
     background: none repeat scroll 0 0 #1d2127;
     float: left;
-    padding: 20px 13px;
+    padding: 0 13px;
     width: 100%;
     
 	-webkit-transition: all 0.4s ease 0s;

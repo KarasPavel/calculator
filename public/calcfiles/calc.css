@@ -1,0 +1,630 @@
+
+.calc_block {
+    display: inline-block;
+    width: Calc(100% - 300px);
+    margin-right: -4px;
+}
+
+.predata {
+    display: inline-block;
+    width: 300px;
+    height: 1px;
+    position: relative;
+    vertical-align: top;
+}
+
+.data {
+    position: fixed;
+    top: 85px;
+
+    right: 1%;
+    display: inline-block;
+    background: #fff;
+    width: 300px;
+    vertical-align: top;
+
+    padding: 15px 5px;
+    border: 1px solid #000;
+    text-align: center;
+    opacity: 1;
+    visibility: visible;
+    z-index: 100;
+    transition: right .6s .6s;
+}
+
+.data span {
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.abs {
+    position: absolute;
+}
+
+.calc_block .p {
+    border-bottom: 1px solid #000;
+    text-align: center;
+    padding: 10px 0px;
+    width: 90%;
+    overflow: hidden;
+    display: inline-block;
+    transition: all .3s;
+}
+
+
+.hidden_block {
+    opacity: .3;
+    transition: all .3s;
+}
+
+
+.hidden_block + .hidden_block {
+    opacity: 0;
+}
+
+.selecter {
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.clac_top {
+    padding: 10px 0;
+    text-align: left;
+    margin-bottom: 10px;
+    transition: all .3s;
+}
+
+.number {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #090;
+    line-height: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    margin-right: 10px;
+    transition: all .3s;
+}
+
+.block_options {
+    display: inline-block;
+    overflow: hidden;
+    transition: all .3s;
+    min-height: 55px;
+    padding: 1px;
+    transition: all .3s;
+    padding-top: 5px;
+}
+
+.hidden_block .block_options, .up_block .block_options {
+    min-height: 0px;
+}
+
+.hidden_block, .up_block {
+    height: 38px;
+    padding: 0px 10px;
+    transition: all .3s;
+
+}
+
+.up_block {
+    cursor: url(cur/plane.cur), pointer;
+}
+
+.up_block .box {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.hidden_block .clac_top, .up_block .clac_top {
+    padding: 0px;
+
+}
+
+.hidden_block .number {
+    border: 2px solid #e20000;
+}
+
+#price {
+    padding: 4px 10px;
+    min-width: 150px;
+    border-bottom: 1px solid #000;
+    display: inline-block;
+    margin: 10px;
+    font-family: "F2";
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.extra {
+    font-size: 13px;
+    font-family: "F3";
+}
+
+.hooly_day div {
+    display: inline-block;
+    border-bottom: 1px solid #000;
+    margin: 5px;
+    padding: 14px;
+    font-family: "F2";
+    font-size: 20px;
+}
+
+.checkbox {
+    border: 3px solid #000;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    margin-bottom: -4px;
+    margin-right: 5px;
+    margin-top: 8px;
+    cursor: url(cur/plane.cur), pointer;
+    background: url("img/check_bg.png") top left no-repeat;
+    transition: all .7s;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"] + label {
+    cursor: url(cur/plane.cur), pointer;
+}
+
+input[type="checkbox"]:checked + label > .checkbox {
+    background: url("img/check_bg.png") bottom right no-repeat;
+}
+
+.dop_buttons div:before {
+    content: " ";
+    display: block;
+    background-image: url("img/fix.png");
+}
+
+.dop_buttons div {
+    font-size: 12px;
+    display: inline-block;
+
+    padding: 5px;
+    margin-top: 10px;
+    text-align: center;
+    cursor: url(cur/plane.cur), pointer;
+    transition: all .3s;
+}
+
+.icon_pay:before {
+    width: 49px;
+    height: 50px;
+    background-position: -74px -155px;
+}
+
+.icon_cons:before {
+    width: 49px;
+    height: 50px;
+    background-position: -123px -154px;
+    margin-left: 15px;
+}
+
+.icon_zamer:before {
+    width: 49px;
+    height: 50px;
+    background-position: -174px -155px;
+    margin-left: 4px;
+}
+
+.box {
+    margin-top: 6px;
+    display: inline-block;
+    padding-bottom: 10px;
+    color: #000;
+    font-family: "F3";
+    border: 1px solid #999;
+    background: #eee;
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: uppercase;
+    font-size: 14px;
+    cursor: url(cur/plane.cur), pointer;
+    transition: all .3s;
+    position: relative;
+    margin: 2px;
+}
+
+.selecter2 {
+    transform: translate3d(0px, -5px, 0px);
+    border: 1px solid #222;
+    transition: all .3s;
+}
+
+.selecter2:hover {
+    transform: translate3d(0px, -5px, 0px);
+    border: 1px solid #222;
+}
+
+.selecter2:hover:after {
+    height: 5px;
+}
+
+.selecter2:after {
+    content: " ";
+    position: absolute;
+    top: 100%;
+    left: -1px;
+    width: 100%;
+    height: 5px;
+    background: #244b66;
+    border-left: 1px solid #244b66;
+    border-right: 1px solid #244b66;
+}
+
+.imagea {
+    width: 120px;
+    height: 120px;
+    display: inline-block;
+    background-size: contain;
+    cursor: url(cur/plane.cur), pointer;
+    transition: all .3s;
+    margin: 3px;
+    background-repeat: no-repeat;
+}
+
+.prim1:hover {
+    border: 1px solid #444;
+}
+
+.e1 {
+    background-image: url(calc/min/1.jpg);
+}
+
+.e2 {
+    background-image: url(calc/min/3.jpg);
+}
+
+.e3 {
+    background-image: url(calc/min/2.jpg);
+}
+
+.e4 {
+    background-image: url(calc/min/4.jpg);
+}
+
+.e5 {
+    background-image: url(calc/min/5.jpg);
+}
+
+
+.e21_1 {
+    background-image: url(calc/min/box.png);
+}
+
+.e21_2 {
+    background-image: url(calc/min/ring.png);
+}
+
+.e21_3 {
+    background-image: url(calc/min/elipce.png);
+}
+
+.e21_4 {
+    background-image: url(calc/min/figure.png);
+}
+
+
+.box_info1 {
+    padding: 10px 15px;
+    font-size: 13px;
+    font-family: "F3";
+}
+
+.hide {
+    display: none;
+}
+
+.hidden_blockhhh {
+    opacity: 0;
+    height: 0px;
+}
+
+.box_info2 {
+    width: 400px;
+    min-height: 65px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    min-width: 120px;
+    padding: 10px 5px;
+    vertical-align: top;
+    margin-top: 2px;
+
+    font-size: 13px;
+    font-family: "F3";
+    background: #fff;
+}
+
+.box_info3 {
+    width: 200px;
+    min-height: 138px;
+}
+
+.w95 {
+    width: 95%;
+}
+
+input[type="number"] {
+    width: 83%;
+    padding: 5px 10px;
+    margin: 5px 0px;
+    border: 1px solid #333;
+}
+
+.parwht input[type="number"] {
+    width: 32%;
+    padding: 5px 10px;
+    margin: 5px 0px;
+}
+
+.a {
+    text-indent: 10px;
+    margin-top: 4px;
+}
+
+.d-i-b {
+    display: inline-block;
+    text-indent: 0px;
+    padding: 2px;
+}
+
+.box_height {
+    margin-top: 5px;
+    max-width: 305px;
+    display: inline-block;
+}
+
+.bh {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 14px;
+    text-align: center;
+    background-color: #ccc;
+    margin-right: 5px;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: url(cur/plane.cur), pointer;
+    border: 1px solid #ccc;
+    transition: all .3s;
+}
+
+.bh:hover {
+    border: 1px solid #555;
+}
+
+.erd {
+    display: inline-block;
+    width: 300px;
+}
+
+.selecter {
+    background-color: #244b66;
+    color: #fff;
+    border: 1px solid #000;
+}
+
+.kont {
+    width: 250px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.txtradio {
+    display: inline-block;
+    padding: 5px 5px;
+    cursor: url(cur/plane.cur), pointer;
+    background: #ccc;
+    margin-right: 2px;
+    color: #222;
+    transition: all .3s;
+    font-family: "f3";
+    font-size: 14px;
+}
+
+input[type="radio"]:checked + label > .txtradio {
+    background: #244b66;
+    color: #fff;
+}
+
+.d4r {
+    min-width: 200px;
+    width: 30%;
+    display: inline-block;
+    text-align: left;
+    padding: 10px;
+    vertical-align: top;
+}
+
+.d4r div input[type="number"] {
+    width: calc(100% - 25px);
+}
+
+.hb1 {
+    display: inline-block;
+}
+
+select {
+    padding: 5px 10px;
+    width: 100%;
+    margin: 5px 0px;
+}
+
+.star {
+    color: #E00;
+}
+
+.bustep {
+    display: inline-block;
+    float: right;
+    padding: 10px;
+    padding-right: 20px;
+}
+
+.bustep svg {
+    height: 20px;
+    width: 30px;
+    cursor: url(cur/plane.cur), pointer;
+    transition: all .3s;
+}
+
+
+.hidden_block .bustep svg, .up_block .bustep svg {
+    transform: rotate(180deg);
+}
+
+
+.calc_t_0 {
+    top: -40px;
+}
+
+
+.calc_t_away {
+    right: -350px;
+    opacity: 0px;
+    visibility: hidden;
+    transition: all .5s;
+}
+
+
+.data_up {
+    top: 0px;
+
+    margin-top: 0px;
+}
+
+.empty {
+    padding: 50px 80px;
+    font-family: "f1";
+}
+
+.user_data {
+    display: inline-block;
+    width: 200px;
+    vertical-align: top;
+
+}
+
+.user_data {
+    display: inline-block;
+    width: 200px;
+    vertical-align: top;
+    text-align: center;
+}
+
+.user_data2 {
+    display: inline-block;
+    width: 400px;
+    vertical-align: top;
+    text-align: center;
+}
+
+.user_data2 textarea {
+    display: block;
+    width: 400px;
+    max-width: 395px;
+    padding: 5px;
+    box-sizing: border-box;
+    margin: 5px;
+    font-family: "f3";
+    border: 1px solid #121212;
+    color: #000;
+}
+
+.user_data input {
+    display: block;
+    width: 192px;
+    max-width: 200px;
+    padding: 5px;
+    box-sizing: border-box;
+    margin: 5px;
+    font-family: "f3";
+    border: 1px solid #121212;
+    color: #000;
+}
+
+.user_data2 input {
+    display: block;
+    width: 393px;
+    max-width: 393px;
+    padding: 5px;
+    box-sizing: border-box;
+    margin: 5px;
+    font-family: "f3";
+    border: 1px solid #121212;
+    color: #000;
+}
+
+.btnn {
+    width: 30px;
+    padding: 4px;
+    height: 20px;
+    background: #244b66;
+    color: #fff;
+    display: inline-block;
+    cursor: url(cur/plane.cur), pointer;
+    text-align: center;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+}
+
+.user_data input[type="number"] {
+    width: 100px;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 0px;
+    vertical-align: bottom;
+}
+
+.user_data a {
+    font-family: "f3";
+}
+
+.user_data input[type="radio"] {
+    display: none;
+}
+
+.imgclc {
+    width: 90%;
+    height: 200px;
+    background-image: url(1c.png);
+    background-size: cover;
+    background-position: center center;
+    display: inline-block;
+    background-repeat: no-repeat;
+}
+
+
+.c1 {
+    margin-top: 10px;
+    height: 73px;
+    background-image: url(3c.png);
+}
+
+.c2 {
+    margin-top: 10px;
+    height: 73px;
+    background-image: url(1c.png);
+}
+
+.c3 {
+    height: 73px;
+    background-image: url(2c.png);
+}
+
+.smsize {
+    display: none;
+    width: 96%;
+    margin-top: 14px;
+}

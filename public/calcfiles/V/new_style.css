@@ -1,0 +1,538 @@
+
+.ctoras:hover {
+    filter: brightness(145%);
+}
+
+.trg1 {
+    background: #400;
+    height: 100%;
+    display: inline-block;
+    width: Calc(50% - 3px);
+    margin: 0px;
+    margin-left: 0px;
+    position: relative;
+    vertical-align: top;
+    text-align: left;
+    transition: all .5s;
+}
+
+.up22 .trg1 {
+    margin-top: -100px;
+}
+
+
+body {
+    margin: 0;
+
+}
+
+.top_mega_block {
+    position: relative;
+    height: 600px;
+    text-align: center;
+}
+
+.i912 {
+    background: url(2.bg.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.i812 {
+    background: url(3.bg.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.ntrg {
+    background: #444;
+    width: Calc(100%);
+    height: 100px;
+    position: absolute;
+    display: inline-block;
+    pointer-events: painted;
+    background: url(1.bg.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: Calc(100% + 10px);
+    top: 0px;
+    left: 0px;
+    margin: 0;
+    pointer-events: none;
+    transition: all . 3s;
+}
+
+.up22 .ntrg {
+    top: -250px;
+    opacity: 0;
+}
+
+.header2 {
+    pointer-events: auto;
+    display: inline-block;
+    padding: 10px;
+}
+
+.ctoras {
+    color: #fff;
+    background: url(b1.png);
+    padding: 14px 35px;
+    background-size: cover;
+    position: absolute;
+    display: inline-block;
+    right: 30%;
+    bottom: 10%;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.ctorasv2 {
+    background: url(b2.png);
+    padding: 14px 5px;
+    background-size: cover;
+    position: absolute;
+    display: inline-block;
+
+    left: 30%;
+    bottom: 10%;
+    font-size: 18px;
+}
+
+.call_phone {
+    vertical-align: middle;
+    color: #222;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 45px;
+    text-decoration: none;
+}
+
+.mail_to {
+    vertical-align: middle;
+    color: #222;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 45px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.cimf31 {
+    margin-bottom: -10px;
+}
+
+.grohh32 {
+    font-size: 13px;
+}
+
+.top_block_034 {
+    text-align: right;
+}
+
+.logo_v2 {
+    display: inline-block;
+    background: url(logo.png);
+    width: 280px;
+    height: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    vertical-align: bottom;
+    padding: 10px;
+}
+
+.stoim {
+    pointer-events: auto;
+    display: inline-block;
+}
+
+.sd23d214 {
+    display: inline-block;
+    pointer-events: auto;
+}
+
+.firstv2 #foter2 {
+    margin-top: -90px;
+    opacity: 0;
+}
+
+.ver002 #first_footer {
+    display: none;
+}
+
+
+.min_hhrp {
+    margin-top: 10px;
+    font-family: "F2";
+    font-size: 20px;
+    display: inline-block;
+}
+
+.e1d {
+    border-bottom: 1px solid #000;
+}
+
+.stoim {
+    pointer-events: auto;
+    display: inline-block;
+    position: absolute;
+    bottom: 20px;
+    bottom: 20%;
+    width: 160px;
+    margin-left: -80px;
+}
+
+.topss23 {
+    font-family: "F2";
+}
+
+.cena_v2 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.pb_v2 {
+    margin-bottom: 2px;
+    font-family: "F2";
+    font-size: 20px;
+}
+
+
+.firstv2 #content, .firstv2 #galery_slide {
+    padding: 0px;
+}
+
+.firstv2 #screen {
+    top: -20px;
+}
+
+
+.boxv2_2 {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+
+}
+
+.boxv2_2 h2 {
+
+    margin: 10px;
+}
+
+.boxv2_2 p {
+
+    padding: 20px;
+}
+
+#our_work a {
+    display: inline-block;
+    padding: 1%;
+    width: 20%;
+    color: #333;
+    text-decoration: none;
+    vertical-align: top;
+    margin-left: -4px;
+}
+
+
+.icn_q {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background: #e5e5e5 url(front_icons.png);
+
+    margin: 5px;
+    border-radius: 50%;
+    transition: all .3s;
+}
+
+.icn_q:hover {
+    background-color: #ccc;
+}
+
+.ni_3_1 {
+    background-position: -3px -3px;
+}
+
+.ni_3_2 {
+    background-position: -95px -5px;
+}
+
+.ni_3_3 {
+    background-position: -184px -7px;
+}
+
+.ni_3_4 {
+    background-position: -278px -4px;
+}
+
+.ni_3_5 {
+    background-position: -368px -4px;
+}
+
+.ni_3_6 {
+    background-position: -459px -5px;
+}
+
+.ni_3_7 {
+    background-position: -549px -7px;
+}
+
+.ni_3_8 {
+    background-position: -3px -98px;
+}
+
+.ni_3_9 {
+    background-position: -94px -99px;
+}
+
+.ni_3_10 {
+    background-position: -185px -99px;
+}
+
+.ni_3_11 {
+    background-position: -277px -98px;
+}
+
+.ni_3_12 {
+    background-position: -369px -98px;
+}
+
+.ni_3_13 {
+    background-position: -459px -100px;
+}
+
+.ni_3_14 {
+    background-position: -551px -100px;
+}
+
+
+.body_no_scroll {
+    overflow: hidden;
+}
+
+.body_no_scroll #botnavpanel {
+    display: none;
+}
+
+.dialog_info {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: rgba(0, 0, 0, .5);
+    top: 0px;
+    left: 0px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+    z-index: 999999;
+    overflow: auto;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.dialog {
+    min-width: 240px;
+    padding: 20px;
+    background: #fff;
+    position: relative;
+    display: inline-block;
+    transition: all .3s;
+    transform: scale(1.1);
+    visibility: hidden;
+    opacity: 0;
+    text-align: left;
+    width: 50%;
+}
+
+.closedg {
+    width: 30px;
+    height: 30px;
+    background: #244b66;
+    color: #fff;
+    font-family: "f2";
+    line-height: 27px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    cursor: url(cur/plane.cur), pointer;
+    text-align: center;
+}
+
+#rezka:target,
+#zamer:target,
+#obrabotka:target,
+#sverlenie:target,
+#uf:target,
+#matovka:target,
+#kraska:target,
+#triplex:target,
+#zakalka:target,
+#pechat:target,
+#kunst:target,
+#remont:target,
+#montag:target,
+#dostavka:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+#rezka:target .dialog,
+#zamer:target .dialog,
+#obrabotka:target .dialog,
+#sverlenie:target .dialog,
+#uf:target .dialog,
+#matovka:target .dialog,
+#kraska:target .dialog,
+#triplex:target .dialog,
+#zakalka:target .dialog,
+#pechat:target .dialog,
+#kunst:target .dialog,
+#remont:target .dialog,
+#montag:target .dialog,
+#dostavka:target .dialog {
+    transform: scale(1);
+    visibility: visible;
+    opacity: 1;
+}
+
+#our_work {
+    text-align: center;
+    max-width: 1000px;
+    margin: auto;
+}
+
+
+.ndop_if {
+    width: 100%;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+.trop {
+    font-family: "f3";
+    display: inline-block;
+    width: Calc(32% + 5px);
+    text-align: center;
+}
+
+.prenav2 {
+    padding: 10px;
+}
+
+.prenav2 div {
+    cursor: url(/cur/plane.cur), pointer;
+    margin: 10px;
+    font-family: "F2";
+    font-size: 14px;
+    display: inline-block;
+    text-align: center;
+
+}
+
+.prenav2 div:before {
+    width: 50px;
+    height: 50px;
+    background-color: #244b66;
+    background-image: url(/img/fix.png);
+    content: " ";
+    border-radius: 50%;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.white442 {
+    color: #ccc;
+}
+
+.prenav2 a {
+    text-decoration: none;
+    color: #ccc;
+}
+
+.prenav2 a:hover {
+    text-decoration: underline;
+}
+
+.tooper {
+    position: relative;
+}
+
+.tooper:hover .tooper_ups {
+    bottom: Calc(100% + 8px);
+    opacity: 1;
+    visibility: visible;
+}
+
+.tooper_ups:before {
+    content: " ";
+    border-left: 5px solid rgba(0, 0, 0, 0);
+    border-top: 5px solid rgba(0, 0, 0, .6);
+    border-right: 5px solid rgba(0, 0, 0, 0);
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    position: absolute;
+}
+
+.tooper_ups {
+    border-radius: 3px;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    width: 200px;
+    margin-left: -100px;
+    background: rgba(0, 0, 0, .6);
+    padding: 5px;
+    color: #fff;
+    font-family: "f3";
+    font-size: 12px;
+    transition: all .3s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.ctrs:hover {
+    background: #fe6905;
+    color: #fff;
+}
+
+.ctrs {
+    position: relative;
+    transition: all .3s;
+    padding: 10px;
+}
+
+.ctrs:hover:before {
+    border-right: 10px solid #fe6905;
+}
+
+.ctrs:hover:after {
+    border-left: 10px solid #fe6905;
+}
+
+.ctrs:before {
+    content: ' ';
+    position: absolute;
+    border-right: 10px solid rgba(0, 0, 0, 0);
+    border-left: 0px solid rgba(0, 0, 0, 0);
+    border-bottom: 39px solid rgba(0, 0, 0, 0);
+    right: 100%;
+    top: 0px;
+    transition: all .3s;
+}
+
+.ctrs:after {
+    content: ' ';
+    position: absolute;
+    border-right: 0px solid rgba(0, 0, 0, 0);
+    border-left: 10px solid rgba(0, 0, 0, 0);
+    border-bottom: 39px solid rgba(0, 0, 0, 0);
+    left: 100%;
+    top: 0px;
+    transition: all .3s;
+}

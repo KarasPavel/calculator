@@ -1,0 +1,19 @@
+@font-face {
+    font-family: "F1";
+    src: url(roboto.black.ttf);
+}
+
+@font-face {
+    font-family: "F2";
+    src: url(roboto.light.ttf);
+}
+
+@font-face {
+    font-family: "F3";
+    src: url(roboto.medium.ttf);
+}
+
+@font-face {
+    font-family: "F4";
+    src: url(roboto.black.ttf);
+}

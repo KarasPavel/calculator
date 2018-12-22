@@ -196,7 +196,7 @@ class UsersTableSeeder extends Seeder
         $moder->password = bcrypt('moder');
         $moder->save();
 
-        $moder->attachRole($moder);
+        $moder->attachRole($moderatorRole);
 
         //example of logistics
         $logistics = new User();

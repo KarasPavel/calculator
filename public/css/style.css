@@ -791,6 +791,7 @@ min-height: inherit;
     float: left;
     position: relative;
     width: 100%;
+    height: 100vh;
 }
 
 /* Sidebar */

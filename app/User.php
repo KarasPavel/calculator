@@ -2,6 +2,9 @@
 
 namespace App;
 
+//use http\Env\Request;
+use Carbon\Carbon;
+use Illuminate\Http\Request;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -35,10 +38,75 @@ class User extends Authenticatable
     /**
      * @return \Illuminate\Support\Collection
      */
-    public static function getUsers(){
+    public static function getUsers()
+    {
         return DB::table('users')
-            ->join('role_user','user_id','=','users.id')
-            ->join('roles','role_id','=','roles.id')
+            ->select('users.id', 'users.name', 'display_name', 'email','users.created_at')
+            ->join('role_user', 'user_id', '=', 'users.id')
+            ->join('roles', 'role_id', '=', 'roles.id')
+            ->orderBy('users.id')
             ->get();
     }
+
+    public static function createAccount(Request $request)
+    {
+        DB::table('users')
+            ->insert([
+                'name' => $request->name,
+                'email' => $request->email,
+                'password' => bcrypt($request->password),
+                'created_at' => Carbon::now(),
+            ]);
+        $userId = DB::table('users')
+            ->select('id')
+            ->where('email', '=', $request->email)
+            ->get();
+
+        DB::table('role_user')
+            ->insert([
+                'role_id' => $request->role,
+                'user_id' => $userId[0]->id,
+                'user_type' => 'App\User'
+            ]);
+    }
+
+    /**
+     * @param $id
+     * @return \Illuminate\Support\Collection
+     */
+    public static function getUserById($id)
+    {
+        return DB::table('users')
+            ->select('users.id', 'users.name', 'display_name', 'email')
+            ->join('role_user', 'user_id', '=', 'users.id')
+            ->join('roles', 'role_id', '=', 'roles.id')
+            ->where('users.id', '=', $id)
+            ->get();
+    }
+
+    /**
+     * @param Request $request
+     * @return int
+     */
+    public static function updateAccount(Request $request)
+    {
+        return DB::table('users')
+            ->join('role_user', 'user_id', '=', 'users.id')
+            ->where('users.id', '=', $request->userId)
+            ->update([
+                'role_id' => $request->role
+            ]);
+    }
+
+    /**
+     * @param $id
+     * @return int
+     */
+    public static function deleteAccount($id)
+    {
+        return DB::table('users')
+            ->where('id', '=', $id)
+            ->delete();
+    }
+
 }

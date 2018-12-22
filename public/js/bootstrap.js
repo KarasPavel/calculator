@@ -3681,7 +3681,7 @@
     };
     var ClassName = {
       DROPDOWN_MENU: 'dropdown-menu',
-      ACTIVE: 'active',
+      ACTIVE: 'disabled',
       DISABLED: 'disabled',
       FADE: 'fade',
       SHOW: 'show'

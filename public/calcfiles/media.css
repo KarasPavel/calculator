@@ -1,0 +1,730 @@
+@media screen and (max-width: 2000px){
+    #items {
+        transform: scale(1);
+    }
+    .bigLogo {
+        height: 550px;
+    }
+}
+@media screen and (max-width: 1800px){
+    #items {
+        transform: scale(.8);
+    }
+    .bigLogo {
+        height: 500px;
+    }
+}
+}
+@media screen and (max-width: 1600px){
+    #items {
+        transform: scale(.6);
+
+    }
+    .bigLogo {
+        height: 450px;
+    }
+}
+
+
+@media screen and (max-width: 1400px){
+    #items {
+        transform: scale(.57);
+    }
+    .bigLogo {
+        height: 400px;
+    }
+}
+
+h4 {
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 1300px){
+
+    .bigLogo {
+        height: 400px;
+    }
+
+    #items {
+        transform: scale(.55);
+    }
+
+    #fh li {
+        position: relative;
+        cursor: pointer;
+    }
+
+    #fh li:hover .m2, #fh li:hover .m3 {
+        visibility: visible;
+        opacity: 1;
+        top: 55px;
+    }
+
+    .m2 {
+        position: absolute;
+        top: 45px;
+        width: 200px;
+        left: 50%;
+        margin-left: -100px;
+        visibility: hidden;
+        opacity: 0;
+        transition: all .3s;
+    }
+}
+
+
+
+
+@media screen and (max-width: 1257px){
+    .smsize {
+        display: block;
+    }
+
+    .bgsize {
+        display: none;
+    }
+
+    .top_mega_block {
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 1088px){
+    .m3 {
+        position: absolute;
+        top: 45px;
+        width: 200px;
+        left: 50%;
+        margin-left: -100px;
+        visibility: hidden;
+        opacity: 0;
+        transition: all .3s;
+    }
+
+    #fh li:hover .m3, #fh li:hover .m3 {
+        visibility: visible;
+        opacity: 1;
+        top: 55px;
+    }
+
+}
+
+@media screen and (max-width: 1000px){
+    .sd23d214 h1{
+        font-size: 25px;
+    }
+
+    header .call_phone {
+        font-size: 16px;
+    }
+
+    header .grohh32 {
+        font-size: 10px;
+    }
+
+    header .logo_v2 {
+        width: 180px;
+        background-size: contain;
+    }
+
+
+    .top_mega_block {
+        height: 400px;
+    }
+
+    .ctoras {
+        font-size: 14px;
+        padding: 14px 7px;
+    }
+}
+
+@media screen and (max-width: 980px){
+    .nxt_icon {
+        background-size: 150px;
+        background-position: -274px -6px;
+        width: 26px;
+        height: 42px;
+        top: 0px;
+    }
+
+    .bef_icon {
+        background-size: 150px;
+        background-position: -274px -48px;
+        width: 26px;
+        height: 42px;
+        top: 0px;
+    }
+
+    #after p, #before p{
+        display: none;
+    }
+
+    #before .show, #after .show {
+        top: 12px;
+        font-size: 16px;
+    }
+
+    .bnttl {
+        width: 210px;
+    }
+
+    #after .bnttl {
+        right: -19px;
+    }
+
+    #before .bnttl {
+        left: -17px;
+    }
+}
+
+@media screen and (max-width: 940px){
+    .m4 {
+        position: absolute;
+        top: 45px;
+        width: 200px;
+        left: 50%;
+        margin-left: -100px;
+        visibility: hidden;
+        opacity: 0;
+        transition: all .3s;
+    }
+
+
+    #fh li:hover .m4, #fh li:hover .m4 {
+        visibility: visible;
+        opacity: 1;
+        top: 55px;
+    }
+}
+
+
+@media screen and (max-width: 900px){
+    .mcalc_b1 .box {
+        height: 146px;
+    }
+
+    .dialog {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 893px){
+    #ft0 {
+        display: none;
+    }
+
+    #ft {
+        margin-top: -20px;
+    }
+
+    .m5 {
+        position: absolute;
+        top: 45px;
+        width: 300px;
+        left: 50%;
+        margin-left: -150px;
+        visibility: hidden;
+        opacity: 0;
+        transition: all .3s;
+    }
+
+    #fh li:hover .m5, #fh li:hover .m5 {
+        visibility: visible;
+        opacity: 1;
+        top: 55px;
+        z-index: 20;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 850px){
+    .info_box .info_img {
+        display: none;
+    }
+
+    .info_box .info_img_small {
+        display: block;
+
+    }
+
+    .info_box .info_texxt {
+        display: inline-block;
+        width: 100%;
+        text-align: left;
+        vertical-align: middle;
+    }
+
+
+}
+
+
+
+@media screen and (max-width: 764px){
+    .myroom_icon {
+        display: none;
+    }
+
+    .prenav div:before {
+        display: none;
+    }
+
+    .prenav div {
+        height: auto;
+        padding: 5px 10px;
+        background: #244b66;
+        color: #fff;
+        margin-top: 20px;
+        border-radius: 3px;
+    }
+
+
+    #botnavpanel {
+        height: 70px;
+    }
+
+    .X {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .calc_block {
+        margin-right: 0px;
+    }
+    .data {
+        background: rgba(36, 75, 102, 0.85);
+        color: #fff;
+        left: 0px;
+        top: auto;
+        width: 100%;
+        padding: 10px 0px;
+        opacity: 1;
+        border: none;
+    }
+
+    .hws {
+        margin-top: 52px;
+    }
+
+    .data_gh {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .hooly_day div {
+        padding: 4px 10px;
+        margin: 10px;
+        margin-bottom: 15px;
+    }
+
+    .extra, .data_gh label, .dop_buttons{
+        display: none;
+    }
+
+    .calc_t_away {
+        top: 100%;
+        opacity: 0;
+    }
+
+    .calc_block {
+        width: 100%;
+        margin-bottom: 250px;
+    }
+
+    .indicator {
+        display: none;
+    }
+
+    #ft, .prenav {
+        display: none;
+    }
+
+    #foter3 {
+        height: 70px;
+        float: right;
+        text-align: left;
+        color: #000;
+        display: inline-block;
+    }
+
+    .icon {
+        display: inline-block;
+        margin-top: -5px;
+    }
+
+    .menu_icon:before {
+        width: 15px;
+        height: 14px;
+        display: inline-block;
+        content: "";
+        background: url(img/fix.png);
+        background-position: -109px -58px;
+        background-size: 250px;
+        margin-right: 10px;
+        margin-bottom: -1px;
+    }
+
+    header .menu_icon:before {
+        background-position: -129px -61px;
+    }
+
+    #price {
+        margin: 0px 10px;
+        border-bottom: 1px solid #fff;
+    }
+
+    .hooly_day div {
+        margin: auto;
+        border-bottom: 1px solid #fff;
+    }
+
+    .data_gh *{
+        font-size: 12px;
+    }
+
+    .all {
+        font-size: 12px;
+    }
+
+    #korr .all {
+        max-height: 300px;
+    }
+
+    .mcalc_b1 .box {
+        height: 130px;
+    }
+}
+
+@media screen and (max-width: 750px){
+    .mcalc_b1 .box {
+        height: 130px;
+    }
+
+    .icn_ttl {
+        font-family: "f3";
+        font-size: 13px;
+    }
+
+    #our_work a {
+        width: 120px;
+    }
+}
+
+@media screen and (max-width: 570px){
+
+    #after:hover .nxt_icon{
+        right: -51px;
+    }
+
+    #before:hover .bef_icon{
+        left: -51px;
+    }
+
+    #box2 {
+        padding: 0;
+    }
+
+    .fancybox-arrow--right::after, .fancybox-arrow--left::after {
+        left: auto;
+    }
+    .fancybox-arrow::after {
+        transform: scale(1);
+    }
+
+    .fancybox-arrow::before {
+        transform: scale(1);
+    }
+
+    h3 {
+        font-size: 12px;
+    }
+
+    .d4r {
+        padding: 0px;
+    }
+
+    #before {
+        width: auto;
+    }
+
+    #after {
+        width: auto;
+    }
+
+    #vspl {
+        display: none;
+    }
+
+    .selstep {
+        display: none;
+    }
+
+    .ava {
+        width: 100px;
+        height: 100px;
+    }
+
+    #navblack a {
+        font-size: 14px;
+    }
+
+    nav ol {
+        padding: 10px 20px;
+    }
+
+    nav li {
+        padding: 9px 0px;
+    }
+
+    nav {
+        width: 280px;
+    }
+
+    #items {
+        transform: scale(.4);
+    }
+
+    .bnttl{
+        display: none;
+    }
+
+    .logo {
+        width: 210px;
+        height: 56px;
+        background-size: 250px;
+    }
+
+    #vspl .prvimg{
+        display: none;
+    }
+
+    #vspl {
+        max-width: 150px;
+        padding: 2px;
+    }
+}
+
+@media screen and (max-width: 507px){
+    .user_data2 {
+        width: 200px;
+    }
+
+    .user_data2 input {
+        width: 96%;
+    }
+
+    .user_data2 textarea {
+        width: 96%;
+    }
+
+    .box_info2 {
+        width: 95%;
+        overflow: hidden;
+    }
+
+    .box_info3 {
+        width: 200px;
+    }
+
+    .txtradio {
+        margin: 2px;
+    }
+
+}
+
+@media screen and (max-width: 600px){
+    .mcalc_b1 .imagea {
+        height: 105px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .icn_panl {
+    //display: none;
+    }
+
+    .icnn {
+        margin: 5px;
+    }
+
+    .icn_panl span {
+        display: inline-block;
+    }
+
+    .opis {
+        display: none;
+    }
+
+    .block_center_v {
+        padding: 10px 0px;
+    }
+
+    nav {
+        right: 50%;
+        margin-right: -140px;
+    }
+
+    .bnttl{
+        display: none;
+    }
+
+    .logo {
+        width: 183px;
+        height: 46px;
+        background-size: 220px;
+    }
+
+    .j {
+        font-size: 14px;
+    }
+
+
+}
+
+
+
+
+
+@media screen and (max-width: 450px){
+    #after {
+        top: 0;
+        border-radius: 10px 0px 0px 0px;
+    }
+
+    #before {
+        top: 0;
+        border-radius: 0px 10px 0px 0px;
+        width: 20px;
+    }
+
+    #after:hover, #before:hover {
+        top: 0px;
+    }
+
+    #after:hover .nxt_icon {
+        right: 0px;
+    }
+
+    #before:hover .bef_icon {
+        left: 0px;
+    }
+
+    .bef_icon {
+        background-size: 400px;
+        background-position: -326px -68px;
+        width: 62px;
+        height: 69px;
+        top: 0px;
+    }
+
+    .nxt_icon {
+        background-size: 400px;
+        background-position: -332px -9px;
+        width: 62px;
+        height: 69px;
+        top: 0px;
+    }
+
+    .contst {
+        padding: 10px;
+    }
+
+    #price, #day, #month, #yar {
+        min-width: auto;
+        font-size: 14px;
+    }
+
+    #foter2 {
+        height: 120px;
+        text-align: center;
+    }
+
+    .logo {
+        margin-top: 20px;
+        float: none;
+        display: inline-block;
+    }
+
+    #foter3 {
+        float: none;
+        display: inline-block;
+        width: 80%;
+        text-align: center;
+    }
+
+    .menua {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
+
+    .p {
+        font-size: 12px;
+
+    }
+
+    button {
+        font-size: 11px;
+        min-width: 100px;
+        padding: 8px;
+    }
+
+    .imagea {
+        width: 80px;
+        height: 80px;
+    }
+
+    .ttls {
+        font-size: 9px;
+    }
+
+    .bh {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+
+
+    .block_options {
+        width: 87%;
+        text-align: center;
+    }
+
+    .box {
+        width: 40%;
+        min-width: 90px;
+        margin-bottom: 5px;
+    }
+
+
+
+
+    .erd {
+        width: auto;
+    }
+
+    .kont {
+        width: 96%;
+    }
+
+    .txtradio {
+        margin: 5px;
+        width: Calc(100% - 18px);
+    }
+}
+
+
+@media screen and (max-width: 360px){
+    .data_gh *{
+        font-size: 10px;
+    }
+
+    .ava {
+        width: 75px;
+        height: 75px;
+    }
+}

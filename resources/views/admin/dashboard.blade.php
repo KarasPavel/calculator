@@ -39,7 +39,7 @@
             </a>
             <div class="profile drop-list">
                 <ul>
-                    <li><a href="profile.html" title=""><i class="fa fa-user"></i> Profile</a></li>
+                    {{--<li><a href="profile.html" title=""><i class="fa fa-user"></i> Profile</a></li>--}}
                     <li><a href={{ route('logout') }} title=""><i class="fa fa-info"></i>Logout</a></li>
                 </ul>
             </div><!-- Profile DropDown -->
@@ -79,7 +79,7 @@
                         <h2><a title=""><i class="fa fa-desktop"></i><span>Applications</span></a></h2>
                         <div class="sub-menu">
                             <ul>
-                                <li><a href="blank.html" title="">View applications</a></li>
+                                <li><a href="{{route('viewApplications')}}" title="">View applications</a></li>
                             </ul>
                         </div>
                     </div>

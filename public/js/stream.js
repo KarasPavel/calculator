@@ -1,5 +1,6 @@
 var st; //For debuggin only
 $(document).ready(function() {
+  console.log("313121331321312312321");
   var data = Movies[1], html = $.trim($("#template").html()), template = Mustache.compile(html);
   var view = function(record, index){
     return template({record: record, index: index});

@@ -610,8 +610,8 @@ footer{
 }
 .stairs_and_flooring_buttons a{
 	text-align: center;
-	width: 163px;
-	padding: 24px 20px;
+	width: 130px;
+	padding: 13px 15px;
 	box-shadow: 1px 1px 3px 1px rgba(115, 194, 193, 0.5), inset 3px 3px 33px 2px rgba(115, 194, 193, 0.28), inset 0 0 6px 1px rgba(173, 255, 250, 0.16);
 	outline: 1px solid #77a29c;
 	border: 1px solid #77a29c;
@@ -621,14 +621,14 @@ footer{
 	opacity: 0.7;
 	color: #537782;
 	font-family: "Open Sans";
-	font-size: 14px;
+	font-size: 13px;
 	font-weight: 400;
-	line-height: 19px;
+	line-height: 18px;
 	/* Text style for "Бронирован" */
 	letter-spacing: 0.28px;
 }
 .stairs_and_flooring_buttons a:hover, .stairs_and_flooring_buttons a:active, .stairs_and_flooring_buttons a:focus{
-	padding: 20px 15px;
+	/* padding: 20px 15px; */
 	box-shadow: 1px 1px 3px 1px rgba(115, 194, 193, 0.5), inset 3px 3px 33px 2px rgba(115, 194, 193, 0.28), inset 0 0 6px 1px rgba(173, 255, 250, 0.16);
 	border: 1px solid #77a29c;
 	border: 5px solid #fff;
@@ -636,7 +636,10 @@ footer{
 	background-color: #c5b691 !important;
 	background-image: linear-gradient(47deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.18) 11%, rgba(255, 255, 255, 0) 19%, rgba(255, 255, 255, 0.13) 33%, rgba(255, 255, 255, 0) 38%, rgba(255, 255, 255, 0.08) 45%, rgba(255, 255, 255, 0) 73%, rgba(255, 255, 255, 0.18) 84%, rgba(255, 255, 255, 0) 100%);
 	opacity: 0.9;
-	transition: all 0.5s;
+	transition: all 0.2s;
+}
+.tab-content>.active{
+	text-align: center;
 }
 .stairs_and_flooring_text{
 	text-align: center;
@@ -652,6 +655,9 @@ footer{
 	display: inline-block;
 	position: relative;
 	margin-bottom: 25px;
+	height: 200px;
+	width: 200px;
+	overflow: hidden;
 }
 .img_items_stairs:hover:before {
   content: "";
@@ -681,7 +687,7 @@ footer{
 }
 .img_items_stairs p:hover{
 	background: url(images/hover_img_showers.png) no-repeat;
-	background-size: cover;
+	background-size: contain;
     background-position: center;
 }
 #call_back{
@@ -875,6 +881,10 @@ letter-spacing: 0.52px;
 }
 .button:focus{
 	outline: none!important;
+}
+.navbar-dark .navbar-nav .nav-link{
+	font-size: 18px;
+	margin-bottom: 7px;
 }
 .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover{
 	padding-left: 10px;
@@ -1707,6 +1717,15 @@ letter-spacing: 0.52px;
 }
 .shower_type_items .glasses_img_fastener2{
 	left: -10px;
+	
+}
+.shower_type_items .glasses_img_fastener2:hover{
+	transform: scale(1.5);
+	transition: all .5s;
+}
+.shower_type_items .glasses_img_fastener1:hover{
+	transform: scale(1.5);
+	transition: all .5s;
 }
 .fastener_shower_glass2{
 	background-color: #a4bdde;
@@ -1905,8 +1924,9 @@ letter-spacing: 0.52px;
     margin-bottom: 25px;
 }
 .img_items_stairs img{
-	width: 200px !important;
-	height: 200px;
+	width: 500px !important;
+	height: 500px;
+
 
 }
 .comparison_glass_items2{
@@ -1924,7 +1944,7 @@ letter-spacing: 0.52px;
 	background-size: cover;
 }
 .nav-tabs .nav-link{
-	height: 75px;
+	height: 66px;
 }
 .owl-carousel .owl-item img{
 	display: unset;
@@ -2372,7 +2392,7 @@ textarea {
 }
 
 
-#p_prldr{
+#p_prldr, #p_prldr1{
 	position: fixed;
 	left: 0;
 	top: 0;
@@ -2401,7 +2421,7 @@ textarea {
 		font-size: 75px;
 		color:rgba(26, 29, 29, 0.85);
 	}
-	#p_prldr .svg_anm {
+	#p_prldr .svg_anm, .fa-vuejs {
 	animation: rotate 3s infinite linear;
 	position: absolute;
 	width: 41px;

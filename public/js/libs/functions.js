@@ -8,6 +8,7 @@ function initializeCarusel(e, isShowing){
 	if((e != null && e.relatedTarget._current === 0) || (e == null && isShowing)){
 		ButtPrev.hide();
 		ButtNext.show();
+		
 	} else {
 		ButtPrev.show();
 		ButtNext.show();
@@ -16,6 +17,10 @@ function initializeCarusel(e, isShowing){
 		ButtPrev.show();
 		ButtNext.hide();
 	}	
+	if((e != null && e.relatedTarget._current === 2) || (e == null && isShowing))	{
+		$("#p_prldr1").show('slow');
+			setTimeout(function() { $("#p_prldr1").hide('slow'); }, 2000);
+	}
 }
 
 
@@ -28,14 +33,20 @@ function changeCarusel(e, isVisible){
 	if((e != null && e.page.index == 0) || (e == null && isVisible)){
 		ButtPrev.hide();
 		ButtNext.show();
+		
 	} else {
 		ButtPrev.show();
 		ButtNext.show();
+		
 	}
 	if ((e != null && e.page.index == e.page.count - 1) || (e == null && !isVisible)) {
 		ButtPrev.show();
 		ButtNext.hide();
-	}			
+	}	
+	if((e != null && e.page.index == 2) || (e == null && isVisible))	{
+		$("#p_prldr1").show('slow');
+			setTimeout(function() { $("#p_prldr1").hide('slow'); }, 2000);
+	}
 }
 
 
@@ -53,7 +64,7 @@ $(document).ready(function(){
         	initializeCarusel(e, true);
         },
         navText: ['<p onclick="topFunction()" id="mybtn">Название страници </br> Предидущая страница</p><img class="nav-next" src="images/prev_arrows.png" alt="">',
-            '<p onclick="topFunction()" id="mybtn">Название страници </br> Следующая страница</p><img src="images/arrow-next_owl.png" alt="">'],
+            '<p onclick="topFunction()" id="mybtn"></br> Следующая страница</p><img src="images/arrow-next_owl.png" alt="">'],
 		});
 
 	carusel.on('changed.owl.carousel', function(e){

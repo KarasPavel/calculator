@@ -49,12 +49,12 @@
                 <div id="menu-toogle" class="menus">
                     <div class="single-menu">
                         @unless ($user->hasRole('moderator|logistics|manager'))
-                            <h2><a title=""><i class="fa fa-user"></i><span>Users</span></a></h2>
+                            <h2><a title=""><i class="fa fa-user"></i><span>Пользователи</span></a></h2>
                             <div class="sub-menu">
 
                                 <ul>
-                                    <li><a href="{{route('viewUsers')}}" title="">View users</a></li>
-                                    <li><a href="{{route('createUser')}}" title="">Create user</a></li>
+                                    <li><a href="{{route('viewUsers')}}" title="">Все пользователи</a></li>
+                                    <li><a href="{{route('createUser')}}" title="">Создать пользователя</a></li>
                                     {{--@unless ($user->hasRole('junior_admin'))--}}
                                     {{--<li><a href="dashboard2.html" title="">Edit user</a></li>--}}
                                     {{--<li><a href="dashboard4.html" title="">Delete user</a></li>--}}
@@ -64,18 +64,48 @@
                     </div>
                     @endunless
                     <div class="single-menu">
-                        <h2><a title=""><i class="fa fa-desktop"></i><span>Orders</span></a></h2>
+                        <h2><a title=""><i class="fa fa-desktop"></i><span>Заказы</span></a></h2>
                         <div class="sub-menu">
                             <ul>
-                                <li><a href="blank.html" title="">View orders</a></li>
+                                <li><a href="blank.html" title="">Все заказы</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="single-menu">
-                        <h2><a title=""><i class="fa fa-desktop"></i><span>Applications</span></a></h2>
+                        <h2><a title=""><i class="fa fa-desktop"></i><span>Заявки</span></a></h2>
                         <div class="sub-menu">
                             <ul>
-                                <li><a href="{{route('viewApplications')}}" title="">View applications</a></li>
+                                <li><a href="{{route('viewApplications')}}" title="">Все заявки</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="single-menu">
+                        <h2><a title=""><i class="fa fa-paperclip"></i><span>Галерея</span></a></h2>
+                        <div class="sub-menu">
+                            <ul>
+                                <li><a href="{{route('createPhoto')}}" title="">Добавить фотографию</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="{{route('viewPhoto')}}" title="">Все фотографии</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="single-menu">
+                        <h2><a title=""><i class="fa fa-paperclip"></i><span>Видео</span></a></h2>
+                        <div class="sub-menu">
+                            <ul>
+                                <li><a href="{{route('viewVideos')}}" title="">Все видео</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="single-menu">
+                        <h2><a title=""><i class="fa fa-paperclip"></i><span>Текст</span></a></h2>
+                        <div class="sub-menu">
+                            <ul>
+                                <li><a href="{{route('viewAdvantages')}}" title="">Преимущества</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="{{route('viewAdvantages')}}" title="">Компании</a></li>
                             </ul>
                         </div>
                     </div>
@@ -107,20 +137,20 @@
                                         <thead>
                                         <tr>
                                             <th>№</th>
-                                            <th>Name</th>
+                                            <th>Имя</th>
                                             <th>Email</th>
-                                            <th>Telephone</th>
-                                            <th>Specialist</th>
-                                            <th>Day of the week</th>
-                                            <th>Start time</th>
-                                            <th>End time</th>
-                                            <th>Status</th>
-                                            <th>Created at</th>
-                                            <th>Updated at</th>
+                                            <th>Телефон</th>
+                                            <th>Специалист</th>
+                                            {{--<th>Day of the week</th>--}}
+                                            {{--<th>Start time</th>--}}
+                                            {{--<th>End time</th>--}}
+                                            <th>Статус</th>
+                                            <th>Создан в</th>
+                                            <th>Обновлен в</th>
 
-                                                <th>Edit</th>
+                                                <th>Редактировать</th>
                                             @if($user->hasRole('admin'))
-                                                <th>Delete</th>
+                                                <th>Удалить</th>
                                             @endif
                                         </tr>
                                         </thead>
@@ -131,7 +161,7 @@
                                                     {{$value->id}}
                                                 </td>
                                                 <td>
-                                                    {{$value->fullName}}
+                                                    {{$value->name}}
                                                 </td>
                                                 <td>
                                                     {{$value->email}}
@@ -142,15 +172,15 @@
                                                 <td>
                                                     {{$value->specialist}}
                                                 </td>
-                                                <td>
-                                                    {{$value->day}}
-                                                </td>
-                                                <td>
-                                                    {{$value->start_time}}
-                                                </td>
-                                                <td>
-                                                    {{$value->end_time}}
-                                                </td>
+                                                {{--<td>--}}
+                                                    {{--{{$value->day}}--}}
+                                                {{--</td>--}}
+                                                {{--<td>--}}
+                                                    {{--{{$value->start_time}}--}}
+                                                {{--</td>--}}
+                                                {{--<td>--}}
+                                                    {{--{{$value->end_time}}--}}
+                                                {{--</td>--}}
                                                 <td>
                                                     {{$value->status}}
                                                 </td>

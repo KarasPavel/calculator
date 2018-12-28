@@ -51,26 +51,26 @@ window.onscroll = function() {
 
 
 function getPosition(e) {
-	var posx = 0;
-	var posy = 0;
+  var posx = 0;
+  var posy = 0;
 
-	if (!e) var e = window.event;
+  if (!e) var e = window.event;
 
-	if (e.pageX || e.pageY) {
-		posx = e.pageX;
-		posy = e.pageY;
-	}
-	else if (e.clientX || e.clientY) {
-		posx = e.clientX + document.body.scrollLeft
-			+ document.documentElement.scrollLeft;
-		posy = e.clientY + document.body.scrollTop
-			+ document.documentElement.scrollTop;
-	}
+  if (e.pageX || e.pageY) {
+    posx = e.pageX;
+    posy = e.pageY;
+  }
+  else if (e.clientX || e.clientY) {
+    posx = e.clientX + document.body.scrollLeft
+      + document.documentElement.scrollLeft;
+    posy = e.clientY + document.body.scrollTop
+      + document.documentElement.scrollTop;
+  }
 
-	return {
-		x: posx,
-		y: posy
-	}
+  return {
+    x: posx,
+    y: posy
+  }
 }
 
 function ID(a){
@@ -91,7 +91,7 @@ function getposss(e){
 		$("#vspl")[0].style.left = e.clientX+35+'px';
 		$("#vspl")[0].style.top = e.clientY-20+'px';
 	}
-
+	
 
 }
 
@@ -115,21 +115,21 @@ window.onload = function(){
 	//$.notify("Ok", "success");
 
 	$(document).ready(function(){
-		$('.slideshow-thumbs2').fancybox({
-			prevEffect: 'none',
-			nextEffect: 'none',
-			closeBtn: false,
-			arrows: false,
-			nextClick: true,
-			helpers: {
-				thumbs: {
-					width: 50,
-					height: 50
-				}
-			}
-		});
-	});
-
+	      $('.slideshow-thumbs2').fancybox({
+	        prevEffect: 'none',
+	        nextEffect: 'none',
+	        closeBtn: false,
+	        arrows: false,
+	        nextClick: true,
+	        helpers: {
+	          thumbs: {
+	            width: 50,
+	            height: 50
+	          }
+	        }
+	      });
+	 });
+	
 	setTimeout('$(".first_preloader").addClass("hide_preloader");', 1000);
 }
 
@@ -153,7 +153,7 @@ function vc(a,b){
 
 	var cay = parseInt(getPosition(a).y - ID("items").offsetTop) -200;
 	var cax = parseInt(getPosition(a).x - ID("items").offsetLeft) - 400;
-
+	
 	ID("text_title").style.top = cay + "px";
 	ID("text_title").style.left = cax   + "px";
 }
@@ -174,7 +174,7 @@ function vc2(a,b){
 function navckick(a){
 	$(".select")[0].className = "ring";
 	//a.className="ring select";
-
+	
 	var hfx =a.getAttribute('sh');
 	$("#s"+hfx).addClass("select");
 	goTo(hfx);
@@ -184,9 +184,9 @@ function navckick(a){
 
 window.onresize = function(){
 	resizes();
-
+	
 }
-
+	
 function setWidth(){
 	$(".b").css("width",$("#screen")[0].offsetWidth+'px'); //999
 	$(".b").css("margin-left" ,-$("#screen")[0].offsetWidth/2+'px'); //999
@@ -221,13 +221,13 @@ function resizes(){
 var odd = 0;
 
 function autoheught(){
-	if (Screen[1]=='3'){
+		if (Screen[1]=='3'){
 		$('.d1')[0].style.height = '';
 		$('.d2')[0].style.height = '';
 
 		var b = $('.d1')[0];
 		var b2 = $('.d2')[0];
-
+		
 		var h = b.clientHeight || b.offsetHeight;
 		var h2 = b2.clientHeight || b2.offsetHeight;
 		if (h>h2){
@@ -243,7 +243,7 @@ function autoheught(){
 function closemenu(){
 	//ID("navblack").style.visibility = "hidden";
 	//ID("navblack").style.opacity = "0";
-
+	
 
 	//$('nav')[0].style.right = "-50px";
 
@@ -272,7 +272,7 @@ function GTU(a){
 
 	} else if (a<Screen[1]){
 		for (var i = Screen[1]-1; i >= a; i--) {
-
+		
 			ID("box"+i).className = 'b bu';
 		}
 
@@ -324,7 +324,7 @@ function next(){
 			hide('after');
 		}
 
-		if (Screen[0]==6){
+		if (Screen[0]==6){ 
 			$(".data").removeClass("calc_t_away");
 		} else {
 			$(".data").addClass("calc_t_away");
@@ -348,7 +348,7 @@ function befr(){
 		//BBBBBBBGGGGG
 		//dbg+=200;
 		//document.body.style.backgroundPositionX = dbg+'px';
-
+		
 		if (Screen[2]!=0){
 			$("#box"+Screen[2]).addClass("bu");
 		} else {
@@ -360,11 +360,11 @@ function befr(){
 		Screen[0]=Screen[0]-1;
 		Screen[1]=Screen[0]+1;
 		Screen[2]=Screen[0]+2;
-
+		
 
 		if (Screen[0]==0) {
 			hide('fh');
-			hide('before');
+			hide('before');	
 			showme('after');
 			ID("ft0").className = "";
 			$(".myroom_icon").removeClass("hide");
@@ -379,10 +379,10 @@ function befr(){
 		ID("box"+Screen[2]).className = 'b next_block';
 
 		ID("box"+Screen[1]).innerHTML="<div class='Load'><div class='loaad'></div></div>";
-
+		
 		load_screen();
 
-		if (Screen[0]==6){
+		if (Screen[0]==6){ 
 			$(".data").removeClass("calc_t_away");
 		} else {
 			$(".data").addClass("calc_t_away");
@@ -404,7 +404,7 @@ var pfs2ys = [0,0,0,0,0,0,0,0];
 function kj21(){
 	$.post("load_screen.php",{g:Screen[1]},function(data){  //alert(data);
 		data = data.split("*|_|*");
-
+		
 		var k = data[0];
 		ID("box"+data[2]).innerHTML=  k.substr(0,k.length-1);
 		if (data[1]!="no"){
@@ -413,22 +413,22 @@ function kj21(){
 				$.getScript('https://v-t-x.ru/js/j'+data[1]+'.js');
 				$.getScript('https://v-t-x.ru/js/menup.js');
 			}
-
+			
 			resizes();
 
 			setTimeout("resizeWin()", 500);
 		}
-
+		
 	});
 }
 
 
-// function load_screen(){
-//     toTop();
-//     document.title = ttl_arr[Screen[0]];
-//     $('meta[name="description"]').attr('content',sed_arr[Screen[0]]);
-//     setTimeout("kj21()", 1000);
-// }
+function load_screen(){
+	toTop();
+	document.title = ttl_arr[Screen[0]];
+	$('meta[name="description"]').attr('content',sed_arr[Screen[0]]);
+	setTimeout("kj21()", 1000);
+}
 
 
 var g1,g2;
@@ -444,7 +444,7 @@ function strel(){
 
 	if ($('.next_block')[0]){
 		klbtn[1].innerHTML = $('.next_block')[0].getAttribute('ttl');
-
+		
 		klbtn[1].className = "show bnttl";
 		klbtn2[1].className = "hidden bnttl";
 	}
@@ -501,7 +501,7 @@ var wa = 1;
 var tolsina = 0;
 function c(a,b,c,d){  ////////////////////////
 	CALC[a]=b;
-
+	
 	var The_block_info = "";
 	var flo = 1;
 	for (var i = 1; i < CALC.length; i++) {
@@ -516,12 +516,12 @@ function c(a,b,c,d){  ////////////////////////
 	var ttll = '';
 	$(c.parentElement).find(".u").removeClass("selecter selecter2");
 
-
+	
 
 	if ($(c).hasClass("box") ){
 		$(c).addClass("selecter2");
 		ttll = $(c).find(".ttls")[0].innerHTML;
-
+		
 	} else {
 		$(c).addClass("selecter");
 	}
@@ -538,40 +538,40 @@ function c(a,b,c,d){  ////////////////////////
 
 	var ka = "";
 	var at = "";
-
+	
 	if (a==1){
 		$(c.parentElement.parentElement).addClass("up_block");
 		addblock(next_block,2,d);
-
+	
 		ttll = c.innerHTML;
 	}
 
 	if (a==2){
-		if (CALC[1]=='2'){
+		if (CALC[1]=='2'){	
 			ttll = c.innerHTML;
 		}
+			
+			var ins = $("#i"+The_block_info)[0].innerHTML;
+			$(c).parents(".p").addClass("up_block");
 
-		var ins = $("#i"+The_block_info)[0].innerHTML;
-		$(c).parents(".p").addClass("up_block");
 
 
-
-		$(c.parentElement).find(".box_info1")[0].innerHTML = ins;
+			$(c.parentElement).find(".box_info1")[0].innerHTML = ins;
 		//} else {
 		//	ttll = c.innerHTML;
 		//}
 
-
+		
 		//CALC_info[i] = c.innerHTML;
 		addblock(next_block,3,d);
 	}
 
-	if (a==3){
+	if (a==3){  
 		var ins = $("#tolshina")[0].innerHTML;
 
 		$(c).parents(".p").addClass("up_block");
 		tolsina = c.innerHTML;
-		ttll = c.innerHTML+' Ð¼Ð¼';
+		ttll = c.innerHTML+' мм';
 
 		$(c.parentElement.parentElement).find(".box_info1")[0].innerHTML = ins;
 		addblock(".u31", 4, d);
@@ -603,10 +603,10 @@ function c(a,b,c,d){  ////////////////////////
 
 		//alert(12);
 		//if (CALC[5]!=3){
-		//$(c).parents(".p").addClass("up_block");
+			//$(c).parents(".p").addClass("up_block");
 		//}
-
-
+		
+		
 		$(c.parentElement.parentElement).find(".box_info1")[0].innerHTML = ins;
 		if (CALC[1]==1){
 			if (CALC[3]==1){
@@ -614,11 +614,11 @@ function c(a,b,c,d){  ////////////////////////
 			} else {
 				addblock('.u51',6,d);
 			}
-
+			
 		} else {
 			addblock('.u52',6,d);
 		}
-		//yaCounter45979905.reachGoal('osn_priehali');
+		//yaCounter45979905.reachGoal('osn_priehali');		
 		addblock('.u61',7,false);
 		setTimeout("resizeWin()", 400);
 		setTimeout("resizeWin()", 4000);
@@ -631,7 +631,7 @@ function c(a,b,c,d){  ////////////////////////
 	$(c).parents(".p").find(".selstep")[0].innerHTML="["+ttll+"]";
 	//$($(c.parents(".p"))[0].children[0]).find("calc_ttl")[0].innerHTML+=ttll;
 	setcena0();
-
+	
 	CALC_info[i] = ttll;
 }
 
@@ -652,9 +652,9 @@ function prebla5(){
 			} else {
 				addblock(".u42",5,false);
 			}
-
+			
 		}
-
+		
 
 		getcudro();
 		setcena0();
@@ -695,7 +695,7 @@ function addblock(a,b,d){
 	var hide = ($($(a)[0]).attr("dest")=="1");
 	var title = $($(a)[0]).attr("title");
 	var titleh =$($(a)[0]).attr("titleh");
-
+	
 
 	if (hide){
 		$(".hidden_block").addClass("hidden_blockhhh");
@@ -727,7 +727,7 @@ function addbuttonsincalc(a,b){
 
 var bbb;
 function showp(e,evnt){
-
+	
 	if (evnt.target.tagName!='polyline'){
 		alert('11');
 		if ($(e).hasClass("up_block")){
@@ -754,7 +754,7 @@ function getPolir(){
 	if (tolsina=='4'){
 		ret=polir[0];
 	}
-
+		
 	if (tolsina=='5'){
 		ret=polir[1];
 	}
@@ -815,7 +815,7 @@ function getZakalka(){
 		case 5: ret = zakalka5[vg]; break;
 	}
 
-
+	
 
 	return ret;
 }
@@ -826,10 +826,10 @@ function getZakalka(){
 function getfacet(){
 	var tx = 0; var rt=0;
 
-	if ($("#rdk1")[0].checked){ tx = 0; }
-	if ($("#rdk2")[0].checked){ tx = 1; }
-	if ($("#rdk3")[0].checked){ tx = 2; }
-	if ($("#rdk4")[0].checked){ tx = 3; }
+	if ($("#rdk1")[0].checked){ tx = 0; } 
+	if ($("#rdk2")[0].checked){ tx = 1; } 
+	if ($("#rdk3")[0].checked){ tx = 2; } 
+	if ($("#rdk4")[0].checked){ tx = 3; } 
 	if ($("#rdk5")[0].checked){ tx = 4; }
 
 	if (tolsina==4){  rt = facet0[tx]; }
@@ -855,48 +855,48 @@ function CENA(){
 	var defaultprice = 0;
 	if (CALC[1]==1){
 		var material = CALC[2]+CALC[3];
-		if (CALC[2]==1){ // ÐžÐ±Ñ‹Ñ‡Ð½Ð¾Ðµ ÑÑ‚ÐµÐºÐ»Ð¾
+		if (CALC[2]==1){ // Обычное стекло
 			defaultprice = f1prece111[CALC[3]-1];
 		}
-		if (CALC[2]==2){ // ÐžÐ¿Ñ‚Ð¸Ð²Ð°Ð¹Ñ‚
+		if (CALC[2]==2){ // Оптивайт 
 			defaultprice = f1prece121[CALC[3]-1];
 		}
-		if (CALC[2]==3){ // Ð‘Ñ€Ð¾Ð½Ð·Ð°
+		if (CALC[2]==3){ // Бронза 
 			defaultprice = f1prece131[CALC[3]-1];
 		}
-		if (CALC[2]==4){ // ÐœÐ°Ñ‚Ð¾Ð²Ð¾Ðµ
+		if (CALC[2]==4){ // Матовое 
 			defaultprice = f1prece141[CALC[3]-1];
 		}
-		if (CALC[2]==5){ // Ð¡ÐµÑ€Ð¾Ðµ
+		if (CALC[2]==5){ // Серое 
 			defaultprice = f1prece151[CALC[3]-1];
 		}
 	}
 
 	if (CALC[1]==2){
 		var material = CALC[2]+CALC[3];
-
-		if (CALC[2]==10){ // Ð¡ÐµÑ€ÐµÐ±Ñ€Ð¾
+		
+		if (CALC[2]==10){ // Серебро
 			defaultprice = f1prece21[CALC[3]-1];
 		}
-		if (CALC[2]==20){ // ÐºÐ»ÐµÑ€
+		if (CALC[2]==20){ // клер
 			defaultprice = f1prece22[CALC[3]-1];
 		}
-		if (CALC[2]==30){ // Ð“Ñ€Ð°Ñ„Ð¸Ñ‚
+		if (CALC[2]==30){ // Графит
 			defaultprice = f1prece23[CALC[3]-1];
 		}
-		if (CALC[2]==40){ // Ð‘Ñ€Ð¾Ð½Ð·Ð°
+		if (CALC[2]==40){ // Бронза
 			defaultprice = f1prece24[CALC[3]-1];
 		}
-		if (CALC[2]==50){ // Ð—Ð¾Ð»Ð¾Ñ‚Ð¾
+		if (CALC[2]==50){ // Золото
 			defaultprice = f1prece25[CALC[3]-1];
 		}
-		if (CALC[2]==60){ // Ð­ÐºÑÐºÐ»ÑŽÐ·Ð¸Ð²
+		if (CALC[2]==60){ // Эксклюзив
 			defaultprice = f1prece26[CALC[3]-1];
 		}
-	}
+	}	
 
 	if (defaultprice==undefined){
-		defaultprice = 100;
+		defaultprice = 100; 
 	}
 
 	defaultprice = ploshad*defaultprice;
@@ -917,34 +917,34 @@ function CENA(){
 	if (CALC[5]==2){
 		defaultprice += perimetr * (getPolir()*coff);
 		if (CALC[4]==1){
-			ppa += min*8;  //ÐºÐ²Ð°Ð´Ñ€Ð°Ñ‚ Ñ Ñ„Ð°Ñ†ÐµÑ‚Ð¾Ð¼
-		}
+			ppa += min*8;  //квадрат с фацетом
+		} 
 		if (CALC[4]==2){
-			ppa += min*100;  //ÐºÑ€ÑƒÐ³ Ñ Ñ„Ð°Ñ†ÐµÑ‚Ð¾Ð¼
-		}
+			ppa += min*100;  //круг с фацетом
+		} 
 		if (CALC[4]==3){
-			ppa += min*100;  //ÐºÑ€ÑƒÐ³ Ñ Ñ„Ð°Ñ†ÐµÑ‚Ð¾Ð¼
-		}
+			ppa += min*100;  //круг с фацетом
+		} 
 		if (CALC[4]==4){
-			ppa += min*72;  //Ð¸Ð½Ð°Ñ Ñ Ñ„Ð°Ñ†ÐµÑ‚Ð¾Ð¼
-		}
+			ppa += min*72;  //иная с фацетом
+		} 
 		//alert(getPolir() + ' - ' + perimetr);
 	}
 
 	if (CALC[5]==3){
 		defaultprice += perimetr * getfacet();
 		if (CALC[4]==1){
-			ppa += min*12;  //ÐºÐ²Ð°Ð´Ñ€Ð°Ñ‚ Ñ Ñ„Ð°Ñ†ÐµÑ‚Ð¾Ð¼
-		}
+			ppa += min*12;  //квадрат с фацетом
+		} 
 		if (CALC[4]==2){
-			ppa += min*130;  //ÐºÑ€ÑƒÐ³ Ñ Ñ„Ð°Ñ†ÐµÑ‚Ð¾Ð¼
-		}
+			ppa += min*130;  //круг с фацетом
+		} 
 		if (CALC[4]==3){
-			ppa += min*130;  //ÐºÑ€ÑƒÐ³ Ñ Ñ„Ð°Ñ†ÐµÑ‚Ð¾Ð¼
-		}
+			ppa += min*130;  //круг с фацетом
+		} 
 		if (CALC[4]==4){
-			ppa += min*75;  //Ð¸Ð½Ð°Ñ Ñ Ñ„Ð°Ñ†ÐµÑ‚Ð¾Ð¼
-		}
+			ppa += min*75;  //иная с фацетом
+		} 
 	}
 
 	if ($("#check24")[0].checked){
@@ -965,17 +965,17 @@ function CENA(){
 
 
 
-	if ($("#check27")[0].checked){  // Ð¿Ð¾ÐºÑ€Ð°ÑÐºÐ°
+	if ($("#check27")[0].checked){  // покраска
 		defaultprice += ploshad * 2400;
 		ppa += min*96;
 	}
 
-	if ($("#check28")[0].checked){  // ÑƒÑ„ Ð¿ÐµÑ‡Ð°Ñ‚ÑŒ
+	if ($("#check28")[0].checked){  // уф печать
 		defaultprice += ploshad * 3500;
 		ppa += min*120;
 	}
 
-	if ($("#check29")[0].checked){ // Ð¿ÐµÑÐºÐ¾ÑÑ‚Ñ€ÑƒÐ¹
+	if ($("#check29")[0].checked){ // пескоструй
 		if ($("#peskostr")[0].value == "1") {
 			defaultprice += ploshad * 3100;
 			ppa += min*264;
@@ -987,18 +987,18 @@ function CENA(){
 
 
 
-	defaultprice = defaultprice * parseInt($("#kolvoizd")[0].value);   // ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾
+	defaultprice = defaultprice * parseInt($("#kolvoizd")[0].value);   // количество 
 
 	if (defaultprice<300){
 		defaultprice = 300;
 	} else {
-		defaultprice = parseInt(defaultprice.toFixed()); // ÐžÐºÑ€ÑƒÐ³Ð»ÐµÐ½Ð¸Ðµ Ð´Ð¾ 50
+		defaultprice = parseInt(defaultprice.toFixed()); // Округление до 50
 	}
 
+	
 
-
-
-	if ($("#check255")[0].checked){ // Ð¦ÐµÐ½Ð° Ð¼Ð¾Ð½Ñ‚Ð°Ð¶Ð°
+	
+	if ($("#check255")[0].checked){ // Цена монтажа
 		if (defaultprice/100*25 < 2000) {
 			defaultprice+=2000;
 		} else {
@@ -1006,7 +1006,7 @@ function CENA(){
 		}
 		ppa += min*48;
 	}
-
+	
 	if ($("#check1").prop("checked")){
 		defaultprice += (defaultprice/2);
 		ppa=ppa/2;
@@ -1015,18 +1015,18 @@ function CENA(){
 
 
 
-
-	if ($("#dos1")[0].checked){  // Ð´Ð¾ÑÑ‚Ð°Ð²ÐºÐ° Ñ†ÐµÐ½Ð°
-		defaultprice += 800;
+	
+	if ($("#dos1")[0].checked){  // доставка цена
+		defaultprice += 800; 
 		ppa += min*8;
 	}
 
-	if ($("#dos2")[0].checked){ // Ð´Ð¾ÑÑ‚Ð°Ð²ÐºÐ°
+	if ($("#dos2")[0].checked){ // доставка
 		defaultprice += 1200;
 		ppa += min*10;
 	}
 
-	if ($("#dos3")[0].checked){ // Ð´Ð¾ÑÑ‚Ð°Ð²ÐºÐ°
+	if ($("#dos3")[0].checked){ // доставка
 		defaultprice += 2500;
 		ppa += min*24;
 	}
@@ -1046,33 +1046,33 @@ function CENA(){
 
 function lldaata(a){
 	$.post("getData.php",
-		{dt: a},
+	{dt: a}, 
 		function(data){
 			var af = data.split('.');
 			$("#day")[0].innerHTML=af[0];
 			$("#month")[0].innerHTML=af[1];
 			$("#yar")[0].innerHTML=af[2];
 			$(".extra")[1].innerHTML='('+angtoru(af[3])+')';
-		}
+		} 
 	);
 }
 
 function angtoru(a){
 	var rt = '';
 	switch (a){
-		case "Monday": rt = "ÐŸÐ¾Ð½ÐµÐ´ÐµÐ»ÑŒÐ½Ð¸Ðº";	 break;
-		case "Tuesday": rt = "Ð’Ñ‚Ð¾Ñ€Ð½Ð¸Ðº";	 break;
-		case "Wednesday": rt = "Ð¡Ñ€ÐµÐ´Ð°";	 break;
-		case "Thursday": rt = "Ð§ÐµÑ‚Ð²ÐµÑ€Ð³";	 break;
-		case "Friday": rt = "ÐŸÑÑ‚Ð½Ð¸Ñ†Ð°";	 break;
-		case "Saturday": rt = "Ð¡ÑƒÐ±Ð±Ð¾Ñ‚Ð°";	 break;
-		case "Sunday": rt = "Ð’Ð¾ÑÐºÑ€ÐµÑÐµÐ½ÑŒÐµ";	 break;
+		case "Monday": rt = "Понедельник";	 break;
+		case "Tuesday": rt = "Вторник";	 break;
+		case "Wednesday": rt = "Среда";	 break;
+		case "Thursday": rt = "Четверг";	 break;
+		case "Friday": rt = "Пятница";	 break;
+		case "Saturday": rt = "Суббота";	 break;
+		case "Sunday": rt = "Воскресенье";	 break;
 	}
 	return rt;
 }
 
-var perimetr = 0; //Ð’Ð°Ð¶Ð½Ð¾
-var ploshad = 0; //Ð’Ð°Ð¶Ð½Ð¾
+var perimetr = 0; //Важно 
+var ploshad = 0; //Важно 
 function getcudro(){
 	perimetr = p0width+p0width + p0height+p0height;
 	ploshad = p0width * p0height;
@@ -1081,7 +1081,7 @@ function getcudro(){
 
 
 function setcena0() {
-	$("#price")[0].innerHTML = CENA()+" Ñ€ÑƒÐ±.";
+	$("#price")[0].innerHTML = CENA()+" руб.";
 }
 
 function showmod(a){
@@ -1106,11 +1106,11 @@ function hidemod(a){
 	} else {
 		modal = $(".black");
 	}
-
+	
 	modal.removeClass("black_show");
 	modal.find(".win").removeClass("win_show");
-
-
+	
+	
 }
 
 
@@ -1142,7 +1142,7 @@ function showmessage(a){
 function showmessage2(a,b){
 	$("#message").find('h2')[0].innerHTML=a;
 	$("#message").find('h3')[0].innerHTML=b;
-	$("#message").find('button')[0].innerHTML="Ð‘ÐµÑÐ¿Ð»Ð°Ñ‚Ð½Ð°Ñ ÐºÐ¾Ð½ÑÑƒÐ»ÑŒÑ‚Ð°Ñ†Ð¸Ñ";
+	$("#message").find('button')[0].innerHTML="Бесплатная консультация";
 	showmod("message");
 }
 
@@ -1150,13 +1150,13 @@ function showmessage2(a,b){
 function showmessage2(a,b,c){
 	$("#message").find('h2')[0].innerHTML=a;
 	$("#message").find('h3')[0].innerHTML=b;
-
+	
 	if (c!=undefined){
 		$("#message").find('button')[0].innerHTML=c;
 	} else {
-		$("#message").find('button')[0].innerHTML="Ð‘ÐµÑÐ¿Ð»Ð°Ñ‚Ð½Ð°Ñ ÐºÐ¾Ð½ÑÑƒÐ»ÑŒÑ‚Ð°Ñ†Ð¸Ñ";
+		$("#message").find('button')[0].innerHTML="Бесплатная консультация";
 	}
-
+	
 	showmod("message");
 
 }
@@ -1168,24 +1168,24 @@ function showmessage2(a,b,c){
 
 
 function getCookie(cname) {
-	var name = cname + "=";
-	var ca = document.cookie.split(';');
-	for(var i = 0; i < ca.length; i++) {
-		var c = ca[i];
-		while (c.charAt(0) == ' ') {
-			c = c.substring(1);
-		}
-		if (c.indexOf(name) == 0) {
-			return c.substring(name.length, c.length);
-		}
-	}
-	return "";
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+        }
+    }
+    return "";
 }
 
 function delete_cookie(cookie_name) {
-	var cookie_date = new Date ( );  // Ð¢ÐµÐºÑƒÑ‰Ð°Ñ Ð´Ð°Ñ‚Ð° Ð¸ Ð²Ñ€ÐµÐ¼Ñ
-	cookie_date.setTime ( cookie_date.getTime() - 1 );
-	document.cookie = cookie_name += "=; expires=" + cookie_date.toGMTString();
+  var cookie_date = new Date ( );  // Текущая дата и время
+  cookie_date.setTime ( cookie_date.getTime() - 1 );
+  document.cookie = cookie_name += "=; expires=" + cookie_date.toGMTString();
 }
 
 
@@ -1202,19 +1202,19 @@ function z(a,b){
 	$(lok).find('.u').removeClass("selecter");
 	$(b).addClass("selecter");
 	/*
-    if (a=='1'){
-        $(lok.parentElement).find(".cena")[0].innerHTML = "Ð¡Ñ‚Ð¾Ð¸Ð¼Ð¾ÑÑ‚ÑŒ Ð²Ñ‹ÐµÐ·Ð´Ð° - 1000 Ñ€ÑƒÐ±.";
-    } else if (a=='2'){
-        $(lok.parentElement).find(".cena")[0].innerHTML = "Ð¡Ñ‚Ð¾Ð¸Ð¼Ð¾ÑÑ‚ÑŒ Ð²Ñ‹ÐµÐ·Ð´Ð° - 2500 Ñ€ÑƒÐ±.";
-    }
+	if (a=='1'){
+		$(lok.parentElement).find(".cena")[0].innerHTML = "Стоимость выезда - 1000 руб.";
+	} else if (a=='2'){
+		$(lok.parentElement).find(".cena")[0].innerHTML = "Стоимость выезда - 2500 руб.";
+	}
 */
 	zz = a;
 }
 
 
 
-var b_from = "Ð—Ð°ÐºÐ°Ð·Ð°Ñ‚ÑŒ Ð·Ð°Ð¼ÐµÑ€";
-var b_block = "Ð‘Ð»Ð¾Ðº - ";
+var b_from = "Заказать замер";
+var b_block = "Блок - ";
 function Call(){
 	var cphone = $("#clc_f_phone")[0].value;
 	if (cphone!=""){
@@ -1228,11 +1228,11 @@ function Call(){
 			dataLayer.push({'event': 'designer'});
 		}
 		var g = b_from+"<br>"+b_block+Screen[1]+'<br><br>';
-		if (cname!=""){ g += 'Ð˜Ð¼Ñ: '+cname+'<br>'; }
-		if (cphone!=""){ g += 'Ð¢ÐµÐ»ÐµÑ„Ð¾Ð½: '+cphone+'<br>'; }
-		if (cadress!=""){ g += 'ÐÐ´Ñ€ÐµÑ: '+cadress+'<br>'; }
-
-		g += 'Ð¡Ñ‚Ñ€Ð°Ð½Ð¸Ñ†Ð°: ';
+		if (cname!=""){ g += 'Имя: '+cname+'<br>'; }
+		if (cphone!=""){ g += 'Телефон: '+cphone+'<br>'; }
+		if (cadress!=""){ g += 'Адрес: '+cadress+'<br>'; }
+		
+		g += 'Страница: ';
 		if (zakaz_page==''){
 			zakaz_page = document.location.href;
 		}
@@ -1240,10 +1240,10 @@ function Call(){
 		g += zakaz_page+'<br>';
 
 		$.post("send.php",{g:g},function(data){
-
+			
 			//showmessage(data);
 		});
-		showmessage2("Ð—Ð°ÑÐ²ÐºÐ° Ð¿Ñ€Ð¸Ð½ÑÑ‚Ð°","ÐÐ°Ñˆ Ð¼ÐµÐ½ÐµÐ´Ð¶ÐµÑ€ ÑÐ²ÑÐ¶ÐµÑ‚ÑÑ Ñ Ð’Ð°Ð¼Ð¸<br> Ð² Ð±Ð»Ð¸Ð¶Ð°Ð¹ÑˆÐµÐµ Ð²Ñ€ÐµÐ¼Ñ","ÐŸÑ€Ð¾Ð´Ð¾Ð»Ð¶Ð¸Ñ‚ÑŒ");
+		showmessage2("Заявка принята","Наш менеджер свяжется с Вами<br> в ближайшее время","Продолжить");
 	} else {
 		$(".error_phone").removeClass("hide_error");
 	}
@@ -1259,19 +1259,19 @@ function spec(){
 		cname = $("#clc_f_name2")[0].value;
 		cadress = $("#clc_f_address2")[0].value;
 
-		var g = "Ð’Ñ‹Ð·Ð¾Ð² ÑÐ¿ÐµÑ†Ð¸Ð°Ð»Ð¸ÑÑ‚Ð°<br>"+b_from+"<br>"+b_block+Screen[1]+'<br><br>';
-		if (cname!=""){ g += 'Ð˜Ð¼Ñ: '+cname+'<br>'; }
-		if (cphone!=""){ g += 'Ð¢ÐµÐ»ÐµÑ„Ð¾Ð½: '+cphone+'<br>'; }
-		if (cadress!=""){ g += 'ÐšÐ¾Ð¼Ð¼ÐµÐ½Ñ‚Ð°Ñ€Ð¸Ð¹: '+cadress+'<br>'; }
+		var g = "Вызов специалиста<br>"+b_from+"<br>"+b_block+Screen[1]+'<br><br>';
+		if (cname!=""){ g += 'Имя: '+cname+'<br>'; }
+		if (cphone!=""){ g += 'Телефон: '+cphone+'<br>'; }
+		if (cadress!=""){ g += 'Комментарий: '+cadress+'<br>'; }
 
 
-
+		
 		$.post("send.php",{g:g},function(data){
-
+			
 			//showmessage(data);
 		});
 
-		showmessage2("Ð—Ð°ÑÐ²ÐºÐ° Ð¿Ñ€Ð¸Ð½ÑÑ‚Ð°","ÐÐ°Ñˆ Ð¼ÐµÐ½ÐµÐ´Ð¶ÐµÑ€ ÑÐ²ÑÐ¶ÐµÑ‚ÑÑ Ñ Ð’Ð°Ð¼Ð¸","ÐŸÑ€Ð¾Ð´Ð¾Ð»Ð¶Ð¸Ñ‚ÑŒ");
+		showmessage2("Заявка принята","Наш менеджер свяжется с Вами","Продолжить");
 		dataLayer.push({'event': 'zvonok'});
 	} else {
 		$(".error_phone").removeClass("hide_error");
@@ -1287,24 +1287,24 @@ function ORDER(){
 	} else if (mail==''){
 		showmod("userdata");
 	} else {
-		showmessage2("ÐžÑ„Ð¾Ñ€Ð¼Ð»ÐµÐ½Ð¸Ðµ Ð·Ð°ÐºÐ°Ð·Ð°","ÐŸÐ¾Ð¶Ð°Ð»ÑƒÐ¹ÑÑ‚Ð° Ð¿Ð¾Ð´Ð¾Ð¶Ð´Ð¸Ñ‚Ðµ", "Ð—Ð°Ð³Ñ€ÑƒÐ·ÐºÐ°");
+		showmessage2("Оформление заказа","Пожалуйста подождите", "Загрузка");
 		$.post("create_order.php", function(data){
 			var lk = data.split(":");
 			if (lk[0]=='log'){
 				$("#log").find("input")[0].value = lk[1];
-				showmod2('log',"Ð’Ð°Ñˆ Ð°ÐºÐºÐ°ÑƒÐ½Ñ‚ ÑƒÐ¶Ðµ ÐµÑÑ‚ÑŒ Ð² ÑÐ¸ÑÑ‚ÐµÐ¼Ðµ<br>Ð’Ð¾Ð¹Ð´Ð¸Ñ‚Ðµ Ð² Ð»Ð¸Ñ‡Ð½Ñ‹Ð¹ ÐºÐ°Ð±Ð¸Ð½ÐµÑ‚");
+				showmod2('log',"Ваш аккаунт уже есть в системе<br>Войдите в личный кабинет");
 			}
 			if (lk[0]=='ok'){
 				delete_cookie("cx");
 				delete_cookie("cxx");
 				window.location.href = "order"+lk[1];
-				showmessage2("Ð—Ð°ÐºÐ°Ð· Ð¾Ñ‚Ð¿Ñ€Ð°Ð²Ð»ÐµÐ½","ÐœÐµÐ½ÐµÐ´Ð¶ÐµÑ€ Ð² Ð±Ð»Ð¸Ð¶Ð°Ð¹ÑˆÐµÐµ Ð²Ñ€ÐµÐ¼Ñ Ñ Ð’Ð°Ð¼Ð¸ ÑÐ²ÑÐ¶ÐµÑ‚ÑÑ","...");
+				showmessage2("Заказ отправлен","Менеджер в ближайшее время с Вами свяжется","...");
 			}
 			if (lk[0]=='mes') {
 				delete_cookie("cx");
 				delete_cookie("cxx");
 				showmessage(lk[1]);
-
+				
 			};
 			//alert(data);
 		});
@@ -1338,24 +1338,24 @@ function sinfo(e){
 
 
 function moc(a, b, c){
-
-	var The_block_info = "";
-	var flo = 1;
-	for (var i = 1; i < a; i++) {
-		if (flo>a){
-			CALC[i]=null;
-		} else {
-			The_block_info+=CALC[i];
+	
+		var The_block_info = "";
+		var flo = 1;
+		for (var i = 1; i < a; i++) {
+			if (flo>a){
+				CALC[i]=null;
+			} else {
+				The_block_info+=CALC[i];
+			}
+			flo++;
 		}
-		flo++;
-	}
 
 
-	The_block_info+=b;
+		The_block_info+=b;
 
 
 	if ($("#i"+The_block_info).length!=0){
-
+		
 
 		var ins = $("#i"+The_block_info)[0].innerHTML;
 
@@ -1363,11 +1363,11 @@ function moc(a, b, c){
 		if ($(c).hasClass("box")){
 			var imm = $(c).find(".imagea").css('backgroundImage');
 			ins = "<div class='prvimg' style='background-image: "+imm+"'></div>"+ins;
-
+			
 		}
 
 		showvspl2(ins);
-	}
+	}	
 }
 
 function mx(){
@@ -1376,7 +1376,7 @@ function mx(){
 
 
 function okss(a){
-	//var ing = $(a).find('option:selected').attr("goto");
+	//var ing = $(a).find('option:selected').attr("goto"); 
 	//alert(ing);
 	gal_goto($(a).find('option:selected'));
 }
@@ -1391,15 +1391,15 @@ function cicon(a){
 
 function showfile(a){
 	cacount = calc.split("|");
-
+	
 	$('#File').find('.all')[0].innerHTML='<iframe src="/loadfile.php?next=' + cacount.length + '&e='+a+'" style="width: 90%" frameborder="0"></iframe>';
 	showmod("File");
 }
 
 function toTop(){
 	$('body,html').animate({
-		scrollTop: 0
-	}, 1000);
+        scrollTop: 0
+    }, 1000);
 }
 
 var sellscxa = 0;
@@ -1407,13 +1407,13 @@ function select_gift(a){
 	if (sellscxa==0){
 		$('#gift'+a).addClass("selecter2");
 		sellscxa=1;
-
-
+	
+	
 		$.post('gift-53.php',{sel_gift: a},function(data){
 			obj = JSON && JSON.parse(data) || $.parseJSON(data);
-
+			
 			$("#gift_info")[0].innerHTML = "<h3>"+obj['ttl']+'</h3><br>'+obj['dop'];
-
+			
 
 			for (var i = 1; i <= 5; i++) {
 				$("#gift"+i).find(".imagea")[0].style.backgroundImage='url('+obj['img'+i]+')';

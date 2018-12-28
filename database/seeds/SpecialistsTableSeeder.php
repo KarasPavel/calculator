@@ -13,18 +13,18 @@ class SpecialistsTableSeeder extends Seeder
     public function run()
     {
         //create none
-        $none = new Specialist();
-        $none->specialist = "none";
-        $none->save();
+        $consultant = new Specialist();
+        $consultant->specialist = "Консультант";
+        $consultant->save();
+
+        //create scheduler
+        $gager = new Specialist();
+        $gager->specialist = "Замерщик";
+        $gager->save();
 
         //create designer
         $designer = new Specialist();
-        $designer->specialist = "designer";
+        $designer->specialist = "Дизайнер";
         $designer->save();
-
-        //create scheduler
-        $scheduler = new Specialist();
-        $scheduler->specialist = "scheduler";
-        $scheduler->save();
     }
 }

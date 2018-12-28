@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Veditex</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
           integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
@@ -687,62 +687,28 @@
                 </div>
                 <div class="tab-content">
                     <div class="tab-pane active" id="home" role="tabpanel">
-                        <a data-fancybox="gallery" href="images/Stairs/1/1.jpg">
+
+                        @foreach($photo as $value)
+                            @if($value->type === 'лестница')
+                        <a data-fancybox="gallery" href="{{$value->photo}}">
                             <div class="img_items_stairs">
-                                <img src="images/Stairs/1/1.jpg">
+                                <img src="{{$value->photo}}">
                                 <p></p>
                             </div>
                         </a>
-                        <a data-fancybox="gallery" href="images/Stairs/1/2.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Stairs/1/2.jpg">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery" href="images/Stairs/1/5.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Stairs/1/5.jpg">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery" href="images/Stairs/1/6.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Stairs/1/6.jpg">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery" href="images/Stairs/1/7.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Stairs/1/7.jpg">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery" href="images/Stairs/1/8.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Stairs/1/8.jpg">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery" href="images/Stairs/1/9.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Stairs/1/9.jpg">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery" href="images/Stairs/1/10.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Stairs/1/10.jpg">
-                                <p></p>
-                            </div>
-                        </a>
-                        @if($user && $user->hasRole('admin|junior_admin|moderator'))
-                            <a data-fancybox="gallery" href="images/AddImage.jpg">
-                                <div class="img_items_stairs">
-                                    <img src="images/AddImage.jpg">
-                                    <p></p>
-                                </div>
-                            </a>
-                         @endif
+                            @endif
+                        @endforeach
+                        {{--@if($user && $user->hasRole('admin|junior_admin|moderator'))--}}
+                            {{--<form  action="{{url('uploadPhotoStairs')}}" method="post" id="Form_uploadStair" enctype="multipart/form-data">--}}
+                                {{--<input name="photo" onchange="uploadStairs()" id="fileUpload" type="file" style="display:none">--}}
+                                {{--<div id="Uploadphoto">--}}
+                                    {{--<img  src={{$adminPhoto['0']->photo}}>--}}
+                                    {{--<p></p>--}}
+                                {{--</div>--}}
+                            {{--</a>--}}
+                                {{--{{ csrf_field()}}--}}
+                            {{--</form>--}}
+                         {{--@endif--}}
                     </div>
                     <div class="tab-pane" id="profile" role="tabpanel">
                         <a data-fancybox="gallery1" href="images/Stairs/2/1.jpg">

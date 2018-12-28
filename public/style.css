@@ -50,7 +50,7 @@ body{
 h2,h3,{
 	cursor: url(images/cursor_text.png), text !important;
 }
-a, .navbar-toggler:not(:disabled):not(.disabled){
+a, .navbar-toggler:not(:disabled):not(.disabled), label{
 	cursor: url(images/cursor_click.png), pointer !important;
 
 }
@@ -60,6 +60,9 @@ a, .navbar-toggler:not(:disabled):not(.disabled){
     top: 0.5px;
 	/* right: 30px; */
 	position: relative;
+}
+.typeText{
+	width: 300px;
 }
 .heder_nav_navbar{
 	width: 100%;
@@ -315,8 +318,10 @@ header nav{
 }
 #glass_reliability{
 	background-color: #eceff1;
+	padding-bottom: 20px;
 }
 .glass_reliability h2{
+	margin-bottom: 25px;
 	color: #1c1c1c;
 	font-family: "Open Sans";
 	font-size: 35px;
@@ -349,10 +354,13 @@ header nav{
 	z-index: 0;
 	display: block;
 	border: 7px solid #fff;
-	height: 350px;
+	height: 300px;
+	width: 350px;
+	overflow: hidden;
 
 }.turnkey_items img{
-	width: 100%!important;
+	width: 365px!important;
+	height: 390px;
 }
 .turnkey_items:hover{
 	
@@ -373,7 +381,7 @@ header nav{
 }
 .turnkey_items img{
 	width:100%;
-	height: 100%;
+	
 	display: block;
 }
 .turnkey_items p{	
@@ -572,7 +580,7 @@ footer{
 	height: 100%;
 	position: relative;
 	z-index: 6;
-	width: Calc(50% - 3px);
+	width: Calc(50%);
 	background-size: cover;
     background-position: left;
 }
@@ -604,9 +612,53 @@ footer{
 	text-align: center;
 }
 .stairs_and_flooring_buttons{
+	background: url(images/gimalay-2.png)no-repeat top right;
 	justify-content: center;
 	margin-top: 30px;
+	margin: 30px 32px;
+    background-size: contain;
+    /* background-position-x: -32px; */
+    background-position-y: -19px;
 	margin-bottom: 35px;
+}
+.stairs_and_flooring_buttons4 {
+	background: url(images/gimalay-2.png)no-repeat top left;
+    margin-top: 30px;
+    margin: 30px 293px;
+    background-size: cover;
+    margin-bottom: 35px;
+}
+.stairs_and_flooring_buttons5{
+	background: url(images/gimalay-2.png)no-repeat top left;
+    margin-top: 30px;
+    margin: 30px 293px;
+    background-size: cover;
+	margin-bottom: 35px;
+	background-position-y: -46px;
+}
+.stairs_and_flooring_buttons1{
+	background: url(images/gimalay-2.png)no-repeat top left;
+    margin-top: 30px;
+    margin: 30px 97px;
+    background-size: cover;
+	margin-bottom: 35px;
+	background-position-y: -46px;
+}
+.stairs_and_flooring_buttons2{
+	background: url(images/gimalay-2.png)no-repeat top left;
+    margin-top: 30px;
+    margin: 30px 357px;
+    background-size: cover;
+	margin-bottom: 35px;
+	background-position-y: -46px;
+}
+.stairs_and_flooring_buttons_calculator{
+	background: url(images/gimalay-2.png)no-repeat top left;
+	margin: 30px 169px;
+    background-size: cover;
+    /* background-position-x: -32px; */
+    background-position-y: 0;
+    margin-bottom: 35px;
 }
 .stairs_and_flooring_buttons a{
 	text-align: center;
@@ -616,7 +668,7 @@ footer{
 	outline: 1px solid #77a29c;
 	border: 1px solid #77a29c;
 	border-color: linear-gradient(47deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.18) 11%, rgba(255, 255, 255, 0) 19%, rgba(255, 255, 255, 0.13) 33%, rgba(255, 255, 255, 0) 38%, rgba(255, 255, 255, 0.08) 45%, rgba(255, 255, 255, 0) 73%, rgba(255, 255, 255, 0.18) 84%, rgba(255, 255, 255, 0) 100%);
-	background-color: #beddea;
+	background-color: rgba(190, 220, 234, 0.35);;
 	background-image: linear-gradient(47deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.18) 11%, rgba(255, 255, 255, 0) 19%, rgba(255, 255, 255, 0.13) 33%, rgba(255, 255, 255, 0) 38%, rgba(255, 255, 255, 0.08) 45%, rgba(255, 255, 255, 0) 73%, rgba(255, 255, 255, 0.18) 84%, rgba(255, 255, 255, 0) 100%);
 	opacity: 0.7;
 	color: #537782;
@@ -633,7 +685,7 @@ footer{
 	border: 1px solid #77a29c;
 	border: 5px solid #fff;
 	border-image: url(images/border_hover.png) 5 round round;
-	background-color: #c5b691 !important;
+	background-color: rgba(197, 182, 145, 0.8) !important;
 	background-image: linear-gradient(47deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.18) 11%, rgba(255, 255, 255, 0) 19%, rgba(255, 255, 255, 0.13) 33%, rgba(255, 255, 255, 0) 38%, rgba(255, 255, 255, 0.08) 45%, rgba(255, 255, 255, 0) 73%, rgba(255, 255, 255, 0.18) 84%, rgba(255, 255, 255, 0) 100%);
 	opacity: 0.9;
 	transition: all 0.2s;
@@ -655,7 +707,7 @@ footer{
 	display: inline-block;
 	position: relative;
 	margin-bottom: 25px;
-	height: 200px;
+	height: 140px;
 	width: 200px;
 	overflow: hidden;
 }
@@ -696,6 +748,12 @@ footer{
 	background-color: #eaeff0;
 	/*background-image: linear-gradient(to left, rgba(255, 255, 255, 0.1) 0%, rgba(0, 0, 0, 0.1) 50%, rgba(255, 255, 255, 0.1) 100%);*/
 }
+.call_back_section{
+	display: none;
+}
+.call_back_section:first-of-type{
+	display: block;
+}
 .request_call_back h2{
 	margin-top: 45px;
 	color: #474747;
@@ -707,6 +765,20 @@ footer{
 	text-transform: uppercase;
 	/* Text style for "Оформить з" */
 	letter-spacing: 6.3px;
+}
+.galery_kripezh-pos{
+	position: relative;
+	left: -82px;
+}
+.request_call_back p{
+	text-align: center;
+	color: #3e5669;
+	font-family: "Open Sans";
+	font-size: 13px;
+	font-weight: 300;
+	line-height: 50px;
+	/* Text style for "Стадия рем" */
+	letter-spacing: 0.52px;
 }
 .up_form{
 	margin-top: 40px;
@@ -732,6 +804,9 @@ footer{
 	padding: 15px 5px;
 	box-shadow: 0 8px 14px rgba(34, 102, 187, 0.21);
 	background-color: #fbfbfb;
+}
+.down_form_2 input{
+	margin-left: unset;
 }
 .day{
 	text-align: center;
@@ -783,19 +858,95 @@ footer{
 	font-size: 18px;
 }
 .checkbox{
-	display: block;
 	text-align: center;
-	margin: 30px 0;
+	margin: 20px auto;
 }
-.checkbox label{
-	color: #3e5669;
-font-family: "Open Sans";
-font-size: 13px;
-font-weight: 300;
-line-height: 28px;
-/* Text style for "Cогласие с" */
-letter-spacing: 0.52px;
-}
+/* прячем input checkbox */
+input[type="checkbox"] {
+	display: none;
+  }
+   
+  /* стили для метки */
+  /* label {
+	color: #000;
+	cursor: default;
+	font-weight: normal;
+	line-height: 30px;
+	padding: 10px 0;
+	vertical-align: middle;
+  } */
+   
+  /* формируем внешний вид чекбокса в псевдоэлементе before */
+  /* label:before {
+	content: " ";
+	color: #000;
+	display: inline-block;
+	font: 20px/30px Arial;
+	margin-right: 15px;
+	position: relative;
+	text-align: center;
+	text-indent: 0px;
+	width: 20px;
+	height: 20px;
+	background: #FFF;
+	border: 1px solid #000;
+	border-image: initial;
+	vertical-align: middle;
+	transition: all .7s;
+  } */
+   
+  /* вариации внешнего вида в зав-ти от статуса checkbox */
+  /* checked */
+  /* input:checked + label:before {
+	background: #000;
+
+  } */
+  /* disabled */
+  /* input:disabled + label:before {
+	background: #eee;
+	border: 2px #000
+  } */
+
+
+/* ??????????????????????????????????????? */
+.fake-checkbox {
+	border: solid 2px #000;
+    box-sizing: border-box;
+    display: inline-block;
+    height: 25px;
+    overflow: hidden;
+    position: relative;
+    top: .5em;
+    width: 25px;
+  }
+  .fake-checkbox:before {
+	background-color: #000;
+	bottom: -0.5em;
+	content: "";
+	height: 0;
+	left: -0.5em;
+	position: absolute;
+	right: -0.5em;
+	transition: all 1s ease-out;
+  }
+  
+  :checked + .fake-checkbox:before {
+	animation: oscillate 1s ease-out;
+	height: calc(100% + 0.5em);
+  }
+  
+  @keyframes oscillate {
+	0%, 100% {
+	  transform: rotate(0);
+	}
+	33% {
+	  transform: rotate(7deg);
+	}
+	67% {
+	  transform: rotate(-7deg);
+	}
+  }
+/* //////////////////////////////////////// */
 .button_forms{
 	margin: 35px;
 	display: block;
@@ -1353,8 +1504,17 @@ letter-spacing: 0.52px;
 	justify-content: space-between;
 	margin: 35px 0;
 }
+.help_glaas_type2{
+	justify-content: center;
+}
+.help_glaas_type_last{
+	width: 500px;
+	margin: 10px auto;
+}
 .help_glass_items{
-	padding: 20px;
+	width: 250px;
+	margin: 5px;
+	padding: 10px;
 	text-align: center;	
 	border: 2px solid #ffffff;
 	background-color: #dfe2e1;
@@ -1370,11 +1530,34 @@ letter-spacing: 0.52px;
 	/* Text style for "ОБЫЧНОЕ" */
 	letter-spacing: 2.6px;
 }
-.help_glass_items:hover{
-	padding: 17px;
-	border: 5px solid;
+.help_glass_items:hover, .help_glass_items:focus, .help_glass_items:active{
+	padding: 8px;
+	border: 4px solid;
 	border-image: url(images/border_hover.png) 5 round round;
 	background-color: #b2bcc4;
+}
+.help_glass_items2 img{
+	width: 79px;
+	height: 79px;
+}
+.help_glass_items2 span{
+	color: #3e5669;
+	font-family: "Open Sans";
+	font-size: 13px;
+	font-weight: 300;
+	line-height: 50px;
+	/* Text style for "Нужен расч" */
+	letter-spacing: 0.52px;
+}
+.first_chekbox{
+	margin-right: 35px;
+	display: flex;
+	flex-direction: column;
+	
+}
+.ssecond_chekbox{
+	display: flex;
+	flex-direction: column;
 }
 .button_next{
 	text-align: center;
@@ -1385,7 +1568,7 @@ letter-spacing: 0.52px;
 	box-shadow: 0 8px 14px rgba(34, 102, 187, 0.21);
 	background-color: #ee921e;
 	text-align: center;
-	color: #ffffff;
+	color: #ffffff !important;
 	font-family: "Open Sans";
 	font-size: 13px;
 	font-weight: 300;
@@ -1924,8 +2107,8 @@ letter-spacing: 0.52px;
     margin-bottom: 25px;
 }
 .img_items_stairs img{
-	width: 500px !important;
-	height: 500px;
+	width: 250px !important;
+	height: unset;
 
 
 }
@@ -1985,7 +2168,7 @@ letter-spacing: 0.52px;
     height: 61px;
     width: 224px;
 }
-.owl-next::before{
+/* .owl-next::before{
 	content: '';
 	width: 200px;  
 	height: 50px;  
@@ -1994,7 +2177,7 @@ letter-spacing: 0.52px;
 	left: 25px;  
 	top: 0;  
 	box-shadow: inset 0 0 0 200px rgba(255, 255, 255, 0.3);
-	filter: blur(10px);}
+	filter: blur(10px);} */
 button:focus{
 	outline: none !important;
 }
@@ -2120,6 +2303,25 @@ button:focus{
 	/* Text style for "24" */
 	letter-spacing: 0.52px;
 }
+.cost_calculation input[type=checkbox]{
+	display: none;
+
+}
+.checbockss:focus{
+	background: #000;
+}
+.checbockss{
+	border: 3px solid #000;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    margin-bottom: -4px;
+    margin-right: 5px;
+    margin-top: 8px;
+    /* cursor: url(cur/plane.cur), pointer; */
+    /* background: url(img/check_bg.png) top left no-repeat; */
+    transition: all .7s;
+}
 .cost_calculation p{
 
 	color: #3e5669;
@@ -2172,14 +2374,16 @@ button:focus{
 }
 .calc_content2{
 	height: 100%;
-	width: 100%;
+	width: 200px;
 }
 .calc_contents{
+	flex-wrap: wrap;
+    justify-content: center;
 	margin-top: 20px;
 }
 .calc_content2 img{
-	width: 69px !important;
-	height: 69px;
+	/* width: 69px !important;
+	height: 69px; */
 }
 .cost_calculation__link img{
 	height: 42px;
@@ -2304,6 +2508,32 @@ button:focus{
 	height: 45px;
 	margin-left: 5px;
 }
+.video_glass{
+	justify-content: center
+}
+.video_glass iframe{
+	position: relative;
+	z-index: 4;
+	
+}
+iframe{
+	margin-right: 15px;
+}
+.video_glass img{
+	position: relative; 
+	left:-40px;
+	z-index: 3;
+}
+.butt_choose_kromka {
+	background: url(images/gimalay-2.png)no-repeat top left;
+    justify-content: center;
+    margin-top: 30px;
+    margin: 30px 32px;
+    background-size: cover;
+    /* background-position-x: -32px; */
+    /* background-position-y: -19px; */
+    margin-bottom: 35px;
+}
 .butt_choose_kromka a{
 	padding: 24px 4px;
 	width: 100%;
@@ -2334,7 +2564,8 @@ button:focus{
 .chekbox_sect_6 label{
 	color: #3e5669;
 	font-family: "Open Sans";
-	font-size: 13px;
+	font-size: 15px;
+	margin-left: 5px;
 	font-weight: 300;
 	line-height: 28.03px;
 	/* Text style for "Закалка (Т" */
@@ -2374,7 +2605,7 @@ textarea {
 	letter-spacing: 0.3px;
 
 }
-.down_buttons_distances a:focus{
+.down_buttons_distances a:focus,.down_buttons_distances a:hover{
 	background-color: #3367b5;
 }
 .cost_calc_first_tab{
@@ -2443,13 +2674,13 @@ textarea {
 	color:white;
 	padding:20px;
 	position:absolute;
-	top:40px;
+	top:-40px;
 	margin-left:-50px;
 	width:100%;
 	height:100%;
 	line-height:5px;
 	border-radius:5px;
-	opacity:0;
+	visibility: hidden;
 	transition:.25s ease-in-out;
 }
 .owl-dots .owl-dot:nth-child(2)::before{
@@ -2460,13 +2691,13 @@ textarea {
 	color:white;
 	padding:10px 20px;
 	position:absolute;
-	top:40px;
+	top:-40px;
 	margin-left:-50px;
 	width:100%;
 	height:auto;
 	line-height:15px;
 	border-radius:5px;
-	opacity:0;
+	visibility: hidden;
 	transition:.25s ease-in-out;
 }
 .owl-dots .owl-dot:nth-child(3)::before{
@@ -2477,13 +2708,13 @@ textarea {
 	color:white;
 	padding:10px 20px;
 	position:absolute;
-	top:40px;
+	top:-40px;
 	margin-left:-50px;
 	width:100%;
 	height:auto;
 	line-height:15px;
 	border-radius:5px;
-	opacity:0;
+	visibility: hidden;
 	transition:.25s ease-in-out;
 }
 .owl-dots .owl-dot:nth-child(4)::before{
@@ -2494,13 +2725,13 @@ textarea {
 	color:white;
 	padding:10px 20px;
 	position:absolute;
-	top:40px;
+	top:-40px;
 	margin-left:-50px;
 	width:100%;
 	height:auto;
 	line-height:15px;
 	border-radius:15px;
-	opacity:0;
+	visibility: hidden;
 	transition:.25s ease-in-out;
 }
 .owl-dots .owl-dot:nth-child(5)::before{
@@ -2511,13 +2742,13 @@ textarea {
 	color:white;
 	padding:10px 20px;
 	position:absolute;
-	top:40px;
+	top:-40px;
 	margin-left:-50px;
 	width:auto;
 	height:auto;
 	line-height:15px;
 	border-radius:5px;
-	opacity:0;
+	visibility: hidden;
 	transition:.25s ease-in-out;
 }
 .owl-dots .owl-dot:nth-child(6)::before{
@@ -2528,13 +2759,13 @@ textarea {
 	color:white;
 	padding:20px;
 	position:absolute;
-	top:40px;
+	top:-40px;
 	margin-left:-50px;
 	width:100%;
 	height:100%;
 	line-height:5px;
 	border-radius:5px;
-	opacity:0;
+	visibility: hidden;
 	transition:.25s ease-in-out;
 }
 .owl-dots .owl-dot:nth-child(7)::before{
@@ -2545,13 +2776,13 @@ textarea {
 	color:white;
 	padding:10px 20px;
 	position:absolute;
-	top:40px;
+	top:-40px;
 	margin-left:-50px;
 	width:100%;
 	height:auto;
 	line-height:12px;
 	border-radius:5px;
-	opacity:0;
+	visibility: hidden;
 	transition:.25s ease-in-out;
 }
 .owl-dots .owl-dot:nth-child(8)::before{
@@ -2562,13 +2793,13 @@ textarea {
 	color:white;
 	padding:20px;
 	position:absolute;
-	top:40px;
+	top:-50px;
 	margin-left:-50px;
 	width:100%;
 	height:100%;
 	line-height:5px;
 	border-radius:5px;
-	opacity:0;
+	visibility: hidden;
 	transition:.25s ease-out;
 }
 /* .owl-dots .owl-dot::before{
@@ -2592,7 +2823,7 @@ textarea {
 	content:'';
 	display:block;
 	position:absolute;
-	top:-35px;
+	top:-10px;
 	margin-left:-4px;
 	height:0;
 	width:0;
@@ -2600,11 +2831,11 @@ textarea {
 	border-right:8px solid transparent;
 	border-top:8px solid rgba(0,0,0,.7);
 	transition:.25s ease-in-out;
-	opacity:0;
+	visibility: hidden;
    }
 	
    .owl-dots .owl-dot:hover:before {
-	opacity:1;
+	visibility: visible;
 	top:-60px;
    }
    .owl-dots .owl-dot:nth-child(8):hover:before,.owl-dots .owl-dot:nth-child(5):hover:before, .owl-dots .owl-dot:nth-child(7):hover:before, .owl-dots .owl-dot:nth-child(1):hover:before, .owl-dots .owl-dot:nth-child(6):hover:before{
@@ -2612,7 +2843,7 @@ textarea {
    }
 	
    .owl-dots .owl-dot:hover:after {
-	opacity:1;
+	visibility: visible;
 	top:-10px;
 
    }
@@ -2631,4 +2862,16 @@ textarea {
 }
 .data-time .input_container input{
 	padding-left: 50px;
+}
+::-webkit-scrollbar{
+	width: 10px;
+	background: #ddd;
+}
+::-webkit-scrollbar-track{
+	box-shadow: 0 0 10
+	border-radius: 10px;
+
+}
+::-webkit-scrollbar-thumb{
+	background: linear-gradient(125deg, #2980b9, #34495e)
 }

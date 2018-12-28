@@ -1,0 +1,40 @@
+/*
+Theme Name: mainTheme
+Theme URI: -
+Author: -
+Author URI: -
+Description: Description
+ */
+
+ /* reset */
+ html, body, div, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0; /* обнуляем внешние отступы */
+    padding: 0; /* обнуляем внутренние отступы */
+    border: 0; /* убираем бордюры */
+    outline: 0; /* убираем контуры */
+}
+body {
+    line-height: 1; /* устанавливаем базовую высоту */
+}
+ol, ul {
+    list-style: none; /* убираем маркеры для нумерованных и обычных списков */
+}
+a,
+a:hover,
+a:active,
+a:focus {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/*  to fix footer to the page bottom if not enough content
+___________________________________________________________________________  */

@@ -15,7 +15,9 @@ class DatabaseSeeder extends Seeder
 
         $this->call(UsersTableSeeder::class);
         $this->call(SpecialistsTableSeeder::class);
-        $this->call(DaysSeeder::class);
         $this->call(StatusTableSeeder::class);
+        $this->call(PhotosTableSeeder::class);
+        $this->call(VideosTableSeeder::class);
+        $this->call(TextsTableSeeder::class);
     }
 }

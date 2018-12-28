@@ -9,11 +9,11 @@
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'/>
 
     <!-- Styles -->
-    <link rel="stylesheet" href=<?php echo e(asset("font-awesome-4.2.0/css/font-awesome.css")); ?> type="text/css"/>
+    <link rel="stylesheet" href={{asset("font-awesome-4.2.0/css/font-awesome.css")}} type="text/css"/>
     <!-- Font Awesome -->
-    <link rel="stylesheet" href=<?php echo e(asset('css/bootstrap1.css')); ?> type="text/css"/><!-- Bootstrap -->
-    <link rel="stylesheet" href=<?php echo e(asset('css/style.css')); ?> type="text/css"/><!-- Style -->
-    <link rel="stylesheet" href=<?php echo e(asset('css/responsive.css')); ?> type="text/css"/><!-- Responsive -->
+    <link rel="stylesheet" href={{asset('css/bootstrap1.css')}} type="text/css"/><!-- Bootstrap -->
+    <link rel="stylesheet" href={{asset('css/style.css')}} type="text/css"/><!-- Style -->
+    <link rel="stylesheet" href={{asset('css/responsive.css')}} type="text/css"/><!-- Responsive -->
 
 </head>
 <body>
@@ -34,12 +34,12 @@
 
         <div class="dropdown profile">
             <a title="">
-                <img alt=""/><?php echo e($user->name); ?><i class="caret"></i>
+                <img alt=""/>{{$user->name}}<i class="caret"></i>
             </a>
             <div class="profile drop-list">
                 <ul>
-                    
-                    <li><a href=<?php echo e(route('logout')); ?> title=""><i class="fa fa-info"></i>Logout</a></li>
+                    {{--<li><a href="profile.html" title=""><i class="fa fa-user"></i> Profile</a></li>--}}
+                    <li><a href={{ route('logout') }} title=""><i class="fa fa-info"></i>Logout</a></li>
                 </ul>
             </div><!-- Profile DropDown -->
 
@@ -51,34 +51,64 @@
             <div class="menu-sec">
                 <div id="menu-toogle" class="menus">
                     <div class="single-menu">
-                        <?php if (! ($user->hasRole('moderator|logistics|manager'))): ?>
-                            <h2><a title=""><i class="fa fa-user"></i><span>Users</span></a></h2>
+                        @unless ($user->hasRole('moderator|logistics|manager'))
+                            <h2><a title=""><i class="fa fa-user"></i><span>Пользователи</span></a></h2>
                             <div class="sub-menu">
 
                                 <ul>
-                                    <li><a href="<?php echo e(route('viewUsers')); ?>" title="">View users</a></li>
-                                    <li><a href="<?php echo e(route('createUser')); ?>" title="">Create user</a></li>
-                                    
-                                    
-                                    
-                                    
+                                    <li><a href="{{route('viewUsers')}}" title="">Все пользователи</a></li>
+                                    <li><a href="{{route('createUser')}}" title="">Создать пользователя</a></li>
+                                    {{--@unless ($user->hasRole('junior_admin'))--}}
+                                    {{--<li><a href="dashboard2.html" title="">Edit user</a></li>--}}
+                                    {{--<li><a href="dashboard4.html" title="">Delete user</a></li>--}}
+                                    {{--@endunless--}}
                                 </ul>
                             </div>
                     </div>
-                    <?php endif; ?>
+                    @endunless
                     <div class="single-menu">
-                        <h2><a title=""><i class="fa fa-desktop"></i><span>Orders</span></a></h2>
+                        <h2><a title=""><i class="fa fa-desktop"></i><span>Заказы</span></a></h2>
                         <div class="sub-menu">
                             <ul>
-                                <li><a href="blank.html" title="">View orders</a></li>
+                                <li><a href="blank.html" title="">Все заказы</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="single-menu">
-                        <h2><a title=""><i class="fa fa-desktop"></i><span>Applications</span></a></h2>
+                        <h2><a title=""><i class="fa fa-desktop"></i><span>Заявки</span></a></h2>
                         <div class="sub-menu">
                             <ul>
-                                <li><a href="<?php echo e(route('viewApplications')); ?>" title="">View applications</a></li>
+                                <li><a href="{{route('viewApplications')}}" title="">Все заявки</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="single-menu">
+                        <h2><a title=""><i class="fa fa-paperclip"></i><span>Галерея</span></a></h2>
+                        <div class="sub-menu">
+                            <ul>
+                                <li><a href="{{route('createPhoto')}}" title="">Добавить фотографию</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="{{route('viewPhoto')}}" title="">Все фотографии</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="single-menu">
+                        <h2><a title=""><i class="fa fa-paperclip"></i><span>Видео</span></a></h2>
+                        <div class="sub-menu">
+                            <ul>
+                                <li><a href="{{route('viewVideos')}}" title="">Все видео</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="single-menu">
+                        <h2><a title=""><i class="fa fa-paperclip"></i><span>Текст</span></a></h2>
+                        <div class="sub-menu">
+                            <ul>
+                                <li><a href="{{route('viewAdvantages')}}" title="">Преимущества</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="{{route('viewAdvantages')}}" title="">Компании</a></li>
                             </ul>
                         </div>
                     </div>
@@ -96,7 +126,7 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="main-title">
-                                <h1>Update account</h1>
+                                <h1>Редактирование аккаунта</h1>
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -104,124 +134,57 @@
                     </div>
                 </div><!-- title Date Range -->
                 <div class="row">
-                    <form action="<?php echo e(url('admin/updateApplication')); ?>" method="post">
+                    <form action="{{url('admin/updateAccount')}}" method="post">
                         <div class="masonary-grids">
                             <div class="col-md-12">
                                 <div class="widget-area">
                                     <div class="wizard-form-h">
                                         <form id="step-1">
-                                            <h2 class="StepTitle">Account Information</h2>
+                                            <h2 class="StepTitle">Информация об аккаунте</h2>
                                             <div class="col-md-6">
                                                 <div class="inline-form">
 
-                                                    <label class="c-label">Application owner</label><input
+                                                    <label class="c-label">Имя</label><input
                                                             id="nameacc"
                                                             class="input-style"
                                                             type="text"
                                                             name="name"
-                                                            value="<?php echo e($application[0]->fullName); ?>" disabled="true"/>
+                                                            value="{{$userData[0]->name}}"/>
                                                 </div>
                                             </div>
-                                            <input type="hidden" name="applicationId" value="<?php echo e($application[0]->id); ?>">
+                                            <input type="hidden" name="userId" value="{{$userData[0]->id}}">
                                             <div class="col-md-6">
                                                 <div class="inline-form">
 
                                                     <label for="email" class="control-label"></label><label
-                                                            class="c-label">Owners email</label><input
+                                                            class="c-label">Email</label><input
                                                             id="emailacc"
                                                             type="text"
                                                             name="email"
-                                                            value="<?php echo e($application[0]->email); ?>"
-                                                            disabled="true"/>
+                                                            value="{{$userData[0]->email}}"
+                                                    />
 
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="inline-form">
-
-                                                    <label for="phone" class="control-label"></label><label
-                                                            class="c-label">Owners phone</label><input
-                                                            id="phone"
-                                                            type="text"
-                                                            name="phone"
-                                                            value="<?php echo e($application[0]->telephone); ?>"
-                                                    disabled="true"/>
-
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="inline-form">
-
-                                                    <label for="start time" class="control-label"></label><label
-                                                            class="c-label">Start time</label><input
-                                                            id="startTime"
-                                                            type="text"
-                                                            name="startTime"
-                                                            value="<?php echo e($application[0]->start_time); ?>"
-                                                            disabled/>
-
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="inline-form">
-
-                                                    <label for="phone" class="control-label"></label><label
-                                                            class="c-label">End time</label><input
-                                                            id="endTime"
-                                                            type="text"
-                                                            name="endTime"
-                                                            value="<?php echo e($application[0]->end_time); ?>"
-                                                            disabled="true"/>
-
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="inline-form">
-                                                    <label class="c-label">Select status</label>
-                                                    <select name="status">
-                                                        <?php $__currentLoopData = $statuses; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $value): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                                                            <option id="<?php echo e($value->id); ?>" value="<?php echo e($value->id); ?>"><?php echo e($value->status); ?></option>
-                                                            <?php if($value->id === $application[0]->application_status_id): ?>
-                                                                <script>document.getElementById("<?php echo e($value->id); ?>").selected = true</script>
-                                                            <?php endif; ?>
-                                                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-                                                    </select>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-md-6">
-                                                <div class="inline-form">
-                                                    <label class="c-label">Select specialist</label>
-                                                    <select name="specialists">
-                                                        <?php $__currentLoopData = $specialists; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $value): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                                                            <option id="<?php echo e($value->id+11); ?>" value="<?php echo e($value->id); ?>"><?php echo e($value->specialist); ?></option>
-                                                            <?php if($value->id === $application[0]->specialist_id): ?>
-                                                                <script>document.getElementById("<?php echo e($value->id+11); ?>").selected = true</script>
-                                                            <?php endif; ?>
-                                                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                                                    <label class="c-label">Роль</label>
+                                                    <select name="role">
+                                                        @foreach($role as $value)
+                                                            @if($value->name === 'junior_admin' and $user->hasRole('junior_admin'))
+                                                                @continue;
+                                                            @endif
+                                                            <option value="{{$value->id}}">{{$value->display_name}}</option>
+                                                        @endforeach
                                                     </select>
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="inline-form">
-                                                    <label class="c-label">Day</label>
-                                                    <select id="day" name="days">
-                                                        <?php $__currentLoopData = $days; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $value): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                                                            <option id="<?php echo e($value->id+21); ?>" value="<?php echo e($value->id); ?>"><?php echo e($value->day); ?></option>
-                                                            <?php if($value->id === $application[0]->day_for_call_id): ?>
-                                                                <script>document.getElementById("<?php echo e($value->id+21); ?>").selected = true</script>
-                                                            <?php endif; ?>
-                                                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-                                                    </select>
+                                                    <button type="submit" class="btn btn-success">Сохранить</button>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
-                                                <div class="inline-form">
-                                                    <button type="submit" class="btn btn-success">Update</button>
-                                                </div>
-                                            </div>
-                                        <?php echo e(csrf_field()); ?>
-
+                                        {{ csrf_field()}}
 
                                     </div>
 
@@ -342,21 +305,21 @@
 
 
 <!-- Script -->
-
-
-
-
-
-
-
-
-
-
-
-<script type="text/javascript" src=<?php echo e(asset("js/admin/jquery-1.11.1.js")); ?>></script>
-<script type="text/javascript" src=<?php echo e(asset("js/admin/script.js")); ?>></script>
-<script type="text/javascript" src=<?php echo e(asset("js/admin/bootstrap.js")); ?>></script>
-<script type="text/javascript" src=<?php echo e(asset("js/admin/enscroll.js")); ?>></script>
+{{--<script type="text/javascript" src={{asset("js/modernizr.js")}}></script>--}}
+{{--<script type="text/javascript" src={{asset("js/jquery-1.11.1.js")}}></script>--}}
+{{--<script type="text/javascript" src={{asset("js/script.js")}}></script>--}}
+{{--<script type="text/javascript" src={{asset("js/bootstrap.js")}}></script>--}}
+{{--<script type="text/javascript" src={{asset("js/enscroll.js")}}></script>--}}
+{{--<script type="text/javascript" src={{asset("js/grid-filter.js")}}></script>--}}
+{{--<script type="text/javascript" src={{asset("js/jquery.smartWizard.js")}}></script>--}}
+{{--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>--}}
+{{--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>--}}
+{{--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>--}}
+<script type="text/javascript" src={{asset("js/admin/disableDiv.js")}}></script>
+<script type="text/javascript" src={{asset("js/admin/jquery-1.11.1.js")}}></script>
+<script type="text/javascript" src={{asset("js/admin/script.js")}}></script>
+<script type="text/javascript" src={{asset("js/admin/bootstrap.js")}}></script>
+<script type="text/javascript" src={{asset("js/admin/enscroll.js")}}></script>
 
 </body>
 </html>

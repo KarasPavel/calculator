@@ -2118,6 +2118,18 @@
 				}, 650);
 			}
 		});
+
+		$('.next__block').click(function() {
+			if (refThis._core.settings.autoHeight) {
+				if (refThis._intervalId != null) {
+					clearTimeout(refThis._intervalId);
+				}
+	
+				refThis._intervalId = setTimeout(function() {
+					refThis.update();
+				}, 650);
+			}
+		});
 	};
 	
 	//......................................

@@ -52,12 +52,12 @@
                 <div id="menu-toogle" class="menus">
                     <div class="single-menu">
                         @unless ($user->hasRole('moderator|logistics|manager'))
-                            <h2><a title=""><i class="fa fa-user"></i><span>Users</span></a></h2>
+                            <h2><a title=""><i class="fa fa-user"></i><span>Пользователи</span></a></h2>
                             <div class="sub-menu">
 
                                 <ul>
-                                    <li><a href="{{route('viewUsers')}}" title="">View users</a></li>
-                                    <li><a href="{{route('createUser')}}" title="">Create user</a></li>
+                                    <li><a href="{{route('viewUsers')}}" title="">Все пользователи</a></li>
+                                    <li><a href="{{route('createUser')}}" title="">Создать пользователя</a></li>
                                     {{--@unless ($user->hasRole('junior_admin'))--}}
                                     {{--<li><a href="dashboard2.html" title="">Edit user</a></li>--}}
                                     {{--<li><a href="dashboard4.html" title="">Delete user</a></li>--}}
@@ -67,18 +67,48 @@
                     </div>
                     @endunless
                     <div class="single-menu">
-                        <h2><a title=""><i class="fa fa-desktop"></i><span>Orders</span></a></h2>
+                        <h2><a title=""><i class="fa fa-desktop"></i><span>Заказы</span></a></h2>
                         <div class="sub-menu">
                             <ul>
-                                <li><a href="blank.html" title="">View orders</a></li>
+                                <li><a href="blank.html" title="">Все заказы</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="single-menu">
-                        <h2><a title=""><i class="fa fa-desktop"></i><span>Applications</span></a></h2>
+                        <h2><a title=""><i class="fa fa-desktop"></i><span>Заявки</span></a></h2>
                         <div class="sub-menu">
                             <ul>
-                                <li><a href="{{route('viewApplications')}}" title="">View applications</a></li>
+                                <li><a href="{{route('viewApplications')}}" title="">Все заявки</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="single-menu">
+                        <h2><a title=""><i class="fa fa-paperclip"></i><span>Галерея</span></a></h2>
+                        <div class="sub-menu">
+                            <ul>
+                                <li><a href="{{route('createPhoto')}}" title="">Добавить фотографию</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="{{route('viewPhoto')}}" title="">Все фотографии</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="single-menu">
+                        <h2><a title=""><i class="fa fa-paperclip"></i><span>Видео</span></a></h2>
+                        <div class="sub-menu">
+                            <ul>
+                                <li><a href="{{route('viewVideos')}}" title="">Все видео</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="single-menu">
+                        <h2><a title=""><i class="fa fa-paperclip"></i><span>Текст</span></a></h2>
+                        <div class="sub-menu">
+                            <ul>
+                                <li><a href="{{route('viewAdvantages')}}" title="">Преимущества</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="{{route('viewAdvantages')}}" title="">Компании</a></li>
                             </ul>
                         </div>
                     </div>
@@ -96,7 +126,7 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="main-title">
-                                <h1>Update account</h1>
+                                <h1>Редактирование аккаунта</h1>
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -110,11 +140,11 @@
                                 <div class="widget-area">
                                     <div class="wizard-form-h">
                                         <form id="step-1">
-                                            <h2 class="StepTitle">Account Information</h2>
+                                            <h2 class="StepTitle">Информация об аккаунте</h2>
                                             <div class="col-md-6">
                                                 <div class="inline-form">
 
-                                                    <label class="c-label">Account Name</label><input
+                                                    <label class="c-label">Имя</label><input
                                                             id="nameacc"
                                                             class="input-style"
                                                             type="text"
@@ -127,7 +157,7 @@
                                                 <div class="inline-form">
 
                                                     <label for="email" class="control-label"></label><label
-                                                            class="c-label">Account Email</label><input
+                                                            class="c-label">Email</label><input
                                                             id="emailacc"
                                                             type="text"
                                                             name="email"
@@ -138,7 +168,7 @@
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="inline-form">
-                                                    <label class="c-label">Select Role</label>
+                                                    <label class="c-label">Роль</label>
                                                     <select name="role">
                                                         @foreach($role as $value)
                                                             @if($value->name === 'junior_admin' and $user->hasRole('junior_admin'))
@@ -151,7 +181,7 @@
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="inline-form">
-                                                    <button type="submit" class="btn btn-success">Update</button>
+                                                    <button type="submit" class="btn btn-success">Сохранить</button>
                                                 </div>
                                             </div>
                                         {{ csrf_field()}}

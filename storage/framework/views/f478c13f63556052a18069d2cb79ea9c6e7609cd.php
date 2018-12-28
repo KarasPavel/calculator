@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>Veditex</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
           integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
@@ -16,7 +16,7 @@
 
 
 </head>
-<body style='overflow-x:hidden;'>
+<body class="">
 <div id="p_prldr">
     <div class="contpre"><i class=" svg_anm fab fa-vuejs"></i></div>
 </div>
@@ -174,7 +174,7 @@
                         <a data-fancybox data-src="#selectableModal2" href="javascript:;" class="">
                             <div class="services_items">
                                 <img src="images/product2.png" alt="1">
-                                <p>резка стекла на заказ</p>
+                                <p>замеры и консультации</p>
                             </div>
                         </a>
                         <div style="display: none;max-width:50%;border-spacing: " id="selectableModal2">
@@ -202,7 +202,7 @@
                         <a data-fancybox data-src="#selectableModal3" href="javascript:;" class="">
                             <div class="services_items">
                                 <img src="images/product3.png" alt="1">
-                                <p>резка стекла на заказ</p>
+                                <p>сверление отверстий</p>
                             </div>
                         </a>
                         <div style="display: none;max-width:50%;border-spacing: " id="selectableModal3">
@@ -230,7 +230,7 @@
                         <a data-fancybox data-src="#selectableModal4" href="javascript:;" class="">
                             <div class="services_items">
                                 <img src="images/product4.png" alt="1">
-                                <p>резка стекла на заказ</p>
+                                <p>обработка кромок</p>
                             </div>
                         </a>
                         <div style="display: none;max-width:50%;border-spacing: " id="selectableModal4">
@@ -260,7 +260,7 @@
                         <a data-fancybox data-src="#selectableModal5" href="javascript:;" class="">
                             <div class="services_items">
                                 <img src="images/product5.png" alt="1">
-                                <p>резка стекла на заказ</p>
+                                <p>UV(УФ) склейка</p>
                             </div>
                         </a>
                         <div style="display: none;max-width:50%;border-spacing: " id="selectableModal5">
@@ -288,7 +288,7 @@
                         <a data-fancybox data-src="#selectableModal6" href="javascript:;" class="">
                             <div class="services_items">
                                 <img src="images/product6.png" alt="1">
-                                <p>резка стекла на заказ</p>
+                                <p>матовка стекла (пескоструй)</p>
                             </div>
                         </a>
                         <div style="display: none;max-width:50%;border-spacing: " id="selectableModal6">
@@ -316,7 +316,7 @@
                         <a data-fancybox data-src="#selectableModal7" href="javascript:;" class="">
                             <div class="services_items">
                                 <img src="images/product7.png" alt="1">
-                                <p>резка стекла на заказ</p>
+                                <p>покраска по RAL</p>
                             </div>
                         </a>
                         <div style="display: none;max-width:50%;border-spacing: " id="selectableModal7">
@@ -344,7 +344,7 @@
                         <a data-fancybox data-src="#selectableModal8" href="javascript:;" class="">
                             <div class="services_items">
                                 <img src="images/product8.png" alt="1">
-                                <p>резка стекла на заказ</p>
+                                <p>триплекс, бронирование</p>
                             </div>
                         </a>
                         <div style="display: none;max-width:50%;border-spacing: " id="selectableModal8">
@@ -374,7 +374,7 @@
                         <a data-fancybox data-src="#selectableModal9" href="javascript:;" class="">
                             <div class="services_items">
                                 <img src="images/product9.png" alt="1">
-                                <p>резка стекла на заказ</p>
+                                <p>закалка (термоупрочнение стекла)</p>
                             </div>
                         </a>
                         <div style="display: none;max-width:50%;border-spacing: " id="selectableModal9">
@@ -402,7 +402,7 @@
                         <a data-fancybox data-src="#selectableModal10" href="javascript:;" class="">
                             <div class="services_items">
                                 <img src="images/product10.png" alt="1">
-                                <p>резка стекла на заказ</p>
+                                <p>фотопечать (УФ-технология)</p>
                             </div>
                         </a>
                         <div style="display: none;max-width:50%;border-spacing: " id="selectableModal10">
@@ -430,7 +430,7 @@
                         <a data-fancybox data-src="#selectableModal11" href="javascript:;" class="">
                             <div class="services_items">
                                 <img src="images/product11.png" alt="1">
-                                <p>резка стекла на заказ</p>
+                                <p>профессиональный монтаж</p>
                             </div>
                         </a>
                         <div style="display: none;max-width:50%;border-spacing: " id="selectableModal11">
@@ -458,7 +458,7 @@
                         <a data-fancybox data-src="#selectableModal12" href="javascript:;" class="">
                             <div class="services_items">
                                 <img src="images/product12.png" alt="1">
-                                <p>резка стекла на заказ</p>
+                                <p>доставка стеклоизделий</p>
                             </div>
                         </a>
                         <div style="display: none;max-width:50%;border-spacing: " id="selectableModal12">
@@ -490,7 +490,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="advantages">
-                            <h2>наши преемущества</h2>
+                            <h2>наши преимущества</h2>
                         </div>
                     </div>
                 </div>
@@ -541,8 +541,13 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="video_glass">
-                            <iframe src="" frameborder="0"></iframe>
+                        <div class="video_glass d-flex">
+                            <iframe width="50%" height="335px"
+                                    src=<?php echo e($video[0]->video); ?>
+
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
                             <img src="images/glass_img.png" alt="">
                         </div>
                     </div>
@@ -663,11 +668,11 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="stairs_and_flooring_buttons d-flex">
+                        <div class="stairs_and_flooring_buttons stairs_and_flooring_buttons4 d-flex">
                             <ul class="nav nav-tabs" id="myTab" role="tablist">
                                 <li class="nav-item">
                                     <a class="nav-link active" data-toggle="tab" href="#home" role="tab"
-                                       aria-controls="home">Лестници</a>
+                                       aria-controls="home">Лестницы</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" data-toggle="tab" href="#profile" role="tab"
@@ -687,236 +692,52 @@
                 </div>
                 <div class="tab-content">
                     <div class="tab-pane active" id="home" role="tabpanel">
-                        <a data-fancybox="gallery" href="images/Stairs/1/1.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Stairs/1/1.jpg">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery" href="images/Stairs/1/2.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Stairs/1/2.jpg">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery" href="images/Stairs/1/5.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Stairs/1/5.jpg">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery" href="images/Stairs/1/6.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Stairs/1/6.jpg">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery" href="images/Stairs/1/7.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Stairs/1/7.jpg">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery" href="images/Stairs/1/8.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Stairs/1/8.jpg">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery" href="images/Stairs/1/9.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Stairs/1/9.jpg">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery" href="images/Stairs/1/10.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Stairs/1/10.jpg">
-                                <p></p>
-                            </div>
-                        </a>
-                        <?php if($user && $user->hasRole('admin|junior_admin|moderator')): ?>
-                            <a data-fancybox="gallery" href="images/AddImage.jpg">
-                                <div class="img_items_stairs">
-                                    <img src="images/AddImage.jpg">
-                                    <p></p>
-                                </div>
-                            </a>
-                        <?php endif; ?>
+                        <?php $__currentLoopData = $photo; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $value): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                            <?php if($value->type === 'лестницы'): ?>
+                                <a data-fancybox="gallery" href="<?php echo e($value->photo); ?>">
+                                    <div class="img_items_stairs">
+                                        <img src="<?php echo e($value->photo); ?>">
+                                        <p></p>
+                                    </div>
+                                </a>
+                            <?php endif; ?>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                     </div>
                     <div class="tab-pane" id="profile" role="tabpanel">
-                        <a data-fancybox="gallery1" href="images/Stairs/2/1.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Stairs/2/1.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery1" href="images/Stairs/2/2.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Stairs/2/2.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery1" href="images/Stairs/2/3.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Stairs/2/3.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery1" href="images/Stairs/2/5.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Stairs/2/5.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery1" href="images/Stairs/2/6.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Stairs/2/6.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery1" href="images/Stairs/2/7.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Stairs/2/7.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery1" href="images/Stairs/2/8.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Stairs/2/8.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery1" href="images/Stairs/2/9.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Stairs/2/9.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery1" href="images/Stairs/2/10.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Stairs/2/10.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
+                        <?php $__currentLoopData = $photo; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $value): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                            <?php if($value->type === 'полы'): ?>
+                                <a data-fancybox="gallery1" href="<?php echo e($value->photo); ?>">
+                                    <div class="img_items_stairs">
+                                        <img src="<?php echo e($value->photo); ?>" alt="1">
+                                        <p></p>
+                                    </div>
+                                </a>
+                            <?php endif; ?>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                     </div>
                     <div class="tab-pane" id="messages" role="tabpanel">
-                        <a data-fancybox="gallery3" href="images/Stairs/3/1.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Stairs/3/1.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery3" href="images/Stairs/3/2.JPG">
-                            <div class="img_items_stairs">
-                                <img src="images/Stairs/3/2.JPG" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery3" href="images/Stairs/3/3.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Stairs/3/3.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery3" href="images/Stairs/3/5.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Stairs/3/5.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery3" href="images/Stairs/3/6.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Stairs/3/6.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery3" href="images/Stairs/3/7.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Stairs/3/7.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery3" href="images/Stairs/3/8.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Stairs/3/8.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery3" href="images/Stairs/3/9.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Stairs/3/9.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery3" href="images/Stairs/3/10.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Stairs/3/10.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
+                        <?php $__currentLoopData = $photo; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $value): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                            <?php if($value->type === 'бронирование'): ?>
+                                <a data-fancybox="gallery3" href="<?php echo e($value->photo); ?>">
+                                    <div class="img_items_stairs">
+                                        <img src="<?php echo e($value->photo); ?>" alt="1">
+                                        <p></p>
+                                    </div>
+                                </a>
+                            <?php endif; ?>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                     </div>
                     <div class="tab-pane" id="settings" role="tabpanel">
-                        <a data-fancybox="gallery3" href="images/Stairs/4/1.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Stairs/4/1.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery3" href="images/Stairs/4/2.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Stairs/4/2.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery3" href="images/Stairs/4/3.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Stairs/4/3.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery3" href="images/Stairs/4/4.JPG">
-                            <div class="img_items_stairs">
-                                <img src="images/Stairs/4/4.JPG" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery3" href="images/Stairs/4/5.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Stairs/4/5.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery3" href="images/Stairs/4/6.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Stairs/4/6.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery3" href="images/Stairs/4/7.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Stairs/4/7.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery3" href="images/Stairs/4/8.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Stairs/4/8.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery3" href="images/Stairs/4/9.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Stairs/4/9.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery3" href="images/Stairs/4/10.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Stairs/4/10.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
+                        <?php $__currentLoopData = $photo; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $value): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                            <?php if($value->type === 'эксклюзив'): ?>
+                                <a data-fancybox="gallery3" href="<?php echo e($value->photo); ?>">
+                                    <div class="img_items_stairs">
+                                        <img src="<?php echo e($value->photo); ?>" alt="1">
+                                        <p></p>
+                                    </div>
+                                </a>
+                            <?php endif; ?>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                     </div>
                 </div>
             </div>
@@ -932,10 +753,19 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="video_our">
-                            
-                            <iframe src="" frameborder="0"></iframe>
-                            <iframe src="" frameborder="0"></iframe>
+                        <div class="video_our d-flex">
+                            <iframe width="560" height="315"
+                                    src=<?php echo e($video[1]->video); ?>
+
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            <iframe width="560" height="315"
+                                    src=<?php echo e($video[2]->video); ?>
+
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
@@ -953,50 +783,35 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-12">
-                        <form action="<?php echo e(url('createApplications')); ?>" method="post" id="callForm2">
-                            <div class="up_form">
-                                <input type="text" name="fullName" placeholder="ФИО" id="fullName2" required>
-                                <input type="tel" id="phone2" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                                       placeholder="phone _(___)___-____" required>
+                        <div class="up_form">
+                            <input type="text" placeholder="Your name">
+                            <input type="text" placeholder="Your name">
+                        </div>
+                        <div class="down_form">
+                            <input type="text" placeholder="EMail">
+                            <div class="day">
+                                <span><a href="#">Пн</a></span>
+                                <span>Вт</span>
+                                <span>Ср</span>
+                                <span>Чт</span>
+                                <span>Пт</span>
+                                <span>Сб</span>
+                                <span>Вс</span>
                             </div>
-                            <div class="down_form">
-                                <input type="text" id='formEmail2' name="email" placeholder="email(необязательно)">
-                                <div class="day">
-                                    <span><a value="1" name="dayChoice" id="dayChoice20"
-                                             onclick="dayChecked('dayChoice20')">Пн</a></span>
-                                    <span><a value="2" name="dayChoice" id="dayChoice21"
-                                             onclick="dayChecked('dayChoice21')">Вт</a></span>
-                                    <span><a value="3" name="dayChoice" id="dayChoice22"
-                                             onclick="dayChecked('dayChoice22')">Ср</a></span>
-                                    <span><a value="4" name="dayChoice" id="dayChoice23"
-                                             onclick="dayChecked('dayChoice23')">Чт</a></span>
-                                    <span><a value="5" name="dayChoice" id="dayChoice24"
-                                             onclick="dayChecked('dayChoice24')">Пт</a></span>
-                                    <span><a value="6" name="dayChoice" id="dayChoice25"
-                                             onclick="dayChecked('dayChoice25')">Сб</a></span>
-                                    <span><a value="7" name="dayChoice" id="dayChoice26"
-                                             onclick="dayChecked('dayChoice26')">Вс</a></span>
-                                </div>
-                                <input type="hidden" id="hiddenDay" name="day">
-                                <div class="time1"><i class="far fa-clock"></i><br>
-                                    <p>Со<br> скольки</p></div>
-                                <input id="timeStart2" name="timeStart" value="00:44" type="time"
-                                       placeholder="Со скольки">
-                                <div class="time2"><i class="far fa-clock"></i><br>
-                                    <p>До <br>скольки</p></div>
-                                <input id="timeEnd2" name="timeEnd" value="00:44" type="time" placeholder="До Скольки">
-                            </div>
-                            <div class="checkbox">
-                                <label><input type="checkbox" id="checkbox2" v-model="checked"
-                                              onclick="checkedBOX2()"></label>
-                                
-                                <a>Cогласие с конфиденциальностью и куки</a>
-                            </div>
-                            <div class="button_forms button_forms_popup">
-                                <a id="callFormTeg2" onclick="formBotton()">Отправить</a>
-                            <?php echo e(csrf_field()); ?>
+                            <div class="time1"><i class="far fa-clock"></i><br>
+                                <p>Со<br> скольки</p></div>
+                            <div class="time2"><i class="far fa-clock"></i><br>
+                                <p>До <br>скольки</p></div>
 
-                        </form>
+
+                        </div>
+                        <div class="checkbox">
+                            <input type="checkbox" id="checkbox" v-model="checked">
+                            <label for="checkbox"><a href="#">Cогласие с конфиденциальностью и куки</a></label>
+                        </div>
+                        <div class="button_forms">
+                            <a class="" href="#">отправить</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1040,7 +855,7 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="stairs_and_flooring_buttons d-flex">
+                        <div class="stairs_and_flooring_buttons  d-flex">
                             <ul class="nav nav-tabs" id="myTab" role="tablist">
                                 <li class="nav-item">
                                     <a class="nav-link active" data-toggle="tab" href="#page2_home" role="tab"
@@ -1095,447 +910,101 @@
                     </div>
                 </div>
                 <div class="tab-content">
-
                     <div class="tab-pane active" id="page2_home" role="tabpanel">
-                        <a data-fancybox="gallery_Showers" href="images/Showers/1/1.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Showers/1/1.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Showers" href="images/Showers/1/2.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Showers/1/2.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Showers" href="images/Showers/1/3.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Showers/1/3.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Showers" href="images/Showers/1/4.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Showers/1/4.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Showers" href="images/Showers/1/5.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Showers/1/5.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Showers" href="images/Showers/1/6.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Showers/1/6.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Showers" href="images/Showers/1/7.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Showers/1/7.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Showers" href="images/Showers/1/8.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Showers/1/8.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Showers" href="images/Showers/1/9.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Showers/1/9.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Showers" href="images/Showers/1/10.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Showers/1/10.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
+                        <?php $__currentLoopData = $photo; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $value): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                            <?php if($value->type === 'угловые и фигурные'): ?>
+                                <a data-fancybox="gallery_Showers" href="<?php echo e($value->photo); ?>">
+                                    <div class="img_items_stairs">
+                                        <img src="<?php echo e($value->photo); ?>" alt="1">
+                                        <p></p>
+                                    </div>
+                                </a>
+                            <?php endif; ?>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                     </div>
                     <div class="tab-pane" id="page2_profile" role="tabpanel">
-                        <a data-fancybox="gallery_Showers2" href="images/Showers/2/1 (2).jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Showers/2/1 (2).jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Showers2" href="images/Showers/2/2.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Showers/2/2.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Showers2" href="images/Showers/2/3.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Showers/2/3.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Showers2" href="images/Showers/2/4.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Showers/2/4.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Showers2" href="images/Showers/2/5.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Showers/2/5.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Showers2" href="images/Showers/2/6.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Showers/2/6.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Showers2" href="images/Showers/2/7.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Showers/2/7.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Showers2" href="images/Showers/2/8.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Showers/2/8.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Showers2" href="images/Showers/2/9.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Showers/2/9.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Showers2" href="images/Showers/2/10.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Showers/2/10.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
+                        <?php $__currentLoopData = $photo; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $value): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                            <?php if($value->type === 'прямые душевые'): ?>
+                                <a data-fancybox="gallery_Showers2" href="<?php echo e($value->photo); ?>">
+                                    <div class="img_items_stairs">
+                                        <img src="<?php echo e($value->photo); ?>" alt="1">
+                                        <p></p>
+                                    </div>
+                                </a>
+                            <?php endif; ?>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                     </div>
                     <div class="tab-pane" id="page2_messages" role="tabpanel">
-                        <a data-fancybox="gallery_Showers1" href="images/Showers/3/1.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Showers/3/1.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Showers1" href="images/Showers/3/2.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Showers/3/2.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Showers1" href="images/Showers/3/3.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Showers/3/3.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Showers1" href="images/Showers/3/4.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Showers/3/4.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Showers1" href="images/Showers/3/6.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Showers/3/6.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
+                        <?php $__currentLoopData = $photo; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $value): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                            <?php if($value->type === 'форма трапеции'): ?>
+                                <a data-fancybox="gallery_Showers1" href="<?php echo e($value->photo); ?>">
+                                    <div class="img_items_stairs">
+                                        <img src="<?php echo e($value->photo); ?>" alt="1">
+                                        <p></p>
+                                    </div>
+                                </a>
+                            <?php endif; ?>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                     </div>
                     <div class="tab-pane" id="page2_settings" role="tabpanel">
-                        <a data-fancybox="gallery_Showers3" href="images/Showers/4/1.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Showers/4/1.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Showers3" href="images/Showers/4/2.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Showers/4/2.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Showers3" href="images/Showers/4/7.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Showers/4/7.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Showers3" href="images/Showers/4/8.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Showers/4/8.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Showers3" href="images/Showers/4/9.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Showers/4/9.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Showers3" href="images/Showers/4/10.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Showers/4/10.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
+                        <?php $__currentLoopData = $photo; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $value): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                            <?php if($value->type === 'двери ниша'): ?>
+                                <a data-fancybox="gallery_Showers3" href="<?php echo e($value->photo); ?>">
+                                    <div class="img_items_stairs">
+                                        <img src="<?php echo e($value->photo); ?>" alt="1">
+                                        <p></p>
+                                    </div>
+                                </a>
+                            <?php endif; ?>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                     </div>
                     <div class="tab-pane" id="page2_settings1" role="tabpanel">
-                        <a data-fancybox="gallery_Showers4" href="images/Showers/5/1.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Showers/5/1.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a><a data-fancybox="gallery_Showers4" href="images/Showers/5/2.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Showers/5/2.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Showers4" href="images/Showers/5/3.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Showers/5/3.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Showers4" href="images/Showers/5/4.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Showers/5/4.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Showers4" href="images/Showers/5/5.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Showers/5/5.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Showers4" href="images/Showers/5/6.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Showers/5/6.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Showers4" href="images/Showers/5/7.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Showers/5/7.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Showers4" href="images/Showers/5/8.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Showers/5/8.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Showers4" href="images/Showers/5/9.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Showers/5/9.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Showers4" href="images/Showers/5/10.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Showers/5/10.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
+                        <?php $__currentLoopData = $photo; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $value): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                            <?php if($value->type === 'глухие перегородки'): ?>
+                                <a data-fancybox="gallery_Showers4" href="<?php echo e($value->photo); ?>">
+                                    <div class="img_items_stairs">
+                                        <img src="<?php echo e($value->photo); ?>" alt="1">
+                                        <p></p>
+                                    </div>
+                                </a>
+                            <?php endif; ?>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                     </div>
                     <div class="tab-pane" id="page2_settings2" role="tabpanel">
-                        <a data-fancybox="gallery_Showers5" href="images/Showers/6/1.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Showers/6/1.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Showers5" href="images/Showers/6/2.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Showers/6/2.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Showers5" href="images/Showers/6/3.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Showers/6/3.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Showers5" href="images/Showers/6/4.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Showers/6/4.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Showers5" href="images/Showers/6/5.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Showers/6/5.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Showers5" href="images/Showers/6/6.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Showers/6/6.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Showers5" href="images/Showers/6/7.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Showers/6/7.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Showers5" href="images/Showers/6/8.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Showers/6/8.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Showers5" href="images/Showers/6/9.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Showers/6/9.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Showers5" href="images/Showers/6/10.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Showers/6/10.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
+                        <?php $__currentLoopData = $photo; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $value): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                            <?php if($value->type === 'ограждения в ванную'): ?>
+                                <a data-fancybox="gallery_Showers5" href="<?php echo e($value->photo); ?>">
+                                    <div class="img_items_stairs">
+                                        <img src="<?php echo e($value->photo); ?>" alt="1">
+                                        <p></p>
+                                    </div>
+                                </a>
+                            <?php endif; ?>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                     </div>
                     <div class="tab-pane" id="page2_settings3" role="tabpanel">
-                        <a data-fancybox="gallery_Showers6" href="images/Showers/7/1.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Showers/7/1.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Showers6" href="images/Showers/7/2.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Showers/7/2.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Showers6" href="images/Showers/7/3.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Showers/7/3.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Showers6" href="images/Showers/7/4.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Showers/7/4.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Showers6" href="images/Showers/7/5.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Showers/7/5.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Showers6" href="images/Showers/7/7.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Showers/7/7.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Showers6" href="images/Showers/7/8.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Showers/7/8.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Showers6" href="images/Showers/7/9.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Showers/7/9.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Showers6" href="images/Showers/7/10.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Showers/7/10.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Showers6" href="images/Showers/7/11.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Showers/7/11.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
+                        <?php $__currentLoopData = $photo; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $value): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                            <?php if($value->type === 'с раздвижной дверью'): ?>
+                                <a data-fancybox="gallery_Showers6" href="<?php echo e($value->photo); ?>">
+                                    <div class="img_items_stairs">
+                                        <img src="<?php echo e($value->photo); ?>" alt="1">
+                                        <p></p>
+                                    </div>
+                                </a>
+                            <?php endif; ?>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                     </div>
                     <div class="tab-pane" id="page2_settings4" role="tabpanel">
-                        <a data-fancybox="gallery_Showers7" href="images/Showers/8/1.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Showers/8/1.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Showers7" href="images/Showers/8/2.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Showers/8/2.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Showers7" href="images/Showers/8/3.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Showers/8/3.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Showers7" href="images/Showers/8/4.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Showers/8/4.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Showers7" href="images/Showers/8/5.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Showers/8/5.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Showers7" href="images/Showers/8/6.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Showers/8/6.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Showers7" href="images/Showers/8/8.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Showers/8/8.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Showers7" href="images/Showers/8/9.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Showers/8/9.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Showers7" href="images/Showers/8/10.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Showers/8/10.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Showers7" href="images/Showers/8/11.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Showers/8/11.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
+                        <?php $__currentLoopData = $photo; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $value): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                            <?php if($value->type === 'эксклюзив и опт'): ?>
+                                <a data-fancybox="gallery_Showers7" href="<?php echo e($value->photo); ?>">
+                                    <div class="img_items_stairs">
+                                        <img src="<?php echo e($value->photo); ?>" alt="1">
+                                        <p></p>
+                                    </div>
+                                </a>
+                            <?php endif; ?>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                     </div>
                 </div>
             </div>
@@ -1551,9 +1020,19 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="video_our">
-                            <iframe src="" frameborder="0"></iframe>
-                            <iframe src="" frameborder="0"></iframe>
+                        <div class="video_our d-flex">
+                            <iframe width="560" height="315"
+                                    src=<?php echo e($video[3]->video); ?>
+
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            <iframe width="560" height="315"
+                                    src=<?php echo e($video[4]->video); ?>
+
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
@@ -1617,31 +1096,8 @@
                     <div class="col-lg-3 col-md-6">
                         <a data-fancybox data-src="#selectableModa_Company1" href="javascript:;" class="">
                             <div class="manufacture_items">
-                                <img src="images/proizvoditeli/proizavoditel1.png" alt="">
-                                <p>Название компании, Россия</p>
-                            </div>
-                        </a>
-                        <div style="display: none;max-width:50%;border-spacing: " id="selectableModa_Company1">
-                            <h2 class="fancybox_item_h2" data-selectable="true">Название компании</h2>
-                            <p class="fancybox_item_text" data-selectable="true">Давно выяснено, что при оценке дизайна
-                                и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что
-                                тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное
-                                распределение букв и пробелов в абзацах, которое не получается при простой дубликации
-                                "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.</p>
-                            <!-- <ul class="modal_list" data-selectable="true">
-									  <li>Размеры при изготовлении стекла и зеркал принимаются в миллиметрах (мм). Размеры - 1м = 100 см = 1000мм.</li>
-									  <li>Кромка стекла после резки очень острая и травмоопасная, так же стекло больше подвержено сколам и царапинам, поэтому рекомендуем обрабатывать кромки</li>
-								  </ul>
-								  <img class="fancybox_img" src="images/fancybox_img_1.png" alt=""> -->
-                            <!--  <img src="images/img_room.png" alt="">
-								  <img src="images/img_room.png" alt=""> -->
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <a data-fancybox data-src="#selectableModa_Company1" href="javascript:;" class="">
-                            <div class="manufacture_items">
                                 <img src="images/proizvoditeli/proizavoditel2.png" alt="">
-                                <p>Название компании, Россия</p>
+                                <p>Bohle | Германия</p>
                             </div>
                         </a>
                         <div style="display: none;max-width:50%;border-spacing: " id="selectableModa_Company1">
@@ -1652,19 +1108,19 @@
                                 распределение букв и пробелов в абзацах, которое не получается при простой дубликации
                                 "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.</p>
                             <!-- <ul class="modal_list" data-selectable="true">
-									  <li>Размеры при изготовлении стекла и зеркал принимаются в миллиметрах (мм). Размеры - 1м = 100 см = 1000мм.</li>
-									  <li>Кромка стекла после резки очень острая и травмоопасная, так же стекло больше подвержено сколам и царапинам, поэтому рекомендуем обрабатывать кромки</li>
-								  </ul>
-								  <img class="fancybox_img" src="images/fancybox_img_1.png" alt=""> -->
+								  <li>Размеры при изготовлении стекла и зеркал принимаются в миллиметрах (мм). Размеры - 1м = 100 см = 1000мм.</li>
+								  <li>Кромка стекла после резки очень острая и травмоопасная, так же стекло больше подвержено сколам и царапинам, поэтому рекомендуем обрабатывать кромки</li>
+							  </ul>
+							  <img class="fancybox_img" src="images/fancybox_img_1.png" alt=""> -->
                             <!--  <img src="images/img_room.png" alt="">
-								  <img src="images/img_room.png" alt=""> -->
+							  <img src="images/img_room.png" alt=""> -->
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <a data-fancybox data-src="#selectableModa_Company1" href="javascript:;" class="">
                             <div class="manufacture_items">
                                 <img src="images/proizvoditeli/proizavoditel3.png" alt="">
-                                <p>Название компании, Россия</p>
+                                <p>DORMA | Швейцария</p>
                             </div>
                         </a>
                         <div style="display: none;max-width:50%;border-spacing: " id="selectableModa_Company1">
@@ -1675,19 +1131,19 @@
                                 распределение букв и пробелов в абзацах, которое не получается при простой дубликации
                                 "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.</p>
                             <!-- <ul class="modal_list" data-selectable="true">
-									  <li>Размеры при изготовлении стекла и зеркал принимаются в миллиметрах (мм). Размеры - 1м = 100 см = 1000мм.</li>
-									  <li>Кромка стекла после резки очень острая и травмоопасная, так же стекло больше подвержено сколам и царапинам, поэтому рекомендуем обрабатывать кромки</li>
-								  </ul>
-								  <img class="fancybox_img" src="images/fancybox_img_1.png" alt=""> -->
+								  <li>Размеры при изготовлении стекла и зеркал принимаются в миллиметрах (мм). Размеры - 1м = 100 см = 1000мм.</li>
+								  <li>Кромка стекла после резки очень острая и травмоопасная, так же стекло больше подвержено сколам и царапинам, поэтому рекомендуем обрабатывать кромки</li>
+							  </ul>
+							  <img class="fancybox_img" src="images/fancybox_img_1.png" alt=""> -->
                             <!--  <img src="images/img_room.png" alt="">
-								  <img src="images/img_room.png" alt=""> -->
+							  <img src="images/img_room.png" alt=""> -->
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <a data-fancybox data-src="#selectableModa_Company1" href="javascript:;" class="">
                             <div class="manufacture_items">
                                 <img src="images/proizvoditeli/proizavoditel4.png" alt="">
-                                <p>Название компании, Россия</p>
+                                <p>ТИТАН | Россия</p>
                             </div>
                         </a>
                         <div style="display: none;max-width:50%;border-spacing: " id="selectableModa_Company1">
@@ -1698,12 +1154,35 @@
                                 распределение букв и пробелов в абзацах, которое не получается при простой дубликации
                                 "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.</p>
                             <!-- <ul class="modal_list" data-selectable="true">
-									  <li>Размеры при изготовлении стекла и зеркал принимаются в миллиметрах (мм). Размеры - 1м = 100 см = 1000мм.</li>
-									  <li>Кромка стекла после резки очень острая и травмоопасная, так же стекло больше подвержено сколам и царапинам, поэтому рекомендуем обрабатывать кромки</li>
-								  </ul>
-								  <img class="fancybox_img" src="images/fancybox_img_1.png" alt=""> -->
+								  <li>Размеры при изготовлении стекла и зеркал принимаются в миллиметрах (мм). Размеры - 1м = 100 см = 1000мм.</li>
+								  <li>Кромка стекла после резки очень острая и травмоопасная, так же стекло больше подвержено сколам и царапинам, поэтому рекомендуем обрабатывать кромки</li>
+							  </ul>
+							  <img class="fancybox_img" src="images/fancybox_img_1.png" alt=""> -->
                             <!--  <img src="images/img_room.png" alt="">
-								  <img src="images/img_room.png" alt=""> -->
+							  <img src="images/img_room.png" alt=""> -->
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <a data-fancybox data-src="#selectableModa_Company1" href="javascript:;" class="">
+                            <div class="manufacture_items">
+                                <img src="images/proizvoditeli/proizavoditel1.png" alt="">
+                                <p>Minusco | Италия</p>
+                            </div>
+                        </a>
+                        <div style="display: none;max-width:50%;border-spacing: " id="selectableModa_Company1">
+                            <h2 class="fancybox_item_h2" data-selectable="true">Название компании</h2>
+                            <p class="fancybox_item_text" data-selectable="true">Давно выяснено, что при оценке дизайна
+                                и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что
+                                тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное
+                                распределение букв и пробелов в абзацах, которое не получается при простой дубликации
+                                "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.</p>
+                            <!-- <ul class="modal_list" data-selectable="true">
+								  <li>Размеры при изготовлении стекла и зеркал принимаются в миллиметрах (мм). Размеры - 1м = 100 см = 1000мм.</li>
+								  <li>Кромка стекла после резки очень острая и травмоопасная, так же стекло больше подвержено сколам и царапинам, поэтому рекомендуем обрабатывать кромки</li>
+							  </ul>
+							  <img class="fancybox_img" src="images/fancybox_img_1.png" alt=""> -->
+                            <!--  <img src="images/img_room.png" alt="">
+							  <img src="images/img_room.png" alt=""> -->
                         </div>
                     </div>
                 </div>
@@ -1771,41 +1250,169 @@
                 </div>
             </div>
         </section>
-        <section id="call_back">
+
+        <div class="call_back_section">
+            <section id="call_back" class="call_back_section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="request_call_back">
+                                <h2>мы можем вам помочь</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="help_glaas_type d-flex">
+                                <div class="help_glass_items">
+                                    <img src="images/glaas_type1.png" alt="">
+                                    <p>ОБЫЧНОЕ</p>
+                                </div>
+                                <div class="help_glass_items">
+                                    <img src="images/glass3.png" alt="">
+                                    <p>ОБЫЧНОЕ</p>
+                                </div>
+                                <div class="help_glass_items">
+                                    <img src="images/glass4.png" alt="">
+                                    <p>ОБЫЧНОЕ</p>
+                                </div>
+                                <div class="help_glass_items">
+                                    <img src="images/glass5.png" alt="">
+                                    <p>ОБЫЧНОЕ</p>
+                                </div>
+                                <div class="help_glass_items">
+                                    <img src="images/glaas6.png" alt="">
+                                    <p>ОБЫЧНОЕ</p>
+                                </div>
+                            </div>
+                            <div class="button_next">
+                                <a class="next__block">Далее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="call_back_section">
+            <section id="call_back">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="request_call_back">
+                                <h2>мы можем вам помочь</h2>
+                                <p>Стадия ремона</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="help_glaas_type help_glaas_type2 d-flex">
+                                <div class="help_glass_items help_glass_items2">
+                                    <img src="images/cost_calc_link1.png" alt="">
+                                    <p>РЕМОНТ В РАЗГАРЕ</p>
+                                    <span>Нужна консультация</span>
+                                </div>
+                                <div class="help_glass_items help_glass_items2">
+                                    <img src="images/cost_calc_link3.png" alt="">
+                                    <p>ВСЕ ГОТОВО К ЗАМЕРУ</p>
+                                    <span>Нужен расчет или замер</span>
+                                </div>
+                            </div>
+                            <div class="button_next">
+                                <a class="next__block">Далее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section id="call_back" class="call_back_section">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="request_call_back">
                             <h2>мы можем вам помочь</h2>
+                            <p>Дополнительные требования</p>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="help_glaas_type d-flex">
-                            <div class="help_glass_items">
-                                <img src="images/glaas_type1.png" alt="">
-                                <p>ОБЫЧНОЕ</p>
-                            </div>
-                            <div class="help_glass_items">
-                                <img src="images/glass3.png" alt="">
-                                <p>ОБЫЧНОЕ</p>
-                            </div>
-                            <div class="help_glass_items">
-                                <img src="images/glass4.png" alt="">
-                                <p>ОБЫЧНОЕ</p>
-                            </div>
-                            <div class="help_glass_items">
-                                <img src="images/glass5.png" alt="">
-                                <p>ОБЫЧНОЕ</p>
-                            </div>
-                            <div class="help_glass_items">
-                                <img src="images/glaas6.png" alt="">
-                                <p>ОБЫЧНОЕ</p>
+                        <div class="help_glaas_type help_glaas_type2 d-flex">
+                            <div class="chekbox_sect_6 d-flex">
+                                <div class="first_chekbox">
+                                    <label>
+                                        <input type="checkbox">
+                                        <span class="fake-checkbox" aria-hidden="true"></span>
+                                        <span class="label">Доставка изделия</span>
+                                    </label>
+                                    <label>
+                                        <input type="checkbox">
+                                        <span class="fake-checkbox" aria-hidden="true"></span>
+                                        <span class="label">Монтаж (Установка)</span>
+                                    </label>
+                                    <label>
+                                        <input type="checkbox">
+                                        <span class="fake-checkbox" aria-hidden="true"></span>
+                                        <span class="label">Зеркало в ванну</span>
+                                    </label>
+                                </div>
+                                <div class="ssecond_chekbox">
+                                    <label>
+                                        <input type="checkbox">
+                                        <span class="fake-checkbox" aria-hidden="true"></span>
+                                        <span class="label">Гидрофобное покрытие / антигрязь</span>
+                                    </label>
+                                    <label>
+                                        <input type="checkbox">
+                                        <span class="fake-checkbox" aria-hidden="true"></span>
+                                        <span class="label">Стеклянные полки / дверцы</span>
+                                    </label>
+                                    <label>
+                                        <input type="checkbox">
+                                        <span class="fake-checkbox" aria-hidden="true"></span>
+                                        <span class="label">Выезд дизайнера / подбор рисунка</span>
+                                    </label>
+                                </div>
                             </div>
                         </div>
                         <div class="button_next">
-                            <a href="#seven">Далее</a>
+                            <a class="next__block">Далее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="call_back" class="call_back_section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="request_call_back">
+                            <h2>мы можем вам помочь</h2>
+                            <p>Контактные данные</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="help_glaas_type help_glaas_type_last ">
+                            <div class="up_form ">
+                                <input type="text" placeholder="Your name">
+                                <input type="text" placeholder="Your name">
+                            </div>
+                            <div class="down_form down_form_2">
+                                <input type="text" placeholder="EMail">
+                                <input type="text" placeholder="EMail">
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" id="checkbox8" v-model="checked">
+                                <label for="checkbox8"><a href="#">Cогласие с конфиденциальностью и куки</a></label>
+                            </div>
+                        </div>
+                        <div class="button_next">
+                            <a href="">отправить</a>
                         </div>
                     </div>
                 </div>
@@ -1846,7 +1453,7 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="stairs_and_flooring_buttons d-flex">
+                        <div class="stairs_and_flooring_buttons stairs_and_flooring_buttons5 d-flex">
                             <ul class="nav nav-tabs" id="myTab" role="tablist">
                                 <li class="nav-item">
                                     <a class="nav-link active" data-toggle="tab" href="#page3_home" role="tab"
@@ -1878,258 +1485,52 @@
                 </div>
                 <div class="tab-content">
                     <div class="tab-pane active" id="page3_home" role="tabpanel">
-                        <a data-fancybox="gallery_Glasses" href="images/Glasses/1/1.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Glasses/1/1.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Glasses" href="images/Glasses/1/2.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Glasses/1/2.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Glasses" href="images/Glasses/1/3.JPG">
-                            <div class="img_items_stairs">
-                                <img src="images/Glasses/1/3.JPG" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Glasses" href="images/Glasses/1/4.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Glasses/1/4.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Glasses" href="images/Glasses/1/5.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Glasses/1/5.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Glasses" href="images/Glasses/1/6.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Glasses/1/6.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Glasses" href="images/Glasses/1/7.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Glasses/1/7.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Glasses" href="images/Glasses/1/8.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Glasses/1/8.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Glasses" href="images/Glasses/1/9.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Glasses/1/9.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Glasses" href="images/Glasses/1/10.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Glasses/1/10.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
+                        <?php $__currentLoopData = $photo; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $value): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                            <?php if($value->type === 'зеркала на заказ'): ?>
+                                <a data-fancybox="gallery_Glasses" href="<?php echo e($value->photo); ?>">
+                                    <div class="img_items_stairs">
+                                        <img src="<?php echo e($value->photo); ?>" alt="1">
+                                        <p></p>
+                                    </div>
+                                </a>
+                            <?php endif; ?>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                     </div>
                     <div class="tab-pane" id="page3_home_1" role="tabpanel">
-                        <a data-fancybox="gallery_Glasses1" href="images/Glasses/2/1.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Glasses/2/1.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Glasses1" href="images/Glasses/2/2.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Glasses/2/1.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Glasses1" href="images/Glasses/2/3.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Glasses/2/3.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Glasses1" href="images/Glasses/2/4.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Glasses/2/4.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Glasses1" href="images/Glasses/2/5.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Glasses/2/5.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Glasses1" href="images/Glasses/2/6.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Glasses/2/6.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Glasses1" href="images/Glasses/2/7.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Glasses/2/7.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Glasses1" href="images/Glasses/2/8.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Glasses/2/8.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Glasses1" href="images/Glasses/2/9.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Glasses/2/9.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Glasses1" href="images/Glasses/2/10.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Glasses/2/1.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Glasses1" href="images/Glasses/2/10.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Glasses/2/10.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
+                        <?php $__currentLoopData = $photo; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $value): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                            <?php if($value->type === 'зеркальное панно'): ?>
+                                <a data-fancybox="gallery_Glasses1" href="<?php echo e($value->photo); ?>">
+                                    <div class="img_items_stairs">
+                                        <img src="<?php echo e($value->photo); ?>" alt="1">
+                                        <p></p>
+                                    </div>
+                                </a>
+                            <?php endif; ?>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                     </div>
                     <div class="tab-pane" id="page3_profile" role="tabpanel">
-                        <a data-fancybox="gallery_Glasses2" href="images/Glasses/3/1.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Glasses/3/1.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Glasses2" href="images/Glasses/3/2.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Glasses/3/2.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Glasses2" href="images/Glasses/3/3.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Glasses/3/3.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Glasses2" href="images/Glasses/3/4.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Glasses/3/4.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Glasses2" href="images/Glasses/3/5.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Glasses/3/5.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Glasses2" href="images/Glasses/3/6.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Glasses/3/6.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Glasses2" href="images/Glasses/3/7.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Glasses/3/7.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Glasses2" href="images/Glasses/3/8.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Glasses/3/8.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Glasses2" href="images/Glasses/3/9.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Glasses/3/9.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Glasses2" href="images/Glasses/3/10.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Glasses/3/10.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
+                        <?php $__currentLoopData = $photo; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $value): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                            <?php if($value->type === 'оптовые заказы'): ?>
+                                <a data-fancybox="gallery_Glasses2" href="<?php echo e($value->photo); ?>">
+                                    <div class="img_items_stairs">
+                                        <img src="<?php echo e($value->photo); ?>" alt="1">
+                                        <p></p>
+                                    </div>
+                                </a>
+                            <?php endif; ?>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                     </div>
                     <div class="tab-pane" id="page3_messages" role="tabpanel">
-                        <a data-fancybox="gallery_Glasses3" href="images/Glasses/4/1.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Glasses/4/1.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Glasses3" href="images/Glasses/4/2.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Glasses/4/2.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Glasses3" href="images/Glasses/4/3.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Glasses/4/3.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Glasses3" href="images/Glasses/4/4.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Glasses/4/4.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Glasses3" href="images/Glasses/4/5.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Glasses/4/5.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Glasses3" href="images/Glasses/4/6.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Glasses/4/6.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Glasses3" href="images/Glasses/4/7.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Glasses/4/7.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Glasses3" href="images/Glasses/4/8.JPG">
-                            <div class="img_items_stairs">
-                                <img src="images/Glasses/4/8.JPG" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Glasses3" href="images/Glasses/4/9.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Glasses/4/9.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Glasses3" href="images/Glasses/4/10.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Glasses/4/10.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
+                        <?php $__currentLoopData = $photo; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $value): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                            <?php if($value->type === 'эксклюзив решения'): ?>
+                                <a data-fancybox="gallery_Glasses3" href="<?php echo e($value->photo); ?>">
+                                    <div class="img_items_stairs">
+                                        <img src="<?php echo e($value->photo); ?>" alt="1">
+                                        <p></p>
+                                    </div>
+                                </a>
+                            <?php endif; ?>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                     </div>
                 </div>
             </div>
@@ -2145,9 +1546,19 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="video_our">
-                            <iframe src="" frameborder="0"></iframe>
-                            <iframe src="" frameborder="0"></iframe>
+                        <div class="video_our d-flex">
+                            <iframe width="560" height="315"
+                                    src=<?php echo e($video[5]->video); ?>
+
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            <iframe width="560" height="315"
+                                    src=<?php echo e($video[6]->video); ?>
+
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
@@ -2327,7 +1738,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="advantages">
-                            <h2>наши преемущества</h2>
+                            <h2>наши преимущества</h2>
                         </div>
                     </div>
                 </div>
@@ -2472,41 +1883,169 @@
                 </div>
             </div>
         </section>
-        <section id="call_back">
+
+        <div class="call_back_section">
+            <section id="call_back" class="call_back_section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="request_call_back">
+                                <h2>мы можем вам помочь</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="help_glaas_type d-flex">
+                                <div class="help_glass_items">
+                                    <img src="images/glaas_type1.png" alt="">
+                                    <p>ОБЫЧНОЕ</p>
+                                </div>
+                                <div class="help_glass_items">
+                                    <img src="images/glass3.png" alt="">
+                                    <p>ОБЫЧНОЕ</p>
+                                </div>
+                                <div class="help_glass_items">
+                                    <img src="images/glass4.png" alt="">
+                                    <p>ОБЫЧНОЕ</p>
+                                </div>
+                                <div class="help_glass_items">
+                                    <img src="images/glass5.png" alt="">
+                                    <p>ОБЫЧНОЕ</p>
+                                </div>
+                                <div class="help_glass_items">
+                                    <img src="images/glaas6.png" alt="">
+                                    <p>ОБЫЧНОЕ</p>
+                                </div>
+                            </div>
+                            <div class="button_next">
+                                <a class="next__block">Далее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="call_back_section">
+            <section id="call_back">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="request_call_back">
+                                <h2>мы можем вам помочь</h2>
+                                <p>Стадия ремона</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="help_glaas_type help_glaas_type2 d-flex">
+                                <div class="help_glass_items help_glass_items2">
+                                    <img src="images/cost_calc_link1.png" alt="">
+                                    <p>РЕМОНТ В РАЗГАРЕ</p>
+                                    <span>Нужна консультация</span>
+                                </div>
+                                <div class="help_glass_items help_glass_items2">
+                                    <img src="images/cost_calc_link3.png" alt="">
+                                    <p>ВСЕ ГОТОВО К ЗАМЕРУ</p>
+                                    <span>Нужен расчет или замер</span>
+                                </div>
+                            </div>
+                            <div class="button_next">
+                                <a class="next__block">Далее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section id="call_back" class="call_back_section">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="request_call_back">
                             <h2>мы можем вам помочь</h2>
+                            <p>Дополнительные требования</p>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="help_glaas_type d-flex">
-                            <div class="help_glass_items">
-                                <img src="images/glaas_type1.png" alt="">
-                                <p>ОБЫЧНОЕ</p>
-                            </div>
-                            <div class="help_glass_items">
-                                <img src="images/glass3.png" alt="">
-                                <p>ОБЫЧНОЕ</p>
-                            </div>
-                            <div class="help_glass_items">
-                                <img src="images/glass4.png" alt="">
-                                <p>ОБЫЧНОЕ</p>
-                            </div>
-                            <div class="help_glass_items">
-                                <img src="images/glass5.png" alt="">
-                                <p>ОБЫЧНОЕ</p>
-                            </div>
-                            <div class="help_glass_items">
-                                <img src="images/glaas6.png" alt="">
-                                <p>ОБЫЧНОЕ</p>
+                        <div class="help_glaas_type help_glaas_type2 d-flex">
+                            <div class="chekbox_sect_6 d-flex">
+                                <div class="first_chekbox">
+                                    <label>
+                                        <input type="checkbox">
+                                        <span class="fake-checkbox" aria-hidden="true"></span>
+                                        <span class="label">Доставка изделия</span>
+                                    </label>
+                                    <label>
+                                        <input type="checkbox">
+                                        <span class="fake-checkbox" aria-hidden="true"></span>
+                                        <span class="label">Монтаж (Установка)</span>
+                                    </label>
+                                    <label>
+                                        <input type="checkbox">
+                                        <span class="fake-checkbox" aria-hidden="true"></span>
+                                        <span class="label">Зеркало в ванну</span>
+                                    </label>
+                                </div>
+                                <div class="ssecond_chekbox">
+                                    <label>
+                                        <input type="checkbox">
+                                        <span class="fake-checkbox" aria-hidden="true"></span>
+                                        <span class="label">Гидрофобное покрытие / антигрязь</span>
+                                    </label>
+                                    <label>
+                                        <input type="checkbox">
+                                        <span class="fake-checkbox" aria-hidden="true"></span>
+                                        <span class="label">Стеклянные полки / дверцы</span>
+                                    </label>
+                                    <label>
+                                        <input type="checkbox">
+                                        <span class="fake-checkbox" aria-hidden="true"></span>
+                                        <span class="label">Выезд дизайнера / подбор рисунка</span>
+                                    </label>
+                                </div>
                             </div>
                         </div>
                         <div class="button_next">
-                            <a href="#seven">Далее</a>
+                            <a class="next__block">Далее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="call_back" class="call_back_section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="request_call_back">
+                            <h2>мы можем вам помочь</h2>
+                            <p>Контактные данные</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="help_glaas_type help_glaas_type_last ">
+                            <div class="up_form ">
+                                <input type="text" placeholder="Your name">
+                                <input type="text" placeholder="Your name">
+                            </div>
+                            <div class="down_form down_form_2">
+                                <input type="text" placeholder="EMail">
+                                <input type="text" placeholder="EMail">
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" id="checkbox8" v-model="checked">
+                                <label for="checkbox8"><a href="#">Cогласие с конфиденциальностью и куки</a></label>
+                            </div>
+                        </div>
+                        <div class="button_next">
+                            <a href="">отправить</a>
                         </div>
                     </div>
                 </div>
@@ -2546,7 +2085,7 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="stairs_and_flooring_buttons d-flex">
+                        <div class="stairs_and_flooring_buttons stairs_and_flooring_buttons1 d-flex">
                             <ul class="nav nav-tabs" id="myTab" role="tablist">
                                 <li class="nav-item ">
                                     <a class="nav-link active" data-toggle="tab" href="#page4_home" role="tab"
@@ -2596,427 +2135,89 @@
                 </div>
                 <div class="tab-content">
                     <div class="tab-pane active" id="page4_home" role="tabpanel">
-                        <a data-fancybox="gallery_Door" href="images/Door/1/1.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Door/1/1.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Door" href="images/Door/1/2.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Door/1/2.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Door" href="images/Door/1/3.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Door/1/3.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Door" href="images/Door/1/4.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Door/1/4.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Door" href="images/Door/1/5.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Door/1/5.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Door" href="images/Door/1/6.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Door/1/6.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Door" href="images/Door/1/7.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Door/1/7.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Door" href="images/Door/1/8.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Door/1/8.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Door" href="images/Door/1/9.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Door/1/9.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Door" href="images/Door/1/10.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Door/1/10.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
+                        <?php $__currentLoopData = $photo; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $value): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                            <?php if($value->type === 'распашные двери'): ?>
+                                <a data-fancybox="gallery_Door" href="<?php echo e($value->photo); ?>">
+                                    <div class="img_items_stairs">
+                                        <img src="<?php echo e($value->photo); ?>" alt="1">
+                                        <p></p>
+                                    </div>
+                                </a>
+                            <?php endif; ?>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                     </div>
                     <div class="tab-pane" id="page4_profile" role="tabpanel">
-                        <a data-fancybox="gallery_Door1" href="images/Door/2/1.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Door/2/1.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Door1" href="images/Door/2/2.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Door/2/2.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Door1" href="images/Door/2/3.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Door/2/3.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Door1" href="images/Door/2/4.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Door/2/4.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Door1" href="images/Door/2/5.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Door/2/5.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Door1" href="images/Door/2/6.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Door/2/6.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Door1" href="images/Door/2/7.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Door/2/7.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Door1" href="images/Door/2/8.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Door/2/8.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Door1" href="images/Door/2/9.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Door/2/9.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Door1" href="images/Door/2/10.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Door/2/10.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
+                        <?php $__currentLoopData = $photo; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $value): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                            <?php if($value->type === 'перегородки'): ?>
+                                <a data-fancybox="gallery_Door1" href="<?php echo e($value->photo); ?>">
+                                    <div class="img_items_stairs">
+                                        <img src="<?php echo e($value->photo); ?>" alt="1">
+                                        <p></p>
+                                    </div>
+                                </a>
+                            <?php endif; ?>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                     </div>
                     <div class="tab-pane" id="page4_messages" role="tabpanel">
-                        <a data-fancybox="gallery_Door2" href="images/Door/3/1.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Door/3/1.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Door2" href="images/Door/3/3.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Door/3/3.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Door2" href="images/Door/3/4.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Door/3/4.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Door2" href="images/Door/3/5.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Door/3/5.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Door2" href="images/Door/3/6.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Door/3/6.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Door2" href="images/Door/3/7.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Door/3/1.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Door2" href="images/Door/3/8.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Door/3/8.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Door2" href="images/Door/3/9.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Door/3/9.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Door2" href="images/Door/3/10.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Door/3/10.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
+                        <?php $__currentLoopData = $photo; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $value): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                            <?php if($value->type === 'маятниковые двери'): ?>
+                                <a data-fancybox="gallery_Door2" href="<?php echo e($value->photo); ?>">
+                                    <div class="img_items_stairs">
+                                        <img src="<?php echo e($value->photo); ?>" alt="1">
+                                        <p></p>
+                                    </div>
+                                </a>
+                            <?php endif; ?>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                     </div>
                     <div class="tab-pane" id="page4_settings" role="tabpanel">
-                        <a data-fancybox="gallery_Door3" href="images/Door/4/1.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Door/4/1.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Door3" href="images/Door/4/1.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Door/4/1.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Door3" href="images/Door/4/1.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Door/4/2.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Door3" href="images/Door/4/3.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Door/4/3.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Door3" href="images/Door/4/6.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Door/4/6.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Door3" href="images/Door/4/7.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Door/4/7.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Door3" href="images/Door/4/8.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Door/4/8.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Door3" href="images/Door/4/9.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Door/4/9.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Door3" href="images/Door/4/10.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Door/4/10.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-
+                        <?php $__currentLoopData = $photo; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $value): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                            <?php if($value->type === 'раздвижные двери'): ?>
+                                <a data-fancybox="gallery_Door3" href="<?php echo e($value->photo); ?>">
+                                    <div class="img_items_stairs">
+                                        <img src="<?php echo e($value->photo); ?>" alt="1">
+                                        <p></p>
+                                    </div>
+                                </a>
+                            <?php endif; ?>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                     </div>
                     <div class="tab-pane" id="page4_settings1" role="tabpanel">
-                        <a data-fancybox="gallery_Door4" href="images/Door/5/1.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Door/5/1.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Door4" href="images/Door/5/2.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Door/5/2.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Door4" href="images/Door/5/3.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Door/5/3.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Door4" href="images/Door/5/4.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Door/5/4.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Door4" href="images/Door/5/5.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Door/5/5.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Door4" href="images/Door/5/6.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Door/5/6.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Door4" href="images/Door/5/7.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Door/5/7.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Door4" href="images/Door/5/8.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Door/5/8.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Door4" href="images/Door/5/9.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Door/5/9.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Door4" href="images/Door/5/1.0jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Door/5/10.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
+                        <?php $__currentLoopData = $photo; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $value): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                            <?php if($value->type === 'ограждения'): ?>
+                                <a data-fancybox="gallery_Door4" href="<?php echo e($value->photo); ?>">
+                                    <div class="img_items_stairs">
+                                        <img src="<?php echo e($value->photo); ?>" alt="1">
+                                        <p></p>
+                                    </div>
+                                </a>
+                            <?php endif; ?>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                     </div>
                     <div class="tab-pane" id="page4_settings2" role="tabpanel">
-                        <a data-fancybox="gallery_Door5" href="images/Door/6/1.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Door/6/1.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Door5" href="images/Door/6/2.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Door/6/2.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Door5" href="images/Door/6/3.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Door/6/3.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Door5" href="images/Door/6/4.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Door/6/4.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Door5" href="images/Door/6/5.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Door/6/5.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Door5" href="images/Door/6/6.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Door/6/6.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Door5" href="images/Door/6/7.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Door/6/7.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Door5" href="images/Door/6/8.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Door/6/8.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Door5" href="images/Door/6/9.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Door/6/9.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Door5" href="images/Door/6/10.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Door/6/10.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
+                        <?php $__currentLoopData = $photo; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $value): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                            <?php if($value->type === 'двери в коробках'): ?>
+                                <a data-fancybox="gallery_Door5" href="<?php echo e($value->photo); ?>">
+                                    <div class="img_items_stairs">
+                                        <img src="<?php echo e($value->photo); ?>" alt="1">
+                                        <p></p>
+                                    </div>
+                                </a>
+                            <?php endif; ?>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                     </div>
                     <div class="tab-pane" id="page4_settings3" role="tabpanel">
-                        <a data-fancybox="gallery_Door6" href="images/Door/7/1.jpg">
+                        <?php $__currentLoopData = $photo; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $value): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                            <?php if($value->type === 'эксклюзивные решения'): ?>
+                        <a data-fancybox="gallery_Door6" href="<?php echo e($value->photo); ?>">
                             <div class="img_items_stairs">
-                                <img src="images/Door/7/1.jpg" alt="1">
+                                <img src="<?php echo e($value->photo); ?>" alt="1">
                                 <p></p>
                             </div>
                         </a>
-                        <a data-fancybox="gallery_Door6" href="images/Door/7/2.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Door/7/2.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Door6" href="images/Door/7/3.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Door/7/3.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Door6" href="images/Door/7/4.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Door/7/4.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Door6" href="images/Door/7/5.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Door/7/5.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Door6" href="images/Door/7/6.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Door/7/6.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Door6" href="images/Door/7/7.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Door/7/7.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Door6" href="images/Door/7/1.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Door/7/8.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Door6" href="images/Door/7/9.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Door/7/9.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Door6" href="images/Door/7/10.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Door/7/10.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
+                            <?php endif; ?>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+
                     </div>
                 </div>
             </div>
@@ -3032,9 +2233,20 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="video_our">
-                            <iframe src="" frameborder="0"></iframe>
-                            <iframe src="" frameborder="0"></iframe>
+                        <div class="video_our d-flex">
+                            <iframe width="560" height="315"
+                                    src=<?php echo e($video[7]->video); ?>
+
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            <iframe width="560" height="315"
+                                    src=<?php echo e($video[8]->video); ?>
+
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+
                         </div>
                     </div>
                 </div>
@@ -3045,7 +2257,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="advantages">
-                            <h2>наши преемущества</h2>
+                            <h2>наши преимущества</h2>
                         </div>
                     </div>
                 </div>
@@ -3098,31 +2310,8 @@
                     <div class="col-lg-3 col-md-6">
                         <a data-fancybox data-src="#selectableModa_Company1" href="javascript:;" class="">
                             <div class="manufacture_items">
-                                <img src="images/proizvoditeli/proizavoditel1.png" alt="">
-                                <p>Название компании, Россия</p>
-                            </div>
-                        </a>
-                        <div style="display: none;max-width:50%;border-spacing: " id="selectableModa_Company1">
-                            <h2 class="fancybox_item_h2" data-selectable="true">Название компании</h2>
-                            <p class="fancybox_item_text" data-selectable="true">Давно выяснено, что при оценке дизайна
-                                и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что
-                                тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное
-                                распределение букв и пробелов в абзацах, которое не получается при простой дубликации
-                                "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.</p>
-                            <!-- <ul class="modal_list" data-selectable="true">
-								  <li>Размеры при изготовлении стекла и зеркал принимаются в миллиметрах (мм). Размеры - 1м = 100 см = 1000мм.</li>
-								  <li>Кромка стекла после резки очень острая и травмоопасная, так же стекло больше подвержено сколам и царапинам, поэтому рекомендуем обрабатывать кромки</li>
-							  </ul>
-							  <img class="fancybox_img" src="images/fancybox_img_1.png" alt=""> -->
-                            <!--  <img src="images/img_room.png" alt="">
-							  <img src="images/img_room.png" alt=""> -->
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <a data-fancybox data-src="#selectableModa_Company1" href="javascript:;" class="">
-                            <div class="manufacture_items">
                                 <img src="images/proizvoditeli/proizavoditel2.png" alt="">
-                                <p>Название компании, Россия</p>
+                                <p>Bohle | Германия</p>
                             </div>
                         </a>
                         <div style="display: none;max-width:50%;border-spacing: " id="selectableModa_Company1">
@@ -3145,7 +2334,7 @@
                         <a data-fancybox data-src="#selectableModa_Company1" href="javascript:;" class="">
                             <div class="manufacture_items">
                                 <img src="images/proizvoditeli/proizavoditel3.png" alt="">
-                                <p>Название компании, Россия</p>
+                                <p>DORMA | Швейцария</p>
                             </div>
                         </a>
                         <div style="display: none;max-width:50%;border-spacing: " id="selectableModa_Company1">
@@ -3168,7 +2357,30 @@
                         <a data-fancybox data-src="#selectableModa_Company1" href="javascript:;" class="">
                             <div class="manufacture_items">
                                 <img src="images/proizvoditeli/proizavoditel4.png" alt="">
-                                <p>Название компании, Россия</p>
+                                <p>ТИТАН | Россия</p>
+                            </div>
+                        </a>
+                        <div style="display: none;max-width:50%;border-spacing: " id="selectableModa_Company1">
+                            <h2 class="fancybox_item_h2" data-selectable="true">Название компании</h2>
+                            <p class="fancybox_item_text" data-selectable="true">Давно выяснено, что при оценке дизайна
+                                и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что
+                                тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное
+                                распределение букв и пробелов в абзацах, которое не получается при простой дубликации
+                                "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.</p>
+                            <!-- <ul class="modal_list" data-selectable="true">
+								  <li>Размеры при изготовлении стекла и зеркал принимаются в миллиметрах (мм). Размеры - 1м = 100 см = 1000мм.</li>
+								  <li>Кромка стекла после резки очень острая и травмоопасная, так же стекло больше подвержено сколам и царапинам, поэтому рекомендуем обрабатывать кромки</li>
+							  </ul>
+							  <img class="fancybox_img" src="images/fancybox_img_1.png" alt=""> -->
+                            <!--  <img src="images/img_room.png" alt="">
+							  <img src="images/img_room.png" alt=""> -->
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <a data-fancybox data-src="#selectableModa_Company1" href="javascript:;" class="">
+                            <div class="manufacture_items">
+                                <img src="images/proizvoditeli/proizavoditel1.png" alt="">
+                                <p>Minusco | Италия</p>
                             </div>
                         </a>
                         <div style="display: none;max-width:50%;border-spacing: " id="selectableModa_Company1">
@@ -3261,46 +2473,174 @@
                 </div>
             </div>
         </section>
-        <section id="call_back">
+        <div class="call_back_section">
+            <section id="call_back" class="call_back_section">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="request_call_back">
+                                <h2>мы можем вам помочь</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="help_glaas_type d-flex">
+                                <div class="help_glass_items">
+                                    <img src="images/glaas_type1.png" alt="">
+                                    <p>ОБЫЧНОЕ</p>
+                                </div>
+                                <div class="help_glass_items">
+                                    <img src="images/glass3.png" alt="">
+                                    <p>ОБЫЧНОЕ</p>
+                                </div>
+                                <div class="help_glass_items">
+                                    <img src="images/glass4.png" alt="">
+                                    <p>ОБЫЧНОЕ</p>
+                                </div>
+                                <div class="help_glass_items">
+                                    <img src="images/glass5.png" alt="">
+                                    <p>ОБЫЧНОЕ</p>
+                                </div>
+                                <div class="help_glass_items">
+                                    <img src="images/glaas6.png" alt="">
+                                    <p>ОБЫЧНОЕ</p>
+                                </div>
+                            </div>
+                            <div class="button_next">
+                                <a class="next__block">Далее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="call_back_section">
+            <section id="call_back">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="request_call_back">
+                                <h2>мы можем вам помочь</h2>
+                                <p>Стадия ремона</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="help_glaas_type help_glaas_type2 d-flex">
+                                <div class="help_glass_items help_glass_items2">
+                                    <img src="images/cost_calc_link1.png" alt="">
+                                    <p>РЕМОНТ В РАЗГАРЕ</p>
+                                    <span>Нужна консультация</span>
+                                </div>
+                                <div class="help_glass_items help_glass_items2">
+                                    <img src="images/cost_calc_link3.png" alt="">
+                                    <p>ВСЕ ГОТОВО К ЗАМЕРУ</p>
+                                    <span>Нужен расчет или замер</span>
+                                </div>
+                            </div>
+                            <div class="button_next">
+                                <a class="next__block">Далее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section id="call_back" class="call_back_section">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="request_call_back">
                             <h2>мы можем вам помочь</h2>
+                            <p>Дополнительные требования</p>
                         </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="help_glaas_type d-flex">
-                            <div class="help_glass_items">
-                                <img src="images/glaas_type1.png" alt="">
-                                <p>ОБЫЧНОЕ</p>
-                            </div>
-                            <div class="help_glass_items">
-                                <img src="images/glass3.png" alt="">
-                                <p>ОБЫЧНОЕ</p>
-                            </div>
-                            <div class="help_glass_items">
-                                <img src="images/glass4.png" alt="">
-                                <p>ОБЫЧНОЕ</p>
-                            </div>
-                            <div class="help_glass_items">
-                                <img src="images/glass5.png" alt="">
-                                <p>ОБЫЧНОЕ</p>
-                            </div>
-                            <div class="help_glass_items">
-                                <img src="images/glaas6.png" alt="">
-                                <p>ОБЫЧНОЕ</p>
+                        <div class="help_glaas_type help_glaas_type2 d-flex">
+                            <div class="chekbox_sect_6 d-flex">
+                                <div class="first_chekbox">
+                                    <label>
+                                        <input type="checkbox">
+                                        <span class="fake-checkbox" aria-hidden="true"></span>
+                                        <span class="label">Доставка изделия</span>
+                                    </label>
+                                    <label>
+                                        <input type="checkbox">
+                                        <span class="fake-checkbox" aria-hidden="true"></span>
+                                        <span class="label">Монтаж (Установка)</span>
+                                    </label>
+                                    <label>
+                                        <input type="checkbox">
+                                        <span class="fake-checkbox" aria-hidden="true"></span>
+                                        <span class="label">Зеркало в ванну</span>
+                                    </label>
+                                </div>
+                                <div class="ssecond_chekbox">
+                                    <label>
+                                        <input type="checkbox">
+                                        <span class="fake-checkbox" aria-hidden="true"></span>
+                                        <span class="label">Гидрофобное покрытие / антигрязь</span>
+                                    </label>
+                                    <label>
+                                        <input type="checkbox">
+                                        <span class="fake-checkbox" aria-hidden="true"></span>
+                                        <span class="label">Стеклянные полки / дверцы</span>
+                                    </label>
+                                    <label>
+                                        <input type="checkbox">
+                                        <span class="fake-checkbox" aria-hidden="true"></span>
+                                        <span class="label">Выезд дизайнера / подбор рисунка</span>
+                                    </label>
+                                </div>
                             </div>
                         </div>
                         <div class="button_next">
-                            <a href="#seven">Далее</a>
+                            <a class="next__block">Далее</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <section id="call_back" class="call_back_section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="request_call_back">
+                            <h2>мы можем вам помочь</h2>
+                            <p>Контактные данные</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="help_glaas_type help_glaas_type_last ">
+                            <div class="up_form ">
+                                <input type="text" placeholder="Your name">
+                                <input type="text" placeholder="Your name">
+                            </div>
+                            <div class="down_form down_form_2">
+                                <input type="text" placeholder="EMail">
+                                <input type="text" placeholder="EMail">
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" id="checkbox8" v-model="checked">
+                                <label for="checkbox8"><a href="#">Cогласие с конфиденциальностью и куки</a></label>
+                            </div>
+                        </div>
+                        <div class="button_next">
+                            <a href="">отправить</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </div>
     <div id="5" data-hash="five">
         <section>
@@ -3336,7 +2676,7 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="stairs_and_flooring_buttons d-flex">
+                        <div class="stairs_and_flooring_buttons stairs_and_flooring_buttons2 d-flex">
                             <ul class="nav nav-tabs" id="myTab" role="tablist">
                                 <li class="nav-item">
                                     <a class="nav-link active" data-toggle="tab" href="#page5_home" role="tab"
@@ -3364,231 +2704,41 @@
                 </div>
                 <div class="tab-content">
                     <div class="tab-pane active" id="page5_home" role="tabpanel">
-                        <a data-fancybox="gallery_Fartucks" href="images/Fartucks/1/1.jpg">
+                        <?php $__currentLoopData = $photo; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $value): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                            <?php if($value->type === 'скинали с фотопечатью'): ?>
+                        <a data-fancybox="gallery_Fartucks" href="<?php echo e($value->photo); ?>">
                             <div class="img_items_stairs">
-                                <img src="images/Fartucks/1/1.jpg" alt="1">
+                                <img src="<?php echo e($value->photo); ?>" alt="1">
                                 <p></p>
                             </div>
                         </a>
-                        <a data-fancybox="gallery_Fartucks" href="images/Fartucks/1/2.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Fartucks/1/2.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Fartucks" href="images/Fartucks/1/2.jpg">
-                            <div class="img_items_stairs">
-                                <img src=<?php echo e(asset("images/Fartucks/1/3.jpg")); ?> alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Fartucks" href="images/Fartucks/1/2.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Fartucks/1/4.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <!-- <a data-fancybox="gallery_Fartucks" href="images/Fartucks/1/2.jpg">
-					<div class="img_items_stairs">
-							<img src="images/Fartucks/1/5.jpg" alt="1">
-							<p></p>
-						</div> -->
-                        </a>
-                        <a data-fancybox="gallery_Fartucks" href="images/Fartucks/1/10.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Fartucks/1/10.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Fartucks" href="images/Fartucks/1/11.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Fartucks/1/11.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Fartucks" href="images/Fartucks/1/12.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Fartucks/1/12.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Fartucks" href="images/Fartucks/1/13.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Fartucks/1/13.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Fartucks" href="images/Fartucks/1/14.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Fartucks/1/14.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Fartucks" href="images/Fartucks/1/15.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Fartucks/1/15.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
+                          <?php endif; ?>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                     </div>
                     <div class="tab-pane" id="page5_profile" role="tabpanel">
-                        <a data-fancybox="gallery_Fartucks1" href="images/Fartucks/2/1.jpg">
+                        <?php $__currentLoopData = $photo; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $value): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                            <?php if($value->type === 'одноцветные фартуки'): ?>
+                        <a data-fancybox="gallery_Fartucks1" href="<?php echo e($value->photo); ?>">
                             <div class="img_items_stairs">
-                                <img src="images/Fartucks/2/1.jpg" alt="1">
+                                <img src="<?php echo e($value->photo); ?>" alt="1">
                                 <p></p>
                             </div>
                         </a>
-                        <a data-fancybox="gallery_Fartucks1" href="images/Fartucks/2/2.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Fartucks/2/2.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Fartucks1" href="images/Fartucks/2/3.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Fartucks/2/3.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Fartucks1" href="images/Fartucks/2/4.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Fartucks/2/4.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Fartucks1" href="images/Fartucks/2/5.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Fartucks/2/5.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Fartucks1" href="images/Fartucks/2/6.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Fartucks/2/6.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Fartucks1" href="images/Fartucks/2/7.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Fartucks/2/7.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Fartucks1" href="images/Fartucks/2/8.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Fartucks/2/8.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Fartucks1" href="images/Fartucks/2/9.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Fartucks/2/9.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Fartucks1" href="images/Fartucks/2/10.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Fartucks/2/10.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
+                            <?php endif; ?>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                     </div>
                     <div class="tab-pane" id="page5_messages" role="tabpanel">
-                        <a data-fancybox="gallery_Fartucks2" href="images/Fartucks/3/1.jpg">
+                        <?php $__currentLoopData = $photo; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $value): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                            <?php if($value->type === 'скинали с подсветкой'): ?>
+                        <a data-fancybox="gallery_Fartucks2" href="<?php echo e($value->photo); ?>">
                             <div class="img_items_stairs">
-                                <img src="images/Fartucks/3/1.jpg" alt="1">
+                                <img src="<?php echo e($value->photo); ?>" alt="1">
                                 <p></p>
                             </div>
-                        </a>
-                        <a data-fancybox="gallery_Fartucks2" href="images/Fartucks/3/2.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Fartucks/3/2.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Fartucks2" href="images/Fartucks/3/3.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Fartucks/3/3.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Fartucks2" href="images/Fartucks/3/4.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Fartucks/3/4.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Fartucks2" href="images/Fartucks/3/5.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Fartucks/3/5.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Fartucks2" href="images/Fartucks/3/6.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Fartucks/3/6.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <!-- <a data-fancybox="gallery_Fartucks2" href="images/Fartucks/3/7.jpg">
-					<div class="img_items_stairs">
-							<img src="images/Fartucks/3/7.jpg" alt="1">
-							<p></p>
-						</div>
-				</a> -->
-                        <a data-fancybox="gallery_Fartucks2" href="images/Fartucks/3/8.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Fartucks/3/8.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Fartucks2" href="images/Fartucks/3/9.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Fartucks/3/9.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Fartucks2" href="images/Fartucks/3/10.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Fartucks/3/10.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Fartucks2" href="images/Fartucks/3/11.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Fartucks/3/11.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
-                        <a data-fancybox="gallery_Fartucks2" href="images/Fartucks/3/1.jpg">
-                            <div class="img_items_stairs">
-                                <img src="images/Fartucks/3/12.jpg" alt="1">
-                                <p></p>
-                            </div>
-                        </a>
+                            https://www.youtube.com/watch?list=PLYMLadaopy7fABzUd1YRT9X9VilXNF-Hw&v=cIyVNoY3_L4          </a>
+                            <?php endif; ?>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                     </div>
-                    <!-- <div class="tab-pane" id="settings" role="tabpanel">
-				<div class="img_items_stairs">
-						<img src="images/img_room.png" alt="1">
-						<p></p>
-					</div>
-					<div class="img_items_stairs">
-						<img src="images/img_room.png" alt="1">
-						<p></p>
-					</div>
-					<div class="img_items_stairs">
-						<img src="images/img_room.png" alt="1">
-						<p></p>
-					</div>
-					<div class="img_items_stairs">
-						<img src="images/img_room.png" alt="1">
-						<p></p>
-					</div>
-					<div class="img_items_stairs">
-						<img src="images/img_room.png" alt="1">
-						<p></p>
-					</div>
-			  </div> -->
                 </div>
             </div>
         </section>
@@ -3603,9 +2753,19 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="video_our">
-                            <iframe src="" frameborder="0"></iframe>
-                            <iframe src="" frameborder="0"></iframe>
+                        <div class="video_our d-flex">
+                            <iframe width="560" height="315"
+                                    src=<?php echo e($video[9]->video); ?>
+
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            <iframe width="560" height="315"
+                                    src=<?php echo e($video[10]->video); ?>
+
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
                         </div>
                     </div>
                 </div>
@@ -3761,12 +2921,17 @@
                                     <li>Стоит не так дешево</li>
                                 </ul>
                             </div>
-                            <img class="glasses_img_fastener1" src="images/first_fastener.png" alt="">
+                            <a class="galery_kripezh-pos" data-fancybox="gallery_kripezh"
+                               href="images/first_fastener.png">
+                                <img class="glasses_img_fastener2" src="images/first_fastener.png" alt="">
+                            </a>
                         </div>
                     </div>
                     <div class="col-lg-6">
                         <div class="shower_type_items d-flex">
-                            <img class="glasses_img_fastener2" src="images/second_fastener.png" alt="">
+                            <a data-fancybox="gallery_kripezh" href="images/second_fastener.png">
+                                <img class="glasses_img_fastener2" src="images/second_fastener.png" alt="">
+                            </a>
                             <div class="shower_type_item-right fastener_shower_glass2">
                                 <p>ДУШЕВОЕ ОГРАЖДЕНИЕ VEDITEX</p>
                                 <ul>
@@ -3783,31 +2948,32 @@
                 </div>
             </div>
         </section>
-        <section id="call_back">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="request_call_back">
-                            <h2>мы можем вам помочь</h2>
+        <div class="call_back_section">
+            <section id="call_back">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="request_call_back">
+                                <h2>мы можем вам помочь</h2>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="help_glaas_type kripezh d-flex">
-                            <div class="help_glass_items ">
-                                <img src="images/types_kripezh1.png" alt="">
-                                <p>ОБЫЧНОЕ</p>
-                            </div>
-                            <div class="help_glass_items">
-                                <img src="images/types_kripezh2.png" alt="">
-                                <p>ОБЫЧНОЕ</p>
-                            </div>
-                            <div class="help_glass_items">
-                                <img src="images/types_kripezh3.png" alt="">
-                                <p>ОБЫЧНОЕ</p>
-                            </div>
-                            <!-- <div class="help_glass_items">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="help_glaas_type kripezh d-flex">
+                                <div class="help_glass_items ">
+                                    <img src="images/types_kripezh1.png" alt="">
+                                    <p>ОБЫЧНОЕ</p>
+                                </div>
+                                <div class="help_glass_items">
+                                    <img src="images/types_kripezh2.png" alt="">
+                                    <p>ОБЫЧНОЕ</p>
+                                </div>
+                                <div class="help_glass_items">
+                                    <img src="images/types_kripezh3.png" alt="">
+                                    <p>ОБЫЧНОЕ</p>
+                                </div>
+                                <!-- <div class="help_glass_items">
 							<img src="images/glass5.png" alt="">
 							<p>ОБЫЧНОЕ</p>
 						</div>
@@ -3816,2213 +2982,607 @@
 							<p>ОБЫЧНОЕ</p>
 						</div>
  -->                    </div>
+                            <div class="button_next">
+                                <a class="next__block">Далее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section id="call_back" class="call_back_section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="request_call_back">
+                            <h2>мы можем вам помочь</h2>
+                            <p>Выбор нанесения покрытия</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="help_glaas_type d-flex">
+                            <div class="help_glass_items">
+                                <img src="images/types_kripezh2.png" alt="">
+                                <p>прозрачное стекло</p>
+                            </div>
+                            <div class="help_glass_items">
+                                <img src="images/types_kripezh2.png" alt="">
+                                <p>градиент</p>
+                            </div>
+                            <div class="help_glass_items">
+                                <img src="images/types_kripezh2.png" alt="">
+                                <p>однотонная покраска</p>
+                            </div>
+                            <div class="help_glass_items">
+                                <img src="images/types_kripezh2.png" alt="">
+                                <p>УФ-печать</p>
+                            </div>
+                            <div class="help_glass_items">
+                                <img src="images/types_kripezh2.png" alt="">
+                                <p>3D-эффект</p>
+                            </div>
+                            <div class="help_glass_items">
+                                <img src="images/types_kripezh2.png" alt="">
+                                <p>матовка</p>
+                            </div>
+                        </div>
                         <div class="button_next">
-                            <a href="#seven">Далее</a>
+                            <a class="next__block">Далее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <div class="call_back_section">
+            <section id="call_back">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="request_call_back">
+                                <h2>мы можем вам помочь</h2>
+                                <p>Стадия ремона</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="help_glaas_type help_glaas_type2 d-flex">
+                                <div class="help_glass_items help_glass_items2">
+                                    <img src="images/cost_calc_link1.png" alt="">
+                                    <p>Кухня не установлена</p>
+                                    <span>Нужна консультация</span>
+                                </div>
+                                <div class="help_glass_items help_glass_items2">
+                                    <img src="images/cost_calc_link3.png" alt="">
+                                    <p>Кухня установлена нужен замер</p>
+                                    <span>Нужен расчет или замер</span>
+                                </div>
+                            </div>
+                            <div class="button_next">
+                                <a class="next__block">Далее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section id="call_back" class="call_back_section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="request_call_back">
+                            <h2>мы можем вам помочь</h2>
+                            <p>Дополнительные требования</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="help_glaas_type help_glaas_type2 d-flex">
+                            <div class="chekbox_sect_6 d-flex">
+                                <div class="first_chekbox">
+                                    <label>
+                                        <input type="checkbox">
+                                        <span class="fake-checkbox" aria-hidden="true"></span>
+                                        <span class="label">Доставка изделия</span>
+                                    </label>
+                                    <label>
+                                        <input type="checkbox">
+                                        <span class="fake-checkbox" aria-hidden="true"></span>
+                                        <span class="label">Монтаж (Установка)</span>
+                                    </label>
+                                    <label>
+                                        <input type="checkbox">
+                                        <span class="fake-checkbox" aria-hidden="true"></span>
+                                        <span class="label">Зеркало в ванну</span>
+                                    </label>
+                                </div>
+                                <div class="ssecond_chekbox">
+                                    <label>
+                                        <input type="checkbox">
+                                        <span class="fake-checkbox" aria-hidden="true"></span>
+                                        <span class="label">Гидрофобное покрытие / антигрязь</span>
+                                    </label>
+                                    <label>
+                                        <input type="checkbox">
+                                        <span class="fake-checkbox" aria-hidden="true"></span>
+                                        <span class="label">Стеклянные полки / дверцы</span>
+                                    </label>
+                                    <label>
+                                        <input type="checkbox">
+                                        <span class="fake-checkbox" aria-hidden="true"></span>
+                                        <span class="label">Выезд дизайнера / подбор рисунка</span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="button_next">
+                            <a class="next__block">Далее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="call_back" class="call_back_section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="request_call_back">
+                            <h2>мы можем вам помочь</h2>
+                            <p>Контактные данные</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="help_glaas_type help_glaas_type_last ">
+                            <div class="up_form ">
+                                <input type="text" placeholder="Your name">
+                                <input type="text" placeholder="Your name">
+                            </div>
+                            <div class="down_form down_form_2">
+                                <input type="text" placeholder="EMail">
+                                <input type="text" placeholder="EMail">
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" id="checkbox8" v-model="checked">
+                                <label for="checkbox8"><a href="#">Cогласие с конфиденциальностью и куки</a></label>
+                            </div>
+                        </div>
+                        <div class="button_next">
+                            <a href="">отправить</a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
     </div>
-    
+
     <div data-hash="seven">
         <section id="page_calculations">
-            
-                
-                    
-                        
-                            
-                            
-                        
-                    
-                    
-                        
-                            
-                            
-                        
-                    
-                    
-                        
-                            
-                            
-                        
-                    
-                    
-                        
-                            
-                            
-                        
-                    
-                
-            
-        
-        
-            
-                
-                    
-                        
-                            
-                                
-                            
-                            
-                            
-                            
-                            
-                                
-                                
-                                
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                                
-                                    
-                                    
-                                
-                                
-                                    
-                                    
-                                    
-                                
-                                
-                                    
-                                    
-                                
-                            
-
-                        
-                    
-                    
-                        
-                            
-                                
-                                    
-                                
-                                
-                                    
-                                
-                                
-                            
-                            
-                                
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                
-                            
-                        
-                        
-                            
-                                
-                                    
-                                
-                                
-                                    
-                                
-                                
-                            
-                            
-                                
-                                    
-                                        
-                                        
-                                    
-                                    
-                                        
-                                        
-                                    
-                                    
-                                        
-                                        
-                                    
-                                    
-                                        
-                                        
-                                    
-                                    
-                                        
-                                        
-                                    
-                                
-                            
-                        
-                        
-                            
-                                
-                                    
-                                
-                                
-                                    
-                                
-                                
-                            
-                            
-                                
-                                    
-                                        
-                                            
-                                                
-                                                   
-                                            
-
-                                            
-                                                
-                                                   
-                                            
-                                            
-                                                
-                                                   
-                                            
-                                            
-                                                
-                                                   
-                                            
-                                            
-                                                
-                                                   
-                                            
-                                            
-                                                
-                                                   
-                                            
-                                            
-                                                
-                                                   
-                                            
-                                            
-                                                
-                                                   
-                                            
-                                            
-                                                
-                                                   
-                                            
-                                        
-                                    
-                                    
-                                        
-                                            
-                                                
-                                                    
-                                                
-                                            
-                                            
-                                                
-                                                    
-                                                
-                                            
-                                            
-                                                
-                                                    
-                                                
-                                            
-                                            
-                                                
-                                                    
-                                                
-                                            
-                                            
-                                                
-                                                    
-                                                
-                                            
-                                            
-                                                
-                                                    
-                                                
-                                            
-                                            
-                                                
-                                                    
-                                                
-                                            
-                                            
-                                                
-                                                    
-                                                
-                                            
-                                            
-                                                
-                                                    
-                                                
-                                            
-                                        
-                                    
-                                
-                            
-                        
-                        
-                            
-                                
-                                    
-                                
-                                
-                                    
-                                
-                                
-                            
-                            
-                                
-                                    
-                                        
-                                        
-                                    
-                                    
-                                        
-                                        
-                                    
-                                    
-                                        
-                                        
-                                    
-                                    
-                                        
-                                        
-                                    
-                                    
-                                        
-                                            
-                                        
-                                            
-                                            
-                                        
-                                        
-                                    
-                                
-                            
-                        
-                        
-                            
-                                
-                                    
-                                
-                                
-                                    
-                                
-                                
-                            
-                            
-                                
-                                    
-                                    
-                                    
-                                
-                                
-                                    
-                                        
-                                    
-                                
-
-                            
-                        
-                        
-                            
-                                
-                                    
-                                
-                                
-                                    
-                                
-                                
-                            
-                            
-                                
-                                    
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                    
-                                    
-                                        
-                                        
-                                        
-                                        
-                                        
-                                        
-                                    
-                                    
-                                        
-                                        
-                                    
-                                
-
-                            
-                        
-                        
-                            
-                                
-                                    
-                                
-                                
-                                    
-                                
-                                
-                            
-                            
-                                
-                                    
-                                        
-                                        
-                                        
-                                    
-                                    
-                                        
-                                            
-                                                
-                                                
-                                            
-                                            
-                                                
-                                                
-                                                
-                                            
-                                        
-                                        
-                                            
-                                        
-                                    
-                                    
-                                        
-                                        
-                                    
-                                
-                            
-                        
-
-                    
-                
-            
-
-            
-            
-            
-                
-                
-                
-                <meta name="geo.region" content="RU-" />
-                <meta name="ICBM" content="55.8058150, 37.5668260" />
-                <script src="<?php echo e(asset('js/jquery.min.js')); ?>"></script>
-                <script src="<?php echo e(asset('js/jquery.fancybox.min.js')); ?>"></script>
-
-                <link rel="stylesheet" href=<?php echo e(asset("fonts/fonts.css")); ?>>
-                <link rel="stylesheet" href=<?php echo e(asset("main.css")); ?>>
-                <link rel="stylesheet" href=<?php echo e(asset("js/jquery.fancybox.min.css")); ?>>
-                <link rel="stylesheet" href=<?php echo e(asset("calc.css")); ?>>
-
-                <link rel="stylesheet" href=<?php echo e(asset("js/owl.carousel.min.css")); ?>><!--  -->
-                <link rel="stylesheet" href=<?php echo e(asset("dop.css")); ?>>
-
-                <!-- Google Tag Manager -->
-            
-            
-            
-            
-            
-            <!-- End Google Tag Manager -->
-
-
-                <script>
-                    var f1prece111 = [754, 755, 1027, 1170, 1560, 2080, 2860, 12480, 15990]; var f1prece121 = [2860, 3185, 4030, 5200, 6370, 8580, 15900, 20900]; var f1prece131 = [1755, 2210, 3640, 4420]; var f1prece141 = [1560, 2210, 2730, 3510, 4900]; var f1prece151 = [1820, 2275, 3770, 4680]; var f1prece21 = [1560, 2500, 2800]; var f1prece22 = [6370, 7670]; var f1prece23 = [2600]; var f1prece24 = [2340]; var f1prece25 = [3770]; var f1prece26 = [9800]; var polir = [110, 110, 120, 140, 160, 180, 250, 350]; var facet0 = [200, 220, 240, 320, 420]; var facet1 = [200, 220, 240, 320, 420]; var facet2 = [320, 340, 360, 440, 540]; var facet3 = [340, 360, 380, 460, 560]; var facet4 = [360, 380, 400, 480, 580]; var facet5 = [420, 490, 510, 590, 652]; var facet6 = [420, 490, 510, 590, 652]; var zakalka1 = [280, 320, 430, 480, 520, 740, 950, 1300, 1800]; var zakalka2 = [0, 480, 510, 560, 630, 760, 1100, 1500, 2000]; var zakalka3 = [0, 480, 510, 530, 650, 750, 0, 0, 0]; var zakalka4 = [0, 480, 510, 560, 640, 760, 0, 0, 0]; var zakalka5 = [0, 480, 510, 530, 640, 740, 0, 0, 0]; </script>
-
-                
-                
-                
-
-                
-                <meta name="theme-color" content="#244b66">
-                <script>
-                    var today = "";
-                    var phone = '';
-                    var mail  = '';
-                    var bz = '';
-                </script>
-                <script>var Screen = [6,7,8]; var calc='';  calc = 'Зеркало:Серебро:: Толщина - 6 мм:Круг: Размеры 10000x10000 мм.:Полировка кромок:Отверстия  шт.:Монтаж:Скругление 1 шт. 1 (мм):УФ-печать:Пескоструй (Рисунок):2 (шт.) : :не срочно::2367400 руб.:15.01.2019:|Зеркало:Серебро:: Толщина - 6 мм:Круг: Размеры 10000x10000 мм.:Полировка кромок:Отверстия  шт.:Монтаж:Скругление 1 шт. 1 (мм):УФ-печать:Пескоструй (Рисунок):2 (шт.) : :не срочно::2367400 руб.:15.01.2019:|Зеркало:Серебро:: Толщина - 6 мм:Иная форма: Размеры 1000x1000 мм.:Без обработки кромок:1 (шт.) : :не срочно::300 руб.:22.12.2018:|1 (шт.) : :не срочно::0 руб.:22.12.2018:|';
-                    var ttl_arr = new Array("Резка изделий из стекла и зеркал на заказ в Москве","Фото изделий из стекла и зеркал Ведитекс","Душевые ограждения и двери из стекла на заказ в Москве","Перегородки и маятниковые двери из стекла для дома и офиса","Зеркала на заказ с обработкой кромок или фацетом в Москве","Кухонные фартуки из стекла с прямой УФ печатью на заказ","Расчет стоимости резки и обработки стекла или зеркал Online","Контакты компании VEDITEX («Ведитекс гласс») в Москве");  var sed_arr = new Array("Резка стекла и зеркал с обработкой кромок, фацетом. Высококачественные материалы AGC (Япония) и Guardian (Англия), при цене от 760руб/м2","Фото душевых ограждений, дверей из стекла, зеркального панно, различных эксклюзивных решений от компании VEDITEX (Ведитекс)","Душевые перегородки, ограждения и двери из стекла различных видов. Сделаем за 7 дней с качественной фурнитурой. Замеры, доставка, установка","Стеклянные перегородки с маятниковыми или распашными дверями из стекла на заказ. Сроки – от 7 дней. Сделаем «под ключ» от замера до установки.","Зеркальные панно и зеркала на заказ с различными обработками, фацетом или рисунком, зеркальные двери. Фотографии и цены. Бесплатная консультация.","Фартуки из стекла с прямой печатью по технологии UV, с гарантированным качеством и долговечностью. Сочные цвета, ЭКО-чернила и каленое стекло","Точный расчет стоимости простых изделий из стекла и зеркал на заказ. Возможность сразу оформить заказ. Срочное изготовление стеклоизделий от 6 часов!","Компания VEDITEX находится по улице 2-ая Хуторская д.38А. Офис 303. Наш телефон – +7 (499) 677-20-67. Электронная почта – info@v-t-x.ru"); </script><title>Расчет стоимости резки и обработки стекла или зеркал Online</title><meta name='description' content='Точный расчет стоимости простых изделий из стекла и зеркал на заказ. Возможность сразу оформить заказ. Срочное изготовление стеклоизделий от 6 часов!'><script src=<?php echo e(asset("js/owl.carousel.min.js")); ?>></script>
-
-                <link rel="stylesheet" href=<?php echo e(asset("media.css")); ?>>
-                
-                <style>
-                    body { font-family: 'Roboto Slab', serif; }
-                </style>
-            </head>
-            <body  class="ver001 ver002">
-            <div class="first_preloader">
-                <div class="Load"><div class="loaad"></div></div>
-            </div>
-            <div id="vspl" class="hidevspl">0001</div>
-            <div id="cons"></div>
-            <div id="content">
-
-                <div id="foter2">
-                    <a class="lnk" href="/Rezka_stekla_i_zerkal_na_zakaz" sh="1"><div class="logo tipnav" ></div></a>
-                    <div id="ft" >
-                        <div id="ft0"  class="nk2" style=' margin-right: 96px;'>
-                            <a class="lnk" href="/Raschet_stoimosti" sh="7"><button class="tipnav" >Расчет стоимости online</button>
-                                <br>
-                                <span>
-				Вы сможете самостоятельно рассчитать  <br>
-				цену резки и обработки простых изделий.
-			</span>
-
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-3">
+                        <div class="calculations_sec1_items">
+                            <img src="images/page_calc_sec_1_pic1.png" alt="">
+                            <p>Срок изготовления – <br> от 12 часов</p>
                         </div>
-                        <ul class="show" id="fh">
-                            <li><div class="icon phone"></div><div class="m5"><a href="tel:+74996772067">+7 (499) 677 20 67</a></div></li>
-                            <li>   <div class="icon city"></div><div class="m4"><div class="linnk"><a class="lnk" href="/Kontakty_kompanii_VEDITEX" sh="8"> г. Москва </a></div></div> </li>
-                            <li onclick="showmod('spec')"><div class="icon call"></div><div class="m3 clc" ><div class="linnk">Заявка на звонок</div></div></li>
-                            <li><div class="icon work"></div><div class="m2">пн - сб 10 00 - 19 00</div></li>
-                        </ul>
                     </div>
-                    <div class="prenav">
-                        <div class="menu_icon ">Меню</div>
+                    <div class="col-lg-3 col-md-3">
+                        <div class="calculations_sec1_items">
+                            <img src="images/page_calc_sec_1_pic2.png" alt="">
+                            <p>Минимальный заказ – <br> 300р /изделие 1000р/заказ</p>
+                        </div>
                     </div>
-
-                    <div id="foter3">
-                        <div class="j jw8f"> <a class="lnk" href="/Kontakty_kompanii_VEDITEX" sh="8"> г. Москва</a></div>
-                        <div class="j menua menu_icon">Меню</div><br>
-
-                        <div class="j">пн - сб 10 00 - 19 00</div><br>
-                        <div class="j"><div class="icon phone"></div><a href="tel:+74996772067">+7 (499) 677 20 67</a></div>
+                    <div class="col-lg-3 col-md-3">
+                        <div class="calculations_sec1_items">
+                            <img src="images/page_calc_sec_1_pic3.png" alt="">
+                            <p>Производство изделий «под ключ» - перегородки, душевые и многое другое</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3">
+                        <div class="calculations_sec1_items">
+                            <img src="images/page_calc_sec_1_pic4.png" alt="">
+                            <p>Услуги по доставке и установке стеклоизделий и зеркал</p>
+                        </div>
                     </div>
                 </div>
-
-                <div id="navblack" class="hide_nav">
-                    <div class="X Xcloce"></div>
-                    <nav>
-
-                        <ol>
-
-                            <a class="lnk" href="/Rezka_stekla_i_zerkal_na_zakaz" sh="1"> <li class="home">Главная страница</li></a><a class="lnk" href="/Primery_i_foto_izdelij_iz_stekla_i_zerkal" sh="2"> <li class="ourwork">Примеры работ</li></a><a class="lnk" href="/Dushevye_ograzhdenija_i_dveri_iz_stekla_na_zakaz" sh="3"> <li class="bords">Душевые ограждения</li></a><a class="lnk" href="/Peregorodki_i_dveri_iz_stekla_na_zakaz" sh="4"> <li class="frames">Перегородки и ограждения</li></a><a class="lnk" href="/Zerkala_na_zakaz_s_razlichnoj_obrabotkoj" sh="5"> <li class="mirrors">Зеркальное панно</li></a><a class="lnk" href="/Kuhonnye_fartuki_iz_stekla_na_zakaz" sh="6"> <li class="skinaly">Скинали</li></a><a class="lnk" href="/Raschet_stoimosti" sh="7"> <li class="calc">Расчет стоимости</li></a><a class="lnk" href="/Kontakty_kompanii_VEDITEX" sh="8"> <li class="cont">Контакты</li></a>
-                        </ol>
-                        <div class="lk" onclick="showmod('log')">Личный кабинет</div>
-                    </nav>
-                </div>	<script src=<?php echo e(asset("js/menup.js")); ?>></script>
-
-                <div id="galery_slide">
-
-                    <div id="screen">
-                        
-                        
-                        
-                        
-                        
-                        
-                        <div class="b center_block" ttl="Расчет стоимости" id="box7">
-                            <div class="calc_block">
-                                <!--
-
-                                            В данном калькуляторе Вы сможете рассчитать точную стоимость и сроки изготовления Вашего заказа,
-                                            максимально быстро, понятным и простым интерфейсом, позволяющим оформить заказ без помощи менеджера и
-                                            приезда в офис, а так же получить доступ к личному кабинету, отслеживая срок исполнения и статус изделия.
-
-                                    -->	<div class="p hws"></div>
-                                <div class="p">
-
-                                    <div class="clac_top">
-                                        <span class="number">1</span>
-                                        <span class="calc_ttl">Выберите материал</span>
-                                        <span class="selstep">-</span>
-                                        <span class="bustep">
-					<svg>
-						<polyline points="0,15 15,0 30,15" fill="rgba(249,249,249,0)" stroke-width="2" stroke="rgb(0,0,0)"/>
-					</svg>
-				</span>
-                                    </div>
-                                    <span class="block_options">
-				<button class="v2 u" onclick="c(1,1,this,false)">Стекло</button>
-				<button class="v2 u" onclick="c(1,2,this,false)">Зеркало</button>
-				<button class="v2  u" onclick="c(1,3,this,true)">Триплекс</button>
-                                        <!--<button class="v2 u" onclick="c(1,4,this,false)">Конструкции</button>-->
-			</span>
-
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="cost_calculation">
+                            <h4>
+                                стоимость заказа
+                            </h4>
+                            <input type="text">
+                            <h4>ГОТОВНОСТЬ НА:</h4>
+                            <p>(без срочности)</p>
+                            <div class="date_calc">
+                                <input type="day">
+                                <input type="day">
+                                <input type="day">
+                            </div>
+                            <p class="cost_calculation_day">( Пятница )</p>
+                            <label>
+                                <input type="checkbox">
+                                <span class="fake-checkbox" aria-hidden="true"></span>
+                                <span class="label">Срочноо</span>
+                            </label> <br>
+                            <button class="cost_butt">Оформить заказ</button>
+                            <button class="cost_butt1">В корзину</button>
+                            <div class="cost_calculation__link">
+                                <div>
+                                    <img src="images/cost_calc_link1.png" alt="">
+                                    <a href="#">Консультация</a>
                                 </div>
-                                <div class="p hidden_block">
-                                    <div class="clac_top">
-                                        <span class="number">2</span>
-                                        <span class="calc_ttl">Вид материала</span>
-                                        <span class="selstep"></span>
-                                        <span class="bustep">
-					<svg>
-						<polyline points="0,15 15,0 30,15" fill="rgba(249,249,249,0)" stroke-width="2" stroke="rgb(0,0,0)"/>
-					</svg>
-				</span>
-                                    </div>
-                                    <span class="block_options bus2">
-
-			</span>
+                                <div>
+                                    <img src="images/cost_calc_link2.png" alt="">
+                                    <a href="#">Корзина</a>
                                 </div>
-
-
-
-
-
-                                <div class="p hidden_block">
-
-                                    <div class="clac_top">
-                                        <span class="number">3</span>
-                                        <span class="calc_ttl">Толщина изделия</span>
-                                        <span class="selstep">-</span>
-                                        <span class="bustep">
-					<svg>
-						<polyline points="0,15 15,0 30,15" fill="rgba(249,249,249,0)" stroke-width="2" stroke="rgb(0,0,0)"/>
-					</svg>
-				</span>
-                                    </div>
-                                    <span class="block_options bus3">
-
-			</span>
-
+                                <div>
+                                    <img src="images/cost_calc_link3.png" alt="">
+                                    <a href="#">Замершик</a>
                                 </div>
-                                <div class="p hidden_block">
+                            </div>
 
-                                    <div class="clac_top">
-                                        <span class="number">4</span>
-                                        <span class="calc_ttl">Форма и размеры</span>
-                                        <span class="selstep">-</span>
-                                        <span class="bustep">
-					<svg>
-						<polyline points="0,15 15,0 30,15" fill="rgba(249,249,249,0)" stroke-width="2" stroke="rgb(0,0,0)"/>
-					</svg>
-				</span>
-                                    </div>
-                                    <span class="block_options bus4">
-
-			</span>
-
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="cost_calc_first_tab first_tab_1 toggle">
+                            <div id="calc_stege" class="head toggler ">
+                                <p class="numver_stage">
+                                    1
+                                </p>
+                                <h4>
+                                    Выберите материал
+                                </h4>
+                                <i class="fas fa-angle-down"></i>
+                            </div>
+                            <div id="box-calc" class="wraper content actived">
+                                <div class="stairs_and_flooring_buttons stairs_and_flooring_buttons_calculator  d-flex">
+                                    <a class="nav-link" data-toggle="tab" href="#">Зеркало</a>
+                                    <a class="nav-link" data-toggle="tab" href="#">Триплекс</a>
+                                    <a class="nav-link" data-toggle="tab" href="#">Стекло</a>
                                 </div>
-                                <div class="p hidden_block">
-
-                                    <div class="clac_top">
-                                        <span class="number">5</span>
-                                        <span class="calc_ttl">Обработка кромок</span>
-                                        <span class="selstep">-</span>
-                                        <span class="bustep">
-					<svg>
-						<polyline points="0,15 15,0 30,15" fill="rgba(249,249,249,0)" stroke-width="2" stroke="rgb(0,0,0)"/>
-					</svg>
-				</span>
+                            </div>
+                        </div>
+                        <div class="cost_calc_first_tab toggle">
+                            <div id="calc_stege" class="head toggler">
+                                <p class="numver_stage">
+                                    2
+                                </p>
+                                <h4>
+                                    Вид стекла
+                                </h4>
+                                <i class="fas fa-angle-down"></i>
+                            </div>
+                            <div id="box-calc" class="wraper content">
+                                <div class="calc_contents d-flex">
+                                    <div class="help_glass_items calc_content2">
+                                        <img src="images/glaas_type1.png" alt="">
+                                        <p>ОБЫЧНОЕ</p>
                                     </div>
-                                    <span class="block_options bus5">
-
-			</span>
-
+                                    <div class="help_glass_items calc_content2">
+                                        <img src="images/glass3.png" alt="">
+                                        <p>Оптивайт</p>
+                                    </div>
+                                    <div class="help_glass_items calc_content2">
+                                        <img src="images/glass4.png" alt="">
+                                        <p>Бронза</p>
+                                    </div>
+                                    <div class="help_glass_items calc_content2">
+                                        <img src="images/glass5.png" alt="">
+                                        <p>Матовое</p>
+                                    </div>
+                                    <div class="help_glass_items calc_content2">
+                                        <img src="images/glaas6.png" alt="">
+                                        <p>Серое</p>
+                                    </div>
                                 </div>
+                            </div>
+                        </div>
+                        <div class="cost_calc_first_tab toggle">
+                            <div id="calc_stege" class="head toggler">
+                                <p class="numver_stage">
+                                    3
+                                </p>
+                                <h4>
+                                    Толщина изделия
+                                </h4>
+                                <i class="fas fa-angle-down"></i>
+                            </div>
+                            <div id="box-calc" class="wraper content">
+                                <div class="stage_3_choose_thiknes d-flex">
+                                    <div class="choose_thiknes">
+                                        <ul class="nav nav-tabs d-flex" id="myTab" role="tablist">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" data-toggle="tab" href="#calc1" role="tab"
+                                                   aria-controls="home">3</a>
+                                            </li>
 
-                                <div class="p hidden_block">
-
-                                    <div class="clac_top">
-                                        <span class="number">6</span>
-                                        <span class="calc_ttl">Дополнительно</span>
-                                        <span class="selstep">-</span>
-                                        <span class="bustep">
-					<svg>
-						<polyline points="0,15 15,0 30,15" fill="rgba(249,249,249,0)" stroke-width="2" stroke="rgb(0,0,0)"/>
-					</svg>
-				</span>
+                                            <li class="nav-item">
+                                                <a class="nav-link" data-toggle="tab" href="#calc2" role="tab"
+                                                   aria-controls="profile">4</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" data-toggle="tab" href="#calc3" role="tab"
+                                                   aria-controls="messages">5</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" data-toggle="tab" href="#calc4" role="tab"
+                                                   aria-controls="messages">6</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" data-toggle="tab" href="#calc5" role="tab"
+                                                   aria-controls="messages">8</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" data-toggle="tab" href="#calc6" role="tab"
+                                                   aria-controls="messages">10</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" data-toggle="tab" href="#calc7" role="tab"
+                                                   aria-controls="messages">12</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" data-toggle="tab" href="#calc8" role="tab"
+                                                   aria-controls="messages">15</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" data-toggle="tab" href="#calc9" role="tab"
+                                                   aria-controls="messages">19</a>
+                                            </li>
+                                        </ul>
                                     </div>
-                                    <span class="block_options bus6">
-				po
-			</span>
-
-                                </div>
-
-
-                                <div class="p hidden_block">
-
-                                    <div class="clac_top">
-                                        <span class="number">7</span>
-                                        <span class="calc_ttl">Информация по заказу</span>
-                                        <span class="selstep">-</span>
-                                        <span class="bustep">
-					<svg>
-						<polyline points="0,15 15,0 30,15" fill="rgba(249,249,249,0)" stroke-width="2" stroke="rgb(0,0,0)"/>
-					</svg>
-				</span>
-                                    </div>
-                                    <span class="block_options bus7">
-
-			</span>
-
-                                </div>
-
-                                <div class="hide">
-                                    <div class="u11" title="Вид стекла" titleh="Толщина изделия">
-	<span onmouseover="moc(2,1,this)" onmouseout="mx()" onclick="c(2,1,this,false)" class="box u">
-		<span class="imagea e1"></span><br>
-		<span class="ttls">Обычное</span>
-	</span>
-                                        <span onmouseover="moc(2,2,this)" onmouseout="mx()" onclick="c(2,2,this,false)" class="box u">
-		<span class="imagea e3"></span><br>
-		<span class="ttls">Оптивайт</span>
-	</span>
-                                        <span onmouseover="moc(2,3,this)" onmouseout="mx()" onclick="c(2,3,this,false)" class="box u">
-		<span class="imagea e2"></span><br>
-		<span class="ttls">Бронза</span>
-	</span>
-
-                                        <span onmouseover="moc(2,4,this)" onmouseout="mx()" onclick="c(2,4,this,false)" class="box u">
-		<span class="imagea e4"></span><br>
-		<span class="ttls">Матовое</span>
-	</span>
-                                        <span onmouseover="moc(2,5,this)" onmouseout="mx()" onclick="c(2,5,this,false)" class="box u">
-		<span class="imagea e5"></span><br>
-		<span class="ttls">Серое</span>
-	</span>
-                                        <div class="box_info1">
-                                            Выберте стекло
-                                        </div>
-                                    </div>
-
-                                    <div class="u12"  title="Вид зеркала" titleh="Толщина изделия">
-                                        <!--<span onmouseover="moc(2,10,this)" onmouseout="mx()" onclick="c(2,10,this,false)" class="box u">
-                                    <span class="imagea e1"></span> <br>
-                                        <span class="ttls">Серебро</span>
-
-                                    </span>-->
-                                        <button class="v2 u" onmouseover="moc(2,10,this)" onmouseout="mx()" onclick="c(2,10,this,false)">Серебро</button>
-                                        <!--<span onmouseover="moc(2,20,this)" onmouseout="mx()" onclick="c(2,20,this,false)" class="box u">
-                                    <span class="imagea e2"></span> <br>
-                                        <span class="ttls">Clearvision</span>
-
-                                    </span>-->
-                                        <button class="v2 u" onmouseover="moc(2,20,this)" onmouseout="mx()" onclick="c(2,20,this,false)">Clearvision</button>
-                                        <!--<span onmouseover="moc(2,30,this)" onmouseout="mx()" onclick="c(2,30,this,false)" class="box u">
-                                    <span class="imagea e3"></span> <br>
-                                        <span class="ttls">Графит</span>
-
-                                    </span>-->
-                                        <button class="v2 u" onmouseover="moc(2,30,this)" onmouseout="mx()" onclick="c(2,30,this,false)">Графит</button>
-                                        <br>
-                                        <!--<span onmouseover="moc(2,40,this)" onmouseout="mx()" onclick="c(2,40,this,false)" class="box u">
-                                    <span class="imagea e4"></span> <br>
-                                        <span class="ttls">Бронза</span>
-
-                                    </span>-->
-                                        <button class="v2 u" onmouseover="moc(2,40,this)" onmouseout="mx()" onclick="c(2,40,this,false)">Бронза</button>
-                                        <!--<span onmouseover="moc(2,50,this)" onmouseout="mx()" onclick="c(2,50,this,false)" class="box u">
-                                    <span class="imagea e5"></span> <br>
-                                        <span class="ttls">Золото</span>
-
-                                    </span>-->
-                                        <button class="v2 u" onmouseover="moc(2,50,this)" onmouseout="mx()" onclick="c(2,50,this,false)">Золото</button>
-                                        <!--<span onmouseover="moc(2,60,this)" onmouseout="mx()" onclick="c(2,60,this,false)" class="box u">
-                                    <span class="imagea e5"></span> <br>
-                                        <span class="ttls">Эксклюзив</span>
-
-                                    </span>-->
-                                        <button class="v2 u" onmouseover="moc(2,60,this)" onmouseout="mx()" onclick="c(2,60,this,false)">Эксклюзив</button>
-                                        <div class="box_info1">
-                                            Выберте стекло
-                                        </div>
-                                    </div>
-
-
-                                    <div class="u13" dest='1' title="Триплекс" titleh=" ">
-                                        Существует безчисленное множество комбинаций использования многослойного стекла (триплекса).
-                                        Систематизировать и рассчитывать автоматически - сложно. Поэтому для Вашего удобства мы предлагаем бесплатный расчет
-                                        нашим специалистом по Вашему вопросу, который сможет с Вами связатся и подготовить для Вас нужную информацию по данной тематике,
-                                        дать комментарии, рассказать как это будет выглядеть, сколько будет стоить и какие есть возможности реализации Вашего проекта.
-                                    </div>
-
-
-
-                                    <div class="u14" title="Конструкции" titleh="Ваши данные">
-
-                                        <button class="v2 u" onmouseover="moc(2,86,this)" onmouseout="mx()" onclick="c(2,86,this,true)">Душевые ограждения</button>
-                                        <button class="v2 u" onmouseover="moc(2,86,this)" onmouseout="mx()" onclick="c(2,86,this,true)">Уф-склейка</button>
-                                        <button class="v2 u" onmouseover="moc(2,86,this)" onmouseout="mx()" onclick="c(2,86,this,true)">Зеркальное панно</button>
-                                        <button class="v2 u" onmouseover="moc(2,86,this)" onmouseout="mx()" onclick="c(2,86,this,true)">Мебель из стекла</button>
-                                        <button class="v2 u" onmouseover="moc(2,86,this)" onmouseout="mx()" onclick="c(2,86,this,true)">Перегородки</button>
-                                        <button class="v2 u" onmouseover="moc(2,86,this)" onmouseout="mx()" onclick="c(2,86,this,true)">Цельностеклянные двери</button>
-                                        <button class="v2 u" onmouseover="moc(2,86,this)" onmouseout="mx()" onclick="c(2,86,this,true)">Комплексное снабжение объектов</button>
-                                        <button class="v2 u" onmouseover="moc(2,86,this)" onmouseout="mx()" onclick="c(2,86,this,true)">Лестницы и ограждения</button>
-                                        <button class="v2 u" onmouseover="moc(2,86,this)" onmouseout="mx()" onclick="c(2,86,this,true)">Входнные группы</button>
-                                        <button class="v2 u" onmouseover="moc(2,86,this)" onmouseout="mx()" onclick="c(2,86,this,true)">Зеркала с подсветкой</button>
-                                        <button class="v2 u" onmouseover="moc(2,86,this)" onmouseout="mx()" onclick="c(2,86,this,true)">Кухонные фартуки</button>
-                                        <button class="v2 u" onmouseover="moc(2,86,this)" onmouseout="mx()" onclick="c(2,86,this,true)">Аквариумы</button>
-                                        <button class="v2 u" onmouseover="moc(2,86,this)" onmouseout="mx()" onclick="c(2,86,this,true)">Эксклюзив</button>
-
-                                    </div>
-
-
-
-
-
-
-
-
-
-                                    <div class="u31" title="Форма и размеры" titleh="Обработка кромок">
-	<span onmouseover="moc(4,1,this)" onmouseout="mx()" onclick="c(4,1,this,false)" class="box u">
-		<span class="imagea e21_1"></span><br>
-		<span class="ttls">Прямоугольник</span>
-	</span>
-                                        <span onmouseover="moc(4,2,this)" onmouseout="mx()" onclick="c(4,2,this,false)" class="box u">
-		<span class="imagea e21_2"></span><br>
-		<span class="ttls">Круг</span>
-	</span>
-                                        <span onmouseover="moc(4,3,this)" onmouseout="mx()" onclick="c(4,3,this,false)" class="box u">
-		<span class="imagea e21_3"></span><br>
-		<span class="ttls">Овал</span>
-	</span>
-                                        <span onmouseover="moc(4,4,this)" onmouseout="mx()" onclick="c(4,4,this,false)" class="box u">
-		<span class="imagea e21_4"></span><br>
-		<span class="ttls">Иная форма</span>
-	</span>
-
-                                        <div class="box_info1 box_info2 box_info3" >
-                                            <br>
-                                            Выберите форму<br>будущего изделия
-                                            <br>
-                                        </div>
-                                    </div>
-
-
-
-                                    <div class="u42 u43 u44" title="Обработка кромок" titleh="Дополнительно">
-                                        <div class="erd">
-                                            <button class="v2 u kont" onmouseover="moc(5,1,this)" onmouseout="mx()" onclick="c(5,1,this,false)">Без обработки кромок</button>
-                                            <button class="v2 u kont" onmouseover="moc(5,2,this)" onmouseout="mx()" onclick="c(5,2,this,false)">Полировка кромок</button>
-
-                                        </div>
-
-                                        <div class="box_info1 box_info2 ">
-                                            <br>
-                                            Выберите форму<br>будущего изделия
-                                            <br>
-                                        </div>
-                                    </div>
-
-
-
-                                    <div class="u41" title="Обработка кромок" titleh="Дополнительно">
-                                        <div class="erd">
-                                            <button class="v2 u kont" onmouseover="moc(5,1,this)" onmouseout="mx()" onclick="c(5,1,this,false)">Без обработки кромок</button>
-                                            <button class="v2 u kont" onmouseover="moc(5,2,this)" onmouseout="mx()" onclick="c(5,2,this,false)">Полировка кромок</button>
-                                            <button class="v2 u kont" onmouseover="moc(5,3,this)" onmouseout="mx()" onclick="c(5,3,this,false)">Фацет</button>
-                                        </div>
-
-                                        <div class="box_info1 box_info2 " >
-                                            <br>
-                                            Выберите форму<br>будущего изделия
-                                            <br>
-                                        </div>
-                                    </div>
-
-
-
-
-                                    <div class="u444" title="Обработка кромок" titleh="Дополнительно">
-                                        <div class="erd">
-                                            <button class="v2 u kont " onmouseover="moc(5,1,this)" onmouseout="mx()" onclick="c(5,1,this,false)">Без обработки кромок</button>
-                                        </div>
-                                        <div class="box_info1 box_info2"  >
-                                            Кромка будет режуще-острой, а стекло хрупким. <br>
-                                            Будьте осторожны! <br>
-
-                                            <div class="imgclc c1"></div>
-                                        </div>
-                                    </div>
-
-
-
-
-
-                                    <div class="u286" title="Инфо" >
-                                        Мы так же производим сложные изделия в различных вариациях и формах.
-                                        Но, ввиду, сложности автоматического расчета подобного изделия, предлагаем оставить заявку
-                                        или связаться с нами для предоставления корректного расчета Вашего заказа. Так же Вы можете
-                                        Сделать ТОЧНЫЙ расчет отдельно по стеклу и зеркалам в соотвествующих категорях данного калькулятора.
-                                    </div>
-
-
-                                    <!--
-                                    <div class="p" id="u22">
-                                        <button class="v2 u" onmouseover="moc(1,1,this)" onmouseout="mx()" onclick="c(1,1,this)">Стекло</button>
-                                        <button class="v2 u" onmouseover="moc(1,2,this)" onmouseout="mx()" onclick="c(1,2,this)">Зеркало</button>
-                                        <button class="v2 u" onmouseover="moc(1,3,this)" onmouseout="mx()" onclick="c(1,3,this)">Триплекс</button>
-                                        <button class="v2 u" onmouseover="moc(1,4,this)" onmouseout="mx()" onclick="c(1,4,this)">Конструкции</button>
-                                    </div>
-                                    -->
-
-
-
-
-
-
-                                    <div class="doppp">
-                                        <br><br>
-                                        <a class="contact" href="tel:+7 (49) 677-20-67">+7 (499) 677-20-67</a>
-                                        <button onclick="showmod('spec')">Консультация и расчет</button>
-                                        <a class="contact" href="mailto: info@v-t-x.ru">info@v-t-x.ru</a>
-                                    </div>
-
-
-
-
-                                    <div class="u51" title="Дополнительно" titleh="0">
-                                        <div class="box3x3">
-                                            <div class="d4r">
-                                                <input type="checkbox" onchange="setcena0()" id="check24" >
-                                                <label for="check24"><span class="checkbox" ></span><h3>Закалка (Термоупрочнение)</h3></label><br>
-
-
-                                                <input type="checkbox" min='1' onchange="setcena0()" id="check25" class="zkey">
-                                                <label for="check25"><span class="checkbox"></span><h3>Отверстия и вырезы</h3></label>
-                                                <div class="hb1 zamok">
-                                                    <input  type="number" placeholder="Количество"  onchange="setcena0()" id="otverstia" min="1" ></input>
-                                                    <button class="v2 ML0" onclick="showfile(1)">Загрузить схему отверстий</button>
-                                                </div>
-
-                                                <input type="checkbox" onchange="setcena0()" id="check255">
-                                                <label for="check255"><span class="checkbox" ></span><h3>Монтаж</h3></label><br>
-                                                <!--
-                                                <select name="noe" id="">
-                                                    <option value="bbb">111</option>
-                                                </select>
-                                                -->
-                                            </div>
-                                            <div class="d4r">
-                                                <input onchange="setcena0()" type="checkbox" id="check26" class="zkey">
-                                                <label for="check26"><span class="checkbox"></span>
-                                                    <h3>Скругления по углам</h3>
-                                                </label><br>
-                                                <div class="hb2 zamok">
-                                                    <input onchange="setcena0()" type="number" min="1" max="4" id="skrgl" placeholder="Количество скруглений"></input>
-                                                    <input type="number" id="skrgl5" placeholder="Радиус скруглений (мм)"></input>
-                                                    <button class="v2 ML0" onclick="showfile(3)">Загрузить схему скруглений</button>
+                                    <div class="content-right_calc">
+                                        <div class="tab-content">
+                                            <div class="tab-pane active" id="calc1" role="tabpanel">
+                                                <div class="img_items_stairs">
+                                                    <img src="images/Fartucks/1/1.jpg" alt="1">
                                                 </div>
                                             </div>
-
-                                            <div class="d4r">
-                                                <input onchange="setcena0()" type="checkbox" id="check27">
-                                                <label for="check27"><span class="checkbox"></span>
-                                                    <h3>Покраска стекла</h3>
-                                                </label><br>
-
-                                                <input onchange="setcena0()" type="checkbox" id="check28">
-                                                <label for="check28"><span class="checkbox"></span>
-                                                    <h3>УФ-печать</h3>
-                                                </label><br>
-
-                                                <input onchange="setcena0()" type="checkbox" id="check29" class="zkey">
-                                                <label for="check29"><span class="checkbox"></span>
-                                                    <h3>Пескоструй</h3>
-                                                </label><br>
-
-                                                <div class="hb2 zamok">
-                                                    <select  onchange="setcena0()" name="noe" id="peskostr">
-                                                        <option value="1">Рисунок</option>
-                                                        <option value="2">Целиком</option>
-                                                    </select>
-                                                    <button class="v2 ML0" onclick="showfile(2)">Загрузить рисунок</button>
+                                            <div class="tab-pane " id="calc2" role="tabpanel">
+                                                <div class="img_items_stairs">
+                                                    <img src="images/Fartucks/1/2.jpg" alt="1">
                                                 </div>
                                             </div>
-
-                                        </div>
-                                    </div>
-
-
-
-
-                                    <div class="u52" title="Дополнительно" titleh="0">
-                                        <div class="box3x3">
-                                            <div class="d4r">
-
-
-                                                <input type="checkbox" min='1' onchange="setcena0()" id="check25" class="zkey">
-                                                <label for="check25"><span class="checkbox"></span><h3>Отверстия и вырезы</h3></label>
-                                                <div class="hb1 zamok">
-                                                    <input  type="number" placeholder="Количество"  onchange="setcena0()" id="otverstia" min="1" ></input>
-                                                    <button class="v2 ML0" onclick="showfile()">Загрузить схему отверстий</button>
-                                                </div>
-
-                                                <input type="checkbox" onchange="setcena0()" id="check255">
-                                                <label for="check255"><span class="checkbox" ></span><h3>Монтаж</h3></label><br>
-                                                <!--
-                                                <select name="noe" id="">
-                                                    <option value="bbb">111</option>
-                                                </select>
-                                                -->
-                                            </div>
-                                            <div class="d4r">
-                                                <input onchange="setcena0()" type="checkbox" id="check26" class="zkey">
-                                                <label for="check26"><span class="checkbox"></span>
-                                                    <h3>Скругления по углам</h3>
-                                                </label><br>
-                                                <div class="hb2 zamok">
-                                                    <input onchange="setcena0()" type="number" min="1" max="4" id="skrgl" placeholder="Количество скруглений"></input>
-                                                    <input type="number" id="skrgl5" placeholder="Радиус скруглений (мм)"></input>
-                                                    <button class="v2 ML0" onclick="showfile()">Загрузить схему скруглений</button>
+                                            <div class="tab-pane " id="calc3" role="tabpanel">
+                                                <div class="img_items_stairs">
+                                                    <img src="images/Fartucks/1/3.jpg" alt="1">
                                                 </div>
                                             </div>
-
-                                            <div class="d4r">
-
-                                                <input onchange="setcena0()" type="checkbox" id="check28">
-                                                <label for="check28"><span class="checkbox"></span>
-                                                    <h3>УФ-печать</h3>
-                                                </label><br>
-
-                                                <input onchange="setcena0()" type="checkbox" id="check29" class="zkey">
-                                                <label for="check29"><span class="checkbox"></span>
-                                                    <h3>Пескоструй</h3>
-                                                </label><br>
-
-                                                <div class="hb2 zamok">
-                                                    <select  onchange="setcena0()" name="noe" id="peskostr">
-                                                        <option value="1">Рисунок</option>
-                                                        <option value="2">Целиком</option>
-                                                    </select>
-                                                    <button class="v2 ML0" onclick="showfile()">Загрузить рисунок</button>
+                                            <div class="tab-pane " id="calc4" role="tabpanel">
+                                                <div class="img_items_stairs">
+                                                    <img src="images/Fartucks/1/4.jpg" alt="1">
                                                 </div>
                                             </div>
-
-                                        </div>
-                                    </div>
-
-
-
-                                    <div class="u53 l" title="Дополнительно" titleh="0">
-                                        <div class="box3x3 l">
-
-
-                                            <input type="checkbox" onchange="setcena0()" id="check255">
-                                            <label for="check255"><span class="checkbox" ></span><h3>Монтаж</h3></label><br>
-
-
-                                            <input onchange="setcena0()" type="checkbox" id="check26" class="zkey">
-                                            <label for="check26"><span class="checkbox"></span>
-                                                <h3>Скругления по углам</h3>
-                                            </label><br>
-                                            <div class="hb2 zamok">
-                                                <input onchange="setcena0()" type="number" min="1" max="4" id="skrgl" placeholder="Количество скруглений"></input>
-                                                <input type="number" id="skrgl5" placeholder="Радиус скруглений (мм)"></input>
-                                                <button class="v2 ML0" onclick="showfile()">Загрузить схему отверстий</button>
+                                            <div class="tab-pane " id="calc5" role="tabpanel">
+                                                <div class="img_items_stairs">
+                                                    <img src="images/Fartucks/1/1.jpg" alt="1">
+                                                </div>
                                             </div>
-
-
-
+                                            <div class="tab-pane" id="calc6" role="tabpanel">
+                                                <div class="img_items_stairs">
+                                                    <img src="images/Fartucks/1/1.jpg" alt="1">
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane" id="calc7" role="tabpanel">
+                                                <div class="img_items_stairs">
+                                                    <img src="images/Fartucks/1/1.jpg" alt="1">
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane" id="calc8" role="tabpanel">
+                                                <div class="img_items_stairs">
+                                                    <img src="images/Fartucks/1/1.jpg" alt="1">
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane " id="calc9" role="tabpanel">
+                                                <div class="img_items_stairs">
+                                                    <img src="images/Fartucks/1/1.jpg" alt="1">
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                    <div class="u21" title="Толщина изделия" titleh="Форма и размеры">
-	<span  class="box_height">
-		<span class="bh u" onclick="c(3,1,this,false)">3</span>
-		<span class="bh u" onclick="c(3,2,this,false)">4</span>
-		<span class="bh u" onclick="c(3,3,this,false)">5</span>
-		<span class="bh u" onclick="c(3,4,this,false)">6</span>
-		<span class="bh u" onclick="c(3,5,this,false)">8</span>
-		<span class="bh u" onclick="c(3,6,this,false)">10</span>
-		<span class="bh u" onclick="c(3,7,this,false)">12</span>
-		<span class="bh u" onclick="c(3,8,this,false)">15</span>
-		<span class="bh u" onclick="c(3,9,this,false)">19</span>
-	</span>
-
-
-                                        <div class="box_info2">
-                                            <br>
-                                            <svg style="margin-top: 10px;" height="50" width="280">
-                                                <polyline points="30,1 0,30 250,30 270,1 30,1" fill="rgb(249,249,249)" stroke-width="1" stroke="rgb(0,0,0)"/>
-                                                <polyline points="0,30 0,40 250,40 250,30" fill="rgb(100,100,249)" stroke-width="1" stroke="rgb(0,0,0)"/>
-                                                <polyline points="250,40 270,10 270,1 250,30" fill="rgb(100,100,249)" stroke-width="1" stroke="rgb(0,0,0)"/>
-                                            </svg>
-
-                                        </div>
-
-                                        <div class="box_info1">
-                                            <!-- Толщина зависит -->
-                                        </div>
-                                    </div>
-
-
-
-
-
-
-
-
-                                    <div class="u23" title="Толщина изделия" titleh="Форма и размеры">
-                                        <!--  Бронза  -->
-                                        <span style="width: 150px;" class="box_height">
-		<span class="bh u" onmouseover="moc(3,1,this)" onmouseout="mx()" onclick="c(3,1,this,false)">4</span>
-		<span class="bh u" onmouseover="moc(3,2,this)" onmouseout="mx()" onclick="c(3,2,this,false)">6</span>
-		<span class="bh u" onmouseover="moc(3,3,this)" onmouseout="mx()" onclick="c(3,3,this,false)">8</span>
-		<span class="bh u" onmouseover="moc(3,4,this)" onmouseout="mx()" onclick="c(3,4,this,false)">10</span>
-	</span>
-
-
-                                        <div class="box_info2">
-                                            <br>
-                                            <svg style="margin-top: 10px;" height="50" width="280">
-                                                <polyline points="30,1 0,30 250,30 270,1 30,1" fill="rgb(249,249,249)" stroke-width="1" stroke="rgb(0,0,0)"/>
-                                                <polyline points="0,30 0,40 250,40 250,30" fill="rgb(100,100,249)" stroke-width="1" stroke="rgb(0,0,0)"/>
-                                                <polyline points="250,40 270,10 270,1 250,30" fill="rgb(100,100,249)" stroke-width="1" stroke="rgb(0,0,0)"/>
-                                            </svg>
-
-                                        </div>
-
-                                        <div class="box_info1">
-                                            <!-- Толщина зависит -->
-                                        </div>
-                                    </div>
-
-
-
-
-
-
-                                    <div class="u22" title="Толщина изделия" titleh="Форма и размеры">
-                                        <!--  Оптивайт  -->
-                                        <span  style="width: 250px;" class="box_height">
-		<span class="bh u" onmouseover="moc(3,1,this)" onmouseout="mx()" onclick="c(3,1,this,false)">4</span>
-		<span class="bh u" onmouseover="moc(3,2,this)" onmouseout="mx()" onclick="c(3,2,this,false)">5</span>
-		<span class="bh u" onmouseover="moc(3,3,this)" onmouseout="mx()" onclick="c(3,3,this,false)">6</span>
-		<span class="bh u" onmouseover="moc(3,4,this)" onmouseout="mx()" onclick="c(3,4,this,false)">8</span>
-		<span class="bh u" onmouseover="moc(3,5,this)" onmouseout="mx()" onclick="c(3,5,this,false)">10</span>
-		<span class="bh u" onmouseover="moc(3,6,this)" onmouseout="mx()" onclick="c(3,6,this,false)">12</span>
-		<span class="bh u" onmouseover="moc(3,7,this)" onmouseout="mx()" onclick="c(3,7,this,false)">15</span>
-		<span class="bh u" onmouseover="moc(3,8,this)" onmouseout="mx()" onclick="c(3,8,this,false)">19</span>
-
-	</span>
-
-
-                                        <div class="box_info2">
-                                            <br>
-                                            <svg style="margin-top: 10px;" height="50" width="280">
-                                                <polyline points="30,1 0,30 250,30 270,1 30,1" fill="rgb(249,249,249)" stroke-width="1" stroke="rgb(0,0,0)"/>
-                                                <polyline points="0,30 0,40 250,40 250,30" fill="rgb(100,100,249)" stroke-width="1" stroke="rgb(0,0,0)"/>
-                                                <polyline points="250,40 270,10 270,1 250,30" fill="rgb(100,100,249)" stroke-width="1" stroke="rgb(0,0,0)"/>
-                                            </svg>
-
-                                        </div>
-
-                                        <div class="box_info1">
-                                            <!-- Толщина зависит -->
-                                        </div>
-                                    </div>
-
-
-
-                                    <div class="u24" title="Толщина изделия" titleh="Форма и размеры">
-                                        <!--  Матовое  -->
-                                        <span style="width: 200px;" class="box_height">
-		<span class="bh u" onmouseover="moc(3,1,this)" onmouseout="mx()" onclick="c(3,1,this,false)">4</span>
-		<span class="bh u" onmouseover="moc(3,2,this)" onmouseout="mx()" onclick="c(3,2,this,false)">6</span>
-		<span class="bh u" onmouseover="moc(3,3,this)" onmouseout="mx()" onclick="c(3,3,this,false)">8</span>
-		<span class="bh u" onmouseover="moc(3,4,this)" onmouseout="mx()" onclick="c(3,4,this,false)">10</span>
-		<span class="bh u" onmouseover="moc(3,5,this)" onmouseout="mx()" onclick="c(3,5,this,false)">12</span>
-	</span>
-
-
-                                        <div class="box_info2">
-                                            <br>
-                                            <svg style="margin-top: 10px;" height="50" width="280">
-                                                <polyline points="30,1 0,30 250,30 270,1 30,1" fill="rgb(249,249,249)" stroke-width="1" stroke="rgb(0,0,0)"/>
-                                                <polyline points="0,30 0,40 250,40 250,30" fill="rgb(100,100,249)" stroke-width="1" stroke="rgb(0,0,0)"/>
-                                                <polyline points="250,40 270,10 270,1 250,30" fill="rgb(100,100,249)" stroke-width="1" stroke="rgb(0,0,0)"/>
-                                            </svg>
-
-                                        </div>
-
-                                        <div class="box_info1">
-                                            <!-- Толщина зависит -->
-                                        </div>
-                                    </div>
-
-                                    <div class="u25" title="Толщина изделия" titleh="Форма и размеры">
-                                        <!--  серое  -->
-                                        <span style="width: 150px;" class="box_height">
-		<span class="bh u" onmouseover="moc(3,1,this)" onmouseout="mx()" onclick="c(3,1,this,false)">4</span>
-		<span class="bh u" onmouseover="moc(3,2,this)" onmouseout="mx()" onclick="c(3,2,this,false)">6</span>
-		<span class="bh u" onmouseover="moc(3,3,this)" onmouseout="mx()" onclick="c(3,3,this,false)">8</span>
-		<span class="bh u" onmouseover="moc(3,4,this)" onmouseout="mx()" onclick="c(3,4,this,false)">10</span>
-	</span>
-
-
-                                        <div class="box_info2">
-                                            <br>
-                                            <svg style="margin-top: 10px;" height="50" width="280">
-                                                <polyline points="30,1 0,30 250,30 270,1 30,1" fill="rgb(249,249,249)" stroke-width="1" stroke="rgb(0,0,0)"/>
-                                                <polyline points="0,30 0,40 250,40 250,30" fill="rgb(100,100,249)" stroke-width="1" stroke="rgb(0,0,0)"/>
-                                                <polyline points="250,40 270,10 270,1 250,30" fill="rgb(100,100,249)" stroke-width="1" stroke="rgb(0,0,0)"/>
-                                            </svg>
-
-                                        </div>
-
-                                        <div class="box_info1">		<!-- Толщина зависит -->
-
-                                        </div>
-                                    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                    <div class="u210" title="Толщина изделия" titleh="Форма и размеры">
-
-                                        <!--   Зеркало 4 мм серебро  -->
-                                        <span style="width: 150px;" class="box_height">
-		<span class="bh u" onmouseover="moc(3,1,this)" onmouseout="mx()" onclick="c(3,1,this,false)">4</span>
-		<span class="bh u" onmouseover="moc(3,2,this)" onmouseout="mx()" onclick="c(3,2,this,false)">5</span>
-		<span class="bh u" onmouseover="moc(3,3,this)" onmouseout="mx()" onclick="c(3,3,this,false)">6</span>
-	</span>
-
-
-                                        <div class="box_info2">
-                                            <br>
-                                            <svg style="margin-top: 10px;">
-                                                <polyline points="30,1 0,30 250,30 270,1 30,1" fill="rgb(249,249,249)" stroke-width="1" stroke="rgb(0,0,0)"/>
-                                                <polyline points="0,30 0,40 250,40 250,30" fill="rgb(100,100,249)" stroke-width="1" stroke="rgb(0,0,0)"/>
-                                                <polyline points="250,40 270,10 270,1 250,30" fill="rgb(100,100,249)" stroke-width="1" stroke="rgb(0,0,0)"/>
-                                            </svg>
-                                        </div>
-
-                                        <div class="box_info1">
-                                            Толщина зависит
-                                        </div>
-                                    </div>
-
-
-
-
-                                    <div class=" u230 u240 u250 u260" title="Толщина изделия" titleh="Форма и размеры">
-                                        <!--    граф    -->
-                                        <!--    ckth    -->
-                                        <!--    золоо     -->
-                                        <span style="width: 150px;" class="box_height">
-		<span class="bh u" onmouseover="moc(3,1,this)" onmouseout="mx()" onclick="c(3,1,this,false)">4</span>
-	</span>
-
-
-                                        <div class="box_info2">
-                                            <br>
-                                            <svg style="margin-top: 10px;">
-                                                <polyline points="30,1 0,30 250,30 270,1 30,1" fill="rgb(249,249,249)" stroke-width="1" stroke="rgb(0,0,0)"/>
-                                                <polyline points="0,30 0,40 250,40 250,30" fill="rgb(100,100,249)" stroke-width="1" stroke="rgb(0,0,0)"/>
-                                                <polyline points="250,40 270,10 270,1 250,30" fill="rgb(100,100,249)" stroke-width="1" stroke="rgb(0,0,0)"/>
-                                            </svg>
-                                        </div>
-
-                                        <div class="box_info1">
-                                            Толщина зависит
-                                        </div>
-                                    </div>
-
-
-
-
-
-                                    <div class="u220" title="Толщина изделия" titleh="Форма и размеры">
-                                        <!--    Зеркало 6 мм осветленное     -->
-                                        <span style="width: 150px;" class="box_height">
-		<span class="bh u" onmouseover="moc(3,1,this)" onmouseout="mx()" onclick="c(3,1,this,false)">4</span>
-		<span class="bh u" onmouseover="moc(3,2,this)" onmouseout="mx()" onclick="c(3,2,this,false)">6</span>
-	</span>
-
-
-                                        <div class="box_info2">
-                                            <br>
-                                            <svg style="margin-top: 10px;">
-                                                <polyline points="30,1 0,30 250,30 270,1 30,1" fill="rgb(249,249,249)" stroke-width="1" stroke="rgb(0,0,0)"/>
-                                                <polyline points="0,30 0,40 250,40 250,30"     fill="rgb(100,100,249)" stroke-width="1" stroke="rgb(0,0,0)"/>
-                                                <polyline points="250,40 270,10 270,1 250,30"  fill="rgb(100,100,249)" stroke-width="1" stroke="rgb(0,0,0)"/>
-                                            </svg>
-                                        </div>
-
-                                        <div class="box_info1">
-                                            Толщина зависит
-                                        </div>
-                                    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                                    <div class="u61" title="Информация по заказу" titleh="0">
-                                        <div class="user_data">
-                                            <div class="a l">Имя</div>
-                                            <input type="text" onchange="cuser(this,1)" value="bvzxczxcxz">
-                                            <div class="a l">Номер телефона</div>
-                                            <input type="text" class="Aphone" onchange="cuser(this,2)" value="321312321231">
-                                            <button class="bgsize" onclick="cor_to_cookie(); ORDER();">Оформить заказ</button>
-
-                                        </div>
-
-                                        <div class="user_data ">
-                                            <div class="a l">Количество изделий</div>
-                                            <div class="btnn" onclick="gsa(-1)">-</div>
-                                            <input id="kolvoizd" class="mka" value="1" min="1" onchange="setcena0()" type="number">
-                                            <div class="btnn" onclick="gsa(1)">+</div>
-                                            <div class="a l" >Эл. почта</div>
-                                            <input type="email" onchange="cuser(this,3)" value="bobo@gmailc">
-                                            <button class="corzina_btn bgsize" onmouseover="moc(Добавить в корзину,this)" onmouseout="mx()" onclick="cor_to_cookie()">Добавить в корзину</button>
-                                        </div>
-
-                                        <div class="user_data user_data2">
-                                            <div class="a l">Адрес доставки</div>
-                                            <input id="addressdost" type="text" onchange="cuser(this,4)" value="">
-
-                                            <div class="a l">Комментарий к изделию</div>
-                                            <textarea id="Komments" style="max-height: 85px; min-height: 85px;" id="" cols="30" rows="4" onchange="cuser(this,5)"></textarea>
-
-                                            <input type="radio" onchange="setcena0()" name="dostavc" id="dos1" >
-                                            <label for="dos1"><span class="txtradio">В пределах<br>МКАД</span></label>
-
-                                            <input type="radio" onchange="setcena0()" name="dostavc" id="dos2" >
-                                            <label for="dos2"><span  class="txtradio">Не более 5 км<br>от МКАД</span></label>
-
-
-                                            <input type="radio" onchange="setcena0()" name="dostavc" id="dos3">
-                                            <label for="dos3"><span class="txtradio">Московская<br>область</span></label>
-                                        </div>
-
-                                        <div class="user_data smsize">
-                                            <p>
-                                                <button class="corzina_btn"  onclick="cor_to_cookie()">Добавить в корзину</button>
-                                                <button onclick="cor_to_cookie(); ORDER();">Оформить заказ</button>
-                                            </p>
-                                        </div>
-                                    </div>
-
-
                                 </div>
-
-
-                                <div class="hide" id="i11">
-                                    Стекло М1, прозрачное, или простое, обычное стекло.
-                                    Все это - названия флоат-стекла, являющегося самым популярным материалом <br> в стекольной промышенности. Имеет зеленоватый оттенок,
-                                    ярко выраженный, если смотреть с торца. Этот недостаток компенсируется низкой ценой.
-                                </div>
-
-                                <div class="hide" id="i12">
-                                    Осветленное стекло (Optiwhite, Clearvision). Данное стекло почти не имеет сторонних оттенков, <br>
-                                    кроме благородного, светло-голубого цвета, заметного глазу лишь с торца изделия.
-                                </div>
-
-                                <div class="hide" id="i13">
-                                    Тонированное в массе стекло (без пленок и покрытий) в темно бронзовый цвет. Как имногие другие виды стекла можно закаливать. На стекле почти
-                                    не заметна грязь и отпечатки рук. В сумме с общестекольным признаком - легкой очисткой, образует отличное сочетание для использования не
-                                    только в частных интерьерах, но и в общественных местах с высокой проходимостью.
-                                </div>
-
-                                <div class="hide" id="i14">
-                                    Матовое стекло (сатинат, Satinato) - это вид стекла с односторонним матовым покрытием, нанесенным путем химического травления,
-                                    за счет чего, возникает светорассеивающий эффект, благодаря которому, видно лишь силуэты объектов и свет.
-                                    За счет химического травления, а не грубого пескоструя, гораздо легче мыть и стекло более грязеустойчиво.
-                                </div>
-
-                                <div class="hide" id="i15">
-                                    Тонированное в массе стекло (без пленок и покрытий) в темно-серый цвет. Как имногие другие виды стекла можно закаливать. На стекле почти
-                                    не заметна грязь и отпечатки рук. В сумме с общестекольным признаком - легкой очисткой, образует отличное сочетание для использования не
-                                    только в частных интерьерах, но и в общественных местах с высокой проходимостью. Так же идеально вписывается в современные стили.
-                                </div>
-
-
-
-
-                                <div class="hide" id="i210">
-                                    Обычное зеркало, которое используется повсеместно, в частных домах, спорт-залах, общественных местах, лифтах и пр. класса эконом.
-                                    Имеет почти не заметный зеленоватый оттенок, выделяющийся только в светлых помещениях и интерьерах.
-                                </div>
-
-                                <div class="hide" id="i220">
-                                    Зеркало с наилучим отражением, без заметному глазу оттенков. Самый белый материал известный науке (отражение света). Цена на данный вид
-                                    материала ощутимо выше, поскольку за основу берется стекло ClearVision. Используется повсеместно в интерьерах класса Премиум / Люкс.
-                                </div>
-
-                                <div class="hide" id="i230">
-                                    Зеркало на основе тонированного в массе серого стекла, с нанесением амальгамы. Используется в примерочных комнатах, в шоурумах
-                                    и в дизайнерских интерьерах. Не подходит для бытового использования (как обычное зеркало), носит декоративный и условно-практическую функцию.
-                                </div>
-
-                                <div class="hide" id="i240">
-                                    Зеркало на основе тонированного в массе стекла "Бронза", с нанесением амальгамы. Используется в примерочных комнатах, в шоурумах
-                                    и в дизайнерских интерьерах. Не подходит для бытового использования (как обычное зеркало), носит декоративный и условно-практическую функцию.
-                                </div>
-
-                                <div class="hide" id="i250">
-                                    Зеркало с эффектным золотым отражением. В наличии 2 типа золотых зеркал  - "Шампань" (мягкий тон) и "Обычное золото" (ярко-оранжевое).
-                                    Все нюансы будут согласованы с нашим менеджером, который перезвонит Вам после оформления заказа.
-                                </div>
-
-                                <div class="hide" id="i260">
-                                    В данную категорию входят эксклюзивные виды зеркал, такие как - состаренные зеркала, зеркало-шпион, кракелюр и цветные зеркала.
-                                    Ввиду сложности согласования деталей, просьба оформить заказ и дождаться звонка специалиста, который даст всю интересующую Вас информацию.
-                                    Цена эксклюзивных зеркал колеблится. Поэтому для данного вида рассчитываем стоимость исходя из среднего значения стоимости.
-                                </div>
-
-
-
-
-                                <!-- выше описание стекол, ниже - зеркал (под картинкой которые)  -->
-
-
-
-
-                                <div class="hide" id="i111">
-                                    211 1
-                                </div>
-
-                                <div class="hide" id="i112">
-                                    221 2
-                                </div>
-
-                                <div class="hide" id="i113">
-                                    231 3
-                                </div>
-
-                                <div class="hide" id="i114">
-                                    241 4
-                                </div>
-
-                                <div class="hide" id="i115">
-                                    251 5
-                                </div>
-
-
-
-
-
-
-
-                                <div class="hide" id="tolshina">
-                                    толщина
-                                </div>
-
-
-
-
-                                <!-- есть вероятност, что ниже - ненужное гавно  -->
-
-                                <div class="hide" id="i210">
-                                    Стекло М1, прозрачное, или простое, обычное стекло. <br>
-                                    Все это - названия флоат-стекла, являющегося самым популярным материалом в стекольной промышенности. Имеет зеленоватый оттенок, <br>
-                                    ярко выраженный, если смотреть с торца. Этот недостаток компенсируется низкой ценой.
-                                </div>
-
-                                <div class="hide" id="i220">
-                                    фывфывфыв
-
-                                </div>
-
-                                <div class="hide" id="i230">
-                                    3Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel voluptate perspiciatis, aliquam eius sequi architecto iste dolore eaque ea, repellendus doloremque nemo voluptatem, laboriosam, molestiae.
-                                </div>
-
-                                <div class="hide" id="i240">
-                                    4Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel voluptate perspiciatis, aliquam eius sequi architecto iste dolore eaque ea, repellendus doloremque nemo voluptatem, laboriosam, molestiae.
-                                </div>
-
-                                <div class="hide" id="i250">
-                                    5Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel voluptate perspiciatis, aliquam eius sequi architecto iste dolore eaque ea, repellendus doloremque nemo voluptatem, laboriosam, molestiae.
-                                </div>
-
-                                <div class="hide" id="i260">
-                                    6sectetur adipisicing elit. Vel voluptate perspiciatis, aliquam eius sequi architecto iste dolore eaque ea, repellendus doloremque nemo voluptatem, laboriosam, molestiae.
-                                </div>
-
-
-                                <div class="hide" id="i270">
-                                    4Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel voluptate perspiciatis, aliquam eius sequi architecto iste dolore eaque ea, repellendus doloremque nemo voluptatem, laboriosam, molestiae.
-                                </div>
-
-                                <div class="hide" id="i280">
-                                    5Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel voluptate perspiciatis, aliquam eius sequi architecto iste dolore eaque ea, repellendus doloremque nemo voluptatem, laboriosam, molestiae.
-                                </div>
-
-                                <div class="hide" id="i290">
-                                    6sectetur adipisicing elit. Vel voluptate perspiciatis, aliquam eius sequi architecto iste dolore eaque ea, repellendus doloremque nemo voluptatem, laboriosam, molestiae.
-                                </div>
-
-
-
-
-
-
-
-
-                                <div class="hide" id="i31">
-                                    5Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel voluptate perspiciatis, aliquam eius sequi architecto iste dolore eaque ea, repellendus doloremque nemo voluptatem, laboriosam, molestiae.
-                                </div>
-
-
-
-
-
-
-                                <div class="hide" id="i51">
-                                    Кромка будет режуще-острой, а стекло хрупким. <br>
-                                    Будьте осторожны! <br>
-
-                                    <div class="imgclc c1"></div>
-                                </div>
-
-                                <div class="hide" id="i52">
-                                    Полировка кромок, помимо травмобезопасности, делает стекло прочнее и эстетичнее.<br>
-                                    <div class="imgclc c2"></div>
-                                </div>
-
-
-
-
-
-
-                                <div class="hide" id="i53">
-                                    <div class="rdbpanel">
-                                        <input type="radio" onchange="setcena0()" name="facetsize" id="rdk1">
-                                        <label for="rdk1"><span class="txtradio">10 мм</span></label>
-                                        <input type="radio" onchange="setcena0()" name="facetsize" id="rdk2">
-                                        <label for="rdk2"><span class="txtradio">15 мм</span></label>
-                                        <input type="radio" onchange="setcena0()" name="facetsize" id="rdk3" checked>
-                                        <label for="rdk3"><span  class="txtradio">20 мм</span></label>
-                                        <input type="radio" onchange="setcena0()" name="facetsize" id="rdk4">
-                                        <label for="rdk4"><span class="txtradio">30 мм</span></label>
-                                        <input type="radio" onchange="setcena0()" name="facetsize" id="rdk5">
-                                        <label for="rdk5"><span class="txtradio">40 мм</span></label>
-                                    </div><br>
-                                    <div class="imgclc c3"></div>
-                                </div>
-
-
-                                <div class="hide" id="i54">
-                                    <div class="rdbpanel">
-                                        <input type="radio" onchange="setcena0()" name="facetsize" id="rdk1">
-                                        <label for="rdk1"><span class="txtradio">10 мм</span></label>
-                                        <input type="radio" onchange="setcena0()" name="facetsize" id="rdk2" checked>
-                                        <label for="rdk2"><span class="txtradio">15 мм</span></label>
-                                        <input type="radio" onchange="setcena0()" name="facetsize" id="rdk3" >
-                                        <label for="rdk3"><span  class="txtradio">20 мм</span></label>
-                                    </div><br>
-                                    <div class="imgclc c3"></div>
-                                </div>
-
-
-                                <div class="hide" id="i41"><br>
-                                    Введите значения<br>(мм)<br>
-                                    <div class="parwht">
-                                        <input id="wh08" onkeyup="prebla5()" min="100" type="number" placeholder="Ширина">
-                                        <div class="a l d-i-b ">x</div>
-                                        <input id="hg08" onkeyup="prebla5()" min="100" type="number" placeholder="Высота">
-                                    </div>
-
-                                </div>
-
-                                <div class="hide" id="i42"><br>
-                                    Введите значения<br>(мм)<br>
-                                    <input id="rad08" onkeyup="prebla3()" min="100" type="number" placeholder="Диаметр (мм)">
-
-                                </div>
-
-
-
-
-                                <div class="hide" id="i44"><br>
-                                    Введите значения<br>(мм)<br>
-                                    <div class="parwht">
-                                        <input id="wh08" onkeyup="prebla5()" min="100" type="number" placeholder="Ширина">
-                                        <div class="a l d-i-b ">x</div>
-                                        <input id="hg08" onkeyup="prebla5()" min="100" type="number" placeholder="Высота">
-                                    </div>
-                                    <button class="v2 w95" onclick="showfile(0)">Загрузить чертеж</button>
-                                </div>
-
-
-
-
-
-
-
-
-
-
                             </div>
-                            <div class="predata">
-                            </div>  <script>$(function(){
-                                    $(".itm").mouseover(function(){vc(event,this);});
-                                    $(".itm").mouseout(function(){vc2(event,this);});
-                                    $(".itm").mousemove(function(){vc3(event,this);});
-                                    $(".uh_button").find('li').on("click",function(){gal_goto(this);});
-                                    $(".up_block").on("click",function(){showp(this,event);});
-                                    $(".bustep").on('click',function(){clocess(this,event);});
-                                    $(".rdbpanel").find(".txtradio").on(function(){setcena0();});
-
-
-                                    $(".itm").mouseover(function(){vc(event,this);});
-                                    $(".itm").mouseout(function(){vc2(event,this);});
-                                    $(".itm").mousemove(function(){vc3(event,this);});
-
-
-                                    //$(".bustep").on('click',function(){clocess(this,event);});
-
-                                    //pfs2ys[2] = 1;
-
-                                    lldaata(today);
-
-                                    $(".Aphone").mask("9 (999) 999-9999");
-                                });
-
-
-
-                                var caalc;
-                                function cor_to_cookie(){
-                                    var cookie_calc = getCookie("cxx");
-                                    if (cookie_calc!=''){
-                                        cookie_calc = JSON.parse(cookie_calc);
-                                    } else {
-                                        cookie_calc = [];
-                                    }
-                                    var newCalc = [];
-
-                                    newCalc[0] = CALC[1]-1; //mat
-                                    if (newCalc[0]==0){
-                                        newCalc[1] = CALC[2]-1; //vid
-                                    } else {
-                                        newCalc[1] = CALC[2] / 10 -1; //vid
-                                    }
-
-                                    newCalc[2] = '0'; //tols	+
-                                    newCalc[3] = CALC[4]-1; //type
-                                    newCalc[4] = '0'; //size	+
-                                    newCalc[5] = '0'; //polir	+
-                                    newCalc[6] = '0'; //otv 	+
-                                    newCalc[7] = '0'; //zakal	+
-                                    newCalc[8] = 'false'; //paint	+
-                                    newCalc[9] = 'false'; //uf	+
-                                    newCalc[10] = [false, 0]; //pesk	+
-                                    newCalc[11] = '0'; //pest_type
-                                    newCalc[12] = '0'; //scrugl	+
-                                    newCalc[13] = '0'; //kol_vo	+
-                                    newCalc[14] = '0'; //price1
-                                    newCalc[15] = '0'; //price2
-                                    newCalc[16] = '0'; //data_start
-                                    newCalc[17] = '0'; //data_finish
-                                    newCalc[18] = '0'; //dostavka
-                                    newCalc[19] = ''; //komment
-
-
-                                    newCalc[7] = 0;
-
-                                    caalc = '';
-                                    for (var i=2;i<CALC_info.length;i++){
-                                        if (i==4){
-                                            caalc+=": Толщина - ";
-                                            newCalc[2] = parseInt(CALC_info[i]);
-                                        }
-                                        caalc+=CALC_info[i];
-
-                                        if (i==5){
-                                            caalc+=": Размеры "+Math.ceil(p0width*1000)+'x'+Math.ceil(p0height*1000)+' мм.';
-                                            newCalc[4] = [Math.ceil(p0width*1000), Math.ceil(p0height*1000)];
-                                        }
-                                        if (i==6){
-                                            newCalc[5] = [0, 0, 0];
-                                            if (CALC_info[i]=="Фацет"){
-                                                newCalc[5][0] = 2;
-                                                if ($("#rdk1")[0].checked){ caalc+=" 10 мм "; newCalc[5][2] = 0;}
-                                                if ($("#rdk2")[0].checked){ caalc+=" 15 мм "; newCalc[5][2] = 1;}
-                                                if ($("#rdk3")[0].checked){ caalc+=" 20 мм "; newCalc[5][2] = 2;}
-                                                if ($("#rdk4")[0].checked){ caalc+=" 30 мм "; newCalc[5][2] = 3;}
-                                                if ($("#rdk5")[0].checked){ caalc+=" 40 мм "; newCalc[5][2] = 4;}
-                                            } else if (CALC_info[i]=="Полировка кромок"){
-                                                newCalc[5][0] = 1;
-                                            }
-                                        }
-                                        caalc+=':';
-                                    }
-                                    var d = (parseInt($("#day")[0].innerHTML)<10)?'0'+$("#day")[0].innerHTML:$("#day")[0].innerHTML;
-                                    var m = (parseInt($("#month")[0].innerHTML)<10)?'0'+$("#month")[0].innerHTML:$("#month")[0].innerHTML;
-                                    var y = (parseInt($("#yar")[0].innerHTML)<10)?'0'+$("#yar")[0].innerHTML:$("#yar")[0].innerHTML;
-                                    var days = d+'.'+m+'.'+y;
-
-                                    var tm = new Date();
-                                    var curr_date = tm.getDate();
-                                    var curr_month = tm.getMonth() + 1;
-                                    var curr_year = tm.getFullYear();
-
-                                    if (curr_date<10){curr_date='0'+curr_date;}
-                                    if (curr_month<10){curr_month='0'+curr_month;}
-
-                                    newCalc[16] = curr_date+'.'+curr_month+'.'+curr_year;
-                                    newCalc[17] = days;
-
-
-                                    if ($("#check24").prop("checked")){
-                                        caalc+='Закалка:';
-                                        newCalc[7] = 1;
-                                    }
-
-                                    if ($("#check25").prop("checked")){
-                                        caalc+='Отверстия '+$("#otverstia")[0].value+' шт.:';
-                                        newCalc[6] = $("#otverstia")[0].value;
-                                    }
-
-                                    if ($("#check255").prop("checked")){
-                                        caalc+='Монтаж:';
-                                        newCalc[19]+='[Монтаж]';
-                                    }
-
-                                    if ($("#check26").prop("checked")){
-                                        var gs234 = parseInt($("#skrgl")[0].value);
-                                        if ($("#skrgl")[0].value==''){
-                                            gs234 =1;
-                                        }
-
-                                        var gs236 = parseInt($("#skrgl5")[0].value);
-                                        if ($("#skrgl5")[0].value==''){
-                                            gs236 = 1;
-                                        }
-                                        caalc+='Скругление '+gs234 +' шт. '+gs236+' (мм):';
-
-                                        newCalc[12] = [gs234, gs236];
-
-                                    }
-
-
-
-
-                                    if ($("#check27").prop("checked")){
-                                        caalc+='Покраска стекла:';
-                                        newCalc[8] = 'true';
-                                    }
-
-
-                                    if ($("#check28").prop("checked")){
-                                        caalc+='УФ-печать:';
-                                        newCalc[9] = 'true';
-                                    }
-
-                                    if ($("#check29").prop("checked")){
-                                        var dd42g;
-                                        newCalc[10][0] = true;
-                                        if ($("#peskostr")[0].value==1){
-                                            dd42g = "Рисунок";
-                                            newCalc[10][1] = 0;
-                                        } else {
-                                            dd42g = "Целиком";
-                                            newCalc[10][1] = 1;
-                                        }
-                                        caalc+='Пескоструй ('+dd42g+"):";
-                                    }
-
-                                    caalc += $("#kolvoizd")[0].value+' (шт.) :';  //  Количество
-                                    newCalc[13] = $("#kolvoizd")[0].value;
-
-
-                                    caalc += $("#addressdost")[0].value+' :';  // Доставка
-                                    newCalc[18] = $("#addressdost")[0].value;
-
-                                    if ($("#check1").prop("checked")){
-                                        caalc+='срочно:';
-                                        newCalc[19]+='[Срочно]';
-                                    } else {
-                                        caalc+='не срочно:';
-                                    }
-
-
-
-
-
-
-                                    console.log(newCalc);
-
-
-
-                                    calc+=caalc+':'+  $("#price")[0].innerHTML  +':';
-                                    newCalc[15] = parseInt($("#price")[0].innerHTML);
-                                    newCalc[14] = Math.ceil(newCalc[15] / parseInt(newCalc[13]));
-                                    calc+=days+':'+$("#Komments")[0].value+'|';
-                                    newCalc[19] += $("#Komments")[0].value;
-                                    document.cookie = "cx="+calc+"; path=/";
-                                    document.cookie = "cxx="+JSON.stringify(cookie_calc.concat([newCalc]))+"; path=/";
-
-                                    update_kor();
-                                    showmod("korr");
-                                }
-
-                                function update_kor(){
-                                    var kolvo_izdel = 0;
-                                    var CLC = calc.split('|');
-                                    var kkk = $("#korr").find(".all")[0];
-                                    var up_kor_data = "";
-                                    var files = decodeURIComponent(getCookie("files"));
-
-                                    files = files.split("|");
-
-                                    for(var CLC_i=0;CLC_i<CLC.length-1;CLC_i++){
-                                        arrsd = CLC[CLC_i].split(':');
-                                        up_kor_data += '<div class="kor_order"><div class="cor_numb">'+(CLC_i+1)+'</div>';
-                                        for(var CLC_i2=0;CLC_i2<arrsd.length -1;CLC_i2++){
-                                            up_kor_data += '<div class="kapl_imms">'+arrsd[CLC_i2]+'</div>';
-                                        }
-                                        up_kor_data += "<br>";
-                                        for (var eee = 1; eee < files.length; eee++) {
-                                            sssc32 = files[eee].split(":");
-                                            if (sssc32[0]==CLC_i+1){
-                                                up_kor_data += '<div class="kapl_imms"><img src="/img/smale-file.png"> '+sssc32[1]+'</div>';
-                                            }
-                                        }
-
-                                        kolvo_izdel++;
-                                        up_kor_data += '<div class="del_itm" onclick="delitemclac('+CLC_i+')" title="Удалить изделие">x</div></div>';
-                                    }
-                                    if (kolvo_izdel==0){
-                                        up_kor_data="<div class='empty'>Ваша корзина пуста</div>";
-                                    }
-                                    //console.log(CLC);
-                                    kkk.innerHTML = up_kor_data;
-                                }
-
-
-
-
-                                function delitemclac(a){
-                                    var cookie_calc = getCookie("cxx");
-                                    var cookie_new = [];
-                                    if (cookie_calc!=''){
-                                        cookie_calc = JSON.parse(cookie_calc);
-                                        var inx = 0;
-                                        for (var i = 0; i < cookie_calc.length; i++) {
-                                            if (i!=a){
-                                                cookie_new[inx] = cookie_calc[i];
-                                                inx++;
-                                            }
-                                        }
-                                        document.cookie = "cxx="+JSON.stringify(cookie_new)+"; path=/";
-                                    }
-
-
-
-
-
-                                    var files = decodeURIComponent(getCookie("files"));
-                                    files = files.split("|");
-
-                                    var CLC = calc.split('|');
-                                    var ncCALC = [];
-                                    var ii = 0;
-
-                                    var fls = "";
-
-                                    var lpl = 1;
-                                    for(var CLC_i=0;CLC_i<CLC.length;CLC_i++){
-                                        if (CLC_i!=a){
-                                            ncCALC[ii]=CLC[CLC_i];
-                                            ii++;
-
-                                            for (var eee = 1; eee < files.length; eee++) {
-                                                sssc32 = files[eee].split(":");
-                                                if (sssc32[0]==CLC_i+1){
-                                                    fls+='|'+lpl+':'+sssc32[1]+':'+sssc32[2];
-
-                                                }
-                                            }
-
-                                            lpl++;
-                                        } else {
-                                            for (var eee = 1; eee < files.length; eee++) {
-                                                sssc32 = files[eee].split(":");
-                                                if (sssc32[0]==CLC_i+1){
-                                                    var sj1312 = sssc32[1];
-                                                    var sj131333 = sssc32[2];
-                                                    $.post("delimg.php",{j1: sj1312, j2: sj131333 },function(data){
-                                                        if (data=='no'){
-                                                            console.log("Ошибка удаления");
-                                                        }
-                                                    });
-
-                                                }
-                                            }
-                                        }
-                                    }
-
-
-
-
-
-                                    calc = ncCALC.join('|');
-                                    document.cookie = "cx="+calc+"; path=/";
-                                    document.cookie = "files="+fls+"; path=/";
-                                    update_kor();
-
-
-
-                                }
-
-
-                                var lastinfo = "";
-                                var lastblock = "";
-                            </script>  </div>
-                        <div class="b next_block" ttl="Контакты" id="box8">Скрытый код страницы 8  </div>				</div>
-
-                    <div class="data  " >
-
-                        <div class="data_gh">
-                            <span>Стоимость изделия</span><br>
-                            <div id="price">0 руб.</div>
                         </div>
-
-                        <div class="data_gh">
-                            <span>Готовность на:</span><br>
-                            <div class="extra" id='speed'>(без срочности)</div>
-                            <div class="hooly_day">
-                                <div id="day"></div>
-                                <div id="month"></div>
-                                <div id="yar"></div>
+                        <div class="cost_calc_first_tab toggle owl-stage-outer owl-height">
+                            <div id="calc_stege" class="head toggler">
+                                <p class="numver_stage">
+                                    4
+                                </p>
+                                <h4>
+                                    форма и размеры
+                                </h4>
+                                <i class="fas fa-angle-down"></i>
                             </div>
-                            <div class="extra"></div>
-
-                            <input id="check1"  onchange="setcena0()" type="checkbox">
-
-                            <label for="check1"><span class="checkbox"></span><span>Срочное изготовление</span></label>
-
+                            <div id="box-calc" class="wraper content">
+                                <div class="Size_calc">
+                                    <div class="item_size_calc">
+                                        <img src="images/figure_size1.png" alt="">
+                                        <p>прямоугольник</p>
+                                    </div>
+                                    <div class="item_size_calc">
+                                        <img src="images/figure_size2.png" alt="">
+                                        <p>КРуг</p>
+                                    </div>
+                                    <div class="item_size_calc">
+                                        <img src="images/figure_size3.png" alt="">
+                                        <p>Овал</p>
+                                    </div>
+                                    <div class="item_size_calc">
+                                        <img src="images/figure_size4.png" alt="">
+                                        <p>ИНАЯ ФОРМА</p>
+                                    </div>
+                                    <div class="item_size_calc">
+                                        <p>Введите значения <br>
+                                            (мм)</p>
+                                        <div class="input_touch_size">
+                                            <input type="text">
+                                            <input type="text">
+                                        </div>
+                                        <p><a href="#">Загрузить чертеж</a></p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                        <div class="cost_calc_first_tab toggle owl-stage-outer owl-height">
+                            <div id="calc_stege" class="head toggler">
+                                <p class="numver_stage">
+                                    5
+                                </p>
+                                <h4>
+                                    Выберите материал
+                                </h4>
+                                <i class="fas fa-angle-down"></i>
+                            </div>
+                            <div id="box-calc" class="wraper content">
+                                <div class="stairs_and_flooring_buttons butt_choose_kromka d-flex">
+                                    <a class="nav-link" data-toggle="tab" href="#">БЕЗ ОБРАБОТКИ КРОМОК</a>
+                                    <a class="nav-link" data-toggle="tab" href="#">ПОЛИРОВКА КРОМОК</a>
+                                    <a class="nav-link" data-toggle="tab" href="#">ФАЦЕТ</a>
+                                </div>
+                                <div class="text-kromka">
+                                    <p>Кромка будет режуще-острой, а стекло хрупким.
+                                        <br><span>Будьте осторожны!</span></p>
+                                    <img src="images/sloy_kromka.png" alt="">
+                                </div>
 
-                        <div class="dop_buttons">
-                            <div class="data_gh">
-                                <button onclick="cor_to_cookie(); ORDER();">Оформить заказ</button>
-                                <button class="corzina_btn" onclick="cor_to_cookie();">Добавить в корзину</button>
                             </div>
-                            <div class="icon_pay" onclick="update_kor(); showmod('korr')">
-                                корзина
+                        </div>
+                        <div class="cost_calc_first_tab toggle">
+                            <div id="calc_stege" class="head toggler">
+                                <p class="numver_stage">
+                                    6
+                                </p>
+                                <h4>
+                                    дополнительно
+                                </h4>
+                                <i class="fas fa-angle-down"></i>
                             </div>
-                            <div class="icon_cons"  onclick="showmod('spec')">
-                                консультация
+                            <div id="box-calc" class="wraper content">
+                                <div class="chekbox_sect_6 d-flex">
+                                    <div class="first_chekbox">
+                                        <label>
+                                            <input type="checkbox">
+                                            <span class="fake-checkbox" aria-hidden="true"></span>
+                                            <span class="label">Закалка (Термоупрочнение)</span>
+                                        </label>
+                                        <label>
+                                            <input type="checkbox">
+                                            <span class="fake-checkbox" aria-hidden="true"></span>
+                                            <span class="label">Отверстия и вырезы</span>
+                                        </label>
+                                        <label>
+                                            <input type="checkbox">
+                                            <span class="fake-checkbox" aria-hidden="true"></span>
+                                            <span class="label">Монтаж</span>
+                                        </label>
+                                    </div>
+                                    <div class="ssecond_chekbox">
+                                        <label>
+                                            <input type="checkbox">
+                                            <span class="fake-checkbox" aria-hidden="true"></span>
+                                            <span class="label">Покраска стекла</span>
+                                        </label>
+                                        <label>
+                                            <input type="checkbox">
+                                            <span class="fake-checkbox" aria-hidden="true"></span>
+                                            <span class="label">УФ-печать</span>
+                                        </label>
+                                        <label>
+                                            <input type="checkbox">
+                                            <span class="fake-checkbox" aria-hidden="true"></span>
+                                            <span class="label">Пескоструй</span>
+                                        </label>
+                                    </div>
+                                    <div class="third_chekbox">
+                                        <label>
+                                            <input type="checkbox">
+                                            <span class="fake-checkbox" aria-hidden="true"></span>
+                                            <span class="label">Скругления по углам</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <!-- <div class="chekbox_sect_6 d-flex">
+																	<div class="first_chekbox">
+																			<input type="checkbox" id="checkbox10" v-model="checked">
+																			<label for="checkbox10"><a href="#"></a>Закалка (Термоупрочнение)</label> <br>
+																			<input type="checkbox" id="checkbox11" v-model="checked">
+																			<label for="checkbox11"><a href="#"></a>Отверстия и вырезы</label><br>
+																			<input type="checkbox" id="checkbox12" v-model="checked">
+																			<label for="checkbox12"><a href="#"></a>Монтаж</label>
+																	</div>
+																	<div class="ssecond_chekbox">
+																			<input type="checkbox" id="checkbox13" v-model="checked">
+																			<label for="checkbox13"><a href="#"></a>Покраска стекла</label><br>
+																			<input type="checkbox" id="checkbox14" v-model="checked">
+																			<label for="checkbox14"><a href="#"></a>УФ-печать</label><br>
+																			<input type="checkbox" id="checkbox15" v-model="checked">
+																			<label for="checkbox15"><a href="#"></a> Пескоструй</label><br>
+																	</div>
+																	<div class="third_chekbox">
+																			<input type="checkbox" id="checkbox16" v-model="checked">
+																			<label for="checkbox16"><a href="#"></a>Скругления по углам</label>
+																	</div>
+															</div> -->
+
                             </div>
-                            <div class="icon_zamer"  onclick="showmod('Call')">
-                                замерщик
+                        </div>
+                        <div class="cost_calc_first_tab toggle">
+                            <div id="calc_stege" class="head toggler">
+                                <p class="numver_stage">
+                                    7
+                                </p>
+                                <h4>
+                                    Информация по заказу
+                                </h4>
+                                <i class="fas fa-angle-down"></i>
+                            </div>
+                            <div id="box-calc" class="wraper content">
+                                <div class="Contact_form">
+                                    <div class="first_row">
+                                        <input type="text" placeholder="Name">
+                                        <input type="number" placeholder="Quantity">
+                                        <input type="text" placeholder="Location">
+                                    </div>
+                                    <div class="second_row d-flex">
+                                        <div class="leftTable">
+                                            <div class="up_input d-flex ">
+                                                <input type="tel" placeholder="Phone">
+                                                <input type="email" placeholder="Email">
+                                            </div>
+                                            <div class="down_buttons_distances d-flex">
+                                                <a class="nav-link" data-toggle="tab" href="#">В пределах МКАД</a>
+                                                <a class="nav-link" data-toggle="tab" href="#">Не более 5 км от МКАД</a>
+                                                <a class="nav-link" data-toggle="tab" href="#">Московская область</a>
+                                            </div>
+                                        </div>
+                                        <div class="right_texbox">
+                                            <textarea name="tex" id="" cols="25" rows="8"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="buttons_buy_glass d-flex justify-content-center">
+                                        <button class="cost_butt buy_buttons">Оформить заказ</button>
+                                        <button class="cost_butt1 buy_buttons">В корзину</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-
-                    </div>
-                </div>
-
-                <div id="botnavpanel">
-                    <div class="indicator">
-                        <div class="ring " sh="1" id="s1"><div class="ring_block"><div class="ring_show">Главная страница</div></div></div><div class="ring " sh="2" id="s2"><div class="ring_block"><div class="ring_show">Примеры работ</div></div></div><div class="ring " sh="3" id="s3"><div class="ring_block"><div class="ring_show">Душевые ограждения</div></div></div><div class="ring " sh="4" id="s4"><div class="ring_block"><div class="ring_show">Двери и перегородки</div></div></div><div class="ring " sh="5" id="s5"><div class="ring_block"><div class="ring_show">Зеркала на заказ</div></div></div><div class="ring " sh="6" id="s6"><div class="ring_block"><div class="ring_show">Кухонные фартуки</div></div></div><div class="ring select" sh="7" id="s7"><div class="ring_block"><div class="ring_show">Расчет стоимости</div></div></div><div class="ring " sh="8" id="s8"><div class="ring_block"><div class="ring_show">Контакты</div></div></div>		</div>
-
-                    <div class="show btn" id="before">
-                        <p>предыдущая страница</p>
-                        <div id="b1" class="hidden bnttl"></div>
-                        <div id="b2" class="show bnttl">Кухонные фартуки</div>
-                        <div class="bef_icon"></div>
-                    </div>
-                    <div class="show btn" id="after">
-                        <p>cледующая страница</p>
-                        <div id="b3" class="hidden bnttl"></div>
-                        <div id="b4" class="show bnttl ">Контакты</div>
-                        <div class="nxt_icon"></div>
                     </div>
                 </div>
             </div>
-
-            <!-- -->
-
-            <script type="text/javascript" >
-                (function (d, w, c) {
-                    (w[c] = w[c] || []).push(function() {
-                        try {
-                            w.yaCounter45979905 = new Ya.Metrika({
-                                id:45979905,
-                                clickmap:true,
-                                trackLinks:true,
-                                accurateTrackBounce:true,
-                                webvisor:true,
-                                trackHash:true
-                            });
-                        } catch(e) { }
-                    });
-
-                    var n = d.getElementsByTagName("script")[0],
-                        s = d.createElement("script"),
-                        f = function () { n.parentNode.insertBefore(s, n); };
-                    s.type = "text/javascript";
-                    s.async = true;
-                    s.src = "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/watch.js";
-
-                    if (w.opera == "[object Opera]") {
-                        d.addEventListener("DOMContentLoaded", f, false);
-                    } else { f(); }
-                })(document, window, "yandex_metrika_callbacks");
-            </script>
-
-            <!-- -->
-
-            <noscript><div><img src="https://mc.yandex.ru/watch/45979905" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-            <script src=<?php echo e(asset("js/maskedinput.js")); ?>></script>
-
-            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K6BWG7P"
-                              height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-
-            <script src=<?php echo e(asset("js/logic.js")); ?>></script>
-            <div id="korr" class="black">
-                <div class="cell">
-                    <div class="win">
-                        <div class="close" onclick="hidemod('korr')">x</div>
-                        <span class="heading">Корзина</span>
-                        <div class="all"> </div>
-                        <button onclick="yaCounter45979905.reachGoal('korzinka_osn'); ORDER()">Оформить заказ</button>
-                    </div>
-                </div>
-            </div>
-
-            <div id="Call" class="black ">
-                <div class="cell">
-                    <div class="win ">
-                        <div class="close" onclick="hidemod('Call')">x</div><br>
-                        <span class="heading">Вызов специалиста</span><br><br>
-                        <div class="all">
-                            <div>
-                                <button onclick="z(1,this)" class="v2 u selecter">Замерщик</button>
-                                <button onclick="z(2,this)" class="v2 u">Дизайнер</button>
-                            </div>
-                            <input type="text" placeholder="Ваше имя" id="clc_f_name">
-                            <div class="error_phone hide_error">Введите телефон</div>
-                            <input class="Aphone" type="text" placeholder="Телефон*" id="clc_f_phone">
-                            <textarea name="ao"  placeholder="Адрес объекта" id="clc_f_address"></textarea>
-                            <br>
-                            <!--<div class="cena">Стоимость выезда 1000 руб.</div><br>-->
-                        </div>
-                        <button onclick="yaCounter45979905.reachGoal('osn_zamer'); Call()">Заказать</button>
-                    </div>
-                </div>
-            </div>
-
-            <div id="spec" class="black ">
-                <div class="cell">
-                    <div class="win ">
-                        <div class="close" onclick="hidemod('spec')">x</div><br>
-                        <span class="heading">Заявка на звонок</span><br><br>
-                        <div class="all">
-                            <input type="text" placeholder="Ваше имя" id="clc_f_name2">
-                            <div class="error_phone2 hide_error">Введите телефон</div>
-                            <input class="Aphone" type="text" placeholder="Телефон*" id="clc_f_phone2">
-                            <textarea name="ao"  placeholder="Комментарий" id="clc_f_address2"></textarea>
-                            <br><br>
-                        </div>
-                        <button onclick="yaCounter45979905.reachGoal('osn_consult'); spec()">Заказать</button>
-                    </div>
-                </div>
-            </div>
-
-            <div id="userdata" class="black ">
-                <div class="cell">
-                    <div class="win ">
-                        <div class="close" onclick="hidemod('userdata')">x</div>
-                        <span class="heading">Введите<br>свои данные</span>
-                        <div class="all">
-                            <input type="text" onchange="cuser(this,1)" placeholder="Имя" value="bvzxczxcxz">
-                            <input type="text" class="Aphone" onchange="cuser(this,2)" placeholder="Телефон" value="321312321231">
-                            <input type="text" onchange="cuser(this,3)" placeholder="Почта" value="bobo@gmailc">
-                        </div>
-
-                        <button onclick="hidemod('userdata');   ORDER();">   Заказать   </button>
-                    </div>
-                </div>
-            </div>
-
-
-            <div id="message" class="black ">
-                <div class="cell">
-                    <div class="win ">
-                        <div class="close" onclick="hidemod('message')">x</div>
-                        <br>
-                        <h2>Сообщение</h2><br>
-                        <h3 class="l"></h3>
-                        <br><br>
-                        <button onclick="showmod('spec');">Бесплатная консультация</button>
-                    </div>
-                </div>
-            </div>
-
-            <div id="log" class="black ">
-                <div class="cell">
-                    <form action="https://veditex.glass/login.php" method="POST">
-                        <div class="win ">
-                            <div class="close" onclick="hidemod('log')">x</div>
-                            <h3>Вход</h3><br>
-                            <input placeholder="Логин" name="login" type="text">
-                            <input placeholder="Пароль" name="password" type="password">
-                            <button>Вход</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-
-            <div id="File" class="black ">
-                <div class="cell">
-                    <div class="win ">
-                        <div class="close" onclick="hidemod('File')">x</div><br>
-                        <span class="heading">Загрузить файл</span><br><br>
-                        <div class="all">
-
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
-
-
-
-    </div>
-</div>
-
-
-
-</section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        </section>
     </div>
 
     <div id="6" data-hash="six">
@@ -6157,104 +3717,67 @@
 </footer>
 <a href="#x" class="overlay" id="win1"></a>
 <div class="popup">
-    
-    <form action="<?php echo e(url('createApplications')); ?>" method="post" id="callForm">
-        <div class="up_form up_form_popup">
-            <input type="text" name="fullName" placeholder="ФИО" id="fullName" required>
+    <div class="up_form up_form_popup">
+        <input type="text" placeholder="имя">
+        <input type="text" placeholder="телефон">
+    </div>
+    <div class="down_form down_form_popup d-flex">
+        <input type="text" placeholder="email">
+        <div class="date_popup">
             
-            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                   placeholder="phone _(___)___-____" required>
             
-            
-        </div>
-        <div class="down_form down_form_popup d-flex">
-            <input type="text" id='formEmail' name="email" placeholder="email(необязательно)">
-            <div class="date_popup">
-                <div class="day">
-                    <input type="radio" value="1" name="dayChoice" id="dayChoice0"><a>Пн</a>
-                    <input type="radio" value="2" name="dayChoice" id="dayChoice1"><a>Вт</a>
-                    <input type="radio" value="3" name="dayChoice" id="dayChoice2"><a>Ср</a>
-                    <input type="radio" value="4" name="dayChoice" id="dayChoice3"><a>Чт</a>
-                    <input type="radio" value="5" name="dayChoice" id="dayChoice4"><a>Пт</a>
-                    <input type="radio" value="6" name="dayChoice" id="dayChoice5"><a>Сб</a>
-                    <input type="radio" value="7" name="dayChoice" id="dayChoice6"><a>Вс</a>
-                    
-                    
-                    
-                    
-                    
-                    
-                </div>
-                <div class="data-time">
-                    <div class="input_container">
-                        <img src="images/clock-regular.svg" alt="">
-                        <input name="timeStart" value="00:44" type="time" placeholder="Со скольки">
-                    </div>
-                    <div class="input_container">
-                        <img src="images/clock-regular.svg" alt="">
-                        <input name="timeEnd" value="00:44" type="time" placeholder="До Скольки">
-                    </div>
-                </div>
+            <div class="data-time">
             </div>
         </div>
-        <div class="checkbox">
-            <label><input type="checkbox" id="checkbox" v-model="checked" onclick="checkedBOX()"></label>
-            
-            
-            <a>Cогласие с конфиденциальностью и куки</a>
-        </div>
-        <div class="button_forms button_forms_popup">
-            <a id="callFormTeg" onclick="formTop()">Отправить</a>
-            
-            
-        </div>
-        <?php echo e(csrf_field()); ?>
 
-    </form>
+
+    </div>
+    <div class="checkbox">
+        <label>
+            <input type="checkbox">
+            <span class="fake-checkbox" aria-hidden="true"></span>
+            <span class="label">Согласие с конфиденциальностью и куки</span>
+        </label>
+    </div>
+    <div class="button_forms button_forms_popup">
+        <a href="#">отправить</a>
+    </div>
     <a class="close" title="Закрыть" href="#close"></a>
 </div>
 <a href="#x" class="overlay" id="win2"></a>
-<form class="popup popup_choise" action="<?php echo e(url('createApplications')); ?>" method="post" id="callForm3">
+<div class="popup popup_choise">
     <div class="up_form up_form_popup">
-
         <h3 class="popup_choise_h2">ВЫЗОВ СПЕЦИАЛИСТА</h3>
-        <div id="buttChoise" class="butt_choise d-flex">
-            <button type="button" name="specialist" value="2" id="specialist0" onclick="specialistCheck('specialist0')">Дизайнер</button>
-            <button type="button" name="specialist" value="3" id="specialist1" onclick="specialistCheck('specialist1')">Планировщик</button>
+        <div class="butt_choise d-flex">
+            <button>Замершик</button>
+            <button>Дизайнер</button>
         </div>
-        
-        <input type="hidden" id="hiddenSpec" name="specialist">
-        <input type="text" name="fullName" placeholder="ФИО" id="fullName3">
-        <input type="tel" id="phone3" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-               placeholder="phone _(___)___-____">
-        <input type="text" id='formEmail3' name="email" placeholder="email(необязательно)">
+
+        <input type="text" placeholder="имя">
+        <input type="text" placeholder="телефон">
     </div>
-    
+    <div class="down_form down_form_popup d-flex">
+        <input type="text" placeholder="email">
 
 
-    <div class="checkbox">
-        <input type="checkbox" id="checkbox3" v-model="checked" onclick="checkedBOX3()">
-        <a>Cогласие с конфиденциальностью и куки</a>
+        <div class="checkbox">
+            <input type="checkbox" id="checkbox18" v-model="checked">
+            <label for="checkbox18"><a href="#">Cогласие с конфиденциальностью и куки</a></label>
+        </div>
+        <div class="button_forms button_forms_popup">
+            <a href="#">Заказать</a>
+        </div>
+        <a class="close" title="Закрыть" href="#close"></a>
     </div>
-    <div class="button_forms button_forms_popup">
-        
-        <a onclick="formSpecialist()">Заказать</a>
-    </div>
-    <?php echo e(csrf_field()); ?>
+    <script type="text/javascript" src=<?php echo e(asset("js/jquery-3.3.1.min.js")); ?>></script>
+    <script type="text/javascript" src=<?php echo e(asset("js/bootstrap.min.js")); ?>></script>
+    <script src=<?php echo e(asset("owl-carusel/dist/compressed.js")); ?>></script>
+    <script type="text/javascript" src=<?php echo e(asset("js/jquery.fancybox.min.js")); ?>></script>
+    <script type="text/javascript" src=<?php echo e(asset("js/popper.min.js")); ?>></script>
+    <script type="text/javascript" src=<?php echo e(asset("js/tooltip.min.js")); ?>></script>
+    <script type="text/javascript" src=<?php echo e(asset("js/libs/functions.js")); ?>></script>
+    <script type="text/javascript" src=<?php echo e(asset("js/navigationButtons.js")); ?>></script>
 
-</form>
-
-<a class="close" title="Закрыть" href="#close"></a>
-</div>
-<script type="text/javascript" src=<?php echo e(asset("js/jquery-3.3.1.min.js")); ?>></script>
-<script type="text/javascript" src=<?php echo e(asset("js/bootstrap.min.js")); ?>></script>
-<script src=<?php echo e(asset("owl-carusel/dist/compressed.js")); ?>></script>
-<script type="text/javascript" src=<?php echo e(asset("js/jquery.fancybox.min.js")); ?>></script>
-<script type="text/javascript" src=<?php echo e(asset("js/popper.min.js")); ?>></script>
-<script type="text/javascript" src=<?php echo e(asset("js/tooltip.min.js")); ?>></script>
-<script type="text/javascript" src=<?php echo e(asset("js/libs/function_min.js")); ?>></script>
-<script type="text/javascript" src=<?php echo e(asset("js/forms/viewAdmin.js")); ?>></script>
-<script type="text/javascript" src=<?php echo e(asset("js/calculator.js")); ?>></script>
-<script type="text/javascript" src="js/logic.js"></script>
+    <!-- <script type="text/javascript" src="js/logic.js"></script> -->
 </body>
 </html>

@@ -27,7 +27,7 @@ class RegisterController extends Controller
 
 
     protected function redirectTo(){
-        return route('main');
+        return '/';
     }
     /**
      * Create a new controller instance.

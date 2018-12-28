@@ -50,12 +50,12 @@
                 <div id="menu-toogle" class="menus">
                     <div class="single-menu">
                         <?php if (! ($user->hasRole('moderator|logistics|manager'))): ?>
-                            <h2><a title=""><i class="fa fa-user"></i><span>Users</span></a></h2>
+                            <h2><a title=""><i class="fa fa-user"></i><span>Пользователи</span></a></h2>
                             <div class="sub-menu">
 
                                 <ul>
-                                    <li><a href="<?php echo e(route('viewUsers')); ?>" title="">View users</a></li>
-                                    <li><a href="<?php echo e(route('createUser')); ?>" title="">Create user</a></li>
+                                    <li><a href="<?php echo e(route('viewUsers')); ?>" title="">Все пользователи</a></li>
+                                    <li><a href="<?php echo e(route('createUser')); ?>" title="">Создать пользователя</a></li>
                                     
                                     
                                     
@@ -65,18 +65,48 @@
                     </div>
                     <?php endif; ?>
                     <div class="single-menu">
-                        <h2><a title=""><i class="fa fa-desktop"></i><span>Orders</span></a></h2>
+                        <h2><a title=""><i class="fa fa-desktop"></i><span>Заказы</span></a></h2>
                         <div class="sub-menu">
                             <ul>
-                                <li><a href="blank.html" title="">View orders</a></li>
+                                <li><a href="blank.html" title="">Все заказы</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="single-menu">
-                        <h2><a title=""><i class="fa fa-desktop"></i><span>Applications</span></a></h2>
+                        <h2><a title=""><i class="fa fa-desktop"></i><span>Заявки</span></a></h2>
                         <div class="sub-menu">
                             <ul>
-                                <li><a href="<?php echo e(route('viewApplications')); ?>" title="">View applications</a></li>
+                                <li><a href="<?php echo e(route('viewApplications')); ?>" title="">Все заявки</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="single-menu">
+                        <h2><a title=""><i class="fa fa-paperclip"></i><span>Галерея</span></a></h2>
+                        <div class="sub-menu">
+                            <ul>
+                                <li><a href="<?php echo e(route('createPhoto')); ?>" title="">Добавить фотографию</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="<?php echo e(route('viewPhoto')); ?>" title="">Все фотографии</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="single-menu">
+                        <h2><a title=""><i class="fa fa-paperclip"></i><span>Видео</span></a></h2>
+                        <div class="sub-menu">
+                            <ul>
+                                <li><a href="<?php echo e(route('viewVideos')); ?>" title="">Все видео</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="single-menu">
+                        <h2><a title=""><i class="fa fa-paperclip"></i><span>Текст</span></a></h2>
+                        <div class="sub-menu">
+                            <ul>
+                                <li><a href="<?php echo e(route('viewAdvantages')); ?>" title="">Преимущества</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="<?php echo e(route('viewAdvantages')); ?>" title="">Компании</a></li>
                             </ul>
                         </div>
                     </div>
@@ -90,7 +120,7 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="main-title">
-                                <h1>Users</h1>
+                                <h1>Пользователи</h1>
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -108,13 +138,13 @@
                                         <thead>
                                         <tr>
                                             <th>№</th>
-                                            <th>Name</th>
+                                            <th>Имя</th>
                                             <th>Email</th>
-                                            <th>Role</th>
-                                            <th>Created at</th>
+                                            <th>Роль</th>
+                                            <th>Создан в</th>
                                             <?php if($user->hasRole('admin')): ?>
-                                            <th>Edit</th>
-                                            <th>Delete</th>
+                                            <th>Редактировать</th>
+                                            <th>Удалить</th>
                                             <?php endif; ?>
                                         </tr>
                                         
@@ -142,23 +172,32 @@
                                                     <?php echo e($value->created_at); ?>
 
                                                 </td>
-                                                <?php if($user->hasRole('admin') && $value->display_name !='Admin'): ?>
+                                                <?php if($user->hasRole('admin') && $value->display_name !='Админ'): ?>
                                                     <td>
                                                      <a href="<?php echo e(route('editUser',$value->id)); ?>">+</a>
                                                     </td>
                                                     <td>
                                                         <?php echo e(csrf_field()); ?>
 
-                                                      <a href="<?php echo e(route('deleteUser',$value->id)); ?>"  onclick="return confirm('Are you sure you want to delete this User?');">-</a>
+                                                      <a href="<?php echo e(route('deleteUser',$value->id)); ?>"  onclick="return confirm('Вы действительно хотите удалить пользователя?');">-</a>
                                                         <?php echo e(csrf_field()); ?>
 
                                                     </td>
                                                  <?php endif; ?>
                                             </tr>
                                         <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-
+                                        <div class="inline-form" }}>
+                                                    <input
+                                                    id="filterInput"
+                                                    class="input-style"
+                                                    type="text"
+                                                    placeholder="Поиск" required/>
+                                        </div>
                                         </tbody>
+
                                     </table>
+                                    <?php echo e($allUsers->links()); ?>
+
                                     <div id="summary">
                                         <div>
                                         </div>
@@ -337,10 +376,11 @@
             
             
             
-            <script src=<?php echo e(asset("js/streaming-mustache.js")); ?> type="text/javascript"></script>
-            <script src=<?php echo e(asset("js/stream_table.js")); ?> type="text/javascript"></script>
             
-            <script src=<?php echo e(asset("js/stream.js")); ?> type="text/javascript"></script>
+            
+            
+            
+            <script type="text/javascript" src=<?php echo e(asset("js/admin/search.js")); ?>></script>
             <script type="text/javascript" src=<?php echo e(asset("js/admin/jquery-1.11.1.js")); ?>></script>
             <script type="text/javascript" src=<?php echo e(asset("js/admin/script.js")); ?>></script>
             <script type="text/javascript" src=<?php echo e(asset("js/admin/bootstrap.js")); ?>></script>

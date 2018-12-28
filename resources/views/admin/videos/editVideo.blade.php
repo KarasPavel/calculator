@@ -9,11 +9,11 @@
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'/>
 
     <!-- Styles -->
-    <link rel="stylesheet" href=<?php echo e(asset("font-awesome-4.2.0/css/font-awesome.css")); ?> type="text/css"/>
+    <link rel="stylesheet" href={{asset("font-awesome-4.2.0/css/font-awesome.css")}} type="text/css"/>
     <!-- Font Awesome -->
-    <link rel="stylesheet" href=<?php echo e(asset('css/bootstrap1.css')); ?> type="text/css"/><!-- Bootstrap -->
-    <link rel="stylesheet" href=<?php echo e(asset('css/style.css')); ?> type="text/css"/><!-- Style -->
-    <link rel="stylesheet" href=<?php echo e(asset('css/responsive.css')); ?> type="text/css"/><!-- Responsive -->
+    <link rel="stylesheet" href={{asset('css/bootstrap1.css')}} type="text/css"/><!-- Bootstrap -->
+    <link rel="stylesheet" href={{asset('css/style.css')}} type="text/css"/><!-- Style -->
+    <link rel="stylesheet" href={{asset('css/responsive.css')}} type="text/css"/><!-- Responsive -->
 
 </head>
 <body>
@@ -34,12 +34,12 @@
 
         <div class="dropdown profile">
             <a title="">
-                <img alt=""/><?php echo e($user->name); ?><i class="caret"></i>
+                <img alt=""/>{{$user->name}}<i class="caret"></i>
             </a>
             <div class="profile drop-list">
                 <ul>
-                    
-                    <li><a href=<?php echo e(route('logout')); ?> title=""><i class="fa fa-info"></i>Logout</a></li>
+                    {{--<li><a href="profile.html" title=""><i class="fa fa-user"></i> Profile</a></li>--}}
+                    <li><a href={{ route('logout') }} title=""><i class="fa fa-info"></i>Logout</a></li>
                 </ul>
             </div><!-- Profile DropDown -->
 
@@ -51,21 +51,21 @@
             <div class="menu-sec">
                 <div id="menu-toogle" class="menus">
                     <div class="single-menu">
-                        <?php if (! ($user->hasRole('moderator|logistics|manager'))): ?>
+                        @unless ($user->hasRole('moderator|logistics|manager'))
                             <h2><a title=""><i class="fa fa-user"></i><span>Users</span></a></h2>
                             <div class="sub-menu">
 
                                 <ul>
-                                    <li><a href="<?php echo e(route('viewUsers')); ?>" title="">View users</a></li>
-                                    <li><a href="<?php echo e(route('createUser')); ?>" title="">Create user</a></li>
-                                    
-                                    
-                                    
-                                    
+                                    <li><a href="{{route('viewUsers')}}" title="">View users</a></li>
+                                    <li><a href="{{route('createUser')}}" title="">Create user</a></li>
+                                    {{--@unless ($user->hasRole('junior_admin'))--}}
+                                    {{--<li><a href="dashboard2.html" title="">Edit user</a></li>--}}
+                                    {{--<li><a href="dashboard4.html" title="">Delete user</a></li>--}}
+                                    {{--@endunless--}}
                                 </ul>
                             </div>
                     </div>
-                    <?php endif; ?>
+                    @endunless
                     <div class="single-menu">
                         <h2><a title=""><i class="fa fa-desktop"></i><span>Orders</span></a></h2>
                         <div class="sub-menu">
@@ -78,7 +78,15 @@
                         <h2><a title=""><i class="fa fa-desktop"></i><span>Applications</span></a></h2>
                         <div class="sub-menu">
                             <ul>
-                                <li><a href="<?php echo e(route('viewApplications')); ?>" title="">View applications</a></li>
+                                <li><a href="{{route('viewApplications')}}" title="">View applications</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="single-menu">
+                        <h2><a title=""><i class="fa fa-desktop"></i><span>Галерея</span></a></h2>
+                        <div class="sub-menu">
+                            <ul>
+                                <li><a href="{{route('viewPhoto')}}" title="">Лестницы</a></li>
                             </ul>
                         </div>
                     </div>
@@ -96,7 +104,7 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="main-title">
-                                <h1>Create account</h1>
+                                <h1>Редактирование видео</h1>
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -104,100 +112,44 @@
                     </div>
                 </div><!-- title Date Range -->
                 <div class="row">
-                    <form action="<?php echo e(url('admin/createAccount')); ?>" method="post">
+                    <form action="{{url('admin/updateVideo')}}" method="post">
                         <div class="masonary-grids">
                             <div class="col-md-12">
                                 <div class="widget-area">
                                     <div class="wizard-form-h">
                                         <form id="step-1">
-                                            <h2 class="StepTitle">Account Information</h2>
+                                            <h2 class="StepTitle">Информация об видео</h2>
                                             <div class="col-md-6">
-                                                <div class="inline-form" <?php echo e($errors->has('name') ? 'has->error' : ''); ?>>
+                                                <div class="inline-form">
 
-                                                    <label class="c-label">Account Name</label><input
+                                                    <label class="c-label">Название</label><input
+                                                            id="nameacc"
                                                             class="input-style"
                                                             type="text"
                                                             name="name"
-                                                            placeholder="Account Name" required/>
+                                                            value="{{$video[0]->name}}"
+                                                            required/>
                                                 </div>
-                                                <?php if($errors->has('name')): ?>
-                                                    <span class="help-block">
-                                                            <?php echo e($errors->first('name')); ?>
-
-                                                </span>
-                                                <?php endif; ?>
                                             </div>
-
-                                            <div class="col-md-6">
-                                                <div class="inline-form" <?php echo e($errors->has('password') ? 'has->error' : ''); ?>>
-                                                    <label class="c-label">Account Password</label><input
-                                                            class="input-style"
-                                                            type="password"
-                                                            name="password"
-                                                            placeholder="Your password" required/>
-                                                </div>
-                                                <?php if($errors->has('password')): ?>
-                                                    <span class="help-block">
-                                                            <?php echo e($errors->first('password')); ?>
-
-                                                </span>
-                                                <?php endif; ?>
-                                            </div>
-
-                                            <div class="col-md-6">
-                                                <div class="inline-form" <?php echo e($errors->has('email') ? 'has->error' : ''); ?>>
-
-                                                    <label for="email" class="control-label"></label><label class="c-label">Account Email</label><input type="text"
-                                                                                                       name="email"
-                                                                                                       placeholder="Account Email"
-                                                                                                       required/>
-
-                                                </div>
-                                                <?php if($errors->has('email')): ?>
-                                                    <span class="help-block">
-                                                            <?php echo e($errors->first('email')); ?>
-
-                                                        </span>
-                                                <?php endif; ?>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <div class="inline-form" <?php echo e($errors->has('rePassword') ? 'has->error' : ''); ?>>
-                                                    <label class="c-label">Confirm Password</label><input
-                                                            type="password"
-                                                            name="rePassword"
-                                                            placeholder="Confirm password" required/>
-                                                </div>
-                                                <?php if($errors->has('rePassword')): ?>
-                                                    <span class="help-block">
-                                                            <?php echo e($errors->first('rePassword')); ?>
-
-                                                        </span>
-                                                <?php endif; ?>
-                                            </div>
+                                            <input type="hidden" name="videoId" value="{{$video[0]->id}}">
                                             <div class="col-md-6">
                                                 <div class="inline-form">
-                                                    <label class="c-label">Select Role</label>
-                                                    <select name="role">
-                                                        <?php $__currentLoopData = $role; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $value): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                                                            <?php if($value->name === 'junior_admin' and $user->hasRole('junior_admin')): ?>
-                                                                <?php continue; ?>;
-                                                            <?php endif; ?>
-                                                            <option value="<?php echo e($value->id); ?>"><?php echo e($value->display_name); ?></option>
-                                                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-                                                    </select>
+
+                                                    <label for="video" class="control-label"></label><label
+                                                            class="c-label">Видео</label><input
+                                                            id="emailacc"
+                                                            type="text"
+                                                            name="video"
+                                                            value="{{$video[0]->video}}"/>
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="inline-form">
-                                                    <button type="submit" class="btn btn-success">Save</button>
+                                                    <button type="submit" class="btn btn-success">Сохранить</button>
                                                 </div>
                                             </div>
-                                        <?php echo e(csrf_field()); ?>
-
-
+                                        {{ csrf_field()}}
                                     </div>
-
-
                                 </div>
                             </div>
                         </div>
@@ -314,21 +266,10 @@
 
 
 <!-- Script -->
-
-
-
-
-
-
-
-
-
-
-
-<script type="text/javascript" src=<?php echo e(asset("js/admin/jquery-1.11.1.js")); ?>></script>
-<script type="text/javascript" src=<?php echo e(asset("js/admin/script.js")); ?>></script>
-<script type="text/javascript" src=<?php echo e(asset("js/admin/bootstrap.js")); ?>></script>
-<script type="text/javascript" src=<?php echo e(asset("js/admin/enscroll.js")); ?>></script>
+<script type="text/javascript" src={{asset("js/admin/jquery-1.11.1.js")}}></script>
+<script type="text/javascript" src={{asset("js/admin/script.js")}}></script>
+<script type="text/javascript" src={{asset("js/admin/bootstrap.js")}}></script>
+<script type="text/javascript" src={{asset("js/admin/enscroll.js")}}></script>
 
 </body>
 </html>

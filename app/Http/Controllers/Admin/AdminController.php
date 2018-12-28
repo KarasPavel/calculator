@@ -7,6 +7,7 @@ use App\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Input;
 use Illuminate\Validation\Validator;
 
 //use App\Role;
@@ -65,13 +66,13 @@ class AdminController extends Controller
     {
 //        dd($request);
 
-     $request->validate([
-         'name' => 'required|string|min:5|max:100',
-         'email' => 'required|email|unique:users',
-         'password' => ['required',
-             'min:6',],
-         'rePassword' => 'required|same:password',
-     ]);
+        $request->validate([
+            'name' => 'required|string|min:5|max:100',
+            'email' => 'required|email|unique:users',
+            'password' => ['required',
+                'min:6',],
+            'rePassword' => 'required|same:password',
+        ]);
         User::createAccount($request);
         return redirect()->route('viewUsers');
     }
@@ -80,18 +81,20 @@ class AdminController extends Controller
      * @param $id
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-    public function editUser($id){
-       $user = Auth::user();
-       $userData = User::getUserById($id);
-       $role = Role::getRoles();
-        return view('admin/editUser', ['userData' => $userData, 'role' => $role,'user'=>$user]);
+    public function editUser($id)
+    {
+        $user = Auth::user();
+        $userData = User::getUserById($id);
+        $role = Role::getRoles();
+        return view('admin/editUser', ['userData' => $userData, 'role' => $role, 'user' => $user]);
     }
 
     /**
      * @param Request $request
      * @return \Illuminate\Http\RedirectResponse
      */
-    public function updateAccount(Request $request){
+    public function updateAccount(Request $request)
+    {
         User::updateAccount($request);
         return redirect()->route('viewUsers');
     }
@@ -100,9 +103,27 @@ class AdminController extends Controller
      * @param $id
      * @return \Illuminate\Http\RedirectResponse
      */
-    public function deleteUser($id){
+    public function deleteUser($id)
+    {
         User::deleteAccount($id);
         return redirect()->route('viewUsers');
+    }
+
+    public function searchUser()
+    {
+        $user = Auth::user();
+        $q = Input::get('q');
+        if ($q != '') {
+            $allUsers = User::where('name', 'LIKE', '%' . $q . '%q')
+            ->paginate(5);
+
+            $allUsers->appends(array(
+                'q' => Input::get('q'),
+        ));
+            if(count($allUsers)>0){
+                return view('admin/viewUsers',['user' => $user, 'allUsers' => $allUsers]);
+            }
+        }
     }
 
 }

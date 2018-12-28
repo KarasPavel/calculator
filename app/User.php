@@ -36,7 +36,7 @@ class User extends Authenticatable
 
 
     /**
-     * @return \Illuminate\Support\Collection
+     * @return \Illuminate\Contracts\Pagination\LengthAwarePaginator
      */
     public static function getUsers()
     {
@@ -44,8 +44,8 @@ class User extends Authenticatable
             ->select('users.id', 'users.name', 'display_name', 'email','users.created_at')
             ->join('role_user', 'user_id', '=', 'users.id')
             ->join('roles', 'role_id', '=', 'roles.id')
-            ->orderBy('users.id')
-            ->get();
+            ->orderByDesc('users.created_at')
+            ->paginate(10);
     }
 
     public static function createAccount(Request $request)

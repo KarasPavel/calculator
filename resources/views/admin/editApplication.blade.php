@@ -39,7 +39,7 @@
             <div class="profile drop-list">
                 <ul>
                     {{--<li><a href="profile.html" title=""><i class="fa fa-user"></i> Profile</a></li>--}}
-                    <li><a href={{ route('logout') }} title=""><i class="fa fa-info"></i>Logout</a></li>
+                    <li><a href={{ route('logout') }} title=""><i class="fa fa-info"></i>Выйти</a></li>
                 </ul>
             </div><!-- Profile DropDown -->
 
@@ -52,12 +52,12 @@
                 <div id="menu-toogle" class="menus">
                     <div class="single-menu">
                         @unless ($user->hasRole('moderator|logistics|manager'))
-                            <h2><a title=""><i class="fa fa-user"></i><span>Users</span></a></h2>
+                            <h2><a title=""><i class="fa fa-user"></i><span>Пользователи</span></a></h2>
                             <div class="sub-menu">
 
                                 <ul>
-                                    <li><a href="{{route('viewUsers')}}" title="">View users</a></li>
-                                    <li><a href="{{route('createUser')}}" title="">Create user</a></li>
+                                    <li><a href="{{route('viewUsers')}}" title="">Все пользователи</a></li>
+                                    <li><a href="{{route('createUser')}}" title="">Создать пользователя</a></li>
                                     {{--@unless ($user->hasRole('junior_admin'))--}}
                                     {{--<li><a href="dashboard2.html" title="">Edit user</a></li>--}}
                                     {{--<li><a href="dashboard4.html" title="">Delete user</a></li>--}}
@@ -67,18 +67,48 @@
                     </div>
                     @endunless
                     <div class="single-menu">
-                        <h2><a title=""><i class="fa fa-desktop"></i><span>Orders</span></a></h2>
+                        <h2><a title=""><i class="fa fa-desktop"></i><span>Заказы</span></a></h2>
                         <div class="sub-menu">
                             <ul>
-                                <li><a href="blank.html" title="">View orders</a></li>
+                                <li><a href="blank.html" title="">Все заказы</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="single-menu">
-                        <h2><a title=""><i class="fa fa-desktop"></i><span>Applications</span></a></h2>
+                        <h2><a title=""><i class="fa fa-desktop"></i><span>Заявки</span></a></h2>
                         <div class="sub-menu">
                             <ul>
-                                <li><a href="{{route('viewApplications')}}" title="">View applications</a></li>
+                                <li><a href="{{route('viewApplications')}}" title="">Все заявки</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="single-menu">
+                        <h2><a title=""><i class="fa fa-paperclip"></i><span>Галерея</span></a></h2>
+                        <div class="sub-menu">
+                            <ul>
+                                <li><a href="{{route('createPhoto')}}" title="">Добавить фотографию</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="{{route('viewPhoto')}}" title="">Все фотографии</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="single-menu">
+                        <h2><a title=""><i class="fa fa-paperclip"></i><span>Видео</span></a></h2>
+                        <div class="sub-menu">
+                            <ul>
+                                <li><a href="{{route('viewVideos')}}" title="">Все видео</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="single-menu">
+                        <h2><a title=""><i class="fa fa-paperclip"></i><span>Текст</span></a></h2>
+                        <div class="sub-menu">
+                            <ul>
+                                <li><a href="{{route('viewAdvantages')}}" title="">Преимущества</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="{{route('viewAdvantages')}}" title="">Компании</a></li>
                             </ul>
                         </div>
                     </div>
@@ -145,7 +175,7 @@
                                                             type="text"
                                                             name="phone"
                                                             value="{{$application[0]->telephone}}"
-                                                    disabled="true"/>
+                                                            disabled="true"/>
 
                                                 </div>
                                             </div>
@@ -180,7 +210,8 @@
                                                     <label class="c-label">Select status</label>
                                                     <select name="status">
                                                         @foreach($statuses as $value)
-                                                            <option id="{{$value->id}}" value="{{$value->id}}">{{$value->status}}</option>
+                                                            <option id="{{$value->id}}"
+                                                                    value="{{$value->id}}">{{$value->status}}</option>
                                                             @if($value->id === $application[0]->application_status_id)
                                                                 <script>document.getElementById("{{$value->id}}").selected = true</script>
                                                             @endif
@@ -194,7 +225,8 @@
                                                     <label class="c-label">Select specialist</label>
                                                     <select name="specialists">
                                                         @foreach($specialists as $value)
-                                                            <option id="{{$value->id+11}}" value="{{$value->id}}">{{$value->specialist}}</option>
+                                                            <option id="{{$value->id+11}}"
+                                                                    value="{{$value->id}}">{{$value->specialist}}</option>
                                                             @if($value->id === $application[0]->specialist_id)
                                                                 <script>document.getElementById("{{$value->id+11}}").selected = true</script>
                                                             @endif
@@ -207,7 +239,8 @@
                                                     <label class="c-label">Day</label>
                                                     <select id="day" name="days">
                                                         @foreach($days as $value)
-                                                            <option id="{{$value->id+21}}" value="{{$value->id}}">{{$value->day}}</option>
+                                                            <option id="{{$value->id+21}}"
+                                                                    value="{{$value->id}}">{{$value->day}}</option>
                                                             @if($value->id === $application[0]->day_for_call_id)
                                                                 <script>document.getElementById("{{$value->id+21}}").selected = true</script>
                                                             @endif

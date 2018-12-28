@@ -49,12 +49,12 @@
                 <div id="menu-toogle" class="menus">
                     <div class="single-menu">
                         <?php if (! ($user->hasRole('moderator|logistics|manager'))): ?>
-                            <h2><a title=""><i class="fa fa-user"></i><span>Users</span></a></h2>
+                            <h2><a title=""><i class="fa fa-user"></i><span>Пользователи</span></a></h2>
                             <div class="sub-menu">
 
                                 <ul>
-                                    <li><a href="<?php echo e(route('viewUsers')); ?>" title="">View users</a></li>
-                                    <li><a href="<?php echo e(route('createUser')); ?>" title="">Create user</a></li>
+                                    <li><a href="<?php echo e(route('viewUsers')); ?>" title="">Все пользователи</a></li>
+                                    <li><a href="<?php echo e(route('createUser')); ?>" title="">Создать пользователя</a></li>
                                     
                                     
                                     
@@ -64,18 +64,48 @@
                     </div>
                     <?php endif; ?>
                     <div class="single-menu">
-                        <h2><a title=""><i class="fa fa-desktop"></i><span>Orders</span></a></h2>
+                        <h2><a title=""><i class="fa fa-desktop"></i><span>Заказы</span></a></h2>
                         <div class="sub-menu">
                             <ul>
-                                <li><a href="blank.html" title="">View orders</a></li>
+                                <li><a href="blank.html" title="">Все заказы</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="single-menu">
-                        <h2><a title=""><i class="fa fa-desktop"></i><span>Applications</span></a></h2>
+                        <h2><a title=""><i class="fa fa-desktop"></i><span>Заявки</span></a></h2>
                         <div class="sub-menu">
                             <ul>
-                                <li><a href="<?php echo e(route('viewApplications')); ?>" title="">View applications</a></li>
+                                <li><a href="<?php echo e(route('viewApplications')); ?>" title="">Все заявки</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="single-menu">
+                        <h2><a title=""><i class="fa fa-paperclip"></i><span>Галерея</span></a></h2>
+                        <div class="sub-menu">
+                            <ul>
+                                <li><a href="<?php echo e(route('createPhoto')); ?>" title="">Добавить фотографию</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="<?php echo e(route('viewPhoto')); ?>" title="">Все фотографии</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="single-menu">
+                        <h2><a title=""><i class="fa fa-paperclip"></i><span>Видео</span></a></h2>
+                        <div class="sub-menu">
+                            <ul>
+                                <li><a href="<?php echo e(route('viewVideos')); ?>" title="">Все видео</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="single-menu">
+                        <h2><a title=""><i class="fa fa-paperclip"></i><span>Текст</span></a></h2>
+                        <div class="sub-menu">
+                            <ul>
+                                <li><a href="<?php echo e(route('viewAdvantages')); ?>" title="">Преимущества</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="<?php echo e(route('viewAdvantages')); ?>" title="">Компании</a></li>
                             </ul>
                         </div>
                     </div>
@@ -107,20 +137,20 @@
                                         <thead>
                                         <tr>
                                             <th>№</th>
-                                            <th>Name</th>
+                                            <th>Имя</th>
                                             <th>Email</th>
-                                            <th>Telephone</th>
-                                            <th>Specialist</th>
-                                            <th>Day of the week</th>
-                                            <th>Start time</th>
-                                            <th>End time</th>
-                                            <th>Status</th>
-                                            <th>Created at</th>
-                                            <th>Updated at</th>
+                                            <th>Телефон</th>
+                                            <th>Специалист</th>
+                                            
+                                            
+                                            
+                                            <th>Статус</th>
+                                            <th>Создан в</th>
+                                            <th>Обновлен в</th>
 
-                                                <th>Edit</th>
+                                                <th>Редактировать</th>
                                             <?php if($user->hasRole('admin')): ?>
-                                                <th>Delete</th>
+                                                <th>Удалить</th>
                                             <?php endif; ?>
                                         </tr>
                                         </thead>
@@ -132,7 +162,7 @@
 
                                                 </td>
                                                 <td>
-                                                    <?php echo e($value->fullName); ?>
+                                                    <?php echo e($value->name); ?>
 
                                                 </td>
                                                 <td>
@@ -147,18 +177,15 @@
                                                     <?php echo e($value->specialist); ?>
 
                                                 </td>
-                                                <td>
-                                                    <?php echo e($value->day); ?>
-
-                                                </td>
-                                                <td>
-                                                    <?php echo e($value->start_time); ?>
-
-                                                </td>
-                                                <td>
-                                                    <?php echo e($value->end_time); ?>
-
-                                                </td>
+                                                
+                                                    
+                                                
+                                                
+                                                    
+                                                
+                                                
+                                                    
+                                                
                                                 <td>
                                                     <?php echo e($value->status); ?>
 

@@ -17,42 +17,42 @@ class UsersTableSeeder extends Seeder
         //create user role
         $userRole = new Role();
         $userRole->name = "user";
-        $userRole->display_name = "User";
+        $userRole->display_name = "Пользователь";
         $userRole->description = "see status of his orders";
         $userRole->save();
 
         //create admin role
         $adminRole = new Role();
         $adminRole->name = "admin";
-        $adminRole->display_name = "Admin";
+        $adminRole->display_name = "Админ";
         $adminRole->description = "CRUD all users, RUD all orders, RUD all applications";
         $adminRole->save();
 
         //create junior admin role
         $juniorAdminRole = new Role();
         $juniorAdminRole->name = "junior_admin";
-        $juniorAdminRole->display_name = "Junior admin";
+        $juniorAdminRole->display_name = "Младший админ";
         $juniorAdminRole->description = "CR all users, RU all orders, RUD all applications";
         $juniorAdminRole->save();
 
         //create moderator role
         $moderatorRole = new Role();
         $moderatorRole->name = "moderator";
-        $moderatorRole->display_name = "Moderator";
+        $moderatorRole->display_name = "Моддер";
         $moderatorRole->description = "nothing";
         $moderatorRole->save();
 
         //create logistics role
         $logisticsRole = new Role();
         $logisticsRole->name = "logistics";
-        $logisticsRole->display_name = "Logistics";
+        $logisticsRole->display_name = "Логистика";
         $logisticsRole->description = "nothing";
         $logisticsRole->save();
 
         //create manager role
         $managerRole = new Role();
         $managerRole->name = 'manager';
-        $managerRole->display_name = 'Manager';
+        $managerRole->display_name = 'Менеджер';
         $managerRole->description = "RU only new orders, RUD all applications";
         $managerRole->save();
 

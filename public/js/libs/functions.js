@@ -1,6 +1,3 @@
-
-
-
 function initializeCarusel(e, isShowing){
 	var ButtNext = $('.owl-next'),		
 		ButtPrev = $('.owl-prev');
@@ -63,8 +60,8 @@ $(document).ready(function(){
         onInitialized: function(e) {
         	initializeCarusel(e, true);
         },
-        navText: ['<p onclick="topFunction()" id="mybtn">Название страници </br> Предидущая страница</p><img class="nav-next" src="images/prev_arrows.png" alt="">',
-            '<p onclick="topFunction()" id="mybtn"></br> Следующая страница</p><img src="images/arrow-next_owl.png" alt="">'],
+        navText: ['<p onclick="topFunction()" id="mybtn">Дальше</br> Предидущая страница</p><img class="nav-next" src="images/prev_arrows.png" alt="">',
+            '<p onclick="topFunction()" id="mybtn1">Лестницы и полы</p><img src="images/arrow-next_owl.png" alt="">',]
 		});
 
 	carusel.on('changed.owl.carousel', function(e){
@@ -196,11 +193,19 @@ function resize(){
 
 
 	$('.cost_calc_first_tab').each(function() {
-		var el = $(this);
-		$(this).find('.content').click(function() {
-			el.next().show();		
+			var el = $(this);
+			$(this).find('.content').click(function() {
+				el.next().show();		
+		});
+
+	$('.call_back_section').each(function() {
+			var el = $(this);
+			$(this).find('.next__block').click(function() {
+				el.hide();
+				el.next().show();		
+		});
+	
 	});
-});
 
 $(window).on('load', function () {
     var $preloader = $('#p_prldr'),
@@ -209,6 +214,7 @@ $(window).on('load', function () {
     $svg_anm.fadeOut();
     $preloader.delay(500).fadeOut('slow');
 });
-$('.owl-dots').children().addClass('toltips').length;
-
-
+})
+$('.navbar-nav>li>a').on('click', function(){
+    $('.navbar-collapse').collapse('hide');
+});

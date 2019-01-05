@@ -782,11 +782,11 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="up_form">
-                            <input type="text" placeholder="Your name">
-                            <input type="text" placeholder="Your name">
+                            <input type="text" placeholder="имя">
+                            <input type="text" placeholder="телефон">
                         </div>
                         <div class="down_form">
-                            <input type="text" placeholder="EMail">
+                            <input type="text" placeholder="email">
 
 
 

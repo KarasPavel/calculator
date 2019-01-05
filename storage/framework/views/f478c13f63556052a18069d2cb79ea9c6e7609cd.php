@@ -692,53 +692,54 @@
                 </div>
                 <div class="tab-content">
                     <div class="tab-pane active" id="home" role="tabpanel">
-                        
-                            
-                                
-                                
-                                    
-                                        
-                                        
-                                    
-                                
-                            
-                        
+                        <?php $__currentLoopData = $photo; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $value): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                            <?php if($value->type === 'лестницы'): ?>
+                                <?php echo e($value->id); ?>
+
+                                <a data-fancybox="gallery" href="<?php echo e($value->photo); ?>">
+                                    <div class="img_items_stairs">
+                                        <img src="<?php echo e($value->photo); ?>">
+                                        <p></p>
+                                    </div>
+                                </a>
+                            <?php endif; ?>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                     </div>
                     <div class="tab-pane" id="profile" role="tabpanel">
-                        
-                            
-                                
-                                    
-                                        
-                                        
-                                    
-                                
-                            
-                        
+                        <?php $__currentLoopData = $photo; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $value): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                            <?php if($value->type === 'полы'): ?>
+                                <a data-fancybox="gallery1" href="<?php echo e($value->photo); ?>">
+                                    <div class="img_items_stairs">
+                                        <img src="<?php echo e($value->photo); ?>" alt="1">
+                                        <p></p>
+                                    </div>
+                                </a>
+                            <?php endif; ?>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                     </div>
                     <div class="tab-pane" id="messages" role="tabpanel">
-                        
-                            
-                                
-                                    
-                                        
-                                        
-                                    
-                                
-                            
-                        
+                        <?php $__currentLoopData = $photo; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $value): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                            <?php if($value->type === 'бронирование'): ?>
+                                <a data-fancybox="gallery3" href="<?php echo e($value->photo); ?>">
+                                    <div class="img_items_stairs">
+                                        <img src="<?php echo e($value->photo); ?>" alt="1">
+                                        <p></p>
+                                    </div>
+                                </a>
+                            <?php endif; ?>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                     </div>
                     <div class="tab-pane" id="settings" role="tabpanel">
-                        
-                            
-                                
-                                    
-                                        
-                                        
-                                    
-                                
-                            
-                        
+                        <?php $__currentLoopData = $photo; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $value): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                            <?php if($value->type === 'эксклюзив'): ?>
+                                <a data-fancybox="gallery3" href="<?php echo e($value->photo); ?>">
+                                    <div class="img_items_stairs">
+                                        <img src="<?php echo e($value->photo); ?>" alt="1">
+                                        <p></p>
+                                    </div>
+                                </a>
+                            <?php endif; ?>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                     </div>
                 </div>
             </div>
@@ -785,11 +786,11 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="up_form">
-                            <input type="text" placeholder="Your name">
-                            <input type="text" placeholder="Your name">
+                            <input type="text" placeholder="имя">
+                            <input type="text" placeholder="телефон">
                         </div>
                         <div class="down_form">
-                            <input type="text" placeholder="EMail">
+                            <input type="text" placeholder="email">
 
 
 
@@ -903,100 +904,100 @@
                 </div>
                 <div class="tab-content">
                     <div class="tab-pane active" id="page2_home" role="tabpanel">
-                        
-                            
-                                
-                                    
-                                        
-                                        
-                                    
-                                
-                            
-                        
+                        <?php $__currentLoopData = $photo; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $value): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                            <?php if($value->type === 'угловые и фигурные'): ?>
+                                <a data-fancybox="gallery_Showers" href="<?php echo e($value->photo); ?>">
+                                    <div class="img_items_stairs">
+                                        <img src="<?php echo e($value->photo); ?>" alt="1">
+                                        <p></p>
+                                    </div>
+                                </a>
+                            <?php endif; ?>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                     </div>
                     <div class="tab-pane" id="page2_profile" role="tabpanel">
-                        
-                            
-                                
-                                    
-                                        
-                                        
-                                    
-                                
-                            
-                        
+                        <?php $__currentLoopData = $photo; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $value): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                            <?php if($value->type === 'прямые душевые'): ?>
+                                <a data-fancybox="gallery_Showers2" href="<?php echo e($value->photo); ?>">
+                                    <div class="img_items_stairs">
+                                        <img src="<?php echo e($value->photo); ?>" alt="1">
+                                        <p></p>
+                                    </div>
+                                </a>
+                            <?php endif; ?>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                     </div>
                     <div class="tab-pane" id="page2_messages" role="tabpanel">
-                        
-                            
-                                
-                                    
-                                        
-                                        
-                                    
-                                
-                            
-                        
+                        <?php $__currentLoopData = $photo; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $value): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                            <?php if($value->type === 'форма трапеции'): ?>
+                                <a data-fancybox="gallery_Showers1" href="<?php echo e($value->photo); ?>">
+                                    <div class="img_items_stairs">
+                                        <img src="<?php echo e($value->photo); ?>" alt="1">
+                                        <p></p>
+                                    </div>
+                                </a>
+                            <?php endif; ?>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                     </div>
                     <div class="tab-pane" id="page2_settings" role="tabpanel">
-                        
-                            
-                                
-                                    
-                                        
-                                        
-                                    
-                                
-                            
-                        
+                        <?php $__currentLoopData = $photo; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $value): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                            <?php if($value->type === 'двери ниша'): ?>
+                                <a data-fancybox="gallery_Showers3" href="<?php echo e($value->photo); ?>">
+                                    <div class="img_items_stairs">
+                                        <img src="<?php echo e($value->photo); ?>" alt="1">
+                                        <p></p>
+                                    </div>
+                                </a>
+                            <?php endif; ?>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                     </div>
                     <div class="tab-pane" id="page2_settings1" role="tabpanel">
-
-
-                                
-                                    
-                                        
-                                        
-                                    
-                                
-                            
-                        
+                        <?php $__currentLoopData = $photo; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $value): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                            <?php if($value->type === 'глухие перегородки'): ?>
+                                <a data-fancybox="gallery_Showers4" href="<?php echo e($value->photo); ?>">
+                                    <div class="img_items_stairs">
+                                        <img src="<?php echo e($value->photo); ?>" alt="1">
+                                        <p></p>
+                                    </div>
+                                </a>
+                            <?php endif; ?>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                     </div>
                     <div class="tab-pane" id="page2_settings2" role="tabpanel">
-
-                            
-                                
-                                    
-                                        
-                                        
-                                    
-                                
-                            
-                        
+                        <?php $__currentLoopData = $photo; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $value): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                            <?php if($value->type === 'ограждения в ванную'): ?>
+                                <a data-fancybox="gallery_Showers5" href="<?php echo e($value->photo); ?>">
+                                    <div class="img_items_stairs">
+                                        <img src="<?php echo e($value->photo); ?>" alt="1">
+                                        <p></p>
+                                    </div>
+                                </a>
+                            <?php endif; ?>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                     </div>
                     <div class="tab-pane" id="page2_settings3" role="tabpanel">
-                        
-                            
-                                
-                                    
-                                        
-                                        
-                                    
-                                
-                            
-                        
+                        <?php $__currentLoopData = $photo; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $value): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                            <?php if($value->type === 'с раздвижной дверью'): ?>
+                                <a data-fancybox="gallery_Showers6" href="<?php echo e($value->photo); ?>">
+                                    <div class="img_items_stairs">
+                                        <img src="<?php echo e($value->photo); ?>" alt="1">
+                                        <p></p>
+                                    </div>
+                                </a>
+                            <?php endif; ?>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                     </div>
                     <div class="tab-pane" id="page2_settings4" role="tabpanel">
-                        
-                            
-                                
-                                    
-                                        
-                                        
-                                    
-                                
-                            
-                        
+                        <?php $__currentLoopData = $photo; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $value): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                            <?php if($value->type === 'эксклюзив и опт'): ?>
+                                <a data-fancybox="gallery_Showers7" href="<?php echo e($value->photo); ?>">
+                                    <div class="img_items_stairs">
+                                        <img src="<?php echo e($value->photo); ?>" alt="1">
+                                        <p></p>
+                                    </div>
+                                </a>
+                            <?php endif; ?>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                     </div>
                 </div>
             </div>
@@ -1494,88 +1495,88 @@
                 </div>
                 <div class="tab-content">
                     <div class="tab-pane active" id="page4_home" role="tabpanel">
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
+                        <?php $__currentLoopData = $photo; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $value): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                        <?php if($value->type === 'распашные двери'): ?>
+                        <a data-fancybox="gallery_Door" href="<?php echo e($value->photo); ?>">
+                        <div class="img_items_stairs">
+                        <img src="<?php echo e($value->photo); ?>" alt="1">
+                        <p></p>
+                        </div>
+                        </a>
+                        <?php endif; ?>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                     </div>
                     <div class="tab-pane" id="page4_profile" role="tabpanel">
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
+                        <?php $__currentLoopData = $photo; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $value): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                        <?php if($value->type === 'перегородки'): ?>
+                        <a data-fancybox="gallery_Door1" href="<?php echo e($value->photo); ?>">
+                        <div class="img_items_stairs">
+                        <img src="<?php echo e($value->photo); ?>" alt="1">
+                        <p></p>
+                        </div>
+                        </a>
+                        <?php endif; ?>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                     </div>
                     <div class="tab-pane" id="page4_messages" role="tabpanel">
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
+                        <?php $__currentLoopData = $photo; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $value): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                        <?php if($value->type === 'маятниковые двери'): ?>
+                        <a data-fancybox="gallery_Door2" href="<?php echo e($value->photo); ?>">
+                        <div class="img_items_stairs">
+                        <img src="<?php echo e($value->photo); ?>" alt="1">
+                        <p></p>
+                        </div>
+                        </a>
+                        <?php endif; ?>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                     </div>
                     <div class="tab-pane" id="page4_settings" role="tabpanel">
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
+                        <?php $__currentLoopData = $photo; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $value): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                        <?php if($value->type === 'раздвижные двери'): ?>
+                        <a data-fancybox="gallery_Door3" href="<?php echo e($value->photo); ?>">
+                        <div class="img_items_stairs">
+                        <img src="<?php echo e($value->photo); ?>" alt="1">
+                        <p></p>
+                        </div>
+                        </a>
+                        <?php endif; ?>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                     </div>
                     <div class="tab-pane" id="page4_settings1" role="tabpanel">
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
+                        <?php $__currentLoopData = $photo; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $value): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                        <?php if($value->type === 'ограждения'): ?>
+                        <a data-fancybox="gallery_Door4" href="<?php echo e($value->photo); ?>">
+                        <div class="img_items_stairs">
+                        <img src="<?php echo e($value->photo); ?>" alt="1">
+                        <p></p>
+                        </div>
+                        </a>
+                        <?php endif; ?>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                     </div>
                     <div class="tab-pane" id="page4_settings2" role="tabpanel">
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
+                        <?php $__currentLoopData = $photo; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $value): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                        <?php if($value->type === 'двери в коробках'): ?>
+                        <a data-fancybox="gallery_Door5" href="<?php echo e($value->photo); ?>">
+                        <div class="img_items_stairs">
+                        <img src="<?php echo e($value->photo); ?>" alt="1">
+                        <p></p>
+                        </div>
+                        </a>
+                        <?php endif; ?>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                     </div>
                     <div class="tab-pane" id="page4_settings3" role="tabpanel">
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
-                        
+                        <?php $__currentLoopData = $photo; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $value): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                        <?php if($value->type === 'эксклюзивные решения'): ?>
+                        <a data-fancybox="gallery_Door6" href="<?php echo e($value->photo); ?>">
+                        <div class="img_items_stairs">
+                        <img src="<?php echo e($value->photo); ?>" alt="1">
+                        <p></p>
+                        </div>
+                        </a>
+                        <?php endif; ?>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
 
                     </div>
                 </div>
@@ -2072,52 +2073,52 @@
                 </div>
                 <div class="tab-content">
                     <div class="tab-pane active" id="page3_home" role="tabpanel">
-                        
-                            
-                                
-                                    
-                                        
-                                        
-                                    
-                                
-                            
-                        
+                        <?php $__currentLoopData = $photo; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $value): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                            <?php if($value->type === 'зеркала на заказ'): ?>
+                                <a data-fancybox="gallery_Glasses" href="<?php echo e($value->photo); ?>">
+                                    <div class="img_items_stairs">
+                                        <img src="<?php echo e($value->photo); ?>" alt="1">
+                                        <p></p>
+                                    </div>
+                                </a>
+                            <?php endif; ?>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                     </div>
                     <div class="tab-pane" id="page3_home_1" role="tabpanel">
-                        
-                            
-                                
-                                    
-                                        
-                                        
-                                    
-                                
-                            
-                        
+                        <?php $__currentLoopData = $photo; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $value): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                            <?php if($value->type === 'зеркальное панно'): ?>
+                                <a data-fancybox="gallery_Glasses1" href="<?php echo e($value->photo); ?>">
+                                    <div class="img_items_stairs">
+                                        <img src="<?php echo e($value->photo); ?>" alt="1">
+                                        <p></p>
+                                    </div>
+                                </a>
+                            <?php endif; ?>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                     </div>
                     <div class="tab-pane" id="page3_profile" role="tabpanel">
-                        
-                            
-                                
-                                    
-                                        
-                                        
-                                    
-                                
-                            
-                        
+                        <?php $__currentLoopData = $photo; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $value): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                            <?php if($value->type === 'оптовые заказы'): ?>
+                                <a data-fancybox="gallery_Glasses2" href="<?php echo e($value->photo); ?>">
+                                    <div class="img_items_stairs">
+                                        <img src="<?php echo e($value->photo); ?>" alt="1">
+                                        <p></p>
+                                    </div>
+                                </a>
+                            <?php endif; ?>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                     </div>
                     <div class="tab-pane" id="page3_messages" role="tabpanel">
-                        
-                            
-                                
-                                    
-                                        
-                                        
-                                    
-                                
-                            
-                        
+                        <?php $__currentLoopData = $photo; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $value): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                            <?php if($value->type === 'эксклюзив решения'): ?>
+                                <a data-fancybox="gallery_Glasses3" href="<?php echo e($value->photo); ?>">
+                                    <div class="img_items_stairs">
+                                        <img src="<?php echo e($value->photo); ?>" alt="1">
+                                        <p></p>
+                                    </div>
+                                </a>
+                            <?php endif; ?>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                     </div>
                 </div>
             </div>
@@ -2708,39 +2709,39 @@
                 </div>
                 <div class="tab-content">
                     <div class="tab-pane active" id="page5_home" role="tabpanel">
-                        
-                            
-                                
-                                    
-                                        
-                                        
-                                    
-                                
-                            
-                        
+                        <?php $__currentLoopData = $photo; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $value): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                            <?php if($value->type === 'скинали с фотопечатью'): ?>
+                                <a data-fancybox="gallery_Fartucks" href="<?php echo e($value->photo); ?>">
+                                    <div class="img_items_stairs">
+                                        <img src="<?php echo e($value->photo); ?>" alt="1">
+                                        <p></p>
+                                    </div>
+                                </a>
+                            <?php endif; ?>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                     </div>
                     <div class="tab-pane" id="page5_profile" role="tabpanel">
-                        
-                            
-                                
-                                    
-                                        
-                                        
-                                    
-                                
-                            
-                        
+                        <?php $__currentLoopData = $photo; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $value): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                            <?php if($value->type === 'одноцветные фартуки'): ?>
+                                <a data-fancybox="gallery_Fartucks1" href="<?php echo e($value->photo); ?>">
+                                    <div class="img_items_stairs">
+                                        <img src="<?php echo e($value->photo); ?>" alt="1">
+                                        <p></p>
+                                    </div>
+                                </a>
+                            <?php endif; ?>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                     </div>
                     <div class="tab-pane" id="page5_messages" role="tabpanel">
-                        
-                            
-                                
-                                    
-                                        
-                                        
-                                    
-                            
-                        
+                        <?php $__currentLoopData = $photo; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $value): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                            <?php if($value->type === 'скинали с подсветкой'): ?>
+                                <a data-fancybox="gallery_Fartucks2" href="<?php echo e($value->photo); ?>">
+                                    <div class="img_items_stairs">
+                                        <img src="<?php echo e($value->photo); ?>" alt="1">
+                                        <p></p>
+                                    </div>
+                            <?php endif; ?>
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                     </div>
                 </div>
             </div>

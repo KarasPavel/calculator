@@ -102,18 +102,18 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="single-menu">
-                        <h2><a title=""><i class="fa fa-paperclip"></i><span>Текст</span></a></h2>
-                        <div class="sub-menu">
-                            <ul>
-                                <li><a href="{{route('viewAdvantages')}}" title="">Преимущества</a></li>
-                            </ul>
-                            <ul>
-                                <li><a href="{{route('viewAdvantages')}}" title="">Компании</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+                    {{--<div class="single-menu">--}}
+                        {{--<h2><a title=""><i class="fa fa-paperclip"></i><span>Текст</span></a></h2>--}}
+                        {{--<div class="sub-menu">--}}
+                            {{--<ul>--}}
+                                {{--<li><a href="{{route('viewAdvantages')}}" title="">Преимущества</a></li>--}}
+                            {{--</ul>--}}
+                            {{--<ul>--}}
+                                {{--<li><a href="{{route('viewAdvantages')}}" title="">Компании</a></li>--}}
+                            {{--</ul>--}}
+                        {{--</div>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
             </div>
         </aside>
         <div class="content-sec">

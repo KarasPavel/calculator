@@ -60,8 +60,8 @@ $(document).ready(function(){
         onInitialized: function(e) {
         	initializeCarusel(e, true);
         },
-        navText: ['<p onclick="topFunction()" id="mybtn">Дальше</br> Предидущая страница</p><img class="nav-next" src="images/prev_arrows.png" alt="">',
-            '<p onclick="topFunction()" id="mybtn1">Лестницы и полы</p><img src="images/arrow-next_owl.png" alt="">',]
+        navText: ['<p onclick="topFunction()" id="mybtn">Главная</br>предыдущая страница</p><img class="nav-next" src="images/prev_arrows.png" alt="">',
+            '<p onclick="topFunction()" id="mybtn1">Лестницы и полы</br>следующая страница</p><img src="images/arrow-next_owl.png" alt="">',]
 		});
 
 	carusel.on('changed.owl.carousel', function(e){

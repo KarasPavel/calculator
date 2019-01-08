@@ -3385,17 +3385,17 @@
                             <h4>
                                 стоимость заказа
                             </h4>
-                            <input type="text">
+                            <input disabled id="price" type="text">
                             <h4>ГОТОВНОСТЬ НА:</h4>
                             <p>(без срочности)</p>
-                            <div class="date_calc">
-                                <input type="day">
-                                <input type="day">
-                                <input type="day">
+                            <div id="cost_calculation_day" class="date_calc">
+                                <input disabled id="calculator_day" type="day">
+                                <input disabled id="calculator_month" type="day">
+                                <input disabled id="calculator_year" type="day">
                             </div>
-                            <p class="cost_calculation_day">( Пятница )</p>
+                            <p id="dayName" class="cost_calculation_day"></p>
                             <label>
-                                <input type="checkbox">
+                                <input id="checkboxPrice" type="checkbox">
                                 <span class="fake-checkbox" aria-hidden="true"></span>
                                 <span class="label">Срочноо</span>
                             </label> <br>
@@ -3431,13 +3431,14 @@
                             </div>
                             <div id="box-calc" class="wraper content actived">
                                 <div class="stairs_and_flooring_buttons stairs_and_flooring_buttons_calculator  d-flex">
-                                    <a class="nav-link" data-toggle="tab" href="#">Зеркало</a>
-                                    <a class="nav-link" data-toggle="tab" href="#">Триплекс</a>
-                                    <a class="nav-link" data-toggle="tab" href="#">Стекло</a>
+                                    <a class="nav-link" id="mirror" data-toggle="tab" href="#">Зеркало</a>
+                                    <a class="nav-link" id="triplex" data-toggle="tab" href="#">Триплекс</a>
+                                    <a class="nav-link" id="glass" data-toggle="tab" href="#">Стекло</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="cost_calc_first_tab toggle">
+
+                        <div id="forNotTriplex" class="cost_calc_first_tab toggle">
                             <div id="calc_stege" class="head toggler">
                                 <p class="numver_stage">
                                     2
@@ -3472,6 +3473,47 @@
                                 </div>
                             </div>
                         </div>
+
+
+                        {{--<div class="cost_calc_first_tab toggle">--}}
+                            {{--<div id="calc_stege" class="head toggler">--}}
+                                {{--<p class="numver_stage">--}}
+                                    {{--2--}}
+                                {{--</p>--}}
+                                {{--<h4>--}}
+                                    {{--Вид стекла--}}
+                                {{--</h4>--}}
+                                {{--<i class="fas fa-angle-down"></i>--}}
+                            {{--</div>--}}
+                            {{--<div id="box-calc" class="wraper content">--}}
+                                {{--<div class="calc_contents d-flex">--}}
+                                    {{--<div class="help_glass_items calc_content2">--}}
+                                        {{--<img src="images/glaas_type1.png" alt="">--}}
+                                        {{--<p>ОБЫЧНОЕ</p>--}}
+                                    {{--</div>--}}
+                                    {{--<div class="help_glass_items calc_content2">--}}
+                                        {{--<img src="images/glass3.png" alt="">--}}
+                                        {{--<p>Оптивайт</p>--}}
+                                    {{--</div>--}}
+                                    {{--<div class="help_glass_items calc_content2">--}}
+                                        {{--<img src="images/glass4.png" alt="">--}}
+                                        {{--<p>Бронза</p>--}}
+                                    {{--</div>--}}
+                                    {{--<div class="help_glass_items calc_content2">--}}
+                                        {{--<img src="images/glass5.png" alt="">--}}
+                                        {{--<p>Матовое</p>--}}
+                                    {{--</div>--}}
+                                    {{--<div class="help_glass_items calc_content2">--}}
+                                        {{--<img src="images/glaas6.png" alt="">--}}
+                                        {{--<p>Серое</p>--}}
+                                    {{--</div>--}}
+                                {{--</div>--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
+
+
+
+
                         <div class="cost_calc_first_tab toggle">
                             <div id="calc_stege" class="head toggler">
                                 <p class="numver_stage">
@@ -3959,6 +4001,7 @@
     {{--    <script type="text/javascript" src={{asset("js/tooltip.min.js")}}></script>--}}
     <script type="text/javascript" src={{asset("js/libs/functions.js")}}></script>
     <script type="text/javascript" src={{asset("js/navigationButtons.js")}}></script>
+    <script type="text/javascript" src={{asset("js/calculator.js")}}></script>
 
     <!-- <script type="text/javascript" src="js/logic.js"></script> -->
 </body>

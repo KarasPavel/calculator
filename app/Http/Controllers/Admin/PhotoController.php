@@ -9,6 +9,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
+use Intervention\Image\Facades\Image;
 
 class PhotoController extends Controller
 {
@@ -37,7 +38,9 @@ class PhotoController extends Controller
         $request->validate([
             'name' => 'required|string|min:1|max:100',
         ]);
-        Photo::uploadPhoto($request);
+        $image = $request->file('photo');
+        $smallPhoto = Image::make($image->getRealPath());
+        Photo::uploadPhoto($request,$smallPhoto);
         return back();
 //        $destinationPath = public_path('/images/Stairs/1/');
 //        $image = $request->file('photo');
@@ -62,8 +65,10 @@ class PhotoController extends Controller
     public function deletePhoto($id)
     {
         $photo = Photo::getPhotoById($id);
-        $photo = public_path($photo[0]->photo);
-        unlink($photo);
+        $big_photo = public_path($photo[0]->photo);
+        $small_photo = public_path($photo[0]->small_photo);
+        unlink($big_photo);
+        unlink($small_photo);
         Photo::deletePhoto($id);
         return back();
     }

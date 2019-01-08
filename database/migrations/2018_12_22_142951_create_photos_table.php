@@ -18,6 +18,7 @@ class CreatePhotosTable extends Migration
             $table->string('type');
             $table->string('name');
             $table->string('photo');
+            $table->string('small_photo');
         });
     }
 

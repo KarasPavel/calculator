@@ -2752,7 +2752,7 @@ textarea {
 	transition:.25s ease-in-out;
 }
 .owl-dots .owl-dot:nth-child(6)::before{
-	content:'Скинали';
+	content:'Кухонные фартуки';
 	box-sizing:border-box;
 	display:block;
 	background:rgba(0,0,0,.7);

@@ -145,6 +145,15 @@
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="inline-form">
+                                                    <label class="c-label">Показывать</label>
+                                                    <select name="show">
+                                                            <option value="1">Да</option>
+                                                            <option value="0">Нет</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="inline-form">
                                                     <button type="submit" class="btn btn-success">Сохранить</button>
                                                 </div>
                                             </div>

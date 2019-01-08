@@ -121,8 +121,8 @@
                                             <th>№</th>
                                             <th>Название</th>
                                             <th>Видео</th>
+                                            <th>Показывать</th>
                                             <th>Редактировать</th>
-
                                         </tr>
                                         {{--allUsers--}}
                                         </thead>
@@ -138,6 +138,16 @@
                                                 <td>
                                                     {{$value->video}}
                                                 </td>
+                                                @if($value->show === 1)
+                                                    <td>
+                                                        Да
+                                                    </td>
+                                                @endif
+                                                @if($value->show === 0)
+                                                    <td>
+                                                        Нет
+                                                    </td>
+                                                @endif
                                                 <td>
                                                     <a href="{{route('editVideo',$value->id)}}">+</a>
                                                     {{ csrf_field()}}

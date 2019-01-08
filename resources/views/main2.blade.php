@@ -671,6 +671,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="video_glass d-flex">
+                            @isset($video[0])
                             @if($video[0]->show  === 1)
                                 <iframe width="50%" height="335px"
                                         src={{$video[0]->video}}

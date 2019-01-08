@@ -5,11 +5,12 @@ namespace App;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Eloquent\Model;
+use Intervention\Image\Facades\Image;
 
 class Photo extends Model
 {
     protected $fillable = [
-        'type', 'photo'
+        'type', 'photo', 'small_photo'
     ];
     public $timestamps = false;
 
@@ -43,7 +44,7 @@ class Photo extends Model
             case 'бронирование':
                 return '/images/Stairs/3/';
             case 'эксклюзив':
-                return '/images/Stairs/3/';
+                return '/images/Stairs/4/';
             case 'угловые и фигурные':
                 return '/images/Showers/1/';
             case 'прямые душевые':
@@ -91,7 +92,63 @@ class Photo extends Model
         }
     }
 
-
+    public static function getSmallPath(Request $request)
+    {
+        switch ($request->type) {
+            case 'лестницы':
+                return '/images/Stairs/1/small/';
+            case 'полы':
+                return '/images/Stairs/2/small/';
+            case 'бронирование':
+                return '/images/Stairs/3/small/';
+            case 'эксклюзив':
+                return '/images/Stairs/4/small/';
+            case 'угловые и фигурные':
+                return '/images/Showers/1/small/';
+            case 'прямые душевые':
+                return '/images/Showers/2/small/';
+            case 'форма трапеции':
+                return '/images/Showers/3/small/';
+            case 'двери ниша':
+                return '/images/Showers/4/small/';
+            case 'глухие перегородки':
+                return '/images/Showers/5/small/';
+            case 'ограждения в ванную':
+                return '/images/Showers/6/small/';
+            case 'с раздвижной дверью':
+                return '/images/Showers/7/small/';
+            case 'эксклюзив и опт':
+                return '/images/Showers/8/small/';
+            case 'зеркала на заказ':
+                return '/images/Glasses/1/small/';
+            case 'зеркальное панно':
+                return '/images/Glasses/2/small/';
+            case 'оптовые заказы':
+                return '/images/Glasses/3/small/';
+            case 'эксклюзив решения':
+                return '/images/Glasses/4/small/';
+            case 'распашные двери':
+                return '/images/Door/1/small/';
+            case 'перегородки':
+                return '/images/Door/2/small/';
+            case 'маятниковые двери':
+                return '/images/Door/3/small/';
+            case 'раздвижные двери':
+                return '/images/Door/4/small/';
+            case 'ограждения':
+                return '/images/Door/5/small/';
+            case 'двери в коробках':
+                return '/images/Door/6/small/';
+            case 'эксклюзивные решения':
+                return '/images/Door/7/small/';
+            case 'скинали с фотопечатью':
+                return '/images/Fartucks/1/small/';
+            case 'одноцветные фартуки':
+                return '/images/Fartucks/2/small/';
+            case 'скинали с подсветкой':
+                return '/images/Fartucks/3/small/';
+        }
+    }
 
 
     /**
@@ -108,7 +165,7 @@ class Photo extends Model
      * @param Request $request
      * @return bool
      */
-    public static function uploadPhoto(Request $request)
+    public static function uploadPhoto(Request $request,$smallPhoto)
     {
         Photo::getName($request);
         $onlyName = self::$onlyname;
@@ -119,11 +176,18 @@ class Photo extends Model
         $image = $request->file('photo');
         $image->move($destinationPath, $onlyName[0] . '.' . $extension);
         $photo = $path . $onlyName[0] . "." . $extension;
+
+        $small_path = Photo::getSmallPath($request);
+        $destinationPathSmall = public_path($small_path);
+        $smallPhoto->resize(250, 148);
+        $smallPhoto->save($destinationPathSmall. $onlyName[0] . '.' . $extension);
+        $small_photo = $small_path . $onlyName[0] . "." . $extension;
         return DB::table('photos')
             ->insert([
                 'name' => $request->name,
                 'type' => $request->type,
                 'photo' => $photo,
+                'small_photo' => $small_photo
             ]);
     }
 
@@ -142,7 +206,8 @@ class Photo extends Model
      * @param $id
      * @return \Illuminate\Support\Collection
      */
-    public static function getPhotoById($id){
+    public static function getPhotoById($id)
+    {
         return DB::table('photos')
             ->where('id', '=', $id)
             ->get();
@@ -151,7 +216,8 @@ class Photo extends Model
     /**
      * @return \Illuminate\Contracts\Pagination\LengthAwarePaginator
      */
-    public static function getPhotos(){
+    public static function getPhotos()
+    {
         return DB::table('photos')
             ->paginate(10);
     }
@@ -161,13 +227,18 @@ class Photo extends Model
      * @param $id
      * @return int
      */
-    public static function deletePhoto($id){
+    public static function deletePhoto($id)
+    {
         return DB::table('photos')
-            ->where('id','=',$id)
+            ->where('id', '=', $id)
             ->delete();
     }
 
-    public static function getPhotosWithoutPaginate(){
+    /**
+     * @return \Illuminate\Support\Collection
+     */
+    public static function getPhotosWithoutPaginate()
+    {
         return DB::table('photos')
             ->get();
     }

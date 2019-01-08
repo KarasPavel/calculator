@@ -31,7 +31,13 @@ class VideoController extends Controller
         $video = Video::getVideoById($id);
         return view('admin/videos/editVideo', ['video' => $video, 'user' => $user]);
     }
-    public function postEditVideos(Request $request){
+
+    /**
+     * @param Request $request
+     * @return \Illuminate\Http\RedirectResponse
+     */
+    public function postEditVideos(Request $request)
+    {
 //        dd($request);
         $request->validate([
             'name' => 'required|string|min:1|max:100',

@@ -22,28 +22,28 @@
             previous.innerText = 'Лестницы и полы';
             previous.appendChild(mybr);
             previous.innerText += 'предыдущия страница';
-            next.innerText = 'Зеркальнное панно';
+            next.innerText = 'Перегородки и двери';
             next.appendChild(mybr);
             next.innerText += 'следующая страница';
             break;
         case "#three":
-            previous.innerText = 'Душевые  ограждения';
+            previous.innerText = 'Перегородки и двери';
             previous.appendChild(mybr);
             previous.innerText += 'предыдущия страница';
-            next.innerText = 'Перегородки';
+            next.innerText = 'Кухонные фартуки';
             next.appendChild(mybr);
             next.innerText += 'следующая страница';
             break;
         case "#for":
-            previous.innerText = 'Зеркальнное панно';
+            previous.innerText = 'Душевые  ограждения';
             previous.appendChild(mybr);
             previous.innerText += 'предыдущия страница';
-            next.innerText = 'Скинали';
+            next.innerText = 'Зеркальное панно';
             next.appendChild(mybr);
             next.innerText += 'следующая страница';
             break;
         case "#five":
-            previous.innerText = 'Перегородки и двери';
+            previous.innerText = 'Зеркальное панно';
             previous.appendChild(mybr);
             previous.innerText += 'предыдущия страница';
             next.innerText = 'Расчет стоимости';
@@ -51,7 +51,7 @@
             next.innerText += 'следующая страница';
             break;
         case "#seven":
-            previous.innerText = 'Скинали';
+            previous.innerText = 'Кухонные фартуки';
             previous.appendChild(mybr);
             previous.innerText += 'предыдущия страница';
             next.innerText = 'Контакты';

@@ -8,11 +8,11 @@
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'/>
 
     <!-- Styles -->
-    <link rel="stylesheet" href={{asset("font-awesome-4.2.0/css/font-awesome.css")}} type="text/css"/>
+    <link rel="stylesheet" href=<?php echo e(asset("font-awesome-4.2.0/css/font-awesome.css")); ?> type="text/css"/>
     <!-- Font Awesome -->
-    <link rel="stylesheet" href={{asset("css/bootstrap1.css")}} type="text/css"/><!-- Bootstrap -->
-    <link rel="stylesheet" href={{asset("css/style.css")}} type="text/css"/><!-- Style -->
-    <link rel="stylesheet" href={{asset("css/responsive.css")}} type="text/css"/><!-- Responsive -->
+    <link rel="stylesheet" href=<?php echo e(asset("css/bootstrap1.css")); ?> type="text/css"/><!-- Bootstrap -->
+    <link rel="stylesheet" href=<?php echo e(asset("css/style.css")); ?> type="text/css"/><!-- Style -->
+    <link rel="stylesheet" href=<?php echo e(asset("css/responsive.css")); ?> type="text/css"/><!-- Responsive -->
 
 </head>
 <body>
@@ -32,12 +32,12 @@
 
         <div class="dropdown profile">
             <a title="">
-                <img alt=""/>{{$user->name}}<i class="caret"></i>
+                <img alt=""/><?php echo e($user->name); ?><i class="caret"></i>
             </a>
             <div class="profile drop-list">
                 <ul>
-                    {{--<li><a href="profile.html" title=""><i class="fa fa-user"></i> Profile</a></li>--}}
-                    <li><a href={{ route('logout') }} title=""><i class="fa fa-info"></i>Выйти</a></li>
+                    
+                    <li><a href=<?php echo e(route('logout')); ?> title=""><i class="fa fa-info"></i>Выйти</a></li>
                 </ul>
             </div><!-- Profile DropDown -->
 
@@ -49,21 +49,21 @@
             <div class="menu-sec">
                 <div id="menu-toogle" class="menus">
                     <div class="single-menu">
-                        @unless ($user->hasRole('moderator|logistics|manager'))
+                        <?php if (! ($user->hasRole('moderator|logistics|manager'))): ?>
                             <h2><a title=""><i class="fa fa-user"></i><span>Пользователи</span></a></h2>
                             <div class="sub-menu">
 
                                 <ul>
-                                    <li><a href="{{route('viewUsers')}}" title="">Все пользователи</a></li>
-                                    <li><a href="{{route('createUser')}}" title="">Создать пользователя</a></li>
-                                    {{--@unless ($user->hasRole('junior_admin'))--}}
-                                    {{--<li><a href="dashboard2.html" title="">Edit user</a></li>--}}
-                                    {{--<li><a href="dashboard4.html" title="">Delete user</a></li>--}}
-                                    {{--@endunless--}}
+                                    <li><a href="<?php echo e(route('viewUsers')); ?>" title="">Все пользователи</a></li>
+                                    <li><a href="<?php echo e(route('createUser')); ?>" title="">Создать пользователя</a></li>
+                                    
+                                    
+                                    
+                                    
                                 </ul>
                             </div>
                     </div>
-                    @endunless
+                    <?php endif; ?>
                     <div class="single-menu">
                         <h2><a title=""><i class="fa fa-desktop"></i><span>Заказы</span></a></h2>
                         <div class="sub-menu">
@@ -76,7 +76,7 @@
                         <h2><a title=""><i class="fa fa-desktop"></i><span>Заявки</span></a></h2>
                         <div class="sub-menu">
                             <ul>
-                                <li><a href="{{route('viewApplications')}}" title="">Все заявки</a></li>
+                                <li><a href="<?php echo e(route('viewApplications')); ?>" title="">Все заявки</a></li>
                             </ul>
                         </div>
                     </div>
@@ -84,10 +84,10 @@
                         <h2><a title=""><i class="fa fa-desktop"></i><span>Галерея</span></a></h2>
                         <div class="sub-menu">
                             <ul>
-                                <li><a href="{{route('createPhoto')}}" title="">Добавить фотографию</a></li>
+                                <li><a href="<?php echo e(route('createPhoto')); ?>" title="">Добавить фотографию</a></li>
                             </ul>
                             <ul>
-                                <li><a href="{{route('viewPhoto')}}" title="">Все фотографии</a></li>
+                                <li><a href="<?php echo e(route('viewPhoto')); ?>" title="">Все фотографии</a></li>
                             </ul>
                         </div>
                     </div>
@@ -124,37 +124,41 @@
                                             <th>Показывать</th>
                                             <th>Редактировать</th>
                                         </tr>
-                                        {{--allUsers--}}
+                                        
                                         </thead>
                                         <tbody>
-                                        @foreach($video as $value)
+                                        <?php $__currentLoopData = $video; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $value): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                                             <tr id="trId">
                                                 <td>
-                                                    {{$value->id}}
+                                                    <?php echo e($value->id); ?>
+
                                                 </td>
                                                 <td>
-                                                    {{$value->name}}
+                                                    <?php echo e($value->name); ?>
+
                                                 </td>
                                                 <td>
-                                                    {{$value->video}}
+                                                    <?php echo e($value->video); ?>
+
                                                 </td>
-                                                @if($value->show === 1)
+                                                <?php if($value->show === 1): ?>
                                                     <td>
                                                         Да
                                                     </td>
-                                                @endif
-                                                @if($value->show === 0)
+                                                <?php endif; ?>
+                                                <?php if($value->show === 0): ?>
                                                     <td>
                                                         Нет
                                                     </td>
-                                                @endif
+                                                <?php endif; ?>
                                                 <td>
-                                                    <a href="{{route('editVideo',$value->id)}}">+</a>
-                                                    {{ csrf_field()}}
+                                                    <a href="<?php echo e(route('editVideo',$value->id)); ?>">+</a>
+                                                    <?php echo e(csrf_field()); ?>
+
                                                 </td>
-                                                {{--@endif--}}
+                                                
                                             </tr>
-                                        @endforeach
+                                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                                         </tbody>
                                     </table>
                                     <div id="summary">
@@ -348,21 +352,21 @@
 
 
             <!-- Script -->
-            {{--<script type="text/javascript" src={{asset("js/modernizr.js")}}></script>--}}
-            {{--<script type="text/javascript" src={{asset("js/jquery-1.11.1.js")}}></script>--}}
-            {{--<script type="text/javascript" src={{asset("js/script.js")}}></script>--}}
-            {{--<script type="text/javascript" src={{asset("js/bootstrap.js")}}></script>--}}
-            {{--<script type="text/javascript" src={{asset("js/enscroll.js")}}></script>--}}
-            {{--<script type="text/javascript" src={{asset("js/grid-filter.js")}}></script>--}}
-            {{----}}
-            <script src={{asset("js/streaming-mustache.js")}} type="text/javascript"></script>
-            <script src={{asset("js/stream_table.js")}} type="text/javascript"></script>
-            {{--<script src={{asset("js/movie_data.js")}} type="text/javascript"></script>--}}
-            <script src={{asset("js/stream.js")}} type="text/javascript"></script>
-            <script type="text/javascript" src={{asset("js/admin/jquery-1.11.1.js")}}></script>
-            <script type="text/javascript" src={{asset("js/admin/script.js")}}></script>
-            <script type="text/javascript" src={{asset("js/admin/bootstrap.js")}}></script>
-            <script type="text/javascript" src={{asset("js/admin/enscroll.js")}}></script>
+            
+            
+            
+            
+            
+            
+            
+            <script src=<?php echo e(asset("js/streaming-mustache.js")); ?> type="text/javascript"></script>
+            <script src=<?php echo e(asset("js/stream_table.js")); ?> type="text/javascript"></script>
+            
+            <script src=<?php echo e(asset("js/stream.js")); ?> type="text/javascript"></script>
+            <script type="text/javascript" src=<?php echo e(asset("js/admin/jquery-1.11.1.js")); ?>></script>
+            <script type="text/javascript" src=<?php echo e(asset("js/admin/script.js")); ?>></script>
+            <script type="text/javascript" src=<?php echo e(asset("js/admin/bootstrap.js")); ?>></script>
+            <script type="text/javascript" src=<?php echo e(asset("js/admin/enscroll.js")); ?>></script>
             <!-- Streaming Table -->
 
 </body>

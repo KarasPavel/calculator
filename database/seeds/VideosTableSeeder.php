@@ -14,10 +14,11 @@ class VideosTableSeeder extends Seeder
     {
         //
         for ($i = 1; $i < 12; $i++) {
-            $photo = new Video();
-            $photo->name = 'видео № ' . $i;
-            $photo->video = 'https://www.youtube.com/embed/cIyVNoY3_L4';
-            $photo->save();
+            $video = new Video();
+            $video->name = 'видео № ' . $i;
+            $video->video = 'https://www.youtube.com/embed/cIyVNoY3_L4';
+            $video->show = true;
+            $video->save();
         }
     }
 }

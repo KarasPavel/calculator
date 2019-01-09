@@ -3440,327 +3440,327 @@
 
 
                         <div id="material" class="cost_calc_first_tab toggle">
-                            <div id="calc_stege" class="head toggler">
-                                <p class="numver_stage">
-                                    2
-                                </p>
-                                <h4>
-                                    Вид стекла
-                                </h4>
-                                <i class="fas fa-angle-down"></i>
-                            </div>
-                            <div id="box-calc" class="wraper content">
-                                <div class="calc_contents d-flex">
-                                    <div class="help_glass_items calc_content2">
-                                        <img src="images/glaas_type1.png" alt="">
-                                        <p>ОБЫЧНОЕ</p>
-                                    </div>
-                                    <div class="help_glass_items calc_content2">
-                                        <img src="images/glass3.png" alt="">
-                                        <p>Оптивайт</p>
-                                    </div>
-                                    <div class="help_glass_items calc_content2">
-                                        <img src="images/glass4.png" alt="">
-                                        <p>Бронза</p>
-                                    </div>
-                                    <div class="help_glass_items calc_content2">
-                                        <img src="images/glass5.png" alt="">
-                                        <p>Матовое</p>
-                                    </div>
-                                    <div class="help_glass_items calc_content2">
-                                        <img src="images/glaas6.png" alt="">
-                                        <p>Серое</p>
-                                    </div>
-                                </div>
-                            </div>
+                            {{--<div id="calc_stege" class="head toggler">--}}
+                                {{--<p class="numver_stage">--}}
+                                    {{--2--}}
+                                {{--</p>--}}
+                                {{--<h4>--}}
+                                    {{--Вид стекла--}}
+                                {{--</h4>--}}
+                                {{--<i class="fas fa-angle-down"></i>--}}
+                            {{--</div>--}}
+                            {{--<div id="box-calc" class="wraper content">--}}
+                                {{--<div class="calc_contents d-flex">--}}
+                                    {{--<div class="help_glass_items calc_content2">--}}
+                                        {{--<img src="images/glaas_type1.png" alt="">--}}
+                                        {{--<p>ОБЫЧНОЕ</p>--}}
+                                    {{--</div>--}}
+                                    {{--<div class="help_glass_items calc_content2">--}}
+                                        {{--<img src="images/glass3.png" alt="">--}}
+                                        {{--<p>Оптивайт</p>--}}
+                                    {{--</div>--}}
+                                    {{--<div class="help_glass_items calc_content2">--}}
+                                        {{--<img src="images/glass4.png" alt="">--}}
+                                        {{--<p>Бронза</p>--}}
+                                    {{--</div>--}}
+                                    {{--<div class="help_glass_items calc_content2">--}}
+                                        {{--<img src="images/glass5.png" alt="">--}}
+                                        {{--<p>Матовое</p>--}}
+                                    {{--</div>--}}
+                                    {{--<div class="help_glass_items calc_content2">--}}
+                                        {{--<img src="images/glaas6.png" alt="">--}}
+                                        {{--<p>Серое</p>--}}
+                                    {{--</div>--}}
+                                {{--</div>--}}
+                            {{--</div>--}}
                         </div>
                         <div id="depth" class="cost_calc_first_tab toggle">
-                            <div id="calc_stege" class="head toggler">
-                                <p class="numver_stage">
-                                    3
-                                </p>
-                                <h4>
-                                    Толщина изделия
-                                </h4>
-                                <i class="fas fa-angle-down"></i>
-                            </div>
-                            <div id="box-calc" class="wraper content">
-                                <div class="stage_3_choose_thiknes d-flex">
-                                    <div class="choose_thiknes">
-                                        <ul class="nav nav-tabs d-flex" id="myTab" role="tablist">
-                                            <li class="nav-item">
-                                                <a class="nav-link active" data-toggle="tab" href="#calc1" role="tab"
-                                                   aria-controls="home">3</a>
-                                            </li>
+                            {{--<div id="calc_stege" class="head toggler">--}}
+                                {{--<p class="numver_stage">--}}
+                                    {{--3--}}
+                                {{--</p>--}}
+                                {{--<h4>--}}
+                                    {{--Толщина изделия--}}
+                                {{--</h4>--}}
+                                {{--<i class="fas fa-angle-down"></i>--}}
+                            {{--</div>--}}
+                            {{--<div id="box-calc" class="wraper content">--}}
+                                {{--<div class="stage_3_choose_thiknes d-flex">--}}
+                                    {{--<div class="choose_thiknes">--}}
+                                        {{--<ul class="nav nav-tabs d-flex" id="myTab" role="tablist">--}}
+                                            {{--<li class="nav-item">--}}
+                                                {{--<a class="nav-link active" data-toggle="tab" href="#calc1" role="tab"--}}
+                                                   {{--aria-controls="home">3</a>--}}
+                                            {{--</li>--}}
 
-                                            <li class="nav-item">
-                                                <a class="nav-link" data-toggle="tab" href="#calc2" role="tab"
-                                                   aria-controls="profile">4</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" data-toggle="tab" href="#calc3" role="tab"
-                                                   aria-controls="messages">5</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" data-toggle="tab" href="#calc4" role="tab"
-                                                   aria-controls="messages">6</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" data-toggle="tab" href="#calc5" role="tab"
-                                                   aria-controls="messages">8</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" data-toggle="tab" href="#calc6" role="tab"
-                                                   aria-controls="messages">10</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" data-toggle="tab" href="#calc7" role="tab"
-                                                   aria-controls="messages">12</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" data-toggle="tab" href="#calc8" role="tab"
-                                                   aria-controls="messages">15</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" data-toggle="tab" href="#calc9" role="tab"
-                                                   aria-controls="messages">19</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="content-right_calc">
-                                        <div class="tab-content">
-                                            <div class="tab-pane active" id="calc1" role="tabpanel">
-                                                <div class="img_items_stairs">
-                                                    <img src="images/Fartucks/1/1.jpg" alt="1">
-                                                </div>
-                                            </div>
-                                            <div class="tab-pane " id="calc2" role="tabpanel">
-                                                <div class="img_items_stairs">
-                                                    <img src="images/Fartucks/1/2.jpg" alt="1">
-                                                </div>
-                                            </div>
-                                            <div class="tab-pane " id="calc3" role="tabpanel">
-                                                <div class="img_items_stairs">
-                                                    <img src="images/Fartucks/1/3.jpg" alt="1">
-                                                </div>
-                                            </div>
-                                            <div class="tab-pane " id="calc4" role="tabpanel">
-                                                <div class="img_items_stairs">
-                                                    <img src="images/Fartucks/1/4.jpg" alt="1">
-                                                </div>
-                                            </div>
-                                            <div class="tab-pane " id="calc5" role="tabpanel">
-                                                <div class="img_items_stairs">
-                                                    <img src="images/Fartucks/1/1.jpg" alt="1">
-                                                </div>
-                                            </div>
-                                            <div class="tab-pane" id="calc6" role="tabpanel">
-                                                <div class="img_items_stairs">
-                                                    <img src="images/Fartucks/1/1.jpg" alt="1">
-                                                </div>
-                                            </div>
-                                            <div class="tab-pane" id="calc7" role="tabpanel">
-                                                <div class="img_items_stairs">
-                                                    <img src="images/Fartucks/1/1.jpg" alt="1">
-                                                </div>
-                                            </div>
-                                            <div class="tab-pane" id="calc8" role="tabpanel">
-                                                <div class="img_items_stairs">
-                                                    <img src="images/Fartucks/1/1.jpg" alt="1">
-                                                </div>
-                                            </div>
-                                            <div class="tab-pane " id="calc9" role="tabpanel">
-                                                <div class="img_items_stairs">
-                                                    <img src="images/Fartucks/1/1.jpg" alt="1">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                                            {{--<li class="nav-item">--}}
+                                                {{--<a class="nav-link" data-toggle="tab" href="#calc2" role="tab"--}}
+                                                   {{--aria-controls="profile">4</a>--}}
+                                            {{--</li>--}}
+                                            {{--<li class="nav-item">--}}
+                                                {{--<a class="nav-link" data-toggle="tab" href="#calc3" role="tab"--}}
+                                                   {{--aria-controls="messages">5</a>--}}
+                                            {{--</li>--}}
+                                            {{--<li class="nav-item">--}}
+                                                {{--<a class="nav-link" data-toggle="tab" href="#calc4" role="tab"--}}
+                                                   {{--aria-controls="messages">6</a>--}}
+                                            {{--</li>--}}
+                                            {{--<li class="nav-item">--}}
+                                                {{--<a class="nav-link" data-toggle="tab" href="#calc5" role="tab"--}}
+                                                   {{--aria-controls="messages">8</a>--}}
+                                            {{--</li>--}}
+                                            {{--<li class="nav-item">--}}
+                                                {{--<a class="nav-link" data-toggle="tab" href="#calc6" role="tab"--}}
+                                                   {{--aria-controls="messages">10</a>--}}
+                                            {{--</li>--}}
+                                            {{--<li class="nav-item">--}}
+                                                {{--<a class="nav-link" data-toggle="tab" href="#calc7" role="tab"--}}
+                                                   {{--aria-controls="messages">12</a>--}}
+                                            {{--</li>--}}
+                                            {{--<li class="nav-item">--}}
+                                                {{--<a class="nav-link" data-toggle="tab" href="#calc8" role="tab"--}}
+                                                   {{--aria-controls="messages">15</a>--}}
+                                            {{--</li>--}}
+                                            {{--<li class="nav-item">--}}
+                                                {{--<a class="nav-link" data-toggle="tab" href="#calc9" role="tab"--}}
+                                                   {{--aria-controls="messages">19</a>--}}
+                                            {{--</li>--}}
+                                        {{--</ul>--}}
+                                    {{--</div>--}}
+                                    {{--<div class="content-right_calc">--}}
+                                        {{--<div class="tab-content">--}}
+                                            {{--<div class="tab-pane active" id="calc1" role="tabpanel">--}}
+                                                {{--<div class="img_items_stairs">--}}
+                                                    {{--<img src="images/Fartucks/1/1.jpg" alt="1">--}}
+                                                {{--</div>--}}
+                                            {{--</div>--}}
+                                            {{--<div class="tab-pane " id="calc2" role="tabpanel">--}}
+                                                {{--<div class="img_items_stairs">--}}
+                                                    {{--<img src="images/Fartucks/1/2.jpg" alt="1">--}}
+                                                {{--</div>--}}
+                                            {{--</div>--}}
+                                            {{--<div class="tab-pane " id="calc3" role="tabpanel">--}}
+                                                {{--<div class="img_items_stairs">--}}
+                                                    {{--<img src="images/Fartucks/1/3.jpg" alt="1">--}}
+                                                {{--</div>--}}
+                                            {{--</div>--}}
+                                            {{--<div class="tab-pane " id="calc4" role="tabpanel">--}}
+                                                {{--<div class="img_items_stairs">--}}
+                                                    {{--<img src="images/Fartucks/1/4.jpg" alt="1">--}}
+                                                {{--</div>--}}
+                                            {{--</div>--}}
+                                            {{--<div class="tab-pane " id="calc5" role="tabpanel">--}}
+                                                {{--<div class="img_items_stairs">--}}
+                                                    {{--<img src="images/Fartucks/1/1.jpg" alt="1">--}}
+                                                {{--</div>--}}
+                                            {{--</div>--}}
+                                            {{--<div class="tab-pane" id="calc6" role="tabpanel">--}}
+                                                {{--<div class="img_items_stairs">--}}
+                                                    {{--<img src="images/Fartucks/1/1.jpg" alt="1">--}}
+                                                {{--</div>--}}
+                                            {{--</div>--}}
+                                            {{--<div class="tab-pane" id="calc7" role="tabpanel">--}}
+                                                {{--<div class="img_items_stairs">--}}
+                                                    {{--<img src="images/Fartucks/1/1.jpg" alt="1">--}}
+                                                {{--</div>--}}
+                                            {{--</div>--}}
+                                            {{--<div class="tab-pane" id="calc8" role="tabpanel">--}}
+                                                {{--<div class="img_items_stairs">--}}
+                                                    {{--<img src="images/Fartucks/1/1.jpg" alt="1">--}}
+                                                {{--</div>--}}
+                                            {{--</div>--}}
+                                            {{--<div class="tab-pane " id="calc9" role="tabpanel">--}}
+                                                {{--<div class="img_items_stairs">--}}
+                                                    {{--<img src="images/Fartucks/1/1.jpg" alt="1">--}}
+                                                {{--</div>--}}
+                                            {{--</div>--}}
+                                        {{--</div>--}}
+                                    {{--</div>--}}
+                                {{--</div>--}}
+                            {{--</div>--}}
                         </div>
                         <div id="shape" class="cost_calc_first_tab toggle owl-stage-outer owl-height">
-                            <div id="calc_stege" class="head toggler">
-                                <p class="numver_stage">
-                                    4
-                                </p>
-                                <h4>
-                                    форма и размеры
-                                </h4>
-                                <i class="fas fa-angle-down"></i>
-                            </div>
-                            <div id="box-calc" class="wraper content">
-                                <div class="Size_calc">
-                                    <div class="item_size_calc">
-                                        <img src="images/figure_size1.png" alt="">
-                                        <p>прямоугольник</p>
-                                    </div>
-                                    <div class="item_size_calc">
-                                        <img src="images/figure_size2.png" alt="">
-                                        <p>КРуг</p>
-                                    </div>
-                                    <div class="item_size_calc">
-                                        <img src="images/figure_size3.png" alt="">
-                                        <p>Овал</p>
-                                    </div>
-                                    <div class="item_size_calc">
-                                        <img src="images/figure_size4.png" alt="">
-                                        <p>ИНАЯ ФОРМА</p>
-                                    </div>
-                                    <div class="item_size_calc">
-                                        <p>Введите значения <br>
-                                            (мм)</p>
-                                        <div class="input_touch_size">
-                                            <input type="text">
-                                            <input type="text">
-                                        </div>
-                                        <p><a href="#">Загрузить чертеж</a></p>
-                                    </div>
-                                </div>
-                            </div>
+                            {{--<div id="calc_stege" class="head toggler">--}}
+                                {{--<p class="numver_stage">--}}
+                                    {{--4--}}
+                                {{--</p>--}}
+                                {{--<h4>--}}
+                                    {{--форма и размеры--}}
+                                {{--</h4>--}}
+                                {{--<i class="fas fa-angle-down"></i>--}}
+                            {{--</div>--}}
+                            {{--<div id="box-calc" class="wraper content">--}}
+                                {{--<div class="Size_calc">--}}
+                                    {{--<div class="item_size_calc">--}}
+                                        {{--<img src="images/figure_size1.png" alt="">--}}
+                                        {{--<p>прямоугольник</p>--}}
+                                    {{--</div>--}}
+                                    {{--<div class="item_size_calc">--}}
+                                        {{--<img src="images/figure_size2.png" alt="">--}}
+                                        {{--<p>КРуг</p>--}}
+                                    {{--</div>--}}
+                                    {{--<div class="item_size_calc">--}}
+                                        {{--<img src="images/figure_size3.png" alt="">--}}
+                                        {{--<p>Овал</p>--}}
+                                    {{--</div>--}}
+                                    {{--<div class="item_size_calc">--}}
+                                        {{--<img src="images/figure_size4.png" alt="">--}}
+                                        {{--<p>ИНАЯ ФОРМА</p>--}}
+                                    {{--</div>--}}
+                                    {{--<div class="item_size_calc">--}}
+                                        {{--<p>Введите значения <br>--}}
+                                            {{--(мм)</p>--}}
+                                        {{--<div class="input_touch_size">--}}
+                                            {{--<input type="text">--}}
+                                            {{--<input type="text">--}}
+                                        {{--</div>--}}
+                                        {{--<p><a href="#">Загрузить чертеж</a></p>--}}
+                                    {{--</div>--}}
+                                {{--</div>--}}
+                            {{--</div>--}}
                         </div>
                         <div id="format" class="cost_calc_first_tab toggle owl-stage-outer owl-height">
-                            <div id="calc_stege" class="head toggler">
-                                <p class="numver_stage">
-                                    5
-                                </p>
-                                <h4>
-                                    Выберите материал
-                                </h4>
-                                <i class="fas fa-angle-down"></i>
-                            </div>
-                            <div id="box-calc" class="wraper content">
-                                <div class="stairs_and_flooring_buttons butt_choose_kromka d-flex">
-                                    <a class="nav-link" data-toggle="tab" href="#">БЕЗ ОБРАБОТКИ КРОМОК</a>
-                                    <a class="nav-link" data-toggle="tab" href="#">ПОЛИРОВКА КРОМОК</a>
-                                    <a class="nav-link" data-toggle="tab" href="#">ФАЦЕТ</a>
-                                </div>
-                                <div class="text-kromka">
-                                    <p>Кромка будет режуще-острой, а стекло хрупким.
-                                        <br><span>Будьте осторожны!</span></p>
-                                    <img src="images/sloy_kromka.png" alt="">
-                                </div>
+                            {{--<div id="calc_stege" class="head toggler">--}}
+                                {{--<p class="numver_stage">--}}
+                                    {{--5--}}
+                                {{--</p>--}}
+                                {{--<h4>--}}
+                                    {{--Выберите материал--}}
+                                {{--</h4>--}}
+                                {{--<i class="fas fa-angle-down"></i>--}}
+                            {{--</div>--}}
+                            {{--<div id="box-calc" class="wraper content">--}}
+                                {{--<div class="stairs_and_flooring_buttons butt_choose_kromka d-flex">--}}
+                                    {{--<a class="nav-link" data-toggle="tab" href="#">БЕЗ ОБРАБОТКИ КРОМОК</a>--}}
+                                    {{--<a class="nav-link" data-toggle="tab" href="#">ПОЛИРОВКА КРОМОК</a>--}}
+                                    {{--<a class="nav-link" data-toggle="tab" href="#">ФАЦЕТ</a>--}}
+                                {{--</div>--}}
+                                {{--<div class="text-kromka">--}}
+                                    {{--<p>Кромка будет режуще-острой, а стекло хрупким.--}}
+                                        {{--<br><span>Будьте осторожны!</span></p>--}}
+                                    {{--<img src="images/sloy_kromka.png" alt="">--}}
+                                {{--</div>--}}
 
-                            </div>
+                            {{--</div>--}}
                         </div>
                         <div id="extra" class="cost_calc_first_tab toggle">
-                            <div id="calc_stege" class="head toggler">
-                                <p class="numver_stage">
-                                    6
-                                </p>
-                                <h4>
-                                    дополнительно
-                                </h4>
-                                <i class="fas fa-angle-down"></i>
-                            </div>
-                            <div id="box-calc" class="wraper content">
-                                <div class="chekbox_sect_6 d-flex">
-                                    <div class="first_chekbox">
-                                        <label>
-                                            <input type="checkbox">
-                                            <span class="fake-checkbox" aria-hidden="true"></span>
-                                            <span class="label">Закалка (Термоупрочнение)</span>
-                                        </label>
-                                        <label>
-                                            <input type="checkbox">
-                                            <span class="fake-checkbox" aria-hidden="true"></span>
-                                            <span class="label">Отверстия и вырезы</span>
-                                        </label>
-                                        <label>
-                                            <input type="checkbox">
-                                            <span class="fake-checkbox" aria-hidden="true"></span>
-                                            <span class="label">Монтаж</span>
-                                        </label>
-                                    </div>
-                                    <div class="ssecond_chekbox">
-                                        <label>
-                                            <input type="checkbox">
-                                            <span class="fake-checkbox" aria-hidden="true"></span>
-                                            <span class="label">Покраска стекла</span>
-                                        </label>
-                                        <label>
-                                            <input type="checkbox">
-                                            <span class="fake-checkbox" aria-hidden="true"></span>
-                                            <span class="label">УФ-печать</span>
-                                        </label>
-                                        <label>
-                                            <input type="checkbox">
-                                            <span class="fake-checkbox" aria-hidden="true"></span>
-                                            <span class="label">Пескоструй</span>
-                                        </label>
-                                    </div>
-                                    <div class="third_chekbox">
-                                        <label>
-                                            <input type="checkbox">
-                                            <span class="fake-checkbox" aria-hidden="true"></span>
-                                            <span class="label">Скругления по углам</span>
-                                        </label>
-                                    </div>
-                                </div>
-                                <!-- <div class="chekbox_sect_6 d-flex">
-																	<div class="first_chekbox">
-																			<input type="checkbox" id="checkbox10" v-model="checked">
-																			<label for="checkbox10"><a href="#"></a>Закалка (Термоупрочнение)</label> <br>
-																			<input type="checkbox" id="checkbox11" v-model="checked">
-																			<label for="checkbox11"><a href="#"></a>Отверстия и вырезы</label><br>
-																			<input type="checkbox" id="checkbox12" v-model="checked">
-																			<label for="checkbox12"><a href="#"></a>Монтаж</label>
-																	</div>
-																	<div class="ssecond_chekbox">
-																			<input type="checkbox" id="checkbox13" v-model="checked">
-																			<label for="checkbox13"><a href="#"></a>Покраска стекла</label><br>
-																			<input type="checkbox" id="checkbox14" v-model="checked">
-																			<label for="checkbox14"><a href="#"></a>УФ-печать</label><br>
-																			<input type="checkbox" id="checkbox15" v-model="checked">
-																			<label for="checkbox15"><a href="#"></a> Пескоструй</label><br>
-																	</div>
-																	<div class="third_chekbox">
-																			<input type="checkbox" id="checkbox16" v-model="checked">
-																			<label for="checkbox16"><a href="#"></a>Скругления по углам</label>
-																	</div>
-															</div> -->
+                            {{--<div id="calc_stege" class="head toggler">--}}
+                                {{--<p class="numver_stage">--}}
+                                    {{--6--}}
+                                {{--</p>--}}
+                                {{--<h4>--}}
+                                    {{--дополнительно--}}
+                                {{--</h4>--}}
+                                {{--<i class="fas fa-angle-down"></i>--}}
+                            {{--</div>--}}
+                            {{--<div id="box-calc" class="wraper content">--}}
+                                {{--<div class="chekbox_sect_6 d-flex">--}}
+                                    {{--<div class="first_chekbox">--}}
+                                        {{--<label>--}}
+                                            {{--<input type="checkbox">--}}
+                                            {{--<span class="fake-checkbox" aria-hidden="true"></span>--}}
+                                            {{--<span class="label">Закалка (Термоупрочнение)</span>--}}
+                                        {{--</label>--}}
+                                        {{--<label>--}}
+                                            {{--<input type="checkbox">--}}
+                                            {{--<span class="fake-checkbox" aria-hidden="true"></span>--}}
+                                            {{--<span class="label">Отверстия и вырезы</span>--}}
+                                        {{--</label>--}}
+                                        {{--<label>--}}
+                                            {{--<input type="checkbox">--}}
+                                            {{--<span class="fake-checkbox" aria-hidden="true"></span>--}}
+                                            {{--<span class="label">Монтаж</span>--}}
+                                        {{--</label>--}}
+                                    {{--</div>--}}
+                                    {{--<div class="ssecond_chekbox">--}}
+                                        {{--<label>--}}
+                                            {{--<input type="checkbox">--}}
+                                            {{--<span class="fake-checkbox" aria-hidden="true"></span>--}}
+                                            {{--<span class="label">Покраска стекла</span>--}}
+                                        {{--</label>--}}
+                                        {{--<label>--}}
+                                            {{--<input type="checkbox">--}}
+                                            {{--<span class="fake-checkbox" aria-hidden="true"></span>--}}
+                                            {{--<span class="label">УФ-печать</span>--}}
+                                        {{--</label>--}}
+                                        {{--<label>--}}
+                                            {{--<input type="checkbox">--}}
+                                            {{--<span class="fake-checkbox" aria-hidden="true"></span>--}}
+                                            {{--<span class="label">Пескоструй</span>--}}
+                                        {{--</label>--}}
+                                    {{--</div>--}}
+                                    {{--<div class="third_chekbox">--}}
+                                        {{--<label>--}}
+                                            {{--<input type="checkbox">--}}
+                                            {{--<span class="fake-checkbox" aria-hidden="true"></span>--}}
+                                            {{--<span class="label">Скругления по углам</span>--}}
+                                        {{--</label>--}}
+                                    {{--</div>--}}
+                                {{--</div>--}}
+                                {{--<!-- <div class="chekbox_sect_6 d-flex">--}}
+																	{{--<div class="first_chekbox">--}}
+																			{{--<input type="checkbox" id="checkbox10" v-model="checked">--}}
+																			{{--<label for="checkbox10"><a href="#"></a>Закалка (Термоупрочнение)</label> <br>--}}
+																			{{--<input type="checkbox" id="checkbox11" v-model="checked">--}}
+																			{{--<label for="checkbox11"><a href="#"></a>Отверстия и вырезы</label><br>--}}
+																			{{--<input type="checkbox" id="checkbox12" v-model="checked">--}}
+																			{{--<label for="checkbox12"><a href="#"></a>Монтаж</label>--}}
+																	{{--</div>--}}
+																	{{--<div class="ssecond_chekbox">--}}
+																			{{--<input type="checkbox" id="checkbox13" v-model="checked">--}}
+																			{{--<label for="checkbox13"><a href="#"></a>Покраска стекла</label><br>--}}
+																			{{--<input type="checkbox" id="checkbox14" v-model="checked">--}}
+																			{{--<label for="checkbox14"><a href="#"></a>УФ-печать</label><br>--}}
+																			{{--<input type="checkbox" id="checkbox15" v-model="checked">--}}
+																			{{--<label for="checkbox15"><a href="#"></a> Пескоструй</label><br>--}}
+																	{{--</div>--}}
+																	{{--<div class="third_chekbox">--}}
+																			{{--<input type="checkbox" id="checkbox16" v-model="checked">--}}
+																			{{--<label for="checkbox16"><a href="#"></a>Скругления по углам</label>--}}
+																	{{--</div>--}}
+															{{--</div> -->--}}
 
-                            </div>
+                            {{--</div>--}}
                         </div>
                         <div id="order_info" class="cost_calc_first_tab toggle">
-                            <div id="calc_stege" class="head toggler">
-                                <p class="numver_stage">
-                                    7
-                                </p>
-                                <h4>
-                                    Информация по заказу
-                                </h4>
-                                <i class="fas fa-angle-down"></i>
-                            </div>
-                            <div id="box-calc" class="wraper content">
-                                <div class="Contact_form">
-                                    <div class="first_row">
-                                        <input type="text" placeholder="Name">
-                                        <input type="number" placeholder="Quantity">
-                                        <input type="text" placeholder="Location">
-                                    </div>
-                                    <div class="second_row d-flex">
-                                        <div class="leftTable">
-                                            <div class="up_input d-flex ">
-                                                <input type="tel" placeholder="Phone">
-                                                <input type="email" placeholder="Email">
-                                            </div>
-                                            <div class="down_buttons_distances d-flex">
-                                                <a class="nav-link" data-toggle="tab" href="#">В пределах МКАД</a>
-                                                <a class="nav-link" data-toggle="tab" href="#">Не более 5 км от МКАД</a>
-                                                <a class="nav-link" data-toggle="tab" href="#">Московская область</a>
-                                            </div>
-                                        </div>
-                                        <div class="right_texbox">
-                                            <textarea name="tex" id="" cols="25" rows="8"></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="buttons_buy_glass d-flex justify-content-center">
-                                        <button class="cost_butt buy_buttons">Оформить заказ</button>
-                                        <button class="cost_butt1 buy_buttons">В корзину</button>
-                                    </div>
-                                </div>
-                            </div>
+                            {{--<div id="calc_stege" class="head toggler">--}}
+                                {{--<p class="numver_stage">--}}
+                                    {{--7--}}
+                                {{--</p>--}}
+                                {{--<h4>--}}
+                                    {{--Информация по заказу--}}
+                                {{--</h4>--}}
+                                {{--<i class="fas fa-angle-down"></i>--}}
+                            {{--</div>--}}
+                            {{--<div id="box-calc" class="wraper content">--}}
+                                {{--<div class="Contact_form">--}}
+                                    {{--<div class="first_row">--}}
+                                        {{--<input type="text" placeholder="Name">--}}
+                                        {{--<input type="number" placeholder="Quantity">--}}
+                                        {{--<input type="text" placeholder="Location">--}}
+                                    {{--</div>--}}
+                                    {{--<div class="second_row d-flex">--}}
+                                        {{--<div class="leftTable">--}}
+                                            {{--<div class="up_input d-flex ">--}}
+                                                {{--<input type="tel" placeholder="Phone">--}}
+                                                {{--<input type="email" placeholder="Email">--}}
+                                            {{--</div>--}}
+                                            {{--<div class="down_buttons_distances d-flex">--}}
+                                                {{--<a class="nav-link" data-toggle="tab" href="#">В пределах МКАД</a>--}}
+                                                {{--<a class="nav-link" data-toggle="tab" href="#">Не более 5 км от МКАД</a>--}}
+                                                {{--<a class="nav-link" data-toggle="tab" href="#">Московская область</a>--}}
+                                            {{--</div>--}}
+                                        {{--</div>--}}
+                                        {{--<div class="right_texbox">--}}
+                                            {{--<textarea name="tex" id="" cols="25" rows="8"></textarea>--}}
+                                        {{--</div>--}}
+                                    {{--</div>--}}
+                                    {{--<div class="buttons_buy_glass d-flex justify-content-center">--}}
+                                        {{--<button class="cost_butt buy_buttons">Оформить заказ</button>--}}
+                                        {{--<button class="cost_butt1 buy_buttons">В корзину</button>--}}
+                                    {{--</div>--}}
+                                {{--</div>--}}
+                            {{--</div>--}}
                         </div>
 
                     </div>

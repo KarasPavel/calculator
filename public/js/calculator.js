@@ -55,6 +55,7 @@ $( document ).ready(function() {
         priceSum = 300;
         setPriceValue();
         setOrderDay();
+        unfillingDivs();
     });
 
     $('#mirror').click(function () {
@@ -89,8 +90,44 @@ $( document ).ready(function() {
             '    </div>' +
             '</div>'
         );
-
+        unfillingDivs();
     });
+
+    $('#glass').click(function () {
+        $('#material').html(
+            '<div id="calc_stege" class="head toggler">' +
+            '    <p class="numver_stage">2</p>' +
+            '    <h4>Вид стекла</h4>' +
+            '    <i class="fas fa-angle-down"></i>' +
+            '</div>' +
+            '<div id="box-calc" class="wraper content">' +
+            '    <div class="calc_contents d-flex">' +
+            '        <div id="simple" class="help_glass_items calc_content2">' +
+            '            <img src="images/glaas_type1.png" alt="">' +
+            '            <p>ОБЫЧНОЕ</p>' +
+            '        </div>' +
+            '        <div id="optWhite" class="help_glass_items calc_content2">' +
+            '            <img src="images/glass3.png" alt="">' +
+            '            <p>Оптивайт</p>' +
+            '        </div>' +
+            '        <div id="bronze" class="help_glass_items calc_content2">' +
+            '            <img src="images/glass4.png" alt="">' +
+            '            <p>Бронза</p>' +
+            '        </div>' +
+            '        <div id="matt" class="help_glass_items calc_content2">' +
+            '            <img src="images/glass5.png" alt="">' +
+            '            <p>Матовое</p>' +
+            '        </div>' +
+            '        <div id="grey" class="help_glass_items calc_content2">' +
+            '            <img src="images/glaas6.png" alt="">' +
+            '            <p>Серое</p>' +
+            '        </div>' +
+            '    </div>' +
+            '</div>'
+        );
+        unfillingDivs();
+    });
+
     $('#material').on('click', '#simple, #optWhite, #bronze, #matt, #grey', function () {
         fillDepthDiv();
         $('#depth').show().children().show();
@@ -326,7 +363,6 @@ $( document ).ready(function() {
 
     $('#extra').on('click', '#hardening, #holes_and_cutouts, #installation,' +
         '#painting, #uv_printing, #sand_blasting, #round_corners', function () {
-        alert(this.id);
         fillOrderDiv();
         $('#order_info').show().children().show();
     });
@@ -368,11 +404,12 @@ $( document ).ready(function() {
             '</div>'
         )
     }
-});
 
-// (".next__block").click(function() {
-//     e._core.settings.autoHeight && (null != e._intervalId && clearTimeout(e._intervalId),
-//         e._intervalId = setTimeout(function() {
-//             e.update()
-//         }, 650))
-// })
+    function unfillingDivs() {
+        $('#depth').empty();
+        $('#shape').empty();
+        $('#format').empty();
+        $('#extra').empty();
+        $('#order_info').empty();
+    }
+});

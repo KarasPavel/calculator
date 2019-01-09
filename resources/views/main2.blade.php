@@ -671,8 +671,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="video_glass d-flex">
-                            @isset($video[0])
-                            @if($video[0]->show  === 1)
+                            @if(isset($video) && $video[0]->show === 1)
                                 <iframe width="50%" height="335px"
                                         src={{$video[0]->video}}
                                                 frameborder="0"
@@ -3432,14 +3431,15 @@
                             </div>
                             <div id="box-calc" class="wraper content actived">
                                 <div class="stairs_and_flooring_buttons stairs_and_flooring_buttons_calculator  d-flex">
-                                    <a class="nav-link" id="mirror" data-toggle="tab" href="#">Зеркало</a>
-                                    <a class="nav-link" id="triplex" data-toggle="tab" href="#">Триплекс</a>
                                     <a class="nav-link" id="glass" data-toggle="tab" href="#">Стекло</a>
+                                    <a class="nav-link" id="mirror" data-toggle="tab" href="#">Зеркало</a>
+                                    <a class="inav-link" id="triplex" data-toggle="tab" href="#">Триплекс</a>
                                 </div>
                             </div>
                         </div>
 
-                        <div id="forNotTriplex" class="cost_calc_first_tab toggle">
+
+                        <div id="material" class="cost_calc_first_tab toggle">
                             <div id="calc_stege" class="head toggler">
                                 <p class="numver_stage">
                                     2
@@ -3474,48 +3474,7 @@
                                 </div>
                             </div>
                         </div>
-
-
-                        {{--<div class="cost_calc_first_tab toggle">--}}
-                            {{--<div id="calc_stege" class="head toggler">--}}
-                                {{--<p class="numver_stage">--}}
-                                    {{--2--}}
-                                {{--</p>--}}
-                                {{--<h4>--}}
-                                    {{--Вид стекла--}}
-                                {{--</h4>--}}
-                                {{--<i class="fas fa-angle-down"></i>--}}
-                            {{--</div>--}}
-                            {{--<div id="box-calc" class="wraper content">--}}
-                                {{--<div class="calc_contents d-flex">--}}
-                                    {{--<div class="help_glass_items calc_content2">--}}
-                                        {{--<img src="images/glaas_type1.png" alt="">--}}
-                                        {{--<p>ОБЫЧНОЕ</p>--}}
-                                    {{--</div>--}}
-                                    {{--<div class="help_glass_items calc_content2">--}}
-                                        {{--<img src="images/glass3.png" alt="">--}}
-                                        {{--<p>Оптивайт</p>--}}
-                                    {{--</div>--}}
-                                    {{--<div class="help_glass_items calc_content2">--}}
-                                        {{--<img src="images/glass4.png" alt="">--}}
-                                        {{--<p>Бронза</p>--}}
-                                    {{--</div>--}}
-                                    {{--<div class="help_glass_items calc_content2">--}}
-                                        {{--<img src="images/glass5.png" alt="">--}}
-                                        {{--<p>Матовое</p>--}}
-                                    {{--</div>--}}
-                                    {{--<div class="help_glass_items calc_content2">--}}
-                                        {{--<img src="images/glaas6.png" alt="">--}}
-                                        {{--<p>Серое</p>--}}
-                                    {{--</div>--}}
-                                {{--</div>--}}
-                            {{--</div>--}}
-                        {{--</div>--}}
-
-
-
-
-                        <div class="cost_calc_first_tab toggle">
+                        <div id="depth" class="cost_calc_first_tab toggle">
                             <div id="calc_stege" class="head toggler">
                                 <p class="numver_stage">
                                     3
@@ -3620,7 +3579,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="cost_calc_first_tab toggle owl-stage-outer owl-height">
+                        <div id="shape" class="cost_calc_first_tab toggle owl-stage-outer owl-height">
                             <div id="calc_stege" class="head toggler">
                                 <p class="numver_stage">
                                     4
@@ -3660,7 +3619,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="cost_calc_first_tab toggle owl-stage-outer owl-height">
+                        <div id="format" class="cost_calc_first_tab toggle owl-stage-outer owl-height">
                             <div id="calc_stege" class="head toggler">
                                 <p class="numver_stage">
                                     5
@@ -3684,7 +3643,7 @@
 
                             </div>
                         </div>
-                        <div class="cost_calc_first_tab toggle">
+                        <div id="extra" class="cost_calc_first_tab toggle">
                             <div id="calc_stege" class="head toggler">
                                 <p class="numver_stage">
                                     6

@@ -3722,7 +3722,7 @@
 
                             </div>
                         </div>
-                        <div class="cost_calc_first_tab toggle">
+                        <div id="order_info" class="cost_calc_first_tab toggle">
                             <div id="calc_stege" class="head toggler">
                                 <p class="numver_stage">
                                     7

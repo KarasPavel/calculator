@@ -266,7 +266,6 @@ $( document ).ready(function() {
     }
 
     $('#format').on('click', '#without_processing, #with_processing, #facet', function () {
-        alert(this.id);
         fillExtraDiv();
         $('#extra').show().children().show();
     });
@@ -281,44 +280,89 @@ $( document ).ready(function() {
             '    <div class="chekbox_sect_6 d-flex">' +
             '        <div class="first_chekbox">' +
             '            <label>' +
-            '                <input type="checkbox">' +
+            '                <input id="hardening" type="checkbox">' +
             '                <span class="fake-checkbox" aria-hidden="true"></span>' +
             '                <span class="label">Закалка (Термоупрочнение)</span>' +
             '            </label>' +
             '            <label>' +
-            '                <input type="checkbox">' +
+            '                <input id="holes_and_cutouts" type="checkbox">' +
             '                <span class="fake-checkbox" aria-hidden="true"></span>' +
             '                <span class="label">Отверстия и вырезы</span>' +
             '            </label>' +
             '            <label>' +
-            '                <input type="checkbox">' +
+            '                <input id="installation" type="checkbox">' +
             '                <span class="fake-checkbox" aria-hidden="true"></span>' +
             '                <span class="label">Монтаж</span>' +
             '            </label>' +
             '        </div>' +
             '        <div class="ssecond_chekbox">' +
             '            <label>' +
-            '                <input type="checkbox">' +
+            '                <input id="painting" type="checkbox">' +
             '                <span class="fake-checkbox" aria-hidden="true"></span>' +
             '                <span class="label">Покраска стекла</span>' +
             '            </label>' +
             '            <label>' +
-            '                <input type="checkbox">' +
+            '                <input id="uv_printing" type="checkbox">' +
             '                <span class="fake-checkbox" aria-hidden="true"></span>' +
             '                <span class="label">УФ-печать</span>' +
             '            </label>' +
             '            <label>' +
-            '                <input type="checkbox">' +
+            '                <input id="sand_blasting" type="checkbox">' +
             '                <span class="fake-checkbox" aria-hidden="true"></span>' +
             '                <span class="label">Пескоструй</span>' +
             '            </label>' +
             '        </div>' +
             '        <div class="third_chekbox">' +
             '            <label>' +
-            '                <input type="checkbox">' +
+            '                <input id="round_corners" type="checkbox">' +
             '                <span class="fake-checkbox" aria-hidden="true"></span>' +
             '                <span class="label">Скругления по углам</span>' +
             '            </label>' +
+            '        </div>' +
+            '    </div>' +
+            '</div>'
+        )
+    }
+
+    $('#extra').on('click', '#hardening, #holes_and_cutouts, #installation,' +
+        '#painting, #uv_printing, #sand_blasting, #round_corners', function () {
+        alert(this.id);
+        fillOrderDiv();
+        $('#order_info').show().children().show();
+    });
+    function fillOrderDiv() {
+        $('#order_info').html(
+            '<div id="calc_stege" class="head toggler">' +
+            '    <p class="numver_stage">7</p>' +
+            '    <h4>Информация по заказу</h4>' +
+            '    <i class="fas fa-angle-down"></i>' +
+            '</div>' +
+            '<div id="box-calc" class="wraper content">' +
+            '    <div class="Contact_form">' +
+            '        <div class="first_row">' +
+            '            <input type="text" placeholder="Name">' +
+            '            <input type="number" placeholder="Quantity">' +
+            '            <input type="text" placeholder="Location">' +
+            '        </div>' +
+            '        <div class="second_row d-flex">' +
+            '            <div class="leftTable">' +
+            '                <div class="up_input d-flex ">' +
+            '                    <input type="tel" placeholder="Phone">' +
+            '                    <input type="email" placeholder="Email">' +
+            '                </div>' +
+            '                <div class="down_buttons_distances d-flex">' +
+            '                    <a class="nav-link" data-toggle="tab" href="#">В пределах МКАД</a>' +
+            '                    <a class="nav-link" data-toggle="tab" href="#">Не более 5 км от МКАД</a>' +
+            '                    <a class="nav-link" data-toggle="tab" href="#">Московская область</a>' +
+            '                </div>' +
+            '            </div>' +
+            '            <div class="right_texbox">' +
+            '                <textarea name="tex" id="" cols="25" rows="8"></textarea>' +
+            '            </div>' +
+            '        </div>' +
+            '        <div class="buttons_buy_glass d-flex justify-content-center">' +
+            '            <button class="cost_butt buy_buttons">Оформить заказ</button>' +
+            '            <button class="cost_butt1 buy_buttons">В корзину</button>' +
             '        </div>' +
             '    </div>' +
             '</div>'

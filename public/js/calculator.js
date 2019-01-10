@@ -107,9 +107,9 @@ $( document ).ready(function() {
         $('#box-calc-2-2').append('<div id="matt" class="help_glass_items calc_content2"></div>');
         $('#matt').append('<img src="images/glaas_type1.png" alt="">');
         $('#matt').append('<p>Матовое</p>');
-        $('#box-calc-2-2').append('<div id="grey" class="help_glass_items calc_content2"></div>');
-        $('#grey').append('<img src="images/glaas_type1.png" alt="">');
-        $('#grey').append('<p>Серое</p>');
+        $('#box-calc-2-2').append('<div id="silver" class="help_glass_items calc_content2"></div>');
+        $('#silver').append('<img src="images/glaas_type1.png" alt="">');
+        $('#silver').append('<p>Серебро</p>');
         unfillingDivs();
     });
 
@@ -123,7 +123,7 @@ $( document ).ready(function() {
         $('#box-calc-2').append('<div id="box-calc-2-2" class="calc_contents d-flex"></div>');
         $('#box-calc-2-2').append('<div id="simple" class="help_glass_items calc_content2"></div>');
         $('#simple').append('<img src="images/glaas_type1.png" alt="">');
-        $('#simple').append('<p>ОБЫЧНОЕ</p>');
+        $('#simple').append('<p>Прозрачное</p>');
         $('#box-calc-2-2').append('<div id="optWhite" class="help_glass_items calc_content2"></div>');
         $('#optWhite').append('<img src="images/glaas_type1.png" alt="">');
         $('#optWhite').append('<p>Оптивайт</p>');
@@ -139,7 +139,7 @@ $( document ).ready(function() {
         unfillingDivs();
     });
 
-    $('#material').on('click', '#simple, #optWhite, #bronze, #matt, #grey', function () {
+    $('#material').on('click', '#simple, #optWhite, #bronze, #matt, #silver', function () {
         $('#depth').empty();
         fillDepthDiv();
         $('#depth').show().children().show();
@@ -306,11 +306,11 @@ $( document ).ready(function() {
             '    <span class="fake-checkbox" aria-hidden="true"></span>' +
             '    <span class="label">Отверстия и вырезы</span>' +
             '</label>');
-        $('#box-calc-6-2-1').append('<label>' +
-            '    <input id="installation" type="checkbox">' +
-            '    <span class="fake-checkbox" aria-hidden="true"></span>' +
-            '    <span class="label">Монтаж</span>' +
-            '</label>');
+        // $('#box-calc-6-2-1').append('<label>' +
+        //     '    <input id="installation" type="checkbox">' +
+        //     '    <span class="fake-checkbox" aria-hidden="true"></span>' +
+        //     '    <span class="label">Монтаж</span>' +
+        //     '</label>');
         $('#box-calc-6-1').append('<div id="box-calc-6-2-2" class="ssecond_chekbox"></div>');
         $('#box-calc-6-2-2').append('<label>' +
             '    <input id="painting" type="checkbox">' +

@@ -1,0 +1,2 @@
+<?php
+$triplexPrice = 300;

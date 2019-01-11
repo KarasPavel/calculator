@@ -288,12 +288,29 @@ $( document ).ready(function() {
         $('#another').append('<img src="images/figure_size4.png" alt="">' +
             '<p>ИНАЯ ФОРМА</p>');
         $('.Size_calc').append('<div class="item_size_calc">' +
-            '    <p>Введите значения <br>(мм)</p>' +
-            '    <div class="input_touch_size">' +
-            '        <input type="text">' +
-            '        <input type="text">' +
+            '    <p>Введите размеры</p>' +
+            '    <div id="shape_size" class="input_touch_size">' +
             '    </div></div>');
+        $('#circle').click(function () {
+            shapeId = this.id;
+            $('#shape_size').empty();
+            $('#shape_size').append('<input id="diameter" type="number" placeholder="мм">диаметр');
+        });
+        $('#shape').on('click', '#rectangle, #oval, #another', function () {
+            shapeId = this.id;
+            $('#shape_size').empty();
+            $('#shape_size').append('<input id="height" type="number" placeholder="мм">высота' +
+                '<input id="width" type="number" placeholder="мм">ширина');
+        })
+        $('#shape_size').append('<input id="height" type="number" placeholder="мм">высота' +
+            '<input id="width" type="number" placeholder="мм">ширина')
+
     }
+
+    // $('#shape').on('keyup', '#width, #height, #diameter', function () {
+    //
+    //     console.log('123')
+    // })
 
     $('#shape').on('click', '#rectangle, #circle, #oval, #another', function () {
         shapeId = this.id;
@@ -391,7 +408,6 @@ $( document ).ready(function() {
     $('#format').on('click', '#without_processing, #with_processing, ' +
         '#facet5, #facet10, #facet15, #facet20, #facet25, #facet30, #facet35, #facet40', function () {
         format = this.id;
-        alert(format);
         $('#extra').empty();
         $('#order_info').empty();
         fillExtraDiv();
@@ -406,28 +422,45 @@ $( document ).ready(function() {
         $('#extra').append('<div id="box-calc-6" class="wraper content"></div>');
         $('#box-calc-6').append('<div id="box-calc-6-1" class="chekbox_sect_6 d-flex"></div>');
         $('#box-calc-6-1').append('<div id="box-calc-6-2-1" class="first_chekbox"></div>');
-        $('#box-calc-6-2-1').append('<label>' +
-            '    <input id="hardening" type="checkbox">' +
-            '    <span class="fake-checkbox" aria-hidden="true"></span>' +
-            '    <span class="label">Закалка (Термоупрочнение)</span>' +
-            '</label>');
+        if (depthId != "three"){
+            $('#box-calc-6-2-1').append('<label>' +
+                '    <input id="hardening" type="checkbox">' +
+                '    <span class="fake-checkbox" aria-hidden="true"></span>' +
+                '    <span class="label">Закалка (Термоупрочнение)</span>' +
+                '</label>');
+        }
         $('#box-calc-6-2-1').append('<label>' +
             '    <input id="holes_and_cutouts" type="checkbox">' +
             '    <span class="fake-checkbox" aria-hidden="true"></span>' +
             '    <span class="label">Отверстия и вырезы</span>' +
             '</label>');
-        // $('#box-calc-6-2-1').append('<label>' +
-        //     '    <input id="installation" type="checkbox">' +
-        //     '    <span class="fake-checkbox" aria-hidden="true"></span>' +
-        //     '    <span class="label">Монтаж</span>' +
-        //     '</label>');
+        $('#holes_and_cutouts').change(function () {
+            $('#hac').detach();
+            if ($('#holes_and_cutouts').is(':checked')) {
+                $('#box-calc-6-2-1').append('<label id="hac">' +
+                    '    <input id="hac_num" type="number">Количество' +
+                    '</label>');
+            }
+        });
+
         $('#box-calc-6-1').append('<div id="box-calc-6-2-2" class="ssecond_chekbox"></div>');
         $('#box-calc-6-2-2').append('<label>' +
             '    <input id="painting" type="checkbox">' +
             '    <span class="fake-checkbox" aria-hidden="true"></span>' +
             '    <span class="label">Покраска стекла</span>' +
             '</label>');
-        $('#box-calc-6-2-2').append('<label>' +
+        $('#painting').click(function () {
+            $('#pnt').detach();
+            if ($('#painting').is(':checked')) {
+                $('#uv_label').before('<label id="pnt">' +
+                    '<select>' +
+                    '<option selected id="pnt_all">Целиком</option>' +
+                    '<option id="pnt_some">Выборка</option>' +
+                    '</select>' +
+                    '</label>');
+            }
+        });
+        $('#box-calc-6-2-2').append('<label id="uv_label">' +
             '    <input id="uv_printing" type="checkbox">' +
             '    <span class="fake-checkbox" aria-hidden="true"></span>' +
             '    <span class="label">УФ-печать</span>' +
@@ -437,12 +470,31 @@ $( document ).ready(function() {
             '    <span class="fake-checkbox" aria-hidden="true"></span>' +
             '    <span class="label">Пескоструй</span>' +
             '</label>');
+        $('#sand_blasting').click(function () {
+            $('#snd_bl').detach();
+            if ($('#sand_blasting').is(':checked')) {
+                $('#box-calc-6-2-2').append('<label id="snd_bl">' +
+                    '<select>' +
+                    '<option selected id="snd_bl_all">Целиком</option>' +
+                    '<option id="snd_bl_some">Выборка</option>' +
+                    '</select>' +
+                    '</label>');
+            }
+        });
         $('#box-calc-6-1').append('<div id="box-calc-6-2-3" class="third_chekbox"></div>');
         $('#box-calc-6-2-3').append('<label>' +
             '    <input id="round_corners" type="checkbox">' +
             '    <span class="fake-checkbox" aria-hidden="true"></span>' +
             '    <span class="label">Скругления по углам</span>' +
             '</label>');
+        $('#round_corners').click(function () {
+            $('#rnd_con').detach();
+            if ($('#round_corners').is(':checked')) {
+                $('#box-calc-6-2-3').append('<label id="rnd_con">' +
+                    '    <input id="rnd_con_num" type="number">Количество' +
+                    '</label>');
+            }
+        });
     }
 
     $('#extra').on('click', '#hardening, #holes_and_cutouts, #installation,' +
@@ -472,7 +524,7 @@ $( document ).ready(function() {
         $('.down_buttons_distances').append('<a class="nav-link" data-toggle="tab" href="#">Не более 5 км от МКАД</a>');
         $('.down_buttons_distances').append('<a class="nav-link" data-toggle="tab" href="#">Московская область</a>');
         $('.second_row').append('<div class="right_texbox">' +
-            '   <textarea name="tex" id="" cols="25" rows="8"></textarea>' +
+            '   <textarea name="tex" id="" cols="25" rows="3"></textarea>' +
             '</div>');
         $('.Contact_form').append('<div class="buttons_buy_glass d-flex justify-content-center"></div>');
         $('.buttons_buy_glass').append('<button class="cost_butt buy_buttons">Оформить заказ</button>');

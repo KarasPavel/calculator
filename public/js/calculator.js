@@ -5,6 +5,8 @@ $( document ).ready(function() {
     var materiaTypelId; // mirror, glass
     var materialId; // '#simple, #optWhite, #bronze, #matt, #silver, #grey, #graphite, #aged, #clearVision, #exclusive, #gold'
     var depthId;
+    var shapeId;
+    var format;
 
     // function httpGet(url) {
     //     return new Promise(function (resolve) {
@@ -294,6 +296,7 @@ $( document ).ready(function() {
     }
 
     $('#shape').on('click', '#rectangle, #circle, #oval, #another', function () {
+        shapeId = this.id;
         $('#format').empty();
         $('#extra').empty();
         $('#order_info').empty();
@@ -308,21 +311,93 @@ $( document ).ready(function() {
         $('#format').append('<div id="box-calc-5" class="wraper content"></div>');
         $('#box-calc-5').append('<div id="box-calc-5-1" class="stairs_and_flooring_buttons butt_choose_kromka d-flex"></div>');
         $('#box-calc-5-1').append('<a id="without_processing" class="nav-link" data-toggle="tab" href="#">БЕЗ ОБРАБОТКИ КРОМОК</a>');
-        $('#box-calc-5-1').append('<a id="with_processing" class="nav-link" data-toggle="tab" href="#">ПОЛИРОВКА КРОМОК</a>');
-        $('#box-calc-5-1').append('<a id="facet" class="nav-link" data-toggle="tab" href="#">ФАЦЕТ</a>');
         $('#format').append('<div class="text-kromka">' +
             '    <p>Кромка будет режуще-острой, а стекло хрупким.' +
             '    <br><span>Будьте осторожны!</span></p>' +
             '    <img src="images/sloy_kromka.png" alt="">' +
             '</div>');
+        if (depthId != "three") {
+            $('#box-calc-5-1').append('<a id="with_processing" class="nav-link" data-toggle="tab" href="#">ПОЛИРОВКА КРОМОК</a>');
+        }
+
+        if (depthId === "four" || depthId === "six" || depthId === "eight" || depthId === "ten" || depthId === "twelve") {
+            $('#box-calc-5-1').append('<a id="facet" class="nav-link" data-toggle="tab" href="#">ФАЦЕТ</a>');
+            $('#with_processing').click(function () {
+                $(".text-kromka").empty();
+                $('#format').append('<div class="text-kromka">' +
+                    '    <p>Кромка будет режуще-острой, а стекло хрупким.' +
+                    '    <br><span>Будьте осторожны!</span></p>' +
+                    '    <img src="images/sloy_kromka.png" alt="">' +
+                    '</div>');
+            });
+            $('#without_processing').click(function () {
+                $(".text-kromka").empty();
+                $('#format').append('<div class="text-kromka">' +
+                    '    <p>Кромка будет режуще-острой, а стекло хрупким.' +
+                    '    <br><span>Будьте осторожны!</span></p>' +
+                    '    <img src="images/sloy_kromka.png" alt="">' +
+                    '</div>');
+            });
+            $('#facet').click(function () {
+                $(".text-kromka").empty();
+                $('#extra').empty();
+                $('.text-kromka').prepend('<ul class="nav nav-tabs d-flex" id="myTab2" role="tablist"></ul>');
+
+                $("#myTab2").append('<li class="nav-item">' +
+                    '<a id="facet5" class="nav-link" data-toggle="tab" role="tab"' +
+                    'aria-controls="messages">5 мм</a>' +
+                    '</li>');
+                $("#myTab2").append('<li class="nav-item">' +
+                    '<a id="facet10" class="nav-link" data-toggle="tab" role="tab"' +
+                    'aria-controls="messages">10 мм</a>' +
+                    '</li>');
+                $("#myTab2").append('<li class="nav-item">' +
+                    '<a id="facet15" class="nav-link" data-toggle="tab" role="tab"' +
+                    'aria-controls="messages">15 мм</a>' +
+                    '</li>');
+                $("#myTab2").append('<li class="nav-item">' +
+                    '<a id="facet20" class="nav-link" data-toggle="tab" role="tab"' +
+                    'aria-controls="messages">20 мм</a>' +
+                    '</li>');
+
+                if (depthId != "four") {
+                    $("#myTab2").append('<li class="nav-item">' +
+                        '<a id="facet25" class="nav-link" data-toggle="tab" role="tab"' +
+                        'aria-controls="messages">25 мм</a>' +
+                        '</li>');
+                    $("#myTab2").append('<li class="nav-item">' +
+                        '<a id="facet30" class="nav-link" data-toggle="tab" role="tab"' +
+                        'aria-controls="messages">30 мм</a>' +
+                        '</li>');
+                    $("#myTab2").append('<li class="nav-item">' +
+                        '<a id="facet35" class="nav-link" data-toggle="tab" role="tab"' +
+                        'aria-controls="messages">35 мм</a>' +
+                        '</li>');
+                    $("#myTab2").append('<li class="nav-item">' +
+                        '<a id="facet40" class="nav-link" data-toggle="tab" role="tab"' +
+                        'aria-controls="messages">40 мм</a>' +
+                        '</li>');
+                }
+                $('#format').append('<div class="text-kromka">' +
+                    '    <p>Кромка будет режуще-острой, а стекло хрупким.' +
+                    '    <br><span>Будьте осторожны!</span></p>' +
+                    '    <img src="images/sloy_kromka.png" alt="">' +
+                    '</div>');
+            })
+        }
+
     }
 
-    $('#format').on('click', '#without_processing, #with_processing, #facet', function () {
+    $('#format').on('click', '#without_processing, #with_processing, ' +
+        '#facet5, #facet10, #facet15, #facet20, #facet25, #facet30, #facet35, #facet40', function () {
+        format = this.id;
+        alert(format);
         $('#extra').empty();
         $('#order_info').empty();
         fillExtraDiv();
         $('#extra').show().children().show();
     });
+
     function fillExtraDiv() {
         $('#extra').append('<div id="calc_stege_6" class="head toggler"></div>');
         $('#calc_stege_6').append('<p class="numver_stage">6</p>');

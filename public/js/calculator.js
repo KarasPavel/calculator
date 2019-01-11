@@ -2,6 +2,9 @@ $( document ).ready(function() {
     var offsetDay = 1;
     var currency = ' руб.';
     var priceSum = 0;
+    var materiaTypelId; // mirror, glass
+    var materialId; // '#simple, #optWhite, #bronze, #matt, #silver, #grey, #graphite, #aged, #clearVision, #exclusive, #gold'
+    var depthId;
 
     // function httpGet(url) {
     //     return new Promise(function (resolve) {
@@ -79,7 +82,7 @@ $( document ).ready(function() {
             "нашим специалистом по Вашему вопросу, который сможет с Вами связатся и подготовить для Вас нужную информацию по данной тематике," +
             "дать комментарии, рассказать как это будет выглядеть, сколько будет стоить и какие есть возможности реализации Вашего проекта.</p>");
         $('#material').append('<a class="contacts">+7 (499) 677-20-67</a>');
-        $('#material').append('<a href="#win1">  Консультация и расчет  </a>');
+        $('#material').append('<a href="#win1">   Консультация и расчет   </a>');
         $('#material').append('<a class="contacts">info@v-t-x.ru</a>');
         priceSum = 300;
         setPriceValue();
@@ -88,6 +91,7 @@ $( document ).ready(function() {
     });
 
     $('#mirror').click(function () {
+        materiaTypelId = this.id;
         $('#material').empty();
         $('#material').append('<div id="calc_stege_2" class="head toggler"></div>');
         $('#calc_stege_2').append('<p class="numver_stage">2</p>');
@@ -95,25 +99,26 @@ $( document ).ready(function() {
         $('#calc_stege_2').append('<i class="fas fa-angle-down"></i>');
         $('#material').append('<div id="box-calc-2" class="wraper content"></div>');
         $('#box-calc-2').append('<div id="box-calc-2-2" class="calc_contents d-flex"></div>');
-        $('#box-calc-2-2').append('<div id="simple" class="help_glass_items calc_content2"></div>');
-        $('#simple').append('<img src="images/glaas_type1.png" alt="">');
-        $('#simple').append('<p>ОБЫЧНОЕ</p>');
-        $('#box-calc-2-2').append('<div id="optWhite" class="help_glass_items calc_content2"></div>');
-        $('#optWhite').append('<img src="images/glaas_type1.png" alt="">');
-        $('#optWhite').append('<p>Оптивайт</p>');
+        $('#box-calc-2-2').append('<div id="clearVision" class="help_glass_items calc_content2"></div>');
+        $('#clearVision').append('<p>ClearVision</p>');
+        $('#box-calc-2-2').append('<div id="aged" class="help_glass_items calc_content2"></div>');
+        $('#aged').append('<p>Состаренное</p>');
         $('#box-calc-2-2').append('<div id="bronze" class="help_glass_items calc_content2"></div>');
-        $('#bronze').append('<img src="images/glaas_type1.png" alt="">');
         $('#bronze').append('<p>Бронза</p>');
-        $('#box-calc-2-2').append('<div id="matt" class="help_glass_items calc_content2"></div>');
-        $('#matt').append('<img src="images/glaas_type1.png" alt="">');
-        $('#matt').append('<p>Матовое</p>');
+        $('#box-calc-2-2').append('<div id="graphite" class="help_glass_items calc_content2"></div>');
+        $('#graphite').append('<p>Графитовое</p>');
         $('#box-calc-2-2').append('<div id="silver" class="help_glass_items calc_content2"></div>');
-        $('#silver').append('<img src="images/glaas_type1.png" alt="">');
         $('#silver').append('<p>Серебро</p>');
+        $('#box-calc-2-2').append('<div id="exclusive" class="help_glass_items calc_content2"></div>');
+        $('#exclusive').append('<p>Эксклюзив</p>');
+        $('#box-calc-2-2').append('<div id="gold" class="help_glass_items calc_content2"></div>');
+        $('#gold').append('<p>Золото</p>');
+
         unfillingDivs();
     });
 
     $('#glass').click(function () {
+        materiaTypelId = this.id;
         $('#material').empty();
         $('#material').append('<div id="calc_stege_2" class="head toggler"></div>');
         $('#calc_stege_2').append('<p class="numver_stage">2</p>');
@@ -125,22 +130,28 @@ $( document ).ready(function() {
         $('#simple').append('<img src="images/glaas_type1.png" alt="">');
         $('#simple').append('<p>Прозрачное</p>');
         $('#box-calc-2-2').append('<div id="optWhite" class="help_glass_items calc_content2"></div>');
-        $('#optWhite').append('<img src="images/glaas_type1.png" alt="">');
+        $('#optWhite').append('<img src="images/glass3.png" alt="">');
         $('#optWhite').append('<p>Оптивайт</p>');
         $('#box-calc-2-2').append('<div id="bronze" class="help_glass_items calc_content2"></div>');
-        $('#bronze').append('<img src="images/glaas_type1.png" alt="">');
+        $('#bronze').append('<img src="images/glass4.png" alt="">');
         $('#bronze').append('<p>Бронза</p>');
         $('#box-calc-2-2').append('<div id="matt" class="help_glass_items calc_content2"></div>');
-        $('#matt').append('<img src="images/glaas_type1.png" alt="">');
+        $('#matt').append('<img src="images/glass5.png" alt="">');
         $('#matt').append('<p>Матовое</p>');
         $('#box-calc-2-2').append('<div id="grey" class="help_glass_items calc_content2"></div>');
-        $('#grey').append('<img src="images/glaas_type1.png" alt="">');
+        $('#grey').append('<img src="images/glaas6.png" alt="">');
         $('#grey').append('<p>Серое</p>');
         unfillingDivs();
     });
 
-    $('#material').on('click', '#simple, #optWhite, #bronze, #matt, #silver', function () {
+    $('#material').on('click', '#simple, #optWhite, #bronze, #matt, #silver, #grey,' +
+        '#graphite, #aged, #clearVision, #exclusive, #gold', function () {
+        materialId = this.id;
         $('#depth').empty();
+        $('#shape').empty();
+        $('#format').empty();
+        $('#extra').empty();
+        $('#order_info').empty();
         fillDepthDiv();
         $('#depth').show().children().show();
     });
@@ -153,84 +164,105 @@ $( document ).ready(function() {
         $('#box-calc-3').append('<div class="stage_3_choose_thiknes d-flex"></div>');
         $('.stage_3_choose_thiknes').append('<div class="choose_thiknes"></div>');
         $('.choose_thiknes').append('<ul class="nav nav-tabs d-flex" id="myTab1" role="tablist"></ul>');
-        $('#myTab1').append('<li class="nav-item">' +
-            '<a id="three" class="nav-link active" data-toggle="tab" href="#calc1" role="tab"' +
-            'aria-controls="home">3</a>' +
-            '</li>');
+
+        $('.stage_3_choose_thiknes').append('<div class="content-right_calc"></div>');
+        $('.content-right_calc').append('<div id="tab-content" class="tab-content"></div>');
+
+        if (materialId === "simple") {
+            $('#myTab1').append('<li class="nav-item">' +
+                '<a id="three" class="nav-link active" data-toggle="tab" href="#calc1" role="tab"' +
+                'aria-controls="home">3</a>' +
+                '</li>');
+            $('#tab-content').append('<div class="tab-pane active" id="calc1" role="tabpanel">' +
+                '<div class="img_items_stairs">' +
+                '<img src="images/Fartucks/1/1.jpg" alt="1">' +
+                '</div></div>');
+        }
+
         $('#myTab1').append('<li class="nav-item">' +
             '<a id="four" class="nav-link" data-toggle="tab" href="#calc2" role="tab"' +
             'aria-controls="profile">4</a>' +
             '</li>');
-        $('#myTab1').append('<li class="nav-item">' +
-            '<a id="five" class="nav-link" data-toggle="tab" href="#calc3" role="tab"' +
-            'aria-controls="messages">5</a>' +
-            '</li>');
-        $('#myTab1').append('<li class="nav-item">' +
-            '<a id="six" class="nav-link" data-toggle="tab" href="#calc4" role="tab"' +
-            'aria-controls="messages">6</a>' +
-            '</li>');
-        $('#myTab1').append('<li class="nav-item">' +
-            '<a id="eight" class="nav-link" data-toggle="tab" href="#calc5" role="tab"' +
-            'aria-controls="messages">8</a>' +
-            '</li>');
-        $('#myTab1').append('<li class="nav-item">' +
-            '<a id="ten" class="nav-link" data-toggle="tab" href="#calc6" role="tab"' +
-            'aria-controls="messages">10</a>' +
-            '</li>');
-        $('#myTab1').append('<li class="nav-item">' +
-            '<a id="twelve" class="nav-link" data-toggle="tab" href="#calc7" role="tab"' +
-            'aria-controls="messages">12</a>' +
-            '</li>');
-        $('#myTab1').append('<li class="nav-item">' +
-            '<a id="fifteen" class="nav-link" data-toggle="tab" href="#calc8" role="tab"' +
-            'aria-controls="messages">15</a>' +
-            '</li>');
-        $('#myTab1').append('<li class="nav-item">' +
-            '<a id="nineteen" class="nav-link" data-toggle="tab" href="#calc9" role="tab"' +
-            'aria-controls="messages">19</a>' +
-            '</li>');
-        $('.stage_3_choose_thiknes').append('<div class="content-right_calc"></div>');
-        $('.content-right_calc').append('<div id="tab-content" class="tab-content"></div>');
-        $('#tab-content').append('<div class="tab-pane active" id="calc1" role="tabpanel">' +
-            '<div class="img_items_stairs">' +
-            '<img src="images/Fartucks/1/1.jpg" alt="1">' +
-            '</div></div>');
         $('#tab-content').append('<div class="tab-pane" id="calc2" role="tabpanel">' +
             '<div class="img_items_stairs">' +
             '<img src="images/Fartucks/1/2.jpg" alt="1">' +
             '</div></div>');
-        $('#tab-content').append('<div class="tab-pane" id="calc3" role="tabpanel">' +
-            '<div class="img_items_stairs">' +
-            '<img src="images/Fartucks/1/3.jpg" alt="1">' +
-            '</div></div>');
-        $('#tab-content').append('<div class="tab-pane" id="calc4" role="tabpanel">' +
-            '<div class="img_items_stairs">' +
-            '<img src="images/Fartucks/1/4.jpg" alt="1">' +
-            '</div></div>');
-        $('#tab-content').append('<div class="tab-pane" id="calc5" role="tabpanel">' +
-            '<div class="img_items_stairs">' +
-            '<img src="images/Fartucks/1/5.jpg" alt="1">' +
-            '</div></div>');
-        $('#tab-content').append('<div class="tab-pane" id="calc6" role="tabpanel">' +
-            '<div class="img_items_stairs">' +
-            '<img src="images/Fartucks/1/6.jpg" alt="1">' +
-            '</div></div>');
-        $('#tab-content').append('<div class="tab-pane" id="calc7" role="tabpanel">' +
-            '<div class="img_items_stairs">' +
-            '<img src="images/Fartucks/1/7.jpg" alt="1">' +
-            '</div></div>');
-        $('#tab-content').append('<div class="tab-pane" id="calc8" role="tabpanel">' +
-            '<div class="img_items_stairs">' +
-            '<img src="images/Fartucks/1/8.jpg" alt="1">' +
-            '</div></div>');
-        $('#tab-content').append('<div class="tab-pane" id="calc9" role="tabpanel">' +
-            '<div class="img_items_stairs">' +
-            '<img src="images/Fartucks/1/9.jpg" alt="1">' +
-            '</div></div>');
+        
+        if (materiaTypelId === "glass" && (materialId === "optWhite" || materialId === "simple")) {
+            $('#myTab1').append('<li class="nav-item">' +
+                '<a id="five" class="nav-link" data-toggle="tab" href="#calc3" role="tab"' +
+                'aria-controls="messages">5</a>' +
+                '</li>');
+            $('#tab-content').append('<div class="tab-pane" id="calc3" role="tabpanel">' +
+                '<div class="img_items_stairs">' +
+                '<img src="images/Fartucks/1/3.jpg" alt="1">' +
+                '</div></div>');
+        }
+
+        if ((materiaTypelId === "mirror" && (materialId === "clearVision" || materialId === "silver")) || (materiaTypelId === "glass")) {
+            $('#myTab1').append('<li class="nav-item">' +
+                '<a id="six" class="nav-link" data-toggle="tab" href="#calc4" role="tab"' +
+                'aria-controls="messages">6</a>' +
+                '</li>');
+            $('#tab-content').append('<div class="tab-pane" id="calc4" role="tabpanel">' +
+                '<div class="img_items_stairs">' +
+                '<img src="images/Fartucks/1/4.jpg" alt="1">' +
+                '</div></div>');
+        }
+
+        if (materiaTypelId === "glass") {
+            $('#myTab1').append('<li class="nav-item">' +
+                '<a id="eight" class="nav-link" data-toggle="tab" href="#calc5" role="tab"' +
+                'aria-controls="messages">8</a>' +
+                '</li>');
+            $('#tab-content').append('<div class="tab-pane" id="calc5" role="tabpanel">' +
+                '<div class="img_items_stairs">' +
+                '<img src="images/Fartucks/1/5.jpg" alt="1">' +
+                '</div></div>');
+            $('#myTab1').append('<li class="nav-item">' +
+                '<a id="ten" class="nav-link" data-toggle="tab" href="#calc6" role="tab"' +
+                'aria-controls="messages">10</a>' +
+                '</li>');
+            $('#tab-content').append('<div class="tab-pane" id="calc6" role="tabpanel">' +
+                '<div class="img_items_stairs">' +
+                '<img src="images/Fartucks/1/6.jpg" alt="1">' +
+                '</div></div>');
+        }
+
+        if (materiaTypelId === "glass" && (materialId === "simple" || materialId === "optWhite")) {
+            $('#myTab1').append('<li class="nav-item">' +
+                '<a id="twelve" class="nav-link" data-toggle="tab" href="#calc7" role="tab"' +
+                'aria-controls="messages">12</a>' +
+                '</li>');
+            $('#tab-content').append('<div class="tab-pane" id="calc7" role="tabpanel">' +
+                '<div class="img_items_stairs">' +
+                '<img src="images/Fartucks/1/7.jpg" alt="1">' +
+                '</div></div>');
+            $('#myTab1').append('<li class="nav-item">' +
+                '<a id="fifteen" class="nav-link" data-toggle="tab" href="#calc8" role="tab"' +
+                'aria-controls="messages">15</a>' +
+                '</li>');
+            $('#tab-content').append('<div class="tab-pane" id="calc8" role="tabpanel">' +
+                '<div class="img_items_stairs">' +
+                '<img src="images/Fartucks/1/8.jpg" alt="1">' +
+                '</div></div>');
+            $('#myTab1').append('<li class="nav-item">' +
+                '<a id="nineteen" class="nav-link" data-toggle="tab" href="#calc9" role="tab"' +
+                'aria-controls="messages">19</a>' +
+                '</li>');
+            $('#tab-content').append('<div class="tab-pane" id="calc9" role="tabpanel">' +
+                '<div class="img_items_stairs">' +
+                '<img src="images/Fartucks/1/9.jpg" alt="1">' +
+                '</div></div>');
+        }
     }
 
     $('#depth').on('click', '#three, #four, #five, #six, #eight, #ten, #twelve, #fifteen, #nineteen', function () {
+        depthId = this.id;
         $('#shape').empty();
+        $('#format').empty();
+        $('#extra').empty();
+        $('#order_info').empty();
         fillShapeDiv();
         $('#shape').show().children().show();
     });
@@ -263,6 +295,8 @@ $( document ).ready(function() {
 
     $('#shape').on('click', '#rectangle, #circle, #oval, #another', function () {
         $('#format').empty();
+        $('#extra').empty();
+        $('#order_info').empty();
         fillFormatDiv();
         $('#format').show().children().show();
     });
@@ -285,6 +319,7 @@ $( document ).ready(function() {
 
     $('#format').on('click', '#without_processing, #with_processing, #facet', function () {
         $('#extra').empty();
+        $('#order_info').empty();
         fillExtraDiv();
         $('#extra').show().children().show();
     });

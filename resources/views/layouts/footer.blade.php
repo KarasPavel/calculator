@@ -91,7 +91,7 @@
         </label>
     </div>
     <div class="button_forms button_forms_popup">
-        <a href="#">отправить</a>
+        <a href="#win3">отправить</a>
     </div>
     <a class="close" title="Закрыть" href="#close"></a>
 </div>
@@ -115,11 +115,25 @@
             <input type="checkbox" id="checkbox18" v-model="checked">
             <label for="checkbox18"><a href="#">Cогласие с конфиденциальностью и куки</a></label>
         </div>
+    </div> 
+       
         <div class="button_forms button_forms_popup">
-            <a href="#">Заказать</a>
+                <a href="#win3">Заказать</a>
+            </div>
+       
+        <a class="close" title="Закрыть" href="#close"></a>
+    </div>
+    <a href="#x" class="overlay" id="win3"></a>
+    <div class="popup popup_choise">
+        <div class="up_form up_form_popup">
+            <h3 class="popup_choise_h2">Ваша заявка была принята!</h3>        
+        </div>       
+        <div class="button_forms button_forms_popup">
+            <a href="#">Ok</a>
         </div>
         <a class="close" title="Закрыть" href="#close"></a>
     </div>
+
     <script type="text/javascript" src={{asset("js/jquery-3.3.1.min.js")}}></script>
     <script type="text/javascript" src={{asset("js/bootstrap.min.js")}}></script>
     <script src={{asset("owl-carusel/dist/compressed.js")}}></script>

@@ -1,12 +1,58 @@
 $( document ).ready(function() {
+    var totalPrice = 0;
     var offsetDay = 1;
     var currency = ' руб.';
-    var priceSum = 0;
-    var materiaTypelId; // mirror, glass
-    var materialId; // '#simple, #optWhite, #bronze, #matt, #silver, #grey, #graphite, #aged, #clearVision, #exclusive, #gold'
+    var triplexSum = 300;
+    var materialTypeId;
+    var materialId;
     var depthId;
     var shapeId;
-    var format;
+    var formatId;
+    var rndNum = 0;
+    var hacNum = 0;
+    var square = 0;
+    var perimeter = 0;
+    var materialPrice = {
+            mirror_silver_four: 1560,
+            mirror_silver_six: 2800,
+            mirror_bronze_four: 2340,
+            mirror_gold_four: 3770,
+            mirror_graphite_four: 2600,
+            mirror_aged_four: 7150,
+            mirror_exclusive_four: 3770,
+            mirror_clearVision_four: 6370,
+            mirror_clearVision_six: 7670,
+            glass_simple_three: 754,
+            glass_simple_four: 754,
+            glass_simple_five: 1027,
+            glass_simple_six: 1170,
+            glass_simple_eight: 1560,
+            glass_simple_ten: 2080,
+            glass_simple_twelve: 2860,
+            glass_simple_fifteen: 9000,
+            glass_simple_nineteen: 11000,
+            glass_bronze_four: 1755,
+            glass_bronze_six: 2210,
+            glass_bronze_eight: 3640,
+            glass_bronze_ten: 4420,
+            glass_gray_four: 1820,
+            glass_gray_six: 2275,
+            glass_gray_eight: 3770,
+            glass_gray_ten: 4680,
+            glass_optWhite_four: 2860,
+            glass_optWhite_five: 3185,
+            glass_optWhite_six: 4030,
+            glass_optWhite_eight: 5200,
+            glass_optWhite_ten: 6370,
+            glass_optWhite_twelve: 8580,
+            glass_optWhite_fifteen: 10000,
+            glass_optWhite_nineteen: 12000,
+            glass_matt_four: 1560,
+            glass_matt_six: 2210,
+            glass_matt_eight: 2730,
+            glass_matt_ten: 3510,
+    };
+
 
     // function httpGet(url) {
     //     return new Promise(function (resolve) {
@@ -41,7 +87,11 @@ $( document ).ready(function() {
 
 
     function setPriceValue(){
-        return ((priceSum  + 150*(offsetDay - 1)) + currency);
+        if (materialTypeId === 'triplex'){
+            totalPrice = priceSum  + 150*(offsetDay - 1);
+            return totalPrice;
+        }
+
     }
 
     function setOrderDay() {
@@ -63,7 +113,7 @@ $( document ).ready(function() {
         $('#calculator_month').val(mm);
         $('#calculator_year').val(yyyy);
         $('#dayName').html(dayName);
-        $('#price').val(setPriceValue());
+        $('#price').val(setPriceValue() + currency);
     }
 
     $('#checkboxPrice').change(function () {
@@ -72,6 +122,7 @@ $( document ).ready(function() {
     });
 
     $('#triplex').click(function () {
+        materialTypeId = this.id;
         $('#material').empty();
         $('#material').append('<div id="calc_stege_2" class="head toggler"></div>');
         $('#calc_stege_2').append('<p class="numver_stage">2</p>');
@@ -86,14 +137,14 @@ $( document ).ready(function() {
         $('#material').append('<a class="contacts">+7 (499) 677-20-67</a>');
         $('#material').append('<a href="#win1">   Консультация и расчет   </a>');
         $('#material').append('<a class="contacts">info@v-t-x.ru</a>');
-        priceSum = 300;
+        triplexSum = 300;
         setPriceValue();
         setOrderDay();
         unfillingDivs();
     });
 
     $('#mirror').click(function () {
-        materiaTypelId = this.id;
+        materialTypeId = this.id;
         $('#material').empty();
         $('#material').append('<div id="calc_stege_2" class="head toggler"></div>');
         $('#calc_stege_2').append('<p class="numver_stage">2</p>');
@@ -120,7 +171,7 @@ $( document ).ready(function() {
     });
 
     $('#glass').click(function () {
-        materiaTypelId = this.id;
+        materialTypeId = this.id;
         $('#material').empty();
         $('#material').append('<div id="calc_stege_2" class="head toggler"></div>');
         $('#calc_stege_2').append('<p class="numver_stage">2</p>');
@@ -157,10 +208,11 @@ $( document ).ready(function() {
         fillDepthDiv();
         $('#depth').show().children().show();
     });
+
     function fillDepthDiv() {
         $('#depth').append('<div id="calc_stege_3" class="head toggler"></div>');
         $('#calc_stege_3').append('<p class="numver_stage">3</p>');
-        $('#calc_stege_3').append('<h4>Толщина изделия</h4>');
+        $('#calc_stege_3').append('<h4>Толщина изделия (мм)</h4>');
         $('#calc_stege_3').append('<i class="fas fa-angle-down"></i>');
         $('#depth').append('<div id="box-calc-3" class="wraper content"></div>');
         $('#box-calc-3').append('<div class="stage_3_choose_thiknes d-flex"></div>');
@@ -168,94 +220,57 @@ $( document ).ready(function() {
         $('.choose_thiknes').append('<ul class="nav nav-tabs d-flex" id="myTab1" role="tablist"></ul>');
 
         $('.stage_3_choose_thiknes').append('<div class="content-right_calc"></div>');
-        $('.content-right_calc').append('<div id="tab-content" class="tab-content"></div>');
 
         if (materialId === "simple") {
             $('#myTab1').append('<li class="nav-item">' +
                 '<a id="three" class="nav-link active" data-toggle="tab" href="#calc1" role="tab"' +
                 'aria-controls="home">3</a>' +
                 '</li>');
-            $('#tab-content').append('<div class="tab-pane active" id="calc1" role="tabpanel">' +
-                '<div class="img_items_stairs">' +
-                '<img src="images/Fartucks/1/1.jpg" alt="1">' +
-                '</div></div>');
         }
 
         $('#myTab1').append('<li class="nav-item">' +
             '<a id="four" class="nav-link" data-toggle="tab" href="#calc2" role="tab"' +
             'aria-controls="profile">4</a>' +
             '</li>');
-        $('#tab-content').append('<div class="tab-pane" id="calc2" role="tabpanel">' +
-            '<div class="img_items_stairs">' +
-            '<img src="images/Fartucks/1/2.jpg" alt="1">' +
-            '</div></div>');
-        
-        if (materiaTypelId === "glass" && (materialId === "optWhite" || materialId === "simple")) {
+
+        if (materialTypeId === "glass" && (materialId === "optWhite" || materialId === "simple")) {
             $('#myTab1').append('<li class="nav-item">' +
                 '<a id="five" class="nav-link" data-toggle="tab" href="#calc3" role="tab"' +
                 'aria-controls="messages">5</a>' +
                 '</li>');
-            $('#tab-content').append('<div class="tab-pane" id="calc3" role="tabpanel">' +
-                '<div class="img_items_stairs">' +
-                '<img src="images/Fartucks/1/3.jpg" alt="1">' +
-                '</div></div>');
         }
 
-        if ((materiaTypelId === "mirror" && (materialId === "clearVision" || materialId === "silver")) || (materiaTypelId === "glass")) {
+        if ((materialTypeId === "mirror" && (materialId === "clearVision" || materialId === "silver")) || (materialTypeId === "glass")) {
             $('#myTab1').append('<li class="nav-item">' +
                 '<a id="six" class="nav-link" data-toggle="tab" href="#calc4" role="tab"' +
                 'aria-controls="messages">6</a>' +
                 '</li>');
-            $('#tab-content').append('<div class="tab-pane" id="calc4" role="tabpanel">' +
-                '<div class="img_items_stairs">' +
-                '<img src="images/Fartucks/1/4.jpg" alt="1">' +
-                '</div></div>');
         }
 
-        if (materiaTypelId === "glass") {
+        if (materialTypeId === "glass") {
             $('#myTab1').append('<li class="nav-item">' +
                 '<a id="eight" class="nav-link" data-toggle="tab" href="#calc5" role="tab"' +
                 'aria-controls="messages">8</a>' +
                 '</li>');
-            $('#tab-content').append('<div class="tab-pane" id="calc5" role="tabpanel">' +
-                '<div class="img_items_stairs">' +
-                '<img src="images/Fartucks/1/5.jpg" alt="1">' +
-                '</div></div>');
             $('#myTab1').append('<li class="nav-item">' +
                 '<a id="ten" class="nav-link" data-toggle="tab" href="#calc6" role="tab"' +
                 'aria-controls="messages">10</a>' +
                 '</li>');
-            $('#tab-content').append('<div class="tab-pane" id="calc6" role="tabpanel">' +
-                '<div class="img_items_stairs">' +
-                '<img src="images/Fartucks/1/6.jpg" alt="1">' +
-                '</div></div>');
         }
 
-        if (materiaTypelId === "glass" && (materialId === "simple" || materialId === "optWhite")) {
+        if (materialTypeId === "glass" && (materialId === "simple" || materialId === "optWhite")) {
             $('#myTab1').append('<li class="nav-item">' +
                 '<a id="twelve" class="nav-link" data-toggle="tab" href="#calc7" role="tab"' +
                 'aria-controls="messages">12</a>' +
                 '</li>');
-            $('#tab-content').append('<div class="tab-pane" id="calc7" role="tabpanel">' +
-                '<div class="img_items_stairs">' +
-                '<img src="images/Fartucks/1/7.jpg" alt="1">' +
-                '</div></div>');
             $('#myTab1').append('<li class="nav-item">' +
                 '<a id="fifteen" class="nav-link" data-toggle="tab" href="#calc8" role="tab"' +
                 'aria-controls="messages">15</a>' +
                 '</li>');
-            $('#tab-content').append('<div class="tab-pane" id="calc8" role="tabpanel">' +
-                '<div class="img_items_stairs">' +
-                '<img src="images/Fartucks/1/8.jpg" alt="1">' +
-                '</div></div>');
             $('#myTab1').append('<li class="nav-item">' +
                 '<a id="nineteen" class="nav-link" data-toggle="tab" href="#calc9" role="tab"' +
                 'aria-controls="messages">19</a>' +
                 '</li>');
-            $('#tab-content').append('<div class="tab-pane" id="calc9" role="tabpanel">' +
-                '<div class="img_items_stairs">' +
-                '<img src="images/Fartucks/1/9.jpg" alt="1">' +
-                '</div></div>');
         }
     }
 
@@ -287,39 +302,64 @@ $( document ).ready(function() {
         $('.Size_calc').append('<div id="another" class="item_size_calc"></div>');
         $('#another').append('<img src="images/figure_size4.png" alt="">' +
             '<p>ИНАЯ ФОРМА</p>');
-        $('.Size_calc').append('<div class="item_size_calc">' +
-            '    <p>Введите размеры</p>' +
-            '    <div id="shape_size" class="input_touch_size">' +
-            '    </div></div>');
+
         $('#circle').click(function () {
             shapeId = this.id;
-            $('#shape_size').empty();
-            $('#shape_size').append('<input id="diameter" type="number" placeholder="мм">диаметр');
+            $('#item_size_calc').detach();
+            $('.Size_calc').append('<div id="item_size_calc" class="item_size_calc">' +
+                '    <p>Введите размеры</p>' +
+                '    <div id="shape_size" class="input_touch_size">' +
+                '    </div></div>');
+            $('#shape_size').append('<input id="shape_diameter" type="number" min="1" placeholder="мм">диаметр');
         });
         $('#shape').on('click', '#rectangle, #oval, #another', function () {
+            $('#item_size_calc').detach();
+            $('.Size_calc').append('<div id="item_size_calc" class="item_size_calc">' +
+                '    <p>Введите размеры</p>' +
+                '    <div id="shape_size" class="input_touch_size">' +
+                '    </div></div>');
             shapeId = this.id;
-            $('#shape_size').empty();
-            $('#shape_size').append('<input id="height" type="number" placeholder="мм">высота' +
-                '<input id="width" type="number" placeholder="мм">ширина');
+            $('#shape_size').append('<input id="shape_height" type="number" min="1" placeholder="мм">высота' +
+                '<input id="shape_width" type="number" min="1" placeholder="мм">ширина');
         })
-        $('#shape_size').append('<input id="height" type="number" placeholder="мм">высота' +
-            '<input id="width" type="number" placeholder="мм">ширина')
-
     }
 
-    // $('#shape').on('keyup', '#width, #height, #diameter', function () {
-    //
-    //     console.log('123')
-    // })
+    $('#shape').on('change', '#shape_width, #shape_height, #shape_diameter', function () {
+        checkSize();
+    });
 
-    $('#shape').on('click', '#rectangle, #circle, #oval, #another', function () {
-        shapeId = this.id;
+    function checkSize(){
         $('#format').empty();
         $('#extra').empty();
         $('#order_info').empty();
-        fillFormatDiv();
-        $('#format').show().children().show();
-    });
+        if ($('#shape_diameter').val() > 0 || $('#shape_height').val()*$('#shape_width').val() > 0 ) {
+            fillFormatDiv();
+            $('#format').show().children().show();
+        }
+    }
+
+    function getSquear() {
+        if (formatId === 'circle'){
+            square = ($('#shape_diameter').val()*$('#shape_diameter').val())/1000000;
+        }
+        square = ($('#shape_height').val()*$('#shape_width').val())/1000000;
+    }
+    
+    function getPerimeter() {
+        if (formatId === 'oval') {
+            perimeter = ($('#shape_height').val()+$('#shape_width').val())*3/1000000;
+        }
+        if (formatId === 'circle' || formatId === 'another') {
+            perimeter = $('#shape_diameter').val()*2*3.14*1.3/1000000;
+        }
+        perimeter = ($('#shape_height').val()+$('#shape_width').val())*2/1000000;
+    }
+
+    function getMaterialPrice() {
+        var materialType = materialTypeId + '_' + materialId + '_' + depthId;
+        alert(materialPrice[materialType]);
+    }
+
     function fillFormatDiv() {
         $('#format').append('<div id="calc_stege_5" class="head toggler"></div>');
         $('#calc_stege_5').append('<p class="numver_stage">5</p>');
@@ -405,9 +445,11 @@ $( document ).ready(function() {
 
     }
 
+
     $('#format').on('click', '#without_processing, #with_processing, ' +
         '#facet5, #facet10, #facet15, #facet20, #facet25, #facet30, #facet35, #facet40', function () {
-        format = this.id;
+
+        formatId = this.id;
         $('#extra').empty();
         $('#order_info').empty();
         fillExtraDiv();
@@ -438,7 +480,7 @@ $( document ).ready(function() {
             $('#hac').detach();
             if ($('#holes_and_cutouts').is(':checked')) {
                 $('#box-calc-6-2-1').append('<label id="hac">' +
-                    '    <input id="hac_num" type="number">Количество' +
+                    '    <input id="hac_num" min="1" type="number">Количество' +
                     '</label>');
             }
         });
@@ -476,7 +518,7 @@ $( document ).ready(function() {
                 $('#box-calc-6-2-2').append('<label id="snd_bl">' +
                     '<select>' +
                     '<option selected id="snd_bl_all">Целиком</option>' +
-                    '<option id="snd_bl_some">Выборка</option>' +
+                    '<option id="snd_bl_some">Рисунок</option>' +
                     '</select>' +
                     '</label>');
             }
@@ -491,14 +533,62 @@ $( document ).ready(function() {
             $('#rnd_con').detach();
             if ($('#round_corners').is(':checked')) {
                 $('#box-calc-6-2-3').append('<label id="rnd_con">' +
-                    '    <input id="rnd_con_num" type="number">Количество' +
+                    '    <input id="rnd_con_num" min="1" type="number">Количество' +
                     '</label>');
             }
         });
     }
 
-    $('#extra').on('click', '#hardening, #holes_and_cutouts, #installation,' +
-        '#painting, #uv_printing, #sand_blasting, #round_corners', function () {
+    $('#extra').on('change', '#rnd_con_num, #hac_num', function () {
+        checkQuantity();
+    });
+
+    function checkQuantity(){
+        let result1;
+        let result2;
+        if ($('#rnd_con_num').length > 0) {
+            if ($('#rnd_con_num').val() > 0){
+                rndNum = $('#rnd_con_num').val();
+                result1 = 1;
+            } else {
+                rndNum = 0;
+                result1 = 0;
+                $('#order_info').empty();
+            }
+        } else {
+            rndNum = 0;
+            result1 = 1;
+        }
+
+        if ($('#hac_num').length > 0) {
+            if ($('#hac_num').val() > 0){
+                hacNum = $('#hac_num').val();
+                result2 = 1;
+            } else {
+                hacNum = 0;
+                result2 = 0;
+                $('#order_info').empty();
+            }
+        } else {
+            hacNum = 0;
+            result2 = 1;
+        }
+
+        if (result1*result2 === 1) {
+            alert('ok');
+            $('#order_info').empty();
+            fillOrderDiv();
+            $('#order_info').show().children().show();
+        } else {
+            alert('-1');
+            $('#order_info').empty();
+        }
+
+    }
+
+
+    $('#extra').on('click', '#hardening, #sand_blasting, #installation,' +
+        '#painting, #uv_printing', function () {
         $('#order_info').empty();
         fillOrderDiv();
         $('#order_info').show().children().show();
@@ -511,20 +601,20 @@ $( document ).ready(function() {
         $('#order_info').append('<div id="box-calc-7" class="wraper content"></div>');
         $('#box-calc-7').append('<div class="Contact_form"></div>');
         $('.Contact_form').append('<div class="first_row"></div>');
-        $('.first_row').append('<input type="text" placeholder="Name">');
-        $('.first_row').append('<input type="number" placeholder="Quantity">');
-        $('.first_row').append('<input type="text" placeholder="Location">');
+        $('.first_row').append('<input type="text" placeholder="Имя">');
+        $('.first_row').append('<input type="number" placeholder="Количество">');
+        $('.first_row').append('<input type="text" placeholder="Адресс">');
         $('.Contact_form').append('<div class="second_row d-flex"></div>');
         $('.second_row').append('<div class="leftTable"></div>');
         $('.leftTable').append('<div class="up_input d-flex "></div>');
-        $('.up_input').append('<input type="tel" placeholder="Phone">');
-        $('.up_input').append('<input type="email" placeholder="Email">');
+        $('.up_input').append('<input type="tel" placeholder="Телефон">');
+        $('.up_input').append('<input type="email" placeholder="Электронная почта">');
         $('.leftTable').append('<div class="down_buttons_distances d-flex"></div>');
-        $('.down_buttons_distances').append('<a class="nav-link" data-toggle="tab" href="#">В пределах МКАД</a>');
-        $('.down_buttons_distances').append('<a class="nav-link" data-toggle="tab" href="#">Не более 5 км от МКАД</a>');
-        $('.down_buttons_distances').append('<a class="nav-link" data-toggle="tab" href="#">Московская область</a>');
+        $('.down_buttons_distances').append('<a id="inMKAD" class="nav-link" data-toggle="tab" href="#">В пределах МКАД</a>');
+        $('.down_buttons_distances').append('<a id="outMKAD" class="nav-link" data-toggle="tab" href="#">Не более 5 км от МКАД</a>');
+        $('.down_buttons_distances').append('<a id="moskowRegion" class="nav-link" data-toggle="tab" href="#">Московская область</a>');
         $('.second_row').append('<div class="right_texbox">' +
-            '   <textarea name="tex" id="" cols="25" rows="3"></textarea>' +
+            '   <textarea name="tex" id="" cols="25" rows="3" placeholder="Комментарий к заказу"></textarea>' +
             '</div>');
         $('.Contact_form').append('<div class="buttons_buy_glass d-flex justify-content-center"></div>');
         $('.buttons_buy_glass').append('<button class="cost_butt buy_buttons">Оформить заказ</button>');

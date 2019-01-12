@@ -1553,16 +1553,33 @@
                                 <input type="text" placeholder="EMail">
                             </div>
                             <div class="checkbox">
-                                <input type="checkbox" id="checkbox8" v-model="checked">
-                                <label for="checkbox8"><a href="#">Cогласие с конфиденциальностью и куки</a></label>
-                            </div>
+                            <label>
+                                <input type="checkbox">
+                                <span class="fake-checkbox" aria-hidden="true"></span>
+                                <span class="label">Согласие с конфиденциальностью и куки</span>
+                            </label>
+                        </div>
                         </div>
                         <div class="button_next">
-                            <a href="">отправить</a>
+                            <a class="next__block" >отправить</a>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div>            
+        </section>
+        <section id="call_back" class="call_back_section">
+            <div class="container">                
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="help_glaas_type help_glaas_type_last thanku ">
+                              <h2 class=" popup_choise_h2">Спасибо за заказ!</h2>                        
+                        </div>
+                        <div class="button_next">
+                            <a  >Ок</a>
+                        </div>
+                    </div>
+                </div>
+            </div>            
         </section>
     </div>
     <div id="4" data-hash="for">
@@ -2173,16 +2190,33 @@
                                 <input type="text" placeholder="EMail">
                             </div>
                             <div class="checkbox">
-                                <input type="checkbox" id="checkbox8" v-model="checked">
-                                <label for="checkbox8"><a href="#">Cогласие с конфиденциальностью и куки</a></label>
-                            </div>
+                            <label>
+                                <input type="checkbox">
+                                <span class="fake-checkbox" aria-hidden="true"></span>
+                                <span class="label">Согласие с конфиденциальностью и куки</span>
+                            </label>
+                        </div>
                         </div>
                         <div class="button_next">
-                            <a href="">отправить</a>
+                            <a class="next__block">отправить</a>
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
+        <section id="call_back" class="call_back_section">
+            <div class="container">                
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="help_glaas_type help_glaas_type_last thanku ">
+                              <h2 class=" popup_choise_h2">Спасибо за заказ!</h2>                        
+                        </div>
+                        <div class="button_next">
+                            <a  >Ок</a>
+                        </div>
+                    </div>
+                </div>
+            </div>            
         </section>
 
     </div>
@@ -2853,16 +2887,33 @@
                                 <input type="text" placeholder="EMail">
                             </div>
                             <div class="checkbox">
-                                <input type="checkbox" id="checkbox8" v-model="checked">
-                                <label for="checkbox8"><a href="#">Cогласие с конфиденциальностью и куки</a></label>
-                            </div>
+                            <label>
+                                <input type="checkbox">
+                                <span class="fake-checkbox" aria-hidden="true"></span>
+                                <span class="label">Согласие с конфиденциальностью и куки</span>
+                            </label>
+                        </div>
                         </div>
                         <div class="button_next">
-                            <a href="">отправить</a>
+                            <a class="next__block">отправить</a>
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
+        <section id="call_back" class="call_back_section">
+            <div class="container">                
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="help_glaas_type help_glaas_type_last thanku ">
+                              <h2 class=" popup_choise_h2">Спасибо за заказ!</h2>                        
+                        </div>
+                        <div class="button_next">
+                            <a >Ок</a>
+                        </div>
+                    </div>
+                </div>
+            </div>            
         </section>
     </div>
 
@@ -3068,7 +3119,7 @@
                                     <li>Зачастую, молча исправляем не наши косяки =)</li>
                                 </ul>
                             </div>
-                            <div class="Glasses_pages_doors"><img src="images/five_page_imgBlock/2/1" alt=""></div>
+                            <div class="Glasses_pages_doors"><img src="images/five_page_imgBlock/2/1.jpg" alt=""></div>
                         </div>
                     </div>
                 </div>
@@ -3383,16 +3434,33 @@
                                 <input type="text" placeholder="EMail">
                             </div>
                             <div class="checkbox">
-                                <input type="checkbox" id="checkbox8" v-model="checked">
-                                <label for="checkbox8"><a href="#">Cогласие с конфиденциальностью и куки</a></label>
-                            </div>
+                            <label>
+                                <input type="checkbox">
+                                <span class="fake-checkbox" aria-hidden="true"></span>
+                                <span class="label">Согласие с конфиденциальностью и куки</span>
+                            </label>
+                        </div>
                         </div>
                         <div class="button_next">
-                            <a href="">отправить</a>
+                            <a class="next__block">отправить</a>
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
+        <section id="call_back" class="call_back_section">
+            <div class="container">                
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="help_glaas_type help_glaas_type_last thanku ">
+                              <h2 class=" popup_choise_h2">Спасибо за заказ!</h2>                        
+                        </div>
+                        <div class="button_next">
+                            <a  >Ок</a>
+                        </div>
+                    </div>
+                </div>
+            </div>            
         </section>
     </div>
 
@@ -3742,7 +3810,7 @@
         </label>
     </div>
     <div class="button_forms button_forms_popup">
-        <a href="#">отправить</a>
+        <a href="#win3">отправить</a>
     </div>
     <a class="close" title="Закрыть" href="#close"></a>
 </div>
@@ -3766,11 +3834,25 @@
             <input type="checkbox" id="checkbox18" v-model="checked">
             <label for="checkbox18"><a href="#">Cогласие с конфиденциальностью и куки</a></label>
         </div>
+    </div> 
+       
         <div class="button_forms button_forms_popup">
-            <a href="#">Заказать</a>
+                <a href="#win3">Заказать</a>
+            </div>
+       
+        <a class="close" title="Закрыть" href="#close"></a>
+    </div>
+    <a href="#x" class="overlay" id="win3"></a>
+    <div class="popup popup_choise">
+        <div class="up_form up_form_popup">
+            <h3 class="popup_choise_h2">Ваша заявка была принята!</h3>        
+        </div>       
+        <div class="button_forms button_forms_popup">
+            <a href="#">Ok</a>
         </div>
         <a class="close" title="Закрыть" href="#close"></a>
     </div>
+
     <script type="text/javascript" src={{asset("js/jquery-3.3.1.min.js")}}></script>
     <script type="text/javascript" src={{asset("js/bootstrap.min.js")}}></script>
     <script src={{asset("owl-carusel/dist/compressed.js")}}></script>

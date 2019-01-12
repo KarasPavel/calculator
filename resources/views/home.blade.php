@@ -1,3 +1,4 @@
+@extends('layouts.head')
 
     <div id="1" data-hash="zero">
 
@@ -663,5 +664,15 @@
 
                 </div>
             </div>
+                
+                
+            <div class="owl-nav">
+                <button type="button" role="presentation" class="owl-prev" style="">
+            <p onclick="topFunction()" id="mybtn" style="display: block;">Название страници <br> Предидущая страница</p><img class="nav-next" src="images/prev_arrows.png" alt=""></button>
+            <button type="button" role="presentation" class="owl-next">
+                <p onclick="topFunction()" id="mybtn">Название страници <br> Следующая страница</p><img src="images/arrow-next_owl.png" alt=""></button>
+            </div>
+            
         </section>
     </div>
+    @extends('layouts.footer')

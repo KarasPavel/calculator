@@ -1,5 +1,6 @@
 </div>
 <footer>
+
     <div class="container">
         <div class="row">
             <div class="col-lg-3 col-md-3">
@@ -140,10 +141,10 @@
     <script type="text/javascript" src={{asset("js/jquery.fancybox.min.js")}}></script>
     {{--    <script type="text/javascript" src={{asset("js/popper.min.js")}}></script>--}}
     {{--    <script type="text/javascript" src={{asset("js/tooltip.min.js")}}></script>--}}
-    {{--<script type="text/javascript" src={{asset("js/libs/functions.js")}}></script>--}}
+    <script type="text/javascript" src={{asset("js/libs/functions.js")}}></script>
     <script type="text/javascript" src={{asset("js/navigationButtons.js")}}></script>
     <script type="text/javascript" src={{asset("js/calculator.js")}}></script>
-    <script type="text/javascript" src="js/testJs.js"></script>
+    <script type="text/javascript" src={{asset("js/testJs.js")}}></script>
      {{--<script type="text/javascript" src="js/logic.js"></script>--}}
 
 </body>

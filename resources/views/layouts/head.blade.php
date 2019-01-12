@@ -14,9 +14,17 @@
     <link rel="stylesheet" href={{asset("style.css")}}>
     <link rel="stylesheet" href={{asset("css/Media.css")}}>
 
-
 </head>
 <body class="">
 <div id="p_prldr">
     <div class="contpre"><i class=" svg_anm fab fa-vuejs"></i></div>
 </div>
+{{--<script>--}}
+        {{--$(window).on('load', function () {--}}
+            {{--var $preloader = $('#p_prldr'),--}}
+                {{--$svg_anm   = $preloader.find('.svg_anm');--}}
+{{----}}
+            {{--$svg_anm.fadeOut();--}}
+            {{--$preloader.delay(0).fadeOut('slow');--}}
+        {{--});--}}
+{{--// </script>--}}

@@ -13,10 +13,10 @@ class MainController extends Controller
 {
     public function getPages(Request $request)
     {
-        dd(view('home', ['user' => $user, 'photo' => $photo, 'video' => $video])->render());
-        dd($returnHTML = view('main2')->render());
-        return response()->json(['home'=>$returnHTML]);
-//        return View::make('home');
+//        dd(view('home', ['user' => $user, 'photo' => $photo, 'video' => $video])->render());
+//        dd($returnHTML = view('main2')->render());
+//        return response()->json(['home'=>$returnHTML]);
+
 
 //        $user = Auth::user();
 //        $photo = Photo::getPhotosWithoutPaginate();

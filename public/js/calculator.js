@@ -8,10 +8,14 @@ $( document ).ready(function() {
     var depthId;
     var shapeId;
     var formatId;
+    var rndPrice = 300;
     var rndNum = 0;
+    var hacPrice = 220;
     var hacNum = 0;
+    var uvPrice = 3500;
     var square = 0;
     var perimeter = 0;
+    var materialType;
     var materialPrice = {
             mirror_silver_four: 1560,
             mirror_silver_six: 2800,
@@ -53,6 +57,83 @@ $( document ).ready(function() {
             glass_matt_ten: 3510,
     };
 
+    var processingPrice = {
+        with_processing_four: 110,
+        with_processing_six: 120,
+        with_processing_eight: 140,
+        with_processing_ten: 160,
+        with_processing_twelve: 180,
+        with_processing_fifteen: 250,
+        with_processing_nineteen: 350,
+        with_processing_five: 110,
+        facet5_four: 170,
+        facet10_four: 200,
+        facet15_four: 220,
+        facet20_four: 240,
+        facet5_six: 170,
+        facet10_six: 200,
+        facet15_six: 220,
+        facet20_six: 240,
+        facet25_six: 270,
+        facet30_six: 320,
+        facet35_six: 370,
+        facet40_six: 420,
+        facet5_eight: 290,
+        facet10_eight: 320,
+        facet15_eight: 340,
+        facet20_eight: 360,
+        facet25_eight: 390,
+        facet30_eight: 440,
+        facet35_eight: 490,
+        facet40_eight: 540,
+        facet5_ten: 310,
+        facet10_ten: 340,
+        facet15_ten: 360,
+        facet20_ten: 380,
+        facet25_ten: 410,
+        facet30_ten: 460,
+        facet35_ten: 510,
+        facet40_ten: 560,
+        facet5_twelve: 330,
+        facet10_twelve: 360,
+        facet15_twelve: 380,
+        facet20_twelve: 400,
+        facet25_twelve: 430,
+        facet30_twelve: 480,
+        facet35_twelve: 530,
+        facet40_twelve: 580,
+    };
+    var harderingPrice = {
+        glass_simple_four: 320,
+        glass_simple_five: 430,
+        glass_simple_six: 480,
+        glass_simple_eight: 520,
+        glass_simple_ten: 740,
+        glass_simple_twelve: 950,
+        glass_simple_fifteen: 1300,
+        glass_simple_nineteen: 1800,
+        glass_bronze_four: 480,
+        glass_bronze_six: 530,
+        glass_bronze_eight: 650,
+        glass_bronze_ten: 750,
+        glass_gray_four: 480,
+        glass_gray_six: 530,
+        glass_gray_eight: 640,
+        glass_gray_ten: 740,
+        glass_optWhite_four: 480,
+        glass_optWhite_five: 510,
+        glass_optWhite_six: 560,
+        glass_optWhite_eight: 630,
+        glass_optWhite_ten: 760,
+        glass_optWhite_twelve: 1100,
+        glass_optWhite_fifteen: 1500,
+        glass_optWhite_nineteen: 2000,
+        glass_matt_four: 480,
+        glass_matt_six: 560,
+        glass_matt_eight: 640,
+        glass_matt_ten: 760,
+    };
+
 
     // function httpGet(url) {
     //     return new Promise(function (resolve) {
@@ -88,13 +169,18 @@ $( document ).ready(function() {
 
     function setPriceValue(){
         if (materialTypeId === 'triplex'){
-            totalPrice = priceSum  + 150*(offsetDay - 1);
-            return totalPrice;
+            totalPrice = triplexSum  + 150*(offsetDay - 1);
+            return Math.round(totalPrice);
+        } else {
+            getMaterialPrice();
+            getProcessingPrice();
+            totalPrice = getProcessingPrice() + getMaterialPrice() + getHardeningPrice() + getOptionalPrice();
+            return Math.round(totalPrice);
         }
-
     }
 
     function setOrderDay() {
+        setPriceValue()
         var today = new Date();
         today.setDate(today.getDate() + offsetDay);
         var dd = today.getDate();
@@ -137,8 +223,7 @@ $( document ).ready(function() {
         $('#material').append('<a class="contacts">+7 (499) 677-20-67</a>');
         $('#material').append('<a href="#win1">   Консультация и расчет   </a>');
         $('#material').append('<a class="contacts">info@v-t-x.ru</a>');
-        triplexSum = 300;
-        setPriceValue();
+        // setPriceValue();
         setOrderDay();
         unfillingDivs();
     });
@@ -166,7 +251,7 @@ $( document ).ready(function() {
         $('#exclusive').append('<p>Эксклюзив</p>');
         $('#box-calc-2-2').append('<div id="gold" class="help_glass_items calc_content2"></div>');
         $('#gold').append('<p>Золото</p>');
-
+        $('#price').val('');
         unfillingDivs();
     });
 
@@ -194,6 +279,7 @@ $( document ).ready(function() {
         $('#box-calc-2-2').append('<div id="grey" class="help_glass_items calc_content2"></div>');
         $('#grey').append('<img src="images/glaas6.png" alt="">');
         $('#grey').append('<p>Серое</p>');
+        $('#price').val('');
         unfillingDivs();
     });
 
@@ -333,31 +419,58 @@ $( document ).ready(function() {
         $('#extra').empty();
         $('#order_info').empty();
         if ($('#shape_diameter').val() > 0 || $('#shape_height').val()*$('#shape_width').val() > 0 ) {
+            getSquare();
+            getPerimeter();
+            setOrderDay();
             fillFormatDiv();
             $('#format').show().children().show();
         }
     }
 
-    function getSquear() {
-        if (formatId === 'circle'){
+    function getSquare() {
+        if (shapeId === 'circle'){
             square = ($('#shape_diameter').val()*$('#shape_diameter').val())/1000000;
+        } else {
+            square = ($('#shape_height').val()*$('#shape_width').val())/1000000;
         }
-        square = ($('#shape_height').val()*$('#shape_width').val())/1000000;
     }
     
     function getPerimeter() {
-        if (formatId === 'oval') {
-            perimeter = ($('#shape_height').val()+$('#shape_width').val())*3/1000000;
+        if (shapeId === 'oval') {
+            perimeter = (parseInt($('#shape_height').val()) + parseInt($('#shape_width').val()))*3/1000;
+        } else if (shapeId === 'circle' || shapeId === 'another') {
+            perimeter = $('#shape_diameter').val()*3.14159*1.3/1000;
+        } else {
+            perimeter = (parseInt($('#shape_height').val()) + parseInt($('#shape_width').val()))*2/1000;
         }
-        if (formatId === 'circle' || formatId === 'another') {
-            perimeter = $('#shape_diameter').val()*2*3.14*1.3/1000000;
-        }
-        perimeter = ($('#shape_height').val()+$('#shape_width').val())*2/1000000;
     }
 
     function getMaterialPrice() {
-        var materialType = materialTypeId + '_' + materialId + '_' + depthId;
-        alert(materialPrice[materialType]);
+        materialType = materialTypeId + '_' + materialId + '_' + depthId;
+        return materialPrice[materialType] * square;
+    }
+
+    function getProcessingPrice() {
+        if (formatId === 'without_processing' || formatId === undefined) {
+            return 0;
+        } else {
+            let processingType = formatId + '_' + depthId;
+            return processingPrice[processingType] * perimeter;
+        }
+    }
+
+    $('#hardening').change(function () {
+        getHardeningPrice();
+        setOrderDay();
+    });
+
+
+    function getHardeningPrice() {
+        if ($('#hardening').is(':checked')){
+            return harderingPrice[materialType] * square;
+        } else {
+            return 0;
+        }
     }
 
     function fillFormatDiv() {
@@ -448,10 +561,10 @@ $( document ).ready(function() {
 
     $('#format').on('click', '#without_processing, #with_processing, ' +
         '#facet5, #facet10, #facet15, #facet20, #facet25, #facet30, #facet35, #facet40', function () {
-
         formatId = this.id;
         $('#extra').empty();
         $('#order_info').empty();
+        setOrderDay();
         fillExtraDiv();
         $('#extra').show().children().show();
     });
@@ -543,6 +656,29 @@ $( document ).ready(function() {
         checkQuantity();
     });
 
+
+    $('#uv_printing').change(function () {
+        getOptionalPrice();
+        setOrderDay();
+    });
+
+    $('#round_corners').change(function () {
+        getOptionalPrice();
+        setOrderDay();
+    });
+
+
+    function getOptionalPrice() {
+        let sum = rndNum * rndPrice + hacNum * hacPrice
+        if ($('#uv_printing').is(':checked')){
+            return sum + uvPrice * square;
+        } else {
+            return sum;
+        }
+    }
+
+
+
     function checkQuantity(){
         let result1;
         let result2;
@@ -575,12 +711,12 @@ $( document ).ready(function() {
         }
 
         if (result1*result2 === 1) {
-            alert('ok');
             $('#order_info').empty();
+            getOptionalPrice()
+            setOrderDay();
             fillOrderDiv();
             $('#order_info').show().children().show();
         } else {
-            alert('-1');
             $('#order_info').empty();
         }
 
@@ -590,6 +726,7 @@ $( document ).ready(function() {
     $('#extra').on('click', '#hardening, #sand_blasting, #installation,' +
         '#painting, #uv_printing', function () {
         $('#order_info').empty();
+        setOrderDay();
         fillOrderDiv();
         $('#order_info').show().children().show();
     });

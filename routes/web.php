@@ -14,6 +14,8 @@
 
 Auth::routes();
 Route::get('/', 'MainController@main')->name('main');
+//getPages
+Route::post('getPages','MainController@getPages')->name('getPages');
 Route::middleware('auth')->group(function () {
     Route::get('cabinet/{id}', 'MainController@cabinet')->name('cabinet');
     Route::get('logout', 'Auth\LoginController@logout')->name('logout');

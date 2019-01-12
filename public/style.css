@@ -193,7 +193,7 @@ a, .navbar-toggler:not(:disabled):not(.disabled), label{
 	height: 99.1%;
 	position: relative;
 	z-index: 6;
-	width: Calc(50% - 3px);
+	width: Calc(50%);
 	background-size: cover;
 	background-position: center;
 }
@@ -1167,7 +1167,7 @@ input[type="checkbox"] {
 	height: 100%;
 	position: relative;
 	z-index: 6;
-	width: Calc(50% - 3px);
+	width: Calc(50%);
 	background-size: cover;
 	background-position: left;
 }
@@ -2163,6 +2163,8 @@ input[type="checkbox"] {
 	left: 1%;
 }
 .owl-prev{
+	z-index: 999;
+	border: none;
 	position: fixed;
 	bottom: -0.5%;
 	left:  0%;
@@ -2175,6 +2177,13 @@ input[type="checkbox"] {
 	top: 13px;
 	left:  15px;
 }
+.thanku h2{
+	text-align: center;
+    margin: 80px 0;
+}
+.owl-height{
+	transition: height .2s ease-in-out;
+}
 .owl-prev p{
 	color: #6694b9;
 	font-family: "Helvetica Neue Cyr - Roman";
@@ -2185,6 +2194,8 @@ input[type="checkbox"] {
 	letter-spacing: 0.52px;
 }
 .owl-next{
+	border: none;
+	z-index: 999;
 	position: fixed;
 	bottom: -0.5%;
 	right:  0%;

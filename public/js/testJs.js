@@ -27,14 +27,14 @@ $(document).ready(function () {
         '_token': $('meta[name="csrf-token"]').attr('content'),
         _method: 'POST',
     }, function (data, status) {
-        console.log(data);
+
         // console.log(status);
-        // views.push(responce)
+        views.push(responce)
     });
 
 
     $('.navbar-brand').on('click', function () {
-        $('.main-content > section').empty(2000);
-        $('.main-content').append($(views[0])).slideDown("fast");
+        $('.home-page > section').empty(2000);
+        $('.home-page').append($(views[0])).slideDown("fast");
     });
 });

@@ -203,6 +203,9 @@
 	.glass_door_items_down img{
 		width: 450px!important;
 	}
+	.glass_door_items_new_img img{
+		width: 225px!important;
+	}
 	.help_glaas_type{
 		flex-wrap: wrap;
    		justify-content: space-around;

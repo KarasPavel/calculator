@@ -1375,8 +1375,10 @@ input[type="checkbox"] {
 .glass_door_items img{
 	position: relative;
 	z-index: 2;
-
+	width: 567px!important;
+	height: 270px;
 }
+
 .glass_door_item{
 	position: relative;
 	z-index: 1;
@@ -1449,7 +1451,12 @@ input[type="checkbox"] {
 	position: relative;
 	z-index: 2;
 	left: -40px;
+	width: 567px!important;
+    height: 272px;
 
+}
+.glass_door_items_new_img img{
+	width: 273px!important;
 }
 .glass_door_item_down{
 	position: relative;

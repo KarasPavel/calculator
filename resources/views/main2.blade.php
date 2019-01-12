@@ -1346,7 +1346,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="glass_door_items d-flex">
-                            <img src="images/door_img_up.png" alt="">
+                            <img src="images/second_page_imageBlock/1/1.jpg" alt="">
                             <div class="glass_door_item">
                                 <p>Качественная дверь - залог герметичности и долговечности в эксплуатации душевых
                                     кабин. Мы делаем двери из закаленного стекла, с толщиной от 8мм и выше, а ход двери
@@ -1390,7 +1390,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <img src="images/door_img_up.png" alt="">
+                            <img src="images/second_page_imageBlock/2/1.jpg" alt="">
                         </div>
                     </div>
                 </div>
@@ -1782,33 +1782,38 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="advantages_items">
                             <img src="images/Money.png" alt="">
-                            <p class="cursor_text">Давно выяснено, что при оценке дизайна и композиции читаемый текст
-                                мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или
-                                менее стандартное заполнение шаблона</p>
+                            <p class="cursor_text">Мы не самая бюджетная компания на рынке.
+                                 Вы можете найти сотни вариантов более дешевых пластиковых и модульных перегородок, которые даже
+                                  близко не сравнятся с характеристиками нашей продукции.
+                                  Мы гордимся тем, что за оплаченные деньги Вы получите изделие, за которое не стыдно.
+                                 Уверяем, что пресловутое соотношение "цена/качество" у нас самое лучшее.</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="advantages_items">
                             <img src="images/Door.png" alt="">
-                            <p class="cursor_text">Давно выяснено, что при оценке дизайна и композиции читаемый текст
-                                мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или
-                                менее стандартное заполнение шаблона</p>
+                            <p class="cursor_text">Работаем с общественными местами большой проходимостью.
+                                 Например, маятниковые двери, которые мы производим стоят в Московском метрополитене,
+                                  МЦК, торговых центрах, расчитаны на более чем 20 лет службы при милионной проходимости.
+                                 При этом закаленное стекло - пожаростойкий материал, применяемый не только для эстетики.</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="advantages_items">
                             <img src="images/Pro.png" alt="">
-                            <p class="cursor_text">Давно выяснено, что при оценке дизайна и композиции читаемый текст
-                                мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или
-                                менее стандартное заполнение шаблона</p>
+                            <p class="cursor_text">В нашей компании работают люди с существенным опытом работы в стекольной промышленности.
+                                 Вы можете быть уверены в профессионализме наших рабочих и монтажников.
+                                  Мы работаем в сфере уже не первый год, сталкивались с большим количеством проблем и всегда находили решения.
+                                 Опыт - это не пустой звук, особенно в нашем ремесле.</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="advantages_items">
                             <img src="images/Diamond.png" alt="">
-                            <p class="cursor_text">Давно выяснено, что при оценке дизайна и композиции читаемый текст
-                                мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или
-                                менее стандартное заполнение шаблона</p>
+                            <p class="cursor_text">Используем первоклассное сырье от ведущих мировых брендов -
+                                 AGC (Япония), Guardian (Великобритания), Pilkington (Великобритания).
+                                  Обработка изделий, так же ведется на Итальянском и Немецком оборудовании,
+                                 зарекомендовавших себя как лучшие на рынке, дающее точные размеры и превосходное качество изделий.</p>
                         </div>
                     </div>
                 </div>
@@ -2342,7 +2347,10 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="glass_door_items d-flex">
-                            <img src="images/door_img_up.png" alt="">
+                           <div class="glass_door_items_new_img d-flex">
+                           <img src="images/three_page_image/1/1.jpg" alt="">
+                            <img src="images/three_page_image/1/2.jpg" alt="">
+                           </div>
                             <div class="glass_door_item">
                                 <p>Наша компания производит зеркала с различными вариантами
                                      обработок, с подсветкой и рисунками от простого изделия
@@ -2410,7 +2418,10 @@
                                     <li>Пулестойкие зеркала, скрытые двери, зеркало-шпион</li>
                                 </ul>
                             </div>
-                            <img src="images/door_img_up.png" alt="">
+                            <div class="glass_door_items_new_img d-flex">
+                                <img src="images/three_page_image/2/1.jpg" alt="">
+                                <img src="images/three_page_image/2/2.jpg" alt="">
+                           </div>
                         </div>
                     </div>
                 </div>
@@ -2481,7 +2492,10 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="glass_door_items Glasses_pages_doors d-flex">
-                            <img class="glass_image_page_glass" src="images/door_img_up.png" alt="">
+                        <div class="glass_door_items_new_img d-flex">
+                                <img src="images/three_page_image/3/1.jpg" alt="">
+                                <img src="images/three_page_image/3/2.jpg" alt="">
+                           </div>
                             <a class="glass_door_item_buttons" href="#win1">бесплатная консультация</a>
                             <div class="glass_door_item">
                                 <p>Зеркальное панно - это композиция, состоящая из отдельных зеркальных элементов с
@@ -2533,25 +2547,30 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="advantages_items">
                             <img src="images/Door.png" alt="">
-                            <p class="cursor_text">Давно выяснено, что при оценке дизайна и композиции читаемый текст
-                                мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или
-                                менее стандартное заполнение шаблона</p>
+                            <p class="cursor_text">Для зеркал мы используем только влагостойкое сырье.
+                                 А гидрофобное покрытие, которое мы наносим, обеспечит лучшую защиту 
+                                 от пыли, воды и грязи, позволяя
+                                 долгое время не намывать изделие, наслаждаясь его блеском и первозданной красотой.</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="advantages_items">
                             <img src="images/Pro.png" alt="">
-                            <p class="cursor_text">Давно выяснено, что при оценке дизайна и композиции читаемый текст
-                                мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или
-                                менее стандартное заполнение шаблона</p>
+                            <p class="cursor_text">Зеркальное панно делают для невероятной по своей красоте
+                                 игры бликов, красоты рисунка и эстетики геометрических линий. Это не просто 
+                                 зеркало. Это исключительно, творческая и кропотливая работа, к которой допускаются
+                                  только старшие мастера производства. Поверьте, подогнать зеркала друг к другу без замазок и с
+                                 минимальным швом, без использования гравера, который значительно тускнее и дает искривленнее фацета,
+                                  - это искусство.</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="advantages_items">
                             <img src="images/Diamond.png" alt="">
-                            <p class="cursor_text">Давно выяснено, что при оценке дизайна и композиции читаемый текст
-                                мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или
-                                менее стандартное заполнение шаблона</p>
+                            <p class="cursor_text">Для изготовления зеркального панно применяется
+                                 зеркала различного типа и цвета высшей марки. Зеркала дополнительно
+                                  полируются, на них наносят защитные покрытия и они проходят доп. проверки,
+                                 находясь под личным контролем Цехового Мастера.</p>
                         </div>
                     </div>
                 </div>
@@ -2991,7 +3010,10 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="glass_door_items Glasses_pages_doors d-flex">
-                            <img class="glass_image_page_glass" src="images/door_img_up.png" alt="">
+                        <!-- <div class="glass_door_items_new_img d-flex"> -->
+                           <img src="images/five_page_imgBlock/1/1.jpg" alt="">
+                            
+                           <!-- </div> -->
                             <div class="glass_door_item">
                                 <p> Наносим специализированные полимерные краски, стойкие
                                      к нахождению в агрессивных средах и механическим 
@@ -3046,7 +3068,7 @@
                                     <li>Зачастую, молча исправляем не наши косяки =)</li>
                                 </ul>
                             </div>
-                            <div class="Glasses_pages_doors"><img src="images/door_img_up.png" alt=""></div>
+                            <div class="Glasses_pages_doors"><img src="images/five_page_imgBlock/2/1" alt=""></div>
                         </div>
                     </div>
                 </div>

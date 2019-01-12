@@ -3,6 +3,7 @@
 		line-height: 35px;
 		font-size: 25px !important;
 	}
+	
 	.header_small_text{
 		font-size: 11px;
 	}
@@ -18,6 +19,22 @@
 	.call-back_header{
 		font-size: 10px;
 	}
+	.stairs_and_flooring_buttons4{
+		margin: 30px 82px;
+	}
+	.stairs_and_flooring_buttons{
+		background: unset;
+		margin: 30px 0;
+	}
+	.galery_kripezh-pos{
+		left: 0;
+	}
+	.cost_calculation__link{
+		justify-content: space-around;
+	}
+	.shower_type_items .glasses_img_fastener2{
+		left: 0;
+	}
 	.advantages_items{
 		margin-top: 40px;
 	}
@@ -27,9 +44,9 @@
 	.turnkey_product h2{
 		line-height: 44px;
 	}
-	.turnkey_items p{
+	/* .turnkey_items p{
 	
-	}
+	} */
 	.footer_logo img{
 		width: 150px;
 	}
@@ -73,12 +90,16 @@
 		height: 100%;
 		object-fit: cover;
 		padding: 0;
+		width: 100%!important;
 	}
 	.turnkey_items p{
-		padding: 20px 70px;
+		padding:15px;
 	}
 	.services_items{
 		margin-bottom: 5px;
+	}
+	.contacts p{
+		margin-top: 10px;
 	}
 
 }
@@ -119,6 +140,40 @@
 	.shower_type_items img{
 		display: none !important;
 	}
+	.stairs_and_flooring_buttons1{
+		background: unset;
+	}
+	.stairs_and_flooring_buttons{
+		margin: 30px 73px;
+		background-position-y: 1px;
+	}
+	.stairs_and_flooring h2{
+		line-height: 40.99px;
+	}
+	.stairs_and_flooring_buttons4{
+		margin: 30px 202px;
+	}	
+	.stairs_and_flooring_buttons5{
+		margin: 30px 202px;
+    	background-position-y: -46px;
+	}
+	.stairs_and_flooring_buttons2{
+		margin: 30px 268px;
+    	background-position-y: -46px;
+	}
+	.orenge_block_calc h2{
+		margin: 40px 0;
+		color: #ffffff;
+		font-family: "Open Sans";
+		font-size: 31px;
+		font-weight: 300;
+		line-height: 30px;
+		text-transform: uppercase;
+		letter-spacing: 7px;
+	}
+	.Glasses_pages_doors img{
+		width: 50%;
+	}
 }
 @media screen and (max-width: 1200px){
 	.shower_type_items{
@@ -130,15 +185,23 @@
 		width: auto;
 	}
 	.shower_type_item-right {
-		width: auto;
+		width: 100%;
 		left: unset;
 	}
-	
+	.iphone_calc img{
+		right: 0;
+	}
+	.glass_door_item_buttons{
+		left: 6%;
+	}
+	.aprons_items_button{
+		left: 40%;
+	}
 	.glass_door_items img{
-		width: 450px;
+		width: 440px!important;
 	}
 	.glass_door_items_down img{
-		width: 450px;
+		width: 450px!important;
 	}
 	.help_glaas_type{
 		flex-wrap: wrap;
@@ -147,15 +210,43 @@
 	.help_glass_items{
 		margin-bottom: 10px;
 	}
+	.white{
+		font-size: 13px;
+	}
 
 }
 @media screen and (max-width: 991px) {
 	.iphone_calc img{
 		display: none !important;
 	}
+	#master_calling{
+		width: 186px;
+	}
+	#calculations_buttons{
+		width: 184px;
+	}
+	.video_our{
+		flex-direction: column;		
+	}
+	.video_our iframe{
+		width: auto;
+	}
+	.bg_types_door_items{
+		margin: 0 auto;
+    	width: 250px;
+	}
+	.types_of_door_item h3:before{
+		left: 295px;
+	}
+	.turnkey_items{
+		width: auto;
+	}
 	.glass_door_item_buttons{
-		top: 365px;
-    left: 25%;
+		top: 83%;
+    	left: 22%;
+	}
+	.comparison_glass_items .glasses_img_fastener1{
+		left: unset;
 	}
 	.shower_type_items img{
 		left: unset;
@@ -173,9 +264,37 @@
 	.glass_door_item_down{
 		padding: 10px 40px;
 	}
+	.white{
+		font-size: 13px;
+	}
 }
 @media screen and (max-width: 767px){
-	
+	.footer_menu{
+		width: 75px;
+		margin: auto;
+	}
+	.video_glass iframe{
+		width: auto;
+	}
+	.logo{
+		width: 115px;
+	}
+	.navbar-toggler{
+		margin: -2px;
+	}
+	.header_call-back p{
+		font-size: 15px;
+	}
+	.call-back_header{
+		letter-spacing: 1.6px;
+	}
+	.glass_door_item_buttons{
+		top: 90%;
+		left: 9%;
+	}
+	.glass_door_item_buttons{
+		padding: 5px 15px;
+	}
 	.shower_type_item-left{
 		height: auto;
 	}
@@ -190,6 +309,22 @@
 	}
 	.manufacture_items{
 		margin: 0;
+	}
+	.contacts{
+		text-align: center;
+	}
+	.types_of_door_item h3:before{
+		left: 120px;
+	}
+	.call-back{
+		margin: 5px auto;
+	}
+	.soc_icons{
+		text-align: center;
+	}
+	.footer_logo{
+		text-align: center;
+    	margin: 5px auto;
 	}
 }
 @media screen and (max-width: 556px){

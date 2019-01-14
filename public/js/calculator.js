@@ -162,7 +162,11 @@ $( document ).ready(function() {
                 + getHardeningPrice()
                 + getOptionalPrice()
                 + getDeliveryPrice();
-            return Math.round(totalPrice);
+            if (!totalPrice){
+                return 0;
+            } else {
+                return Math.round(totalPrice);
+            }
         }
     }
 
@@ -601,7 +605,7 @@ $( document ).ready(function() {
         $('#extra').append('<div id="box-calc-6" class="wraper content"></div>');
         $('#box-calc-6').append('<div id="box-calc-6-1" class="chekbox_sect_6 d-flex"></div>');
         $('#box-calc-6-1').append('<div id="box-calc-6-2-1" class="first_chekbox"></div>');
-        if (depthId != "three" && formatId != "without_processing"){
+        if (depthId != "three" && formatId != "without_processing" && materialTypeId != "mirror"){
             $('#box-calc-6-2-1').append('<label>' +
                 '    <input id="hardening" type="checkbox">' +
                 '    <span class="fake-checkbox" aria-hidden="true"></span>' +

@@ -1,6 +1,29 @@
 </div>
 <footer>
-
+<div class="owl-dots">
+    <button role="button" class="owl-dot">
+    <span></span>
+</button>
+<button role="button" class="owl-dot">
+    <span>
+</span>
+</button>
+<button role="button" class="owl-dot">
+    <span></span>
+</button>
+<button role="button" class="owl-dot">
+    <span></span>
+</button>
+<button role="button" class="owl-dot">
+    <span></span
+    ></button>
+    <button role="button" class="owl-dot active"><span></span>
+</button>
+<button role="button" class="owl-dot"><span></span>
+</button>
+<button role="button" class="owl-dot"><span></span>
+</button>
+</div>
     <div class="container">
         <div class="row">
             <div class="col-lg-3 col-md-3">

@@ -3505,7 +3505,7 @@
                             </h4>
                             <input disabled id="price" type="text">
                             <h4>ГОТОВНОСТЬ НА:</h4>
-                            <p>(без срочности)</p>
+                            <p id="urgency"></p>
                             <div id="cost_calculation_day" class="date_calc">
                                 <input disabled id="calculator_day" type="day">
                                 <input disabled id="calculator_month" type="day">

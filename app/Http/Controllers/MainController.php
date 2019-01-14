@@ -31,7 +31,7 @@ class MainController extends Controller
         $photo = Photo::getPhotosWithoutPaginate();
         $video = Video::getVideos();
 //        return view('main2', ['user' => $user, 'photo' => $photo, 'video' => $video]);
-        return view('home', ['user' => $user, 'photo' => $photo, 'video' => $video]);
+        return view('main2', ['user' => $user, 'photo' => $photo, 'video' => $video]);
     }
 
 }

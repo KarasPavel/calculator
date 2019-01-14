@@ -8,6 +8,7 @@ $( document ).ready(function() {
     var depthId;
     var shapeId;
     var formatId;
+    var deliveryType;
     var rndPrice = 300;
     var rndNum = 0;
     var hacPrice = 220;
@@ -16,6 +17,18 @@ $( document ).ready(function() {
     var square = 0;
     var perimeter = 0;
     var materialType;
+    var sandBlastingAll = 1100;
+    var sandBlastingSome = 2200;
+    var paintingAll = 2500;
+    var paintingSome = 4800;
+
+
+    var inMKADPrice = 1200;
+    var outMKADPrice = 1500;
+    var moskowRegionPrice = 2500;
+    var pickupPrice = 250;
+
+
     var materialPrice = {
             mirror_silver_four: 1560,
             mirror_silver_six: 2800,
@@ -174,7 +187,11 @@ $( document ).ready(function() {
         } else {
             getMaterialPrice();
             getProcessingPrice();
-            totalPrice = getProcessingPrice() + getMaterialPrice() + getHardeningPrice() + getOptionalPrice();
+            totalPrice = getProcessingPrice()
+                + getMaterialPrice()
+                + getHardeningPrice()
+                + getOptionalPrice()
+                + getDeliveryPrice();
             return Math.round(totalPrice);
         }
     }
@@ -414,6 +431,10 @@ $( document ).ready(function() {
         checkSize();
     });
 
+    $('#shape').on('keyup', '#shape_width, #shape_height, #shape_diameter', function () {
+        checkSize();
+    });
+
     function checkSize(){
         $('#format').empty();
         $('#extra').empty();
@@ -577,7 +598,7 @@ $( document ).ready(function() {
         $('#extra').append('<div id="box-calc-6" class="wraper content"></div>');
         $('#box-calc-6').append('<div id="box-calc-6-1" class="chekbox_sect_6 d-flex"></div>');
         $('#box-calc-6-1').append('<div id="box-calc-6-2-1" class="first_chekbox"></div>');
-        if (depthId != "three"){
+        if (depthId != "three" && formatId != "without_processing"){
             $('#box-calc-6-2-1').append('<label>' +
                 '    <input id="hardening" type="checkbox">' +
                 '    <span class="fake-checkbox" aria-hidden="true"></span>' +
@@ -604,11 +625,11 @@ $( document ).ready(function() {
             '    <span class="fake-checkbox" aria-hidden="true"></span>' +
             '    <span class="label">Покраска стекла</span>' +
             '</label>');
-        $('#painting').click(function () {
+        $('#painting').change(function () {
             $('#pnt').detach();
             if ($('#painting').is(':checked')) {
                 $('#uv_label').before('<label id="pnt">' +
-                    '<select>' +
+                    '<select id="pnt_select">' +
                     '<option selected id="pnt_all">Целиком</option>' +
                     '<option id="pnt_some">Выборка</option>' +
                     '</select>' +
@@ -625,11 +646,11 @@ $( document ).ready(function() {
             '    <span class="fake-checkbox" aria-hidden="true"></span>' +
             '    <span class="label">Пескоструй</span>' +
             '</label>');
-        $('#sand_blasting').click(function () {
+        $('#sand_blasting').change(function () {
             $('#snd_bl').detach();
             if ($('#sand_blasting').is(':checked')) {
                 $('#box-calc-6-2-2').append('<label id="snd_bl">' +
-                    '<select>' +
+                    '<select id="snd_bl_select">' +
                     '<option selected id="snd_bl_all">Целиком</option>' +
                     '<option id="snd_bl_some">Рисунок</option>' +
                     '</select>' +
@@ -642,7 +663,7 @@ $( document ).ready(function() {
             '    <span class="fake-checkbox" aria-hidden="true"></span>' +
             '    <span class="label">Скругления по углам</span>' +
             '</label>');
-        $('#round_corners').click(function () {
+        $('#round_corners').change(function () {
             $('#rnd_con').detach();
             if ($('#round_corners').is(':checked')) {
                 $('#box-calc-6-2-3').append('<label id="rnd_con">' +
@@ -652,28 +673,71 @@ $( document ).ready(function() {
         });
     }
 
-    $('#extra').on('change', '#rnd_con_num, #hac_num', function () {
+    $('#extra').on('change', '#rnd_con_num, #hac_num, #round_corners, #holes_and_cutouts', function () {
+        rndNum = 0;
+        hacNum = 0;
         checkQuantity();
     });
 
-
-    $('#uv_printing').change(function () {
-        getOptionalPrice();
-        setOrderDay();
+    $('#extra').on('keyup', '#rnd_con_num, #hac_num', function () {
+        rndNum = 0;
+        hacNum = 0;
+        checkQuantity();
     });
 
-    $('#round_corners').change(function () {
+    $('#extra').on('change', '#pnt, #snd_bl, #uv_printing, ' +
+        '#round_corners, #holes_and_cutouts, #painting, #sand_blasting', function () {
         getOptionalPrice();
         setOrderDay();
-    });
-
+    })
 
     function getOptionalPrice() {
-        let sum = rndNum * rndPrice + hacNum * hacPrice
+        let sum;
+        getUvPrintingPrice();
+        getPaintingPrice();
+        getSandBlastingPrice();
+        sum = rndNum * rndPrice + hacNum * hacPrice + getUvPrintingPrice() + getPaintingPrice() + getSandBlastingPrice();
+        return sum;
+    }
+
+    
+    function getUvPrintingPrice() {
         if ($('#uv_printing').is(':checked')){
-            return sum + uvPrice * square;
+            return uvPrice * square;
         } else {
-            return sum;
+            return 0;
+        }
+    }
+
+
+
+    function getPaintingPrice() {
+        let sum;
+        if ($('#painting').is(':checked')){
+            if ($('#pnt_select').find(':selected').attr('id') === 'pnt_some') {
+                sum = paintingSome * square;
+                return sum;
+            } else {
+                sum = paintingAll * square;
+                return sum;
+            }
+        } else {
+            return 0;
+        }
+    }
+
+    function getSandBlastingPrice() {
+        let sum;
+        if ($('#sand_blasting').is(':checked')){
+            if ($('#snd_bl_select').find(':selected').attr('id') === 'snd_bl_some') {
+                sum = sandBlastingSome * square;
+                return sum;
+            } else {
+                sum = sandBlastingAll * square;
+                return sum;
+            }
+        } else {
+            return 0;
         }
     }
 
@@ -682,7 +746,8 @@ $( document ).ready(function() {
     function checkQuantity(){
         let result1;
         let result2;
-        if ($('#rnd_con_num').length > 0) {
+        if ($('#round_corners').is(':checked')) {
+            rndNum = 0;
             if ($('#rnd_con_num').val() > 0){
                 rndNum = $('#rnd_con_num').val();
                 result1 = 1;
@@ -690,13 +755,15 @@ $( document ).ready(function() {
                 rndNum = 0;
                 result1 = 0;
                 $('#order_info').empty();
+                deliveryType = null;
             }
         } else {
             rndNum = 0;
             result1 = 1;
         }
 
-        if ($('#hac_num').length > 0) {
+        if ($('#holes_and_cutouts').is(':checked')) {
+            hacNum = 0;
             if ($('#hac_num').val() > 0){
                 hacNum = $('#hac_num').val();
                 result2 = 1;
@@ -704,6 +771,7 @@ $( document ).ready(function() {
                 hacNum = 0;
                 result2 = 0;
                 $('#order_info').empty();
+                deliveryType = null;
             }
         } else {
             hacNum = 0;
@@ -712,25 +780,26 @@ $( document ).ready(function() {
 
         if (result1*result2 === 1) {
             $('#order_info').empty();
+            deliveryType = null;
             getOptionalPrice()
             setOrderDay();
             fillOrderDiv();
             $('#order_info').show().children().show();
         } else {
             $('#order_info').empty();
+            deliveryType = null;
         }
 
     }
 
-
-    $('#extra').on('click', '#hardening, #sand_blasting, #installation,' +
-        '#painting, #uv_printing', function () {
+    $('#extra').on('click', '#hardening, #sand_blasting, #painting, #uv_printing', function () {
         $('#order_info').empty();
         setOrderDay();
         fillOrderDiv();
         $('#order_info').show().children().show();
     });
     function fillOrderDiv() {
+        deliveryType = null;
         $('#order_info').append('<div id="calc_stege_7" class="head toggler"></div>');
         $('#calc_stege_7').append('<p class="numver_stage">7</p>');
         $('#calc_stege_7').append('<h4>Информация по заказу</h4>');
@@ -747,6 +816,7 @@ $( document ).ready(function() {
         $('.up_input').append('<input type="tel" placeholder="Телефон">');
         $('.up_input').append('<input type="email" placeholder="Электронная почта">');
         $('.leftTable').append('<div class="down_buttons_distances d-flex"></div>');
+        $('.down_buttons_distances').append('<a id="pickup" class="nav-link" data-toggle="tab" href="#">Самовывоз</a>');
         $('.down_buttons_distances').append('<a id="inMKAD" class="nav-link" data-toggle="tab" href="#">В пределах МКАД</a>');
         $('.down_buttons_distances').append('<a id="outMKAD" class="nav-link" data-toggle="tab" href="#">Не более 5 км от МКАД</a>');
         $('.down_buttons_distances').append('<a id="moskowRegion" class="nav-link" data-toggle="tab" href="#">Московская область</a>');
@@ -758,11 +828,34 @@ $( document ).ready(function() {
         $('.buttons_buy_glass').append('<button class="cost_butt1 buy_buttons">В корзину</button>');
     }
 
+    $('#order_info').on('click', '#pickup , #inMKAD, #outMKAD, #moskowRegion', function () {
+        deliveryType = this.id;
+        getDeliveryPrice();
+        setOrderDay();
+    });
+
+    function getDeliveryPrice() {
+        let sum;
+        switch (deliveryType) {
+            case 'pickup': sum = pickupPrice;
+                break;
+            case 'inMKAD': sum = inMKADPrice;
+                break;
+            case 'outMKAD': sum = outMKADPrice;
+                break;
+            case 'moskowRegion': sum = moskowRegionPrice;
+                break;
+            default: sum = 0;
+        }
+        return sum;
+    }
+
     function unfillingDivs() {
         $('#depth').empty();
         $('#shape').empty();
         $('#format').empty();
         $('#extra').empty();
         $('#order_info').empty();
+        deliveryType = null;
     }
 });

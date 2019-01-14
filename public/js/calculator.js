@@ -1,6 +1,7 @@
 $( document ).ready(function() {
     var totalPrice = 0;
-    var offsetDay = 1;
+    var offsetHoursTotal = 0;
+    var offsetSum = 0;
     var currency = ' руб.';
     var triplexSum = 300;
     var materialTypeId;
@@ -21,14 +22,19 @@ $( document ).ready(function() {
     var sandBlastingSome = 2200;
     var paintingAll = 2500;
     var paintingSome = 4800;
-
-
     var inMKADPrice = 1200;
     var outMKADPrice = 1500;
     var moskowRegionPrice = 2500;
     var pickupPrice = 250;
-
-
+    var dayName;
+    var offsetHoursBasic = 24;
+    var offsetHoursFacet = 0;
+    var offsetHoursHardering = 0;
+    var offsetHoursHoles = 0;
+    var offsetHoursRound = 0;
+    var offsetHoursPrinting = 0;
+    var offsetHoursSand = 0;
+    var offsetHoursPainting = 0;
     var materialPrice = {
             mirror_silver_four: 1560,
             mirror_silver_six: 2800,
@@ -69,7 +75,6 @@ $( document ).ready(function() {
             glass_matt_eight: 2730,
             glass_matt_ten: 3510,
     };
-
     var processingPrice = {
         with_processing_four: 110,
         with_processing_six: 120,
@@ -147,46 +152,11 @@ $( document ).ready(function() {
         glass_matt_ten: 760,
     };
 
-
-    // function httpGet(url) {
-    //     return new Promise(function (resolve) {
-    //         let xhr = new XMLHttpRequest();
-    //         xhr.open('GET', url, true);
-    //         xhr.onload = function () {
-    //             if (this.status === 200) {
-    //                 resolve(this.responseText);
-    //             }
-    //         };
-    //         xhr.send();
-    //     });
-    // }
-
-    // httpGet(location.origin + "/members")
-    //     .then(response => funcSelectMember(JSON.parse(response)));
-    //
-    // function funcSelectMember(extData) {
-    //     for (let i = 0; i < extData.length; i++) {
-    //         elem = new Option(extData[i]['name'], extData[i]['id']);
-    //         member_name.appendChild(elem)
-    //     }
-    // }
-
-    // Route::get('members', 'Dbrequest@member');
-
-    // public function members()
-    // {
-    //     $stacks = DB::table('members')->get();
-    //     return response()->json($members);
-    // }
-
-
     function setPriceValue(){
         if (materialTypeId === 'triplex'){
-            totalPrice = triplexSum  + 150*(offsetDay - 1);
+            totalPrice = triplexSum  + offsetSum;
             return Math.round(totalPrice);
         } else {
-            getMaterialPrice();
-            getProcessingPrice();
             totalPrice = getProcessingPrice()
                 + getMaterialPrice()
                 + getHardeningPrice()
@@ -196,14 +166,44 @@ $( document ).ready(function() {
         }
     }
 
+    function setOffsetHoursTotal() {
+        let urgencyFactor_1 = 1;
+        let urgencyFactor_2 = 1;
+        let urgencyFactor_3 = 1;
+        if (shapeId === 'circle' || shapeId === 'oval' || shapeId === 'another' || rndNum > 0){
+            offsetHoursRound = 72;
+        } else {
+            offsetHoursRound = 0;
+        }
+        if ($('#checkboxPrice').is(':checked')){
+            urgencyFactor_1 = 1/2;
+            urgencyFactor_2 = 2/3;
+            urgencyFactor_3 = 1/3;
+        }
+        offsetHoursTotal = offsetHoursBasic * urgencyFactor_1
+            + offsetHoursFacet * urgencyFactor_2
+            + offsetHoursHardering * urgencyFactor_1
+            + offsetHoursHoles * urgencyFactor_1
+            + offsetHoursRound * urgencyFactor_3
+            + offsetHoursPrinting * urgencyFactor_2
+            + offsetHoursSand * urgencyFactor_2
+            + offsetHoursPainting * urgencyFactor_2;
+        return Math.round(offsetHoursTotal);
+    }
+
     function setOrderDay() {
-        setPriceValue()
+        $('#calculator_day').val('');
+        $('#calculator_month').val('');
+        $('#calculator_year').val('');
+        dayName = '';
+        setPriceValue();
+        setOffsetHoursTotal();
         var today = new Date();
-        today.setDate(today.getDate() + offsetDay);
+        today.setHours(today.getHours() + setOffsetHoursTotal());
         var dd = today.getDate();
         var mm = today.getMonth()+1;
         var yyyy = today.getFullYear();
-        var dayName = ([
+        dayName = ([
             "( Воскресенье )",
             "( Понедельник )",
             "( Вторник )",
@@ -220,7 +220,8 @@ $( document ).ready(function() {
     }
 
     $('#checkboxPrice').change(function () {
-        $('#checkboxPrice').is(':checked') ? offsetDay = 2 : offsetDay = 1;
+        $('#checkboxPrice').is(':checked') ? offsetSum = 150 : offsetSum = 0;
+        $('#checkboxPrice').is(':checked') ? $('#urgency').html('( срочно )') : $('#urgency').html('( без срочности )');
         setOrderDay();
     });
 
@@ -240,7 +241,6 @@ $( document ).ready(function() {
         $('#material').append('<a class="contacts">+7 (499) 677-20-67</a>');
         $('#material').append('<a href="#win1">   Консультация и расчет   </a>');
         $('#material').append('<a class="contacts">info@v-t-x.ru</a>');
-        // setPriceValue();
         setOrderDay();
         unfillingDivs();
     });
@@ -268,6 +268,9 @@ $( document ).ready(function() {
         $('#exclusive').append('<p>Эксклюзив</p>');
         $('#box-calc-2-2').append('<div id="gold" class="help_glass_items calc_content2"></div>');
         $('#gold').append('<p>Золото</p>');
+        $('#calculator_day').val('');
+        $('#calculator_month').val('');
+        $('#calculator_year').val('');
         $('#price').val('');
         unfillingDivs();
     });
@@ -297,6 +300,9 @@ $( document ).ready(function() {
         $('#grey').append('<img src="images/glaas6.png" alt="">');
         $('#grey').append('<p>Серое</p>');
         $('#price').val('');
+        $('#calculator_day').val('');
+        $('#calculator_month').val('');
+        $('#calculator_year').val('');
         unfillingDivs();
     });
 
@@ -321,35 +327,29 @@ $( document ).ready(function() {
         $('#box-calc-3').append('<div class="stage_3_choose_thiknes d-flex"></div>');
         $('.stage_3_choose_thiknes').append('<div class="choose_thiknes"></div>');
         $('.choose_thiknes').append('<ul class="nav nav-tabs d-flex" id="myTab1" role="tablist"></ul>');
-
         $('.stage_3_choose_thiknes').append('<div class="content-right_calc"></div>');
-
         if (materialId === "simple") {
             $('#myTab1').append('<li class="nav-item">' +
                 '<a id="three" class="nav-link active" data-toggle="tab" href="#calc1" role="tab"' +
                 'aria-controls="home">3</a>' +
                 '</li>');
         }
-
         $('#myTab1').append('<li class="nav-item">' +
             '<a id="four" class="nav-link" data-toggle="tab" href="#calc2" role="tab"' +
             'aria-controls="profile">4</a>' +
             '</li>');
-
         if (materialTypeId === "glass" && (materialId === "optWhite" || materialId === "simple")) {
             $('#myTab1').append('<li class="nav-item">' +
                 '<a id="five" class="nav-link" data-toggle="tab" href="#calc3" role="tab"' +
                 'aria-controls="messages">5</a>' +
                 '</li>');
         }
-
         if ((materialTypeId === "mirror" && (materialId === "clearVision" || materialId === "silver")) || (materialTypeId === "glass")) {
             $('#myTab1').append('<li class="nav-item">' +
                 '<a id="six" class="nav-link" data-toggle="tab" href="#calc4" role="tab"' +
                 'aria-controls="messages">6</a>' +
                 '</li>');
         }
-
         if (materialTypeId === "glass") {
             $('#myTab1').append('<li class="nav-item">' +
                 '<a id="eight" class="nav-link" data-toggle="tab" href="#calc5" role="tab"' +
@@ -360,7 +360,6 @@ $( document ).ready(function() {
                 'aria-controls="messages">10</a>' +
                 '</li>');
         }
-
         if (materialTypeId === "glass" && (materialId === "simple" || materialId === "optWhite")) {
             $('#myTab1').append('<li class="nav-item">' +
                 '<a id="twelve" class="nav-link" data-toggle="tab" href="#calc7" role="tab"' +
@@ -405,7 +404,6 @@ $( document ).ready(function() {
         $('.Size_calc').append('<div id="another" class="item_size_calc"></div>');
         $('#another').append('<img src="images/figure_size4.png" alt="">' +
             '<p>ИНАЯ ФОРМА</p>');
-
         $('#circle').click(function () {
             shapeId = this.id;
             $('#item_size_calc').detach();
@@ -430,7 +428,6 @@ $( document ).ready(function() {
     $('#shape').on('change', '#shape_width, #shape_height, #shape_diameter', function () {
         checkSize();
     });
-
     $('#shape').on('keyup', '#shape_width, #shape_height, #shape_diameter', function () {
         checkSize();
     });
@@ -485,11 +482,12 @@ $( document ).ready(function() {
         setOrderDay();
     });
 
-
     function getHardeningPrice() {
         if ($('#hardening').is(':checked')){
+            offsetHoursHardering = 24;
             return harderingPrice[materialType] * square;
         } else {
+            offsetHoursHardering = 0;
             return 0;
         }
     }
@@ -583,6 +581,11 @@ $( document ).ready(function() {
     $('#format').on('click', '#without_processing, #with_processing, ' +
         '#facet5, #facet10, #facet15, #facet20, #facet25, #facet30, #facet35, #facet40', function () {
         formatId = this.id;
+        if (formatId[0] === 'f'){
+            offsetHoursFacet = 72;
+        } else {
+            offsetHoursFacet = 0;
+        }
         $('#extra').empty();
         $('#order_info').empty();
         setOrderDay();
@@ -618,7 +621,6 @@ $( document ).ready(function() {
                     '</label>');
             }
         });
-
         $('#box-calc-6-1').append('<div id="box-calc-6-2-2" class="ssecond_chekbox"></div>');
         $('#box-calc-6-2-2').append('<label>' +
             '    <input id="painting" type="checkbox">' +
@@ -678,18 +680,16 @@ $( document ).ready(function() {
         hacNum = 0;
         checkQuantity();
     });
-
     $('#extra').on('keyup', '#rnd_con_num, #hac_num', function () {
         rndNum = 0;
         hacNum = 0;
         checkQuantity();
     });
-
     $('#extra').on('change', '#pnt, #snd_bl, #uv_printing, ' +
         '#round_corners, #holes_and_cutouts, #painting, #sand_blasting', function () {
         getOptionalPrice();
         setOrderDay();
-    })
+    });
 
     function getOptionalPrice() {
         let sum;
@@ -700,20 +700,20 @@ $( document ).ready(function() {
         return sum;
     }
 
-    
     function getUvPrintingPrice() {
         if ($('#uv_printing').is(':checked')){
+            offsetHoursPrinting = 72;
             return uvPrice * square;
         } else {
+            offsetHoursPrinting = 0;
             return 0;
         }
     }
 
-
-
     function getPaintingPrice() {
         let sum;
         if ($('#painting').is(':checked')){
+            offsetHoursPainting = 72;
             if ($('#pnt_select').find(':selected').attr('id') === 'pnt_some') {
                 sum = paintingSome * square;
                 return sum;
@@ -722,6 +722,7 @@ $( document ).ready(function() {
                 return sum;
             }
         } else {
+            offsetHoursPainting = 0;
             return 0;
         }
     }
@@ -729,6 +730,7 @@ $( document ).ready(function() {
     function getSandBlastingPrice() {
         let sum;
         if ($('#sand_blasting').is(':checked')){
+            offsetHoursSand = 72;
             if ($('#snd_bl_select').find(':selected').attr('id') === 'snd_bl_some') {
                 sum = sandBlastingSome * square;
                 return sum;
@@ -737,13 +739,13 @@ $( document ).ready(function() {
                 return sum;
             }
         } else {
+            offsetHoursSand = 0;
             return 0;
         }
     }
 
-
-
     function checkQuantity(){
+        offsetHoursHoles = 0;
         let result1;
         let result2;
         if ($('#round_corners').is(':checked')) {
@@ -763,11 +765,13 @@ $( document ).ready(function() {
         }
 
         if ($('#holes_and_cutouts').is(':checked')) {
+            offsetHoursHoles = 12;
             hacNum = 0;
             if ($('#hac_num').val() > 0){
                 hacNum = $('#hac_num').val();
                 result2 = 1;
             } else {
+                offsetHoursHoles = 0;
                 hacNum = 0;
                 result2 = 0;
                 $('#order_info').empty();

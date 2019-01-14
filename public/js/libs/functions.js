@@ -77,11 +77,11 @@ $(document).ready(function(){
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("mybtn").style.display = "block";
-    } else {
-        document.getElementById("mybtn").style.display = "block";
-    }
+    // if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    //     document.getElementById("mybtn").style.display = "block";
+    // } else {
+    //     document.getElementById("mybtn").style.display = "block";
+    // }
 }
 
 // When the user clicks on the button, scroll to the top of the document
@@ -105,7 +105,7 @@ function resize(){
     var expW = $(window).width();
 
     var offset = exp.offset();
-    exp.css("margin-left", -((expB-expW)/2+offset.left));
+    // exp.css("margin-left", -((expB-expW)/2+offset.left));
 }
 
 

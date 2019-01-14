@@ -1,4 +1,4 @@
-@extends('layouts.head')
+{{--@extends('layouts.head')--}}
 <div data-hash="one">
     <section>
         <div id="log" class="bg_sections1_page2 d-flex b center-block">
@@ -176,4 +176,4 @@
         </div>
     </section>
 </div>
-@extends('layouts.footer')
+{{--@extends('layouts.footer')--}}

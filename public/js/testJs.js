@@ -12,7 +12,7 @@
 // }
 
 var currentIndex = 0;
-var views = [];
+views = [];
 var CSRF_TOKEN = $('meta[name="csrf-token"]').attr('content');
 $(document).ready(function () {
 
@@ -27,14 +27,16 @@ $(document).ready(function () {
         '_token': $('meta[name="csrf-token"]').attr('content'),
         _method: 'POST',
     }, function (data, status) {
-
+        alert(data);
         // console.log(status);
-        views.push(responce)
+        views.push(data)
     });
 
 
     $('.navbar-brand').on('click', function () {
-        $('.home-page > section').empty(2000);
-        $('.home-page').append($(views[0])).slideDown("fast");
+        $('.home-page > section').fadeOut(500, function () {
+            $(this).empty();
+        });
+        $('.home-page').append($(views[0]).slideDown("slow"));
     });
 });

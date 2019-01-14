@@ -144,7 +144,7 @@
     <script type="text/javascript" src={{asset("js/libs/functions.js")}}></script>
     <script type="text/javascript" src={{asset("js/navigationButtons.js")}}></script>
     <script type="text/javascript" src={{asset("js/calculator.js")}}></script>
-    <script type="text/javascript" src={{asset("js/testJs.js")}}></script>
+    {{--<script type="text/javascript" src={{asset("js/testJs.js")}}></script>--}}
      {{--<script type="text/javascript" src="js/logic.js"></script>--}}
 
 </body>

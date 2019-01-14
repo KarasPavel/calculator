@@ -3415,7 +3415,7 @@
                             </h4>
                             <input disabled id="price" type="text">
                             <h4>ГОТОВНОСТЬ НА:</h4>
-                            <p>(без срочности)</p>
+                            <p id="urgency"></p>
                             <div id="cost_calculation_day" class="date_calc">
                                 <input disabled id="calculator_day" type="day">
                                 <input disabled id="calculator_month" type="day">
@@ -3476,83 +3476,6 @@
                         <div id="format" class="cost_calc_first_tab toggle owl-stage-outer owl-height">
                         </div>
                         <div id="extra" class="cost_calc_first_tab toggle">
-                            {{--<div id="calc_stege" class="head toggler">--}}
-                                {{--<p class="numver_stage">--}}
-                                    {{--6--}}
-                                {{--</p>--}}
-                                {{--<h4>--}}
-                                    {{--дополнительно--}}
-                                {{--</h4>--}}
-                                {{--<i class="fas fa-angle-down"></i>--}}
-                            {{--</div>--}}
-                            {{--<div id="box-calc" class="wraper content">--}}
-                                {{--<div class="chekbox_sect_6 d-flex">--}}
-                                    {{--<div class="first_chekbox">--}}
-                                        {{--<label>--}}
-                                            {{--<input type="checkbox">--}}
-                                            {{--<span class="fake-checkbox" aria-hidden="true"></span>--}}
-                                            {{--<span class="label">Закалка (Термоупрочнение)</span>--}}
-                                        {{--</label>--}}
-                                        {{--<label>--}}
-                                            {{--<input type="checkbox">--}}
-                                            {{--<span class="fake-checkbox" aria-hidden="true"></span>--}}
-                                            {{--<span class="label">Отверстия и вырезы</span>--}}
-                                        {{--</label>--}}
-                                        {{--<label>--}}
-                                            {{--<input type="checkbox">--}}
-                                            {{--<span class="fake-checkbox" aria-hidden="true"></span>--}}
-                                            {{--<span class="label">Монтаж</span>--}}
-                                        {{--</label>--}}
-                                    {{--</div>--}}
-                                    {{--<div class="ssecond_chekbox">--}}
-                                        {{--<label>--}}
-                                            {{--<input type="checkbox">--}}
-                                            {{--<span class="fake-checkbox" aria-hidden="true"></span>--}}
-                                            {{--<span class="label">Покраска стекла</span>--}}
-                                        {{--</label>--}}
-                                        {{--<label>--}}
-                                            {{--<input type="checkbox">--}}
-                                            {{--<span class="fake-checkbox" aria-hidden="true"></span>--}}
-                                            {{--<span class="label">УФ-печать</span>--}}
-                                        {{--</label>--}}
-                                        {{--<label>--}}
-                                            {{--<input type="checkbox">--}}
-                                            {{--<span class="fake-checkbox" aria-hidden="true"></span>--}}
-                                            {{--<span class="label">Пескоструй</span>--}}
-                                        {{--</label>--}}
-                                    {{--</div>--}}
-                                    {{--<div class="third_chekbox">--}}
-                                        {{--<label>--}}
-                                            {{--<input type="checkbox">--}}
-                                            {{--<span class="fake-checkbox" aria-hidden="true"></span>--}}
-                                            {{--<span class="label">Скругления по углам</span>--}}
-                                        {{--</label>--}}
-                                    {{--</div>--}}
-                                {{--</div>--}}
-                                {{--<!-- <div class="chekbox_sect_6 d-flex">--}}
-																	{{--<div class="first_chekbox">--}}
-																			{{--<input type="checkbox" id="checkbox10" v-model="checked">--}}
-																			{{--<label for="checkbox10"><a href="#"></a>Закалка (Термоупрочнение)</label> <br>--}}
-																			{{--<input type="checkbox" id="checkbox11" v-model="checked">--}}
-																			{{--<label for="checkbox11"><a href="#"></a>Отверстия и вырезы</label><br>--}}
-																			{{--<input type="checkbox" id="checkbox12" v-model="checked">--}}
-																			{{--<label for="checkbox12"><a href="#"></a>Монтаж</label>--}}
-																	{{--</div>--}}
-																	{{--<div class="ssecond_chekbox">--}}
-																			{{--<input type="checkbox" id="checkbox13" v-model="checked">--}}
-																			{{--<label for="checkbox13"><a href="#"></a>Покраска стекла</label><br>--}}
-																			{{--<input type="checkbox" id="checkbox14" v-model="checked">--}}
-																			{{--<label for="checkbox14"><a href="#"></a>УФ-печать</label><br>--}}
-																			{{--<input type="checkbox" id="checkbox15" v-model="checked">--}}
-																			{{--<label for="checkbox15"><a href="#"></a> Пескоструй</label><br>--}}
-																	{{--</div>--}}
-																	{{--<div class="third_chekbox">--}}
-																			{{--<input type="checkbox" id="checkbox16" v-model="checked">--}}
-																			{{--<label for="checkbox16"><a href="#"></a>Скругления по углам</label>--}}
-																	{{--</div>--}}
-															{{--</div> -->--}}
-
-                            {{--</div>--}}
                         </div>
                         <div id="order_info" class="cost_calc_first_tab toggle">
                         </div>

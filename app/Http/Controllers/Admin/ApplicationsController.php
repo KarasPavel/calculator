@@ -34,21 +34,23 @@ class ApplicationsController extends Controller
 
     /**
      * @param Request $request
-     * @return \Illuminate\Http\RedirectResponse
+     * @return string
      */
     public function createApplications(Request $request)
     {
-        //dd($request);
+//        return $request;
+//        //dd($request);
         $request->validate([
-            'fullName' => 'required|string|min:2|max:100',
+            'name' => 'required|string|min:2|max:100',
             'email' => 'nullable|email|max:100',
-            'phone' => 'required|min:11|max:11',
-            'dayChoice' => 'nullable|min:1|max:8|size:1',
+            'phone' => 'required|min:10|max:11',
+//            'dayChoice' => 'nullable|min:1|max:8|size:1',
             'specialist' => 'nullable|min:1|max:3|size:1',
         ]);
 
-        Application::createApplication($request);
-        return redirect()->route('main');
+//        Application::createApplication($request);
+//        return redirect()->route('main');
+        return "all ok";
     }
 
     /**

@@ -24,6 +24,7 @@ Route::middleware('auth')->group(function () {
 Route::post('createApplications', 'Admin\ApplicationsController@createApplications')->name('createApplications');
 //Route::get('/home', 'HomeController@index')->name('home');
 
+
 //uploadPhotoStairs
 //Admin Panel
 Route::middleware('role:admin|junior_admin|manager')->group(function () {

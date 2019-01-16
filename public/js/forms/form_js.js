@@ -61,13 +61,10 @@ $( document ).ready(function() {
        if ($(this).closest('form').valid()) {
            dataInput['specialist'] = specialist;
            dataInput['_token'] = $('meta[name="csrf-token"]').attr('content');
-           console.log(dataInput);
            $.post('createApplications', dataInput, function (data, status) {
-               console.log(data);
-               console.log(status);
            });
            specialist = 1;
-           document.location.assign(data);
+           document.location.assign('#win3');
        }
     });
 });

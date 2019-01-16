@@ -62,10 +62,10 @@ class ApplicationsController extends Controller
 //        dd($id);
         $user = Auth::user();
         $application = Application::getApplicationById($id);
-        $days = Day::getDays();
+//        $days = Day::getDays();
         $specialists = Specialist::getSpecialists();
         $statuses = Status::getStatuses();
-        return view('admin/editApplication', ['application' => $application, 'days' => $days,
+        return view('admin/editApplication', ['application' => $application,/* 'days' => $days,*/
             'user' => $user, 'specialists' => $specialists, 'statuses' => $statuses]);
 
     }

@@ -28,7 +28,7 @@
                 <a class="navbar-brand" href="#zero"><img src="images/Viditex_logo.png" alt="" class="logo"></a>
                 <span class="white header_small_text"><i class="fas fa-map-marker-alt"></i> г. Москва</span>
                 <span class="white header_small_text"><i class="far fa-clock"></i>пн - сб 10 00 - 19 00</span>
-                <span class="white header_small_text"><i class="far fa-envelope"></i>mail@mail.ru</span>
+                <span class="white header_small_text"><i class="far fa-envelope"></i>info@v-t-x.ru</span>
                 <span class="white header_small_text"><a href="#">Все услуги</a></span>
                 <span class="white header_small_text"><a href="#">Контакты</a></span>
                 <div class="header_call-back">

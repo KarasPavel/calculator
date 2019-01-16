@@ -24,10 +24,17 @@ DROP TABLE IF EXISTS `applications`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `applications` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+<<<<<<< HEAD
   `name` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
   `email` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
   `telephone` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
   `comment` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+=======
+  `name` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `email` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `telephone` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `comment` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
+>>>>>>> c053f1bd3fa57ac5649bf89b552efd4a3b13a7a0
   `specialist_id` int(10) unsigned NOT NULL DEFAULT '1',
   `application_status_id` int(10) unsigned NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,

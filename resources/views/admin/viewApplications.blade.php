@@ -147,6 +147,7 @@
                                             <th>Статус</th>
                                             <th>Создан в</th>
                                             <th>Обновлен в</th>
+                                            <th>Комментарий</th>
 
                                                 <th>Редактировать</th>
                                             @if($user->hasRole('admin'))
@@ -189,6 +190,9 @@
                                                 </td>
                                                 <td>
                                                     {{$value->updated_at}}
+                                                </td>
+                                                <td>
+                                                    {{$value->comment}}
                                                 </td>
                                                 @if($user->hasRole('admin|junior_admin|moderator'))
                                                     <td>

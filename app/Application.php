@@ -17,7 +17,7 @@ class Application extends Model
     public static function getApplications()
     {
         return DB::table('applications')
-            ->select('applications.id', 'name', 'email', 'telephone', 'applications.created_at',
+            ->select('applications.id', 'name', 'email', 'telephone', 'comment', 'applications.created_at',
                 'applications.updated_at', 'specialist', 'status')
             ->join('specialists', 'specialist_id', '=', 'specialists.id')
             ->join('statuses', 'application_status_id', '=', 'statuses.id')
@@ -27,35 +27,14 @@ class Application extends Model
 
     public static function createApplication(Request $request)
     {
-//        dd($request->specialist);
-//        if ($request->specialist === null) {
-//            $request->specialist = 1;
-//        }
-//        if ($request->email === null) {
-//            $request->email = 'отсутствует';
-//        }
-//        if ($request->day === null) {
-//            $request->day = 8;
-//        }
-//        if ($request->timeStart == "") {
-//            $request->timeStart = "00:00";
-//        }
-//        if ($request->timeEnd == "") {
-//            $request->timeEnd = "00:00";
-//        }
-//        if ($request->dayChoice === null) {
-//            $request->dayChoice = '8';
-//        }
         return DB::table('applications')
             ->insert([
                 'name' => $request->name,
                 'email' => $request->email,
                 'telephone' => $request->phone,
+                'comment' => $request->comment,
                 'specialist_id' => $request->specialist,
-//                'day_for_call_id' => $request->dayChoice,
                 'application_status_id' => 1,
-//                'start_time' => $request->timeStart,
-//                'end_time' => $request->timeEnd,
                 'created_at' => Carbon::now(),
             ]);
     }

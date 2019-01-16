@@ -38,18 +38,14 @@ class ApplicationsController extends Controller
      */
     public function createApplications(Request $request)
     {
-//        return $request;
-//        //dd($request);
         $request->validate([
             'name' => 'required|string|min:2|max:100',
             'email' => 'nullable|email|max:100',
             'phone' => 'required|min:10|max:11',
-//            'dayChoice' => 'nullable|min:1|max:8|size:1',
             'specialist' => 'nullable|min:1|max:3|size:1',
         ]);
 
         Application::createApplication($request);
-//        return redirect()->route('main');
         return 'all ok';
     }
 
@@ -59,10 +55,8 @@ class ApplicationsController extends Controller
      */
     public function editApplication($id)
     {
-//        dd($id);
         $user = Auth::user();
         $application = Application::getApplicationById($id);
-//        $days = Day::getDays();
         $specialists = Specialist::getSpecialists();
         $statuses = Status::getStatuses();
         return view('admin/editApplication', ['application' => $application,/* 'days' => $days,*/

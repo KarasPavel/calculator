@@ -24,9 +24,10 @@ DROP TABLE IF EXISTS `applications`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `applications` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `name` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `email` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'отсутствует',
-  `telephone` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `telephone` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `comment` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
   `specialist_id` int(10) unsigned NOT NULL DEFAULT '1',
   `application_status_id` int(10) unsigned NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
@@ -53,7 +54,7 @@ DROP TABLE IF EXISTS `migrations`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `migrations` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `migration` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `migration` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `batch` int(11) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -77,8 +78,8 @@ DROP TABLE IF EXISTS `password_resets`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `password_resets` (
-  `email` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `token` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `token` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   KEY `password_resets_email_index` (`email`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -130,7 +131,7 @@ DROP TABLE IF EXISTS `permission_user`;
 CREATE TABLE `permission_user` (
   `permission_id` int(10) unsigned NOT NULL,
   `user_id` int(10) unsigned NOT NULL,
-  `user_type` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `user_type` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   PRIMARY KEY (`user_id`,`permission_id`,`user_type`),
   KEY `permission_user_permission_id_foreign` (`permission_id`),
   CONSTRAINT `permission_user_permission_id_foreign` FOREIGN KEY (`permission_id`) REFERENCES `permissions` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
@@ -155,9 +156,9 @@ DROP TABLE IF EXISTS `permissions`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `permissions` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `name` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `display_name` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `description` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `display_name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `description` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`),
@@ -171,7 +172,7 @@ CREATE TABLE `permissions` (
 
 LOCK TABLES `permissions` WRITE;
 /*!40000 ALTER TABLE `permissions` DISABLE KEYS */;
-INSERT INTO `permissions` VALUES (1,'create-user','Create Users','create new users','2019-01-16 10:23:28','2019-01-16 10:23:28'),(2,'see-user','See Users','see all users','2019-01-16 10:23:29','2019-01-16 10:23:29'),(3,'edit-user','Edit Users','edit all users','2019-01-16 10:23:29','2019-01-16 10:23:29'),(4,'delete-user','Delete Users','delete all users','2019-01-16 10:23:29','2019-01-16 10:23:29'),(5,'see-order','See Orders','see orders','2019-01-16 10:23:29','2019-01-16 10:23:29'),(6,'edit-order','Edit Orders','Edit orders','2019-01-16 10:23:29','2019-01-16 10:23:29'),(7,'delete-order','Delete Orders','Delete orders','2019-01-16 10:23:29','2019-01-16 10:23:29'),(8,'see-application','See Applications','See Application','2019-01-16 10:23:30','2019-01-16 10:23:30'),(9,'update-application','Update Applications','Update Application','2019-01-16 10:23:30','2019-01-16 10:23:30'),(10,'delete-application','delete Applications','delete Application','2019-01-16 10:23:30','2019-01-16 10:23:30');
+INSERT INTO `permissions` VALUES (1,'create-user','Create Users','create new users','2019-01-16 17:04:43','2019-01-16 17:04:43'),(2,'see-user','See Users','see all users','2019-01-16 17:04:43','2019-01-16 17:04:43'),(3,'edit-user','Edit Users','edit all users','2019-01-16 17:04:43','2019-01-16 17:04:43'),(4,'delete-user','Delete Users','delete all users','2019-01-16 17:04:43','2019-01-16 17:04:43'),(5,'see-order','See Orders','see orders','2019-01-16 17:04:43','2019-01-16 17:04:43'),(6,'edit-order','Edit Orders','Edit orders','2019-01-16 17:04:43','2019-01-16 17:04:43'),(7,'delete-order','Delete Orders','Delete orders','2019-01-16 17:04:44','2019-01-16 17:04:44'),(8,'see-application','See Applications','See Application','2019-01-16 17:04:44','2019-01-16 17:04:44'),(9,'update-application','Update Applications','Update Application','2019-01-16 17:04:44','2019-01-16 17:04:44'),(10,'delete-application','delete Applications','delete Application','2019-01-16 17:04:44','2019-01-16 17:04:44');
 /*!40000 ALTER TABLE `permissions` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -184,10 +185,10 @@ DROP TABLE IF EXISTS `photos`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `photos` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `type` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `name` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `photo` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `small_photo` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `type` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `photo` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `small_photo` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -212,7 +213,7 @@ DROP TABLE IF EXISTS `role_user`;
 CREATE TABLE `role_user` (
   `role_id` int(10) unsigned NOT NULL,
   `user_id` int(10) unsigned NOT NULL,
-  `user_type` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `user_type` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   PRIMARY KEY (`user_id`,`role_id`,`user_type`),
   KEY `role_user_role_id_foreign` (`role_id`),
   CONSTRAINT `role_user_role_id_foreign` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
@@ -238,9 +239,9 @@ DROP TABLE IF EXISTS `roles`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `roles` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `name` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `display_name` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
-  `description` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `display_name` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `description` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
   PRIMARY KEY (`id`),
@@ -254,7 +255,7 @@ CREATE TABLE `roles` (
 
 LOCK TABLES `roles` WRITE;
 /*!40000 ALTER TABLE `roles` DISABLE KEYS */;
-INSERT INTO `roles` VALUES (1,'user','Пользователь','see status of his orders','2019-01-16 10:23:28','2019-01-16 10:23:28'),(2,'admin','Админ','CRUD all users, RUD all orders, RUD all applications','2019-01-16 10:23:28','2019-01-16 10:23:28'),(3,'junior_admin','Младший админ','CR all users, RU all orders, RUD all applications','2019-01-16 10:23:28','2019-01-16 10:23:28'),(4,'moderator','Моддер','nothing','2019-01-16 10:23:28','2019-01-16 10:23:28'),(5,'logistics','Логистика','nothing','2019-01-16 10:23:28','2019-01-16 10:23:28'),(6,'manager','Менеджер','RU only new orders, RUD all applications','2019-01-16 10:23:28','2019-01-16 10:23:28');
+INSERT INTO `roles` VALUES (1,'user','Пользователь','see status of his orders','2019-01-16 17:04:42','2019-01-16 17:04:42'),(2,'admin','Админ','CRUD all users, RUD all orders, RUD all applications','2019-01-16 17:04:42','2019-01-16 17:04:42'),(3,'junior_admin','Младший админ','CR all users, RU all orders, RUD all applications','2019-01-16 17:04:42','2019-01-16 17:04:42'),(4,'moderator','Моддер','nothing','2019-01-16 17:04:42','2019-01-16 17:04:42'),(5,'logistics','Логистика','nothing','2019-01-16 17:04:42','2019-01-16 17:04:42'),(6,'manager','Менеджер','RU only new orders, RUD all applications','2019-01-16 17:04:42','2019-01-16 17:04:42');
 /*!40000 ALTER TABLE `roles` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -267,7 +268,7 @@ DROP TABLE IF EXISTS `specialists`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `specialists` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `specialist` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `specialist` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -291,7 +292,7 @@ DROP TABLE IF EXISTS `statuses`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `statuses` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `status` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `status` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -315,9 +316,9 @@ DROP TABLE IF EXISTS `texts`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `texts` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `block` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `title` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'null',
-  `name` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `block` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `title` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'null',
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -341,10 +342,10 @@ DROP TABLE IF EXISTS `users`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `users` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `name` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `email` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `email` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `email_verified_at` timestamp NULL DEFAULT NULL,
-  `password` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `password` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `remember_token` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL,
@@ -359,7 +360,7 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES (1,'Admin','admin@gmail.com',NULL,'$2y$10$B5VZOE1/Vmhrg/0bhzT1.eiRNTcFaOV1gor.l1X.F3RV7eJcoFXd6',NULL,'2019-01-16 10:23:30','2019-01-16 10:23:30'),(2,'Junior admin','juniorAdmin@gmail.com',NULL,'$2y$10$ry/mMWANYhH93GmEI3Qy2eYZFK7W16GJVAmnAY26Q29XEjEKMQ4Fe',NULL,'2019-01-16 10:23:31','2019-01-16 10:23:31'),(3,'Moder','moder@gmail.com',NULL,'$2y$10$iRmKjPpQ5t9qOXEM.yKdL.Qc4thhQ/NzW99CX67ywpk5Hxms2xrs.',NULL,'2019-01-16 10:23:31','2019-01-16 10:23:31'),(4,'Logistics','logistics@gmail.com',NULL,'$2y$10$fQwp0Ev89NIeOo2B3ZpvJOsQnWTCWq84m.8nTTNgfnYiwdk1IpfJ.',NULL,'2019-01-16 10:23:31','2019-01-16 10:23:31'),(5,'Manager','manager@gmail.com',NULL,'$2y$10$gFqaWOibGvCkaGUxWe0aO.Oqf60ROOg1xnQSai7e2ryXWXMes9Q5G',NULL,'2019-01-16 10:23:31','2019-01-16 10:23:31');
+INSERT INTO `users` VALUES (1,'Admin','admin@gmail.com',NULL,'$2y$10$289Z9N22wrGLcxvjr4gJCOkOtJ/FBKNxyjP.XnNhXeQosqYXoiq2m',NULL,'2019-01-16 17:04:44','2019-01-16 17:04:44'),(2,'Junior admin','juniorAdmin@gmail.com',NULL,'$2y$10$vDpYZ.q9kG5sakg.xJHTPOIUZdZOvO8WPNVuuOuBPANX7OE2/SQVm',NULL,'2019-01-16 17:04:44','2019-01-16 17:04:44'),(3,'Moder','moder@gmail.com',NULL,'$2y$10$32FIVUlR/H.o2YqmZ6mo4OHu5j26hJZh2WkVo2mGOioz44co2vk36',NULL,'2019-01-16 17:04:45','2019-01-16 17:04:45'),(4,'Logistics','logistics@gmail.com',NULL,'$2y$10$OcLRw3P6hkUmLpvPISb9FuiPF3tu.sYkl69Qpq8xu8QZ2SPChIK0G',NULL,'2019-01-16 17:04:45','2019-01-16 17:04:45'),(5,'Manager','manager@gmail.com',NULL,'$2y$10$sESPg3vmWz50eclFxJ3LdOpqKYsEuvkYS5/C5sddwYBG1X5Kw09rm',NULL,'2019-01-16 17:04:45','2019-01-16 17:04:45');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -372,8 +373,8 @@ DROP TABLE IF EXISTS `videos`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `videos` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
-  `name` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
-  `video` varchar(100) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `name` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `video` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `show` tinyint(1) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
@@ -398,4 +399,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-01-16 11:25:42
+-- Dump completed on 2019-01-16 18:05:13

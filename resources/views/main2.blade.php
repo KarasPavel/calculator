@@ -28,7 +28,7 @@
                 <a class="navbar-brand" href="#zero"><img src="images/Viditex_logo.png" alt="" class="logo"></a>
                 <span class="white header_small_text"><i class="fas fa-map-marker-alt"></i> г. Москва</span>
                 <span class="white header_small_text"><i class="far fa-clock"></i>пн - сб 10 00 - 19 00</span>
-                <span class="white header_small_text"><i class="far fa-envelope"></i>info@v-t-x.ru</span>
+                <a href="mailto:info@v-t-x.ru"><span class="white header_small_text"><i class="far fa-envelope"></i>info@v-t-x.ru</span></a>
                 <span class="white header_small_text"><a href="#">Все услуги</a></span>
                 <span class="white header_small_text"><a href="#">Контакты</a></span>
                 <div class="header_call-back">
@@ -907,6 +907,68 @@
                 </div>
             </section>
         @endif
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="glass_door">
+                            <h2>СТЕКЛЯННЫЕ ДВЕРИ (РАСПАШНЫЕ И РАЗДВИЖНЫЕ)</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="glass_door_items d-flex">
+                            <img src="images/second_page_imageBlock/1/1.jpg" alt="">
+                            <div class="glass_door_item">
+                                <p>Качественная дверь - залог герметичности и долговечности в эксплуатации душевых
+                                    кабин. Мы делаем двери из закаленного стекла, с толщиной от 8мм и выше, а ход двери
+                                    обеспечивает надежная фурнитура из латунных сплавов.</p>
+                                <ul>
+                                    <li>Травмобезопасность и устойчивость к нагрузкам.</li>
+                                    <li>Минимум металла. Безрамная конструкция</li>
+                                </ul>
+                                <ul>
+                                    <li>Олеофобное покрытие, триплекс и другие виды обработки</li>
+                                    <li>Герметизация двери и фиксация в положении 0 без стопора.</li>
+                                </ul>
+                                <a href="#">Заказать</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="glass_door">
+                            <h2>ПРЯМЫЕ, УГЛОВЫЕ И ФИГУРНЫЕ ПЕРЕГОРОДКИ</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="glass_door_items_down d-flex">
+                            <div class="glass_door_item_down">
+                                <p>Перегородки и ограждения в душевую кабину стало модно делать не просто так. В
+                                    основном их ценят за надежность, вариативность и эстетику, что готовой кабинки
+                                    получить невозможно. Сегодня, это плавно растущий тренд, частью которого мы и
+                                    предлагаем стать Вам.</p>
+                                <ul>
+                                    <li>Толстые, каленые стекла от 8мм с различными покрытиями и обработками</li>
+                                    <li>Крепление стекла в профиль или на коннектора (точки). Минимум металла.</li>
+                                </ul>
+                                <ul>
+                                    <li>Срок эсплуатации, по новой технологии производства - не ограничен.</li>
+                                    <li>Полностью индивидуальный подход. Мы подгоним изделие под Ваш ремонт, а не
+                                        наоборот.
+                                    </li>
+                                </ul>
+                            </div>
+                            <img src="images/second_page_imageBlock/2/1.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section id="call_back">
             <div class="container">
                 <div class="row">
@@ -1364,7 +1426,10 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="glass_door_items d-flex">
-                            <img src="images/second_page_imageBlock/1/1.jpg" alt="">
+                        <div class="glass_door_items_new_img d-flex">
+                                <img src="images/Lestnici_img_block/1/1.jpg" alt="">
+                                <img src="images/Lestnici_img_block/1/2.jpg" alt="">
+                            </div>
                             <div class="glass_door_item">
                                 <p>Качественная дверь - залог герметичности и долговечности в эксплуатации душевых
                                     кабин. Мы делаем двери из закаленного стекла, с толщиной от 8мм и выше, а ход двери
@@ -1408,7 +1473,10 @@
                                     </li>
                                 </ul>
                             </div>
-                            <img src="images/second_page_imageBlock/2/1.jpg" alt="">
+                            <div class="glass_door_items_new_img d-flex">
+                                <img src="images/Lestnici_img_block/2/1.jpg" alt="">
+                                <img src="images/Lestnici_img_block/2/2.jpg" alt="">
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -2088,23 +2156,23 @@
                             <div class="help_glaas_type d-flex">
                                 <div class="help_glass_items">
                                     <img src="images/glaas_type1.png" alt="">
-                                    <p>ОБЫЧНОЕ</p>
+                                    <p>ПРОЗРАЧНОЕ</p>
                                 </div>
                                 <div class="help_glass_items">
                                     <img src="images/glass3.png" alt="">
-                                    <p>ОБЫЧНОЕ</p>
+                                    <p>ОПТИВАЙТ</p>
                                 </div>
                                 <div class="help_glass_items">
                                     <img src="images/glass4.png" alt="">
-                                    <p>ОБЫЧНОЕ</p>
+                                    <p>БРОНЗА</p>
                                 </div>
                                 <div class="help_glass_items">
                                     <img src="images/glass5.png" alt="">
-                                    <p>ОБЫЧНОЕ</p>
+                                    <p>МАТОВОЕ</p>
                                 </div>
                                 <div class="help_glass_items">
                                     <img src="images/glaas6.png" alt="">
-                                    <p>ОБЫЧНОЕ</p>
+                                    <p>СЕРОЕ</p>
                                 </div>
                             </div>
                             <div class="button_next">
@@ -2801,25 +2869,25 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="help_glaas_type d-flex">
-                                <div class="help_glass_items">
+                            <div class="help_glass_items">
                                     <img src="images/glaas_type1.png" alt="">
-                                    <p>ОБЫЧНОЕ</p>
+                                    <p>ПРОЗРАЧНОЕ</p>
                                 </div>
                                 <div class="help_glass_items">
                                     <img src="images/glass3.png" alt="">
-                                    <p>ОБЫЧНОЕ</p>
+                                    <p>ОПТИВАЙТ</p>
                                 </div>
                                 <div class="help_glass_items">
                                     <img src="images/glass4.png" alt="">
-                                    <p>ОБЫЧНОЕ</p>
+                                    <p>БРОНЗА</p>
                                 </div>
                                 <div class="help_glass_items">
                                     <img src="images/glass5.png" alt="">
-                                    <p>ОБЫЧНОЕ</p>
+                                    <p>МАТОВОЕ</p>
                                 </div>
                                 <div class="help_glass_items">
                                     <img src="images/glaas6.png" alt="">
-                                    <p>ОБЫЧНОЕ</p>
+                                    <p>СЕРОЕ</p>
                                 </div>
                             </div>
                             <div class="button_next">
@@ -3307,15 +3375,15 @@
                             <div class="help_glaas_type kripezh d-flex">
                                 <div class="help_glass_items ">
                                     <img src="images/types_kripezh1.png" alt="">
-                                    <p>ОБЫЧНОЕ</p>
+                                    <p>Креежная пластина</p>
                                 </div>
                                 <div class="help_glass_items">
-                                    <img src="images/types_kripezh2.png" alt="">
-                                    <p>ОБЫЧНОЕ</p>
+                                    <img src="images/cley_small.jpg" alt="">
+                                    <p>Специальный клей</p>
                                 </div>
                                 <div class="help_glass_items">
                                     <img src="images/types_kripezh3.png" alt="">
-                                    <p>ОБЫЧНОЕ</p>
+                                    <p>Точечный крепеж</p>
                                 </div>
                                 <!-- <div class="help_glass_items">
 							<img src="images/glass5.png" alt="">
@@ -3335,7 +3403,7 @@
             </section>
         </div>
 
-        <section id="call_back" class="call_back_section">
+        <!-- <section id="call_back" class="call_back_section">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
@@ -3379,7 +3447,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
 
         <div class="call_back_section">
@@ -3530,7 +3598,7 @@
     </div>
 
     <div data-hash="seven">
-        <section id="page_calculations">
+        <!-- <section id="page_calculations">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3 col-md-3">
@@ -3559,12 +3627,22 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <section>
             <div class="container">
                 <div class="row">
+                    <div class="col-lg-12">
+                    <div class="wrap_">
+                        <div class="popupp">
+                        <div class="up_form up_form_popup">
+                            <h3 class="popup_choise_h2">"Калькулятор обновляется до 28 января. Приносим извинения за временные неудобства." <br> :)</h3>
+                            
+                        </div>
+                    </div>
+                </div>
+                
                     <div class="col-lg-4">
-                        <div class="cost_calculation">
+                        <!-- <div class="cost_calculation">
                             <h4>
                                 стоимость заказа
                             </h4>
@@ -3600,10 +3678,10 @@
                             </div>
 
                         </div>
-                    </div>
+                    </div> -->
                     <div class="col-lg-8">
                         <div class="cost_calc_first_tab first_tab_1 toggle">
-                            <div id="calc_stege" class="head toggler ">
+                            <!-- <div id="calc_stege" class="head toggler ">
                                 <p class="numver_stage">
                                     1
                                 </p>
@@ -3611,7 +3689,7 @@
                                     Выберите материал
                                 </h4>
                                 <i class="fas fa-angle-down"></i>
-                            </div>
+                            </div> -->
                             <div id="box-calc" class="wraper content actived">
                                 <div class="stairs_and_flooring_buttons stairs_and_flooring_buttons_calculator  d-flex">
                                     <a class="nav-link" id="glass" data-toggle="tab" href="#">Стекло</a>
@@ -3756,9 +3834,9 @@
 
                 </div>
                 <div class="soc_icons">
-                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-vk"></i>
                     <i class="fab fa-instagram"></i>
-                    <i class="fab fa-vimeo-v"></i>
+                    <!-- <i class="fab fa-vimeo-v"></i> -->
                 </div>
             </div>
         </div>
@@ -3856,6 +3934,7 @@
 <script type="text/javascript" src={{asset("js/libs/functions.js")}}></script>
 <script type="text/javascript" src={{asset("js/navigationButtons.js")}}></script>
 <script type="text/javascript" src={{asset("js/calculator.js")}}></script>
+<script type="text/javascript" src={{asset("js/libs/focus_block.js")}}></script>
 
 <script type="text/javascript" src={{asset("js/forms/form_js.js")}}></script>
 <script type="text/javascript" src={{asset("js/jquery.validate.js")}}></script>

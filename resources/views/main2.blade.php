@@ -1508,34 +1508,34 @@
                             <div id="chekbox_sect_6" class="chekbox_sect_6 d-flex">
                                 <div class="first_chekbox">
                                     <label>
-                                        <input id="chbx1_1" type="checkbox">
+                                        <input id="chbx1" type="checkbox">
                                         <span class="fake-checkbox" aria-hidden="true"></span>
                                         <span class="label">Доставка изделия</span>
                                     </label>
                                     <label>
-                                        <input id="chbx1_2" type="checkbox">
+                                        <input id="chbx2" type="checkbox">
                                         <span class="fake-checkbox" aria-hidden="true"></span>
                                         <span class="label">Монтаж (Установка)</span>
                                     </label>
                                     <label>
-                                        <input id="chbx1_3" type="checkbox">
+                                        <input id="chbx3" type="checkbox">
                                         <span class="fake-checkbox" aria-hidden="true"></span>
                                         <span class="label">Зеркало в ванну</span>
                                     </label>
                                 </div>
                                 <div class="ssecond_chekbox">
                                     <label>
-                                        <input id="chbx1_4" type="checkbox">
+                                        <input id="chbx4" type="checkbox">
                                         <span class="fake-checkbox" aria-hidden="true"></span>
                                         <span class="label">Гидрофобное покрытие / антигрязь</span>
                                     </label>
                                     <label>
-                                        <input id="chbx1_5" type="checkbox">
+                                        <input id="chbx5" type="checkbox">
                                         <span class="fake-checkbox" aria-hidden="true"></span>
                                         <span class="label">Стеклянные полки / дверцы</span>
                                     </label>
                                     <label>
-                                        <input id="chbx1_6" type="checkbox">
+                                        <input id="chbx6" type="checkbox">
                                         <span class="fake-checkbox" aria-hidden="true"></span>
                                         <span class="label">Выезд дизайнера / подбор рисунка</span>
                                     </label>
@@ -2166,34 +2166,34 @@
                             <div id="chekbox_sect_6" class="chekbox_sect_6 d-flex">
                                 <div class="first_chekbox">
                                     <label>
-                                        <input id="chbx2_1" type="checkbox">
+                                        <input id="chbx1" type="checkbox">
                                         <span class="fake-checkbox" aria-hidden="true"></span>
                                         <span class="label">Доставка изделия</span>
                                     </label>
                                     <label>
-                                        <input id="chbx2_2" type="checkbox">
+                                        <input id="chbx2" type="checkbox">
                                         <span class="fake-checkbox" aria-hidden="true"></span>
                                         <span class="label">Монтаж (Установка)</span>
                                     </label>
                                     <label>
-                                        <input id="chbx2_3" type="checkbox">
+                                        <input id="chbx3" type="checkbox">
                                         <span class="fake-checkbox" aria-hidden="true"></span>
                                         <span class="label">Зеркало в ванну</span>
                                     </label>
                                 </div>
                                 <div class="ssecond_chekbox">
                                     <label>
-                                        <input id="chbx2_4" type="checkbox">
+                                        <input id="chbx4" type="checkbox">
                                         <span class="fake-checkbox" aria-hidden="true"></span>
                                         <span class="label">Гидрофобное покрытие / антигрязь</span>
                                     </label>
                                     <label>
-                                        <input id="chbx2_5" type="checkbox">
+                                        <input id="chbx5" type="checkbox">
                                         <span class="fake-checkbox" aria-hidden="true"></span>
                                         <span class="label">Стеклянные полки / дверцы</span>
                                     </label>
                                     <label>
-                                        <input id="chbx2_6" type="checkbox">
+                                        <input id="chbx6" type="checkbox">
                                         <span class="fake-checkbox" aria-hidden="true"></span>
                                         <span class="label">Выезд дизайнера / подбор рисунка</span>
                                     </label>
@@ -2881,34 +2881,34 @@
                             <div id="chekbox_sect_6" class="chekbox_sect_6 d-flex">
                                 <div class="first_chekbox">
                                     <label>
-                                        <input id="chbx3_1" type="checkbox">
+                                        <input id="chbx1" type="checkbox">
                                         <span class="fake-checkbox" aria-hidden="true"></span>
                                         <span class="label">Доставка изделия</span>
                                     </label>
                                     <label>
-                                        <input id="chbx3_2" type="checkbox">
+                                        <input id="chbx2" type="checkbox">
                                         <span class="fake-checkbox" aria-hidden="true"></span>
                                         <span class="label">Монтаж (Установка)</span>
                                     </label>
                                     <label>
-                                        <input id="chbx3_3" type="checkbox">
+                                        <input id="chbx3" type="checkbox">
                                         <span class="fake-checkbox" aria-hidden="true"></span>
                                         <span class="label">Зеркало в ванну</span>
                                     </label>
                                 </div>
                                 <div class="ssecond_chekbox">
                                     <label>
-                                        <input id="chbx3_4" type="checkbox">
+                                        <input id="chbx4" type="checkbox">
                                         <span class="fake-checkbox" aria-hidden="true"></span>
                                         <span class="label">Гидрофобное покрытие / антигрязь</span>
                                     </label>
                                     <label>
-                                        <input id="chbx3_5" type="checkbox">
+                                        <input id="chbx5" type="checkbox">
                                         <span class="fake-checkbox" aria-hidden="true"></span>
                                         <span class="label">Стеклянные полки / дверцы</span>
                                     </label>
                                     <label>
-                                        <input id="chbx3_6" type="checkbox">
+                                        <input id="chbx6" type="checkbox">
                                         <span class="fake-checkbox" aria-hidden="true"></span>
                                         <span class="label">Выезд дизайнера / подбор рисунка</span>
                                     </label>
@@ -3432,34 +3432,34 @@
                             <div id="chekbox_sect_6" class="chekbox_sect_6 d-flex">
                                 <div class="first_chekbox">
                                     <label>
-                                        <input id="chbx4_1" type="checkbox">
+                                        <input id="chbx1" type="checkbox">
                                         <span class="fake-checkbox" aria-hidden="true"></span>
                                         <span class="label">Доставка изделия</span>
                                     </label>
                                     <label>
-                                        <input id="chbx4_2" type="checkbox">
+                                        <input id="chbx2" type="checkbox">
                                         <span class="fake-checkbox" aria-hidden="true"></span>
                                         <span class="label">Монтаж (Установка)</span>
                                     </label>
                                     <label>
-                                        <input id="chbx4_3" type="checkbox">
+                                        <input id="chbx3" type="checkbox">
                                         <span class="fake-checkbox" aria-hidden="true"></span>
                                         <span class="label">Зеркало в ванну</span>
                                     </label>
                                 </div>
                                 <div class="ssecond_chekbox">
                                     <label>
-                                        <input id="chbx4_4" type="checkbox">
+                                        <input id="chbx4" type="checkbox">
                                         <span class="fake-checkbox" aria-hidden="true"></span>
                                         <span class="label">Гидрофобное покрытие / антигрязь</span>
                                     </label>
                                     <label>
-                                        <input id="chbx4_5" type="checkbox">
+                                        <input id="chbx5" type="checkbox">
                                         <span class="fake-checkbox" aria-hidden="true"></span>
                                         <span class="label">Стеклянные полки / дверцы</span>
                                     </label>
                                     <label>
-                                        <input id="chbx4_6" type="checkbox">
+                                        <input id="chbx6" type="checkbox">
                                         <span class="fake-checkbox" aria-hidden="true"></span>
                                         <span class="label">Выезд дизайнера / подбор рисунка</span>
                                     </label>

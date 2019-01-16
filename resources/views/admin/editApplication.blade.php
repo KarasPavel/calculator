@@ -192,19 +192,19 @@
 
                                                 </div>
                                             </div>
-                                            {{--<div class="col-md-6">--}}
-                                                {{--<div class="inline-form">--}}
+                                            <div class="col-md-6">
+                                                <div class="inline-form">
 
-                                                    {{--<label for="phone" class="control-label"></label><label--}}
-                                                            {{--class="c-label">End time</label><input--}}
-                                                            {{--id="endTime"--}}
-                                                            {{--type="text"--}}
-                                                            {{--name="endTime"--}}
-                                                            {{--value="{{$application[0]->end_time}}"--}}
-                                                            {{--disabled="true"/>--}}
+                                                    <label for="phone" class="control-label"></label><label
+                                                            class="c-label">Comment</label><input
+                                                            id="endTime"
+                                                            type="text"
+                                                            name="endTime"
+                                                            value="{{$application[0]->comment}}"
+                                                            disabled="true"/>
 
-                                                {{--</div>--}}
-                                            {{--</div>--}}
+                                                </div>
+                                            </div>
                                             <div class="col-md-6">
                                                 <div class="inline-form">
                                                     <label class="c-label">Select status</label>

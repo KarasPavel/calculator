@@ -1428,23 +1428,23 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="help_glaas_type d-flex">
-                                <div class="help_glass_items">
+                                <div class="help_glass_items for_option_1">
                                     <img src="images/glaas_type1.png" alt="">
                                     <p>Прозрачное</p>
                                 </div>
-                                <div class="help_glass_items">
+                                <div class="help_glass_items for_option_1">
                                     <img src="images/glass3.png" alt="">
                                     <p>Оптивайт</p>
                                 </div>
-                                <div class="help_glass_items">
+                                <div class="help_glass_items for_option_1">
                                     <img src="images/glass4.png" alt="">
                                     <p>Бронза</p>
                                 </div>
-                                <div class="help_glass_items">
+                                <div class="help_glass_items for_option_1">
                                     <img src="images/glass5.png" alt="">
                                     <p>Матовое</p>
                                 </div>
-                                <div class="help_glass_items">
+                                <div class="help_glass_items for_option_1">
                                     <img src="images/glaas6.png" alt="">
                                     <p>Серое</p>
                                 </div>
@@ -1472,12 +1472,12 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="help_glaas_type help_glaas_type2 d-flex">
-                                <div class="help_glass_items help_glass_items2">
+                                <div class="help_glass_items help_glass_items2 for_option_2">
                                     <img src="images/cost_calc_link1.png" alt="">
                                     <p>РЕМОНТ В РАЗГАРЕ</p>
                                     <span>Нужна консультация</span>
                                 </div>
-                                <div class="help_glass_items help_glass_items2">
+                                <div class="help_glass_items help_glass_items2 for_option_2">
                                     <img src="images/cost_calc_link3.png" alt="">
                                     <p>ВСЕ ГОТОВО К ЗАМЕРУ</p>
                                     <span>Нужен расчет или замер</span>
@@ -1505,37 +1505,37 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="help_glaas_type help_glaas_type2 d-flex">
-                            <div class="chekbox_sect_6 d-flex">
+                            <div id="chekbox_sect_6" class="chekbox_sect_6 d-flex">
                                 <div class="first_chekbox">
                                     <label>
-                                        <input type="checkbox">
+                                        <input id="chbx1" type="checkbox">
                                         <span class="fake-checkbox" aria-hidden="true"></span>
                                         <span class="label">Доставка изделия</span>
                                     </label>
                                     <label>
-                                        <input type="checkbox">
+                                        <input id="chbx2" type="checkbox">
                                         <span class="fake-checkbox" aria-hidden="true"></span>
                                         <span class="label">Монтаж (Установка)</span>
                                     </label>
                                     <label>
-                                        <input type="checkbox">
+                                        <input id="chbx3" type="checkbox">
                                         <span class="fake-checkbox" aria-hidden="true"></span>
                                         <span class="label">Зеркало в ванну</span>
                                     </label>
                                 </div>
                                 <div class="ssecond_chekbox">
                                     <label>
-                                        <input type="checkbox">
+                                        <input id="chbx4" type="checkbox">
                                         <span class="fake-checkbox" aria-hidden="true"></span>
                                         <span class="label">Гидрофобное покрытие / антигрязь</span>
                                     </label>
                                     <label>
-                                        <input type="checkbox">
+                                        <input id="chbx5" type="checkbox">
                                         <span class="fake-checkbox" aria-hidden="true"></span>
                                         <span class="label">Стеклянные полки / дверцы</span>
                                     </label>
                                     <label>
-                                        <input type="checkbox">
+                                        <input id="chbx6" type="checkbox">
                                         <span class="fake-checkbox" aria-hidden="true"></span>
                                         <span class="label">Выезд дизайнера / подбор рисунка</span>
                                     </label>
@@ -2086,23 +2086,23 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="help_glaas_type d-flex">
-                                <div class="help_glass_items">
+                                <div class="help_glass_items for_option_1">
                                     <img src="images/glaas_type1.png" alt="">
                                     <p>ОБЫЧНОЕ</p>
                                 </div>
-                                <div class="help_glass_items">
+                                <div class="help_glass_items for_option_1">
                                     <img src="images/glass3.png" alt="">
                                     <p>ОБЫЧНОЕ</p>
                                 </div>
-                                <div class="help_glass_items">
+                                <div class="help_glass_items for_option_1">
                                     <img src="images/glass4.png" alt="">
                                     <p>ОБЫЧНОЕ</p>
                                 </div>
-                                <div class="help_glass_items">
+                                <div class="help_glass_items for_option_1">
                                     <img src="images/glass5.png" alt="">
                                     <p>ОБЫЧНОЕ</p>
                                 </div>
-                                <div class="help_glass_items">
+                                <div class="help_glass_items for_option_1">
                                     <img src="images/glaas6.png" alt="">
                                     <p>ОБЫЧНОЕ</p>
                                 </div>
@@ -2130,12 +2130,12 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="help_glaas_type help_glaas_type2 d-flex">
-                                <div class="help_glass_items help_glass_items2">
+                                <div class="help_glass_items help_glass_items2 for_option_2">
                                     <img src="images/cost_calc_link1.png" alt="">
                                     <p>РЕМОНТ В РАЗГАРЕ</p>
                                     <span>Нужна консультация</span>
                                 </div>
-                                <div class="help_glass_items help_glass_items2">
+                                <div class="help_glass_items help_glass_items2 for_option_2">
                                     <img src="images/cost_calc_link3.png" alt="">
                                     <p>ВСЕ ГОТОВО К ЗАМЕРУ</p>
                                     <span>Нужен расчет или замер</span>
@@ -2163,37 +2163,37 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="help_glaas_type help_glaas_type2 d-flex">
-                            <div class="chekbox_sect_6 d-flex">
+                            <div id="chekbox_sect_6" class="chekbox_sect_6 d-flex">
                                 <div class="first_chekbox">
                                     <label>
-                                        <input type="checkbox">
+                                        <input id="chbx1" type="checkbox">
                                         <span class="fake-checkbox" aria-hidden="true"></span>
                                         <span class="label">Доставка изделия</span>
                                     </label>
                                     <label>
-                                        <input type="checkbox">
+                                        <input id="chbx2" type="checkbox">
                                         <span class="fake-checkbox" aria-hidden="true"></span>
                                         <span class="label">Монтаж (Установка)</span>
                                     </label>
                                     <label>
-                                        <input type="checkbox">
+                                        <input id="chbx3" type="checkbox">
                                         <span class="fake-checkbox" aria-hidden="true"></span>
                                         <span class="label">Зеркало в ванну</span>
                                     </label>
                                 </div>
                                 <div class="ssecond_chekbox">
                                     <label>
-                                        <input type="checkbox">
+                                        <input id="chbx4" type="checkbox">
                                         <span class="fake-checkbox" aria-hidden="true"></span>
                                         <span class="label">Гидрофобное покрытие / антигрязь</span>
                                     </label>
                                     <label>
-                                        <input type="checkbox">
+                                        <input id="chbx5" type="checkbox">
                                         <span class="fake-checkbox" aria-hidden="true"></span>
                                         <span class="label">Стеклянные полки / дверцы</span>
                                     </label>
                                     <label>
-                                        <input type="checkbox">
+                                        <input id="chbx6" type="checkbox">
                                         <span class="fake-checkbox" aria-hidden="true"></span>
                                         <span class="label">Выезд дизайнера / подбор рисунка</span>
                                     </label>
@@ -2801,23 +2801,23 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="help_glaas_type d-flex">
-                                <div class="help_glass_items">
+                                <div class="help_glass_items for_option_1">
                                     <img src="images/glaas_type1.png" alt="">
                                     <p>ОБЫЧНОЕ</p>
                                 </div>
-                                <div class="help_glass_items">
+                                <div class="help_glass_items for_option_1">
                                     <img src="images/glass3.png" alt="">
                                     <p>ОБЫЧНОЕ</p>
                                 </div>
-                                <div class="help_glass_items">
+                                <div class="help_glass_items for_option_1">
                                     <img src="images/glass4.png" alt="">
                                     <p>ОБЫЧНОЕ</p>
                                 </div>
-                                <div class="help_glass_items">
+                                <div class="help_glass_items for_option_1">
                                     <img src="images/glass5.png" alt="">
                                     <p>ОБЫЧНОЕ</p>
                                 </div>
-                                <div class="help_glass_items">
+                                <div class="help_glass_items for_option_1">
                                     <img src="images/glaas6.png" alt="">
                                     <p>ОБЫЧНОЕ</p>
                                 </div>
@@ -2845,12 +2845,12 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="help_glaas_type help_glaas_type2 d-flex">
-                                <div class="help_glass_items help_glass_items2">
+                                <div class="help_glass_items help_glass_items2 for_option_2">
                                     <img src="images/cost_calc_link1.png" alt="">
                                     <p>РЕМОНТ В РАЗГАРЕ</p>
                                     <span>Нужна консультация</span>
                                 </div>
-                                <div class="help_glass_items help_glass_items2">
+                                <div class="help_glass_items help_glass_items2 for_option_2">
                                     <img src="images/cost_calc_link3.png" alt="">
                                     <p>ВСЕ ГОТОВО К ЗАМЕРУ</p>
                                     <span>Нужен расчет или замер</span>
@@ -2878,37 +2878,37 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="help_glaas_type help_glaas_type2 d-flex">
-                            <div class="chekbox_sect_6 d-flex">
+                            <div id="chekbox_sect_6" class="chekbox_sect_6 d-flex">
                                 <div class="first_chekbox">
                                     <label>
-                                        <input type="checkbox">
+                                        <input id="chbx1" type="checkbox">
                                         <span class="fake-checkbox" aria-hidden="true"></span>
                                         <span class="label">Доставка изделия</span>
                                     </label>
                                     <label>
-                                        <input type="checkbox">
+                                        <input id="chbx2" type="checkbox">
                                         <span class="fake-checkbox" aria-hidden="true"></span>
                                         <span class="label">Монтаж (Установка)</span>
                                     </label>
                                     <label>
-                                        <input type="checkbox">
+                                        <input id="chbx3" type="checkbox">
                                         <span class="fake-checkbox" aria-hidden="true"></span>
                                         <span class="label">Зеркало в ванну</span>
                                     </label>
                                 </div>
                                 <div class="ssecond_chekbox">
                                     <label>
-                                        <input type="checkbox">
+                                        <input id="chbx4" type="checkbox">
                                         <span class="fake-checkbox" aria-hidden="true"></span>
                                         <span class="label">Гидрофобное покрытие / антигрязь</span>
                                     </label>
                                     <label>
-                                        <input type="checkbox">
+                                        <input id="chbx5" type="checkbox">
                                         <span class="fake-checkbox" aria-hidden="true"></span>
                                         <span class="label">Стеклянные полки / дверцы</span>
                                     </label>
                                     <label>
-                                        <input type="checkbox">
+                                        <input id="chbx6" type="checkbox">
                                         <span class="fake-checkbox" aria-hidden="true"></span>
                                         <span class="label">Выезд дизайнера / подбор рисунка</span>
                                     </label>
@@ -3305,23 +3305,23 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="help_glaas_type kripezh d-flex">
-                                <div class="help_glass_items ">
+                                <div class="help_glass_items for_option_1">
                                     <img src="images/types_kripezh1.png" alt="">
                                     <p>ОБЫЧНОЕ</p>
                                 </div>
-                                <div class="help_glass_items">
+                                <div class="help_glass_items for_option_1">
                                     <img src="images/types_kripezh2.png" alt="">
                                     <p>ОБЫЧНОЕ</p>
                                 </div>
-                                <div class="help_glass_items">
+                                <div class="help_glass_items for_option_1">
                                     <img src="images/types_kripezh3.png" alt="">
                                     <p>ОБЫЧНОЕ</p>
                                 </div>
-                                <!-- <div class="help_glass_items">
+                                <!-- <div class="help_glass_items for_option_1">
 							<img src="images/glass5.png" alt="">
 							<p>ОБЫЧНОЕ</p>
 						</div>
-						<div class="help_glass_items">
+						<div class="help_glass_items for_option_1">
 							<img src="images/glaas6.png" alt="">
 							<p>ОБЫЧНОЕ</p>
 						</div>
@@ -3348,27 +3348,27 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="help_glaas_type d-flex">
-                            <div class="help_glass_items">
+                            <div class="help_glass_items for_option_3">
                                 <img src="images/types_kripezh2.png" alt="">
                                 <p>прозрачное стекло</p>
                             </div>
-                            <div class="help_glass_items">
+                            <div class="help_glass_items for_option_3">
                                 <img src="images/types_kripezh2.png" alt="">
                                 <p>градиент</p>
                             </div>
-                            <div class="help_glass_items">
+                            <div class="help_glass_items for_option_3">
                                 <img src="images/types_kripezh2.png" alt="">
                                 <p>однотонная покраска</p>
                             </div>
-                            <div class="help_glass_items">
+                            <div class="help_glass_items for_option_3">
                                 <img src="images/types_kripezh2.png" alt="">
                                 <p>УФ-печать</p>
                             </div>
-                            <div class="help_glass_items">
+                            <div class="help_glass_items for_option_3">
                                 <img src="images/types_kripezh2.png" alt="">
                                 <p>3D-эффект</p>
                             </div>
-                            <div class="help_glass_items">
+                            <div class="help_glass_items for_option_3">
                                 <img src="images/types_kripezh2.png" alt="">
                                 <p>матовка</p>
                             </div>
@@ -3396,12 +3396,12 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="help_glaas_type help_glaas_type2 d-flex">
-                                <div class="help_glass_items help_glass_items2">
+                                <div class="help_glass_items help_glass_items2 for_option_2">
                                     <img src="images/cost_calc_link1.png" alt="">
                                     <p>Кухня не установлена</p>
                                     <span>Нужна консультация</span>
                                 </div>
-                                <div class="help_glass_items help_glass_items2">
+                                <div class="help_glass_items help_glass_items2 for_option_2">
                                     <img src="images/cost_calc_link3.png" alt="">
                                     <p>Кухня установлена нужен замер</p>
                                     <span>Нужен расчет или замер</span>
@@ -3429,37 +3429,37 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="help_glaas_type help_glaas_type2 d-flex">
-                            <div class="chekbox_sect_6 d-flex">
+                            <div id="chekbox_sect_6" class="chekbox_sect_6 d-flex">
                                 <div class="first_chekbox">
                                     <label>
-                                        <input type="checkbox">
+                                        <input id="chbx1" type="checkbox">
                                         <span class="fake-checkbox" aria-hidden="true"></span>
                                         <span class="label">Доставка изделия</span>
                                     </label>
                                     <label>
-                                        <input type="checkbox">
+                                        <input id="chbx2" type="checkbox">
                                         <span class="fake-checkbox" aria-hidden="true"></span>
                                         <span class="label">Монтаж (Установка)</span>
                                     </label>
                                     <label>
-                                        <input type="checkbox">
+                                        <input id="chbx3" type="checkbox">
                                         <span class="fake-checkbox" aria-hidden="true"></span>
                                         <span class="label">Зеркало в ванну</span>
                                     </label>
                                 </div>
                                 <div class="ssecond_chekbox">
                                     <label>
-                                        <input type="checkbox">
+                                        <input id="chbx4" type="checkbox">
                                         <span class="fake-checkbox" aria-hidden="true"></span>
                                         <span class="label">Гидрофобное покрытие / антигрязь</span>
                                     </label>
                                     <label>
-                                        <input type="checkbox">
+                                        <input id="chbx5" type="checkbox">
                                         <span class="fake-checkbox" aria-hidden="true"></span>
                                         <span class="label">Стеклянные полки / дверцы</span>
                                     </label>
                                     <label>
-                                        <input type="checkbox">
+                                        <input id="chbx6" type="checkbox">
                                         <span class="fake-checkbox" aria-hidden="true"></span>
                                         <span class="label">Выезд дизайнера / подбор рисунка</span>
                                     </label>

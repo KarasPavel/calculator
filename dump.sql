@@ -171,7 +171,7 @@ CREATE TABLE `permissions` (
 
 LOCK TABLES `permissions` WRITE;
 /*!40000 ALTER TABLE `permissions` DISABLE KEYS */;
-INSERT INTO `permissions` VALUES (1,'create-user','Create Users','create new users','2019-01-09 08:55:02','2019-01-09 08:55:02'),(2,'see-user','See Users','see all users','2019-01-09 08:55:02','2019-01-09 08:55:02'),(3,'edit-user','Edit Users','edit all users','2019-01-09 08:55:02','2019-01-09 08:55:02'),(4,'delete-user','Delete Users','delete all users','2019-01-09 08:55:02','2019-01-09 08:55:02'),(5,'see-order','See Orders','see orders','2019-01-09 08:55:02','2019-01-09 08:55:02'),(6,'edit-order','Edit Orders','Edit orders','2019-01-09 08:55:02','2019-01-09 08:55:02'),(7,'delete-order','Delete Orders','Delete orders','2019-01-09 08:55:03','2019-01-09 08:55:03'),(8,'see-application','See Applications','See Application','2019-01-09 08:55:03','2019-01-09 08:55:03'),(9,'update-application','Update Applications','Update Application','2019-01-09 08:55:03','2019-01-09 08:55:03'),(10,'delete-application','delete Applications','delete Application','2019-01-09 08:55:03','2019-01-09 08:55:03');
+INSERT INTO `permissions` VALUES (1,'create-user','Create Users','create new users','2019-01-16 10:23:28','2019-01-16 10:23:28'),(2,'see-user','See Users','see all users','2019-01-16 10:23:29','2019-01-16 10:23:29'),(3,'edit-user','Edit Users','edit all users','2019-01-16 10:23:29','2019-01-16 10:23:29'),(4,'delete-user','Delete Users','delete all users','2019-01-16 10:23:29','2019-01-16 10:23:29'),(5,'see-order','See Orders','see orders','2019-01-16 10:23:29','2019-01-16 10:23:29'),(6,'edit-order','Edit Orders','Edit orders','2019-01-16 10:23:29','2019-01-16 10:23:29'),(7,'delete-order','Delete Orders','Delete orders','2019-01-16 10:23:29','2019-01-16 10:23:29'),(8,'see-application','See Applications','See Application','2019-01-16 10:23:30','2019-01-16 10:23:30'),(9,'update-application','Update Applications','Update Application','2019-01-16 10:23:30','2019-01-16 10:23:30'),(10,'delete-application','delete Applications','delete Application','2019-01-16 10:23:30','2019-01-16 10:23:30');
 /*!40000 ALTER TABLE `permissions` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -254,7 +254,7 @@ CREATE TABLE `roles` (
 
 LOCK TABLES `roles` WRITE;
 /*!40000 ALTER TABLE `roles` DISABLE KEYS */;
-INSERT INTO `roles` VALUES (1,'user','Пользователь','see status of his orders','2019-01-09 08:55:01','2019-01-09 08:55:01'),(2,'admin','Админ','CRUD all users, RUD all orders, RUD all applications','2019-01-09 08:55:01','2019-01-09 08:55:01'),(3,'junior_admin','Младший админ','CR all users, RU all orders, RUD all applications','2019-01-09 08:55:01','2019-01-09 08:55:01'),(4,'moderator','Моддер','nothing','2019-01-09 08:55:01','2019-01-09 08:55:01'),(5,'logistics','Логистика','nothing','2019-01-09 08:55:02','2019-01-09 08:55:02'),(6,'manager','Менеджер','RU only new orders, RUD all applications','2019-01-09 08:55:02','2019-01-09 08:55:02');
+INSERT INTO `roles` VALUES (1,'user','Пользователь','see status of his orders','2019-01-16 10:23:28','2019-01-16 10:23:28'),(2,'admin','Админ','CRUD all users, RUD all orders, RUD all applications','2019-01-16 10:23:28','2019-01-16 10:23:28'),(3,'junior_admin','Младший админ','CR all users, RU all orders, RUD all applications','2019-01-16 10:23:28','2019-01-16 10:23:28'),(4,'moderator','Моддер','nothing','2019-01-16 10:23:28','2019-01-16 10:23:28'),(5,'logistics','Логистика','nothing','2019-01-16 10:23:28','2019-01-16 10:23:28'),(6,'manager','Менеджер','RU only new orders, RUD all applications','2019-01-16 10:23:28','2019-01-16 10:23:28');
 /*!40000 ALTER TABLE `roles` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -359,7 +359,7 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
-INSERT INTO `users` VALUES (1,'Admin','admin@gmail.com',NULL,'$2y$10$FhoXjrdSgxIntQ4C4RXuA./KATiqRElp42q0LIEvAKoLqB8qcZby6',NULL,'2019-01-09 08:55:03','2019-01-09 08:55:03'),(2,'Junior admin','juniorAdmin@gmail.com',NULL,'$2y$10$e6qSYPKD0DGtme83eVZcZ.JCaSKb15HNZS/GdYCe7Vz/zbiI5KSdC',NULL,'2019-01-09 08:55:04','2019-01-09 08:55:04'),(3,'Moder','moder@gmail.com',NULL,'$2y$10$WyM1I8AGPty4qzE4/mQc8OH4U9AwKOro5kTwr0F1ob73wPQGvgJCa',NULL,'2019-01-09 08:55:04','2019-01-09 08:55:04'),(4,'Logistics','logistics@gmail.com',NULL,'$2y$10$94J2aOkNaY3v8vwtY87WH.qEFWbGy0eWyogtqoIfIcuA1Vol7h.iu',NULL,'2019-01-09 08:55:04','2019-01-09 08:55:04'),(5,'Manager','manager@gmail.com',NULL,'$2y$10$ogl0eK0gHqZ70UPAlNp1TO1fqQfmrgxt2Y8BEsYMVY/5kd2.uffI.',NULL,'2019-01-09 08:55:04','2019-01-09 08:55:04');
+INSERT INTO `users` VALUES (1,'Admin','admin@gmail.com',NULL,'$2y$10$B5VZOE1/Vmhrg/0bhzT1.eiRNTcFaOV1gor.l1X.F3RV7eJcoFXd6',NULL,'2019-01-16 10:23:30','2019-01-16 10:23:30'),(2,'Junior admin','juniorAdmin@gmail.com',NULL,'$2y$10$ry/mMWANYhH93GmEI3Qy2eYZFK7W16GJVAmnAY26Q29XEjEKMQ4Fe',NULL,'2019-01-16 10:23:31','2019-01-16 10:23:31'),(3,'Moder','moder@gmail.com',NULL,'$2y$10$iRmKjPpQ5t9qOXEM.yKdL.Qc4thhQ/NzW99CX67ywpk5Hxms2xrs.',NULL,'2019-01-16 10:23:31','2019-01-16 10:23:31'),(4,'Logistics','logistics@gmail.com',NULL,'$2y$10$fQwp0Ev89NIeOo2B3ZpvJOsQnWTCWq84m.8nTTNgfnYiwdk1IpfJ.',NULL,'2019-01-16 10:23:31','2019-01-16 10:23:31'),(5,'Manager','manager@gmail.com',NULL,'$2y$10$gFqaWOibGvCkaGUxWe0aO.Oqf60ROOg1xnQSai7e2ryXWXMes9Q5G',NULL,'2019-01-16 10:23:31','2019-01-16 10:23:31');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -398,4 +398,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2019-01-09  9:55:13
+-- Dump completed on 2019-01-16 11:25:42

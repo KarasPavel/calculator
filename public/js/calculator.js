@@ -1,4 +1,4 @@
-$( document ).ready(function() {
+$(document).ready(function () {
     var totalPrice = 0;
     var offsetHoursTotal = 0;
     var offsetSum = 0;
@@ -36,44 +36,44 @@ $( document ).ready(function() {
     var offsetHoursSand = 0;
     var offsetHoursPainting = 0;
     var materialPrice = {
-            mirror_silver_four: 1560,
-            mirror_silver_six: 2800,
-            mirror_bronze_four: 2340,
-            mirror_gold_four: 3770,
-            mirror_graphite_four: 2600,
-            mirror_aged_four: 7150,
-            mirror_exclusive_four: 3770,
-            mirror_clearVision_four: 6370,
-            mirror_clearVision_six: 7670,
-            glass_simple_three: 754,
-            glass_simple_four: 754,
-            glass_simple_five: 1027,
-            glass_simple_six: 1170,
-            glass_simple_eight: 1560,
-            glass_simple_ten: 2080,
-            glass_simple_twelve: 2860,
-            glass_simple_fifteen: 9000,
-            glass_simple_nineteen: 11000,
-            glass_bronze_four: 1755,
-            glass_bronze_six: 2210,
-            glass_bronze_eight: 3640,
-            glass_bronze_ten: 4420,
-            glass_gray_four: 1820,
-            glass_gray_six: 2275,
-            glass_gray_eight: 3770,
-            glass_gray_ten: 4680,
-            glass_optWhite_four: 2860,
-            glass_optWhite_five: 3185,
-            glass_optWhite_six: 4030,
-            glass_optWhite_eight: 5200,
-            glass_optWhite_ten: 6370,
-            glass_optWhite_twelve: 8580,
-            glass_optWhite_fifteen: 10000,
-            glass_optWhite_nineteen: 12000,
-            glass_matt_four: 1560,
-            glass_matt_six: 2210,
-            glass_matt_eight: 2730,
-            glass_matt_ten: 3510,
+        mirror_silver_four: 1560,
+        mirror_silver_six: 2800,
+        mirror_bronze_four: 2340,
+        mirror_gold_four: 3770,
+        mirror_graphite_four: 2600,
+        mirror_aged_four: 7150,
+        mirror_exclusive_four: 3770,
+        mirror_clearVision_four: 6370,
+        mirror_clearVision_six: 7670,
+        glass_simple_three: 754,
+        glass_simple_four: 754,
+        glass_simple_five: 1027,
+        glass_simple_six: 1170,
+        glass_simple_eight: 1560,
+        glass_simple_ten: 2080,
+        glass_simple_twelve: 2860,
+        glass_simple_fifteen: 9000,
+        glass_simple_nineteen: 11000,
+        glass_bronze_four: 1755,
+        glass_bronze_six: 2210,
+        glass_bronze_eight: 3640,
+        glass_bronze_ten: 4420,
+        glass_gray_four: 1820,
+        glass_gray_six: 2275,
+        glass_gray_eight: 3770,
+        glass_gray_ten: 4680,
+        glass_optWhite_four: 2860,
+        glass_optWhite_five: 3185,
+        glass_optWhite_six: 4030,
+        glass_optWhite_eight: 5200,
+        glass_optWhite_ten: 6370,
+        glass_optWhite_twelve: 8580,
+        glass_optWhite_fifteen: 10000,
+        glass_optWhite_nineteen: 12000,
+        glass_matt_four: 1560,
+        glass_matt_six: 2210,
+        glass_matt_eight: 2730,
+        glass_matt_ten: 3510,
     };
     var processingPrice = {
         with_processing_four: 110,
@@ -152,9 +152,9 @@ $( document ).ready(function() {
         glass_matt_ten: 760,
     };
 
-    function setPriceValue(){
-        if (materialTypeId === 'triplex'){
-            totalPrice = triplexSum  + offsetSum;
+    function setPriceValue() {
+        if (materialTypeId === 'triplex') {
+            totalPrice = triplexSum + offsetSum;
             return Math.round(totalPrice);
         } else {
             totalPrice = getProcessingPrice()
@@ -162,7 +162,7 @@ $( document ).ready(function() {
                 + getHardeningPrice()
                 + getOptionalPrice()
                 + getDeliveryPrice();
-            if (!totalPrice){
+            if (!totalPrice) {
                 return 0;
             } else {
                 return Math.round(totalPrice);
@@ -174,15 +174,15 @@ $( document ).ready(function() {
         let urgencyFactor_1 = 1;
         let urgencyFactor_2 = 1;
         let urgencyFactor_3 = 1;
-        if (shapeId === 'circle' || shapeId === 'oval' || shapeId === 'another' || rndNum > 0){
+        if (shapeId === 'circle' || shapeId === 'oval' || shapeId === 'another' || rndNum > 0) {
             offsetHoursRound = 72;
         } else {
             offsetHoursRound = 0;
         }
-        if ($('#checkboxPrice').is(':checked')){
-            urgencyFactor_1 = 1/2;
-            urgencyFactor_2 = 2/3;
-            urgencyFactor_3 = 1/3;
+        if ($('#checkboxPrice').is(':checked')) {
+            urgencyFactor_1 = 1 / 2;
+            urgencyFactor_2 = 2 / 3;
+            urgencyFactor_3 = 1 / 3;
         }
         offsetHoursTotal = offsetHoursBasic * urgencyFactor_1
             + offsetHoursFacet * urgencyFactor_2
@@ -205,7 +205,7 @@ $( document ).ready(function() {
         var today = new Date();
         today.setHours(today.getHours() + setOffsetHoursTotal());
         var dd = today.getDate();
-        var mm = today.getMonth()+1;
+        var mm = today.getMonth() + 1;
         var yyyy = today.getFullYear();
         dayName = ([
             "( Воскресенье )",
@@ -389,6 +389,7 @@ $( document ).ready(function() {
         fillShapeDiv();
         $('#shape').show().children().show();
     });
+
     function fillShapeDiv() {
         $('#shape').append('<div id="calc_stege_4" class="head toggler"></div>');
         $('#calc_stege_4').append('<p class="numver_stage">4</p>');
@@ -436,11 +437,11 @@ $( document ).ready(function() {
         checkSize();
     });
 
-    function checkSize(){
+    function checkSize() {
         $('#format').empty();
         $('#extra').empty();
         $('#order_info').empty();
-        if ($('#shape_diameter').val() > 0 || $('#shape_height').val()*$('#shape_width').val() > 0 ) {
+        if ($('#shape_diameter').val() > 0 || $('#shape_height').val() * $('#shape_width').val() > 0) {
             getSquare();
             getPerimeter();
             setOrderDay();
@@ -450,20 +451,20 @@ $( document ).ready(function() {
     }
 
     function getSquare() {
-        if (shapeId === 'circle'){
-            square = ($('#shape_diameter').val()*$('#shape_diameter').val())/1000000;
+        if (shapeId === 'circle') {
+            square = ($('#shape_diameter').val() * $('#shape_diameter').val()) / 1000000;
         } else {
-            square = ($('#shape_height').val()*$('#shape_width').val())/1000000;
+            square = ($('#shape_height').val() * $('#shape_width').val()) / 1000000;
         }
     }
-    
+
     function getPerimeter() {
         if (shapeId === 'oval') {
-            perimeter = (parseInt($('#shape_height').val()) + parseInt($('#shape_width').val()))*3/1000;
+            perimeter = (parseInt($('#shape_height').val()) + parseInt($('#shape_width').val())) * 3 / 1000;
         } else if (shapeId === 'circle' || shapeId === 'another') {
-            perimeter = $('#shape_diameter').val()*3.14159*1.3/1000;
+            perimeter = $('#shape_diameter').val() * 3.14159 * 1.3 / 1000;
         } else {
-            perimeter = (parseInt($('#shape_height').val()) + parseInt($('#shape_width').val()))*2/1000;
+            perimeter = (parseInt($('#shape_height').val()) + parseInt($('#shape_width').val())) * 2 / 1000;
         }
     }
 
@@ -487,7 +488,7 @@ $( document ).ready(function() {
     });
 
     function getHardeningPrice() {
-        if ($('#hardening').is(':checked')){
+        if ($('#hardening').is(':checked')) {
             offsetHoursHardering = 24;
             return harderingPrice[materialType] * square;
         } else {
@@ -585,7 +586,7 @@ $( document ).ready(function() {
     $('#format').on('click', '#without_processing, #with_processing, ' +
         '#facet5, #facet10, #facet15, #facet20, #facet25, #facet30, #facet35, #facet40', function () {
         formatId = this.id;
-        if (formatId[0] === 'f'){
+        if (formatId[0] === 'f') {
             offsetHoursFacet = 72;
         } else {
             offsetHoursFacet = 0;
@@ -605,7 +606,7 @@ $( document ).ready(function() {
         $('#extra').append('<div id="box-calc-6" class="wraper content"></div>');
         $('#box-calc-6').append('<div id="box-calc-6-1" class="chekbox_sect_6 d-flex"></div>');
         $('#box-calc-6-1').append('<div id="box-calc-6-2-1" class="first_chekbox"></div>');
-        if (depthId != "three" && formatId != "without_processing" && materialTypeId != "mirror"){
+        if (depthId != "three" && formatId != "without_processing" && materialTypeId != "mirror") {
             $('#box-calc-6-2-1').append('<label>' +
                 '    <input id="hardening" type="checkbox">' +
                 '    <span class="fake-checkbox" aria-hidden="true"></span>' +
@@ -705,7 +706,7 @@ $( document ).ready(function() {
     }
 
     function getUvPrintingPrice() {
-        if ($('#uv_printing').is(':checked')){
+        if ($('#uv_printing').is(':checked')) {
             offsetHoursPrinting = 72;
             return uvPrice * square;
         } else {
@@ -716,7 +717,7 @@ $( document ).ready(function() {
 
     function getPaintingPrice() {
         let sum;
-        if ($('#painting').is(':checked')){
+        if ($('#painting').is(':checked')) {
             offsetHoursPainting = 72;
             if ($('#pnt_select').find(':selected').attr('id') === 'pnt_some') {
                 sum = paintingSome * square;
@@ -733,7 +734,7 @@ $( document ).ready(function() {
 
     function getSandBlastingPrice() {
         let sum;
-        if ($('#sand_blasting').is(':checked')){
+        if ($('#sand_blasting').is(':checked')) {
             offsetHoursSand = 72;
             if ($('#snd_bl_select').find(':selected').attr('id') === 'snd_bl_some') {
                 sum = sandBlastingSome * square;
@@ -748,13 +749,13 @@ $( document ).ready(function() {
         }
     }
 
-    function checkQuantity(){
+    function checkQuantity() {
         offsetHoursHoles = 0;
         let result1;
         let result2;
         if ($('#round_corners').is(':checked')) {
             rndNum = 0;
-            if ($('#rnd_con_num').val() > 0){
+            if ($('#rnd_con_num').val() > 0) {
                 rndNum = $('#rnd_con_num').val();
                 result1 = 1;
             } else {
@@ -771,7 +772,7 @@ $( document ).ready(function() {
         if ($('#holes_and_cutouts').is(':checked')) {
             offsetHoursHoles = 12;
             hacNum = 0;
-            if ($('#hac_num').val() > 0){
+            if ($('#hac_num').val() > 0) {
                 hacNum = $('#hac_num').val();
                 result2 = 1;
             } else {
@@ -786,7 +787,7 @@ $( document ).ready(function() {
             result2 = 1;
         }
 
-        if (result1*result2 === 1) {
+        if (result1 * result2 === 1) {
             $('#order_info').empty();
             deliveryType = null;
             getOptionalPrice()
@@ -806,6 +807,7 @@ $( document ).ready(function() {
         fillOrderDiv();
         $('#order_info').show().children().show();
     });
+
     function fillOrderDiv() {
         deliveryType = null;
         $('#order_info').append('<div id="calc_stege_7" class="head toggler"></div>');
@@ -845,15 +847,20 @@ $( document ).ready(function() {
     function getDeliveryPrice() {
         let sum;
         switch (deliveryType) {
-            case 'pickup': sum = pickupPrice;
+            case 'pickup':
+                sum = pickupPrice;
                 break;
-            case 'inMKAD': sum = inMKADPrice;
+            case 'inMKAD':
+                sum = inMKADPrice;
                 break;
-            case 'outMKAD': sum = outMKADPrice;
+            case 'outMKAD':
+                sum = outMKADPrice;
                 break;
-            case 'moskowRegion': sum = moskowRegionPrice;
+            case 'moskowRegion':
+                sum = moskowRegionPrice;
                 break;
-            default: sum = 0;
+            default:
+                sum = 0;
         }
         return sum;
     }

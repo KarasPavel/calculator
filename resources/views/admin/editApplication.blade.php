@@ -149,7 +149,7 @@
                                                             class="input-style"
                                                             type="text"
                                                             name="name"
-                                                            value="{{$application[0]->fullName}}" disabled="true"/>
+                                                            value="{{$application[0]->name}}" disabled="true"/>
                                                 </div>
                                             </div>
                                             <input type="hidden" name="applicationId" value="{{$application[0]->id}}">
@@ -187,24 +187,24 @@
                                                             id="startTime"
                                                             type="text"
                                                             name="startTime"
-                                                            value="{{$application[0]->start_time}}"
+                                                            value="{{$application[0]->created_at}}"
                                                             disabled/>
 
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
-                                                <div class="inline-form">
+                                            {{--<div class="col-md-6">--}}
+                                                {{--<div class="inline-form">--}}
 
-                                                    <label for="phone" class="control-label"></label><label
-                                                            class="c-label">End time</label><input
-                                                            id="endTime"
-                                                            type="text"
-                                                            name="endTime"
-                                                            value="{{$application[0]->end_time}}"
-                                                            disabled="true"/>
+                                                    {{--<label for="phone" class="control-label"></label><label--}}
+                                                            {{--class="c-label">End time</label><input--}}
+                                                            {{--id="endTime"--}}
+                                                            {{--type="text"--}}
+                                                            {{--name="endTime"--}}
+                                                            {{--value="{{$application[0]->end_time}}"--}}
+                                                            {{--disabled="true"/>--}}
 
-                                                </div>
-                                            </div>
+                                                {{--</div>--}}
+                                            {{--</div>--}}
                                             <div class="col-md-6">
                                                 <div class="inline-form">
                                                     <label class="c-label">Select status</label>
@@ -234,20 +234,20 @@
                                                     </select>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6">
-                                                <div class="inline-form">
-                                                    <label class="c-label">Day</label>
-                                                    <select id="day" name="days">
-                                                        @foreach($days as $value)
-                                                            <option id="{{$value->id+21}}"
-                                                                    value="{{$value->id}}">{{$value->day}}</option>
-                                                            @if($value->id === $application[0]->day_for_call_id)
-                                                                <script>document.getElementById("{{$value->id+21}}").selected = true</script>
-                                                            @endif
-                                                        @endforeach
-                                                    </select>
-                                                </div>
-                                            </div>
+                                            {{--<div class="col-md-6">--}}
+                                                {{--<div class="inline-form">--}}
+                                                    {{--<label class="c-label">Day</label>--}}
+                                                    {{--<select id="day" name="days">--}}
+                                                        {{--@foreach($days as $value)--}}
+                                                            {{--<option id="{{$value->id+21}}"--}}
+                                                                    {{--value="{{$value->id}}">{{$value->day}}</option>--}}
+                                                            {{--@if($value->id === $application[0]->day_for_call_id)--}}
+                                                                {{--<script>document.getElementById("{{$value->id+21}}").selected = true</script>--}}
+                                                            {{--@endif--}}
+                                                        {{--@endforeach--}}
+                                                    {{--</select>--}}
+                                                {{--</div>--}}
+                                            {{--</div>--}}
                                             <div class="col-md-6">
                                                 <div class="inline-form">
                                                     <button type="submit" class="btn btn-success">Update</button>

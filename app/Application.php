@@ -28,9 +28,9 @@ class Application extends Model
     public static function createApplication(Request $request)
     {
 //        dd($request->specialist);
-        if ($request->specialist === null) {
-            $request->specialist = 1;
-        }
+//        if ($request->specialist === null) {
+//            $request->specialist = 1;
+//        }
 //        if ($request->email === null) {
 //            $request->email = 'отсутствует';
 //        }

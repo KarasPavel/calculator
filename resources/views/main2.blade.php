@@ -918,7 +918,7 @@
                     </div>
                 </div>
                 <form>
-                    <div class="row">
+                    <div class="row formTag">
                         <div class="col-lg-12">
                             <div class="up_form">
                                 <input type="text" name="name" placeholder="имя">
@@ -1416,23 +1416,23 @@
                             <div class="help_glaas_type d-flex">
                                 <div class="help_glass_items">
                                     <img src="images/glaas_type1.png" alt="">
-                                    <p>ОБЫЧНОЕ</p>
+                                    <p>Прозрачное</p>
                                 </div>
                                 <div class="help_glass_items">
                                     <img src="images/glass3.png" alt="">
-                                    <p>ОБЫЧНОЕ</p>
+                                    <p>Оптивайт</p>
                                 </div>
                                 <div class="help_glass_items">
                                     <img src="images/glass4.png" alt="">
-                                    <p>ОБЫЧНОЕ</p>
+                                    <p>Бронза</p>
                                 </div>
                                 <div class="help_glass_items">
                                     <img src="images/glass5.png" alt="">
-                                    <p>ОБЫЧНОЕ</p>
+                                    <p>Матовое</p>
                                 </div>
                                 <div class="help_glass_items">
                                     <img src="images/glaas6.png" alt="">
-                                    <p>ОБЫЧНОЕ</p>
+                                    <p>Серое</p>
                                 </div>
                             </div>
                             <div class="button_next">
@@ -1546,7 +1546,7 @@
                     </div>
                 </div>
                 <form>
-                    <div class="row">
+                    <div class="row formTag">
                         <div class="col-lg-12">
                             <div class="help_glaas_type help_glaas_type_last ">
                                 <div class="up_form ">
@@ -2187,7 +2187,7 @@
                     </div>
                 </div>
                 <form>
-                    <div class="row">
+                    <div class="row formTag">
                         <div class="col-lg-12">
                             <div class="help_glaas_type help_glaas_type_last ">
                                 <div class="up_form ">
@@ -2888,7 +2888,7 @@
                     </div>
                 </div>
                 <form>
-                    <div class="row">
+                    <div class="row formTag">
                         <div class="col-lg-12">
                             <div class="help_glaas_type help_glaas_type_last ">
                                 <div class="up_form ">
@@ -3439,7 +3439,7 @@
                     </div>
                 </div>
                 <form>
-                    <div class="row">
+                    <div class="row formTag">
                         <div class="col-lg-12">
                             <div class="help_glaas_type help_glaas_type_last ">
                                 <div class="up_form ">
@@ -3755,27 +3755,36 @@
 
 <form>
     <a href="#x" class="overlay" id="win2"></a>
-    <div class="popup popup_choise">
+    <div class="popup popup_choise formTag">
         <div class="up_form up_form_popup">
             <h3 class="popup_choise_h2">ВЫЗОВ СПЕЦИАЛИСТА</h3>
-            <div class="butt_choise d-flex">
-                <button>Замершик</button>
-                <button>Дизайнер</button>
+            <div class="butt_choise button_forms button_forms_popup d-flex">
+                <a id="gager">Замершик</a>
+                <a id="designer">Дизайнер</a>
             </div>
             <input type="text" name="name" placeholder="имя">
             <input type="text" name="phone" placeholder="телефон">
         </div>
         <div class="down_form down_form_popup d-flex">
             <input type="text" name="email" placeholder="email">
-            <div class="checkbox">
-                <input name="agree" type="checkbox" id="checkbox18" v-model="checked">
-                <label for="checkbox18">
-                    <a href="#">Согласие с конфиденциальностью и куки</a>
-                </label>
-            </div>
+            {{--<div class="checkbox">--}}
+                {{--<input name="agree" type="checkbox" id="checkbox18" v-model="checked">--}}
+                {{--<label for="checkbox18">--}}
+                    {{--<a href="#">Сгласие с конфиденциальностью и куки</a>--}}
+                {{--</label>--}}
+            {{--</div>--}}
         </div>
+        <div class="checkbox">
+            <label>
+                <input name="agree" required type="checkbox">
+                <span class="fake-checkbox" aria-hidden="true"></span>
+                <span class="label">Согласие с конфиденциальностью и куки</span>
+            </label>
+        </div>
+
         <div class="button_forms button_forms_popup">
-            <a href="#win3">Заказать</a>
+            <a class="action_form" href="javascript:void(0);">Заказать</a>
+            {{--<a href="#win3">Заказать</a>--}}
         </div>
         <a class="close" title="Закрыть" href="#close"></a>
     </div>

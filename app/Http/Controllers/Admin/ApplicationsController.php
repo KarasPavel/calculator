@@ -48,9 +48,9 @@ class ApplicationsController extends Controller
             'specialist' => 'nullable|min:1|max:3|size:1',
         ]);
 
-//        Application::createApplication($request);
+        Application::createApplication($request);
 //        return redirect()->route('main');
-        return "all ok";
+        return 'all ok';
     }
 
     /**

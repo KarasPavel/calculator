@@ -46,18 +46,18 @@ class Application extends Model
 //        if ($request->dayChoice === null) {
 //            $request->dayChoice = '8';
 //        }
-//        return DB::table('applications')
-//            ->insert([
-//                'fullName' => $request->fullName,
-//                'email' => $request->email,
-//                'telephone' => $request->phone,
-//                'specialist_id' => $request->specialist,
+        return DB::table('applications')
+            ->insert([
+                'name' => $request->name,
+                'email' => $request->email,
+                'telephone' => $request->phone,
+                'specialist_id' => $request->specialist,
 //                'day_for_call_id' => $request->dayChoice,
-//                'application_status_id' => 1,
+                'application_status_id' => 1,
 //                'start_time' => $request->timeStart,
 //                'end_time' => $request->timeEnd,
-//                'created_at' => Carbon::now(),
-//            ]);
+                'created_at' => Carbon::now(),
+            ]);
     }
 
 

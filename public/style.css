@@ -61,6 +61,11 @@ a, .navbar-toggler:not(:disabled):not(.disabled), label{
 	/* right: 30px; */
 	position: relative;
 }
+
+.error{
+	color: red;
+}
+
 .typeText{
 	width: 300px;
 }

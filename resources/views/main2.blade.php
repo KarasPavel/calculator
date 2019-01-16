@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>Veditex</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
@@ -916,29 +917,32 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="up_form">
-                            <input type="text" placeholder="имя">
-                            <input type="text" placeholder="телефон">
-                        </div>
-                        <div class="down_form">
-                            <input type="text" placeholder="email">
+                <form>
+                    <div class="row formTag">
+                        <div class="col-lg-12">
+                            <div class="up_form">
+                                <input type="text" name="name" placeholder="имя">
+                                <input type="text" name="phone" placeholder="телефон">
+                            </div>
+                            <div class="down_form">
+                                <input type="text" name="email" placeholder="email">
 
 
-                        </div>
-                        <div class="checkbox">
-                            <label>
-                                <input type="checkbox">
-                                <span class="fake-checkbox" aria-hidden="true"></span>
-                                <span class="label">Согласие с конфиденциальностью и куки</span>
-                            </label></label>
-                        </div>
-                        <div class="button_forms">
-                            <a class="" href="#">отправить</a>
+                            </div>
+                            <div class="checkbox">
+                                <label>
+                                    <input name="agree" type="checkbox">
+                                    <span class="fake-checkbox" aria-hidden="true"></span>
+                                    <span class="label">Согласие с конфиденциальностью и куки</span>
+                                </label></label>
+                            </div>
+                            <div class="button_forms">
+                                {{--<a class="" href="#">отправить</a>--}}
+                                <a class="action_form" href="javascript:void(0);">отправить</a>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </form>
             </div>
         </section>
     </div>
@@ -1412,23 +1416,23 @@
                             <div class="help_glaas_type d-flex">
                                 <div class="help_glass_items">
                                     <img src="images/glaas_type1.png" alt="">
-                                    <p>ОБЫЧНОЕ</p>
+                                    <p>Прозрачное</p>
                                 </div>
                                 <div class="help_glass_items">
                                     <img src="images/glass3.png" alt="">
-                                    <p>ОБЫЧНОЕ</p>
+                                    <p>Оптивайт</p>
                                 </div>
                                 <div class="help_glass_items">
                                     <img src="images/glass4.png" alt="">
-                                    <p>ОБЫЧНОЕ</p>
+                                    <p>Бронза</p>
                                 </div>
                                 <div class="help_glass_items">
                                     <img src="images/glass5.png" alt="">
-                                    <p>ОБЫЧНОЕ</p>
+                                    <p>Матовое</p>
                                 </div>
                                 <div class="help_glass_items">
                                     <img src="images/glaas6.png" alt="">
-                                    <p>ОБЫЧНОЕ</p>
+                                    <p>Серое</p>
                                 </div>
                             </div>
                             <div class="button_next">
@@ -1541,31 +1545,35 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="help_glaas_type help_glaas_type_last ">
-                            <div class="up_form ">
-                                <input type="text" placeholder="Your name">
-                                <input type="text" placeholder="Your name">
+                <form>
+                    <div class="row formTag">
+                        <div class="col-lg-12">
+                            <div class="help_glaas_type help_glaas_type_last ">
+                                <div class="up_form ">
+                                    {{--<input type="text" placeholder="Your name">--}}
+                                    <input type="text" name="name" placeholder="Имя">
+                                    <input type="text" name="phone" placeholder="Телефон">
+                                </div>
+                                <div class="down_form down_form_2">
+                                    {{--<input type="text" placeholder="EMail">--}}
+                                    <input type="text" name="email" placeholder="email">
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input name="agree" type="checkbox">
+                                        <span class="fake-checkbox" aria-hidden="true"></span>
+                                        <span class="label">Согласие с конфиденциальностью и куки</span>
+                                    </label>
+                                </div>
                             </div>
-                            <div class="down_form down_form_2">
-                                <input type="text" placeholder="EMail">
-                                <input type="text" placeholder="EMail">
+                            <div class="button_next">
+                                {{--<a class="next__block" >отправить</a>--}}
+                                <a class="action_form" href="javascript:void(0);">отправить</a>
                             </div>
-                            <div class="checkbox">
-                            <label>
-                                <input type="checkbox">
-                                <span class="fake-checkbox" aria-hidden="true"></span>
-                                <span class="label">Согласие с конфиденциальностью и куки</span>
-                            </label>
-                        </div>
-                        </div>
-                        <div class="button_next">
-                            <a class="next__block" >отправить</a>
                         </div>
                     </div>
-                </div>
-            </div>            
+                </form>
+            </div>
         </section>
         <section id="call_back" class="call_back_section">
             <div class="container">                
@@ -2178,30 +2186,34 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="help_glaas_type help_glaas_type_last ">
-                            <div class="up_form ">
-                                <input type="text" placeholder="Your name">
-                                <input type="text" placeholder="Your name">
+                <form>
+                    <div class="row formTag">
+                        <div class="col-lg-12">
+                            <div class="help_glaas_type help_glaas_type_last ">
+                                <div class="up_form ">
+                                    {{--<input type="text" placeholder="Your name">--}}
+                                    <input type="text" name="name" placeholder="имя">
+                                    <input type="text" name="phone" placeholder="Телефон">
+                                </div>
+                                <div class="down_form down_form_2">
+                                    {{--<input type="text" placeholder="EMail">--}}
+                                    <input type="text" name="email" placeholder="email">
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input name="agree" type="checkbox">
+                                        <span class="fake-checkbox" aria-hidden="true"></span>
+                                        <span class="label">Согласие с конфиденциальностью и куки</span>
+                                    </label>
+                                </div>
                             </div>
-                            <div class="down_form down_form_2">
-                                <input type="text" placeholder="EMail">
-                                <input type="text" placeholder="EMail">
+                            <div class="button_next">
+                                {{--<a class="next__block">отправить</a>--}}
+                                <a class="action_form" href="javascript:void(0);">отправить</a>
                             </div>
-                            <div class="checkbox">
-                            <label>
-                                <input type="checkbox">
-                                <span class="fake-checkbox" aria-hidden="true"></span>
-                                <span class="label">Согласие с конфиденциальностью и куки</span>
-                            </label>
-                        </div>
-                        </div>
-                        <div class="button_next">
-                            <a class="next__block">отправить</a>
                         </div>
                     </div>
-                </div>
+                </form>
             </div>
         </section>
         <section id="call_back" class="call_back_section">
@@ -2875,30 +2887,34 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="help_glaas_type help_glaas_type_last ">
-                            <div class="up_form ">
-                                <input type="text" placeholder="Your name">
-                                <input type="text" placeholder="Your name">
+                <form>
+                    <div class="row formTag">
+                        <div class="col-lg-12">
+                            <div class="help_glaas_type help_glaas_type_last ">
+                                <div class="up_form ">
+                                    {{--<input type="text" placeholder="Your name">--}}
+                                    <input type="text" name="name" placeholder="имя">
+                                    <input type="text" name="phone" placeholder="Телефон">
+                                </div>
+                                <div class="down_form down_form_2">
+                                    {{--<input type="text" placeholder="EMail">--}}
+                                    <input type="text" name="email" placeholder="email">
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input name="agree" type="checkbox">
+                                        <span class="fake-checkbox" aria-hidden="true"></span>
+                                        <span class="label">Согласие с конфиденциальностью и куки</span>
+                                    </label>
+                                </div>
                             </div>
-                            <div class="down_form down_form_2">
-                                <input type="text" placeholder="EMail">
-                                <input type="text" placeholder="EMail">
+                            <div class="button_next">
+                                {{--<a class="next__block">отправить</a>--}}
+                                <a class="action_form" href="javascript:void(0);">отправить</a>
                             </div>
-                            <div class="checkbox">
-                            <label>
-                                <input type="checkbox">
-                                <span class="fake-checkbox" aria-hidden="true"></span>
-                                <span class="label">Согласие с конфиденциальностью и куки</span>
-                            </label>
-                        </div>
-                        </div>
-                        <div class="button_next">
-                            <a class="next__block">отправить</a>
                         </div>
                     </div>
-                </div>
+                </form>
             </div>
         </section>
         <section id="call_back" class="call_back_section">
@@ -3422,30 +3438,34 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="help_glaas_type help_glaas_type_last ">
-                            <div class="up_form ">
-                                <input type="text" placeholder="Your name">
-                                <input type="text" placeholder="Your name">
+                <form>
+                    <div class="row formTag">
+                        <div class="col-lg-12">
+                            <div class="help_glaas_type help_glaas_type_last ">
+                                <div class="up_form ">
+                                    {{--<input type="text" placeholder="Your name">--}}
+                                    <input type="text" name="name" placeholder="имя">
+                                    <input type="text" name="phone" placeholder="Телефон">
+                                </div>
+                                <div class="down_form down_form_2">
+                                    {{--<input type="text" placeholder="EMail">--}}
+                                    <input type="text" name="email" placeholder="email">
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input name="agree" type="checkbox">
+                                        <span class="fake-checkbox" aria-hidden="true"></span>
+                                        <span class="label">Согласие с конфиденциальностью и куки</span>
+                                    </label>
+                                </div>
                             </div>
-                            <div class="down_form down_form_2">
-                                <input type="text" placeholder="EMail">
-                                <input type="text" placeholder="EMail">
+                            <div class="button_next">
+                                {{--<a class="next__block">отправить</a>--}}
+                                <a class="action_form" href="javascript:void(0);">отправить</a>
                             </div>
-                            <div class="checkbox">
-                            <label>
-                                <input type="checkbox">
-                                <span class="fake-checkbox" aria-hidden="true"></span>
-                                <span class="label">Согласие с конфиденциальностью и куки</span>
-                            </label>
-                        </div>
-                        </div>
-                        <div class="button_next">
-                            <a class="next__block">отправить</a>
                         </div>
                     </div>
-                </div>
+                </form>
             </div>
         </section>
         <section id="call_back" class="call_back_section">
@@ -3637,7 +3657,6 @@
             </div>
         </section>
     </div>
-
 </div>
 
 
@@ -3708,65 +3727,71 @@
         </div>
     </div>
 </footer>
-<a href="#x" class="overlay" id="win1"></a>
-<div class="popup">
-    <div class="up_form up_form_popup">
-        <input type="text" placeholder="имя">
-        <input type="text" placeholder="телефон">
-    </div>
-    <div class="down_form down_form_popup d-flex">
-        <input type="text" placeholder="email">
-        <div class="date_popup">
-            {{--<div class="day">--}}
-            {{--</div>--}}
-            <div class="data-time">
-            </div>
+
+<form>
+    <a href="#x" class="overlay" id="win1"></a>
+    <div class="popup formTag">
+        <div class="up_form up_form_popup">
+            <input type="text" name="name" placeholder="имя">
+            <input type="text" name="phone" placeholder="телефон">
         </div>
-
-
-    </div>
-    <div class="checkbox">
-        <label>
-            <input type="checkbox">
-            <span class="fake-checkbox" aria-hidden="true"></span>
-            <span class="label">Согласие с конфиденциальностью и куки</span>
-        </label>
-    </div>
-    <div class="button_forms button_forms_popup">
-        <a href="#win3">отправить</a>
-    </div>
-    <a class="close" title="Закрыть" href="#close"></a>
-</div>
-<a href="#x" class="overlay" id="win2"></a>
-<div class="popup popup_choise">
-    <div class="up_form up_form_popup">
-        <h3 class="popup_choise_h2">ВЫЗОВ СПЕЦИАЛИСТА</h3>
-        <div class="butt_choise d-flex">
-            <button>Замершик</button>
-            <button>Дизайнер</button>
+        <div class="down_form down_form_popup d-flex">
+            <input type="text" name="email" placeholder="email">
         </div>
-
-        <input type="text" placeholder="имя">
-        <input type="text" placeholder="телефон">
-    </div>
-    <div class="down_form down_form_popup d-flex">
-        <input type="text" placeholder="email">
-
-
         <div class="checkbox">
-            <input type="checkbox" id="checkbox18" v-model="checked">
-            <label for="checkbox18"><a href="#">Cогласие с конфиденциальностью и куки</a></label>
+            <label>
+                <input name="agree" required type="checkbox">
+                <span class="fake-checkbox" aria-hidden="true"></span>
+                <span class="label">Согласие с конфиденциальностью и куки</span>
+            </label>
         </div>
-    </div> 
-       
         <div class="button_forms button_forms_popup">
-                <a href="#win3">Заказать</a>
-            </div>
-       
+            <a class="action_form" href="javascript:void(0);">отправить</a>
+        </div>
         <a class="close" title="Закрыть" href="#close"></a>
     </div>
+</form>
+
+
+<form>
+    <a href="#x" class="overlay" id="win2"></a>
+    <div class="popup popup_choise formTag">
+        <div class="up_form up_form_popup">
+            <h3 class="popup_choise_h2">ВЫЗОВ СПЕЦИАЛИСТА</h3>
+            <div class="butt_choise button_forms button_forms_popup d-flex">
+                <a id="gager">Замершик</a>
+                <a id="designer">Дизайнер</a>
+            </div>
+            <input type="text" name="name" placeholder="имя">
+            <input type="text" name="phone" placeholder="телефон">
+        </div>
+        <div class="down_form down_form_popup d-flex">
+            <input type="text" name="email" placeholder="email">
+            {{--<div class="checkbox">--}}
+                {{--<input name="agree" type="checkbox" id="checkbox18" v-model="checked">--}}
+                {{--<label for="checkbox18">--}}
+                    {{--<a href="#">Сгласие с конфиденциальностью и куки</a>--}}
+                {{--</label>--}}
+            {{--</div>--}}
+        </div>
+        <div class="checkbox">
+            <label>
+                <input name="agree" required type="checkbox">
+                <span class="fake-checkbox" aria-hidden="true"></span>
+                <span class="label">Согласие с конфиденциальностью и куки</span>
+            </label>
+        </div>
+
+        <div class="button_forms button_forms_popup">
+            <a class="action_form" href="javascript:void(0);">Заказать</a>
+            {{--<a href="#win3">Заказать</a>--}}
+        </div>
+        <a class="close" title="Закрыть" href="#close"></a>
+    </div>
+</form>
+
     <a href="#x" class="overlay" id="win3"></a>
-    <div class="popup popup_choise">
+    <div id="good" class="popup popup_choise">
         <div class="up_form up_form_popup">
             <h3 class="popup_choise_h2">Ваша заявка была принята!</h3>        
         </div>       
@@ -3785,6 +3810,9 @@
     <script type="text/javascript" src={{asset("js/libs/functions.js")}}></script>
     <script type="text/javascript" src={{asset("js/navigationButtons.js")}}></script>
     <script type="text/javascript" src={{asset("js/calculator.js")}}></script>
+
+    <script type="text/javascript" src={{asset("js/forms/form_js.js")}}></script>
+    <script type="text/javascript" src={{asset("js/jquery.validate.js")}}></script>
 
     <!-- <script type="text/javascript" src="js/logic.js"></script> -->
 </body>

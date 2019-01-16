@@ -1,15 +1,15 @@
 //first form
-// var tagSubmit = document.getElementById('callFormTeg');
+var tagSubmit = document.getElementById('callFormTeg');
 var checkBox = document.getElementById('checkbox');
 var fullName = document.getElementById('fullName');
 var phone4 = document.getElementById('phone');
 var email = document.getElementById('formEmail');
 var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-var days = [];
-var day = false;
-for (let i = 0; i < 7; i++) {
-    days[i] = document.getElementById('dayChoice' + i);
-}
+// var days = [];
+// var day = false;
+// for (let i = 0; i < 7; i++) {
+//     days[i] = document.getElementById('dayChoice' + i);
+// }
 checkBox.checked = false;
 
 function checkedBOX() {
@@ -35,24 +35,24 @@ if (fullName.value.length !== 0) {
 // document.getElementById("callForm").submit();
 
 function formTop() {
-    for (let i = 0; i < 7; i++) {
-
-        if (days[i].checked) {
-            day = days[i].checked;
-        }
-    }
+    // for (let i = 0; i < 7; i++) {
+    //
+    //     if (days[i].checked) {
+    //         day = days[i].checked;
+    //     }
+    // }
     // alert('aaaaa');
     if (fullName.value.length === 0) {
-        // alert('Введите имя');
+        alert('Введите имя');
 
     } else if (phone4.value.length !== 11 || isNaN(phone4.value)) {
-        // alert('Неправильно введен телефон')
+        alert('Неправильно введен телефон')
     } else if (email.value && !filter.test(email.value)) {
-        // alert('Неверно введен email');
-    } else if (!day) {
+        alert('Неверно введен email');
+    // } else if (!day) {
         // alert('Выберите удобный для вас день');
     } else if (checkBox.checked === false) {
-        // alert(' Cогласие обязательно');
+        alert('Согласие обязательно');
     } else {
         document.getElementById("callForm").submit();
     }
@@ -64,21 +64,21 @@ var checkBox2 = document.getElementById('checkbox2');
 var fullName2 = document.getElementById('fullName2');
 var phone2 = document.getElementById('phone2');
 var email2 = document.getElementById('formEmail2');
-days2 = [];
-var day2 = false;
+// days2 = [];
+// var day2 = false;
 // days2[0]= document.getElementById('dayChoice21');
-for (let i = 0; i < 7; i++) {
-    days2[i] = document.getElementById('dayChoice2' + i);
-    days2[i].checked = false;
-    days2[i].value = i + 1;
-}
+// for (let i = 0; i < 7; i++) {
+//     days2[i] = document.getElementById('dayChoice2' + i);
+//     days2[i].checked = false;
+//     days2[i].value = i + 1;
+// }
 
 function formBotton() {
-    for (let i = 0; i < 7; i++) {
-        if (days2[i].checked) {
-            day2 = days2[i].checked;
-        }
-    }
+    // for (let i = 0; i < 7; i++) {
+    //     if (days2[i].checked) {
+    //         day2 = days2[i].checked;
+    //     }
+    // }
     // alert('aaaaa');
     if (fullName2.value.length === 0) {
         // alert('Введите имя');
@@ -87,7 +87,7 @@ function formBotton() {
         // alert('Неправильно введен телефон')
     } else if (email2.value && !filter.test(email2.value)) {
         // alert('Неверно введен email');
-    } else if (!day2) {
+    // } else if (!day2) {
         // alert('Выберите удобный для вас день');
     } else if (checkBox2.checked === false) {
         // alert(' Cогласие обязательно');
@@ -104,15 +104,15 @@ function checkedBOX2() {
     }
 }
 
-function dayChecked(day) {
-    for (let i = 0; i < 7; i++) {
-        document.getElementById('dayChoice2' + i).style.color = "#6c757d";
-        document.getElementById('dayChoice2' + i).checked = false;
-    }
-    document.getElementById(day).style.color = "orange";
-    document.getElementById(day).checked = true;
-    document.getElementById('hiddenDay').value = document.getElementById(day).value;
-}
+// function dayChecked(day) {
+//     for (let i = 0; i < 7; i++) {
+//         document.getElementById('dayChoice2' + i).style.color = "#6c757d";
+//         document.getElementById('dayChoice2' + i).checked = false;
+//     }
+//     document.getElementById(day).style.color = "orange";
+//     document.getElementById(day).checked = true;
+//     document.getElementById('hiddenDay').value = document.getElementById(day).value;
+// }
 
 //Third form
 //#3062ab
@@ -145,15 +145,15 @@ function formSpecialist() {
         }
     }
     if (fullName3.value.length === 0) {
-        // alert('Имя непрпвильно');
+        alert('Имя непрпвильно');
     } else if (phone3.value.length !== 11 || isNaN(phone3.value)) {
-        // alert('Неправильно введен телефон')
+        alert('Неправильно введен телефон')
     } else if (email3.value && !filter.test(email3.value)) {
-        // alert('Неверно введен email');
+        alert('Неверно введен email');
     } else if (specialist === false) {
-        // alert('Spec');
+        alert('Выберите специалиста');
     } else if (checkBox3.checked === false) {
-        // alert(' Cогласие обязательно');
+        alert('Согласие обязательно');
     } else {
         document.getElementById("callForm3").submit();
     }

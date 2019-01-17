@@ -224,26 +224,99 @@ $('.navbar-nav>li>a').on('click', function () {
 });
 
 
-
-
-
-
-var views = [];
-var currentIndex;
+// var views = [];
+// var currentIndex;
+var page = 0;
 $(document).ready(function () {
-    currentIndex = 0;
+    window.location.href = '#';
+    $('#buttonNavigation1').find('p').html(knopki[page + 1] + '<br>' + 'следующая страница');
+    // currentIndex = 0;
     getPages()
 });
+
+var ssilki = [
+    'glavnaya',
+    'lestnicy_i_poly',
+    'dushevye_ograjdeniya',
+    'peregorodki_i_dveri',
+    'zerkalnoe_panno',
+    'skinali',
+    'raschet_stoimosti',
+    'kontakty'
+];
+
+var knopki = [
+    'Главная',
+    'Лесницы и полы',
+    'Душевые ограждения',
+    'Перегородки и двери',
+    'Зеркальное панно',
+    'Скинали',
+    'Рассчёт стоимости',
+    'Контакты'
+];
 
 function getPages() {
     $.post('getPages', {
         data: window.location.href,
         '_token': $('meta[name="csrf-token"]').attr('content'),
         _method: 'POST',
+        ssilka: ssilki[page],
     }, function (responce) {
-        views.push(responce);
+        // views.push(responce);
         $('header').show();
-        $('main').append(responce);
+        $('main').fadeOut(500, function () {
+            $('main').empty().append(responce).slideDown("fast");
+        });
         $('footer').show();
     });
+}
+
+$('#buttonNavigation1').click(function () {
+    page++;
+    pageCheck();
+    getPages();
+    setActiveOwlDot();
+});
+
+$('#buttonNavigation2').click(function () {
+    page = 0;
+    $('#buttonNavigation1').show();
+    $('#buttonNavigation1').find('p').html(knopki[page + 1] + '<br>' + 'следующая страница');
+    getPages();
+    setActiveOwlDot();
+});
+
+$('.owl-dot').click(function () {
+    $(this).parent().find('.owl-dot').each(function () {
+        $('.owl-dot').removeClass('active');
+    });
+    $(this).addClass('active');
+    page = $(this).index();
+    getPages();
+    pageCheck();
+});
+
+function pageCheck() {
+    if (page === 7) {
+        $('#buttonNavigation1').hide();
+    } else {
+        $('#buttonNavigation1').show();
+        $('#buttonNavigation1').find('p').html(knopki[page + 1] + '<br>' + 'следующая страница');
+    }
+    if (page === 8) {
+        page = 0;
+    }
+    if (page === 0) {
+        window.location.href = '#';
+    } else {
+        window.location.href = "#" + ssilki[page]
+    }
+}
+
+function setActiveOwlDot() {
+    $('.owl-dots').find('.owl-dot').each(function () {
+        $('.owl-dot').removeClass('active');
+    });
+    $('.owl-dot').eq(page).addClass('active');
 }

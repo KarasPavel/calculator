@@ -96,19 +96,48 @@
 
 <main>
     <div id="p_prldr">
-        <div class="contpre"><i class=" svg_anm fab fa-vuejs"></i></div>
+        <div class="contpre">
+            <i class=" svg_anm fab fa-vuejs">
+            </i>
+        </div>
     </div>
 </main>
 
 <footer style="display: none;">
-    <button id="buttonNavigation2" type="button" role="presentation" class="owl-next">
+    <button id="buttonNavigation1" type="button" role="presentation" class="owl-next">
         <p onclick="topFunction()" id="mybtn1">Next<br>следующая страница</p>
         <img src="images/arrow-next_owl.png" alt="">
     </button>
     <button id="buttonNavigation2" type="button" role="presentation" class="owl-prev" style="">
-        <p onclick="topFunction()" id="mybtn">Previous<br>предыдущия страница</p>
+        <p onclick="topFunction()" id="mybtn">Главная<br>страница</p>
         <img class="nav-next" src="images/prev_arrows.png" alt="">
     </button>
+    <div class="owl-dots">
+        <button role="button" class="owl-dot active">
+            <span></span>
+        </button>
+        <button role="button" class="owl-dot">
+            <span></span>
+        </button>
+        <button role="button" class="owl-dot">
+            <span></span>
+        </button>
+        <button role="button" class="owl-dot">
+            <span></span>
+        </button>
+        <button role="button" class="owl-dot">
+            <span></span>
+        </button>
+        <button role="button" class="owl-dot">
+            <span></span>
+        </button>
+        <button role="button" class="owl-dot">
+            <span></span>
+        </button>
+        <button role="button" class="owl-dot">
+            <span></span>
+        </button>
+    </div>
     <div class="container">
         <div class="row">
             <div class="col-lg-3 col-md-3">
@@ -255,7 +284,7 @@
 <script type="text/javascript" src={{asset("js/jquery.fancybox.min.js")}}></script>
 <script type="text/javascript" src={{asset("js/navigationButtons.js")}}></script>
 <script type="text/javascript" src={{asset("js/calculator.js")}}></script>
-<script type="text/javascript" src={{asset("js/libs/focus_block.js")}}></script>
+{{--<script type="text/javascript" src={{asset("js/libs/focus_block.js")}}></script>--}}
 <script type="text/javascript" src={{asset("js/forms/form_js.js")}}></script>
 <script type="text/javascript" src={{asset("js/jquery.validate.js")}}></script>
 <script type="text/javascript" src={{asset("js/libs/functions.js")}}></script>

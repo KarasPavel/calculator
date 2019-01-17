@@ -18,7 +18,7 @@ class CreateApplicationsTable extends Migration
             $table->string('name');
             $table->string('email');
             $table->string('telephone');
-            $table->string('comment')->default('');
+            $table->string('comment')->nullable();
             $table->integer('specialist_id')->default(1)->unsigned();
             $table->integer('application_status_id')->unsigned();
             $table->timestamps();

@@ -220,15 +220,13 @@
                         </div>
                         <div class="down_form">
                             <input type="text" name="email" placeholder="email">
-
-
                         </div>
                         <div class="checkbox">
                             <label>
                                 <input name="agree" type="checkbox">
                                 <span class="fake-checkbox" aria-hidden="true"></span>
                                 <span class="label">Согласие с конфиденциальностью и куки</span>
-                            </label></label>
+                            </label>
                         </div>
                         <div class="button_forms">
                             {{--<a class="" href="#">отправить</a>--}}

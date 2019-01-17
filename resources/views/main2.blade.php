@@ -97,7 +97,9 @@
         </nav>
     </div>
 </header>
+
 <div class="owl-carousel">
+
     <div id="1" data-hash="zero">
 
         <section>
@@ -765,7 +767,6 @@
         </section>
     </div>
 
-
     <div data-hash="one">
         <section>
             <div id="log" class="bg_sections1_page2 d-flex b center-block">
@@ -1008,6 +1009,7 @@
             </div>
         </section>
     </div>
+
     <div id="2" data-hash="two">
         <!-- <div id="p_prldr1">
 
@@ -1426,7 +1428,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="glass_door_items d-flex">
-                        <div class="glass_door_items_new_img d-flex">
+                            <div class="glass_door_items_new_img d-flex">
                                 <img src="images/Lestnici_img_block/1/1.jpg" alt="">
                                 <img src="images/Lestnici_img_block/1/2.jpg" alt="">
                             </div>
@@ -1672,6 +1674,7 @@
             </div>
         </section>
     </div>
+
     <div id="4" data-hash="for">
         <section>
             <div id="log" class="bg_sections1_page2 bulckheads d-flex b center-block">
@@ -2331,6 +2334,7 @@
         </section>
 
     </div>
+
     <div id="3" data-hash="three">
 
         <section>
@@ -3632,90 +3636,91 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
-                    <div class="wrap_">
-                        <div class="popupp">
-                        <div class="up_form up_form_popup">
-                            <h3 class="popup_choise_h2">"Калькулятор обновляется до 28 января. Приносим извинения за временные неудобства." <br> :)</h3>
-                            
-                        </div>
-                    </div>
-                </div>
-                
-                    <div class="col-lg-4">
-                        <!-- <div class="cost_calculation">
-                            <h4>
-                                стоимость заказа
-                            </h4>
-                            <input disabled id="price" type="text">
-                            <h4>ГОТОВНОСТЬ НА:</h4>
-                            <p id="urgency"></p>
-                            <div id="cost_calculation_day" class="date_calc">
-                                <input disabled id="calculator_day" type="day">
-                                <input disabled id="calculator_month" type="day">
-                                <input disabled id="calculator_year" type="day">
-                            </div>
-                            <p id="dayName" class="cost_calculation_day"></p>
-                            <label>
-                                <input id="checkboxPrice" type="checkbox">
-                                <span class="fake-checkbox" aria-hidden="true"></span>
-                                <span class="label">Срочноо</span>
-                            </label> <br>
-                            <button class="cost_butt">Оформить заказ</button>
-                            <button class="cost_butt1">В корзину</button>
-                            <div class="cost_calculation__link">
-                                <div>
-                                    <img src="images/cost_calc_link1.png" alt="">
-                                    <a href="#">Консультация</a>
-                                </div>
-                                <div>
-                                    <img src="images/cost_calc_link2.png" alt="">
-                                    <a href="#">Корзина</a>
-                                </div>
-                                <div>
-                                    <img src="images/cost_calc_link3.png" alt="">
-                                    <a href="#">Замершик</a>
-                                </div>
-                            </div>
+                        <div class="wrap_">
+                            <div class="popupp">
+                                <div class="up_form up_form_popup">
+                                    <h3 class="popup_choise_h2">"Калькулятор обновляется до 28 января. Приносим
+                                        извинения за временные неудобства." <br> :)</h3>
 
+                                </div>
+                            </div>
                         </div>
-                    </div> -->
-                    <div class="col-lg-8">
-                        <div class="cost_calc_first_tab first_tab_1 toggle">
-                            <!-- <div id="calc_stege" class="head toggler ">
-                                <p class="numver_stage">
-                                    1
-                                </p>
+
+                        <div class="col-lg-4">
+                            <!-- <div class="cost_calculation">
                                 <h4>
-                                    Выберите материал
+                                    стоимость заказа
                                 </h4>
-                                <i class="fas fa-angle-down"></i>
-                            </div> -->
-                            <div id="box-calc" class="wraper content actived">
-                                <div class="stairs_and_flooring_buttons stairs_and_flooring_buttons_calculator  d-flex">
-                                    <a class="nav-link" id="glass" data-toggle="tab" href="#">Стекло</a>
-                                    <a class="nav-link" id="mirror" data-toggle="tab" href="#">Зеркало</a>
-                                    <a class="inav-link" id="triplex" data-toggle="tab" href="#">Триплекс</a>
+                                <input disabled id="price" type="text">
+                                <h4>ГОТОВНОСТЬ НА:</h4>
+                                <p id="urgency"></p>
+                                <div id="cost_calculation_day" class="date_calc">
+                                    <input disabled id="calculator_day" type="day">
+                                    <input disabled id="calculator_month" type="day">
+                                    <input disabled id="calculator_year" type="day">
                                 </div>
+                                <p id="dayName" class="cost_calculation_day"></p>
+                                <label>
+                                    <input id="checkboxPrice" type="checkbox">
+                                    <span class="fake-checkbox" aria-hidden="true"></span>
+                                    <span class="label">Срочноо</span>
+                                </label> <br>
+                                <button class="cost_butt">Оформить заказ</button>
+                                <button class="cost_butt1">В корзину</button>
+                                <div class="cost_calculation__link">
+                                    <div>
+                                        <img src="images/cost_calc_link1.png" alt="">
+                                        <a href="#">Консультация</a>
+                                    </div>
+                                    <div>
+                                        <img src="images/cost_calc_link2.png" alt="">
+                                        <a href="#">Корзина</a>
+                                    </div>
+                                    <div>
+                                        <img src="images/cost_calc_link3.png" alt="">
+                                        <a href="#">Замершик</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div> -->
+                            <div class="col-lg-8">
+                                <div class="cost_calc_first_tab first_tab_1 toggle">
+                                    <!-- <div id="calc_stege" class="head toggler ">
+                                        <p class="numver_stage">
+                                            1
+                                        </p>
+                                        <h4>
+                                            Выберите материал
+                                        </h4>
+                                        <i class="fas fa-angle-down"></i>
+                                    </div> -->
+                                    <div id="box-calc" class="wraper content actived">
+                                        <div class="stairs_and_flooring_buttons stairs_and_flooring_buttons_calculator  d-flex">
+                                            <a class="nav-link" id="glass" data-toggle="tab" href="#">Стекло</a>
+                                            <a class="nav-link" id="mirror" data-toggle="tab" href="#">Зеркало</a>
+                                            <a class="inav-link" id="triplex" data-toggle="tab" href="#">Триплекс</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div id="material" class="cost_calc_first_tab toggle">
+                                </div>
+                                <div id="depth" class="cost_calc_first_tab toggle">
+                                </div>
+                                <div id="shape" class="cost_calc_first_tab toggle owl-stage-outer owl-height">
+                                </div>
+                                <div id="format" class="cost_calc_first_tab toggle owl-stage-outer owl-height">
+                                </div>
+                                <div id="extra" class="cost_calc_first_tab toggle">
+                                </div>
+                                <div id="order_info" class="cost_calc_first_tab toggle">
+                                </div>
+
                             </div>
                         </div>
-
-
-                        <div id="material" class="cost_calc_first_tab toggle">
-                        </div>
-                        <div id="depth" class="cost_calc_first_tab toggle">
-                        </div>
-                        <div id="shape" class="cost_calc_first_tab toggle owl-stage-outer owl-height">
-                        </div>
-                        <div id="format" class="cost_calc_first_tab toggle owl-stage-outer owl-height">
-                        </div>
-                        <div id="extra" class="cost_calc_first_tab toggle">
-                        </div>
-                        <div id="order_info" class="cost_calc_first_tab toggle">
-                        </div>
-
                     </div>
-                </div>
-            </div>
         </section>
     </div>
 
@@ -3780,8 +3785,8 @@
             </div>
         </section>
     </div>
-</div>
 
+</div>
 
 <footer>
     <div class="container">
@@ -3875,7 +3880,6 @@
         <a class="close" title="Закрыть" href="#close"></a>
     </div>
 </form>
-
 
 <form>
     <a href="#x" class="overlay" id="win2"></a>

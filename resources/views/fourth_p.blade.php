@@ -1,21 +1,20 @@
-<div id="3" data-hash="three">
-
+<div id="4" data-hash="for">
     <section>
-        <div id="log" class="bg_sections1_page2 Glasses_page d-flex b center-block">
-            <div id="log" class="bg-1_page_showers Glasses_page1">
+        <div id="log" class="bg_sections1_page2 bulckheads d-flex b center-block">
+            <div id="log" class="bg-1_page_showers bulckheads1">
                 <!-- <a href="#">Калькулятор стоимости простых изделий</a> -->
             </div>
-            <div class="bg-2_page_showers Glasses_page2">
-                <h2>зеркала на заказ с различной обработкой</h2>
-                <span>Невероятная красота</span>
+            <div class="bg-2_page_showers bulckheads2">
+                <h2>перегородки и двери из стекла на заказ</h2>
+                <span>Красиво</span>
                 <img src="images/squad_smaler.png" alt="">
-                <span> Швейцарское качество</span><br>
-
-                <span>Геометрический перфекционизм</span>
-                <h3></h3>
+                <span>Герметично</span>
+                <img src="images/squad_smaler.png" alt="">
+                <span>Надежно</span>
+                <h3>индивидуальное изготовление</h3>
                 <a href="#win2">вызвать замерщика</a>
             </div>
-            <div class="bg-3_pages_howers Glasses_page3">
+            <div class="bg-3_pages_howers bulckheads3">
                 <!-- <a href="#">Бесплатная консультация по телефону
 </a> -->
             </div>
@@ -32,29 +31,47 @@
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="stairs_and_flooring_buttons stairs_and_flooring_buttons5 d-flex">
+                    <div class="stairs_and_flooring_buttons stairs_and_flooring_buttons1 d-flex">
                         <ul class="nav nav-tabs" id="myTab" role="tablist">
-                            <li class="nav-item">
-                                <a class="nav-link active" data-toggle="tab" href="#page3_home" role="tab"
-                                   aria-controls="home">Зеркала на заказ</a>
+                            <li class="nav-item ">
+                                <a class="nav-link active" data-toggle="tab" href="#page4_home" role="tab"
+                                   aria-controls="home">Распашные двери</a>
                                 <p class="stairs_and_flooring_text">От 26100 руб. <br>
                                     6-8 дней</p>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#page3_home_1" role="tab"
-                                   aria-controls="option">Зеркальное панно</a>
+                                <a class="nav-link" data-toggle="tab" href="#page4_profile" role="tab"
+                                   aria-controls="profile">Перегородки</a>
                                 <p class="stairs_and_flooring_text">От 26100 руб. <br>
                                     6-8 дней</p>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#page3_profile" role="tab"
-                                   aria-controls="profile">Оптовые заказы</a>
+                                <a class="nav-link" data-toggle="tab" href="#page4_messages" role="tab"
+                                   aria-controls="messages">Маятниковые двери</a>
                                 <p class="stairs_and_flooring_text">От 26100 руб. <br>
                                     6-8 дней</p>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" data-toggle="tab" href="#page3_messages" role="tab"
-                                   aria-controls="messages">Эксклюзив решения</a>
+                                <a class="nav-link" data-toggle="tab" href="#page4_settings" role="tab"
+                                   aria-controls="settings">Раздвижные двери</a>
+                                <p class="stairs_and_flooring_text">От 26100 руб. <br>
+                                    6-8 дней</p>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#page4_settings1" role="tab"
+                                   aria-controls="settings">Ограждения</a>
+                                <p class="stairs_and_flooring_text">От 26100 руб. <br>
+                                    6-8 дней</p>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#page4_settings2" role="tab"
+                                   aria-controls="settings">Двери в коробках</a>
+                                <p class="stairs_and_flooring_text">От 26100 руб. <br>
+                                    6-8 дней</p>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#page4_settings3" role="tab"
+                                   aria-controls="settings">Эксклюзивные решения</a>
                                 <p class="stairs_and_flooring_text">От 26100 руб. <br>
                                     6-8 дней</p>
                             </li>
@@ -63,10 +80,10 @@
                 </div>
             </div>
             <div class="tab-content">
-                <div class="tab-pane active" id="page3_home" role="tabpanel">
+                <div class="tab-pane active" id="page4_home" role="tabpanel">
                     @foreach($photo as $value)
-                        @if($value->type === 'зеркала на заказ')
-                            <a data-fancybox="gallery_Glasses" href="{{$value->photo}}">
+                        @if($value->type === 'распашные двери')
+                            <a data-fancybox="gallery_Door" href="{{$value->photo}}">
                                 <div class="img_items_stairs">
                                     <img src="{{$value->small_photo}}" alt="1">
                                     <p></p>
@@ -75,10 +92,10 @@
                         @endif
                     @endforeach
                 </div>
-                <div class="tab-pane" id="page3_home_1" role="tabpanel">
+                <div class="tab-pane" id="page4_profile" role="tabpanel">
                     @foreach($photo as $value)
-                        @if($value->type === 'зеркальное панно')
-                            <a data-fancybox="gallery_Glasses1" href="{{$value->photo}}">
+                        @if($value->type === 'перегородки')
+                            <a data-fancybox="gallery_Door1" href="{{$value->photo}}">
                                 <div class="img_items_stairs">
                                     <img src="{{$value->small_photo}}" alt="1">
                                     <p></p>
@@ -87,10 +104,10 @@
                         @endif
                     @endforeach
                 </div>
-                <div class="tab-pane" id="page3_profile" role="tabpanel">
+                <div class="tab-pane" id="page4_messages" role="tabpanel">
                     @foreach($photo as $value)
-                        @if($value->type === 'оптовые заказы')
-                            <a data-fancybox="gallery_Glasses2" href="{{$value->photo}}">
+                        @if($value->type === 'маятниковые двери')
+                            <a data-fancybox="gallery_Door2" href="{{$value->photo}}">
                                 <div class="img_items_stairs">
                                     <img src="{{$value->small_photo}}" alt="1">
                                     <p></p>
@@ -99,10 +116,10 @@
                         @endif
                     @endforeach
                 </div>
-                <div class="tab-pane" id="page3_messages" role="tabpanel">
+                <div class="tab-pane" id="page4_settings" role="tabpanel">
                     @foreach($photo as $value)
-                        @if($value->type === 'эксклюзив решения')
-                            <a data-fancybox="gallery_Glasses3" href="{{$value->photo}}">
+                        @if($value->type === 'раздвижные двери')
+                            <a data-fancybox="gallery_Door3" href="{{$value->photo}}">
                                 <div class="img_items_stairs">
                                     <img src="{{$value->small_photo}}" alt="1">
                                     <p></p>
@@ -110,13 +127,51 @@
                             </a>
                         @endif
                     @endforeach
+                </div>
+                <div class="tab-pane" id="page4_settings1" role="tabpanel">
+                    @foreach($photo as $value)
+                        @if($value->type === 'ограждения')
+                            <a data-fancybox="gallery_Door4" href="{{$value->photo}}">
+                                <div class="img_items_stairs">
+                                    <img src="{{$value->small_photo}}" alt="1">
+                                    <p></p>
+                                </div>
+                            </a>
+                        @endif
+                    @endforeach
+                </div>
+                <div class="tab-pane" id="page4_settings2" role="tabpanel">
+                    @foreach($photo as $value)
+                        @if($value->type === 'двери в коробках')
+                            <a data-fancybox="gallery_Door5" href="{{$value->photo}}">
+                                <div class="img_items_stairs">
+                                    <img src="{{$value->small_photo}}" alt="1">
+                                    <p></p>
+                                </div>
+                            </a>
+                        @endif
+                    @endforeach
+                </div>
+                <div class="tab-pane" id="page4_settings3" role="tabpanel">
+                    @foreach($photo as $value)
+                        @if($value->type === 'эксклюзивные решения')
+                            <a data-fancybox="gallery_Door6" href="{{$value->photo}}">
+                                <div class="img_items_stairs">
+                                    <img src="{{$value->small_photo}}" alt="1">
+                                    <p></p>
+                                </div>
+                            </a>
+                        @endif
+                    @endforeach
+
                 </div>
             </div>
         </div>
     </section>
-    @if($video[7]->show  === 1 || $video[8]->show  === 1)
+    @if($video[5]->show  === 1 || $video[6]->show  === 1)
         <section id="glass_reliability">
             <div class="container">
+
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="glass_reliability">
@@ -127,16 +182,16 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="video_our d-flex">
-                            @if($video[7]->show ===1)
+                            @if($video[5]->show ===1)
                                 <iframe width="560" height="315"
-                                        src={{$video[7]->video}}
+                                        src={{$video[5]->video}}
                                                 frameborder="0"
                                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                         allowfullscreen></iframe>
                             @endif
-                            @if($video[8]->show ===1)
+                            @if($video[6]->show  ===1)
                                 <iframe width="560" height="315"
-                                        src={{$video[8]->video}}
+                                        src={{$video[6]->video}}
                                                 frameborder="0"
                                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                         allowfullscreen></iframe>
@@ -151,196 +206,6 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="glass_door">
-                        <h2>О некоторых свойствах наших зеркал</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="glass_door_items d-flex">
-                        <div class="glass_door_items_new_img d-flex">
-                            <img src="images/three_page_image/1/1.jpg" alt="">
-                            <img src="images/three_page_image/1/2.jpg" alt="">
-                        </div>
-                        <div class="glass_door_item">
-                            <p>Наша компания производит зеркала с различными вариантами
-                                обработок, с подсветкой и рисунками от простого изделия
-                                в отрез, до зеркал с подогревами, экраном и подсветкой.
-                                В работе используются премиум-материалы от лучших в мире
-                                производителей, таких как Bohle, AGC и Glaverbel.
-                                Качество продукции соответствует
-                                евростандарту ISO, а сырье сертифицировано в России.</p>
-                            <ul>
-                                <li>Все наши зеркала имеют влагостойкую амальгаму</li>
-                                <li>Изготавливаем гнутые и двусторонние зеркала</li>
-                            </ul>
-                            <ul>
-                                <li>Наносим гидрофобное покрытие (от отпечатков и налета)</li>
-                                <li>Делаем подсветку, подогрев, сенсорные кнопки при запросе</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="link-calc">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-9">
-                    <div class="orenge_block_calc">
-                        <h2>Расчет простого изделия в режиме ONLINE</h2>
-                        <a class="buttons_calc_glasses" href="#seven">калькулятор</a>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="iphone_calc">
-                        <img src="images/iphone_7.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="glass_door">
-                        <h2>Сочетание простоты и новых технологий</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="glass_door_items_down d-flex">
-                        <div class="glass_door_item_down Glases_page_door">
-                            <p> Мы изготавливаем как малые зеркала по размерам,
-                                так и сложные технические изделия. Например,
-                                зеркальный встраиваемый телевизор с защитой
-                                от влаги или зеркало-шпион, которое используется
-                                на постах охраны, в роскошных интерьерах и в
-                                специализированных учреждениях.</p>
-                            <ul>
-                                <li>Собственная разработка и производство. От А до Я.</li>
-                                <li>Мониторы для бань, саун и душевых</li>
-                            </ul>
-                            <ul>
-                                <li>Мониторы для бань, саун и душевых</li>
-                                <li>Пулестойкие зеркала, скрытые двери, зеркало-шпион</li>
-                            </ul>
-                        </div>
-                        <div class="glass_door_items_new_img d-flex">
-                            <img src="images/three_page_image/2/1.jpg" alt="">
-                            <img src="images/three_page_image/2/2.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="fastener">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="type_fastener">
-                        <h2>типы крепежа</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="shower_type_items d-flex">
-                        <div class="shower_type_item-left fastener_shower_glass">
-                            <p>СПЕЦИАЛЬНЫЙ КЛЕЙ</p>
-                            <ul>
-                                <li>Выдерживает нагрузку более 220 кг на м2</li>
-                                <li>Эстетично (нет сторонних элементов)</li>
-                                <li>Безопасно в случае разбития</li>
-                                <li>Влагостойкость (не разрушается от влаги)</li>
-                                <li>Идеально для крепления в нишу</li>
-                                <li class="dark-mines">С монтажом не все так просто как кажется</li>
-                                <li>Тяжело демонтировать</li>
-                            </ul>
-                        </div>
-                        <a class="galery_kripezh-pos" data-fancybox="gallery_kripezh"
-                           href="images/cley.jpg">
-                            <img class="glasses_img_fastener2 " src="images/cley_small.jpg" alt="">
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="shower_type_items d-flex">
-                        <a class="galery_kripezh-pos" data-fancybox="gallery_kripezh"
-                           href="images/plastin.jpg">
-                            <img class="glasses_img_fastener2 imgg_2" src="images/first_fastener.png" alt="">
-                        </a>
-                        <div class="shower_type_item-right fastener_shower_glass2">
-                            <p>КРЕПЕЖНЫЕ ПЛАСТИНЫ</p>
-                            <ul>
-                                <li>Не требует сверления зеркала</li>
-                                <li>Легко снять и перемещать</li>
-                                <li>Простой монтаж</li>
-                                <li>"Прощает" ошибки при монтаже</li>
-                                <li>Требует сверления стены</li>
-                                <li>Легче разбить (есть амплитуда хода)</li>
-                                <li>Требуется сверление стены (ответная часть)</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="glass_door">
-                        <h2>Зеркальное панно по итальянской технологии</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="glass_door_items Glasses_pages_doors d-flex">
-                        <div class="glass_door_items_new_img d-flex">
-                            <img src="images/three_page_image/3/1.jpg" alt="">
-                            <img src="images/three_page_image/3/2.jpg" alt="">
-                        </div>
-                        <a class="glass_door_item_buttons" href="#win1">бесплатная консультация</a>
-                        <div class="glass_door_item">
-                            <p>Зеркальное панно - это композиция, состоящая из отдельных зеркальных элементов с
-                                широкой, глубокой фаской (фацетом), благодаря которой, создается неповторимая игра
-                                света, бликов и отражений в получаемых гранях, за что панно так и ценнится. Такое
-                                изделие собирается вручную и подгоняется на станке на протяжении нескольких дней (а
-                                иногда и недель) мастерами с внушительным опытом. Помимо старой итальянской
-                                технологии сборки, мы так же делаем панно путем алмазной гравировки зеркала, что
-                                более бюджетно и имеет свои плюсы.</p>
-                            <ul>
-                                <li>Ручная сборка - долго, зазоры до 2мм, сложно, дорого. Превосходный блеск.</li>
-                                <li>Гравировка - быстро, без зазоров, дешевле, но с не ровной и менее блестящей
-                                    фаской.
-                                </li>
-                            </ul>
-                            <ul>
-                                <li>Некоторые наши цеховые мастера работают в стекольной промышленности более 32
-                                    лет!
-                                </li>
-                                <li>Индивидуальный подход. Согласовываем все детали с Вами, даже те, о которых
-                                    другие молчат
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
                     <div class="advantages">
                         <h2>наши преимущества</h2>
                     </div>
@@ -350,41 +215,43 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="advantages_items">
                         <img src="images/Money.png" alt="">
-                        <p class="cursor_text">Зеркальное панно делается из отдельных элементов и подгоняется
-                            вручную, чтобы обеспечить минимальные зазоры, при этом сохранив идеально ровный, яркий
-                            блеск, в отличии от гравировки на зеркале, которая создает неровную тусклую грань,
-                            которая больше похожа на кривое зеркало. нежели на изделие класса "Люкс"</p>
+                        <p class="cursor_text">Мы не самая бюджетная компания на рынке.
+                            Вы можете найти сотни вариантов более дешевых пластиковых и модульных перегородок,
+                            которые даже
+                            близко не сравнятся с характеристиками нашей продукции.
+                            Мы гордимся тем, что за оплаченные деньги Вы получите изделие, за которое не стыдно.
+                            Уверяем, что пресловутое соотношение "цена/качество" у нас самое лучшее.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="advantages_items">
                         <img src="images/Door.png" alt="">
-                        <p class="cursor_text">Для зеркал мы используем только влагостойкое сырье.
-                            А гидрофобное покрытие, которое мы наносим, обеспечит лучшую защиту
-                            от пыли, воды и грязи, позволяя
-                            долгое время не намывать изделие, наслаждаясь его блеском и первозданной красотой.</p>
+                        <p class="cursor_text">Работаем с общественными местами большой проходимостью.
+                            Например, маятниковые двери, которые мы производим стоят в Московском метрополитене,
+                            МЦК, торговых центрах, расчитаны на более чем 20 лет службы при милионной проходимости.
+                            При этом закаленное стекло - пожаростойкий материал, применяемый не только для
+                            эстетики.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="advantages_items">
                         <img src="images/Pro.png" alt="">
-                        <p class="cursor_text">Зеркальное панно делают для невероятной по своей красоте
-                            игры бликов, красоты рисунка и эстетики геометрических линий. Это не просто
-                            зеркало. Это исключительно, творческая и кропотливая работа, к которой допускаются
-                            только старшие мастера производства. Поверьте, подогнать зеркала друг к другу без
-                            замазок и с
-                            минимальным швом, без использования гравера, который значительно тускнее и дает
-                            искривленнее фацета,
-                            - это искусство.</p>
+                        <p class="cursor_text">В нашей компании работают люди с существенным опытом работы в
+                            стекольной промышленности.
+                            Вы можете быть уверены в профессионализме наших рабочих и монтажников.
+                            Мы работаем в сфере уже не первый год, сталкивались с большим количеством проблем и
+                            всегда находили решения.
+                            Опыт - это не пустой звук, особенно в нашем ремесле.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="advantages_items">
                         <img src="images/Diamond.png" alt="">
-                        <p class="cursor_text">Для изготовления зеркального панно применяется
-                            зеркала различного типа и цвета высшей марки. Зеркала дополнительно
-                            полируются, на них наносят защитные покрытия и они проходят доп. проверки,
-                            находясь под личным контролем Цехового Мастера.</p>
+                        <p class="cursor_text">Используем первоклассное сырье от ведущих мировых брендов -
+                            AGC (Япония), Guardian (Великобритания), Pilkington (Великобритания).
+                            Обработка изделий, так же ведется на Итальянском и Немецком оборудовании,
+                            зарекомендовавших себя как лучшие на рынке, дающее точные размеры и превосходное
+                            качество изделий.</p>
                     </div>
                 </div>
             </div>
@@ -522,7 +389,84 @@
             </div>
         </div>
     </section>
+    <section id="types_of_door">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="types_of_door">
+                        <h2>виды дверей</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="types_of_door_items">
 
+                    </div>
+                </div>
+            </div>
+            <div class="row center">
+                <div class="col-lg-4">
+                    <div class="bg_types_door_items">
+                        <div class="types_of_door_item">
+                            <h3>Распашные</h3>
+                            <ul class="door_plus">
+                                <li>Низкая стоимость</li>
+                                <li>Минимальные зазоры</li>
+                                <li>Широкий выбор</li>
+
+                            </ul>
+                            <ul class="door_mines">
+                                <li>Дорогие доводчики</li>
+                                <li>Не всегда подходит</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="bg_types_door_items">
+                        <div class="types_of_door_item">
+                            <h3>Маятниковые</h3>
+                            <ul class="door_plus">
+                                <li>Средняя строимость</li>
+                                <li>Крепление</li>
+                                <li>Идеально для ТЦ,
+                                    гостиниц и офиса
+                                </li>
+
+                            </ul>
+                            <ul class="door_mines">
+                                <li>Узкий выбор</li>
+                                <li>Средние зазоры</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="bg_types_door_items">
+                        <div class="types_of_door_item">
+                            <h3>Раздвижные</h3>
+                            <ul class="door_plus">
+                                <li>Максимально удобно</li>
+                                <li>Красиво и эстетично</li>
+                                <li>Экономит пространство</li>
+
+                            </ul>
+                            <ul class="door_mines">
+                                <li>Дорого, сложно, долго</li>
+                                <li>Дорогие доводчики
+                                    и электропривод
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <div class="call_back_section">
         <section id="call_back" class="call_back_section">
             <div class="container">
@@ -711,4 +655,5 @@
             </div>
         </div>
     </section>
+
 </div>

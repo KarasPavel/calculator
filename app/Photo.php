@@ -186,8 +186,8 @@ class Photo extends Model
             ->insert([
                 'name' => $request->name,
                 'type' => $request->type,
-                'photo' => $photo,
-                'small_photo' => $small_photo
+                'photo' => substr($photo, 1),
+                'small_photo' => substr($small_photo, 1)
             ]);
     }
 

@@ -13,6 +13,20 @@ class MainController extends Controller
 {
     public function getPages(Request $request)
     {
+        $user = Auth::user();
+        $photo = Photo::getPhotosWithoutPaginate();
+        $video = Video::getVideos();
+        $views = [
+            'glavnaya'=>'home',
+            'lestnicy_i_poly'=>'first_p',
+            'dushevye_ograjdeniya'=>'second_p',
+            'peregorodki_i_dveri'=>'fourth_p',
+            'zerkalnoe_panno'=>'third_p',
+            'skinali'=>'fifth_p',
+            'raschet_stoimosti'=>'seventh_p',
+            'kontakty'=>'sixth_p',
+        ];
+        return view($views[$request->ssilka],  ['user' => $user, 'photo' => $photo, 'video' => $video]);
 //        dd(view('home', ['user' => $user, 'photo' => $photo, 'video' => $video])->render());
 //        dd($returnHTML = view('main2')->render());
 //        return response()->json(['home'=>$returnHTML]);
@@ -31,7 +45,7 @@ class MainController extends Controller
         $photo = Photo::getPhotosWithoutPaginate();
         $video = Video::getVideos();
 //        return view('main2', ['user' => $user, 'photo' => $photo, 'video' => $video]);
-        return view('main2', ['user' => $user, 'photo' => $photo, 'video' => $video]);
+        return view('general', ['user' => $user, 'photo' => $photo, 'video' => $video]);
     }
 
 }

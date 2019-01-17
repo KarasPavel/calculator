@@ -2288,10 +2288,10 @@ button:focus{
 	top: 8px;
 }
 .owl-dots{
-	width: 123px;
+	width: 145px;
 	height: 33px;
-	background-size: cover;
 	background: url(images/bg_owl_dots.png)no-repeat;
+	background-size: cover;
 	position: fixed;
 	bottom: -3px;
 	left: 50%;
@@ -2317,7 +2317,8 @@ button:focus{
 	border-radius: 50%;
 	width: 10px;
 	height: 10px;
-	margin-left: 1px;
+	/*margin-left: 1px;*/
+	padding: 0;
 }
 .owl-dots .active{
 	border: 1px solid #ffffff!important;

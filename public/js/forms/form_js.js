@@ -121,6 +121,9 @@ $(document).ready(function () {
             dataInput['_token'] = $('meta[name="csrf-token"]').attr('content');
             // console.log(dataInput);
             $.post('createApplications', dataInput, function (data, status) {
+                console.log(dataInput);
+                console.log(data);
+                console.log(status);
             });
             comment = '';
             specialist = 1;

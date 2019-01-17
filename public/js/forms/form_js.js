@@ -13,19 +13,19 @@ $(document).ready(function () {
     // $('.for_option_1').click(function () {
         option1 = '';
         option1 = $(this).find('p').text();
-        console.log(option1)
+        // console.log(option1)
     });
     $('body').on('click', '.for_option_2', function () {
     // $('.for_option_2').click(function () {
         option2 = '';
         option2 = $(this).find('p').text();
-        console.log(option2)
+        // console.log(option2)
     });
         $('body').on('click', '.for_option_3', function () {
     // $('.for_option_3').click(function () {
         option3 = '';
         option3 = $(this).find('p').text();
-        console.log(option3)
+        // console.log(option3)
     });
     $('body').on('change', '#chbx1, #chbx2, #chbx3, #chbx4, #chbx5, #chbx6',
     // $('.chekbox_sect_6').on('change', '#chbx1, #chbx2, #chbx3, #chbx4, #chbx5, #chbx6',
@@ -54,7 +54,7 @@ $(document).ready(function () {
             opt4_4 + ' '+ '\n' + ' ' +
             opt4_5 + ' '+ '\n' + ' ' +
             opt4_6;
-        console.log(option4)
+        // console.log(option4)
     }
 
     $('#gager').click(function () {
@@ -126,9 +126,9 @@ $(document).ready(function () {
             dataInput['_token'] = $('meta[name="csrf-token"]').attr('content');
             // console.log(dataInput);
             $.post('createApplications', dataInput, function (data, status) {
-                console.log(dataInput);
-                console.log(data);
-                console.log(status);
+                // console.log(dataInput);
+                // console.log(data);
+                // console.log(status);
             });
             comment = '';
             specialist = 1;

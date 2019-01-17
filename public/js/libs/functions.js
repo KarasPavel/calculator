@@ -224,6 +224,11 @@ $('.navbar-nav>li>a').on('click', function () {
 });
 
 
+// $('body').on('click', '.next__block', function () {
+//     console.log('cde123')
+// });
+
+
 // var views = [];
 // var currentIndex;
 var page = 0;

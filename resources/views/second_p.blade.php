@@ -618,7 +618,7 @@
                 </div>
             </div>
             <form>
-                <div class="row formTag">
+                <div class="row formDynamic">
                     <div class="col-lg-12">
                         <div class="help_glaas_type help_glaas_type_last ">
                             <div class="up_form ">

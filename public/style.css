@@ -1226,7 +1226,7 @@ input[type="checkbox"] {
 }
 .shower_type_item-left p:before{
 	content: '';
-	top: 50px;
+	top: 34px;
 	left: 0;
 	position: absolute;
 	width: 62px;
@@ -1286,7 +1286,7 @@ input[type="checkbox"] {
 }
 .shower_type_item-right p:before{
 	content: '';
-	top: 34px;
+	top: 50px;
 	left: 0;
 	position: absolute;
 	width: 62px;
@@ -2298,6 +2298,7 @@ button:focus{
 	transform: translate(-50%);
 	padding-left: 18px;
 	padding-top: 5px;
+	z-index: 999;
 }
 .nav-tabs{
 	justify-content: center

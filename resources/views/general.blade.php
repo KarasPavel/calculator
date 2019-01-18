@@ -44,28 +44,28 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ">
                     <li class="nav-item ">
-                        <a class="nav-link" href="#zero"><i class="fas fa-bookmark"></i>Главная страница</a>
+                        <a class="nav-link" href=""><i class="fas fa-bookmark"></i>Главная страница</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="#one"><i class="fas fa-shoe-prints"></i>Лестницы и Стеклянные полы</a>
+                        <a class="nav-link" href="#lestnicy_i_poly"><i class="fas fa-shoe-prints"></i>Лестницы и Стеклянные полы</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#two"><i class="fas fa-shower"></i> Душевые ограждения</a>
+                        <a class="nav-link" href="#dushevye_ograjdeniya"><i class="fas fa-shower"></i> Душевые ограждения</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#three"><i class="fas fa-hourglass-start"></i>Зеркальное панно</a>
+                        <a class="nav-link" href="#zerkalnoe_panno"><i class="fas fa-hourglass-start"></i>Зеркальное панно</a>
                     <li class="nav-item">
-                        <a class="nav-link" href="#for"><i class="fas fa-door-open"></i>Перегородки и ограждения</a>
+                        <a class="nav-link" href="#peregorodki_i_dveri"><i class="fas fa-door-open"></i>Перегородки и ограждения</a>
                     </li>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#five"><i class="fas fa-expand-arrows-alt"></i>Скинали</a>
+                        <a class="nav-link" href="#skinali"><i class="fas fa-expand-arrows-alt"></i>Скинали</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#raschet_stoimosti"><i class="fas fa-calculator"></i>Расчет стоимости</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#six"><i class="far fa-address-card"></i> Контакты</a>
+                        <a class="nav-link" href="#kontakty"><i class="far fa-address-card"></i> Контакты</a>
                     </li>
                     @if(!$user)
                         <li class="nav-item">
@@ -290,9 +290,7 @@
 <script type="text/javascript" src={{asset("js/jquery.fancybox.min.js")}}></script>
 <script type="text/javascript" src={{asset("js/navigationButtons.js")}}></script>
 <script type="text/javascript" src={{asset("js/calculator.js")}}></script>
-{{--<script type="text/javascript" src={{asset("js/libs/focus_block.js")}}></script>--}}
 <script type="text/javascript" src={{asset("js/jquery.validate.js")}}></script>
-{{--<script type="text/javascript" src={{asset("js/forms/form_js.js")}}></script>--}}
 <script type="text/javascript" src={{asset("js/libs/functions.js")}}></script>
 
 </body>

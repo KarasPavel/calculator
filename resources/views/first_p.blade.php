@@ -212,7 +212,7 @@
                 </div>
             </div>
             <form>
-                <div class="row formTag">
+                <div class="row formLower">
                     <div class="col-lg-12">
                         <div class="up_form">
                             <input type="text" name="name" placeholder="имя">

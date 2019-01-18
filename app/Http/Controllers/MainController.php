@@ -17,7 +17,7 @@ class MainController extends Controller
         $photo = Photo::getPhotosWithoutPaginate();
         $video = Video::getVideos();
         $views = [
-            'glavnaya'=>'home',
+            ''=>'home',
             'lestnicy_i_poly'=>'first_p',
             'dushevye_ograjdeniya'=>'second_p',
             'peregorodki_i_dveri'=>'fourth_p',
@@ -26,7 +26,17 @@ class MainController extends Controller
             'raschet_stoimosti'=>'seventh_p',
             'kontakty'=>'sixth_p',
         ];
-        return view($views[$request->ssilka],  ['user' => $user, 'photo' => $photo, 'video' => $video]);
+        $url = $request->data;
+        $url = explode('#', $url);
+        if(!isset($url[1])){
+            return view($views[''],  ['user' => $user, 'photo' => $photo, 'video' => $video]);
+        } else {
+            return view($views[$url[1]],  ['user' => $user, 'photo' => $photo, 'video' => $video]);
+        }
+//        dd($url[1]);
+//        dd($request->data);
+
+//        return view($views[$url[1]],  ['user' => $user, 'photo' => $photo, 'video' => $video]);
 //        dd(view('home', ['user' => $user, 'photo' => $photo, 'video' => $video])->render());
 //        dd($returnHTML = view('main2')->render());
 //        return response()->json(['home'=>$returnHTML]);

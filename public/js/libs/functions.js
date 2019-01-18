@@ -200,7 +200,6 @@ $('.cost_calc_first_tab').each(function () {
             el.hide();
             el.next().show();
         });
-
     });
 
     // $(window).on('load', function () {
@@ -229,18 +228,26 @@ $('.navbar-nav>li>a').on('click', function () {
 // });
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // var views = [];
 // var currentIndex;
-var page = 0;
-$(document).ready(function () {
-    window.location.href = '#';
-    $('#buttonNavigation1').find('p').html(knopki[page + 1] + '<br>' + 'следующая страница');
-    // currentIndex = 0;
-    getPages()
-});
-
+var page;
 var ssilki = [
-    'glavnaya',
+    '',
     'lestnicy_i_poly',
     'dushevye_ograjdeniya',
     'peregorodki_i_dveri',
@@ -249,7 +256,11 @@ var ssilki = [
     'raschet_stoimosti',
     'kontakty'
 ];
-
+if (ssilki.indexOf(window.location.href.split('#')[1]) === -1){
+    page = 0;
+} else {
+    page = ssilki.indexOf(window.location.href.split('#')[1]);
+}
 var knopki = [
     'Главная',
     'Лесницы и полы',
@@ -260,13 +271,27 @@ var knopki = [
     'Рассчёт стоимости',
     'Контакты'
 ];
+$(document).ready(function () {
+    $('#buttonNavigation1').find('p').html(knopki[page + 1] + '<br>' + 'следующая страница');
+    $('#buttonNavigation2').find('p').html(knopki[page - 1] + '<br>' + 'предыдущая страница');
+    getPages();
+    pageNextCheck();
+    pagePreviousCheck();
+    setActiveOwlDot()
+    // currentIndex = 0;
+    // getPages()
+});
+
+
+
+
 
 function getPages() {
     $.post('getPages', {
         data: window.location.href,
         '_token': $('meta[name="csrf-token"]').attr('content'),
         _method: 'POST',
-        ssilka: ssilki[page],
+        // ssilka: ssilki[page],
     }, function (responce) {
         // views.push(responce);
         $('header').show();
@@ -279,13 +304,15 @@ function getPages() {
 
 $('#buttonNavigation1').click(function () {
     page++;
-    pageCheck();
+    pageNextCheck();
+    pagePreviousCheck();
     getPages();
     setActiveOwlDot();
 });
 
 $('#buttonNavigation2').click(function () {
-    page = 0;
+    page--;
+    pagePreviousCheck()
     $('#buttonNavigation1').show();
     $('#buttonNavigation1').find('p').html(knopki[page + 1] + '<br>' + 'следующая страница');
     getPages();
@@ -298,11 +325,13 @@ $('.owl-dot').click(function () {
     });
     $(this).addClass('active');
     page = $(this).index();
+    window.location.href = "#" + ssilki[page];
     getPages();
-    pageCheck();
+    pageNextCheck();
+    pagePreviousCheck()
 });
 
-function pageCheck() {
+function pageNextCheck() {
     if (page === 7) {
         $('#buttonNavigation1').hide();
     } else {
@@ -311,6 +340,23 @@ function pageCheck() {
     }
     if (page === 8) {
         page = 0;
+    }
+    if (page === 0) {
+        window.location.href = '#';
+    } else {
+        window.location.href = "#" + ssilki[page]
+    }
+}
+
+function pagePreviousCheck() {
+    if (page === 0) {
+        $('#buttonNavigation2').hide();
+    } else {
+        $('#buttonNavigation2').show();
+        $('#buttonNavigation2').find('p').html(knopki[page - 1] + '<br>' + 'предыдущая страница');
+    }
+    if (page === -1) {
+        page = 7;
     }
     if (page === 0) {
         window.location.href = '#';

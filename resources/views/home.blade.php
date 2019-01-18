@@ -13,7 +13,7 @@
                 <p>Срочное изготовление - <br><span class="small_span">от 6 часов</span></p>
                 <img src="images/squad_smaler.png" alt="">
                 <p>Стоимость от: <br><span>750руб./м2</span></p>
-                <a id="calculations_buttons" href="#seven">Калькулятор стоимости простых изделий</a>
+                <a id="calculations_buttons" href="#raschet_stoimosti">Калькулятор стоимости простых изделий</a>
                 <a id="master_calling" href="#win1">Бесплатная консультация по телефону
                 </a>
             </div>
@@ -593,7 +593,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-4 col-md-4">
-                    <a href="#two">
+                    <a href="#dushevye_ograjdeniya">
                         <div class="turnkey_items">
                             <img src="images/Napolnene_home/3_dushevie_i_dveri.jpg
 							" alt="1">
@@ -602,7 +602,7 @@
                     </a>
                 </div>
                 <div class="col-lg-4 col-md-4">
-                    <a href="#three">
+                    <a href="#zerkalnoe_panno">
                         <div class="turnkey_items">
                             <img src="images/Napolnene_home/5_zerkala.jpg" alt="1">
                             <p>Зеркала</p>
@@ -610,7 +610,7 @@
                     </a>
                 </div>
                 <div class="col-lg-4 col-md-4">
-                    <a href="#five">
+                    <a href="#skinali">
                         <div class="turnkey_items">
                             <img src="images/Napolnene_home/6_skinali_i_fartuki.jpg" alt="1">
                             <p>Скинали и Фартуки</p>
@@ -636,7 +636,7 @@
                     </a>
                 </div>
                 <div class="col-lg-4 col-md-4">
-                    <a href="#for">
+                    <a href="#peregorodki_i_dveri">
                         <div class="turnkey_items">
                             <img src="images/Napolnene_home/4_peregorodki_i_dveri.jpg" alt="1">
                             <p>Перегородки</p>

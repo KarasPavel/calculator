@@ -191,7 +191,7 @@
                 <div class="col-lg-9">
                     <div class="orenge_block_calc">
                         <h2>Расчет простого изделия в режиме ONLINE</h2>
-                        <a class="buttons_calc_glasses" href="#seven">калькулятор</a>
+                        <a class="buttons_calc_glasses" href="#raschet_stoimosti">калькулятор</a>
                     </div>
                 </div>
                 <div class="col-lg-3">

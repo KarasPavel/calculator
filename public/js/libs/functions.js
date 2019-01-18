@@ -15,31 +15,24 @@ function sendForm() {
     var option3 = '';
     var option4 = '';
 
-    // $('body').on('click', '.for_option_1', function () {
     $('.for_option_1').click(function () {
         option1 = '';
         option1 = $(this).find('p').text();
         $('.help_glass_items').removeClass('help_glass_items-active');
         $(this).addClass('help_glass_items-active');
-        // console.log(option1)
     });
-    // $('body').on('click', '.for_option_2', function () {
     $('.for_option_2').click(function () {
         option2 = '';
         option2 = $(this).find('p').text();
         $('.help_glass_items').removeClass('help_glass_items-active');
         $(this).addClass('help_glass_items-active');
-        // console.log(option2)
     });
-    // $('body').on('click', '.for_option_3', function () {
     $('.for_option_3').click(function () {
         option3 = '';
         option3 = $(this).find('p').text();
         $('.help_glass_items').removeClass('help_glass_items-active');
         $(this).addClass('help_glass_items-active');
-        // console.log(option3)
     });
-    // $('body').on('change', '#chbx1, #chbx2, #chbx3, #chbx4, #chbx5, #chbx6',
     $('.chekbox_sect_6').on('change', '#chbx1, #chbx2, #chbx3, #chbx4, #chbx5, #chbx6',
         function () {
             findCheckboxes();
@@ -66,7 +59,6 @@ function sendForm() {
             opt4_4 + ' ' + '\n' + ' ' +
             opt4_5 + ' ' + '\n' + ' ' +
             opt4_6;
-        // console.log(option4)
     }
 
     $('#gager').click(function () {
@@ -124,35 +116,6 @@ function sendForm() {
         })
     });
 
-    // $('.formTag a.action_form').click(function () {
-    //     // $('body').on('click', '.action_form', function () {
-    //     console.log('click');
-    //     $(this).closest('.formTag').find('input[type="text"]').each(function () {
-    //         value = $(this).val();
-    //         name = $(this).attr('name');
-    //         dataInput[name] = value;
-    //         comment =
-    //             option1 + ' ' + '\n' + ' ' +
-    //             option3 + ' ' + '\n' + ' ' +
-    //             option2 + ' ' + '\n' + ' ' +
-    //             option4;
-    //     });
-    //     if ($(this).closest('form').valid()) {
-    //         dataInput['specialist'] = specialist;
-    //         dataInput['comment'] = comment;
-    //         dataInput['_token'] = $('meta[name="csrf-token"]').attr('content');
-    //         console.log(dataInput);
-    //         $.post('createApplications', dataInput, function (data, status) {
-    //             console.log(dataInput);
-    //             console.log(data);
-    //             console.log(status);
-    //         });
-    //         comment = '';
-    //         specialist = 1;
-    //         document.location.assign('#win3');
-    //     }
-    // });
-
     $('.call_back_section').each(function () {
         var el = $(this);
         $(this).find('.next__block').click(function () {
@@ -175,31 +138,24 @@ function subscribeForm(formSelector) {
     var option2 = '';
     var option3 = '';
     var option4 = '';
-// $('body').on('click', '.for_option_1', function () {
     $('.for_option_1').click(function () {
         option1 = '';
         option1 = $(this).find('p').text();
-        // console.log(option1)
         $('.help_glass_items').removeClass('help_glass_items-active');
         $(this).addClass('help_glass_items-active');
     });
-    // $('body').on('click', '.for_option_2', function () {
     $('.for_option_2').click(function () {
         option2 = '';
         option2 = $(this).find('p').text();
-        // console.log(option2)
         $('.help_glass_items').removeClass('help_glass_items-active');
         $(this).addClass('help_glass_items-active');
     });
-    // $('body').on('click', '.for_option_3', function () {
     $('.for_option_3').click(function () {
         option3 = '';
         option3 = $(this).find('p').text();
-        // console.log(option3)
         $('.help_glass_items').removeClass('help_glass_items-active');
         $(this).addClass('help_glass_items-active');
     });
-    // $('body').on('change', '#chbx1, #chbx2, #chbx3, #chbx4, #chbx5, #chbx6',
     $('.chekbox_sect_6').on('change', '#chbx1, #chbx2, #chbx3, #chbx4, #chbx5, #chbx6',
         function () {
             findCheckboxes();
@@ -226,7 +182,6 @@ function subscribeForm(formSelector) {
             opt4_4 + ' ' + '\n' + ' ' +
             opt4_5 + ' ' + '\n' + ' ' +
             opt4_6;
-        // console.log(option4)
     }
 
     $('#gager').click(function () {
@@ -240,13 +195,10 @@ function subscribeForm(formSelector) {
         $(this).addClass('active_a-links');
     });
     $(formSelector).click(function () {
-        // $('body').on('click', '.action_form', function () {
-        // console.log('click');
         $(this).closest('form').find('input[type="text"]').each(function () {
             value = $(this).val();
             name = $(this).attr('name');
             dataInput[name] = value;
-            // comment = '';
             comment =
                 option1 + ' ' + '\n' + ' ' +
                 option3 + ' ' + '\n' + ' ' +
@@ -257,11 +209,7 @@ function subscribeForm(formSelector) {
             dataInput['specialist'] = specialist;
             dataInput['comment'] = comment;
             dataInput['_token'] = $('meta[name="csrf-token"]').attr('content');
-            // console.log(dataInput);
             $.post('createApplications', dataInput, function (data, status) {
-                // console.log(dataInput);
-                // console.log(data);
-                // console.log(status);
             });
             comment = '';
             specialist = 1;
@@ -515,8 +463,6 @@ $('.navbar-nav>li>a').on('click', function () {
 // });
 
 
-// var views = [];
-// var currentIndex;
 var page;
 var ssilki = [
     '',
@@ -550,8 +496,6 @@ $(document).ready(function () {
     pageNextCheck();
     pagePreviousCheck();
     setActiveOwlDot()
-    // currentIndex = 0;
-    // getPages()
 });
 
 
@@ -643,3 +587,8 @@ function setActiveOwlDot() {
     });
     $('.owl-dot').eq(page).addClass('active');
 }
+
+function locationHashChanged() {
+    getPages();
+}
+window.onhashchange = locationHashChanged;

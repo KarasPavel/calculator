@@ -21,7 +21,7 @@
     <div class="container-fluid">
         <nav class="navbar fixed-top navbar-expands navbar-dark ">
             <div class="heder_nav_navbar">
-                <a class="navbar-brand" href="#zero"><img src="images/Viditex_logo.png" alt="" class="logo"></a>
+                <a class="navbar-brand" href=""><img src="images/Viditex_logo.png" alt="" class="logo"></a>
                 <span class="white header_small_text"><i class="fas fa-map-marker-alt"></i> г. Москва</span>
                 <span class="white header_small_text"><i class="far fa-clock"></i>пн - сб 10 00 - 19 00</span>
                 <a href="mailto:info@v-t-x.ru"><span class="white header_small_text"><i class="far fa-envelope"></i>info@v-t-x.ru</span></a>

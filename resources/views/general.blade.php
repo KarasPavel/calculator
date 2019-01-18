@@ -290,9 +290,7 @@
 <script type="text/javascript" src={{asset("js/jquery.fancybox.min.js")}}></script>
 <script type="text/javascript" src={{asset("js/navigationButtons.js")}}></script>
 <script type="text/javascript" src={{asset("js/calculator.js")}}></script>
-{{--<script type="text/javascript" src={{asset("js/libs/focus_block.js")}}></script>--}}
 <script type="text/javascript" src={{asset("js/jquery.validate.js")}}></script>
-{{--<script type="text/javascript" src={{asset("js/forms/form_js.js")}}></script>--}}
 <script type="text/javascript" src={{asset("js/libs/functions.js")}}></script>
 
 </body>

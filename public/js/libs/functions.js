@@ -19,18 +19,24 @@ function sendForm() {
     $('.for_option_1').click(function () {
         option1 = '';
         option1 = $(this).find('p').text();
+        $('.help_glass_items').removeClass('help_glass_items-active');
+        $(this).addClass('help_glass_items-active');
         // console.log(option1)
     });
     // $('body').on('click', '.for_option_2', function () {
     $('.for_option_2').click(function () {
         option2 = '';
         option2 = $(this).find('p').text();
+        $('.help_glass_items').removeClass('help_glass_items-active');
+        $(this).addClass('help_glass_items-active');
         // console.log(option2)
     });
     // $('body').on('click', '.for_option_3', function () {
     $('.for_option_3').click(function () {
         option3 = '';
         option3 = $(this).find('p').text();
+        $('.help_glass_items').removeClass('help_glass_items-active');
+        $(this).addClass('help_glass_items-active');
         // console.log(option3)
     });
     // $('body').on('change', '#chbx1, #chbx2, #chbx3, #chbx4, #chbx5, #chbx6',
@@ -65,9 +71,13 @@ function sendForm() {
 
     $('#gager').click(function () {
         specialist = 2;
+        $('.button_forms_popup>a').removeClass('active_a-links');
+        $(this).addClass('active_a-links');
     });
     $('#designer').click(function () {
         specialist = 3;
+        $('.button_forms_popup>a').removeClass('active_a-links');
+        $(this).addClass('active_a-links');
     });
     $(document).find('form').each(function () {
         $(this).validate({
@@ -170,18 +180,24 @@ function subscribeForm(formSelector) {
         option1 = '';
         option1 = $(this).find('p').text();
         // console.log(option1)
+        $('.help_glass_items').removeClass('help_glass_items-active');
+        $(this).addClass('help_glass_items-active');
     });
     // $('body').on('click', '.for_option_2', function () {
     $('.for_option_2').click(function () {
         option2 = '';
         option2 = $(this).find('p').text();
         // console.log(option2)
+        $('.help_glass_items').removeClass('help_glass_items-active');
+        $(this).addClass('help_glass_items-active');
     });
     // $('body').on('click', '.for_option_3', function () {
     $('.for_option_3').click(function () {
         option3 = '';
         option3 = $(this).find('p').text();
         // console.log(option3)
+        $('.help_glass_items').removeClass('help_glass_items-active');
+        $(this).addClass('help_glass_items-active');
     });
     // $('body').on('change', '#chbx1, #chbx2, #chbx3, #chbx4, #chbx5, #chbx6',
     $('.chekbox_sect_6').on('change', '#chbx1, #chbx2, #chbx3, #chbx4, #chbx5, #chbx6',
@@ -215,9 +231,13 @@ function subscribeForm(formSelector) {
 
     $('#gager').click(function () {
         specialist = 2;
+        $('.button_forms_popup>a').removeClass('active_a-links');
+        $(this).addClass('active_a-links');
     });
     $('#designer').click(function () {
         specialist = 3;
+        $('.button_forms_popup>a').removeClass('active_a-links');
+        $(this).addClass('active_a-links');
     });
     $(formSelector).click(function () {
         // $('body').on('click', '.action_form', function () {

@@ -237,6 +237,22 @@
                     <div class="shower_type_items d-flex">
                         <img src="images/img_showers-type.png" alt="">
                         <div class="shower_type_item-left">
+                            <p>ДУШЕВОЕ ОГРАЖДЕНИЕ VEDITEX</p>
+                            <ul>
+                                <li>Срок службы неограничен</li>
+                                <li>Компактно, эстетично, увеличивает пространство, сохраняет свет.</li>
+                                <li>Крайне надежно, безопасно для детей и пожилых людей. Стекло 8-12мм</li>
+                                <li>Удобно, быстро, практично</li>
+                                <li class="pluss">Полностью индивидульно. Возможны рисунки, уф-печать, триплекс</li>
+                                <li>Нужен замер</li>
+                                <li>Зачастую дороже кабины</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="shower_type_items d-flex">
+                        <div class="shower_type_item-right">
                             <p>"Итальянская" или "Чешская" душевая кабина</p>
                             <ul>
                                 <li>Просто купить, везде есть</li>
@@ -248,22 +264,6 @@
                                 </li>
                                 <li class="dark-mines">Тесно, скользко, неудобно, все дрожит</li>
                                 <li>Скудный выбор, безвкусно и не вписывается в интерьер</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="shower_type_items d-flex">
-                        <div class="shower_type_item-right">
-                            <p>ДУШЕВОЕ ОГРАЖДЕНИЕ VEDITEX</p>
-                            <ul>
-                                <li>Срок службы неограничен</li>
-                                <li>Компактно, эстетично, увеличивает пространство, сохраняет свет.</li>
-                                <li>Крайне надежно, безопасно для детей и пожилых людей. Стекло 8-12мм</li>
-                                <li>Удобно, быстро, практично</li>
-                                <li class="pluss">Полностью индивидульно. Возможны рисунки, уф-печать, триплекс</li>
-                                <li>Нужен замер</li>
-                                <li>Зачастую дороже кабины</li>
                             </ul>
                         </div>
                         <img src="images/img_showers-type-right.png" alt="">

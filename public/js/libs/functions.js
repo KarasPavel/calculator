@@ -1,5 +1,4 @@
 $(document).ready(function () {
-
     sendForm();
     subscribeForm('.formTag a.action_form');
 });
@@ -126,8 +125,6 @@ function sendForm() {
 }
 
 
-
-
 function subscribeForm(formSelector) {
     var dataInput = {};
     var specialist = 1;
@@ -217,19 +214,6 @@ function subscribeForm(formSelector) {
         }
     });
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 function initializeCarusel(e, isShowing) {
@@ -504,12 +488,19 @@ function getPages() {
         data: window.location.href,
         '_token': $('meta[name="csrf-token"]').attr('content'),
         _method: 'POST',
-        // ssilka: ssilki[page],
     }, function (responce) {
-        // views.push(responce);
         $('header').show();
+
+        // $('main').animate({
+        //     width: 'toggle'
+        // }).empty().append(responce);
+        // sendForm();
+        // subscribeForm('.formDynamic a.action_form');
+        // subscribeForm('.formLower a.action_form');
+
+
         $('main').fadeOut(500, function () {
-            $('main').empty().append(responce).slideDown("fast");
+            $('main').empty().append(responce).slideDown("slow");
             sendForm();
             subscribeForm('.formDynamic a.action_form');
             subscribeForm('.formLower a.action_form');
@@ -589,6 +580,34 @@ function setActiveOwlDot() {
 }
 
 function locationHashChanged() {
-    getPages();
+    // console.log(location.hash)
+    // let localPage;
+    // localPage = location.hash.split('#')[1];
+    // console.log(localPage);
+    // console.log(ssilki.indexOf(localPage) != -1);
+
+    if (ssilki.indexOf(location.hash.split('#')[1]) != -1) {
+        getPages();
+        if (ssilki.indexOf(window.location.href.split('#')[1]) === -1) {
+            page = 0;
+        } else {
+            page = ssilki.indexOf(window.location.href.split('#')[1]);
+        }
+        pageNextCheck();
+        pagePreviousCheck();
+        setActiveOwlDot();
+    }
+
+
+    // getPages();
+    // if (ssilki.indexOf(window.location.href.split('#')[1]) === -1) {
+    //     page = 0;
+    // } else {
+    //     page = ssilki.indexOf(window.location.href.split('#')[1]);
+    // }
+    // pageNextCheck();
+    // pagePreviousCheck();
+    // setActiveOwlDot();
 }
+
 window.onhashchange = locationHashChanged;

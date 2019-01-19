@@ -1,4 +1,21 @@
 $(document).ready(function () {
+
+    $('.cost_calc_first_tab').each(function () {
+        var el = $(this);
+        $(this).find('.content').click(function () {
+            el.next().show();
+        });
+
+        $('.call_back_section').each(function () {
+            var el = $(this);
+            $(this).find('.next__block').click(function () {
+                el.hide();
+                el.next().show();
+            });
+        });
+    });
+
+
     var totalPrice = 0;
     var offsetHoursTotal = 0;
     var offsetSum = 0;

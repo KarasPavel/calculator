@@ -32,6 +32,29 @@ function sendForm() {
         $('.help_glass_items').removeClass('help_glass_items-active');
         $(this).addClass('help_glass_items-active');
     });
+    $('.checkbox').on('mouseup', function() {
+        option5 = '';
+        option5 = $(this).find('p').text();
+        var currentCheckStatus = $(this).find('input[type="checkbox"]').attr('check');
+        if (typeof currentCheckStatus !== 'undefined') {
+            $(this).find('input[type="checkbox"]').removeAttr('check');
+            $('.button_next > a ').addClass('disable');
+            
+        } else {
+            $(this).find('input[type="checkbox"]').attr('check', 'true');
+            $('.button_next > a ').removeClass('disable');
+            
+        }
+    });  
+    
+    
+    
+    
+    // $('.true').click(function () {
+    //     option3 = '';
+    //     option3 = $(this).find('.formTag').text();
+              
+    // });
     $('.chekbox_sect_6').on('change', '#chbx1, #chbx2, #chbx3, #chbx4, #chbx5, #chbx6',
         function () {
             findCheckboxes();
@@ -123,7 +146,20 @@ function sendForm() {
         });
     });
 }
-
+$(document).ready(function(){
+    $('.checkbox').on('mouseup', function() {
+        var currentCheckStatus = $(this).find('input[type="checkbox"]').attr('check');
+        if (typeof currentCheckStatus !== 'undefined') {
+            $(this).find('input[type="checkbox"]').removeAttr('check');
+            $('.button_forms > a ').removeClass('disable');
+            
+        } else {
+            $(this).find('input[type="checkbox"]').attr('check', 'true');
+            $('.button_forms > a ').addClass('disable');
+            
+        }
+    });
+});
 
 function subscribeForm(formSelector) {
     var dataInput = {};
@@ -153,6 +189,8 @@ function subscribeForm(formSelector) {
         $('.help_glass_items').removeClass('help_glass_items-active');
         $(this).addClass('help_glass_items-active');
     });
+    
+    
     $('.chekbox_sect_6').on('change', '#chbx1, #chbx2, #chbx3, #chbx4, #chbx5, #chbx6',
         function () {
             findCheckboxes();
@@ -328,9 +366,9 @@ function resize() {
 }
 
 
-// Набор функций
+// 
 var base = {
-    // Поиск элементов по классу
+    // search element class
     findClass: function (str, node) {
         if (document.getElementsByClassName) return (node || document).getElementsByClassName(str);
         else {
@@ -344,12 +382,12 @@ var base = {
             return array;
         }
     },
-    // Добавление обработчиков событий
+    // add event listener
     bind: function (node, type, listener) {
         if (node.addEventListener) node.addEventListener(type, listener, false);
         //@cc_on node.attachEvent('on' + type, function() { listener.call(node); });
     },
-    // Реализация DOMContentLoaded
+    //  DOMContentLoaded
     init: [],
     ready: function () {
         if (!arguments.callee.done) {
@@ -611,3 +649,5 @@ function locationHashChanged() {
 }
 
 window.onhashchange = locationHashChanged;
+
+// 

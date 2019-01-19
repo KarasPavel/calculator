@@ -49,6 +49,9 @@ Route::middleware('role:admin|junior_admin|manager')->group(function () {
     Route::post('admin/updateApplication','Admin\ApplicationsController@updateApplication')->name('updateApplication');
     Route::get('admin/deleteApplication/{id}','Admin\ApplicationsController@deleteApplication')->name('deleteApplication');
 
+    //Order-admin routes
+    Route::get('admin/viewOrders', 'Admin\OrdersController@viewOrders')->name('viewOrders');
+
 
     //Gallery
     Route::get('admin/viewPhoto', 'Admin\PhotoController@viewPhoto')->name('viewPhoto');

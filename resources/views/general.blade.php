@@ -73,11 +73,11 @@
                             <a class="nav-link" href="{{route('register')}}">Регистрация</a>
                         </li>
                     @endif
-                    @if($user && $user->hasRole('user'))
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{route('cabinet',[$user->id])}}">Личный кабинет</a>
-                        </li>
-                    @endif
+                    {{--@if($user && $user->hasRole('user'))--}}
+                        {{--<li class="nav-item">--}}
+                            {{--<a class="nav-link" href="{{route('cabinet',[$user->id])}}">Личный кабинет</a>--}}
+                        {{--</li>--}}
+                    {{--@endif--}}
                     @if($user && $user->hasRole('admin|junior_admin|manager'))
                         <li class="nav-item">
                             <a class="nav-link" href="{{route('dashboard')}}">Admin panel</a>

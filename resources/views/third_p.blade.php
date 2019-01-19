@@ -68,7 +68,7 @@
                         @if($value->type === 'зеркала на заказ')
                             <a data-fancybox="" href="{{$value->photo}}">
                                 <div class="img_items_stairs">
-                                    <img src="{{$value->small_photo}}" alt="1">
+                                    <img src="{{$value->photo}}" alt="1">
                                     <p></p>
                                 </div>
                             </a>
@@ -80,7 +80,7 @@
                         @if($value->type === 'зеркальное панно')
                             <a data-fancybox="" href="{{$value->photo}}">
                                 <div class="img_items_stairs">
-                                    <img src="{{$value->small_photo}}" alt="1">
+                                    <img src="{{$value->photo}}" alt="1">
                                     <p></p>
                                 </div>
                             </a>
@@ -92,7 +92,7 @@
                         @if($value->type === 'оптовые заказы')
                             <a data-fancybox="" href="{{$value->photo}}">
                                 <div class="img_items_stairs">
-                                    <img src="{{$value->small_photo}}" alt="1">
+                                    <img src="{{$value->photo}}" alt="1">
                                     <p></p>
                                 </div>
                             </a>
@@ -104,7 +104,7 @@
                         @if($value->type === 'эксклюзив решения')
                             <a data-fancybox="" href="{{$value->photo}}">
                                 <div class="img_items_stairs">
-                                    <img src="{{$value->small_photo}}" alt="1">
+                                    <img src="{{$value->photo}}" alt="1">
                                     <p></p>
                                 </div>
                             </a>

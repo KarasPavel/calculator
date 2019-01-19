@@ -96,7 +96,7 @@
                         @if($value->type === 'угловые и фигурные')
                             <a data-fancybox="" href="{{$value->photo}}">
                                 <div class="img_items_stairs">
-                                    <img src="{{$value->small_photo}}" alt="1">
+                                    <img src="{{$value->photo}}" alt="1">
                                     <p></p>
                                 </div>
                             </a>
@@ -108,7 +108,7 @@
                         @if($value->type === 'прямые душевые')
                             <a data-fancybox="" href="{{$value->photo}}">
                                 <div class="img_items_stairs">
-                                    <img src="{{$value->small_photo}}" alt="1">
+                                    <img src="{{$value->photo}}" alt="1">
                                     <p></p>
                                 </div>
                             </a>
@@ -120,7 +120,7 @@
                         @if($value->type === 'форма трапеции')
                             <a data-fancybox="" href="{{$value->photo}}">
                                 <div class="img_items_stairs">
-                                    <img src="{{$value->small_photo}}" alt="1">
+                                    <img src="{{$value->photo}}" alt="1">
                                     <p></p>
                                 </div>
                             </a>
@@ -132,7 +132,7 @@
                         @if($value->type === 'двери ниша')
                             <a data-fancybox="" href="{{$value->photo}}">
                                 <div class="img_items_stairs">
-                                    <img src="{{$value->small_photo}}" alt="1">
+                                    <img src="{{$value->photo}}" alt="1">
                                     <p></p>
                                 </div>
                             </a>
@@ -144,7 +144,7 @@
                         @if($value->type === 'глухие перегородки')
                             <a data-fancybox="" href="{{$value->photo}}">
                                 <div class="img_items_stairs">
-                                    <img src="{{$value->small_photo}}" alt="1">
+                                    <img src="{{$value->photo}}" alt="1">
                                     <p></p>
                                 </div>
                             </a>
@@ -156,7 +156,7 @@
                         @if($value->type === 'ограждения в ванную')
                             <a data-fancybox="" href="{{$value->photo}}">
                                 <div class="img_items_stairs">
-                                    <img src="{{$value->small_photo}}" alt="1">
+                                    <img src="{{$value->photo}}" alt="1">
                                     <p></p>
                                 </div>
                             </a>
@@ -168,7 +168,7 @@
                         @if($value->type === 'с раздвижной дверью')
                             <a data-fancybox="" href="{{$value->photo}}">
                                 <div class="img_items_stairs">
-                                    <img src="{{$value->small_photo}}" alt="1">
+                                    <img src="{{$value->photo}}" alt="1">
                                     <p></p>
                                 </div>
                             </a>
@@ -180,7 +180,7 @@
                         @if($value->type === 'эксклюзив и опт')
                             <a data-fancybox="" href="{{$value->photo}}">
                                 <div class="img_items_stairs">
-                                    <img src="{{$value->small_photo}}" alt="1">
+                                    <img src="{{$value->photo}}" alt="1">
                                     <p></p>
                                 </div>
                             </a>

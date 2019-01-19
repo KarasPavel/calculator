@@ -3116,7 +3116,7 @@
                             @if($value->type === 'скинали с фотопечатью')
                                 <a data-fancybox="gallery_Fartucks" href="{{$value->photo}}">
                                     <div class="img_items_stairs">
-                                        <img src="{{$value->small_photo}}" alt="1">
+                                        <img src="{{$value->photo}}" alt="1">
                                         <p></p>
                                     </div>
                                 </a>
@@ -3128,7 +3128,7 @@
                             @if($value->type === 'одноцветные фартуки')
                                 <a data-fancybox="gallery_Fartucks1" href="{{$value->photo}}">
                                     <div class="img_items_stairs">
-                                        <img src="{{$value->small_photo}}" alt="1">
+                                        <img src="{{$value->photo}}" alt="1">
                                         <p></p>
                                     </div>
                                 </a>
@@ -3140,7 +3140,7 @@
                             @if($value->type === 'скинали с подсветкой')
                                 <a data-fancybox="gallery_Fartucks2" href="{{$value->photo}}">
                                     <div class="img_items_stairs">
-                                        <img src="{{$value->small_photo}}" alt="1">
+                                        <img src="{{$value->photo}}" alt="1">
                                         <p></p>
                                     </div>
                             @endif

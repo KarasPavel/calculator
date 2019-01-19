@@ -119,7 +119,7 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="main-title">
-                                <h1>Users</h1>
+                                <h1>Заявки</h1>
                             </div>
                         </div>
                         <div class="col-md-6">

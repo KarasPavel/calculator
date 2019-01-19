@@ -678,14 +678,14 @@
                             <div class="checkbox">
                                 <label>
                                     <input name="agree" type="checkbox">
-                                    <span class="fake-checkbox" aria-hidden="true"></span>
+                                    <span class="fake-checkbox true" aria-hidden="true"></span>
                                     <span class="label">Согласие с конфиденциальностью и куки</span>
                                 </label>
                             </div>
                         </div>
                         <div class="button_next">
                             {{--<a class="next__block" >отправить</a>--}}
-                            <a class="action_form" href="javascript:void(0);">отправить</a>
+                            <a class="action_form disable" href="javascript:void(0);">отправить</a>
                         </div>
                     </div>
                 </div>

@@ -50,9 +50,16 @@ body{
 h2,h3,{
 	cursor: url(images/cursor_text.png), text !important;
 }
-a, .navbar-toggler:not(:disabled):not(.disabled), label{
+a, .navbar-toggler:not(:disabled):not(.disabled), label, button{
 	cursor: url(images/cursor_click.png), pointer !important;
 
+}
+iframe{
+	cursor: url(images/cursor_click.png), pointer !important;
+}
+.disable{
+	pointer-events: none;
+	background: #dec19d !important;
 }
 .navbar-toggler:not(:disabled):not(.disabled){
 	cursor: url(images/cursor_click.png), pointer !important;
@@ -962,7 +969,7 @@ input[type="checkbox"] {
 	display: block;
 	text-align: center;
 }
-.button_forms a{
+.button_forms a, .button_forms_popup a{
 	color: #ffffff;
 	font-family: "Open Sans";
 	font-size: 13px;

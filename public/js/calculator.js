@@ -15,7 +15,7 @@ $(document).ready(function () {
         });
     });
 
-
+    var deliveryBuy;
     var totalPrice = 0;
     var offsetHoursTotal = 0;
     var offsetSum = 0;
@@ -212,6 +212,10 @@ $(document).ready(function () {
         return Math.round(offsetHoursTotal);
     }
 
+    var dd;
+    var mm;
+    var yyyy;
+    var today;
     function setOrderDay() {
         $('#calculator_day').val('');
         $('#calculator_month').val('');
@@ -219,11 +223,11 @@ $(document).ready(function () {
         dayName = '';
         setPriceValue();
         setOffsetHoursTotal();
-        var today = new Date();
+        today = new Date();
         today.setHours(today.getHours() + setOffsetHoursTotal());
-        var dd = today.getDate();
-        var mm = today.getMonth() + 1;
-        var yyyy = today.getFullYear();
+        dd = today.getDate();
+        mm = today.getMonth() + 1;
+        yyyy = today.getFullYear();
         dayName = ([
             "( Воскресенье )",
             "( Понедельник )",
@@ -266,8 +270,10 @@ $(document).ready(function () {
         unfillingDivs();
     });
 
+    var material;
     $('#mirror').click(function () {
         materialTypeId = this.id;
+        material = this.text;
         $('#material').empty();
         $('#material').append('<div id="calc_stege_2" class="head toggler"></div>');
         $('#calc_stege_2').append('<p class="numver_stage">2</p>');
@@ -298,6 +304,7 @@ $(document).ready(function () {
 
     $('#glass').click(function () {
         materialTypeId = this.id;
+        material = this.text;
         $('#material').empty();
         $('#material').append('<div id="calc_stege_2" class="head toggler"></div>');
         $('#calc_stege_2').append('<p class="numver_stage">2</p>');
@@ -327,9 +334,11 @@ $(document).ready(function () {
         unfillingDivs();
     });
 
+    var product;
     $('#material').on('click', '#simple, #optWhite, #bronze, #matt, #silver, #grey,' +
         '#graphite, #aged, #clearVision, #exclusive, #gold', function () {
         materialId = this.id;
+        product = $(this).find('p').text();
         $('#depth').empty();
         $('#shape').empty();
         $('#format').empty();
@@ -397,8 +406,10 @@ $(document).ready(function () {
         }
     }
 
+    var depth;
     $('#depth').on('click', '#three, #four, #five, #six, #eight, #ten, #twelve, #fifteen, #nineteen', function () {
         depthId = this.id;
+        depth = this.text;
         $('#shape').empty();
         $('#format').empty();
         $('#extra').empty();
@@ -406,6 +417,8 @@ $(document).ready(function () {
         fillShapeDiv();
         $('#shape').show().children().show();
     });
+
+    var shape = {};
 
     function fillShapeDiv() {
         $('#shape').append('<div id="calc_stege_4" class="head toggler"></div>');
@@ -428,12 +441,13 @@ $(document).ready(function () {
             '<p>ИНАЯ ФОРМА</p>');
         $('#circle').click(function () {
             shapeId = this.id;
+            shape['name'] = $(this).find('p').text();
             $('#item_size_calc').detach();
             $('.Size_calc').append('<div id="item_size_calc" class="item_size_calc">' +
                 '    <p>Введите размеры</p>' +
                 '    <div id="shape_size" class="input_touch_size">' +
                 '    </div></div>');
-            $('#shape_size').append('<input id="shape_diameter" type="number" min="1" placeholder="мм">диаметр');
+            $('#shape_size').append('<input id="shape_diameter" name="diameter" type="number" min="1" placeholder="мм">диаметр');
         });
         $('#shape').on('click', '#rectangle, #oval, #another', function () {
             $('#item_size_calc').detach();
@@ -442,8 +456,9 @@ $(document).ready(function () {
                 '    <div id="shape_size" class="input_touch_size">' +
                 '    </div></div>');
             shapeId = this.id;
-            $('#shape_size').append('<input id="shape_height" type="number" min="1" placeholder="мм">высота' +
-                '<input id="shape_width" type="number" min="1" placeholder="мм">ширина');
+            shape['name'] = $(this).find('p').text();
+            $('#shape_size').append('<input id="shape_height" name="height" type="number" min="1" placeholder="мм">высота' +
+                '<input id="shape_width" type="number" min="1" name="width" placeholder="мм">ширина');
         })
     }
 
@@ -455,6 +470,13 @@ $(document).ready(function () {
     });
 
     function checkSize() {
+        $('.Size_calc').find('input[type="number"]').each(function () {
+            let value;
+            let name;
+            value = $(this).val();
+            name = $(this).attr('name');
+            shape[name] = value;
+        });
         $('#format').empty();
         $('#extra').empty();
         $('#order_info').empty();
@@ -596,17 +618,19 @@ $(document).ready(function () {
                     '</div>');
             })
         }
-
     }
 
-
+    var format;
     $('#format').on('click', '#without_processing, #with_processing, ' +
         '#facet5, #facet10, #facet15, #facet20, #facet25, #facet30, #facet35, #facet40', function () {
         formatId = this.id;
+
         if (formatId[0] === 'f') {
             offsetHoursFacet = 72;
+            format = 'Фацет:' + this.text;
         } else {
             offsetHoursFacet = 0;
+            format = this.text;
         }
         $('#extra').empty();
         $('#order_info').empty();
@@ -834,29 +858,30 @@ $(document).ready(function () {
         $('#order_info').append('<div id="box-calc-7" class="wraper content"></div>');
         $('#box-calc-7').append('<div class="Contact_form"></div>');
         $('.Contact_form').append('<div class="first_row"></div>');
-        $('.first_row').append('<input type="text" placeholder="Имя">');
-        $('.first_row').append('<input type="number" placeholder="Количество">');
-        $('.first_row').append('<input type="text" placeholder="Адресс">');
+        $('.first_row').append('<input name="name" type="text" placeholder="Имя">');
+        $('.first_row').append('<input name="quantity" type="number" placeholder="Количество">');
+        $('.first_row').append('<input name="address" type="text" placeholder="Адресс">');
         $('.Contact_form').append('<div class="second_row d-flex"></div>');
         $('.second_row').append('<div class="leftTable"></div>');
         $('.leftTable').append('<div class="up_input d-flex "></div>');
-        $('.up_input').append('<input type="tel" placeholder="Телефон">');
-        $('.up_input').append('<input type="email" placeholder="Электронная почта">');
+        $('.up_input').append('<input name="phone" type="tel" placeholder="Телефон">');
+        $('.up_input').append('<input name="email" type="email" placeholder="Электронная почта">');
         $('.leftTable').append('<div class="down_buttons_distances d-flex"></div>');
         $('.down_buttons_distances').append('<a id="pickup" class="nav-link" data-toggle="tab" href="#">Самовывоз</a>');
         $('.down_buttons_distances').append('<a id="inMKAD" class="nav-link" data-toggle="tab" href="#">В пределах МКАД</a>');
         $('.down_buttons_distances').append('<a id="outMKAD" class="nav-link" data-toggle="tab" href="#">Не более 5 км от МКАД</a>');
         $('.down_buttons_distances').append('<a id="moskowRegion" class="nav-link" data-toggle="tab" href="#">Московская область</a>');
         $('.second_row').append('<div class="right_texbox">' +
-            '   <textarea name="tex" id="" cols="25" rows="3" placeholder="Комментарий к заказу"></textarea>' +
+            '   <textarea name="comment" id="" cols="25" rows="3" placeholder="Комментарий к заказу"></textarea>' +
             '</div>');
         $('.Contact_form').append('<div class="buttons_buy_glass d-flex justify-content-center"></div>');
-        $('.buttons_buy_glass').append('<button class="cost_butt buy_buttons">Оформить заказ</button>');
-        $('.buttons_buy_glass').append('<button class="cost_butt1 buy_buttons">В корзину</button>');
+        $('.buttons_buy_glass').append('<button id="makeOrder" class="cost_butt buy_buttons">Оформить заказ</button>');
+        $('.buttons_buy_glass').append('<button id="buyProduct" class="cost_butt1 buy_buttons">В корзину</button>');
     }
 
     $('#order_info').on('click', '#pickup , #inMKAD, #outMKAD, #moskowRegion', function () {
         deliveryType = this.id;
+        deliveryBuy = this.text;
         getDeliveryPrice();
         setOrderDay();
     });
@@ -889,5 +914,72 @@ $(document).ready(function () {
         $('#extra').empty();
         $('#order_info').empty();
         deliveryType = null;
+    }
+
+    $('#order_info').on('click', '#buyProduct', function () {
+        getOrderDescription()
+    });
+
+    var option;
+    function getOrderDescription() {
+        let value;
+        let name;
+        let orderData = {};
+        let orderInfo = {};
+        $('#order_info').find('input').each(function () {
+            value = $(this).val();
+            name = $(this).attr('name');
+            orderData[name] = value;
+        });
+        orderData['comment'] = $('#order_info').find('textarea').val();
+        orderData['delivery'] = deliveryBuy;
+        orderInfo['material'] = material;
+        orderInfo['product'] = product;
+        orderInfo['depth'] = depth;
+        orderInfo['shape'] = shape;
+        orderInfo['format'] = format;
+        findExtraOptions();
+        orderInfo['options'] = option;
+        orderData['orderInfo'] = orderInfo;
+        orderData['price'] = setPriceValue();
+        orderData['orderDate'] = dd + '.' + mm + '.' + yyyy;
+        // orderData['orderDate'] = today;
+        orderData['urgency'] = $('#checkboxPrice').is(':checked');
+        // console.log(orderData);
+    }
+
+    function findExtraOptions() {
+        option = '';
+        let opt1;
+        let opt2;
+        let opt21;
+        let opt3;
+        let opt31;
+        let opt4;
+        let opt5;
+        let opt51;
+        let opt6;
+        let opt61;
+        $('#hardening').is(':checked') ? opt1 = 'Закалка' : opt1 = '';
+        $('#holes_and_cutouts').is(':checked') ? opt2 = ' // Отверстия_и_вырезы. Количество: ' : opt2 = '';
+        $('#holes_and_cutouts').is(':checked') ? opt21 = hacNum : opt21 = '';
+        $('#painting').is(':checked') ? opt3 = ' // Покраска: ' : opt3 = '';
+        $('#painting').is(':checked') ? opt31 = $('#pnt_select').val() : opt31 = '';
+        $('#uv_printing').is(':checked') ? opt4 = ' // УФ_печать' : opt4 = '';
+        $('#sand_blasting').is(':checked') ? opt5 = ' // Пескоструй: ' : opt5 = '';
+        $('#sand_blasting').is(':checked') ? opt51 = $('#snd_bl_select').val() : opt51 = '';
+        $('#round_corners').is(':checked') ? opt6 = ' // Скругления_углов. Количество: ' : opt6 = '';
+        $('#round_corners').is(':checked') ? opt61 = rndNum : opt61 = '';
+        option =
+            opt1 + ' ' + '\n' + ' ' +
+            opt2 + ' ' + '\n' + ' ' +
+            opt21 + ' ' + '\n' + ' ' +
+            opt3 + ' ' + '\n' + ' ' +
+            opt31 + ' ' + '\n' + ' ' +
+            opt4 + ' ' + '\n' + ' ' +
+            opt5 + ' ' + '\n' + ' ' +
+            opt51 + ' ' + '\n' + ' ' +
+            opt6 + ' ' + '\n' + ' ' +
+            opt61;
     }
 });

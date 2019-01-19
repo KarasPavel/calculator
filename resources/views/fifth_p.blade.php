@@ -37,21 +37,21 @@
                             <li class="nav-item">
                                 <a class="nav-link active" data-toggle="tab" href="#page5_home" role="tab"
                                    aria-controls="home">Скинали с Фотопечатью</a>
-                                <p class="stairs_and_flooring_text">От 26100 руб. <br>
-                                    6-8 дней</p>
+                                <p class="stairs_and_flooring_text">От 14 800 руб. <br>
+                                    5-7 дней</p>
                             </li>
 
                             <li class="nav-item">
                                 <a class="nav-link" data-toggle="tab" href="#page5_profile" role="tab"
                                    aria-controls="profile">Одноцветные фартуки</a>
-                                <p class="stairs_and_flooring_text">От 26100 руб. <br>
-                                    6-8 дней</p>
+                                <p class="stairs_and_flooring_text">От 12 400 руб. <br>
+                                    5-7 дней</p>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" data-toggle="tab" href="#page5_messages" role="tab"
                                    aria-controls="messages">Скинали с подсветкой</a>
-                                <p class="stairs_and_flooring_text">От 26100 руб. <br>
-                                    6-8 дней</p>
+                                <p class="stairs_and_flooring_text">От 30 000 руб. <br>
+                                    10-16 дней</p>
                             </li>
 
                         </ul>

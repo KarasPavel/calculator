@@ -41,50 +41,50 @@
                             <li class="nav-item">
                                 <a class="nav-link active" data-toggle="tab" href="#page2_home" role="tab"
                                    aria-controls="home">Угловые и фигурные</a>
-                                <p class="stairs_and_flooring_text">От 26100 руб. <br>
-                                    6-8 дней</p>
+                                <p class="stairs_and_flooring_text">от 28100 руб. <br>
+                                6-8 дней</p>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" data-toggle="tab" href="#page2_profile" role="tab"
                                    aria-controls="profile">Прямые Душевые</a>
-                                <p class="stairs_and_flooring_text">От 26100 руб. <br>
-                                    6-8 дней</p>
+                                <p class="stairs_and_flooring_text">от 26 600  руб. <br>
+                                5-7 дней</p>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" data-toggle="tab" href="#page2_messages" role="tab"
                                    aria-controls="messages">Форма Трапеции</a>
-                                <p class="stairs_and_flooring_text">От 26100 руб. <br>
-                                    6-8 дней</p>
+                                <p class="stairs_and_flooring_text">От 31 100 руб. <br>
+                                    7-15 дней</p>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" data-toggle="tab" href="#page2_settings" role="tab"
-                                   aria-controls="settings">Двери Ниша</a>
-                                <p class="stairs_and_flooring_text">От 26100 руб. <br>
-                                    6-8 дней</p>
+                                   aria-controls="settings">Двери в Нишу</a>
+                                <p class="stairs_and_flooring_text">От 11 800 руб. <br>
+                                    5-7 дней</p>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" data-toggle="tab" href="#page2_settings1" role="tab"
                                    aria-controls="setting1">Глухие перегородки</a>
-                                <p class="stairs_and_flooring_text">От 26100 руб. <br>
-                                    6-8 дней</p>
+                                <p class="stairs_and_flooring_text">От 8000 руб. <br>
+                                    5-7 дней</p>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" data-toggle="tab" href="#page2_settings2" role="tab"
                                    aria-controls="settings2">Ограждения в ванную</a>
-                                <p class="stairs_and_flooring_text">От 26100 руб. <br>
-                                    6-8 дней</p>
+                                <p class="stairs_and_flooring_text">От 12000 руб. <br>
+                                    5-7 дней</p>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" data-toggle="tab" href="#page2_settings3" role="tab"
                                    aria-controls="settings3">С раздвижной дверью</a>
-                                <p class="stairs_and_flooring_text">От 26100 руб. <br>
-                                    6-8 дней</p>
+                                <p class="stairs_and_flooring_text">От 30 800 руб. <br>
+                                    7-10 дней</p>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" data-toggle="tab" href="#page2_settings4" role="tab"
                                    aria-controls="settings4">Эксклюзив и опт</a>
-                                <p class="stairs_and_flooring_text">От 26100 руб. <br>
-                                    6-8 дней</p>
+                                <p class="stairs_and_flooring_text">От 55 000 руб. <br>
+                                    7-18 дней</p>
                             </li>
                         </ul>
                     </div>

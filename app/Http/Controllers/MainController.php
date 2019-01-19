@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Photo;
+use App\Social;
 use App\Video;
 use http\Env\Response;
 use Illuminate\Contracts\View\View;
@@ -17,21 +18,21 @@ class MainController extends Controller
         $photo = Photo::getPhotosWithoutPaginate();
         $video = Video::getVideos();
         $views = [
-            ''=>'home',
-            'lestnicy_i_poly'=>'first_p',
-            'dushevye_ograjdeniya'=>'second_p',
-            'peregorodki_i_dveri'=>'fourth_p',
-            'zerkalnoe_panno'=>'third_p',
-            'skinali'=>'fifth_p',
-            'raschet_stoimosti'=>'seventh_p',
-            'kontakty'=>'sixth_p',
+            '' => 'home',
+            'lestnicy_i_poly' => 'first_p',
+            'dushevye_ograjdeniya' => 'second_p',
+            'peregorodki_i_dveri' => 'fourth_p',
+            'zerkalnoe_panno' => 'third_p',
+            'skinali' => 'fifth_p',
+            'raschet_stoimosti' => 'seventh_p',
+            'kontakty' => 'sixth_p',
         ];
         $url = $request->data;
         $url = explode('#', $url);
-        if(!isset($url[1])){
-            return view($views[''],  ['user' => $user, 'photo' => $photo, 'video' => $video]);
+        if (!isset($url[1])) {
+            return view($views[''], ['user' => $user, 'photo' => $photo, 'video' => $video]);
         } else {
-            return view($views[$url[1]],  ['user' => $user, 'photo' => $photo, 'video' => $video]);
+            return view($views[$url[1]], ['user' => $user, 'photo' => $photo, 'video' => $video]);
         }
 //        dd($url[1]);
 //        dd($request->data);
@@ -54,8 +55,9 @@ class MainController extends Controller
         $user = Auth::user();
         $photo = Photo::getPhotosWithoutPaginate();
         $video = Video::getVideos();
+        $social = Social::getSocials();
 //        return view('main2', ['user' => $user, 'photo' => $photo, 'video' => $video]);
-        return view('general', ['user' => $user, 'photo' => $photo, 'video' => $video]);
+        return view('general', ['user' => $user, 'photo' => $photo, 'video' => $video, 'social' => $social]);
     }
 
 }

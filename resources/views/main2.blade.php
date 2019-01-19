@@ -3839,7 +3839,7 @@
 
                 </div>
                 <div class="soc_icons">
-                    <i class="fab fa-vk"></i>
+                    <i class="fa-vk"></i>
                     <i class="fab fa-instagram"></i>
                     <!-- <i class="fab fa-vimeo-v"></i> -->
                 </div>

@@ -15,7 +15,7 @@
 Auth::routes();
 Route::get('/', 'MainController@main')->name('main');
 //getPages
-Route::post('getPages','MainController@getPages')->name('getPages');
+Route::post('getPages', 'MainController@getPages')->name('getPages');
 Route::middleware('auth')->group(function () {
     Route::get('cabinet/{id}', 'MainController@cabinet')->name('cabinet');
     Route::get('logout', 'Auth\LoginController@logout')->name('logout');
@@ -46,8 +46,8 @@ Route::middleware('role:admin|junior_admin|manager')->group(function () {
     //Application-admin routes
     Route::get('admin/viewApplications', 'Admin\ApplicationsController@viewApplications')->name('viewApplications');
     Route::get('admin/editApplication/{id}', 'Admin\ApplicationsController@editApplication')->name('editApplication');
-    Route::post('admin/updateApplication','Admin\ApplicationsController@updateApplication')->name('updateApplication');
-    Route::get('admin/deleteApplication/{id}','Admin\ApplicationsController@deleteApplication')->name('deleteApplication');
+    Route::post('admin/updateApplication', 'Admin\ApplicationsController@updateApplication')->name('updateApplication');
+    Route::get('admin/deleteApplication/{id}', 'Admin\ApplicationsController@deleteApplication')->name('deleteApplication');
 
     //Order-admin routes
     Route::get('admin/viewOrders', 'Admin\OrdersController@viewOrders')->name('viewOrders');
@@ -55,7 +55,7 @@ Route::middleware('role:admin|junior_admin|manager')->group(function () {
 
     //Gallery
     Route::get('admin/viewPhoto', 'Admin\PhotoController@viewPhoto')->name('viewPhoto');
-    Route::get('admin/deletePhoto/{id}','Admin\PhotoController@deletePhoto')->name('deletePhoto');
+    Route::get('admin/deletePhoto/{id}', 'Admin\PhotoController@deletePhoto')->name('deletePhoto');
     Route::get('admin/createPhoto', 'Admin\PhotoController@createPhoto')->name('createPhoto');
     Route::post('admin/uploadPhoto', 'Admin\PhotoController@uploadPhoto')->name('uploadPhoto');
 
@@ -64,6 +64,11 @@ Route::middleware('role:admin|junior_admin|manager')->group(function () {
     Route::get('admin/viewVideos', 'Admin\VideoController@viewVideos')->name('viewVideos');
     Route::get('admin/editVideo/{id}', 'Admin\VideoController@getEditVideos')->name('editVideo');
     Route::post('admin/updateVideo', 'Admin\VideoController@postEditVideos')->name('admin/updateVideo');
+
+    //Socials-admin routres
+    Route::get('admin/viewSocilas', 'Admin\SocialsController@viewSocials')->name('viewSocials');
+    Route::get('admin/editSocilas/{id}', 'Admin\SocialsController@editSocials')->name('editSocials');
+    Route::post('admin/updateSocials', 'Admin\SocialsController@updateSocials')->name('admin/updateSocials');
 
     //Text
     Route::get('admin/viewAdvantages', 'Admin\TextController@viewAdvantages')->name('viewAdvantages');

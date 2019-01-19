@@ -103,6 +103,14 @@
                             </ul>
                         </div>
                     </div>
+                    <div class="single-menu">
+                        <h2><a title=""><i class="fa fa-paperclip"></i><span>Социальные сети</span></a></h2>
+                        <div class="sub-menu">
+                            <ul>
+                                <li><a href="{{route('viewSocials')}}" title="">Все cоциальные сети</a></li>
+                            </ul>
+                        </div>
+                    </div>
                     {{--<div class="single-menu">--}}
                         {{--<h2><a title=""><i class="fa fa-paperclip"></i><span>Текст</span></a></h2>--}}
                         {{--<div class="sub-menu">--}}

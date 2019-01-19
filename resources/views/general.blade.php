@@ -47,15 +47,19 @@
                         <a class="nav-link" href=""><i class="fas fa-bookmark"></i>Главная страница</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="#lestnicy_i_poly"><i class="fas fa-shoe-prints"></i>Лестницы и Стеклянные полы</a>
+                        <a class="nav-link" href="#lestnicy_i_poly"><i class="fas fa-shoe-prints"></i>Лестницы и
+                            Стеклянные полы</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#dushevye_ograjdeniya"><i class="fas fa-shower"></i> Душевые ограждения</a>
+                        <a class="nav-link" href="#dushevye_ograjdeniya"><i class="fas fa-shower"></i> Душевые
+                            ограждения</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#zerkalnoe_panno"><i class="fas fa-hourglass-start"></i>Зеркальное панно</a>
+                        <a class="nav-link" href="#zerkalnoe_panno"><i class="fas fa-hourglass-start"></i>Зеркальное
+                            панно</a>
                     <li class="nav-item">
-                        <a class="nav-link" href="#peregorodki_i_dveri"><i class="fas fa-door-open"></i>Перегородки и ограждения</a>
+                        <a class="nav-link" href="#peregorodki_i_dveri"><i class="fas fa-door-open"></i>Перегородки и
+                            ограждения</a>
                     </li>
                     </li>
                     <li class="nav-item">
@@ -74,9 +78,9 @@
                         </li>
                     @endif
                     {{--@if($user && $user->hasRole('user'))--}}
-                        {{--<li class="nav-item">--}}
-                            {{--<a class="nav-link" href="{{route('cabinet',[$user->id])}}">Личный кабинет</a>--}}
-                        {{--</li>--}}
+                    {{--<li class="nav-item">--}}
+                    {{--<a class="nav-link" href="{{route('cabinet',[$user->id])}}">Личный кабинет</a>--}}
+                    {{--</li>--}}
                     {{--@endif--}}
                     @if($user && $user->hasRole('admin|junior_admin|manager'))
                         <li class="nav-item">
@@ -114,7 +118,6 @@
     </button>
 
 
-
     <div class="owl-dots">
         <button role="button" class="owl-dot active">
             <span></span>
@@ -141,7 +144,6 @@
             <span></span>
         </button>
     </div>
-
 
 
     <div class="container">
@@ -194,8 +196,8 @@
 
                 </div>
                 <div class="soc_icons">
-                    <i class="fab fa-vk"></i>
-                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-vk" onclick="window.location.href = '{{$social[0]->link}}'"></i>
+                    <i class="fab fa-instagram" onclick="window.location.href  = '{{$social[1]->link}}'"></i>
                     <!-- <i class="fab fa-vimeo-v"></i> -->
                 </div>
             </div>

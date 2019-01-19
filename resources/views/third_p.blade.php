@@ -37,26 +37,26 @@
                             <li class="nav-item">
                                 <a class="nav-link active" data-toggle="tab" href="#page3_home" role="tab"
                                    aria-controls="home">Зеркала на заказ</a>
-                                <p class="stairs_and_flooring_text">От 26100 руб. <br>
-                                    6-8 дней</p>
+                                <p class="stairs_and_flooring_text">От 2000 руб. <br>
+                                    1-4 дней</p>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" data-toggle="tab" href="#page3_home_1" role="tab"
                                    aria-controls="option">Зеркальное панно</a>
-                                <p class="stairs_and_flooring_text">От 26100 руб. <br>
-                                    6-8 дней</p>
+                                <p class="stairs_and_flooring_text">От 25 000 руб. <br>
+                                    10-14 дней</p>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" data-toggle="tab" href="#page3_profile" role="tab"
                                    aria-controls="profile">Оптовые заказы</a>
-                                <p class="stairs_and_flooring_text">От 26100 руб. <br>
-                                    6-8 дней</p>
+                                <p class="stairs_and_flooring_text">От 50 000 руб. <br>
+                                    5-10 дней</p>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" data-toggle="tab" href="#page3_messages" role="tab"
                                    aria-controls="messages">Эксклюзив решения</a>
-                                <p class="stairs_and_flooring_text">От 26100 руб. <br>
-                                    6-8 дней</p>
+                                <p class="stairs_and_flooring_text">От 12 500 руб. <br>
+                                    6-20 дней</p>
                             </li>
                         </ul>
                     </div>
@@ -349,7 +349,7 @@
             <div class="row">
                 <div class="col-lg-3 col-md-6">
                     <div class="advantages_items">
-                        <img src="images/Money.png" alt="">
+                        <img src="images/mirrors-adv2.png" alt="">
                         <p class="cursor_text">Зеркальное панно делается из отдельных элементов и подгоняется
                             вручную, чтобы обеспечить минимальные зазоры, при этом сохранив идеально ровный, яркий
                             блеск, в отличии от гравировки на зеркале, которая создает неровную тусклую грань,
@@ -358,7 +358,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="advantages_items">
-                        <img src="images/Door.png" alt="">
+                        <img src="images/showers-adv1.png" alt="">
                         <p class="cursor_text">Для зеркал мы используем только влагостойкое сырье.
                             А гидрофобное покрытие, которое мы наносим, обеспечит лучшую защиту
                             от пыли, воды и грязи, позволяя
@@ -367,7 +367,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="advantages_items">
-                        <img src="images/Pro.png" alt="">
+                        <img src="images/adv3.png" alt="">
                         <p class="cursor_text">Зеркальное панно делают для невероятной по своей красоте
                             игры бликов, красоты рисунка и эстетики геометрических линий. Это не просто
                             зеркало. Это исключительно, творческая и кропотливая работа, к которой допускаются
@@ -380,7 +380,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="advantages_items">
-                        <img src="images/Diamond.png" alt="">
+                        <img src="images/adv4.png" alt="">
                         <p class="cursor_text">Для изготовления зеркального панно применяется
                             зеркала различного типа и цвета высшей марки. Зеркала дополнительно
                             полируются, на них наносят защитные покрытия и они проходят доп. проверки,

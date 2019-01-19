@@ -41,50 +41,50 @@
                             <li class="nav-item">
                                 <a class="nav-link active" data-toggle="tab" href="#page2_home" role="tab"
                                    aria-controls="home">Угловые и фигурные</a>
-                                <p class="stairs_and_flooring_text">От 26100 руб. <br>
-                                    6-8 дней</p>
+                                <p class="stairs_and_flooring_text">от 28100 руб. <br>
+                                6-8 дней</p>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" data-toggle="tab" href="#page2_profile" role="tab"
                                    aria-controls="profile">Прямые Душевые</a>
-                                <p class="stairs_and_flooring_text">От 26100 руб. <br>
-                                    6-8 дней</p>
+                                <p class="stairs_and_flooring_text">от 26 600  руб. <br>
+                                5-7 дней</p>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" data-toggle="tab" href="#page2_messages" role="tab"
                                    aria-controls="messages">Форма Трапеции</a>
-                                <p class="stairs_and_flooring_text">От 26100 руб. <br>
-                                    6-8 дней</p>
+                                <p class="stairs_and_flooring_text">От 31 100 руб. <br>
+                                    7-15 дней</p>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" data-toggle="tab" href="#page2_settings" role="tab"
-                                   aria-controls="settings">Двери Ниша</a>
-                                <p class="stairs_and_flooring_text">От 26100 руб. <br>
-                                    6-8 дней</p>
+                                   aria-controls="settings">Двери в Нишу</a>
+                                <p class="stairs_and_flooring_text">От 11 800 руб. <br>
+                                    5-7 дней</p>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" data-toggle="tab" href="#page2_settings1" role="tab"
                                    aria-controls="setting1">Глухие перегородки</a>
-                                <p class="stairs_and_flooring_text">От 26100 руб. <br>
-                                    6-8 дней</p>
+                                <p class="stairs_and_flooring_text">От 8000 руб. <br>
+                                    5-7 дней</p>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" data-toggle="tab" href="#page2_settings2" role="tab"
                                    aria-controls="settings2">Ограждения в ванную</a>
-                                <p class="stairs_and_flooring_text">От 26100 руб. <br>
-                                    6-8 дней</p>
+                                <p class="stairs_and_flooring_text">От 12000 руб. <br>
+                                    5-7 дней</p>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" data-toggle="tab" href="#page2_settings3" role="tab"
                                    aria-controls="settings3">С раздвижной дверью</a>
-                                <p class="stairs_and_flooring_text">От 26100 руб. <br>
-                                    6-8 дней</p>
+                                <p class="stairs_and_flooring_text">От 30 800 руб. <br>
+                                    7-10 дней</p>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" data-toggle="tab" href="#page2_settings4" role="tab"
                                    aria-controls="settings4">Эксклюзив и опт</a>
-                                <p class="stairs_and_flooring_text">От 26100 руб. <br>
-                                    6-8 дней</p>
+                                <p class="stairs_and_flooring_text">От 55 000 руб. <br>
+                                    7-18 дней</p>
                             </li>
                         </ul>
                     </div>
@@ -272,6 +272,51 @@
             </div>
         </div>
     </section>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="advantages">
+                        <h2>наши преимущества</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6">
+                    <div class="advantages_items">
+                        <img src="images/showers-adv1.png" alt="">
+                        <p class="cursor_text">У нас используется каленое травмобезопасное стекло выдерживающее нагрузки до 270кгс/м2, в зависимости от комплектации.
+                            Стекло, толщиной 8-12мм невозможно "просто так" разбить голыми руками, на него можно спокойно облокотится. Даже в случае разбития оно не нанесет таких
+                            травм как обычное стекло, поскольку разлетится в мелкую крошку.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="advantages_items">
+                        <img src="images/showers-adv2.png" alt="">
+                        <p class="cursor_text">Мы подбираем комплектацию фурнитуры полностью индивидуально, консультируем, а наш замерщик привезет Вам на осмотр несколько вариантов "вживую".
+                            Вы точно будете знать что за фурнитура у Вас будет стоять и какого она качества. В отличии от многих компаний, в основном, мы используем фурнитуру из латунных сплавов и
+                            нержавеющей стали с гальваническим покрытием.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="advantages_items">
+                        <img src="images/showers-adv3.png" alt="">
+                        <p class="cursor_text">Наносим олеофобное защитное покрытие на стекло, ускоряющее стекание воды и уменьшающее количество отпечатков рук с грязью на стекле.
+                            Особенно это актуально для городов и мест с высоким содержанием извести/хлора в воде, поскользу они образуют тот самый белый налет на стекло, который так тяжело отмывается.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="advantages_items">
+                        <img src="images/showers-adv4.png" alt="">
+                        <p class="cursor_text">Неограниченный срок службы. Вся конструкция представляет из себя комплекс простых механизмов и стекла, которые обладают крайне впечатляющими показателями долговечности.
+                            При чем, речь идет об эксплуатации. Иными словами, изделие при активном использовании сохраняет свои качества многие годы. Фурнитура не тускнеет, а стекло не меняется вовсе.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="manufacture">
         <div class="container">
             <div class="row">

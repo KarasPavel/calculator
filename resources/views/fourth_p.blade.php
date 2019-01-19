@@ -36,44 +36,44 @@
                             <li class="nav-item ">
                                 <a class="nav-link active" data-toggle="tab" href="#page4_home" role="tab"
                                    aria-controls="home">Распашные двери</a>
-                                <p class="stairs_and_flooring_text">От 26100 руб. <br>
-                                    6-8 дней</p>
+                                <p class="stairs_and_flooring_text">От 12 100 руб. <br>
+                                    5-7 дней</p>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" data-toggle="tab" href="#page4_profile" role="tab"
                                    aria-controls="profile">Перегородки</a>
-                                <p class="stairs_and_flooring_text">От 26100 руб. <br>
-                                    6-8 дней</p>
+                                <p class="stairs_and_flooring_text">От 16 000 руб. <br>
+                                    4-10 дней</p>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" data-toggle="tab" href="#page4_messages" role="tab"
                                    aria-controls="messages">Маятниковые двери</a>
-                                <p class="stairs_and_flooring_text">От 26100 руб. <br>
-                                    6-8 дней</p>
+                                <p class="stairs_and_flooring_text">От 16 200 руб. <br>
+                                    5-8 дней</p>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" data-toggle="tab" href="#page4_settings" role="tab"
                                    aria-controls="settings">Раздвижные двери</a>
-                                <p class="stairs_and_flooring_text">От 26100 руб. <br>
-                                    6-8 дней</p>
+                                <p class="stairs_and_flooring_text">От 21 000 руб. <br>
+                                    7-10 дней</p>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" data-toggle="tab" href="#page4_settings1" role="tab"
                                    aria-controls="settings">Ограждения</a>
-                                <p class="stairs_and_flooring_text">От 26100 руб. <br>
-                                    6-8 дней</p>
+                                <p class="stairs_and_flooring_text">От 15 500 руб. <br>
+                                    7-12 дней</p>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" data-toggle="tab" href="#page4_settings2" role="tab"
                                    aria-controls="settings">Двери в коробках</a>
-                                <p class="stairs_and_flooring_text">От 26100 руб. <br>
-                                    6-8 дней</p>
+                                <p class="stairs_and_flooring_text">От 12 000 руб. <br>
+                                    7-12 дней</p>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" data-toggle="tab" href="#page4_settings3" role="tab"
                                    aria-controls="settings">Эксклюзивные решения</a>
-                                <p class="stairs_and_flooring_text">От 26100 руб. <br>
-                                    6-8 дней</p>
+                                <p class="stairs_and_flooring_text">От 60 000 руб. <br>
+                                    7-25 дней</p>
                             </li>
                         </ul>
                     </div>
@@ -214,7 +214,7 @@
             <div class="row">
                 <div class="col-lg-3 col-md-6">
                     <div class="advantages_items">
-                        <img src="images/Money.png" alt="">
+                        <img src="images/adv1.png" alt="">
                         <p class="cursor_text">Мы не самая бюджетная компания на рынке.
                             Вы можете найти сотни вариантов более дешевых пластиковых и модульных перегородок,
                             которые даже
@@ -225,7 +225,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="advantages_items">
-                        <img src="images/Door.png" alt="">
+                        <img src="images/adv2.png" alt="">
                         <p class="cursor_text">Работаем с общественными местами большой проходимостью.
                             Например, маятниковые двери, которые мы производим стоят в Московском метрополитене,
                             МЦК, торговых центрах, расчитаны на более чем 20 лет службы при милионной проходимости.
@@ -235,7 +235,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="advantages_items">
-                        <img src="images/Pro.png" alt="">
+                        <img src="images/adv3.png" alt="">
                         <p class="cursor_text">В нашей компании работают люди с существенным опытом работы в
                             стекольной промышленности.
                             Вы можете быть уверены в профессионализме наших рабочих и монтажников.
@@ -246,7 +246,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="advantages_items">
-                        <img src="images/Diamond.png" alt="">
+                        <img src="images/adv4.png" alt="">
                         <p class="cursor_text">Используем первоклассное сырье от ведущих мировых брендов -
                             AGC (Япония), Guardian (Великобритания), Pilkington (Великобритания).
                             Обработка изделий, так же ведется на Итальянском и Немецком оборудовании,

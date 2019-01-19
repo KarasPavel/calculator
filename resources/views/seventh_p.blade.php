@@ -34,9 +34,7 @@
             <div class="row">
                 <div class="col-lg-4">
                     <div class="cost_calculation">
-                        <h4>
-                            стоимость заказа
-                        </h4>
+                        <h4>стоимость заказа</h4>
                         <input disabled id="price" type="text">
                         <h4>ГОТОВНОСТЬ НА:</h4>
                         <p id="urgency"></p>
@@ -50,21 +48,27 @@
                             <input id="checkboxPrice" type="checkbox">
                             <span class="fake-checkbox" aria-hidden="true"></span>
                             <span class="label">Срочноо</span>
-                        </label> <br>
-                        <button class="cost_butt">Оформить заказ</button>
-                        <button class="cost_butt1">В корзину</button>
+                        </label>
+                        <br>
+                        <br>
+                        <br>
+                        {{--<button class="cost_butt">Оформить заказ</button>--}}
+                        {{--<button class="cost_butt1">В корзину</button>--}}
                         <div class="cost_calculation__link">
                             <div>
-                                <img src="images/cost_calc_link1.png" alt="">
-                                <a href="#">Консультация</a>
+                                <a href="#win1">
+                                    <img src="images/cost_calc_link1.png" alt="">
+                                    Консультация</a>
                             </div>
                             <div>
-                                <img src="images/cost_calc_link2.png" alt="">
-                                <a href="#">Корзина</a>
+                                <a href="#">
+                                    <img src="images/cost_calc_link2.png" alt="">
+                                    Корзина</a>
                             </div>
                             <div>
-                                <img src="images/cost_calc_link3.png" alt="">
-                                <a href="#">Замершик</a>
+                                <a href="#win2">
+                                    <img src="images/cost_calc_link3.png" alt="">
+                                    Замершик</a>
                             </div>
                         </div>
                     </div>
@@ -72,12 +76,8 @@
                 <div class="col-lg-8">
                     <div class="cost_calc_first_tab first_tab_1 toggle">
                         <div id="calc_stege" class="head toggler ">
-                            <p class="numver_stage">
-                                1
-                            </p>
-                            <h4>
-                                Выберите материал
-                            </h4>
+                            <p class="numver_stage">1</p>
+                            <h4>Выберите материал</h4>
                             <i class="fas fa-angle-down"></i>
                         </div>
                         <div id="box-calc" class="wraper content actived">

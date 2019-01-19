@@ -284,7 +284,7 @@
                                 {{--<li>Не всем нравятся выпирающие элементы</li>--}}
                             </ul>
                         </div>
-                        <a class="galery_kripezh-pos" data-fancybox="gallery_kripezh"
+                        <a class="galery_kripezh-pos" data-fancybox=""
                            href="images/cley.jpg">
                             <img class="glasses_img_fastener2" src="images/cley_small.jpg" alt="">
                         </a>
@@ -292,7 +292,7 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="shower_type_items d-flex">
-                        <a data-fancybox="gallery_kripezh" href="images/second_fastener_big.jpg">
+                        <a data-fancybox="" href="images/second_fastener_big.jpg">
                             <img class="glasses_img_fastener2" src="images/second_fastener.png" alt="">
                         </a>
                         <div class="shower_type_item-right fastener_shower_glass2">

@@ -827,7 +827,7 @@
                         @foreach($photo as $value)
                             @if($value->type === 'лестницы')
                                 {{--{{$value->id}}--}}
-                                <a data-fancybox="gallery" href="{{$value->photo}}">
+                                <a data-fancybox="" href="{{$value->photo}}">
                                     <div class="img_items_stairs">
                                         <img src="{{$value->small_photo}}">
                                         <p></p>
@@ -839,7 +839,7 @@
                     <div class="tab-pane" id="profile" role="tabpanel">
                         @foreach($photo as $value)
                             @if($value->type === 'полы')
-                                <a data-fancybox="gallery1" href="{{$value->photo}}">
+                                <a data-fancybox="" href="{{$value->photo}}">
                                     <div class="img_items_stairs">
                                         <img src="{{$value->small_photo}}" alt="1">
                                         <p></p>
@@ -851,7 +851,7 @@
                     <div class="tab-pane" id="messages" role="tabpanel">
                         @foreach($photo as $value)
                             @if($value->type === 'бронирование')
-                                <a data-fancybox="gallery3" href="{{$value->photo}}">
+                                <a data-fancybox="" href="{{$value->photo}}">
                                     <div class="img_items_stairs">
                                         <img src="{{$value->small_photo}}" alt="1">
                                         <p></p>
@@ -863,7 +863,7 @@
                     <div class="tab-pane" id="settings" role="tabpanel">
                         @foreach($photo as $value)
                             @if($value->type === 'эксклюзив')
-                                <a data-fancybox="gallery3" href="{{$value->photo}}">
+                                <a data-fancybox="" href="{{$value->photo}}">
                                     <div class="img_items_stairs">
                                         <img src="{{$value->small_photo}}" alt="1">
                                         <p></p>
@@ -1106,7 +1106,7 @@
                     <div class="tab-pane active" id="page2_home" role="tabpanel">
                         @foreach($photo as $value)
                             @if($value->type === 'угловые и фигурные')
-                                <a data-fancybox="gallery_Showers" href="{{$value->photo}}">
+                                <a data-fancybox="" href="{{$value->photo}}">
                                     <div class="img_items_stairs">
                                         <img src="{{$value->small_photo}}" alt="1">
                                         <p></p>
@@ -1118,7 +1118,7 @@
                     <div class="tab-pane" id="page2_profile" role="tabpanel">
                         @foreach($photo as $value)
                             @if($value->type === 'прямые душевые')
-                                <a data-fancybox="gallery_Showers2" href="{{$value->photo}}">
+                                <a data-fancybox="" href="{{$value->photo}}">
                                     <div class="img_items_stairs">
                                         <img src="{{$value->small_photo}}" alt="1">
                                         <p></p>
@@ -1130,7 +1130,7 @@
                     <div class="tab-pane" id="page2_messages" role="tabpanel">
                         @foreach($photo as $value)
                             @if($value->type === 'форма трапеции')
-                                <a data-fancybox="gallery_Showers1" href="{{$value->photo}}">
+                                <a data-fancybox="" href="{{$value->photo}}">
                                     <div class="img_items_stairs">
                                         <img src="{{$value->small_photo}}" alt="1">
                                         <p></p>
@@ -1142,7 +1142,7 @@
                     <div class="tab-pane" id="page2_settings" role="tabpanel">
                         @foreach($photo as $value)
                             @if($value->type === 'двери ниша')
-                                <a data-fancybox="gallery_Showers3" href="{{$value->photo}}">
+                                <a data-fancybox="" href="{{$value->photo}}">
                                     <div class="img_items_stairs">
                                         <img src="{{$value->small_photo}}" alt="1">
                                         <p></p>
@@ -1154,7 +1154,7 @@
                     <div class="tab-pane" id="page2_settings1" role="tabpanel">
                         @foreach($photo as $value)
                             @if($value->type === 'глухие перегородки')
-                                <a data-fancybox="gallery_Showers4" href="{{$value->photo}}">
+                                <a data-fancybox="" href="{{$value->photo}}">
                                     <div class="img_items_stairs">
                                         <img src="{{$value->small_photo}}" alt="1">
                                         <p></p>
@@ -1166,7 +1166,7 @@
                     <div class="tab-pane" id="page2_settings2" role="tabpanel">
                         @foreach($photo as $value)
                             @if($value->type === 'ограждения в ванную')
-                                <a data-fancybox="gallery_Showers5" href="{{$value->photo}}">
+                                <a data-fancybox="" href="{{$value->photo}}">
                                     <div class="img_items_stairs">
                                         <img src="{{$value->small_photo}}" alt="1">
                                         <p></p>
@@ -1178,7 +1178,7 @@
                     <div class="tab-pane" id="page2_settings3" role="tabpanel">
                         @foreach($photo as $value)
                             @if($value->type === 'с раздвижной дверью')
-                                <a data-fancybox="gallery_Showers6" href="{{$value->photo}}">
+                                <a data-fancybox="" href="{{$value->photo}}">
                                     <div class="img_items_stairs">
                                         <img src="{{$value->small_photo}}" alt="1">
                                         <p></p>
@@ -1190,7 +1190,7 @@
                     <div class="tab-pane" id="page2_settings4" role="tabpanel">
                         @foreach($photo as $value)
                             @if($value->type === 'эксклюзив и опт')
-                                <a data-fancybox="gallery_Showers7" href="{{$value->photo}}">
+                                <a data-fancybox="" href="{{$value->photo}}">
                                     <div class="img_items_stairs">
                                         <img src="{{$value->small_photo}}" alt="1">
                                         <p></p>
@@ -1760,7 +1760,7 @@
                     <div class="tab-pane active" id="page4_home" role="tabpanel">
                         @foreach($photo as $value)
                             @if($value->type === 'распашные двери')
-                                <a data-fancybox="gallery_Door" href="{{$value->photo}}">
+                                <a data-fancybox="" href="{{$value->photo}}">
                                     <div class="img_items_stairs">
                                         <img src="{{$value->small_photo}}" alt="1">
                                         <p></p>

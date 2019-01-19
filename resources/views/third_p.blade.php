@@ -66,7 +66,7 @@
                 <div class="tab-pane active" id="page3_home" role="tabpanel">
                     @foreach($photo as $value)
                         @if($value->type === 'зеркала на заказ')
-                            <a data-fancybox="gallery_Glasses" href="{{$value->photo}}">
+                            <a data-fancybox="" href="{{$value->photo}}">
                                 <div class="img_items_stairs">
                                     <img src="{{$value->small_photo}}" alt="1">
                                     <p></p>
@@ -78,7 +78,7 @@
                 <div class="tab-pane" id="page3_home_1" role="tabpanel">
                     @foreach($photo as $value)
                         @if($value->type === 'зеркальное панно')
-                            <a data-fancybox="gallery_Glasses1" href="{{$value->photo}}">
+                            <a data-fancybox="" href="{{$value->photo}}">
                                 <div class="img_items_stairs">
                                     <img src="{{$value->small_photo}}" alt="1">
                                     <p></p>
@@ -90,7 +90,7 @@
                 <div class="tab-pane" id="page3_profile" role="tabpanel">
                     @foreach($photo as $value)
                         @if($value->type === 'оптовые заказы')
-                            <a data-fancybox="gallery_Glasses2" href="{{$value->photo}}">
+                            <a data-fancybox="" href="{{$value->photo}}">
                                 <div class="img_items_stairs">
                                     <img src="{{$value->small_photo}}" alt="1">
                                     <p></p>
@@ -102,7 +102,7 @@
                 <div class="tab-pane" id="page3_messages" role="tabpanel">
                     @foreach($photo as $value)
                         @if($value->type === 'эксклюзив решения')
-                            <a data-fancybox="gallery_Glasses3" href="{{$value->photo}}">
+                            <a data-fancybox="" href="{{$value->photo}}">
                                 <div class="img_items_stairs">
                                     <img src="{{$value->small_photo}}" alt="1">
                                     <p></p>
@@ -263,7 +263,7 @@
                                 <li>Тяжело демонтировать</li>
                             </ul>
                         </div>
-                        <a class="galery_kripezh-pos" data-fancybox="gallery_kripezh"
+                        <a class="galery_kripezh-pos" data-fancybox=""
                            href="images/cley.jpg">
                             <img class="glasses_img_fastener2 " src="images/cley_small.jpg" alt="">
                         </a>
@@ -271,7 +271,7 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="shower_type_items d-flex">
-                        <a class="galery_kripezh-pos" data-fancybox="gallery_kripezh"
+                        <a class="galery_kripezh-pos" data-fancybox=""
                            href="images/plastin.jpg">
                             <img class="glasses_img_fastener2 imgg_2" src="images/first_fastener.png" alt="">
                         </a>

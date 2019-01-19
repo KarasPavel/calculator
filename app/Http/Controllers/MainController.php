@@ -29,7 +29,7 @@ class MainController extends Controller
         ];
         $url = $request->data;
         $url = explode('#', $url);
-        if (!isset($url[1])) {
+        if (!isset($url[1]) || !array_key_exists($url[1], $views)) {
             return view($views[''], ['user' => $user, 'photo' => $photo, 'video' => $video]);
         } else {
             return view($views[$url[1]], ['user' => $user, 'photo' => $photo, 'video' => $video]);

@@ -176,9 +176,9 @@
                                                 <td>
                                                     {{$value->phone}}
                                                 </td>
-                                                <td>
-                                                    {{$value->specialist}}
-                                                </td>
+                                                {{--<td>--}}
+                                                    {{--{{$value->specialist}}--}}
+                                                {{--</td>--}}
                                                 {{--<td>--}}
                                                 {{--{{$value->day}}--}}
                                                 {{--</td>--}}

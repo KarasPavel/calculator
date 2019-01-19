@@ -29,4 +29,18 @@ class OrdersController extends Controller
         /*dd($allOrders);*/
         return view('admin/viewOrders', ['user' => $user, 'allOrders' => $allOrders]);
     }
+
+    public function createOrders(Request $request)
+    {
+//        $request->validate([
+//            'name' => 'required|string|min:2|max:100',
+//            'email' => 'nullable|email|max:100',
+//            'phone' => 'required|min:10|max:11',
+//        ]);
+
+
+        Order::createOrder($request);
+        return 'all ok';
+//        return json_decode($request->data)->name;
+    }
 }

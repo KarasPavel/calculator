@@ -22,6 +22,7 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::post('createApplications', 'Admin\ApplicationsController@createApplications')->name('createApplications');
+Route::post('createOrders', 'Admin\OrdersController@createOrders')->name('createOrders');
 //Route::get('/home', 'HomeController@index')->name('home');
 
 

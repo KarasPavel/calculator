@@ -876,7 +876,7 @@ $(document).ready(function () {
             '</div>');
         $('.Contact_form').append('<div class="buttons_buy_glass d-flex justify-content-center"></div>');
         $('.buttons_buy_glass').append('<button id="makeOrder" class="cost_butt buy_buttons">Оформить заказ</button>');
-        $('.buttons_buy_glass').append('<button id="buyProduct" class="cost_butt1 buy_buttons">В корзину</button>');
+        $('.buttons_buy_glass').append('<button id="buyProduct" class="cost_butt1 buy_buttons" style="display: none">В корзину</button>');
     }
 
     $('#order_info').on('click', '#pickup , #inMKAD, #outMKAD, #moskowRegion', function () {
@@ -916,7 +916,7 @@ $(document).ready(function () {
         deliveryType = null;
     }
 
-    $('#order_info').on('click', '#buyProduct', function () {
+    $('#order_info').on('click', '#makeOrder', function () {
         getOrderDescription()
     });
 
@@ -936,16 +936,21 @@ $(document).ready(function () {
         orderInfo['material'] = material;
         orderInfo['product'] = product;
         orderInfo['depth'] = depth;
-        orderInfo['shape'] = shape;
+        // orderInfo['shape'] = shape;
         orderInfo['format'] = format;
         findExtraOptions();
         orderInfo['options'] = option;
         orderData['orderInfo'] = orderInfo;
         orderData['price'] = setPriceValue();
         orderData['orderDate'] = dd + '.' + mm + '.' + yyyy;
-        // orderData['orderDate'] = today;
         orderData['urgency'] = $('#checkboxPrice').is(':checked');
-        // console.log(orderData);
+        orderData['_token'] = $('meta[name="csrf-token"]').attr('content');
+        console.log(JSON.stringify(orderData));
+        $.post('createOrders', {data: JSON.stringify(orderData), _token: $('meta[name="csrf-token"]').attr('content')}, function (data, status) {
+                console.log(orderData);
+                console.log(data);
+                console.log(status);
+            });
     }
 
     function findExtraOptions() {

@@ -2,8 +2,10 @@
 
 namespace App;
 
+use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Http\Request;
 
 class Order extends Model
 {
@@ -35,5 +37,34 @@ class Order extends Model
             ->join('statuses', 'application_status_id', '=', 'statuses.id')
             ->orderByDesc('orders.created_at')
             ->get();
+    }
+
+    public static function createOrder(Request $request)
+    {
+        $result = json_decode($request->data);
+        $orderInfo = json_encode($result->orderInfo);
+
+        try {
+            $dbResult = DB::table('orders')
+                ->insert([
+                    'name' => $result->name,
+                    'email' => $result->email,
+                    'phone' => $result->phone,
+                    'comment' => $result->comment,
+                    'address' => $result->address,
+                    'delivery' => $result->delivery,
+                    'quantity' => $result->quantity,
+                    'price' => $result->price,
+                    'urgency' => $result->urgency,
+                    'order_data' => $orderInfo,
+                    'application_status_id' => 1,
+                    'order_date' => $result->orderDate,
+                    'created_at' => Carbon::now()
+                ]);
+            return $dbResult;
+        }
+        catch (Exception $e) {
+            return $e->getMessage();
+        }
     }
 }

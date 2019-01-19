@@ -537,24 +537,32 @@
                     <div class="col-lg-12">
                         <div class="help_glaas_type d-flex">
                             <div class="help_glass_items for_option_1">
-                                <img src="images/glaas_type1.png" alt="">
-                                <p>ПРОЗРАЧНОЕ</p>
+                                <!-- <img src="images/glaas_type1.png" alt=""> -->
+                                <p>ClearVision</p>
                             </div>
                             <div class="help_glass_items for_option_1">
-                                <img src="images/glass3.png" alt="">
-                                <p>ОПТИВАЙТ</p>
+                                <!-- <img src="images/glass3.png" alt=""> -->
+                                <p>Состаренное</p>
                             </div>
                             <div class="help_glass_items for_option_1">
-                                <img src="images/glass4.png" alt="">
-                                <p>БРОНЗА</p>
+                                <!-- <img src="images/glass4.png" alt=""> -->
+                                <p>Бронза</p>
                             </div>
                             <div class="help_glass_items for_option_1">
-                                <img src="images/glass5.png" alt="">
-                                <p>МАТОВОЕ</p>
+                                <!-- <img src="images/glass5.png" alt=""> -->
+                                <p>Графитовое</p>
                             </div>
                             <div class="help_glass_items for_option_1">
-                                <img src="images/glaas6.png" alt="">
-                                <p>СЕРОЕ</p>
+                                <!-- <img src="images/glaas6.png" alt=""> -->
+                                <p>Серебро</p>
+                            </div>
+                            <div class="help_glass_items for_option_1">
+                                <!-- <img src="images/glaas6.png" alt=""> -->
+                                <p>Эксклюзив</p>
+                            </div>
+                            <div class="help_glass_items for_option_1">
+                                <!-- <img src="images/glaas6.png" alt=""> -->
+                                <p>Золото</p>
                             </div>
                         </div>
                         <div class="button_next">
@@ -681,16 +689,16 @@
                                 <input type="text" name="email" placeholder="email">
                             </div>
                             <div class="checkbox">
-                                <label>
+                                <label class="true">
                                     <input name="agree" type="checkbox">
-                                    <span class="fake-checkbox" aria-hidden="true"></span>
+                                    <span class="fake-checkbox " aria-hidden="true"></span>
                                     <span class="label">Согласие с конфиденциальностью и куки</span>
                                 </label>
                             </div>
                         </div>
                         <div class="button_next">
                             {{--<a class="next__block">отправить</a>--}}
-                            <a class="action_form" href="javascript:void(0);">отправить</a>
+                            <a class="action_form disabled" href="javascript:void(0);" role="button" aria-disabled="true">отправить</a>
                         </div>
                     </div>
                 </div>

@@ -225,12 +225,12 @@
         <div class="checkbox">
             <label>
                 <input name="agree" required type="checkbox">
-                <span class="fake-checkbox" aria-hidden="true"></span>
+                <span class="fake-checkbox true" aria-hidden="true"></span>
                 <span class="label">Согласие с конфиденциальностью и куки</span>
             </label>
         </div>
         <div class="button_forms button_forms_popup">
-            <a class="action_form" href="javascript:void(0);">отправить</a>
+            <a class="action_form disable" href="javascript:void(0);">отправить</a>
         </div>
         <a class="close" title="Закрыть" href="#close"></a>
     </div>
@@ -242,7 +242,7 @@
     <div class="popup popup_choise formTag">
         <div class="up_form up_form_popup">
             <h3 class="popup_choise_h2">ВЫЗОВ СПЕЦИАЛИСТА</h3>
-            <div class="butt_choise button_forms button_forms_popup d-flex">
+            <div class="butt_choise  button_forms_popup d-flex">
                 <a id="gager">Замершик</a>
                 <a id="designer">Дизайнер</a>
             </div>
@@ -259,15 +259,15 @@
             {{--</div>--}}
         </div>
         <div class="checkbox">
-            <label>
+            <label class="truee">
                 <input name="agree" required type="checkbox">
-                <span class="fake-checkbox" aria-hidden="true"></span>
+                <span class="fake-checkbox " aria-hidden="true"></span>
                 <span class="label">Согласие с конфиденциальностью и куки</span>
             </label>
         </div>
 
         <div class="button_forms button_forms_popup">
-            <a class="action_form" href="javascript:void(0);">Заказать</a>
+            <a class="action_form disable" href="javascript:void(0);">Заказать</a>
             {{--<a href="#win3">Заказать</a>--}}
         </div>
         <a class="close" title="Закрыть" href="#close"></a>

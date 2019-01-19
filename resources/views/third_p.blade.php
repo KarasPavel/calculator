@@ -37,26 +37,26 @@
                             <li class="nav-item">
                                 <a class="nav-link active" data-toggle="tab" href="#page3_home" role="tab"
                                    aria-controls="home">Зеркала на заказ</a>
-                                <p class="stairs_and_flooring_text">От 26100 руб. <br>
-                                    6-8 дней</p>
+                                <p class="stairs_and_flooring_text">От 2000 руб. <br>
+                                    1-4 дней</p>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" data-toggle="tab" href="#page3_home_1" role="tab"
                                    aria-controls="option">Зеркальное панно</a>
-                                <p class="stairs_and_flooring_text">От 26100 руб. <br>
-                                    6-8 дней</p>
+                                <p class="stairs_and_flooring_text">От 25 000 руб. <br>
+                                    10-14 дней</p>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" data-toggle="tab" href="#page3_profile" role="tab"
                                    aria-controls="profile">Оптовые заказы</a>
-                                <p class="stairs_and_flooring_text">От 26100 руб. <br>
-                                    6-8 дней</p>
+                                <p class="stairs_and_flooring_text">От 50 000 руб. <br>
+                                    5-10 дней</p>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" data-toggle="tab" href="#page3_messages" role="tab"
                                    aria-controls="messages">Эксклюзив решения</a>
-                                <p class="stairs_and_flooring_text">От 26100 руб. <br>
-                                    6-8 дней</p>
+                                <p class="stairs_and_flooring_text">От 12 500 руб. <br>
+                                    6-20 дней</p>
                             </li>
                         </ul>
                     </div>

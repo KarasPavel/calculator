@@ -289,7 +289,7 @@
 <script type="text/javascript" src={{asset("js/bootstrap.min.js")}}></script>
 <script type="text/javascript" src={{asset("js/jquery.fancybox.min.js")}}></script>
 <script type="text/javascript" src={{asset("js/navigationButtons.js")}}></script>
-<script type="text/javascript" src={{asset("js/calculator.js")}}></script>
+{{--<script type="text/javascript" src={{asset("js/calculator.js")}}></script>--}}
 <script type="text/javascript" src={{asset("js/jquery.validate.js")}}></script>
 <script type="text/javascript" src={{asset("js/libs/functions.js")}}></script>
 

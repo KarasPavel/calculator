@@ -207,6 +207,106 @@
                                             </div>
                                             <div class="col-md-6">
                                                 <div class="inline-form">
+
+                                                    <label for="phone" class="control-label"></label><label
+                                                            class="c-label">Quantity</label><input
+                                                            id="endTime"
+                                                            type="text"
+                                                            name="endTime"
+                                                            value="{{$order[0]->quantity}}"
+                                                            disabled="true"/>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="inline-form">
+
+                                                    <label for="phone" class="control-label"></label><label
+                                                            class="c-label">Address</label><input
+                                                            id="endTime"
+                                                            type="text"
+                                                            name="endTime"
+                                                            value="{{$order[0]->address}}"
+                                                            disabled="true"/>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="inline-form">
+
+                                                    <label for="phone" class="control-label"></label><label
+                                                            class="c-label">Delivery</label><input
+                                                            id="endTime"
+                                                            type="text"
+                                                            name="endTime"
+                                                            value="{{$order[0]->delivery}}"
+                                                            disabled="true"/>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="inline-form">
+
+                                                    <label for="phone" class="control-label"></label><label
+                                                            class="c-label">Price</label><input
+                                                            id="endTime"
+                                                            type="text"
+                                                            name="endTime"
+                                                            value="{{$order[0]->price}}"
+                                                            disabled="true"/>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="inline-form">
+
+                                                    <label for="phone" class="control-label"></label><label
+                                                            class="c-label">Urgency</label><input
+                                                            id="endTime"
+                                                            type="text"
+                                                            name="endTime"
+                                                            value="{{(!$order[0]->urgency) ? 'Не срочно' : 'Срочно'}}"
+                                                            disabled="true"/>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="inline-form">
+
+                                                    <label for="phone" class="control-label"></label><label
+                                                            class="c-label">Order_date</label><input
+                                                            id="endTime"
+                                                            type="text"
+                                                            name="endTime"
+                                                            value="{{'Заказ на: ' . $order[0]->order_date}}"
+                                                            disabled="true"/>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="inline-form">
+                                                    <label for="phone" class="control-label"></label><label
+                                                            class="c-label">Order_date</label><input
+                                                            id="endTime"
+                                                            type="text"
+                                                            name="endTime"
+                                                            value="Материал: {{json_decode($order[0]->order_data)->material}}
+                                                                    Вид: {{json_decode($order[0]->order_data)->product}}
+                                                                    Толщина: {{json_decode($order[0]->order_data)->depth}}
+                                                                    Форма: {{json_decode($order[0]->order_data)->shape->name}}
+                                                                    Размеры:
+                                                                            {{json_decode($order[0]->order_data)->shape->name === 'Круг' ?
+                                                                            'Диаметр: '. json_decode($order[0]->order_data)->shape->diameter .
+                                                                            ' мм ' : json_decode($order[0]->order_data)->shape->width .
+                                                                            ' x ' . json_decode($order[0]->order_data)->shape->height .
+                                                                            ' мм '}}
+                                                                    Обработка: {{json_decode($order[0]->order_data)->format}}
+                                                                    Дополнительно: {{json_decode($order[0]->order_data)->options}}"
+                                                            disabled="true"/>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="inline-form">
                                                     <label class="c-label">Select status</label>
                                                     <select name="status">
                                                         @foreach($statuses as $value)
@@ -219,40 +319,6 @@
                                                     </select>
                                                 </div>
                                             </div>
-
-
-
-
-                                            {{--<div class="col-md-6">--}}
-                                                {{--<div class="inline-form">--}}
-                                                    {{--<label class="c-label">Select specialist</label>--}}
-                                                    {{--<select name="specialists">--}}
-                                                        {{--@foreach($specialists as $value)--}}
-                                                            {{--<option id="{{$value->id+11}}"--}}
-                                                                    {{--value="{{$value->id}}">{{$value->specialist}}</option>--}}
-                                                            {{--@if($value->id === $application[0]->specialist_id)--}}
-                                                                {{--<script>document.getElementById("{{$value->id+11}}").selected = true</script>--}}
-                                                            {{--@endif--}}
-                                                        {{--@endforeach--}}
-                                                    {{--</select>--}}
-                                                {{--</div>--}}
-                                            {{--</div>--}}
-                                            {{--<div class="col-md-6">--}}
-                                                {{--<div class="inline-form">--}}
-                                                    {{--<label class="c-label">Day</label>--}}
-                                                    {{--<select id="day" name="days">--}}
-                                                        {{--@foreach($days as $value)--}}
-                                                            {{--<option id="{{$value->id+21}}"--}}
-                                                                    {{--value="{{$value->id}}">{{$value->day}}</option>--}}
-                                                            {{--@if($value->id === $application[0]->day_for_call_id)--}}
-                                                                {{--<script>document.getElementById("{{$value->id+21}}").selected = true</script>--}}
-                                                            {{--@endif--}}
-                                                        {{--@endforeach--}}
-                                                    {{--</select>--}}
-                                                {{--</div>--}}
-                                            {{--</div>--}}
-
-
                                             <div class="col-md-6">
                                                 <div class="inline-form">
                                                     <button type="submit" class="btn btn-success">Update</button>
@@ -261,8 +327,6 @@
                                             {{ csrf_field()}}
                                         </form>
                                     </div>
-
-
                                 </div>
                             </div>
                         </div>
@@ -379,17 +443,6 @@
 
 
 <!-- Script -->
-{{--<script type="text/javascript" src={{asset("js/modernizr.js")}}></script>--}}
-{{--<script type="text/javascript" src={{asset("js/jquery-1.11.1.js")}}></script>--}}
-{{--<script type="text/javascript" src={{asset("js/script.js")}}></script>--}}
-{{--<script type="text/javascript" src={{asset("js/bootstrap.js")}}></script>--}}
-{{--<script type="text/javascript" src={{asset("js/enscroll.js")}}></script>--}}
-{{--<script type="text/javascript" src={{asset("js/grid-filter.js")}}></script>--}}
-{{--<script type="text/javascript" src={{asset("js/jquery.smartWizard.js")}}></script>--}}
-{{--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>--}}
-{{--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>--}}
-{{--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>--}}
-{{--<script type="text/javascript" src={{asset("js/admin/disableDiv.js")}}></script>--}}
 <script type="text/javascript" src={{asset("js/admin/jquery-1.11.1.js")}}></script>
 <script type="text/javascript" src={{asset("js/admin/script.js")}}></script>
 <script type="text/javascript" src={{asset("js/admin/bootstrap.js")}}></script>

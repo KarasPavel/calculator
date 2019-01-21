@@ -23,7 +23,7 @@ class CreateOrdersTable extends Migration
             $table->integer('quantity');
             $table->integer('price');
             $table->boolean('urgency');
-            $table->string('order_data');
+            $table->text('order_data');
             $table->string('comment')->nullable();
             $table->integer('application_status_id')->unsigned();
             $table->date('order_date');

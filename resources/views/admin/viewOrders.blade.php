@@ -184,7 +184,7 @@
                                                 <td>
                                                     Материал: {{json_decode($value->order_data)->material}}
                                                     Вид: {{json_decode($value->order_data)->product}}
-                                                    Толщина: {{json_decode($value->order_data)->depth}}
+                                                    Толщина: {{json_decode($value->order_data)->depth}} мм
                                                     Форма: {{json_decode($value->order_data)->shape->name}}
                                                     Размеры: {{
                                                     json_decode($value->order_data)->shape->name === 'Круг' ?

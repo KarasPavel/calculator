@@ -190,7 +190,7 @@ function calculate() {
             if (!totalPrice) {
                 return 0;
             } else {
-                return Math.round(totalPrice);
+                return Math.round(totalPrice) * checkQuantity();
             }
         }
     }
@@ -733,13 +733,14 @@ function calculate() {
     $('#extra').on('change', '#rnd_con_num, #hac_num, #round_corners, #holes_and_cutouts', function () {
         rndNum = 0;
         hacNum = 0;
-        checkQuantity();
+        checkQuantityRndHac();
     });
     $('#extra').on('keyup', '#rnd_con_num, #hac_num', function () {
         rndNum = 0;
         hacNum = 0;
-        checkQuantity();
+        checkQuantityRndHac();
     });
+    
     $('#extra').on('change', '#pnt, #snd_bl, #uv_printing, ' +
         '#round_corners, #holes_and_cutouts, #painting, #sand_blasting', function () {
         getOptionalPrice();
@@ -799,7 +800,7 @@ function calculate() {
         }
     }
 
-    function checkQuantity() {
+    function checkQuantityRndHac() {
         offsetHoursHoles = 0;
         let result1;
         let result2;
@@ -869,7 +870,7 @@ function calculate() {
         $('#box-calc-7').append('<div class="Contact_form"></div>');
         $('.Contact_form').append('<div class="first_row"></div>');
         $('.first_row').append('<input name="name" type="text" placeholder="Имя">');
-        $('.first_row').append('<input name="quantity" type="number" placeholder="Количество">');
+        $('.first_row').append('<input id="qntt" name="quantity" type="number" placeholder="Количество">');
         $('.first_row').append('<input name="address" type="text" placeholder="Адресс">');
         $('.Contact_form').append('<div class="second_row d-flex"></div>');
         $('.second_row').append('<div class="leftTable"></div>');
@@ -953,6 +954,21 @@ function calculate() {
         getDeliveryPrice();
         setOrderDay();
     });
+
+    $('#order_info').on('change', '#qntt', function () {
+        checkQuantity()
+        setOrderDay();
+    });
+    $('#order_info').on('keyup', '#qntt', function () {
+        checkQuantity()
+        setOrderDay();
+    });
+
+    function checkQuantity() {
+        let quantityOfProducts;
+        $('#qntt').val() > 0 ? quantityOfProducts = $('#qntt').val() : quantityOfProducts = 1;
+        return quantityOfProducts;
+    }
 
     function getDeliveryPrice() {
         let sum;

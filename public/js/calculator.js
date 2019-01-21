@@ -267,9 +267,9 @@ function calculate() {
         $('#calc_stege_2').append('<i class="fas fa-angle-down"></i>');
         $('#material').append('<div id="box-calc-2" class="wraper content"></div>');
         $('#box-calc-2').append('<div id="box-calc-2-2" class="calc_contents d-flex"></div>');
-        $('#box-calc-2-2').append("<p>Существует безчисленное множество комбинаций использования многослойного стекла (триплекса)." +
+        $('#box-calc-2-2').append("<p class='triplex-order-info'>Существует безчисленное множество комбинаций использования многослойного стекла (триплекса)." +
             "Систематизировать и рассчитывать автоматически - сложно. Поэтому для Вашего удобства мы предлагаем бесплатный расчет" +
-            "нашим специалистом по Вашему вопросу, который сможет с Вами связатся и подготовить для Вас нужную информацию по данной тематике," +
+            " нашим специалистом по Вашему вопросу, который сможет с Вами связатся и подготовить для Вас нужную информацию по данной тематике," +
             "дать комментарии, рассказать как это будет выглядеть, сколько будет стоить и какие есть возможности реализации Вашего проекта.</p>");
         $('#material').append('<a class="contacts">+7 (499) 677-20-67</a>');
         $('#material').append('<a href="#win1">   Консультация и расчет   </a>');
@@ -362,10 +362,10 @@ function calculate() {
         $('#calc_stege_3').append('<h4>Толщина изделия (мм)</h4>');
         $('#calc_stege_3').append('<i class="fas fa-angle-down"></i>');
         $('#depth').append('<div id="box-calc-3" class="wraper content"></div>');
-        $('#box-calc-3').append('<div class="stage_3_choose_thiknes d-flex"></div>');
-        $('.stage_3_choose_thiknes').append('<div class="choose_thiknes"></div>');
+        $('#box-calc-3').append('<div class="stage_3_choose_thiknes row"></div>');
+        $('.stage_3_choose_thiknes').append('<div class="choose_thiknes col-md-8"></div>');
         $('.choose_thiknes').append('<ul class="nav nav-tabs d-flex" id="myTab1" role="tablist"></ul>');
-        $('.stage_3_choose_thiknes').append('<div class="content-right_calc"></div>');
+        $('.stage_3_choose_thiknes').append('<div class="content-right_calc col-md-4 d-none d-md-block"><img src="images/glass_thikness.png" alt=""></div>');
         if (materialId === "simple") {
             $('#myTab1').append('<li class="nav-item">' +
                 '<a id="three" class="nav-link active" data-toggle="tab" href="#calc1" role="tab"' +

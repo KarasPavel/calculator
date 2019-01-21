@@ -148,7 +148,7 @@
 		background-position-y: 1px;
 	}
 	.stairs_and_flooring_buttons_calculator {
-		margin: 30px 110px;
+		margin: 30px 0;
 	}
 	.stairs_and_flooring h2{
 		line-height: 40.99px;
@@ -351,5 +351,11 @@
 	}
 	.glass_door_item_down p::before{
 		display: none !important;
+	}
+}
+
+@media screen and (min-width: 992px) {
+	.glass_door_item {
+	 	width: 543px;
 	}
 }

@@ -83,7 +83,7 @@
                 <div class="tab-pane active" id="page4_home" role="tabpanel">
                     @foreach($photo as $value)
                         @if($value->type === 'распашные двери')
-                            <a data-fancybox="" href="{{$value->photo}}">
+                            <a data-fancybox="gallery_Door" href="{{$value->photo}}">
                                 <div class="img_items_stairs">
                                     <img src="{{$value->photo}}" alt="1">
                                     <p></p>
@@ -95,7 +95,7 @@
                 <div class="tab-pane" id="page4_profile" role="tabpanel">
                     @foreach($photo as $value)
                         @if($value->type === 'перегородки')
-                            <a data-fancybox="" href="{{$value->photo}}">
+                            <a data-fancybox="gallery_Door1" href="{{$value->photo}}">
                                 <div class="img_items_stairs">
                                     <img src="{{$value->photo}}" alt="1">
                                     <p></p>
@@ -107,7 +107,7 @@
                 <div class="tab-pane" id="page4_messages" role="tabpanel">
                     @foreach($photo as $value)
                         @if($value->type === 'маятниковые двери')
-                            <a data-fancybox="" href="{{$value->photo}}">
+                            <a data-fancybox="gallery_Door2" href="{{$value->photo}}">
                                 <div class="img_items_stairs">
                                     <img src="{{$value->photo}}" alt="1">
                                     <p></p>
@@ -119,7 +119,7 @@
                 <div class="tab-pane" id="page4_settings" role="tabpanel">
                     @foreach($photo as $value)
                         @if($value->type === 'раздвижные двери')
-                            <a data-fancybox="" href="{{$value->photo}}">
+                            <a data-fancybox="gallery_Door3" href="{{$value->photo}}">
                                 <div class="img_items_stairs">
                                     <img src="{{$value->photo}}" alt="1">
                                     <p></p>
@@ -131,7 +131,7 @@
                 <div class="tab-pane" id="page4_settings1" role="tabpanel">
                     @foreach($photo as $value)
                         @if($value->type === 'ограждения')
-                            <a data-fancybox="" href="{{$value->photo}}">
+                            <a data-fancybox="gallery_Door4" href="{{$value->photo}}">
                                 <div class="img_items_stairs">
                                     <img src="{{$value->photo}}" alt="1">
                                     <p></p>
@@ -143,7 +143,7 @@
                 <div class="tab-pane" id="page4_settings2" role="tabpanel">
                     @foreach($photo as $value)
                         @if($value->type === 'двери в коробках')
-                            <a data-fancybox="" href="{{$value->photo}}">
+                            <a data-fancybox="gallery_Door5" href="{{$value->photo}}">
                                 <div class="img_items_stairs">
                                     <img src="{{$value->photo}}" alt="1">
                                     <p></p>
@@ -155,7 +155,7 @@
                 <div class="tab-pane" id="page4_settings3" role="tabpanel">
                     @foreach($photo as $value)
                         @if($value->type === 'эксклюзивные решения')
-                            <a data-fancybox="" href="{{$value->photo}}">
+                            <a data-fancybox="gallery_Door6" href="{{$value->photo}}">
                                 <div class="img_items_stairs">
                                     <img src="{{$value->photo}}" alt="1">
                                     <p></p>
@@ -417,8 +417,8 @@
 
                             </ul>
                             <ul class="door_mines">
-                                <li>Дорогие доводчики</li>
-                                <li>Не всегда подходит</li>
+                                <li class="orenge-mines">Дорогие доводчики</li>
+                                <li class="orenge-mines">Не всегда подходит</li>
 
                             </ul>
                         </div>
@@ -437,8 +437,8 @@
 
                             </ul>
                             <ul class="door_mines">
-                                <li>Узкий выбор</li>
-                                <li>Средние зазоры</li>
+                                <li class="orenge-mines">Узкий выбор</li>
+                                <li class="orenge-mines">Средние зазоры</li>
 
                             </ul>
                         </div>
@@ -455,10 +455,8 @@
 
                             </ul>
                             <ul class="door_mines">
-                                <li>Дорого, сложно, долго</li>
-                                <li>Дорогие доводчики
-                                    и электропривод
-                                </li>
+                                <li class="orenge-mines">Дорого, сложно, долго</li>
+                                <li class="orenge-mines">Дорогие доводчики и электропривод</li>
 
                             </ul>
                         </div>

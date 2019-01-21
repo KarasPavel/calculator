@@ -276,16 +276,16 @@
     </div>
 </form>
 
-{{--<a href="#x" class="overlay" id="win3"></a>--}}
-{{--<div id="good" class="popup popup_choise">--}}
-    {{--<div class="up_form up_form_popup">--}}
-        {{--<h3 class="popup_choise_h2">Ваша заявка была принята!</h3>--}}
-    {{--</div>--}}
-    {{--<div class="button_forms button_forms_popup">--}}
-        {{--<a href="#">Ok</a>--}}
-    {{--</div>--}}
-    {{--<a class="close" title="Закрыть" href="#close"></a>--}}
-{{--</div>--}}
+<a href="#x" class="overlay" id="win3"></a>
+<div id="good" class="popup popup_choise">
+    <div class="up_form up_form_popup">
+        <h3 class="popup_choise_h2">Ваша заявка была принята!</h3>
+    </div>
+    <div class="button_forms button_forms_popup">
+        <a href="#">Ok</a>
+    </div>
+    <a class="close" title="Закрыть" href="#close"></a>
+</div>
 
 
 <script type="text/javascript" src={{asset("js/jquery-3.3.1.min.js")}}></script>
@@ -295,6 +295,10 @@
 <script type="text/javascript" src={{asset("js/calculator.js")}}></script>
 <script type="text/javascript" src={{asset("js/jquery.validate.js")}}></script>
 <script type="text/javascript" src={{asset("js/libs/functions.js")}}></script>
+
+<script type="text/javascript">
+    $.fancybox.defaults.hash = false;
+</script>
 
 </body>
 </html>

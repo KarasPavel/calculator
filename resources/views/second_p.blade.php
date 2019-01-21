@@ -94,7 +94,7 @@
                 <div class="tab-pane active" id="page2_home" role="tabpanel">
                     @foreach($photo as $value)
                         @if($value->type === 'угловые и фигурные')
-                            <a data-fancybox="" href="{{$value->photo}}">
+                            <a data-fancybox="gallery_Showers" href="{{$value->photo}}">
                                 <div class="img_items_stairs">
                                     <img src="{{$value->photo}}" alt="1">
                                     <p></p>
@@ -106,7 +106,7 @@
                 <div class="tab-pane" id="page2_profile" role="tabpanel">
                     @foreach($photo as $value)
                         @if($value->type === 'прямые душевые')
-                            <a data-fancybox="" href="{{$value->photo}}">
+                            <a data-fancybox="gallery_Showers2" href="{{$value->photo}}">
                                 <div class="img_items_stairs">
                                     <img src="{{$value->photo}}" alt="1">
                                     <p></p>
@@ -118,7 +118,7 @@
                 <div class="tab-pane" id="page2_messages" role="tabpanel">
                     @foreach($photo as $value)
                         @if($value->type === 'форма трапеции')
-                            <a data-fancybox="" href="{{$value->photo}}">
+                            <a data-fancybox="gallery_Showers1" href="{{$value->photo}}">
                                 <div class="img_items_stairs">
                                     <img src="{{$value->photo}}" alt="1">
                                     <p></p>
@@ -130,7 +130,7 @@
                 <div class="tab-pane" id="page2_settings" role="tabpanel">
                     @foreach($photo as $value)
                         @if($value->type === 'двери ниша')
-                            <a data-fancybox="" href="{{$value->photo}}">
+                            <a data-fancybox="gallery_Showers3" href="{{$value->photo}}">
                                 <div class="img_items_stairs">
                                     <img src="{{$value->photo}}" alt="1">
                                     <p></p>
@@ -142,7 +142,7 @@
                 <div class="tab-pane" id="page2_settings1" role="tabpanel">
                     @foreach($photo as $value)
                         @if($value->type === 'глухие перегородки')
-                            <a data-fancybox="" href="{{$value->photo}}">
+                            <a data-fancybox="gallery_Showers4" href="{{$value->photo}}">
                                 <div class="img_items_stairs">
                                     <img src="{{$value->photo}}" alt="1">
                                     <p></p>
@@ -154,7 +154,7 @@
                 <div class="tab-pane" id="page2_settings2" role="tabpanel">
                     @foreach($photo as $value)
                         @if($value->type === 'ограждения в ванную')
-                            <a data-fancybox="" href="{{$value->photo}}">
+                            <a data-fancybox="gallery_Showers5" href="{{$value->photo}}">
                                 <div class="img_items_stairs">
                                     <img src="{{$value->photo}}" alt="1">
                                     <p></p>
@@ -166,7 +166,7 @@
                 <div class="tab-pane" id="page2_settings3" role="tabpanel">
                     @foreach($photo as $value)
                         @if($value->type === 'с раздвижной дверью')
-                            <a data-fancybox="" href="{{$value->photo}}">
+                            <a data-fancybox="gallery_Showers6" href="{{$value->photo}}">
                                 <div class="img_items_stairs">
                                     <img src="{{$value->photo}}" alt="1">
                                     <p></p>
@@ -178,7 +178,7 @@
                 <div class="tab-pane" id="page2_settings4" role="tabpanel">
                     @foreach($photo as $value)
                         @if($value->type === 'эксклюзив и опт')
-                            <a data-fancybox="" href="{{$value->photo}}">
+                            <a data-fancybox="gallery_Showers7" href="{{$value->photo}}">
                                 <div class="img_items_stairs">
                                     <img src="{{$value->photo}}" alt="1">
                                     <p></p>
@@ -232,7 +232,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row doors-left-right-items">
                 <div class="col-lg-6">
                     <div class="shower_type_items d-flex">
                         <img src="images/img_showers-type.png" alt="">
@@ -245,7 +245,7 @@
                                 <li>Удобно, быстро, практично</li>
                                 <li class="pluss">Полностью индивидульно. Возможны рисунки, уф-печать, триплекс</li>
                                 <li>Нужен замер</li>
-                                <li>Зачастую дороже кабины</li>
+                                <li class="orenge-mines">Зачастую дороже кабины</li>
                             </ul>
                         </div>
                     </div>
@@ -257,13 +257,13 @@
                             <ul>
                                 <li>Просто купить, везде есть</li>
                                 <li>Эконом" - цены, "Эконом" - качество</li>
-                                <li class="dark-mines">Срок службы без проблем ограничен</li>
-                                <li class="dark-mines">Везде щели, все скрипит и трясется. "Коробка" с радио.</li>
-                                <li class="dark-mines">По факту - Китайское производство. Никаких гарантий закалки.
+                                <li class="orenge-mines">Срок службы без проблем ограничен</li>
+                                <li class="orenge-mines">Везде щели, все скрипит и трясется. "Коробка" с радио.</li>
+                                <li class="orenge-mines">По факту - Китайское производство. Никаких гарантий закалки.
                                     Стекло 4-8мм
                                 </li>
-                                <li class="dark-mines">Тесно, скользко, неудобно, все дрожит</li>
-                                <li>Скудный выбор, безвкусно и не вписывается в интерьер</li>
+                                <li class="orenge-mines">Тесно, скользко, неудобно, все дрожит</li>
+                                <li class="orenge-mines">Скудный выбор, безвкусно и не вписывается в интерьер</li>
                             </ul>
                         </div>
                         <img src="images/img_showers-type-right.png" alt="">
@@ -678,14 +678,14 @@
                             <div class="checkbox">
                                 <label>
                                     <input name="agree" type="checkbox">
-                                    <span class="fake-checkbox" aria-hidden="true"></span>
+                                    <span class="fake-checkbox true" aria-hidden="true"></span>
                                     <span class="label">Согласие с конфиденциальностью и куки</span>
                                 </label>
                             </div>
                         </div>
                         <div class="button_next">
                             {{--<a class="next__block" >отправить</a>--}}
-                            <a class="action_form" href="javascript:void(0);">отправить</a>
+                            <a class="action_form disable" href="javascript:void(0);">отправить</a>
                         </div>
                     </div>
                 </div>

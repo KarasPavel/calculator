@@ -268,9 +268,9 @@ function calculate() {
         $('#calc_stege_2').append('<i class="fas fa-angle-down"></i>');
         $('#material').append('<div id="box-calc-2" class="wraper content"></div>');
         $('#box-calc-2').append('<div id="box-calc-2-2" class="calc_contents d-flex"></div>');
-        $('#box-calc-2-2').append("<p>Существует безчисленное множество комбинаций использования многослойного стекла (триплекса)." +
+        $('#box-calc-2-2').append("<p class='triplex-order-info'>Существует безчисленное множество комбинаций использования многослойного стекла (триплекса)." +
             "Систематизировать и рассчитывать автоматически - сложно. Поэтому для Вашего удобства мы предлагаем бесплатный расчет" +
-            "нашим специалистом по Вашему вопросу, который сможет с Вами связатся и подготовить для Вас нужную информацию по данной тематике," +
+            " нашим специалистом по Вашему вопросу, который сможет с Вами связатся и подготовить для Вас нужную информацию по данной тематике," +
             "дать комментарии, рассказать как это будет выглядеть, сколько будет стоить и какие есть возможности реализации Вашего проекта.</p>");
         $('#material').append('<a class="contacts">+7 (499) 677-20-67</a>');
         $('#material').append('<a href="#win1">   Консультация и расчет   </a>');
@@ -363,10 +363,10 @@ function calculate() {
         $('#calc_stege_3').append('<h4>Толщина изделия (мм)</h4>');
         $('#calc_stege_3').append('<i class="fas fa-angle-down"></i>');
         $('#depth').append('<div id="box-calc-3" class="wraper content"></div>');
-        $('#box-calc-3').append('<div class="stage_3_choose_thiknes d-flex"></div>');
-        $('.stage_3_choose_thiknes').append('<div class="choose_thiknes"></div>');
+        $('#box-calc-3').append('<div class="stage_3_choose_thiknes row"></div>');
+        $('.stage_3_choose_thiknes').append('<div class="choose_thiknes col-md-8"></div>');
         $('.choose_thiknes').append('<ul class="nav nav-tabs d-flex" id="myTab1" role="tablist"></ul>');
-        $('.stage_3_choose_thiknes').append('<div class="content-right_calc"></div>');
+        $('.stage_3_choose_thiknes').append('<div class="content-right_calc col-md-4 d-none d-md-block"><img src="images/glass_thikness.png" alt=""></div>');
         if (materialId === "simple") {
             $('#myTab1').append('<li class="nav-item">' +
                 '<a id="three" class="nav-link active" data-toggle="tab" href="#calc1" role="tab"' +
@@ -437,16 +437,16 @@ function calculate() {
         $('#shape').append('<div id="box-calc-4" class="wraper content"></div>');
         $('#box-calc-4').append('<div class="Size_calc"></div>');
         $('.Size_calc').append('<div id="rectangle" class="item_size_calc"></div>');
-        $('#rectangle').append('<img src="images/figure_size1.png" alt="">' +
+        $('#rectangle').append('<div class="img-container"><img src="images/figure_size1.png" alt=""></div>' +
             '<p>Прямоугольник</p>');
         $('.Size_calc').append('<div id="circle" class="item_size_calc"></div>');
-        $('#circle').append('<img src="images/figure_size2.png" alt="">' +
+        $('#circle').append('<div class="img-container"><img src="images/figure_size2.png" alt=""></div>' +
             '<p>Круг</p>');
         $('.Size_calc').append('<div id="oval" class="item_size_calc"></div>');
-        $('#oval').append('<img src="images/figure_size3.png" alt="">' +
+        $('#oval').append('<div class="img-container"><img src="images/figure_size3.png" alt=""></div>' +
             '<p>Овал</p>');
         $('.Size_calc').append('<div id="another" class="item_size_calc"></div>');
-        $('#another').append('<img src="images/figure_size4.png" alt="">' +
+        $('#another').append('<div class="img-container"><img src="images/figure_size4.png" alt=""></div>' +
             '<p>ИНАЯ ФОРМА</p>');
         $('#circle').click(function () {
             shapeId = this.id;

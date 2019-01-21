@@ -52,7 +52,9 @@ Route::middleware('role:admin|junior_admin|manager')->group(function () {
 
     //Order-admin routes
     Route::get('admin/viewOrders', 'Admin\OrdersController@viewOrders')->name('viewOrders');
-
+    Route::get('admin/editOrder/{id}', 'Admin\OrdersController@editOrder')->name('editOrder');
+    Route::post('admin/updateOrder', 'Admin\OrdersController@updateOrder')->name('updateOrder');
+    Route::get('admin/deleteOrder/{id}', 'Admin\OrdersController@deleteOrder')->name('deleteOrder');
 
     //Gallery
     Route::get('admin/viewPhoto', 'Admin\PhotoController@viewPhoto')->name('viewPhoto');

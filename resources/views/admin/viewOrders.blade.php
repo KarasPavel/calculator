@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Panel</title>
 
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900' rel='stylesheet' type='text/css' />
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css' />
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900' rel='stylesheet' type='text/css'/>
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'/>
 
     <!-- Styles -->
-    <link rel="stylesheet" href={{asset("font-awesome-4.2.0/css/font-awesome.css")}} type="text/css" /><!-- Font Awesome -->
-    <link rel="stylesheet" href={{asset("css/bootstrap1.css")}} type="text/css" /><!-- Bootstrap -->
-    <link rel="stylesheet" href={{asset("css/style.css")}} type="text/css" /><!-- Style -->
-    <link rel="stylesheet" href={{asset("css/responsive.css")}} type="text/css" /><!-- Responsive -->
+    <link rel="stylesheet" href={{asset("font-awesome-4.2.0/css/font-awesome.css")}} type="text/css"/>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href={{asset("css/bootstrap1.css")}} type="text/css"/><!-- Bootstrap -->
+    <link rel="stylesheet" href={{asset("css/style.css")}} type="text/css"/><!-- Style -->
+    <link rel="stylesheet" href={{asset("css/responsive.css")}} type="text/css"/><!-- Responsive -->
 
 </head>
 <body>
@@ -26,12 +27,11 @@
         <div class="custom-dropdowns">
 
 
-
         </div>
 
         <div class="dropdown profile">
             <a title="">
-                <img alt="" />{{$user->name}}<i class="caret"></i>
+                <img alt=""/>{{$user->name}}<i class="caret"></i>
             </a>
             <div class="profile drop-list">
                 <ul>
@@ -109,8 +109,8 @@
                     {{--</ul>--}}
                     {{--</div>--}}
                     {{--</div>--}}
-                    {{--</div>--}}
                 </div>
+            </div>
         </aside>
         <div class="content-sec">
 
@@ -148,13 +148,9 @@
                                             <th>Цена</th>
                                             <th>Комментарий</th>
                                             <th>Количество</th>
-                                            {{--<th>Start time</th>--}}
-                                            {{--<th>End time</th>--}}
                                             <th>Статус</th>
-                                            <th>Создан в</th>
-                                            <th>Обновлен в</th>
-
-
+                                            <th>Создан</th>
+                                            <th>Обновлен</th>
                                             <th>Редактировать</th>
                                             @if($user->hasRole('admin'))
                                                 <th>Удалить</th>
@@ -186,7 +182,18 @@
                                                     {{$value->urgency}}
                                                 </td>
                                                 <td>
-                                                    {{$value->order_data}}
+                                                    Материал: {{json_decode($value->order_data)->material}}
+                                                    Вид: {{json_decode($value->order_data)->product}}
+                                                    Толщина: {{json_decode($value->order_data)->depth}}
+                                                    Форма: {{json_decode($value->order_data)->shape->name}}
+                                                    Размеры: {{
+                                                    json_decode($value->order_data)->shape->name === 'Круг' ?
+                                                    'Диаметр: '. json_decode($value->order_data)->shape->diameter .
+                                                    ' мм ' : json_decode($value->order_data)->shape->width .
+                                                    ' x ' . json_decode($value->order_data)->shape->height .
+                                                    ' мм '}}
+                                                    Обработка: {{json_decode($value->order_data)->format}}
+                                                    Дополнительно: {{json_decode($value->order_data)->options}}
                                                 </td>
                                                 <td>
                                                     {{$value->order_date}}
@@ -203,38 +210,21 @@
                                                 <td>
                                                     {{$value->status}}
                                                 </td>
-                                                {{--<td>--}}
-                                                    {{--{{$value->specialist}}--}}
-                                                {{--</td>--}}
-                                                {{--<td>--}}
-                                                {{--{{$value->day}}--}}
-                                                {{--</td>--}}
-                                                {{--<td>--}}
-                                                {{--{{$value->start_time}}--}}
-                                                {{--</td>--}}
-                                                {{--<td>--}}
-                                                {{--{{$value->end_time}}--}}
-                                                {{--</td>--}}
-                                                {{--<td>--}}
-                                                    {{--{{$value->status}}--}}
-                                                {{--</td>--}}
                                                 <td>
                                                     {{$value->created_at}}
                                                 </td>
                                                 <td>
                                                     {{$value->updated_at}}
                                                 </td>
-                                                {{--<td>--}}
-                                                    {{--{{$value->comment}}--}}
-                                                {{--</td>--}}
                                                 @if($user->hasRole('admin|junior_admin|moderator'))
                                                     <td>
-                                                        <a href="{{route('editApplication',$value->id)}}">+</a>
+                                                        <a href="{{route('editOrder',$value->id)}}">+</a>
                                                     </td>
                                                 @endif
                                                 @if($user->hasRole('admin'))
                                                     <td> {{ csrf_field()}}
-                                                        <a href="{{route('deleteApplication',$value->id)}}"  onclick="return confirm('Are you sure you want to delete this Application?');">-</a>
+                                                        <a href="{{route('deleteOrder',$value->id)}}"
+                                                           onclick="return confirm('Are you sure you want to delete this Application?');">-</a>
                                                         {{ csrf_field()}}
                                                     </td>
                                                 @endif
@@ -253,44 +243,52 @@
                         </div>
 
 
-
-
                     </div><!-- Content Sec -->
                     <div class="slide-panel" id="panel-scroll">
                         <ul role="tablist" class="nav nav-tabs panel-tab-btn">
-                            <li class="active"><a data-toggle="tab" role="tab" href="#tab1"><i class="fa fa-inbox"></i><span>Your Emails</span></a></li>
-                            <li><a data-toggle="tab" role="tab" href="#tab2"><i class="fa fa-wrench"></i><span>Your Setting</span></a></li>
+                            <li class="active"><a data-toggle="tab" role="tab" href="#tab1"><i
+                                            class="fa fa-inbox"></i><span>Your Emails</span></a></li>
+                            <li><a data-toggle="tab" role="tab" href="#tab2"><i class="fa fa-wrench"></i><span>Your Setting</span></a>
+                            </li>
                         </ul>
                         <div class="tab-content panel-tab">
                             <div id="tab1" class="tab-pane fade in active">
                                 <div class="recent-mails-widget">
-                                    <form><div id="searchMail"></div></form>
+                                    <form>
+                                        <div id="searchMail"></div>
+                                    </form>
                                     <h3>Recent Emails</h3>
                                     <ul id="mail-list" class="mail-list">
                                         <li>
                                             <div class="title">
                                                 <h3><a href="#" title="">Kim Hostwood</a><span>5 min ago</span></h3>
-                                                <a href="#"  data-toggle="tooltip" data-placement="left" title="Attachment"><i class="fa fa-paperclip"></i></a>
+                                                <a href="#" data-toggle="tooltip" data-placement="left"
+                                                   title="Attachment"><i class="fa fa-paperclip"></i></a>
                                             </div>
                                             <h4>Themeforest Admin Template</h4>
-                                            <p>This product is so good that i manage to buy it 1 for me and 3 for my families.</p>
+                                            <p>This product is so good that i manage to buy it 1 for me and 3 for my
+                                                families.</p>
                                         </li>
                                         <li>
                                             <div class="title">
 
                                                 <h3><a href="#" title="">John Doe</a><span>2 hours ago</span></h3>
-                                                <a href="#"  data-toggle="tooltip" data-placement="left" title="Attachment"><i class="fa fa-paperclip"></i></a>
+                                                <a href="#" data-toggle="tooltip" data-placement="left"
+                                                   title="Attachment"><i class="fa fa-paperclip"></i></a>
                                             </div>
                                             <h4>Themeforest Admin Template</h4>
-                                            <p>This product is so good that i manage to buy it 1 for me and 3 for my families.</p>
+                                            <p>This product is so good that i manage to buy it 1 for me and 3 for my
+                                                families.</p>
                                         </li>
                                         <li>
                                             <div class="title">
                                                 <h3><a href="#" title="">Jonathan Doe</a><span>8 min ago</span></h3>
-                                                <a href="#"  data-toggle="tooltip" data-placement="left" title="Attachment"><i class="fa fa-paperclip"></i></a>
+                                                <a href="#" data-toggle="tooltip" data-placement="left"
+                                                   title="Attachment"><i class="fa fa-paperclip"></i></a>
                                             </div>
                                             <h4>Themeforest Admin Template</h4>
-                                            <p>This product is so good that i manage to buy it 1 for me and 3 for my families.</p>
+                                            <p>This product is so good that i manage to buy it 1 for me and 3 for my
+                                                families.</p>
                                         </li>
                                     </ul>
                                     <a href="inbox.html" title="" class="red">View All Messages</a>
@@ -303,37 +301,49 @@
                                             <li>
                                                 <i class="fa fa-file-excel-o"></i><h4>my-excel.xls<i>20 min ago</i></h4>
                                                 <div class="progress">
-                                                    <div style="width: 90%;" aria-valuemax="100" aria-valuemin="0" aria-valuenow="90" role="progressbar" class="progress-bar red">
+                                                    <div style="width: 90%;" aria-valuemax="100" aria-valuemin="0"
+                                                         aria-valuenow="90" role="progressbar" class="progress-bar red">
                                                         90%
                                                     </div>
                                                 </div>
                                                 <div class="file-action-btn">
-                                                    <a href="#" title="Approve" class="green" data-toggle="tooltip" data-placement="bottom"><i class="fa fa-check"></i></a>
-                                                    <a href="#" title="Cancel" class="red" data-toggle="tooltip" data-placement="bottom"><i class="fa fa-close"></i></a>
+                                                    <a href="#" title="Approve" class="green" data-toggle="tooltip"
+                                                       data-placement="bottom"><i class="fa fa-check"></i></a>
+                                                    <a href="#" title="Cancel" class="red" data-toggle="tooltip"
+                                                       data-placement="bottom"><i class="fa fa-close"></i></a>
                                                 </div>
                                             </li>
                                             <li>
                                                 <i class="fa fa-file-pdf-o"></i><h4>my-cv.pdf<i>8 min ago</i></h4>
                                                 <div class="progress">
-                                                    <div style="width: 40%;" aria-valuemax="100" aria-valuemin="0" aria-valuenow="40" role="progressbar" class="progress-bar blue">
+                                                    <div style="width: 40%;" aria-valuemax="100" aria-valuemin="0"
+                                                         aria-valuenow="40" role="progressbar"
+                                                         class="progress-bar blue">
                                                         40%
                                                     </div>
                                                 </div>
                                                 <div class="file-action-btn">
-                                                    <a href="#" title="Approve" class="green" data-toggle="tooltip" data-placement="bottom"><i class="fa fa-check"></i></a>
-                                                    <a href="#" title="Cancel" class="red" data-toggle="tooltip" data-placement="bottom"><i class="fa fa-close"></i></a>
+                                                    <a href="#" title="Approve" class="green" data-toggle="tooltip"
+                                                       data-placement="bottom"><i class="fa fa-check"></i></a>
+                                                    <a href="#" title="Cancel" class="red" data-toggle="tooltip"
+                                                       data-placement="bottom"><i class="fa fa-close"></i></a>
                                                 </div>
                                             </li>
                                             <li>
-                                                <i class="fa fa-file-video-o"></i><h4>portfolio-shoot.mp4<i>12 min ago</i></h4>
+                                                <i class="fa fa-file-video-o"></i><h4>portfolio-shoot.mp4<i>12 min
+                                                        ago</i></h4>
                                                 <div class="progress">
-                                                    <div style="width: 70%;" aria-valuemax="100" aria-valuemin="0" aria-valuenow="70" role="progressbar" class="progress-bar green">
+                                                    <div style="width: 70%;" aria-valuemax="100" aria-valuemin="0"
+                                                         aria-valuenow="70" role="progressbar"
+                                                         class="progress-bar green">
                                                         70%
                                                     </div>
                                                 </div>
                                                 <div class="file-action-btn">
-                                                    <a href="#" title="Approve" class="green" data-toggle="tooltip" data-placement="bottom"><i class="fa fa-check"></i></a>
-                                                    <a href="#" title="Cancel" class="red" data-toggle="tooltip" data-placement="bottom"><i class="fa fa-close"></i></a>
+                                                    <a href="#" title="Approve" class="green" data-toggle="tooltip"
+                                                       data-placement="bottom"><i class="fa fa-check"></i></a>
+                                                    <a href="#" title="Cancel" class="red" data-toggle="tooltip"
+                                                       data-placement="bottom"><i class="fa fa-close"></i></a>
                                                 </div>
                                             </li>
                                         </ul>
@@ -412,24 +422,14 @@
                 </div><!-- Page Container -->
             </div><!-- main -->
 
-
-            <!-- Script -->
-            {{--<script type="text/javascript" src={{asset("js/modernizr.js")}}></script>--}}
-            {{--<script type="text/javascript" src={{asset("js/jquery-1.11.1.js")}}></script>--}}
-            {{--<script type="text/javascript" src={{asset("js/script.js")}}></script>--}}
-            {{--<script type="text/javascript" src={{asset("js/bootstrap.js")}}></script>--}}
-            {{--<script type="text/javascript" src={{asset("js/enscroll.js")}}></script>--}}
-            {{--<script type="text/javascript" src={{asset("js/grid-filter.js")}}></script>--}}
-            {{----}}
             <script src={{asset("js/streaming-mustache.js")}} type="text/javascript"></script>
-            {{--<script src={{asset("js/stream_table.js")}} type="text/javascript"></script>--}}
-            {{--<script src={{asset("js/movie_data.js")}} type="text/javascript"></script>--}}
-            {{--<script src={{asset("js/stream.js")}} type="text/javascript"></script>--}}
             <script type="text/javascript" src={{asset("js/admin/jquery-1.11.1.js")}}></script>
             <script type="text/javascript" src={{asset("js/admin/script.js")}}></script>
             <script type="text/javascript" src={{asset("js/admin/bootstrap.js")}}></script>
             <script type="text/javascript" src={{asset("js/admin/enscroll.js")}}></script>
             <!-- Streaming Table -->
-
+        </div>
+    </div>
+</div>
 </body>
 </html>

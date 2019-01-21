@@ -1006,7 +1006,7 @@ function calculate() {
         orderInfo['options'] = findExtraOptions();
         orderData['orderInfo'] = orderInfo;
         orderData['price'] = setPriceValue();
-        orderData['orderDate'] = dd + '.' + mm + '.' + yyyy;
+        orderData['orderDate'] = yyyy + '-' + mm + '-' + dd;
         orderData['urgency'] = $('#checkboxPrice').is(':checked');
         if ($('#calcForm').valid()) {
             console.log(orderData);

@@ -8,6 +8,7 @@
 
 namespace App\Http\Controllers\Admin;
 use App\Role;
+use App\Status;
 use App\User;
 use App\Order;
 use Illuminate\Http\Request;
@@ -26,7 +27,6 @@ class OrdersController extends Controller
     {
         $user = Auth::user();
         $allOrders = Order::getOrders();
-        /*dd($allOrders);*/
         return view('admin/viewOrders', ['user' => $user, 'allOrders' => $allOrders]);
     }
 
@@ -38,9 +38,27 @@ class OrdersController extends Controller
 //            'phone' => 'required|min:10|max:11',
 //        ]);
 
-
         Order::createOrder($request);
         return 'all ok';
-//        return json_decode($request->data)->name;
     }
+    public function deleteOrder($id){
+        Order::deleteOrder($id);
+        return redirect()->route('viewOrders');
+    }
+
+    public function editOrder($id)
+    {
+        $user = Auth::user();
+        $order = Order::getOrderById($id);
+        $statuses = Status::getStatuses();
+        return view('admin/editOrder', ['order' => $order,
+            'user' => $user, 'statuses' => $statuses]);
+
+    }
+
+    public function updateOrder(Request $request){
+        Order::updateOrder($request);
+        return redirect()->route('viewOrders');
+    }
+
 }

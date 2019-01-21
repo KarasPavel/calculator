@@ -68,4 +68,33 @@ class Order extends Model
             return $e->getMessage();
         }
     }
+
+    public static function deleteOrder($id)
+    {
+        return DB::table('orders')
+            ->where('orders.id', '=', $id)
+            ->delete();
+    }
+
+    public static function getOrderById($id)
+    {
+        return DB::table('orders')
+            ->where('orders.id', '=', $id)
+            ->get();
+    }
+
+    /**
+     * @param $request
+     * @return \Illuminate\Database\Query\Builder
+     */
+    public static function updateOrder($request)
+    {
+        DB::table('orders')
+            ->where('orders.id', '=', $request->orderId)
+            ->update([
+                'application_status_id' => $request->status,
+                'updated_at' => Carbon::now(),
+            ]);
+        return back();
+    }
 }

@@ -224,6 +224,7 @@ function calculate() {
     var mm;
     var yyyy;
     var today;
+
     function setOrderDay() {
         $('#calculator_day').val('');
         $('#calculator_month').val('');
@@ -859,11 +860,12 @@ function calculate() {
 
     function fillOrderDiv() {
         deliveryType = null;
-        $('#order_info').append('<div id="calc_stege_7" class="head toggler"></div>');
+        $('#order_info').append('<form id="calcForm" onsubmit="javascript:return false;"></form>');
+        $('#calcForm').append('<div id="calc_stege_7" class="head toggler"></div>');
         $('#calc_stege_7').append('<p class="numver_stage">7</p>');
         $('#calc_stege_7').append('<h4>Информация по заказу</h4>');
         $('#calc_stege_7').append('<i class="fas fa-angle-down"></i>');
-        $('#order_info').append('<div id="box-calc-7" class="wraper content"></div>');
+        $('#calcForm').append('<div id="box-calc-7" class="wraper content"></div>');
         $('#box-calc-7').append('<div class="Contact_form"></div>');
         $('.Contact_form').append('<div class="first_row"></div>');
         $('.first_row').append('<input name="name" type="text" placeholder="Имя">');
@@ -885,6 +887,64 @@ function calculate() {
         $('.Contact_form').append('<div class="buttons_buy_glass d-flex justify-content-center"></div>');
         $('.buttons_buy_glass').append('<button id="makeOrder" class="cost_butt buy_buttons">Оформить заказ</button>');
         $('.buttons_buy_glass').append('<button id="buyProduct" class="cost_butt1 buy_buttons" style="display: none">В корзину</button>');
+        $(document).find('#calcForm').validate({
+            rules: {
+                name: {
+                    required: true,
+                    minlength: 2,
+                    maxlength: 35,
+                },
+                email: {
+                    required: true,
+                    email: true,
+                },
+                phone: {
+                    required: true,
+                    digits: true,
+                    minlength: 10,
+                    maxlength: 11,
+                },
+                quantity: {
+                    required: true,
+                    digits: true,
+                    min: 1,
+                    max: 100,
+                },
+                address: {
+                    required: true,
+                    minlength: 10,
+                    maxlength: 100,
+                },
+            },
+            messages: {
+                name: {
+                    required: "Пожалуйста, введите имя",
+                    minlength: "Имя должно содержать минимум 2 буквы",
+                    maxlength: "Максимальное число букв - 35",
+                },
+                email: {
+                    required: "Пожалуйста введите свой email",
+                    email: "Пожалуйста, введите корректный email",
+                },
+                phone: {
+                    required: "Пожалуйста, введите номер телефона",
+                    digits: "Поле содержит только цифры",
+                    minlength: "Минимум 10 цифр",
+                    maxlength: "Максмум 11 цифр",
+                },
+                quantity: {
+                    required: "Пожалуйста, введите количество",
+                    digits: "Поле содержит только цифры",
+                    min: "Минимум 1 шт",
+                    max: "Максмум 100 шт",
+                },
+                address: {
+                    required: "Пожалуйста, введите адрес",
+                    minlength: "Адрес должен содержать минимум 10 буквы",
+                    maxlength: "Максимальное число букв - 100",
+                },
+            }
+        });
     }
 
     $('#order_info').on('click', '#pickup , #inMKAD, #outMKAD, #moskowRegion', function () {
@@ -924,12 +984,9 @@ function calculate() {
         deliveryType = null;
     }
 
-    $('#order_info').on('click', '#makeOrder', function () {
-        getOrderDescription()
-    });
-
     var option;
-    function getOrderDescription() {
+
+    $('#order_info').on('click', '#makeOrder', function () {
         let value;
         let name;
         let orderData = {};
@@ -944,23 +1001,26 @@ function calculate() {
         orderInfo['material'] = material;
         orderInfo['product'] = product;
         orderInfo['depth'] = depth;
-        // orderInfo['shape'] = shape;
+        orderInfo['shape'] = shape;
         orderInfo['format'] = format;
-        findExtraOptions();
-        orderInfo['options'] = option;
+        orderInfo['options'] = findExtraOptions();
         orderData['orderInfo'] = orderInfo;
         orderData['price'] = setPriceValue();
         orderData['orderDate'] = dd + '.' + mm + '.' + yyyy;
         orderData['urgency'] = $('#checkboxPrice').is(':checked');
-        orderData['_token'] = $('meta[name="csrf-token"]').attr('content');
-        console.log(JSON.stringify(orderData));
-        $.post('createOrders', {data: JSON.stringify(orderData), _token: $('meta[name="csrf-token"]').attr('content')}, function (data, status) {
+        if ($('#calcForm').valid()) {
             console.log(orderData);
-            console.log(data);
-            console.log(status);
-        });
-        document.location.assign('#win4');
-    }
+            $.post('createOrders', {
+                data: JSON.stringify(orderData),
+                _token: $('meta[name="csrf-token"]').attr('content')
+            }, function (data, status) {
+                console.log(orderData);
+                console.log(data);
+                console.log(status);
+            });
+            document.location.assign('#win4');
+        }
+    });
 
     function findExtraOptions() {
         option = '';
@@ -995,5 +1055,8 @@ function calculate() {
             opt51 + ' ' + '\n' + ' ' +
             opt6 + ' ' + '\n' + ' ' +
             opt61;
+        return option;
     }
+
+
 }

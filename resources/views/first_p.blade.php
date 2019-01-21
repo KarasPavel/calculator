@@ -58,7 +58,7 @@
                     @foreach($photo as $value)
                         @if($value->type === 'лестницы')
                             {{--{{$value->id}}--}}
-                            <a data-fancybox="" href="{{$value->photo}}">
+                            <a data-fancybox="gallery" href="{{$value->photo}}">
                                 <div class="img_items_stairs">
                                     <img src="{{$value->photo}}">
                                     <p></p>
@@ -70,7 +70,7 @@
                 <div class="tab-pane" id="profile" role="tabpanel">
                     @foreach($photo as $value)
                         @if($value->type === 'полы')
-                            <a data-fancybox="" href="{{$value->photo}}">
+                            <a data-fancybox="gallery1" href="{{$value->photo}}">
                                 <div class="img_items_stairs">
                                     <img src="{{$value->photo}}" alt="1">
                                     <p></p>
@@ -82,7 +82,7 @@
                 <div class="tab-pane" id="messages" role="tabpanel">
                     @foreach($photo as $value)
                         @if($value->type === 'бронирование')
-                            <a data-fancybox="" href="{{$value->photo}}">
+                            <a data-fancybox="gallery3" href="{{$value->photo}}">
                                 <div class="img_items_stairs">
                                     <img src="{{$value->photo}}" alt="1">
                                     <p></p>
@@ -94,7 +94,7 @@
                 <div class="tab-pane" id="settings" role="tabpanel">
                     @foreach($photo as $value)
                         @if($value->type === 'эксклюзив')
-                            <a data-fancybox="" href="{{$value->photo}}">
+                            <a data-fancybox="gallery3" href="{{$value->photo}}">
                                 <div class="img_items_stairs">
                                     <img src="{{$value->photo}}" alt="1">
                                     <p></p>

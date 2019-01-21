@@ -296,5 +296,9 @@
 <script type="text/javascript" src={{asset("js/calculator.js")}}></script>
 <script type="text/javascript" src={{asset("js/libs/functions.js")}}></script>
 
+<script type="text/javascript">
+    $.fancybox.defaults.hash = false;
+</script>
+
 </body>
 </html>

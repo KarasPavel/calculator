@@ -194,8 +194,8 @@
 
                 </div>
                 <div class="soc_icons">
-                    <i class="fab fa-vk"></i>
-                    <i class="fab fa-instagram"></i>
+                    <a href="https://vk.com/" target="_blank"><i class="fab fa-vk"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
                     <!-- <i class="fab fa-vimeo-v"></i> -->
                 </div>
             </div>

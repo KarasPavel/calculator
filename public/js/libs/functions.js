@@ -1,6 +1,8 @@
 $(document).ready(function () {
     sendForm();
     subscribeForm('.formTag a.action_form');
+    bindExpandebleTrue('#box-calc .nav-link', 'nav-link--active');
+    bindExpandebleTrue('.help_glass_items.calc_content2', 'help_glass_items--active');
 });
 
 function sendForm() {
@@ -504,6 +506,8 @@ function getPages() {
             sendForm();
             subscribeForm('.formDynamic a.action_form');
             subscribeForm('.formLower a.action_form');
+
+            bindExpandebleTrue('.help_glass_items.calc_content2', 'help_glass_items--active');
         });
         $('footer').show();
     });
@@ -611,3 +615,15 @@ function locationHashChanged() {
 }
 
 window.onhashchange = locationHashChanged;
+
+function bindExpandebleTrue(elementName, elementClass) {
+    console.log($(elementName));
+    // $(elementName).on('click', function () {
+    //     $(elementName).removeClass(elementClass);
+    //     $(this).addClass(elementClass);
+    // });
+    $("body").on("click", elementName, function(){
+        $(elementName).removeClass(elementClass);
+        $(this).addClass(elementClass);
+    });
+}

@@ -60,7 +60,7 @@
                                     <img src="images/cost_calc_link1.png" alt="">
                                     Консультация</a>
                             </div>
-                            <div>
+                            <div style="display: none">
                                 <a href="#">
                                     <img src="images/cost_calc_link2.png" alt="">
                                     Корзина</a>
@@ -117,5 +117,3 @@
     </div>
     <a class="close" title="Закрыть" href="#close"></a>
 </div>
-
-{{--<script type="text/javascript" src={{asset("js/calculator.js")}}></script>--}}

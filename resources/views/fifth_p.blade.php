@@ -64,7 +64,7 @@
                         @if($value->type === 'скинали с фотопечатью')
                             <a data-fancybox="gallery_Fartucks" href="{{$value->photo}}">
                                 <div class="img_items_stairs">
-                                    <img src="{{$value->small_photo}}" alt="1">
+                                    <img src="{{$value->photo}}" alt="1">
                                     <p></p>
                                 </div>
                             </a>
@@ -76,7 +76,7 @@
                         @if($value->type === 'одноцветные фартуки')
                             <a data-fancybox="gallery_Fartucks1" href="{{$value->photo}}">
                                 <div class="img_items_stairs">
-                                    <img src="{{$value->small_photo}}" alt="1">
+                                    <img src="{{$value->photo}}" alt="1">
                                     <p></p>
                                 </div>
                             </a>
@@ -88,7 +88,7 @@
                         @if($value->type === 'скинали с подсветкой')
                             <a data-fancybox="gallery_Fartucks2" href="{{$value->photo}}">
                                 <div class="img_items_stairs">
-                                    <img src="{{$value->small_photo}}" alt="1">
+                                    <img src="{{$value->photo}}" alt="1">
                                     <p></p>
                                 </div>
                         @endif
@@ -272,9 +272,9 @@
                                 <li>низкая стоимость</li>
                                 <li>ускоренные сроки поставки</li>
                                 <li>идеально для темных тонов (не зеленит)</li>
-                                <li class="dark-mines">сильно зеленит на светлых и белых тонах</li>
-                                <li class="dark-mines">менее "сочные" краски</li>
-                                <li>больше отсвечивает солнечные лучи</li>
+                                <li class="orenge-mines">сильно зеленит на светлых и белых тонах</li>
+                                <li class="orenge-mines">менее "сочные" краски</li>
+                                <li class="orenge-mines">больше отсвечивает солнечные лучи</li>
                             </ul>
                         </div>
 
@@ -309,7 +309,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row fartuks-left-right-items">
                 <div class="col-lg-6">
                     <div class="shower_type_items d-flex">
                         <div class="shower_type_item-left fastener_shower_glass">
@@ -320,8 +320,8 @@
                                 <li>Безопасно в случае разбития</li>
                                 <li>Влагостойкость (не разрушается от влаги)</li>
                                 <li>Идеально для крепления в нишу</li>
-                                <li class="dark-mines">С монтажом не все так просто как кажется</li>
-                                <li>Тяжело демонтировать</li>
+                                <li class="orenge-mines">С монтажом не все так просто как кажется</li>
+                                <li class="orenge-mines">Тяжело демонтировать</li>
                                 {{--<li>Простой и понятный монтаж</li>--}}
                                 {{--<li>Простое согласование схемы</li>--}}
                                 {{--<li>Можно подобрать крышки под Ваш дизайн</li>--}}
@@ -350,8 +350,8 @@
                                 <li>Безопасно в случае разбития</li>
                                 <li>Влагостойкость (не разрушается от влаги)</li>
                                 <li class="pluss">Идеально для крепления в нишу</li>
-                                <li>С монтажом не все так просто как кажется</li>
-                                <li>Тяжело демонтировать</li>
+                                <li class="orenge-mines">С монтажом не все так просто как кажется</li>
+                                <li class="orenge-mines">Тяжело демонтировать</li>
                             </ul>
                         </div>
                     </div>

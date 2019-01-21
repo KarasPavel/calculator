@@ -66,7 +66,7 @@
                 <div class="tab-pane active" id="page3_home" role="tabpanel">
                     @foreach($photo as $value)
                         @if($value->type === 'зеркала на заказ')
-                            <a data-fancybox="" href="{{$value->photo}}">
+                            <a data-fancybox="gallery_Glasses" href="{{$value->photo}}">
                                 <div class="img_items_stairs">
                                     <img src="{{$value->photo}}" alt="1">
                                     <p></p>
@@ -78,7 +78,7 @@
                 <div class="tab-pane" id="page3_home_1" role="tabpanel">
                     @foreach($photo as $value)
                         @if($value->type === 'зеркальное панно')
-                            <a data-fancybox="" href="{{$value->photo}}">
+                            <a data-fancybox="gallery_Glasses1" href="{{$value->photo}}">
                                 <div class="img_items_stairs">
                                     <img src="{{$value->photo}}" alt="1">
                                     <p></p>
@@ -90,7 +90,7 @@
                 <div class="tab-pane" id="page3_profile" role="tabpanel">
                     @foreach($photo as $value)
                         @if($value->type === 'оптовые заказы')
-                            <a data-fancybox="" href="{{$value->photo}}">
+                            <a data-fancybox="gallery_Glasses2" href="{{$value->photo}}">
                                 <div class="img_items_stairs">
                                     <img src="{{$value->photo}}" alt="1">
                                     <p></p>
@@ -102,7 +102,7 @@
                 <div class="tab-pane" id="page3_messages" role="tabpanel">
                     @foreach($photo as $value)
                         @if($value->type === 'эксклюзив решения')
-                            <a data-fancybox="" href="{{$value->photo}}">
+                            <a data-fancybox="gallery_Glasses3" href="{{$value->photo}}">
                                 <div class="img_items_stairs">
                                     <img src="{{$value->photo}}" alt="1">
                                     <p></p>
@@ -248,7 +248,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row glasses-left-right-items">
                 <div class="col-lg-6">
                     <div class="shower_type_items d-flex">
                         <div class="shower_type_item-left fastener_shower_glass">
@@ -259,8 +259,8 @@
                                 <li>Безопасно в случае разбития</li>
                                 <li>Влагостойкость (не разрушается от влаги)</li>
                                 <li>Идеально для крепления в нишу</li>
-                                <li class="dark-mines">С монтажом не все так просто как кажется</li>
-                                <li>Тяжело демонтировать</li>
+                                <li class="orenge-mines">С монтажом не все так просто как кажется</li>
+                                <li class="orenge-mines">Тяжело демонтировать</li>
                             </ul>
                         </div>
                         <a class="galery_kripezh-pos" data-fancybox=""
@@ -271,7 +271,7 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="shower_type_items d-flex">
-                        <a class="galery_kripezh-pos" data-fancybox=""
+                        <a class="galery_kripezh-pos galery_kripezh-pos-right" data-fancybox=""
                            href="images/plastin.jpg">
                             <img class="glasses_img_fastener2 imgg_2" src="images/first_fastener.png" alt="">
                         </a>

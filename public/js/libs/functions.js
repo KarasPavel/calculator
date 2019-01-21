@@ -468,6 +468,19 @@ $('.cost_calc_first_tab').each(function () {
     // });
 });
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 $(window).on('load', function () {
     var $preloader = $('#p_prldr'),
         $svg_anm = $preloader.find('.svg_anm');
@@ -478,12 +491,6 @@ $(window).on('load', function () {
 $('.navbar-nav>li>a').on('click', function () {
     $('.navbar-collapse').collapse('hide');
 });
-
-
-// $('body').on('click', '.next__block', function () {
-//     console.log('cde123')
-// });
-
 
 var page;
 var ssilki = [
@@ -539,6 +546,7 @@ function getPages() {
 
         $('main').fadeOut(500, function () {
             $('main').empty().append(responce).slideDown("slow");
+            calculate();
             sendForm();
             subscribeForm('.formDynamic a.action_form');
             subscribeForm('.formLower a.action_form');

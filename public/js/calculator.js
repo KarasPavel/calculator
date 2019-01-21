@@ -1,4 +1,11 @@
-$(document).ready(function () {
+// $(document).ready(function () {
+//
+//
+//     calculate()
+// });
+
+function calculate() {
+
 
     $('.cost_calc_first_tab').each(function () {
         var el = $(this);
@@ -14,6 +21,7 @@ $(document).ready(function () {
             });
         });
     });
+
 
     var deliveryBuy;
     var totalPrice = 0;
@@ -947,10 +955,11 @@ $(document).ready(function () {
         orderData['_token'] = $('meta[name="csrf-token"]').attr('content');
         console.log(JSON.stringify(orderData));
         $.post('createOrders', {data: JSON.stringify(orderData), _token: $('meta[name="csrf-token"]').attr('content')}, function (data, status) {
-                console.log(orderData);
-                console.log(data);
-                console.log(status);
-            });
+            console.log(orderData);
+            console.log(data);
+            console.log(status);
+        });
+        document.location.assign('#win4');
     }
 
     function findExtraOptions() {
@@ -987,4 +996,4 @@ $(document).ready(function () {
             opt6 + ' ' + '\n' + ' ' +
             opt61;
     }
-});
+}

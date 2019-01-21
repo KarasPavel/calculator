@@ -141,13 +141,13 @@
                                             <th>Email</th>
                                             <th>Телефон</th>
                                             <th>Адресс</th>
-                                            <th>Способ Доставки</th>
-                                            <th>Срочно</th>
+                                            <th>Доставка</th>
+                                            <th>Срочность</th>
                                             <th>Информация о заказе</th>
                                             <th>Дата изготовления</th>
                                             <th>Цена</th>
                                             <th>Комментарий</th>
-                                            {{--<th>Day of the week</th>--}}
+                                            <th>Количество</th>
                                             {{--<th>Start time</th>--}}
                                             {{--<th>End time</th>--}}
                                             <th>Статус</th>
@@ -176,6 +176,33 @@
                                                 <td>
                                                     {{$value->phone}}
                                                 </td>
+                                                <td>
+                                                    {{$value->address}}
+                                                </td>
+                                                <td>
+                                                    {{$value->delivery}}
+                                                </td>
+                                                <td>
+                                                    {{$value->urgency}}
+                                                </td>
+                                                <td>
+                                                    {{$value->order_data}}
+                                                </td>
+                                                <td>
+                                                    {{$value->order_date}}
+                                                </td>
+                                                <td>
+                                                    {{$value->price}}
+                                                </td>
+                                                <td>
+                                                    {{$value->comment}}
+                                                </td>
+                                                <td>
+                                                    {{$value->quantity}}
+                                                </td>
+                                                <td>
+                                                    {{$value->status}}
+                                                </td>
                                                 {{--<td>--}}
                                                     {{--{{$value->specialist}}--}}
                                                 {{--</td>--}}
@@ -188,18 +215,18 @@
                                                 {{--<td>--}}
                                                 {{--{{$value->end_time}}--}}
                                                 {{--</td>--}}
-                                                <td>
-                                                    {{$value->status}}
-                                                </td>
+                                                {{--<td>--}}
+                                                    {{--{{$value->status}}--}}
+                                                {{--</td>--}}
                                                 <td>
                                                     {{$value->created_at}}
                                                 </td>
                                                 <td>
                                                     {{$value->updated_at}}
                                                 </td>
-                                                <td>
-                                                    {{$value->comment}}
-                                                </td>
+                                                {{--<td>--}}
+                                                    {{--{{$value->comment}}--}}
+                                                {{--</td>--}}
                                                 @if($user->hasRole('admin|junior_admin|moderator'))
                                                     <td>
                                                         <a href="{{route('editApplication',$value->id)}}">+</a>

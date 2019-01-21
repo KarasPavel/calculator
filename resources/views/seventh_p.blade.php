@@ -29,7 +29,7 @@
             </div>
         </div>
     </section>
-    <section>
+    <section class="calculator-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4">
@@ -84,7 +84,7 @@
                             <div class="stairs_and_flooring_buttons stairs_and_flooring_buttons_calculator  d-flex">
                                 <a class="nav-link" id="glass" data-toggle="tab" href="#">Стекло</a>
                                 <a class="nav-link" id="mirror" data-toggle="tab" href="#">Зеркало</a>
-                                <a class="inav-link" id="triplex" data-toggle="tab" href="#">Триплекс</a>
+                                <a class="nav-link" id="triplex" data-toggle="tab" href="#">Триплекс</a>
                             </div>
                         </div>
                     </div>

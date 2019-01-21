@@ -436,16 +436,16 @@ function calculate() {
         $('#shape').append('<div id="box-calc-4" class="wraper content"></div>');
         $('#box-calc-4').append('<div class="Size_calc"></div>');
         $('.Size_calc').append('<div id="rectangle" class="item_size_calc"></div>');
-        $('#rectangle').append('<img src="images/figure_size1.png" alt="">' +
+        $('#rectangle').append('<div class="img-container"><img src="images/figure_size1.png" alt=""></div>' +
             '<p>Прямоугольник</p>');
         $('.Size_calc').append('<div id="circle" class="item_size_calc"></div>');
-        $('#circle').append('<img src="images/figure_size2.png" alt="">' +
+        $('#circle').append('<div class="img-container"><img src="images/figure_size2.png" alt=""></div>' +
             '<p>Круг</p>');
         $('.Size_calc').append('<div id="oval" class="item_size_calc"></div>');
-        $('#oval').append('<img src="images/figure_size3.png" alt="">' +
+        $('#oval').append('<div class="img-container"><img src="images/figure_size3.png" alt=""></div>' +
             '<p>Овал</p>');
         $('.Size_calc').append('<div id="another" class="item_size_calc"></div>');
-        $('#another').append('<img src="images/figure_size4.png" alt="">' +
+        $('#another').append('<div class="img-container"><img src="images/figure_size4.png" alt=""></div>' +
             '<p>ИНАЯ ФОРМА</p>');
         $('#circle').click(function () {
             shapeId = this.id;

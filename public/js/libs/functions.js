@@ -1,6 +1,8 @@
 $(document).ready(function () {
     sendForm();
     subscribeForm('.formTag a.action_form');
+    bindExpandebleTrue('#box-calc .nav-link', 'nav-link--active');
+    bindExpandebleTrue('.help_glass_items.calc_content2', 'help_glass_items--active');
 });
 
 function sendForm() {
@@ -39,21 +41,21 @@ function sendForm() {
         if (typeof currentCheckStatus !== 'undefined') {
             $(this).find('input[type="checkbox"]').removeAttr('check');
             $('.button_next > a ').addClass('disable');
-            
+
         } else {
             $(this).find('input[type="checkbox"]').attr('check', 'true');
             $('.button_next > a ').removeClass('disable');
-            
+
         }
-    });  
-    
-    
-    
-    
+    });
+
+
+
+
     // $('.true').click(function () {
     //     option3 = '';
     //     option3 = $(this).find('.formTag').text();
-              
+
     // });
     $('.chekbox_sect_6').on('change', '#chbx1, #chbx2, #chbx3, #chbx4, #chbx5, #chbx6',
         function () {
@@ -152,11 +154,11 @@ $(document).ready(function(){
         if (typeof currentCheckStatus !== 'undefined') {
             $(this).find('input[type="checkbox"]').removeAttr('check');
             $('.button_forms > a ').removeClass('disable');
-            
+
         } else {
             $(this).find('input[type="checkbox"]').attr('check', 'true');
             $('.button_forms > a ').addClass('disable');
-            
+
         }
     });
 });
@@ -189,8 +191,6 @@ function subscribeForm(formSelector) {
         $('.help_glass_items').removeClass('help_glass_items-active');
         $(this).addClass('help_glass_items-active');
     });
-    
-    
     $('.chekbox_sect_6').on('change', '#chbx1, #chbx2, #chbx3, #chbx4, #chbx5, #chbx6',
         function () {
             findCheckboxes();
@@ -366,7 +366,7 @@ function resize() {
 }
 
 
-// 
+//
 var base = {
     // search element class
     findClass: function (str, node) {
@@ -468,19 +468,6 @@ $('.cost_calc_first_tab').each(function () {
     // });
 });
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 $(window).on('load', function () {
     var $preloader = $('#p_prldr'),
         $svg_anm = $preloader.find('.svg_anm');
@@ -550,6 +537,8 @@ function getPages() {
             sendForm();
             subscribeForm('.formDynamic a.action_form');
             subscribeForm('.formLower a.action_form');
+
+            bindExpandebleTrue('.help_glass_items.calc_content2', 'help_glass_items--active');
         });
         $('footer').show();
     });
@@ -658,4 +647,14 @@ function locationHashChanged() {
 
 window.onhashchange = locationHashChanged;
 
-// 
+function bindExpandebleTrue(elementName, elementClass) {
+    console.log($(elementName));
+    // $(elementName).on('click', function () {
+    //     $(elementName).removeClass(elementClass);
+    //     $(this).addClass(elementClass);
+    // });
+    $("body").on("click", elementName, function(){
+        $(elementName).removeClass(elementClass);
+        $(this).addClass(elementClass);
+    });
+}

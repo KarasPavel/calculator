@@ -21,8 +21,9 @@ Route::middleware('auth')->group(function () {
     Route::get('logout', 'Auth\LoginController@logout')->name('logout');
 });
 
+//create Order and Applications
 Route::post('createApplications', 'Admin\ApplicationsController@createApplications')->name('createApplications');
-//Route::get('/home', 'HomeController@index')->name('home');
+Route::post('createOrders', 'Admin\OrdersController@createOrders')->name('createOrders');
 
 
 //uploadPhotoStairs

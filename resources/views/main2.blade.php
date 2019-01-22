@@ -3663,7 +3663,7 @@
                                 <label>
                                     <input id="checkboxPrice" type="checkbox">
                                     <span class="fake-checkbox" aria-hidden="true"></span>
-                                    <span class="label">Срочноо</span>
+                                    <span class="label">Срочно</span>
                                 </label> <br>
                                 <button class="cost_butt">Оформить заказ</button>
                                 <button class="cost_butt1">В корзину</button>

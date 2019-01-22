@@ -4050,7 +4050,7 @@
                                         <img src="images/figure_size4.png" alt="">
                                         <p>ИНАЯ ФОРМА</p>
                                     </div>
-                                    <div class="item_size_calc">
+                                    <div class="item_size_calc shapes-size">
                                         <p>Введите значения <br>
                                             (мм)</p>
                                         <div class="input_touch_size">

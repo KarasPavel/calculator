@@ -34,9 +34,9 @@
             <div class="row">
                 <div class="col-lg-4">
                     <div class="cost_calculation">
-                        <h4>стоимость заказа</h4>
+                        <h4 class="order-cost">стоимость заказа</h4>
                         <input disabled id="price" type="text">
-                        <h4>ГОТОВНОСТЬ НА:</h4>
+                        <h4 class="readiness">ГОТОВНОСТЬ НА:</h4>
                         <p id="urgency"></p>
                         <div id="cost_calculation_day" class="date_calc">
                             <input disabled id="calculator_day" type="day">
@@ -47,7 +47,7 @@
                         <label>
                             <input id="checkboxPrice" type="checkbox">
                             <span class="fake-checkbox" aria-hidden="true"></span>
-                            <span class="label">Срочноо</span>
+                            <span class="label">Срочное изготовление</span>
                         </label>
                         <br>
                         <br>
@@ -58,17 +58,17 @@
                             <div>
                                 <a href="#win1">
                                     <img src="images/cost_calc_link1.png" alt="">
-                                    Консультация</a>
+                                    <span>Консультация</span></a>
                             </div>
                             <div style="display: none">
                                 <a href="#">
                                     <img src="images/cost_calc_link2.png" alt="">
-                                    Корзина</a>
+                                    <span>Корзина</span></a>
                             </div>
                             <div>
                                 <a href="#win2">
                                     <img src="images/cost_calc_link3.png" alt="">
-                                    Замершик</a>
+                                    <span>Замерщик</span></a>
                             </div>
                         </div>
                     </div>

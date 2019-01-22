@@ -1593,10 +1593,9 @@ input[type="checkbox"] {
 	letter-spacing: 0.52px;
 }
 .first_chekbox{
-	margin-right: 35px;
+	/*margin-right: 35px;*/
 	display: flex;
 	flex-direction: column;
-
 }
 .ssecond_chekbox{
 	display: flex;
@@ -2344,7 +2343,7 @@ button:focus{
 	background: url(images/bg_calculations.png)no-repeat center center;
 	background-size: cover;
 	height:100%;
-	padding-top: 200px;
+	padding-top: 115px;
 }
 .calculations_sec1_items{
 	text-align: center;
@@ -2363,26 +2362,35 @@ button:focus{
 }
 .cost_calculation{
 	text-align: center;
-	padding: 10px 20px ;
+	padding: 30px 20px ;
 	box-shadow: 0 0 66px rgba(0, 0, 0, 0.14);
 	background-color: #ebf3f5;
-
+	font-size: 13px;
+	position: sticky;
+	top: 100px;
+	min-width: 350px;
 }
 .cost_calculation h4{
-	margin: 10px 0;
 	text-align: center;
 	color: #474747;
 	font-family: "Open Sans";
 	font-size: 19px;
 	font-weight: 300;
-	line-height: 25.02px;
+	/*line-height: 25.02px;*/
 	text-transform: uppercase;
-	/* Text style for "стоимость" */
 	letter-spacing: 3.6px;
+	margin-bottom: 10px;
+}
+.cost_calculation h4.order-cost {
+
+}
+.cost_calculation h4.readiness {
+	margin-top: 10px;
 }
 .cost_calculation input{
 	padding: 5px 10px;
 	border: none;
+	border-radius: 2px;
 	height: 50px;
 	box-shadow: 0 8px 14px rgba(34, 102, 187, 0.21);
 	background-color: #fbfbfb;
@@ -2418,15 +2426,20 @@ button:focus{
 	transition: all .7s;
 }
 .cost_calculation p{
-
 	color: #3e5669;
 	font-family: "Open Sans";
 	font-size: 13px;
 	font-weight: 300;
-	line-height: 28.02px;
+	/*line-height: 28.02px;*/
 	/* Text style for "(без срочн" */
 	letter-spacing: 0.52px;
-	margin-bottom: 5px;
+	/*margin-bottom: 5px;*/
+}
+.cost_calculation p#urgency {
+	margin-bottom: 10px;
+}
+.cost_calculation p#dayName {
+	margin-top: 10px;
 }
 .cost_butt{
 	box-shadow: 0 8px 14px rgba(34, 102, 187, 0.21);
@@ -2465,7 +2478,8 @@ button:focus{
 }
 .cost_calculation__link{
 	display: flex;
-
+	justify-content: space-around;
+	text-align: center;
 }
 .calc_content2{
 	height: 100%;
@@ -2482,14 +2496,14 @@ button:focus{
 /* } */
 .cost_calculation__link img{
 	height: 42px;
+	display: block;
+	margin: 0 auto 10px;
 }
 .cost_calculation__link a{
 	color: #8b8e91;
 	font-family: "Open Sans";
 	font-size: 13px;
 	font-weight: 400;
-	line-height: 50px;
-	/* Text style for "Замерщик" */
 	letter-spacing: 0.78px;
 
 }
@@ -2534,7 +2548,8 @@ button:focus{
 .head i:focus{
 	transform: rotate(180deg);
 }
-.choose_thiknes .nav-tabs .nav-link{
+.choose_thiknes .nav-tabs .nav-link,
+.text-kromka .nav-tabs .nav-link {
 	height: 60px;
 	width: 60px;
 	background-color: #e0e4e3;
@@ -2543,7 +2558,10 @@ button:focus{
 	padding: 18px 0px;
 	text-align: center;
 }
-.choose_thiknes .nav-tabs .nav-item.show .nav-link, .choose_thiknes .nav-tabs .nav-link.active{
+.choose_thiknes .nav-tabs .nav-item.show .nav-link, .choose_thiknes .nav-tabs .nav-link.active,
+.choose_thiknes .nav-tabs .nav-item .nav-link:hover,
+.text-kromka .nav-tabs .nav-item.show .nav-link, .text-kromka .nav-tabs .nav-link.active,
+.text-kromka .nav-tabs .nav-item .nav-link:hover {
 	background-color: #3062ab !important;
 	border-radius: 3px;
 	box-shadow: none;
@@ -2551,12 +2569,14 @@ button:focus{
 	background-image: none;
 	color:#ffffff;
 }
-.choose_thiknes .nav-tabs{
+.choose_thiknes .nav-tabs,
+.text-kromka .nav-tabs {
 	justify-content: space-around;
 	border-bottom: none;
 	margin-top: 25px;
 }
-.choose_thiknes ul li{
+.choose_thiknes ul li,
+.text-kromka ul li {
 	margin-right: 35px;
 	margin-top: 15px;
 }
@@ -2583,7 +2603,7 @@ button:focus{
 }
 .item_size_calc{
 	text-align: center;
-	margin-left: 5px;
+	margin-right: 15px;
 }
 .item_size_calc p{
 	color: #3e5669;
@@ -2599,13 +2619,23 @@ button:focus{
 	/*line-height: 20px;*/
 }
 .input_touch_size{
-	display: flex;
-	justify-content: center
+	/*display: flex;*/
+	/*justify-content: center;*/
 }
-.input_touch_size input{
-	width: 50px;
-	height: 45px;
+
+.input_touch_size > div {
+	display: inline-block;
+}
+
+.input_touch_size input {
+	width: 72px;
+	height: 51px;
 	margin-left: 5px;
+	padding: 5px 10px;
+	border: none;
+	border-radius: 2px;
+	box-shadow: 0 8px 14px rgba(34, 102, 187, 0.21);
+	background-color: #fbfbfb;
 }
 .video_glass{
 	justify-content: center
@@ -2627,7 +2657,7 @@ iframe{
 	background: url(images/gimalay-2.png)no-repeat top left;
 	justify-content: center;
 	margin-top: 30px;
-	margin: 30px 32px;
+	margin: 30px 0px;
 	background-size: cover;
 	/* background-position-x: -32px; */
 	/* background-position-y: -19px; */
@@ -2642,6 +2672,7 @@ iframe{
 }
 .text-kromka{
 	display: flex;
+	justify-content: space-between;
 }
 .text-kromka p{
 	text-align: center;
@@ -2650,12 +2681,17 @@ iframe{
 	font-size: 13px;
 	font-weight: 300;
 	/* Text style for "Кромка буд" */
-	font-family: "Open Sans Light";
+
 	font-weight: 300;
 	letter-spacing: 0.52px;
 }
+.text-kromka p span {
+	font-weight: bold;
+	color: #3062ab;
+	text-tarnsform: uppercase;
+}
 .chekbox_sect_6{
-	justify-content: space-around
+	justify-content: space-between;
 }
 .chekbox_sect_6 input{
 	margin-bottom: 15px;
@@ -2671,12 +2707,12 @@ iframe{
 	letter-spacing: 0.52px;
 }
 .Contact_form input{
-	width: 200px;
+	width: 100%;
 	height: 59px;
 	box-shadow: 0 8px 14px rgba(34, 102, 187, 0.21);
 	background-color: #fbfbfb;
 	border: none;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 }
 .up_input input{
 	margin-right: 5px;
@@ -2980,6 +3016,7 @@ textarea {
 }
 .calculator-section {
 	padding: 30px 0;
+	min-height: 425px;
 }
 
 .stairs_and_flooring_buttons_calculator .nav-link--active {
@@ -3044,11 +3081,20 @@ textarea {
     padding: 10px 15px 10px 40px;
 }
 /* calculator page - hover effects for geometric figures */
-
-.item_size_calc .img-container{
-	position: relative;
+.item_size_calc .img-container,
+.item_size_calc p {
+	cursor: url(images/cursor_click.png), pointer !important;
 }
-.item_size_calc .img-container:after{
+.item_size_calc .img-container {
+	position: relative;
+	height: 130px;
+	line-height: 130px;
+}
+.item_size_calc .img-container:after,
+.rectangle--active .img-container:after,
+.circle--active .img-container:after,
+.oval--active .img-container:after,
+.another--active .img-container:after {
 	position: absolute;
 	display: none;
 	content: '';
@@ -3057,29 +3103,144 @@ textarea {
 	right: 0;
 	left: 0;
 	background-color: #3062ab;
-
 }
-.item_size_calc:hover .img-container:after,
-.item_size_calc--active {
+.rectangle--active .img-container:after,
+.circle--active .img-container:after,
+.oval--active .img-container:after,
+.another--active .img-container:after,
+.item_size_calc:hover .img-container:after {
 	display:block;
 }
-#rectangle:hover .img-container:after {
+#rectangle:hover .img-container:after,
+.rectangle--active .img-container:after {
 	border-radius: 4px;
 }
-#circle:hover .img-container:after {
+#circle:hover .img-container:after,
+.circle--active .img-container:after {
 	border-radius: 50%;
 	background-color: #3062ab;
+	height: 105px;
+	top: 15px;
 }
-#oval:hover .img-container:after {
+#oval:hover .img-container:after,
+.oval--active .img-container:after {
 	border-radius: 50%;
+	height: 96px;
+	top: 19px;
 }
-#another:hover .img-container:after {
-	background: url(images/another-hover.png);
+#another:hover .img-container:after,
+.another--active .img-container:after {
+	background: url(images/another-hover.png) no-repeat 50%;
+}
+.shapes-size {
+	align-self: baseline;
+	margin-right: 0;
+	margin-left: 15px;
+}
+.shapes-size p {
+	line-height: 30px;
+	text-transform: none;
+	letter-spacing: 1.2px;
 }
 
 
+/*calculator cost info block*/
+.cost_calculation__link img {
+
+}
+.cost_calculation span.label {
+	font-size: 13px;
+	color: #3e5669;
+}
+
+.text-kromka .nav-tabs {
+	justify-content: space-around;
+	border-bottom: none;
+	margin-top: 0;
+	margin-bottom: 20px;
+	width: 100%;
+}
+.text-kromka ul li {
+	margin-right: 35px;
+	margin-top: 15px;
+}
+.text-kromka .nav-tabs .nav-link {
+	height: 60px;
+	width: 85px;
+	background-color: #e0e4e3;
+	border-radius: 3px;
+	font-size: 1.4rem;
+	padding: 18px 0px;
+	text-align: center;
+	color: inherit;
+}
+
+.calculator-section input,
+.calculator-section  select{
+	outline: none;
+}
+.chekbox_sect_6 input,
+.chekbox_sect_6 select {
+	margin-bottom: 0;
+	outline: none;
+	margin-top: 10px;
+}
+.chekbox_sect_6 input,
+.chekbox_sect_6 select {
+	padding: 5px 10px;
+	border: none;
+	border-radius: 2px;
+	box-shadow: 0 8px 14px rgba(34, 102, 187, 0.21);
+	background-color: #fbfbfb;
+}
+.Contact_form .second_row {
+	position: relative;
+	align-items: flex-start;
+}
+.Contact_form .first_row:after,
+.Contact_form .second_row:after{
+	display: table;
+	content: '';
+	clear: both;
+}
+.Contact_form .first_row > div,
+.Contact_form .second_row > div {
+	float: left;
+	position: relative;
+}
+.Contact_form .first_row > div > label,
+.Contact_form .second_row > div > label{
+	display: block;
+	font-size: 12px;
+	position: absolute;
+	bottom: 15px;
+}
+.Contact_form .second_row > div > label{
+	/*bottom: 25px;*/
+	bottom: 15px;
+	width: 248px;
+}
+
+.Contact_form .down_buttons_distances {
+	position: absolute !important;
+	bottom: 0;
+}
 
 /* Calculator triplex */
 .triplex-order-info {
+	font-size: 20px;
+	line-height: 25px;
+	color: #3e5669;
+	margin-bottom: 10px
+}
+#material .contacts {
+	color: #3e5669;
+	font-size: 20px;
+	line-height: 30px;
+	display: block;
+	border-bottom: 2px dashed #3e5669;
+	width: fit-content;
+}
+#material .contacts:hover {
 
 }

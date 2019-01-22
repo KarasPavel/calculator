@@ -25,8 +25,8 @@
                 <span class="white header_small_text"><i class="fas fa-map-marker-alt"></i> г. Москва</span>
                 <span class="white header_small_text"><i class="far fa-clock"></i>пн - сб 10 00 - 19 00</span>
                 <a href="mailto:info@v-t-x.ru"><span class="white header_small_text"><i class="far fa-envelope"></i>info@v-t-x.ru</span></a>
-                <span class="white header_small_text"><a href="#">Все услуги</a></span>
-                <span class="white header_small_text"><a href="#">Контакты</a></span>
+                <span class="white header_small_text"><a href="">Все услуги</a></span>
+                <span class="white header_small_text"><a href="#kontakty">Контакты</a></span>
                 <div class="header_call-back">
                     <p class="header_text">+7 (499) 677 20 67</p>
                     <div class="call-back_header">

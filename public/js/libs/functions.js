@@ -539,6 +539,7 @@ function getPages() {
             subscribeForm('.formLower a.action_form');
 
             bindExpandebleTrue('.help_glass_items.calc_content2', 'help_glass_items--active');
+            setActiveShape('.item_size_calc', '');
         });
         $('footer').show();
     });
@@ -648,13 +649,37 @@ function locationHashChanged() {
 window.onhashchange = locationHashChanged;
 
 function bindExpandebleTrue(elementName, elementClass) {
-    console.log($(elementName));
-    // $(elementName).on('click', function () {
-    //     $(elementName).removeClass(elementClass);
-    //     $(this).addClass(elementClass);
-    // });
     $("body").on("click", elementName, function(){
         $(elementName).removeClass(elementClass);
+        $(this).addClass(elementClass);
+    });
+}
+function setActiveShape(elementName, elementClass) {
+    var firstClass;
+    $("body").on("click", elementName, function(){
+
+
+        $(elementName).removeClass(firstClass);
+        var elementID = $(this).attr( "id");
+
+        if (elementID == 'rectangle') {
+            elementClass = 'rectangle--active';
+        }
+        if (elementID == 'circle') {
+            elementClass = 'circle--active';
+        }
+        if (elementID == 'oval') {
+            elementClass = 'oval--active';
+        }
+        if (elementID == 'another') {
+            elementClass = 'another--active';
+        }
+        if (elementID == elementName) {
+            elementClass = '';
+        }
+
+        firstClass = elementClass;
+
         $(this).addClass(elementClass);
     });
 }

@@ -698,7 +698,7 @@
                         </div>
                         <div class="button_next">
                             {{--<a class="next__block">отправить</a>--}}
-                            <a class="action_form disabled" href="javascript:void(0);" role="button" aria-disabled="true">отправить</a>
+                            <a class="action_form disable" href="javascript:void(0);" role="button" aria-disabled="true">отправить</a>
                         </div>
                     </div>
                 </div>

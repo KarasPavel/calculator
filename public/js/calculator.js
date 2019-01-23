@@ -179,19 +179,20 @@ function calculate() {
     };
 
     function setPriceValue() {
+        let productPrice;
         if (materialTypeId === 'triplex') {
             totalPrice = triplexSum + offsetSum;
             return Math.round(totalPrice);
         } else {
-            totalPrice = getProcessingPrice()
+            productPrice = getProcessingPrice()
                 + getMaterialPrice()
                 + getHardeningPrice()
-                + getOptionalPrice()
-                + getDeliveryPrice();
+                + getOptionalPrice();
+            totalPrice = productPrice * urgencyPrice * checkQuantity() + getDeliveryPrice();
             if (!totalPrice) {
                 return 0;
             } else {
-                return Math.round(totalPrice * urgencyPrice) * checkQuantity();
+                return Math.round(totalPrice);
             }
         }
     }

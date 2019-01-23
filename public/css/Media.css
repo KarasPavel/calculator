@@ -7,12 +7,7 @@
 	.header_small_text{
 		font-size: 11px;
 	}
-	.services_items{
-		height: 100px;
-		display:flex;
-    	justify-content: space-between;
-    	align-items: center;
-	}
+
 	.header_call-back p{
 		font-size: 18px;
 	}
@@ -72,7 +67,7 @@
 		padding: 30px 15px;
 	}
 	.services_items img{
-		margin-right: 95px
+		margin-right: 15px
 	}
 	.advantages h2{
 		line-height: 35px;
@@ -117,13 +112,14 @@
 	.up_form, .down_form{
 		flex-direction: column;
 	}
-	.up_form input, .down_form input{
-		margin-top: 15px;
+	.up_form input
+	/*, .down_form input{*/ {
+		margin-top: 25px;
 		margin-left: 0;
 	}
 	.down_form div{
 		margin-right: 0;
-		margin: 15px auto;
+		/*margin: 15px auto;*/
 	}
 }
 /*.......................page-Contacts....................*/
@@ -236,6 +232,7 @@
 	}
 	.video_our iframe{
 		width: auto;
+		margin: 10px 0;
 	}
 	.bg_types_door_items{
 		margin: 0 auto;
@@ -280,7 +277,7 @@
 		margin: auto;
 	}
 	.video_glass iframe{
-		width: auto;
+		/*width: auto;*/
 	}
 	.logo{
 		width: 115px;
@@ -355,7 +352,8 @@
 }
 
 @media screen and (min-width: 992px) {
-	.glass_door_item {
+	.glass_door_item,
+	.glass_door_item_down {
 	 	width: 543px;
 	}
 }

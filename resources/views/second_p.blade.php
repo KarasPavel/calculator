@@ -607,9 +607,9 @@
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="help_glaas_type help_glaas_type2 d-flex">
-                        <div id="chekbox_sect_6" class="chekbox_sect_6 d-flex">
-                            <div class="first_chekbox">
+                    <div class="help_glaas_type help_glaas_type2">
+                        <div id="chekbox_sect_6" class="chekbox_sect_6 row no-gutters justify-content-center">
+                            <div class="first_chekbox  col-md-5">
                                 <label>
                                     <input id="chbx1" type="checkbox">
                                     <span class="fake-checkbox" aria-hidden="true"></span>
@@ -626,7 +626,7 @@
                                     <span class="label">Зеркало в ванну</span>
                                 </label>
                             </div>
-                            <div class="ssecond_chekbox">
+                            <div class="ssecond_chekbox col-md-6">
                                 <label>
                                     <input id="chbx4" type="checkbox">
                                     <span class="fake-checkbox" aria-hidden="true"></span>
@@ -665,15 +665,19 @@
             <form>
                 <div class="row formDynamic">
                     <div class="col-lg-12">
-                        <div class="help_glaas_type help_glaas_type_last ">
-                            <div class="up_form ">
-                                {{--<input type="text" placeholder="Your name">--}}
-                                <input type="text" name="name" placeholder="Имя">
-                                <input type="text" name="phone" placeholder="Телефон">
+                        <div class="help_glaas_type help_glaas_type_last col-md-9">
+                            <div class="up_form row contact-form--row">
+                                <div class="col-md-6">
+                                    <input type="text" name="name" placeholder="Ваше имя">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" name="phone" placeholder="Ваш телефон">
+                                </div>
                             </div>
-                            <div class="down_form down_form_2">
-                                {{--<input type="text" placeholder="EMail">--}}
-                                <input type="text" name="email" placeholder="email">
+                            <div class="down_form down_form_2 row contact-form--row">
+                                <div class="col-md-6">
+                                    <input type="text" name="email" placeholder="Электронная почта">
+                                </div>
                             </div>
                             <div class="checkbox">
                                 <label>

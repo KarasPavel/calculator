@@ -22,16 +22,22 @@
         <nav class="navbar fixed-top navbar-expands navbar-dark ">
             <div class="heder_nav_navbar">
                 <a class="navbar-brand" href=""><img src="images/Viditex_logo.png" alt="" class="logo"></a>
-                <span class="white header_small_text"><i class="fas fa-map-marker-alt"></i> г. Москва</span>
-                <span class="white header_small_text"><i class="far fa-clock"></i>пн - сб 10 00 - 19 00</span>
+                <div class="header-span-block">
+                    <span class="white header_small_text"><i class="fas fa-map-marker-alt"></i> г. Москва</span>
+                    <span class="white header_small_text"><i class="far fa-clock"></i>пн - сб 10 00 - 19 00</span>
+                </div>
                 <a href="mailto:info@v-t-x.ru"><span class="white header_small_text"><i class="far fa-envelope"></i>info@v-t-x.ru</span></a>
-                <span class="white header_small_text"><a href="">Все услуги</a></span>
-                <span class="white header_small_text"><a href="#kontakty">Контакты</a></span>
+                <div class="header-span-block">
+                    <span class="white header_small_text"><a href="">Все услуги</a></span>
+                    <span class="white header_small_text"><a href="#kontakty">Контакты</a></span>
+                </div>
                 <div class="header_call-back">
-                    <p class="header_text">+7 (499) 677 20 67</p>
+                    <p class="header_text"><a href="tel:+74996772067">+7 (499) 677 20 67</a></p>
                     <div class="call-back_header">
-                        <img src="images/phone_fontasome.png" alt="">
-                        <a class="" id="" href="#win1">Заявка на звонок</a>
+                        <a class="" id="" href="#win1">
+                            <img src="images/phone_fontasome.png" alt="">
+                            Заявка на звонок
+                        </a>
                     </div>
                 </div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -187,10 +193,12 @@
             </div> -->
             <div class="col-lg-3 col-md-3">
                 <div class="contacts">
-                    <p>+7 (499) 677 20 67</p>
+                    <p><a href="tel:+74996772067">+7 (499) 677 20 67</a></p>
                     <div class="call-back">
-                        <img src="images/phone_fontasome.png" alt="">
-                        <a href="#win1">Заявка на звонок</a>
+                        <a href="#win1">
+                            <img src="images/phone_fontasome.png" alt="">
+                            Заявка на звонок
+                        </a>
                     </div>
 
 

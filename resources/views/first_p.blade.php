@@ -215,13 +215,19 @@
             </div>
             <form>
                 <div class="row formLower">
-                    <div class="col-lg-12">
-                        <div class="up_form">
-                            <input type="text" name="name" placeholder="имя">
-                            <input type="text" name="phone" placeholder="телефон">
+                    <div class="help_glaas_type_last col-md-9">
+                        <div class="up_form row contact-form--row">
+                            <div class="col-md-6">
+                                <input type="text" name="name" placeholder="Ваше имя">
+                            </div>
+                            <div class="col-md-6">
+                                <input type="text" name="phone" placeholder="Ваш телефон">
+                            </div>
                         </div>
-                        <div class="down_form">
-                            <input type="text" name="email" placeholder="email">
+                        <div class="down_form down_form_2 row contact-form--row">
+                            <div class="col-md-6">
+                                <input type="text" name="email" placeholder="Электронная почта">
+                            </div>
                         </div>
                         <div class="checkbox">
                             <label class="truee">

@@ -57,6 +57,9 @@ a, .navbar-toggler:not(:disabled):not(.disabled), label, button{
 iframe{
 	cursor: url(images/cursor_click.png), pointer !important;
 }
+input, textarea {
+	outline: none;
+}
 .disable{
 	pointer-events: none;
 	background: #dec19d !important;
@@ -129,7 +132,11 @@ iframe{
 	/* Text style for "Заявка на" */
 	color: #ffffff;
 	letter-spacing: 2.6px;
+	/*border-bottom:3px dashed #d1d1d1;*/
+}
+.call-back_header a {
 	border-bottom:3px dashed #d1d1d1;
+	padding: 0 0 5px;
 }
 .bg_sections1{
 	height: 600px;
@@ -283,7 +290,7 @@ iframe{
 	text-align: center;
 	border: 2px solid #ffffff;
 	background-color: #dfe2e1;
-	padding: 30px 55px;
+	padding: 30px 10px;
 	margin-bottom: 25px;
 	border: 5px solid #dfe2e1;
 
@@ -482,7 +489,11 @@ footer{
 	/* Text style for "Заявка на" */
 	color: #ffffff;
 	letter-spacing: 2.6px;
-	border-bottom:3px dashed #d1d1d1;
+	/*border-bottom:3px dashed #d1d1d1;*/
+}
+.call-back a {
+	border-bottom: 3px dashed #d1d1d1;
+	padding: 0 0 5px;
 }
 .soc_icons{
 	text-align: right;
@@ -798,29 +809,31 @@ footer{
 	letter-spacing: 0.52px;
 }
 .up_form{
-	margin-top: 40px;
-	display: flex;
-	justify-content: center;
+	/*margin-top: 40px;*/
+	/*display: flex;*/
+	/*justify-content: center;*/
 }
 .up_form input{
 	border: none;
-	margin-right: 25px;
-	padding: 15px 5px;
+	/*margin-right: 25px;*/
+	padding: 15px 10px;
 	box-shadow: 0 8px 14px rgba(34, 102, 187, 0.21);
 	background-color: #fbfbfb;
+	width: 100%;
 }
 .down_form{
-	margin-top: 20px;
-	display: flex;
-	justify-content: center;
+	margin-top: 25px;
+	/*display: flex;*/
+	/*justify-content: center;*/
 }
 .down_form input{
-	margin-left: -25px;
+	/*margin-left: -25px;*/
 	border: none;
-	margin-right: 25px;
-	padding: 15px 5px;
+	/*margin-right: 25px;*/
+	padding: 15px 10px;
 	box-shadow: 0 8px 14px rgba(34, 102, 187, 0.21);
 	background-color: #fbfbfb;
+	width: 100%;
 }
 .down_form_2 input{
 	margin-left: unset;
@@ -877,6 +890,7 @@ footer{
 .checkbox{
 	text-align: center;
 	margin: 20px auto;
+	width: fit-content;
 }
 /* прячем input checkbox */
 input[type="checkbox"] {
@@ -1545,8 +1559,8 @@ input[type="checkbox"] {
 	justify-content: center;
 }
 .help_glaas_type_last{
-	width: 500px;
-	margin: 10px auto;
+	/*width: 500px;*/
+	margin: 0 auto;
 }
 .help_glass_items{
 	width: 250px;
@@ -1594,12 +1608,12 @@ input[type="checkbox"] {
 }
 .first_chekbox{
 	/*margin-right: 35px;*/
-	display: flex;
-	flex-direction: column;
+	/*display: flex;*/
+	/*flex-direction: column;*/
 }
 .ssecond_chekbox{
-	display: flex;
-	flex-direction: column;
+	/*display: flex;*/
+	/*flex-direction: column;*/
 }
 .button_next{
 	text-align: center;
@@ -2034,21 +2048,21 @@ a:not([href]):not([tabindex]){
 	background-color: #3367b5;
 }
 .bg_types_door_items{
-	background: url(images/doors_panel.png)no-repeat;
+	background: url(images/doors_panel.png) no-repeat center;
 	/* background-size: cover; */
-	padding: 10px 25px;
+	padding: 20px 25px;
 	height: 275px;
 }
 .types_of_door_item{
 	visibility: hidden;
 	background-color: rgb(37, 92, 173);
 	background-size: cover;
-	padding-left: 30px;
+	padding: 10px;
 	width: 200px;
-
 	height: 100%;
 	border: 5px solid #fff;
 	border-image: url(images/border_turnkey_hover.png) 5 round round;
+	margin: 0 auto;
 }
 .types_of_door_item:hover{
 	visibility: visible !important;
@@ -2062,20 +2076,22 @@ a:not([href]):not([tabindex]){
 	font-family: "Open Sans";
 	font-size: 13px;
 	font-weight: 300;
-	line-height: 50px;
+	line-height: 35px;
 	text-transform: uppercase;
 	/* Text style for "Маятниковы" */
 	letter-spacing: 2.6px;
 }
-.types_of_door_item h3:before{
-	content: "";
-	top: 55px;
-	left: 120px;
-	position: absolute;
-	width: 62px;
-	height: 1px;
-	background: rgb(100, 141, 200);
-}
+/*.types_of_door_item h3:before,*/
+.types_of_door_item .door_plus:before,
+.types_of_door_item .door_mines:before {
+	 content: "";
+	 position: absolute;
+	 top: -4px;
+	 left: -17px;
+	 width: 62px;
+	 height: 1px;
+	 background: rgb(100, 141, 200);
+ }
 .types_of_door_item ul{
 	position: relative;
 	/*background-color: rgb(37, 92, 173);*/
@@ -2087,9 +2103,9 @@ a:not([href]):not([tabindex]){
 .types_of_door_item ul:last-child{
 	list-style: url(images/mines_bg-dark.png);
 }
-.types_of_door_item ul:last-child:before{
-	content: none;
-}
+/*.types_of_door_item ul:last-child:before{*/
+	/*content: none;*/
+/*}*/
 /* .types_of_door_item ul:before{
 	content: "";
 	top: 50px;
@@ -2638,15 +2654,21 @@ button:focus{
 	background-color: #fbfbfb;
 }
 .video_glass{
-	justify-content: center
+	/*justify-content: center*/
 }
 .video_glass iframe{
 	position: relative;
 	z-index: 4;
-
+	width: 100%;
+}
+.homepage-img img {
+	width: 100%
 }
 iframe{
 	margin-right: 15px;
+}
+.video_our iframe:last-child {
+	margin-right: 0;
 }
 .video_glass img{
 	position: relative;
@@ -2691,7 +2713,7 @@ iframe{
 	text-tarnsform: uppercase;
 }
 .chekbox_sect_6{
-	justify-content: space-between;
+	/*justify-content: space-between;*/
 }
 .chekbox_sect_6 input{
 	margin-bottom: 15px;
@@ -2705,6 +2727,7 @@ iframe{
 	line-height: 28.03px;
 	/* Text style for "Закалка (Т" */
 	letter-spacing: 0.52px;
+	display: block;
 }
 .Contact_form input{
 	width: 100%;
@@ -3209,7 +3232,8 @@ textarea {
 	position: relative;
 }
 .Contact_form .first_row > div > label,
-.Contact_form .second_row > div > label{
+.Contact_form .second_row > div > label,
+label.error {
 	display: block;
 	font-size: 12px;
 	position: absolute;
@@ -3243,4 +3267,92 @@ textarea {
 }
 #material .contacts:hover {
 
+}
+
+
+
+/*  mini calculators contactforms*/
+.contact-form--row label.error {
+	bottom: -15px;
+}
+.contact-form--row.down_form_2 div {
+	margin: 0 auto;
+}
+.formLower {
+	margin-top: 30px;
+}
+@media screen and (max-width: 575px) {
+	.checkbox span.label {
+		font-size: 13px;
+	}
+}
+
+
+/*_________________________________*/
+.header-span-block {
+	display: inline-block;
+}
+
+@media screen and (max-width: 991px) {
+	.heder_nav_navbar .navbar-brand {
+		margin-left: 10px;
+		margin-right: 0;
+	}
+	.header_call-back p {
+		font-size: 16px;
+	}
+	.call-back_header {
+		letter-spacing: 1.5px;
+	}
+	.header-span-block span {
+		font-size: 12px;
+	}
+	.heder_nav_navbar {
+		justify-content: space-between;
+	}
+	.header-span-block span {
+		display: block;
+		line-height: 20px;
+	}
+	.services_items{
+		height: 100px;
+		display:flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 30px 50px;
+	}
+}
+@media screen and (max-width: 767px) {
+	.header-span-block {
+		display: none;
+	}
+	.header_call-back{
+		margin-right: -150px;
+	}
+	.owl-next p,
+	.owl-prev p {
+		display: none;
+	}
+	.owl-next {
+		background: url(images/bag_arrow_naxt.png)no-repeat left !important;
+		width: 75px;
+	}
+	.owl-prev {
+		background: url(images/bag_prev_owl.png)no-repeat right !important;
+		width: 75px;
+	}
+}
+
+@media screen and (max-width: 575px) {
+	.header_call-back{
+		margin-right: -100px;
+	}
+}
+@media screen and (max-width: 430px) {
+	.header_call-back{
+		margin-right: -40px;
+	}
+	.services_items {
+		padding: 30px 15px;
+	}
 }

@@ -559,8 +559,8 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-12">
-                    <div class="video_glass d-flex">
+                {{--<div class="col-lg-12">--}}
+                    <div class="video_glass col-12 col-md-6">
                         @if(isset($video) && $video[0]->show === 1)
                             <iframe width="50%" height="335px"
                                     src={{$video[0]->video}}
@@ -568,16 +568,19 @@
                                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                     allowfullscreen></iframe>
                         @endif
-                        <img src="images/glass_img.png" alt="">
                     </div>
-                </div>
+                        <div class="homepage-img d-none d-md-block col-md-6">
+                            <img src="images/glass_img.png" alt="">
+                        </div>
+
+                {{--</div>--}}
             </div>
         </div>
     </section>
     <section>
         <div class="container">
             <div class="rov">
-                <div class="col-lg-12">
+                <div class="col-12">
                     <div class="turnkey_product">
                         <h2>Изделия производимые «под ключ»</h2>
                     </div>

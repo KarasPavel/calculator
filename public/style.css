@@ -468,6 +468,11 @@ footer{
 }
 .contacts{
 	text-align: right;
+    font-family: "Open Sans";
+}
+.contacts a,
+.header_text a{
+    font-family: "Open Sans";
 }
 .contacts p{
 	color: #ffffff;
@@ -2384,7 +2389,7 @@ button:focus{
 	font-size: 13px;
 	position: sticky;
 	top: 100px;
-	min-width: 350px;
+	/*min-width: 350px;*/
 }
 .cost_calculation h4{
 	text-align: center;
@@ -2593,8 +2598,9 @@ button:focus{
 }
 .choose_thiknes ul li,
 .text-kromka ul li {
-	margin-right: 35px;
-	margin-top: 15px;
+	/*margin-right: 35px;*/
+	/*margin-top: 15px;*/
+    margin: 10px;
 }
 /* ...................ACORDEON.............. */
 .ui-icon{
@@ -2686,11 +2692,11 @@ iframe{
 	margin-bottom: 35px;
 }
 .butt_choose_kromka a{
-	padding: 24px 4px;
+	padding: 24px 0;
 	width: 100%;
 }
 .butt_choose_kromka a:focus, .butt_choose_kromka a:hover{
-	padding: 20px 0px;
+	padding: 16px 0px;
 }
 .text-kromka{
 	display: flex;
@@ -2702,6 +2708,7 @@ iframe{
 	font-family: "Open Sans";
 	font-size: 13px;
 	font-weight: 300;
+	padding: 15px;
 	/* Text style for "Кромка буд" */
 
 	font-weight: 300;
@@ -2736,6 +2743,10 @@ iframe{
 	background-color: #fbfbfb;
 	border: none;
 	margin-bottom: 30px;
+    padding: 5px 10px;
+}
+.Contact_form textarea {
+    width: 100%;
 }
 .up_input input{
 	margin-right: 5px;
@@ -2752,18 +2763,20 @@ textarea {
 }
 .down_buttons_distances a{
 	text-align: center;
-	padding: 20px 10px;
+	padding: 15px 10px;
 	background-color: #3e5669;
 	color: #ffffff;
 	font-family: "Open Sans";
-	font-size: 15px;
+	font-size: 12px;
 	font-weight: 400;
 	line-height: 21px;
 	/* Text style for "В пределах" */
 	letter-spacing: 0.3px;
+	flex-basis: 25%;
 
 }
-.down_buttons_distances a:focus,.down_buttons_distances a:hover{
+.down_buttons_distances a:focus, .down_buttons_distances a:hover,
+.down_buttons_distances  .down_buttons_distances--active {
 	background-color: #3367b5;
 }
 .cost_calc_first_tab{
@@ -3042,7 +3055,8 @@ textarea {
 	min-height: 425px;
 }
 
-.stairs_and_flooring_buttons_calculator .nav-link--active {
+.stairs_and_flooring_buttons_calculator .nav-link--active,
+.butt_choose_kromka .nav-link--active {
 	box-shadow: 1px 1px 3px 1px rgba(115, 194, 193, 0.5), inset 3px 3px 33px 2px rgba(115, 194, 193, 0.28), inset 0 0 6px 1px rgba(173, 255, 250, 0.16);
 	border: 1px solid #77a29c;
 	border: 5px solid #fff;
@@ -3051,6 +3065,12 @@ textarea {
 	background-image: linear-gradient(47deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.18) 11%, rgba(255, 255, 255, 0) 19%, rgba(255, 255, 255, 0.13) 33%, rgba(255, 255, 255, 0) 38%, rgba(255, 255, 255, 0.08) 45%, rgba(255, 255, 255, 0) 73%, rgba(255, 255, 255, 0.18) 84%, rgba(255, 255, 255, 0) 100%);
 	opacity: 0.9;
 	transition: all 0.2s;
+}
+.butt_choose_kromka a:active {
+    padding: 16px 0;
+}
+.butt_choose_kromka a.nav-link--active {
+    padding: 16px 0;
 }
 .help_glass_items--active {
 	padding: 8px;
@@ -3184,8 +3204,8 @@ textarea {
 	width: 100%;
 }
 .text-kromka ul li {
-	margin-right: 35px;
-	margin-top: 15px;
+	/*margin-right: 35px;*/
+	/*margin-top: 15px;*/
 }
 .text-kromka .nav-tabs .nav-link {
 	height: 60px;
@@ -3215,6 +3235,7 @@ textarea {
 	border-radius: 2px;
 	box-shadow: 0 8px 14px rgba(34, 102, 187, 0.21);
 	background-color: #fbfbfb;
+    width: 95%;
 }
 .Contact_form .second_row {
 	position: relative;
@@ -3292,6 +3313,10 @@ label.error {
 .header-span-block {
 	display: inline-block;
 }
+.header-span-block span:first-child {
+	display: inline-block;
+	margin-right: 20px;
+}
 
 @media screen and (max-width: 991px) {
 	.heder_nav_navbar .navbar-brand {
@@ -3341,12 +3366,119 @@ label.error {
 		background: url(images/bag_prev_owl.png)no-repeat right !important;
 		width: 75px;
 	}
+
+
+    .Size_calc {
+        flex-wrap: wrap;
+    }
+    #rectangle,
+    #circle,
+    #oval,
+    #another{
+        flex-basis: 24%;
+        margin: 0;
+    }
+    #item_size_calc {
+        margin: 0 auto;
+    }
+    #circle:hover .img-container:after,
+    .circle--active .img-container:after {
+        width: 105px;
+        top: 15px;
+        left: 7px;
+    }
+    .text-kromka {
+        flex-direction: column;
+    }
+
+    /*___footer mobile____*/
+    footer {
+        padding-top: 25px;
+    }
+
+    .contact-info-footer .contacts {
+        float: left;
+        text-align: left;
+
+    }
+    .contact-info-footer .contacts .call-back {
+        line-height: 20px;
+        font-size: 11px;
+    }
+    .contact-info-footer .soc_icons {
+        float: right;
+    }
+
+    .footer_down_text p {
+        line-height: 15px;
+        margin: 0 !important;
+    }
+
+
+    /*______________*/
+
+	.Contact_form .down_buttons_distances {
+		position: static !important;
+		margin-top: 30px;
+	}
+	section#services {
+		padding-top: 70px;
+	}
+}
+@media screen and (max-width: 1199px) {
+    .footer_menu ul li {
+        margin-left: 10px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .Contact_form .second_row > div > label, label.error {
+        font-size: 11px;
+    }
+
 }
 
 @media screen and (max-width: 575px) {
 	.header_call-back{
 		margin-right: -100px;
 	}
+
+    #page_calculations {
+        height: 0;
+        padding-top: 0;
+        background: none;
+    }
+    .calculator-section {
+        padding-top: 100px;
+    }
+
+    #rectangle,
+    #circle,
+    #oval,
+    #another{
+        flex-basis: 49%;
+        margin: 0;
+    }
+    #rectangle:hover .img-container:after,
+    .rectangle--active .img-container:after {
+        width: 129px;
+        left: calc(50% - 65px);
+    }
+    #oval:hover .img-container:after, .oval--active .img-container:after {
+        width: 123px;
+        left: calc(50% - 61px);
+    }
+    #circle:hover .img-container:after,
+    .circle--active .img-container:after {
+        left: calc(50% - 52px);
+    }
+
+    .stairs_and_flooring_buttons.butt_choose_kromka {
+        flex-direction: column;
+    }
+    .stairs_and_flooring_buttons.butt_choose_kromka a{
+        margin: 10px;
+        width: 93%;
+    }
 }
 @media screen and (max-width: 430px) {
 	.header_call-back{
@@ -3355,4 +3487,14 @@ label.error {
 	.services_items {
 		padding: 30px 15px;
 	}
+	.Contact_form .second_row > div {
+		flex-wrap: wrap;
+	}
+	.down_buttons_distances a {
+		flex-basis: 50%;
+	}
+}
+
+div.head.toggler {
+	margin-bottom: 20px;
 }

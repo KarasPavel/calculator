@@ -886,22 +886,22 @@ function calculate() {
         $('#calcForm').append('<div id="box-calc-7" class="wraper content"></div>');
         $('#box-calc-7').append('<div class="Contact_form"></div>');
         $('.Contact_form').append('<div class="first_row row"></div>');
-        $('.first_row').append('<div class="col-sm-4"><input name="name" type="text" placeholder="Имя"></div>');
-        $('.first_row').append('<div class="col-sm-4"><input id="qntt" name="quantity" type="number" min="1" placeholder="Количество"></div>');
-        $('.first_row').append('<div class="col-sm-4"><input name="address" type="text" placeholder="Адресс"></div>');
+        $('.first_row').append('<div class="col-12 col-md-4"><input name="name" type="text" placeholder="Имя"></div>');
+        $('.first_row').append('<div class="col-12 col-md-4"><input id="qntt" name="quantity" type="number" min="1" placeholder="Количество"></div>');
+        $('.first_row').append('<div class="col-12 col-md-4"><input name="address" type="text" placeholder="Адресс"></div>');
         // $('.Contact_form').append('<div class="second_row d-flex"></div>');
         $('.Contact_form').append('<div class="second_row row"></div>');
         // $('.second_row').append('<div class="leftTable"></div>');
         // $('.leftTable').append('<div class="up_input d-flex "></div>');
         // $('.up_input').append('<div><input name="phone" type="tel" placeholder="Телефон"></div>');
         // $('.up_input').append('<div><input name="email" type="email" placeholder="Электронная почта"></div>');
-        $('.second_row').append('<div class="col-sm-4"><input name="phone" type="tel" placeholder="Телефон"></div>');
-        $('.second_row').append('<div class="col-sm-4"><input name="email" type="email" placeholder="Электронная почта"></div>');
+        $('.second_row').append('<div class="col-12 col-md-4"><input name="phone" type="tel" placeholder="Телефон"></div>');
+        $('.second_row').append('<div class="col-12 col-md-4"><input name="email" type="email" placeholder="Электронная почта"></div>');
         // $('.leftTable').append('<div class="down_buttons_distances d-flex"></div>');
-        $('.second_row').append('<div class="right_texbox col-sm-4"">' +
+        $('.second_row').append('<div class="right_texbox col-12 col-md-4"">' +
             '   <textarea name="comment" id="" cols="25" rows="10" placeholder="Комментарий к заказу"></textarea>' +
             '</div>');
-        $('.second_row').append('<div class="down_buttons_distances d-flex col-sm-8"></div>');
+        $('.second_row').append('<div class="down_buttons_distances d-flex col-12 col-md-8"></div>');
         $('.down_buttons_distances').append('<a id="pickup" class="nav-link" data-toggle="tab" href="#">Самовывоз</a>');
         $('.down_buttons_distances').append('<a id="inMKAD" class="nav-link" data-toggle="tab" href="#">В пределах МКАД</a>');
         $('.down_buttons_distances').append('<a id="outMKAD" class="nav-link" data-toggle="tab" href="#">Не более 5 км от МКАД</a>');
@@ -910,7 +910,7 @@ function calculate() {
         //     '   <textarea name="comment" id="" cols="25" rows="3" placeholder="Комментарий к заказу"></textarea>' +
         //     '</div>');
         $('.Contact_form').append('<div class="buttons_buy_glass d-flex justify-content-center"></div>');
-        $('.buttons_buy_glass').append('<button id="makeOrder" class="cost_butt buy_buttons">Оформить заказ</button>');
+        $('.buttons_buy_glass').append('<button id="makeOrder" class="cost_butt buy_buttons disable">Оформить заказ</button>');
         $('.buttons_buy_glass').append('<button id="buyProduct" class="cost_butt1 buy_buttons" style="display: none">В корзину</button>');
         $(document).find('#calcForm').validate({
             rules: {

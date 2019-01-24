@@ -153,13 +153,13 @@
 
 
     <div class="container">
-        <div class="row">
-            <div class="col-lg-3 col-md-3">
+        <div class="row  no-gutters">
+            <div class="col-md-3">
                 <div class="footer_logo">
                     <img src="images/Viditex_logo.png" alt="" class="logo">
                 </div>
             </div>
-            <div class="col-lg-4 col-md-3">
+            <div class="d-none d-md-block col-lg-4 col-md-3">
                 <div class="footer_menu">
                     <ul>
                         <li><a href="#">Контакты</a></li>
@@ -170,7 +170,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-lg-2 col-md-3">
+            <div class="d-none d-md-block  col-lg-2 col-md-3">
                 <div class="footer_menu">
                     <ul>
                         <li><a href="#">Доставка</a></li>
@@ -191,7 +191,7 @@
                     </ul>
                 </div>
             </div> -->
-            <div class="col-lg-3 col-md-3">
+            <div class="col-md-3 contact-info-footer">
                 <div class="contacts">
                     <p><a href="tel:+74996772067">+7 (499) 677 20 67</a></p>
                     <div class="call-back">
@@ -200,8 +200,6 @@
                             Заявка на звонок
                         </a>
                     </div>
-
-
                 </div>
                 <div class="soc_icons">
                     <i class="fab fa-vk" onclick="window.location.href = '{{$social[0]->link}}'"></i>
@@ -210,7 +208,7 @@
                 </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row no-gutters">
             <div class="col-lg-12">
                 <div class="footer_down_text">
                     <p>© 2018 Все права защищены.</p>

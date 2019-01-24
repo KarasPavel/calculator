@@ -79,7 +79,7 @@
 		width: 100%;
 	}
 	.turnkey_items{
-		height: 115px;
+		height: 180px;
 	}
 	.turnkey_items img{
 		height: 100%;
@@ -140,7 +140,7 @@
 		background: unset;
 	}
 	.stairs_and_flooring_buttons{
-		margin: 30px 73px;
+		margin: 30px 0;
 		background-position-y: 1px;
 	}
 	.stairs_and_flooring_buttons_calculator {

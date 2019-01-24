@@ -1,26 +1,26 @@
 <div data-hash="seven">
     <section id="page_calculations">
-        <div class="container">
+        <div class="container d-none d-sm-block">
             <div class="row">
-                <div class="col-lg-3 col-md-3">
+                <div class="col-lg-3 col-md-3 col-sm-6">
                     <div class="calculations_sec1_items">
                         <img src="images/page_calc_sec_1_pic1.png" alt="">
                         <p>Срок изготовления – <br> от 12 часов</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-3">
+                <div class="col-lg-3 col-md-3 col-sm-6">
                     <div class="calculations_sec1_items">
                         <img src="images/page_calc_sec_1_pic2.png" alt="">
                         <p>Минимальный заказ – <br> 300р /изделие 1000р/заказ</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-3">
+                <div class="col-lg-3 col-md-3 col-sm-6">
                     <div class="calculations_sec1_items">
                         <img src="images/page_calc_sec_1_pic3.png" alt="">
                         <p>Производство изделий «под ключ» - перегородки, душевые и многое другое</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-3">
+                <div class="col-lg-3 col-md-3 col-sm-6">
                     <div class="calculations_sec1_items">
                         <img src="images/page_calc_sec_1_pic4.png" alt="">
                         <p>Услуги по доставке и установке стеклоизделий и зеркал</p>

@@ -6093,6 +6093,7 @@ td span.size {
     padding-bottom: 20px;
     padding-top: 20px;
     width: 100%;
+    overflow-x: scroll;
 }
 .table.table-striped.table-bordered {
     float: left;

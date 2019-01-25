@@ -109,9 +109,9 @@ function sendForm() {
                 },
                 phone: {
                     required: true,
-                    digits: true,
-                    minlength: 10,
-                    maxlength: 11,
+                    digits: false,
+                    minlength: 17,
+                    maxlength: 18,
                 },
                 agree: {
                     required: true
@@ -541,7 +541,7 @@ function getPages() {
             bindExpandebleTrue('.help_glass_items.calc_content2', 'help_glass_items--active');
             bindExpandebleTrue('.butt_choose_kromka .nav-link', 'nav-link--active');
             bindExpandebleTrue('.down_buttons_distances a', 'down_buttons_distances--active');
-            makeOrderButtonDisabled();
+            // makeOrderButtonDisabled();
 
             setActiveShape('.item_size_calc', '');
         });
@@ -690,7 +690,9 @@ function setActiveShape(elementName, elementClass) {
         $(this).addClass(elementClass);
     });
 }
-
+$(document).ready(function(){
+    $('.phone_us').mask('+7 (000) 000-00-00', {placeholder: "+7(___)___-__-__"});
+});
 // function makeOrderButtonDisabled () {
 //     $("body").on("click", $('.down_buttons_distances'), function(){
 //         var distanceChoises = $('.down_buttons_distances a');
@@ -708,4 +710,4 @@ function setActiveShape(elementName, elementClass) {
 
 
 
-}
+// }

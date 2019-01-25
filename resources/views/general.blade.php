@@ -225,7 +225,7 @@
     <div class="popup formTag">
         <div class="up_form up_form_popup">
             <input type="text" name="name" placeholder="имя">
-            <input type="text" name="phone" placeholder="телефон">
+            <input class="phone_us" type="text" name="phone" placeholder="телефон">
         </div>
         <div class="down_form down_form_popup d-flex">
             <input type="text" name="email" placeholder="email">
@@ -299,6 +299,7 @@
 <script type="text/javascript" src={{asset("js/jquery.fancybox.min.js")}}></script>
 <script type="text/javascript" src={{asset("js/navigationButtons.js")}}></script>
 <script type="text/javascript" src={{asset("js/jquery.validate.js")}}></script>
+<script type="text/javascript" src={{asset("js/jquery_mask.js")}}></script>
 <script type="text/javascript" src={{asset("js/calculator.js")}}></script>
 <script type="text/javascript" src={{asset("js/libs/functions.js")}}></script>
 

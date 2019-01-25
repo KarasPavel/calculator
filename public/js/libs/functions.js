@@ -109,9 +109,9 @@ function sendForm() {
                 },
                 phone: {
                     required: true,
-                    digits: true,
-                    minlength: 10,
-                    maxlength: 11,
+                    digits: false,
+                    minlength: 17,
+                    maxlength: 18,
                 },
                 agree: {
                     required: true
@@ -708,4 +708,8 @@ function makeButtonDisableInCalcForm (buttonSelector, disabledClass) {
         }
     });
 }
+
+$(document).ready(function(){
+    $('.phone_us').mask('+7 (000) 000-00-00', {placeholder: "+7(___)___-__-__"});
+});
 

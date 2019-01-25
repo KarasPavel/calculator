@@ -542,7 +542,7 @@ function getPages() {
             bindExpandebleTrue('.butt_choose_kromka .nav-link', 'nav-link--active');
             bindExpandebleTrue('.down_buttons_distances a', 'down_buttons_distances--active');
             makeButtonDisableInCalcForm('#calcForm #makeOrder', 'disable');
-            makeButtonDisableInCalcForm('#calcForm #buyProduct', 'disable-cart');
+            // makeButtonDisableInCalcForm('#calcForm #buyProduct', 'disable-cart');
             setActiveShape('.item_size_calc', '');
         });
         $('footer').show();

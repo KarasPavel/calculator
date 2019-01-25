@@ -224,11 +224,11 @@
     <a href="#x" class="overlay" id="win1"></a>
     <div class="popup formTag">
         <div class="up_form up_form_popup">
-            <input type="text" name="name" placeholder="имя">
-            <input type="text" name="phone" placeholder="телефон">
+            <input type="text" name="name" placeholder="Ваше имя">
+            <input type="text" name="phone" placeholder="Ваш телефон">
         </div>
         <div class="down_form down_form_popup d-flex">
-            <input type="text" name="email" placeholder="email">
+            <input type="text" name="email" placeholder="Электронная почта">
         </div>
         <div class="checkbox">
             <label>
@@ -254,11 +254,11 @@
                 <a id="gager">Замершик</a>
                 <a id="designer">Дизайнер</a>
             </div>
-            <input type="text" name="name" placeholder="имя">
-            <input type="text" name="phone" placeholder="телефон">
+            <input type="text" name="name" placeholder="Ваше имя">
+            <input type="text" name="phone" placeholder="Ваш телефон">
         </div>
         <div class="down_form down_form_popup d-flex">
-            <input type="text" name="email" placeholder="email">
+            <input type="text" name="email" placeholder="Электронная почта">
             {{--<div class="checkbox">--}}
             {{--<input name="agree" type="checkbox" id="checkbox18" v-model="checked">--}}
             {{--<label for="checkbox18">--}}

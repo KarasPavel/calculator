@@ -299,20 +299,37 @@ function calculate() {
         $('#calc_stege_2').append('<i class="fas fa-angle-down"></i>');
         $('#material').append('<div id="box-calc-2" class="wraper content"></div>');
         $('#box-calc-2').append('<div id="box-calc-2-2" class="calc_contents d-flex"></div>');
-        $('#box-calc-2-2').append('<div id="clearVision" class="help_glass_items calc_content2"></div>');
-        $('#clearVision').append('<p>ClearVision</p>');
-        $('#box-calc-2-2').append('<div id="aged" class="help_glass_items calc_content2"></div>');
-        $('#aged').append('<p>Состаренное</p>');
-        $('#box-calc-2-2').append('<div id="bronze" class="help_glass_items calc_content2"></div>');
-        $('#bronze').append('<p>Бронза</p>');
-        $('#box-calc-2-2').append('<div id="graphite" class="help_glass_items calc_content2"></div>');
-        $('#graphite').append('<p>Графитовое</p>');
-        $('#box-calc-2-2').append('<div id="silver" class="help_glass_items calc_content2"></div>');
+        $('#box-calc-2-2').append('<div id="silver" class="help_glass_items calc_content2 tooltip-wrap"></div>');
         $('#silver').append('<p>Серебро</p>');
-        $('#box-calc-2-2').append('<div id="exclusive" class="help_glass_items calc_content2"></div>');
+        $('#silver').append('<span class="tooltiptext">Обычное зеркало, которое повсеместно используется в частных домах, спорт-залах, общественных ' +
+            'местах и т.д. Имеет почти не заметный зеленоватый оттенок. Чтобы проверить какое у Вас зеркало, возьмите белый листок и посмотрите на него в' +
+            ' отражении. Если есть зеленца – зеркало серебро.</span>');
+        $('#box-calc-2-2').append('<div id="clearVision" class="help_glass_items calc_content2 tooltip-wrap" data-toggle="tooltip" title="Hooray!"></div>');
+        $('#clearVision').append('<p>ClearVision</p>');
+        $('#clearVision').append('<span class="tooltiptext">Зеркало с самым лучшим отражением, без заметных глазу оттенков. Самый белый материал ' +
+            'на планете (отражение света около 100%). Цена на данный вид зеркал ощутимо выше, поскольку за основу берется стекло ClearVision. Используется повсеместно.</span>');
+        $('#box-calc-2-2').append('<div id="aged" class="help_glass_items calc_content2 tooltip-wrap"></div>');
+        $('#aged').append('<p>Состаренное</p>');
+        $('#exclusive').append('<span class="tooltiptext"></span>');
+        $('#box-calc-2-2').append('<div id="bronze" class="help_glass_items calc_content2 tooltip-wrap"></div>');
+        $('#bronze').append('<p>Бронза</p>');
+        $('#bronze').append('<span class="tooltiptext">Зеркало на основе тонированного в массе  стекла цвета "Темная бронза", с нанесением амальгамы. ' +
+            'Используется в примерочных комнатах, в шоурумах и в домашних интерьерах. Часто используют в сочетании с темными породами дерева и с ' +
+            'винтажными интерьерами.</span>');
+        $('#box-calc-2-2').append('<div id="graphite" class="help_glass_items calc_content2 tooltip-wrap"></div>');
+        $('#graphite').append('<p>Графитовое</p>');
+        $('#graphite').append('<span class="tooltiptext">Зеркало на основе тонированного в массе серого стекла, с нанесением амальгамы. Используется в' +
+            ' примерочных комнатах, в шоурумах и в домашних интерьерах. Отлично подходит под современные стили интерьеров.</span>');
+        $('#box-calc-2-2').append('<div id="exclusive" class="help_glass_items calc_content2 tooltip-wrap"></div>');
         $('#exclusive').append('<p>Эксклюзив</p>');
-        $('#box-calc-2-2').append('<div id="gold" class="help_glass_items calc_content2"></div>');
+        $('#exclusive').append('<span class="tooltiptext">Сюда входят эксклюзивные типы зеркал, такие как - состаренные зеркала, зеркало-шпион,' +
+            ' кракелюр и цветные зеркала. Ввиду сложности согласования деталей, просьба оформить заказ и дождаться звонка специалиста, который ' +
+            'проконсультирует и согласует с вами все детали заказа. Либо позвоните по нашему контактному телефону, указанному выше.</span>');
+        $('#box-calc-2-2').append('<div id="gold" class="help_glass_items calc_content2 tooltip-wrap"></div>');
         $('#gold').append('<p>Золото</p>');
+        $('#gold').append('<span class="tooltiptext">Зеркало с эффектным золотым отражением. В наличии 2 типа золотых зеркал - "Шампань" (мягкий тон) и "Обычное золото" ' +
+            '(ярко-оранжевое). Все нюансы будут согласованы с нашим менеджером, который перезвонит Вам, после оформления заказа.</span>');
+
         $('#calculator_day').val('');
         $('#calculator_month').val('');
         $('#calculator_year').val('');
@@ -330,21 +347,34 @@ function calculate() {
         $('#calc_stege_2').append('<i class="fas fa-angle-down"></i>');
         $('#material').append('<div id="box-calc-2" class="wraper content"></div>');
         $('#box-calc-2').append('<div id="box-calc-2-2" class="calc_contents d-flex"></div>');
-        $('#box-calc-2-2').append('<div id="simple" class="help_glass_items calc_content2"></div>');
+        $('#box-calc-2-2').append('<div id="simple" class="help_glass_items calc_content2 tooltip-wrap"></div>');
         $('#simple').append('<img src="images/glaas_type1.png" alt="">');
         $('#simple').append('<p>Прозрачное</p>');
-        $('#box-calc-2-2').append('<div id="optWhite" class="help_glass_items calc_content2"></div>');
+        $('#simple').append('<span class="tooltiptext">Стекло М1, прозрачное, или просто обычное стекло. Все это - названия флоат-стекла, ' +
+            '       являющегося самым популярным материалом стекольной промышленности. Имеет зеленоватый оттенок, ярко выраженный в виде с торца.</span>');
+        $('#box-calc-2-2').append('<div id="optWhite" class="help_glass_items calc_content2 tooltip-wrap"></div>');
         $('#optWhite').append('<img src="images/glass3.png" alt="">');
         $('#optWhite').append('<p>Оптивайт</p>');
-        $('#box-calc-2-2').append('<div id="bronze" class="help_glass_items calc_content2"></div>');
+        $('#optWhite').append('<span class="tooltiptext">Осветленное стекло (Optiwhite,Clearvision). Данный вид материала почти не имеет сторонних оттенков,' +
+            ' кроме благородного светло-голубого цвета, заметного глазу лишь с торца полотна.</span>');
+        $('#box-calc-2-2').append('<div id="bronze" class="help_glass_items calc_content2 tooltip-wrap"></div>');
         $('#bronze').append('<img src="images/glass4.png" alt="">');
         $('#bronze').append('<p>Бронза</p>');
-        $('#box-calc-2-2').append('<div id="matt" class="help_glass_items calc_content2"></div>');
+        $('#bronze').append('<span class="tooltiptext">Тонированное в массе стекло (без пленок и покрытий) темно-бронзового цвета. Как и многие другие виды ' +
+            'стекла можно закаливать. На стекле почти не заметна грязь и отпечатки рук. В сочетании общестекольным признаком - легкой очисткой, образует отличное ' +
+            'сочетание для использования не только в частных домах, но и в общественных местах с высокой проходимостью.</span>');
+        $('#box-calc-2-2').append('<div id="matt" class="help_glass_items calc_content2 tooltip-wrap"></div>');
         $('#matt').append('<img src="images/glass5.png" alt="">');
         $('#matt').append('<p>Матовое</p>');
-        $('#box-calc-2-2').append('<div id="grey" class="help_glass_items calc_content2"></div>');
+        $('#matt').append('<span class="tooltiptext">Матовое стекло (сатинат, Satinato) - это вид стекла с односторонним химическим травлением, ' +
+            'за счет чего был достигнут оригинальный светорассеивающий эффект, благодаря которому, видно лишь силуэты объектов и проникающий свет, ' +
+            'дальше 5 сантиметров от полотна. За счет химического травления, а не грубого пескоструя, гораздо легче мыть.</span>');
+        $('#box-calc-2-2').append('<div id="grey" class="help_glass_items calc_content2 tooltip-wrap"></div>');
         $('#grey').append('<img src="images/glaas6.png" alt="">');
         $('#grey').append('<p>Серое</p>');
+        $('#grey').append('<span class="tooltiptext">Тонированное в массе стекло (без пленок и покрытий) серого цвета. Как и многие другие виды' +
+            ' стекла можно закаливать. На стекле почти не заметна грязь и отпечатки рук. В сочетании общестекольным признаком - легкой очисткой, ' +
+            'образует отличное сочетание для использования не только в частных домах, но и в общественных местах с высокой проходимостью.</span>');
         $('#price').val('');
         $('#calculator_day').val('');
         $('#calculator_month').val('');
@@ -463,16 +493,20 @@ function calculate() {
             $('#item_size_calc').detach();
             $('.Size_calc').append('<div id="item_size_calc" class="item_size_calc shapes-size">' +
                 '    <p>Введите значения</p>' +
-                '    <div id="shape_size" class="input_touch_size">' +
-                '    </div></div>');
+                '    <div id="shape_size" class="input_touch_size"></div>' +
+                '    <div><input type="file" name="fileUpload" id="fileUpload" class="inputfile" />' +
+                '    <label for="fileUpload">Загрузить чертеж</label></div>' +
+                '    </div>');
             $('#shape_size').append('<div><input id="shape_diameter" name="diameter" type="number" min="1" placeholder="мм"><p>диаметр</p></div>');
         });
         $('#shape').on('click', '#rectangle, #oval, #another', function () {
             $('#item_size_calc').detach();
             $('.Size_calc').append('<div id="item_size_calc" class="item_size_calc shapes-size">' +
                 '    <p>Введите значения</p>' +
-                '    <div id="shape_size" class="input_touch_size">' +
-                '    </div></div>');
+                '    <div id="shape_size" class="input_touch_size"></div>' +
+                '    <div><input type="file" name="fileUpload" id="fileUpload" class="inputfile" />' +
+                '    <label for="fileUpload">Загрузить чертеж</label></div>' +
+                '    </div>');
             shapeId = this.id;
             shape['name'] = $(this).find('p').text();
             $('#shape_size').append('<div><input id="shape_height" name="height" type="number" min="1" placeholder="мм">' +

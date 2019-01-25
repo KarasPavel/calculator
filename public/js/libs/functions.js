@@ -541,7 +541,7 @@ function getPages() {
             bindExpandebleTrue('.help_glass_items.calc_content2', 'help_glass_items--active');
             bindExpandebleTrue('.butt_choose_kromka .nav-link', 'nav-link--active');
             bindExpandebleTrue('.down_buttons_distances a', 'down_buttons_distances--active');
-            makeOrderButtonDisabled();
+            // makeOrderButtonDisabled();
 
             setActiveShape('.item_size_calc', '');
         });
@@ -708,4 +708,4 @@ function setActiveShape(elementName, elementClass) {
 
 
 
-}
+// }

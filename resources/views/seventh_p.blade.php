@@ -117,3 +117,14 @@
     </div>
     <a class="close" title="Закрыть" href="#close"></a>
 </div>
+
+<a href="#x" class="overlay" id="win5"></a>
+<div id="good" class="popup popup_choise">
+    <div id="cart" class="up_form up_form_popup">
+        <h3 class="popup_choise_h2">У Вас в корзине: </h3>
+    </div>
+    <div class="button_forms button_forms_popup">
+        <a href="#">Ok</a>
+    </div>
+    <a class="close" title="Закрыть" href="#close"></a>
+</div>

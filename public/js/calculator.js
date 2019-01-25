@@ -911,7 +911,8 @@ function calculate() {
         //     '</div>');
         $('.Contact_form').append('<div class="buttons_buy_glass d-flex justify-content-center"></div>');
         $('.buttons_buy_glass').append('<button id="makeOrder" class="cost_butt buy_buttons disable">Оформить заказ</button>');
-        $('.buttons_buy_glass').append('<button id="buyProduct" class="cost_butt1 buy_buttons" style="display: none">В корзину</button>');
+        // $('.buttons_buy_glass').append('<button id="buyProduct" class="cost_butt1 buy_buttons" style="display: none">В корзину</button>');
+        $('.buttons_buy_glass').append('<button id="buyProduct" class="cost_butt1 buy_buttons">В корзину</button>');
         $(document).find('#calcForm').validate({
             rules: {
                 name: {
@@ -1027,40 +1028,47 @@ function calculate() {
     var option;
 
     $('#order_info').on('click', '#makeOrder', function () {
-        let value;
-        let name;
-        let orderData = {};
-        let orderInfo = {};
-        $('#order_info').find('input').each(function () {
-            value = $(this).val();
-            name = $(this).attr('name');
-            orderData[name] = value;
-        });
-        orderData['comment'] = $('#order_info').find('textarea').val();
-        orderData['delivery'] = deliveryBuy;
-        orderInfo['material'] = material;
-        orderInfo['product'] = product;
-        orderInfo['depth'] = depth;
-        orderInfo['shape'] = shape;
-        orderInfo['format'] = format;
-        orderInfo['options'] = findExtraOptions();
-        orderData['orderInfo'] = orderInfo;
-        orderData['price'] = setPriceValue();
-        orderData['orderDate'] = yyyy + '-' + mm + '-' + dd;
-        orderData['urgency'] = $('#checkboxPrice').is(':checked');
-        if ($('#calcForm').valid()) {
-            console.log(orderData);
-            $.post('createOrders', {
-                data: JSON.stringify(orderData),
-                _token: $('meta[name="csrf-token"]').attr('content')
-            }, function (data, status) {
-                console.log(orderData);
-                console.log(data);
-                console.log(status);
-            });
-            document.location.assign('#win4');
+        if ($('#calcForm').valid() && this.id === 'makeOrder') {
+            sendOrder();
         }
     });
+    var order;
+    $('#order_info').on('click', '#buyProduct', function () {
+        if ($('#calcForm').valid()&& this.id === 'buyProduct') {
+            $.post('createCart', {
+                data: JSON.stringify(setOrderData()),
+                _token: $('meta[name="csrf-token"]').attr('content')
+            }, function (data, status) {
+                console.log(setOrderData());
+                console.log(data[0].address);
+                console.log(status);
+                order = data;
+                console.log(order[0].address);
+            });
+            $('#cart').append('<h6 class="popup_choise_h2 forCart"></h6>');
+            $('.forCart').append(order[0].orderInfo.material.toString()
+            + ', ' + order[0].orderInfo.product.toString()
+            + ', толщина: ' + order[0].orderInfo.depth.toString() + 'мм, '
+            + ', форма и размеры: ' + order[0].orderInfo.shape.name.toString()
+            + ': ' + order[0].orderInfo.shape.diameter ? order[0].orderInfo.shape.diameter + 'мм' : order[0].orderInfo.shape.height + 'X' + order[0].orderInfo.shape.width + ' мм, '
+            + 'обработка ' + order[0].orderInfo.format
+            + ', дополнительно: ' + order[0].orderInfo.options
+            );
+            document.location.assign('#win5');
+        }
+    });
+
+    function sendOrder() {
+        $.post('createOrders', {
+            data: JSON.stringify(setOrderData()),
+            _token: $('meta[name="csrf-token"]').attr('content')
+        }, function (data, status) {
+            console.log(setOrderData());
+            console.log(data);
+            console.log(status);
+        });
+        document.location.assign('#win4');
+    }
 
     function findExtraOptions() {
         option = '';
@@ -1098,5 +1106,29 @@ function calculate() {
         return option;
     }
 
+    function setOrderData() {
+        let value;
+        let name;
+        let orderData = {};
+        let orderInfo = {};
+        $('#order_info').find('input').each(function () {
+            value = $(this).val();
+            name = $(this).attr('name');
+            orderData[name] = value;
+        });
+        orderData['comment'] = $('#order_info').find('textarea').val();
+        orderData['delivery'] = deliveryBuy;
+        orderInfo['material'] = material;
+        orderInfo['product'] = product;
+        orderInfo['depth'] = depth;
+        orderInfo['shape'] = shape;
+        orderInfo['format'] = format;
+        orderInfo['options'] = findExtraOptions();
+        orderData['orderInfo'] = orderInfo;
+        orderData['price'] = setPriceValue();
+        orderData['orderDate'] = yyyy + '-' + mm + '-' + dd;
+        orderData['urgency'] = $('#checkboxPrice').is(':checked');
+        return orderData;
+    }
 
 }

@@ -541,8 +541,8 @@ function getPages() {
             bindExpandebleTrue('.help_glass_items.calc_content2', 'help_glass_items--active');
             bindExpandebleTrue('.butt_choose_kromka .nav-link', 'nav-link--active');
             bindExpandebleTrue('.down_buttons_distances a', 'down_buttons_distances--active');
-            // makeOrderButtonDisabled();
-
+            makeButtonDisableInCalcForm('#calcForm #makeOrder', 'disable');
+            // makeButtonDisableInCalcForm('#calcForm #buyProduct', 'disable-cart');
             setActiveShape('.item_size_calc', '');
         });
         $('footer').show();
@@ -690,24 +690,24 @@ function setActiveShape(elementName, elementClass) {
         $(this).addClass(elementClass);
     });
 }
+
+function makeButtonDisableInCalcForm (buttonSelector, disabledClass) {
+    $("body").on("click", '.down_buttons_distances', function(){
+        var distanceChoises = $('.down_buttons_distances a');
+        for (var i = 0; i < distanceChoises.length; i++) {
+            if ($(distanceChoises[i]).hasClass( "down_buttons_distances--active" )) {
+                $(buttonSelector).removeClass(disabledClass);
+                $(buttonSelector).removeClass(disabledClass);
+                return;
+            } else {
+                $(buttonSelector).addClass(disabledClass);
+                $(buttonSelector).addClass(disabledClass);
+            }
+        }
+    });
+}
+
 $(document).ready(function(){
     $('.phone_us').mask('+7 (000) 000-00-00', {placeholder: "+7(___)___-__-__"});
 });
-// function makeOrderButtonDisabled () {
-//     $("body").on("click", $('.down_buttons_distances'), function(){
-//         var distanceChoises = $('.down_buttons_distances a');
-//         for (var i =0; i < distanceChoises.lenght; i++) {
-//         if (distanceChoises[i].hasClass( "down_buttons_distances--active" )) {
-//             $('#calcForm #makeOrder').removeClass('disable');
-//             console.log('if');
-//         } else {
-//             $('#calcForm #makeOrder').addClass('disable');
-//             console.log('else');
-//         }
-//         }
-//     });
 
-
-
-
-// }

@@ -911,7 +911,7 @@ function calculate() {
         //     '</div>');
         $('.Contact_form').append('<div class="buttons_buy_glass d-flex justify-content-center"></div>');
         $('.buttons_buy_glass').append('<button id="makeOrder" class="cost_butt buy_buttons disable">Оформить заказ</button>');
-        $('.buttons_buy_glass').append('<button id="buyProduct" class="cost_butt1 buy_buttons" style="display: none">В корзину</button>');
+        $('.buttons_buy_glass').append('<button id="buyProduct" class="cost_butt1 buy_buttons disable-cart">В корзину</button>');
         $(document).find('#calcForm').validate({
             rules: {
                 name: {
@@ -944,7 +944,7 @@ function calculate() {
             messages: {
                 name: {
                     required: "Пожалуйста, введите имя",
-                    minlength: "Имя должно содержать минимум 2 буквы",
+                    minlength: "Минимум 2 буквы",
                     maxlength: "Максимальное число букв - 35",
                 },
                 email: {
@@ -965,7 +965,7 @@ function calculate() {
                 },
                 address: {
                     required: "Пожалуйста, введите адрес",
-                    minlength: "Адрес должен содержать минимум 10 буквы",
+                    minlength: "Мнимум 10 букв",
                     maxlength: "Максимальное число букв - 100",
                 },
             }

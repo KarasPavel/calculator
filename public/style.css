@@ -64,6 +64,10 @@ input, textarea {
 	pointer-events: none;
 	background: #dec19d !important;
 }
+.disable-cart {
+	pointer-events: none;
+	background: #8fa6c7 !important;
+}
 .navbar-toggler:not(:disabled):not(.disabled){
 	cursor: url(images/cursor_click.png), pointer !important;
 	/* position: fixed; */

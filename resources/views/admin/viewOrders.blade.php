@@ -182,6 +182,7 @@
                                                     {{--{{$value->urgency}}--}}
                                                 {{--</td>--}}
                                                 <td>
+                                                    {{--{{dd(json_decode($value->order_data))}}--}}
                                                     Материал: {{json_decode($value->order_data)->material}}
                                                     Вид: {{json_decode($value->order_data)->product}}
                                                     Толщина: {{json_decode($value->order_data)->depth}} мм

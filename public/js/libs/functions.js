@@ -502,7 +502,7 @@ var knopki = [
     'Перегородки и двери',
     'Зеркальное панно',
     'Скинали',
-    'Рассчёт стоимости',
+    'Расчёт стоимости',
     'Контакты'
 ];
 $(document).ready(function () {
@@ -539,6 +539,11 @@ function getPages() {
             subscribeForm('.formLower a.action_form');
 
             bindExpandebleTrue('.help_glass_items.calc_content2', 'help_glass_items--active');
+            bindExpandebleTrue('.butt_choose_kromka .nav-link', 'nav-link--active');
+            bindExpandebleTrue('.down_buttons_distances a', 'down_buttons_distances--active');
+            makeOrderButtonDisabled();
+
+            setActiveShape('.item_size_calc', '');
         });
         $('footer').show();
     });
@@ -648,13 +653,59 @@ function locationHashChanged() {
 window.onhashchange = locationHashChanged;
 
 function bindExpandebleTrue(elementName, elementClass) {
-    console.log($(elementName));
-    // $(elementName).on('click', function () {
-    //     $(elementName).removeClass(elementClass);
-    //     $(this).addClass(elementClass);
-    // });
     $("body").on("click", elementName, function(){
         $(elementName).removeClass(elementClass);
         $(this).addClass(elementClass);
     });
+}
+function setActiveShape(elementName, elementClass) {
+
+    var firstClass;
+
+    $("body").on("click", elementName, function(){
+
+        var elementID = $(this).attr( "id");
+
+        if (elementID != 'item_size_calc') {
+            $(elementName).removeClass(firstClass);
+        }
+
+        if (elementID == 'rectangle') {
+            elementClass = 'rectangle--active';
+        }
+        if (elementID == 'circle') {
+            elementClass = 'circle--active';
+        }
+        if (elementID == 'oval') {
+            elementClass = 'oval--active';
+        }
+        if (elementID == 'another') {
+            elementClass = 'another--active';
+        }
+        if (elementID == elementName) {
+            elementClass = '';
+        }
+
+        firstClass = elementClass;
+        $(this).addClass(elementClass);
+    });
+}
+
+// function makeOrderButtonDisabled () {
+//     $("body").on("click", $('.down_buttons_distances'), function(){
+//         var distanceChoises = $('.down_buttons_distances a');
+//         for (var i =0; i < distanceChoises.lenght; i++) {
+//         if (distanceChoises[i].hasClass( "down_buttons_distances--active" )) {
+//             $('#calcForm #makeOrder').removeClass('disable');
+//             console.log('if');
+//         } else {
+//             $('#calcForm #makeOrder').addClass('disable');
+//             console.log('else');
+//         }
+//         }
+//     });
+
+
+
+
 }

@@ -28,7 +28,7 @@
             </div>
         </div>
     </section>
-    <section>
+    <section id="services">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -75,7 +75,7 @@
                             </li>
 
                         </ul>
-                        <img class="fancybox_img" src="images/fancybox_img_1.png" alt="">
+                        {{--<img class="fancybox_img" src="images/fancybox_img_1.png" alt="">--}}
                         <!--  <img src="images/img_room.png" alt="">
                   <img src="images/img_room.png" alt=""> -->
                     </div>
@@ -108,7 +108,7 @@
 
                             </li>
                         </ul>
-                        <img class="fancybox_img" src="images/fancybox_img_1.png" alt="">
+                        {{--<img class="fancybox_img" src="images/fancybox_img_1.png" alt="">--}}
                         <!--  <img src="images/img_room.png" alt="">
                       <img src="images/img_room.png" alt=""> -->
                     </div>
@@ -144,7 +144,7 @@
                                 последним гвоздем в крышку техники безопасности или в иную крышку...
                             </li>
                         </ul>
-                        <img class="fancybox_img" src="images/fancybox_img_1.png" alt="">
+                        {{--<img class="fancybox_img" src="images/fancybox_img_1.png" alt="">--}}
                         <!--  <img src="images/img_room.png" alt="">
                       <img src="images/img_room.png" alt=""> -->
                     </div>
@@ -175,7 +175,7 @@
                                 фаски 1-2мм. Выглядит фацет так -
                             </li>
                         </ul>
-                        <img class="fancybox_img" src="images/fancybox_img_1.png" alt="">
+                        {{--<img class="fancybox_img" src="images/fancybox_img_1.png" alt="">--}}
                         <!--  <img src="images/img_room.png" alt="">
                       <img src="images/img_room.png" alt=""> -->
                     </div>
@@ -217,7 +217,7 @@
                                 обработке, ощутимо выше ценник), шлифованный камень с плотностью выше кварца.
                             </li>
                         </ul>
-                        <img class="fancybox_img" src="images/fancybox_img_1.png" alt="">
+                        {{--<img class="fancybox_img" src="images/fancybox_img_1.png" alt="">--}}
                         <!--  <img src="images/img_room.png" alt="">
                       <img src="images/img_room.png" alt=""> -->
                     </div>
@@ -259,7 +259,7 @@
                                 стоимость услуг.
                             </li>
                         </ul>
-                        <img class="fancybox_img" src="images/fancybox_img_1.png" alt="">
+                        {{--<img class="fancybox_img" src="images/fancybox_img_1.png" alt="">--}}
                         <!--  <img src="images/img_room.png" alt="">
                       <img src="images/img_room.png" alt=""> -->
                     </div>
@@ -304,7 +304,7 @@
                                 только по конкретному запросу. Тоже самое касается цветных триплексов.
                             </li>
                         </ul>
-                        <img class="fancybox_img" src="images/fancybox_img_1.png" alt="">
+                        {{--<img class="fancybox_img" src="images/fancybox_img_1.png" alt="">--}}
                         <!--  <img src="images/img_room.png" alt="">
                       <img src="images/img_room.png" alt=""> -->
                     </div>
@@ -339,7 +339,7 @@
                                 иллюминаторы и т.п.
                             </li>
                         </ul>
-                        <img class="fancybox_img" src="images/fancybox_img_1.png" alt="">
+                        {{--<img class="fancybox_img" src="images/fancybox_img_1.png" alt="">--}}
                         <!--  <img src="images/img_room.png" alt="">
                       <img src="images/img_room.png" alt=""> -->
                     </div>
@@ -381,7 +381,7 @@
                             <li>зеркала не закаливаются, поскольку в печи плавится амальгама
                             </li>
                         </ul>
-                        <img class="fancybox_img" src="images/fancybox_img_1.png" alt="">
+                        {{--<img class="fancybox_img" src="images/fancybox_img_1.png" alt="">--}}
                         <!--  <img src="images/img_room.png" alt="">
                       <img src="images/img_room.png" alt=""> -->
                     </div>
@@ -429,7 +429,7 @@
                                 сторону зеленых оттенков.
                             </li>
                         </ul>
-                        <img class="fancybox_img" src="images/fancybox_img_1.png" alt="">
+                        {{--<img class="fancybox_img" src="images/fancybox_img_1.png" alt="">--}}
                         <!--  <img src="images/img_room.png" alt="">
                       <img src="images/img_room.png" alt=""> -->
                     </div>
@@ -464,7 +464,7 @@
                                 за час до приезда Вам отзвониться специалист, за день согласуют приезд
                             </li>
                         </ul>
-                        <img class="fancybox_img" src="images/fancybox_img_1.png" alt="">
+                        {{--<img class="fancybox_img" src="images/fancybox_img_1.png" alt="">--}}
                         <!--  <img src="images/img_room.png" alt="">
                       <img src="images/img_room.png" alt=""> -->
                     </div>
@@ -504,7 +504,7 @@
                                 Поверхости присасывания протереть.
                             </li>
                         </ul>
-                        <img class="fancybox_img" src="images/fancybox_img_1.png" alt="">
+                        {{--<img class="fancybox_img" src="images/fancybox_img_1.png" alt="">--}}
                         <!--  <img src="images/img_room.png" alt="">
                       <img src="images/img_room.png" alt=""> -->
                     </div>
@@ -559,8 +559,8 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-12">
-                    <div class="video_glass d-flex">
+                {{--<div class="col-lg-12">--}}
+                    <div class="video_glass col-12 col-md-6">
                         @if(isset($video) && $video[0]->show === 1)
                             <iframe width="50%" height="335px"
                                     src={{$video[0]->video}}
@@ -568,16 +568,19 @@
                                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                     allowfullscreen></iframe>
                         @endif
-                        <img src="images/glass_img.png" alt="">
                     </div>
-                </div>
+                        <div class="homepage-img d-none d-md-block col-md-6">
+                            <img src="images/glass_img.png" alt="">
+                        </div>
+
+                {{--</div>--}}
             </div>
         </div>
     </section>
     <section>
         <div class="container">
             <div class="rov">
-                <div class="col-lg-12">
+                <div class="col-12">
                     <div class="turnkey_product">
                         <h2>Изделия производимые «под ключ»</h2>
                     </div>

@@ -57,6 +57,9 @@ a, .navbar-toggler:not(:disabled):not(.disabled), label, button{
 iframe{
 	cursor: url(images/cursor_click.png), pointer !important;
 }
+input, textarea {
+	outline: none;
+}
 .disable{
 	pointer-events: none;
 	background: #dec19d !important;
@@ -129,7 +132,11 @@ iframe{
 	/* Text style for "Заявка на" */
 	color: #ffffff;
 	letter-spacing: 2.6px;
+	/*border-bottom:3px dashed #d1d1d1;*/
+}
+.call-back_header a {
 	border-bottom:3px dashed #d1d1d1;
+	padding: 0 0 5px;
 }
 .bg_sections1{
 	height: 600px;
@@ -283,7 +290,7 @@ iframe{
 	text-align: center;
 	border: 2px solid #ffffff;
 	background-color: #dfe2e1;
-	padding: 30px 55px;
+	padding: 30px 10px;
 	margin-bottom: 25px;
 	border: 5px solid #dfe2e1;
 
@@ -461,6 +468,11 @@ footer{
 }
 .contacts{
 	text-align: right;
+    font-family: "Open Sans";
+}
+.contacts a,
+.header_text a{
+    font-family: "Open Sans";
 }
 .contacts p{
 	color: #ffffff;
@@ -482,7 +494,11 @@ footer{
 	/* Text style for "Заявка на" */
 	color: #ffffff;
 	letter-spacing: 2.6px;
-	border-bottom:3px dashed #d1d1d1;
+	/*border-bottom:3px dashed #d1d1d1;*/
+}
+.call-back a {
+	border-bottom: 3px dashed #d1d1d1;
+	padding: 0 0 5px;
 }
 .soc_icons{
 	text-align: right;
@@ -798,29 +814,31 @@ footer{
 	letter-spacing: 0.52px;
 }
 .up_form{
-	margin-top: 40px;
-	display: flex;
-	justify-content: center;
+	/*margin-top: 40px;*/
+	/*display: flex;*/
+	/*justify-content: center;*/
 }
 .up_form input{
 	border: none;
-	margin-right: 25px;
-	padding: 15px 5px;
+	/*margin-right: 25px;*/
+	padding: 15px 10px;
 	box-shadow: 0 8px 14px rgba(34, 102, 187, 0.21);
 	background-color: #fbfbfb;
+	width: 100%;
 }
 .down_form{
-	margin-top: 20px;
-	display: flex;
-	justify-content: center;
+	margin-top: 25px;
+	/*display: flex;*/
+	/*justify-content: center;*/
 }
 .down_form input{
-	margin-left: -25px;
+	/*margin-left: -25px;*/
 	border: none;
-	margin-right: 25px;
-	padding: 15px 5px;
+	/*margin-right: 25px;*/
+	padding: 15px 10px;
 	box-shadow: 0 8px 14px rgba(34, 102, 187, 0.21);
 	background-color: #fbfbfb;
+	width: 100%;
 }
 .down_form_2 input{
 	margin-left: unset;
@@ -877,6 +895,7 @@ footer{
 .checkbox{
 	text-align: center;
 	margin: 20px auto;
+	width: fit-content;
 }
 /* прячем input checkbox */
 input[type="checkbox"] {
@@ -1545,8 +1564,8 @@ input[type="checkbox"] {
 	justify-content: center;
 }
 .help_glaas_type_last{
-	width: 500px;
-	margin: 10px auto;
+	/*width: 500px;*/
+	margin: 0 auto;
 }
 .help_glass_items{
 	width: 250px;
@@ -1593,14 +1612,13 @@ input[type="checkbox"] {
 	letter-spacing: 0.52px;
 }
 .first_chekbox{
-	margin-right: 35px;
-	display: flex;
-	flex-direction: column;
-
+	/*margin-right: 35px;*/
+	/*display: flex;*/
+	/*flex-direction: column;*/
 }
 .ssecond_chekbox{
-	display: flex;
-	flex-direction: column;
+	/*display: flex;*/
+	/*flex-direction: column;*/
 }
 .button_next{
 	text-align: center;
@@ -2035,21 +2053,21 @@ a:not([href]):not([tabindex]){
 	background-color: #3367b5;
 }
 .bg_types_door_items{
-	background: url(images/doors_panel.png)no-repeat;
+	background: url(images/doors_panel.png) no-repeat center;
 	/* background-size: cover; */
-	padding: 10px 25px;
+	padding: 20px 25px;
 	height: 275px;
 }
 .types_of_door_item{
 	visibility: hidden;
 	background-color: rgb(37, 92, 173);
 	background-size: cover;
-	padding-left: 30px;
+	padding: 10px;
 	width: 200px;
-
 	height: 100%;
 	border: 5px solid #fff;
 	border-image: url(images/border_turnkey_hover.png) 5 round round;
+	margin: 0 auto;
 }
 .types_of_door_item:hover{
 	visibility: visible !important;
@@ -2063,20 +2081,22 @@ a:not([href]):not([tabindex]){
 	font-family: "Open Sans";
 	font-size: 13px;
 	font-weight: 300;
-	line-height: 50px;
+	line-height: 35px;
 	text-transform: uppercase;
 	/* Text style for "Маятниковы" */
 	letter-spacing: 2.6px;
 }
-.types_of_door_item h3:before{
-	content: "";
-	top: 55px;
-	left: 120px;
-	position: absolute;
-	width: 62px;
-	height: 1px;
-	background: rgb(100, 141, 200);
-}
+/*.types_of_door_item h3:before,*/
+.types_of_door_item .door_plus:before,
+.types_of_door_item .door_mines:before {
+	 content: "";
+	 position: absolute;
+	 top: -4px;
+	 left: -17px;
+	 width: 62px;
+	 height: 1px;
+	 background: rgb(100, 141, 200);
+ }
 .types_of_door_item ul{
 	position: relative;
 	/*background-color: rgb(37, 92, 173);*/
@@ -2088,9 +2108,9 @@ a:not([href]):not([tabindex]){
 .types_of_door_item ul:last-child{
 	list-style: url(images/mines_bg-dark.png);
 }
-.types_of_door_item ul:last-child:before{
-	content: none;
-}
+/*.types_of_door_item ul:last-child:before{*/
+	/*content: none;*/
+/*}*/
 /* .types_of_door_item ul:before{
 	content: "";
 	top: 50px;
@@ -2344,7 +2364,7 @@ button:focus{
 	background: url(images/bg_calculations.png)no-repeat center center;
 	background-size: cover;
 	height:100%;
-	padding-top: 200px;
+	padding-top: 115px;
 }
 .calculations_sec1_items{
 	text-align: center;
@@ -2363,26 +2383,35 @@ button:focus{
 }
 .cost_calculation{
 	text-align: center;
-	padding: 10px 20px ;
+	padding: 30px 20px ;
 	box-shadow: 0 0 66px rgba(0, 0, 0, 0.14);
 	background-color: #ebf3f5;
-
+	font-size: 13px;
+	position: sticky;
+	top: 100px;
+	/*min-width: 350px;*/
 }
 .cost_calculation h4{
-	margin: 10px 0;
 	text-align: center;
 	color: #474747;
 	font-family: "Open Sans";
 	font-size: 19px;
 	font-weight: 300;
-	line-height: 25.02px;
+	/*line-height: 25.02px;*/
 	text-transform: uppercase;
-	/* Text style for "стоимость" */
 	letter-spacing: 3.6px;
+	margin-bottom: 10px;
+}
+.cost_calculation h4.order-cost {
+
+}
+.cost_calculation h4.readiness {
+	margin-top: 10px;
 }
 .cost_calculation input{
 	padding: 5px 10px;
 	border: none;
+	border-radius: 2px;
 	height: 50px;
 	box-shadow: 0 8px 14px rgba(34, 102, 187, 0.21);
 	background-color: #fbfbfb;
@@ -2418,15 +2447,20 @@ button:focus{
 	transition: all .7s;
 }
 .cost_calculation p{
-
 	color: #3e5669;
 	font-family: "Open Sans";
 	font-size: 13px;
 	font-weight: 300;
-	line-height: 28.02px;
+	/*line-height: 28.02px;*/
 	/* Text style for "(без срочн" */
 	letter-spacing: 0.52px;
-	margin-bottom: 5px;
+	/*margin-bottom: 5px;*/
+}
+.cost_calculation p#urgency {
+	margin-bottom: 10px;
+}
+.cost_calculation p#dayName {
+	margin-top: 10px;
 }
 .cost_butt{
 	box-shadow: 0 8px 14px rgba(34, 102, 187, 0.21);
@@ -2465,7 +2499,8 @@ button:focus{
 }
 .cost_calculation__link{
 	display: flex;
-
+	justify-content: space-around;
+	text-align: center;
 }
 .calc_content2{
 	height: 100%;
@@ -2482,14 +2517,14 @@ button:focus{
 /* } */
 .cost_calculation__link img{
 	height: 42px;
+	display: block;
+	margin: 0 auto 10px;
 }
 .cost_calculation__link a{
 	color: #8b8e91;
 	font-family: "Open Sans";
 	font-size: 13px;
 	font-weight: 400;
-	line-height: 50px;
-	/* Text style for "Замерщик" */
 	letter-spacing: 0.78px;
 
 }
@@ -2534,7 +2569,8 @@ button:focus{
 .head i:focus{
 	transform: rotate(180deg);
 }
-.choose_thiknes .nav-tabs .nav-link{
+.choose_thiknes .nav-tabs .nav-link,
+.text-kromka .nav-tabs .nav-link {
 	height: 60px;
 	width: 60px;
 	background-color: #e0e4e3;
@@ -2543,7 +2579,10 @@ button:focus{
 	padding: 18px 0px;
 	text-align: center;
 }
-.choose_thiknes .nav-tabs .nav-item.show .nav-link, .choose_thiknes .nav-tabs .nav-link.active{
+.choose_thiknes .nav-tabs .nav-item.show .nav-link, .choose_thiknes .nav-tabs .nav-link.active,
+.choose_thiknes .nav-tabs .nav-item .nav-link:hover,
+.text-kromka .nav-tabs .nav-item.show .nav-link, .text-kromka .nav-tabs .nav-link.active,
+.text-kromka .nav-tabs .nav-item .nav-link:hover {
 	background-color: #3062ab !important;
 	border-radius: 3px;
 	box-shadow: none;
@@ -2551,14 +2590,17 @@ button:focus{
 	background-image: none;
 	color:#ffffff;
 }
-.choose_thiknes .nav-tabs{
+.choose_thiknes .nav-tabs,
+.text-kromka .nav-tabs {
 	justify-content: space-around;
 	border-bottom: none;
 	margin-top: 25px;
 }
-.choose_thiknes ul li{
-	margin-right: 35px;
-	margin-top: 15px;
+.choose_thiknes ul li,
+.text-kromka ul li {
+	/*margin-right: 35px;*/
+	/*margin-top: 15px;*/
+    margin: 10px;
 }
 /* ...................ACORDEON.............. */
 .ui-icon{
@@ -2583,7 +2625,7 @@ button:focus{
 }
 .item_size_calc{
 	text-align: center;
-	margin-left: 5px;
+	margin-right: 15px;
 }
 .item_size_calc p{
 	color: #3e5669;
@@ -2599,24 +2641,40 @@ button:focus{
 	/*line-height: 20px;*/
 }
 .input_touch_size{
-	display: flex;
-	justify-content: center
+	/*display: flex;*/
+	/*justify-content: center;*/
 }
-.input_touch_size input{
-	width: 50px;
-	height: 45px;
+
+.input_touch_size > div {
+	display: inline-block;
+}
+
+.input_touch_size input {
+	width: 72px;
+	height: 51px;
 	margin-left: 5px;
+	padding: 5px 10px;
+	border: none;
+	border-radius: 2px;
+	box-shadow: 0 8px 14px rgba(34, 102, 187, 0.21);
+	background-color: #fbfbfb;
 }
 .video_glass{
-	justify-content: center
+	/*justify-content: center*/
 }
 .video_glass iframe{
 	position: relative;
 	z-index: 4;
-
+	width: 100%;
+}
+.homepage-img img {
+	width: 100%
 }
 iframe{
 	margin-right: 15px;
+}
+.video_our iframe:last-child {
+	margin-right: 0;
 }
 .video_glass img{
 	position: relative;
@@ -2627,21 +2685,22 @@ iframe{
 	background: url(images/gimalay-2.png)no-repeat top left;
 	justify-content: center;
 	margin-top: 30px;
-	margin: 30px 32px;
+	margin: 30px 0px;
 	background-size: cover;
 	/* background-position-x: -32px; */
 	/* background-position-y: -19px; */
 	margin-bottom: 35px;
 }
 .butt_choose_kromka a{
-	padding: 24px 4px;
+	padding: 24px 0;
 	width: 100%;
 }
 .butt_choose_kromka a:focus, .butt_choose_kromka a:hover{
-	padding: 20px 0px;
+	padding: 16px 0px;
 }
 .text-kromka{
 	display: flex;
+	justify-content: space-between;
 }
 .text-kromka p{
 	text-align: center;
@@ -2649,13 +2708,19 @@ iframe{
 	font-family: "Open Sans";
 	font-size: 13px;
 	font-weight: 300;
+	padding: 15px;
 	/* Text style for "Кромка буд" */
-	font-family: "Open Sans Light";
+
 	font-weight: 300;
 	letter-spacing: 0.52px;
 }
+.text-kromka p span {
+	font-weight: bold;
+	color: #3062ab;
+	text-tarnsform: uppercase;
+}
 .chekbox_sect_6{
-	justify-content: space-around
+	/*justify-content: space-between;*/
 }
 .chekbox_sect_6 input{
 	margin-bottom: 15px;
@@ -2669,14 +2734,19 @@ iframe{
 	line-height: 28.03px;
 	/* Text style for "Закалка (Т" */
 	letter-spacing: 0.52px;
+	display: block;
 }
 .Contact_form input{
-	width: 200px;
+	width: 100%;
 	height: 59px;
 	box-shadow: 0 8px 14px rgba(34, 102, 187, 0.21);
 	background-color: #fbfbfb;
 	border: none;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
+    padding: 5px 10px;
+}
+.Contact_form textarea {
+    width: 100%;
 }
 .up_input input{
 	margin-right: 5px;
@@ -2693,18 +2763,20 @@ textarea {
 }
 .down_buttons_distances a{
 	text-align: center;
-	padding: 20px 10px;
+	padding: 15px 10px;
 	background-color: #3e5669;
 	color: #ffffff;
 	font-family: "Open Sans";
-	font-size: 15px;
+	font-size: 12px;
 	font-weight: 400;
 	line-height: 21px;
 	/* Text style for "В пределах" */
 	letter-spacing: 0.3px;
+	flex-basis: 25%;
 
 }
-.down_buttons_distances a:focus,.down_buttons_distances a:hover{
+.down_buttons_distances a:focus, .down_buttons_distances a:hover,
+.down_buttons_distances  .down_buttons_distances--active {
 	background-color: #3367b5;
 }
 .cost_calc_first_tab{
@@ -2980,9 +3052,11 @@ textarea {
 }
 .calculator-section {
 	padding: 30px 0;
+	min-height: 425px;
 }
 
-.stairs_and_flooring_buttons_calculator .nav-link--active {
+.stairs_and_flooring_buttons_calculator .nav-link--active,
+.butt_choose_kromka .nav-link--active {
 	box-shadow: 1px 1px 3px 1px rgba(115, 194, 193, 0.5), inset 3px 3px 33px 2px rgba(115, 194, 193, 0.28), inset 0 0 6px 1px rgba(173, 255, 250, 0.16);
 	border: 1px solid #77a29c;
 	border: 5px solid #fff;
@@ -2991,6 +3065,12 @@ textarea {
 	background-image: linear-gradient(47deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.18) 11%, rgba(255, 255, 255, 0) 19%, rgba(255, 255, 255, 0.13) 33%, rgba(255, 255, 255, 0) 38%, rgba(255, 255, 255, 0.08) 45%, rgba(255, 255, 255, 0) 73%, rgba(255, 255, 255, 0.18) 84%, rgba(255, 255, 255, 0) 100%);
 	opacity: 0.9;
 	transition: all 0.2s;
+}
+.butt_choose_kromka a:active {
+    padding: 16px 0;
+}
+.butt_choose_kromka a.nav-link--active {
+    padding: 16px 0;
 }
 .help_glass_items--active {
 	padding: 8px;
@@ -3044,11 +3124,20 @@ textarea {
     padding: 10px 15px 10px 40px;
 }
 /* calculator page - hover effects for geometric figures */
-
-.item_size_calc .img-container{
-	position: relative;
+.item_size_calc .img-container,
+.item_size_calc p {
+	cursor: url(images/cursor_click.png), pointer !important;
 }
-.item_size_calc .img-container:after{
+.item_size_calc .img-container {
+	position: relative;
+	height: 130px;
+	line-height: 130px;
+}
+.item_size_calc .img-container:after,
+.rectangle--active .img-container:after,
+.circle--active .img-container:after,
+.oval--active .img-container:after,
+.another--active .img-container:after {
 	position: absolute;
 	display: none;
 	content: '';
@@ -3057,29 +3146,355 @@ textarea {
 	right: 0;
 	left: 0;
 	background-color: #3062ab;
-
 }
-.item_size_calc:hover .img-container:after,
-.item_size_calc--active {
+.rectangle--active .img-container:after,
+.circle--active .img-container:after,
+.oval--active .img-container:after,
+.another--active .img-container:after,
+.item_size_calc:hover .img-container:after {
 	display:block;
 }
-#rectangle:hover .img-container:after {
+#rectangle:hover .img-container:after,
+.rectangle--active .img-container:after {
 	border-radius: 4px;
 }
-#circle:hover .img-container:after {
+#circle:hover .img-container:after,
+.circle--active .img-container:after {
 	border-radius: 50%;
 	background-color: #3062ab;
+	height: 105px;
+	top: 15px;
 }
-#oval:hover .img-container:after {
+#oval:hover .img-container:after,
+.oval--active .img-container:after {
 	border-radius: 50%;
+	height: 96px;
+	top: 19px;
 }
-#another:hover .img-container:after {
-	background: url(images/another-hover.png);
+#another:hover .img-container:after,
+.another--active .img-container:after {
+	background: url(images/another-hover.png) no-repeat 50%;
+}
+.shapes-size {
+	align-self: baseline;
+	margin-right: 0;
+	margin-left: 15px;
+}
+.shapes-size p {
+	line-height: 30px;
+	text-transform: none;
+	letter-spacing: 1.2px;
 }
 
 
+/*calculator cost info block*/
+.cost_calculation__link img {
+
+}
+.cost_calculation span.label {
+	font-size: 13px;
+	color: #3e5669;
+}
+
+.text-kromka .nav-tabs {
+	justify-content: space-around;
+	border-bottom: none;
+	margin-top: 0;
+	margin-bottom: 20px;
+	width: 100%;
+}
+.text-kromka ul li {
+	/*margin-right: 35px;*/
+	/*margin-top: 15px;*/
+}
+.text-kromka .nav-tabs .nav-link {
+	height: 60px;
+	width: 85px;
+	background-color: #e0e4e3;
+	border-radius: 3px;
+	font-size: 1.4rem;
+	padding: 18px 0px;
+	text-align: center;
+	color: inherit;
+}
+
+.calculator-section input,
+.calculator-section  select{
+	outline: none;
+}
+.chekbox_sect_6 input,
+.chekbox_sect_6 select {
+	margin-bottom: 0;
+	outline: none;
+	margin-top: 10px;
+}
+.chekbox_sect_6 input,
+.chekbox_sect_6 select {
+	padding: 5px 10px;
+	border: none;
+	border-radius: 2px;
+	box-shadow: 0 8px 14px rgba(34, 102, 187, 0.21);
+	background-color: #fbfbfb;
+    width: 95%;
+}
+.Contact_form .second_row {
+	position: relative;
+	align-items: flex-start;
+}
+.Contact_form .first_row:after,
+.Contact_form .second_row:after{
+	display: table;
+	content: '';
+	clear: both;
+}
+.Contact_form .first_row > div,
+.Contact_form .second_row > div {
+	float: left;
+	position: relative;
+}
+.Contact_form .first_row > div > label,
+.Contact_form .second_row > div > label,
+label.error {
+	display: block;
+	font-size: 12px;
+	position: absolute;
+	bottom: 15px;
+}
+.Contact_form .second_row > div > label{
+	/*bottom: 25px;*/
+	bottom: 15px;
+	width: 248px;
+}
+
+.Contact_form .down_buttons_distances {
+	position: absolute !important;
+	bottom: 0;
+}
 
 /* Calculator triplex */
 .triplex-order-info {
+	font-size: 20px;
+	line-height: 25px;
+	color: #3e5669;
+	margin-bottom: 10px
+}
+#material .contacts {
+	color: #3e5669;
+	font-size: 20px;
+	line-height: 30px;
+	display: block;
+	border-bottom: 2px dashed #3e5669;
+	width: fit-content;
+}
+#material .contacts:hover {
 
+}
+
+
+
+/*  mini calculators contactforms*/
+.contact-form--row label.error {
+	bottom: -15px;
+}
+.contact-form--row.down_form_2 div {
+	margin: 0 auto;
+}
+.formLower {
+	margin-top: 30px;
+}
+@media screen and (max-width: 575px) {
+	.checkbox span.label {
+		font-size: 13px;
+	}
+}
+
+
+/*_________________________________*/
+.header-span-block {
+	display: inline-block;
+}
+.header-span-block span:first-child {
+	display: inline-block;
+	margin-right: 20px;
+}
+
+@media screen and (max-width: 991px) {
+	.heder_nav_navbar .navbar-brand {
+		margin-left: 10px;
+		margin-right: 0;
+	}
+	.header_call-back p {
+		font-size: 16px;
+	}
+	.call-back_header {
+		letter-spacing: 1.5px;
+	}
+	.header-span-block span {
+		font-size: 12px;
+	}
+	.heder_nav_navbar {
+		justify-content: space-between;
+	}
+	.header-span-block span {
+		display: block;
+		line-height: 20px;
+	}
+	.services_items{
+		height: 100px;
+		display:flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 30px 50px;
+	}
+}
+@media screen and (max-width: 767px) {
+	.header-span-block {
+		display: none;
+	}
+	.header_call-back{
+		margin-right: -150px;
+	}
+	.owl-next p,
+	.owl-prev p {
+		display: none;
+	}
+	.owl-next {
+		background: url(images/bag_arrow_naxt.png)no-repeat left !important;
+		width: 75px;
+	}
+	.owl-prev {
+		background: url(images/bag_prev_owl.png)no-repeat right !important;
+		width: 75px;
+	}
+
+
+    .Size_calc {
+        flex-wrap: wrap;
+    }
+    #rectangle,
+    #circle,
+    #oval,
+    #another{
+        flex-basis: 24%;
+        margin: 0;
+    }
+    #item_size_calc {
+        margin: 0 auto;
+    }
+    #circle:hover .img-container:after,
+    .circle--active .img-container:after {
+        width: 105px;
+        top: 15px;
+        left: 7px;
+    }
+    .text-kromka {
+        flex-direction: column;
+    }
+
+    /*___footer mobile____*/
+    footer {
+        padding-top: 25px;
+    }
+
+    .contact-info-footer .contacts {
+        float: left;
+        text-align: left;
+
+    }
+    .contact-info-footer .contacts .call-back {
+        line-height: 20px;
+        font-size: 11px;
+    }
+    .contact-info-footer .soc_icons {
+        float: right;
+    }
+
+    .footer_down_text p {
+        line-height: 15px;
+        margin: 0 !important;
+    }
+
+
+    /*______________*/
+
+	.Contact_form .down_buttons_distances {
+		position: static !important;
+		margin-top: 30px;
+	}
+	section#services {
+		padding-top: 70px;
+	}
+}
+@media screen and (max-width: 1199px) {
+    .footer_menu ul li {
+        margin-left: 10px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .Contact_form .second_row > div > label, label.error {
+        font-size: 11px;
+    }
+
+}
+
+@media screen and (max-width: 575px) {
+	.header_call-back{
+		margin-right: -100px;
+	}
+
+    #page_calculations {
+        height: 0;
+        padding-top: 0;
+        background: none;
+    }
+    .calculator-section {
+        padding-top: 100px;
+    }
+
+    #rectangle,
+    #circle,
+    #oval,
+    #another{
+        flex-basis: 49%;
+        margin: 0;
+    }
+    #rectangle:hover .img-container:after,
+    .rectangle--active .img-container:after {
+        width: 129px;
+        left: calc(50% - 65px);
+    }
+    #oval:hover .img-container:after, .oval--active .img-container:after {
+        width: 123px;
+        left: calc(50% - 61px);
+    }
+    #circle:hover .img-container:after,
+    .circle--active .img-container:after {
+        left: calc(50% - 52px);
+    }
+
+    .stairs_and_flooring_buttons.butt_choose_kromka {
+        flex-direction: column;
+    }
+    .stairs_and_flooring_buttons.butt_choose_kromka a{
+        margin: 10px;
+        width: 93%;
+    }
+}
+@media screen and (max-width: 430px) {
+	.header_call-back{
+		margin-right: -40px;
+	}
+	.services_items {
+		padding: 30px 15px;
+	}
+	.Contact_form .second_row > div {
+		flex-wrap: wrap;
+	}
+	.down_buttons_distances a {
+		flex-basis: 50%;
+	}
+}
+
+div.head.toggler {
+	margin-bottom: 20px;
 }

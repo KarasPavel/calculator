@@ -22,16 +22,22 @@
         <nav class="navbar fixed-top navbar-expands navbar-dark ">
             <div class="heder_nav_navbar">
                 <a class="navbar-brand" href=""><img src="images/Viditex_logo.png" alt="" class="logo"></a>
-                <span class="white header_small_text"><i class="fas fa-map-marker-alt"></i> г. Москва</span>
-                <span class="white header_small_text"><i class="far fa-clock"></i>пн - сб 10 00 - 19 00</span>
+                <div class="header-span-block">
+                    <span class="white header_small_text"><i class="fas fa-map-marker-alt"></i> г. Москва</span>
+                    <span class="white header_small_text"><i class="far fa-clock"></i>пн - сб 10 00 - 19 00</span>
+                </div>
                 <a href="mailto:info@v-t-x.ru"><span class="white header_small_text"><i class="far fa-envelope"></i>info@v-t-x.ru</span></a>
-                <span class="white header_small_text"><a href="#">Все услуги</a></span>
-                <span class="white header_small_text"><a href="#">Контакты</a></span>
+                <div class="header-span-block">
+                    <span class="white header_small_text"><a href="">Все услуги</a></span>
+                    <span class="white header_small_text"><a href="#kontakty">Контакты</a></span>
+                </div>
                 <div class="header_call-back">
-                    <p class="header_text">+7 (499) 677 20 67</p>
+                    <p class="header_text"><a href="tel:+74996772067">+7 (499) 677 20 67</a></p>
                     <div class="call-back_header">
-                        <img src="images/phone_fontasome.png" alt="">
-                        <a class="" id="" href="#win1">Заявка на звонок</a>
+                        <a class="" id="" href="#win1">
+                            <img src="images/phone_fontasome.png" alt="">
+                            Заявка на звонок
+                        </a>
                     </div>
                 </div>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
@@ -147,13 +153,13 @@
 
 
     <div class="container">
-        <div class="row">
-            <div class="col-lg-3 col-md-3">
+        <div class="row  no-gutters">
+            <div class="col-md-3">
                 <div class="footer_logo">
                     <img src="images/Viditex_logo.png" alt="" class="logo">
                 </div>
             </div>
-            <div class="col-lg-4 col-md-3">
+            <div class="d-none d-md-block col-lg-4 col-md-3">
                 <div class="footer_menu">
                     <ul>
                         <li><a href="#">Контакты</a></li>
@@ -164,7 +170,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-lg-2 col-md-3">
+            <div class="d-none d-md-block  col-lg-2 col-md-3">
                 <div class="footer_menu">
                     <ul>
                         <li><a href="#">Доставка</a></li>
@@ -185,15 +191,15 @@
                     </ul>
                 </div>
             </div> -->
-            <div class="col-lg-3 col-md-3">
+            <div class="col-md-3 contact-info-footer">
                 <div class="contacts">
-                    <p>+7 (499) 677 20 67</p>
+                    <p><a href="tel:+74996772067">+7 (499) 677 20 67</a></p>
                     <div class="call-back">
-                        <img src="images/phone_fontasome.png" alt="">
-                        <a href="#win1">Заявка на звонок</a>
+                        <a href="#win1">
+                            <img src="images/phone_fontasome.png" alt="">
+                            Заявка на звонок
+                        </a>
                     </div>
-
-
                 </div>
                 <div class="soc_icons">
                     <i class="fab fa-vk" onclick="window.location.href = '{{$social[0]->link}}'"></i>
@@ -202,7 +208,7 @@
                 </div>
             </div>
         </div>
-        <div class="row">
+        <div class="row no-gutters">
             <div class="col-lg-12">
                 <div class="footer_down_text">
                     <p>© 2018 Все права защищены.</p>

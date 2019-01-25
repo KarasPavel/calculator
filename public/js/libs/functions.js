@@ -698,11 +698,9 @@ function makeButtonDisableInCalcForm (buttonSelector, disabledClass) {
             if ($(distanceChoises[i]).hasClass( "down_buttons_distances--active" )) {
                 $(buttonSelector).removeClass(disabledClass);
                 $(buttonSelector).removeClass(disabledClass);
-                console.log('if');
                 return;
             } else {
                 $(buttonSelector).addClass(disabledClass);
-                console.log('else');
                 $(buttonSelector).addClass(disabledClass);
             }
         }

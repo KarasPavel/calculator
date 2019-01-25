@@ -81,7 +81,7 @@
                             <i class="fas fa-angle-down"></i>
                         </div>
                         <div id="box-calc" class="wraper content actived">
-                            <div class="stairs_and_flooring_buttons stairs_and_flooring_buttons_calculator  d-flex">
+                            <div class="stairs_and_flooring_buttons stairs_and_flooring_buttons_calculator d-flex">
                                 <a class="nav-link" id="glass" data-toggle="tab" href="#">Стекло</a>
                                 <a class="nav-link" id="mirror" data-toggle="tab" href="#">Зеркало</a>
                                 <a class="nav-link" id="triplex" data-toggle="tab" href="#">Триплекс</a>

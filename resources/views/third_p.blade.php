@@ -536,33 +536,47 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="help_glaas_type d-flex">
-                            <div class="help_glass_items for_option_1">
+                            <div class="help_glass_items for_option_1 mirrors-tooltip-wrap">
+                                <!-- <img src="images/glaas6.png" alt=""> -->
+                                <p>Серебро</p>
+                                <span class="tooltiptext">Обычное зеркало, которое повсеместно используется в частных домах, спорт-залах, общественных
+                                    местах и т.д. Имеет почти не заметный зеленоватый оттенок. Чтобы проверить какое у Вас зеркало, возьмите белый листок и посмотрите на него
+                                    отражении. Если есть зеленца – зеркало серебро.</span>
+                            </div>
+                            <div class="help_glass_items for_option_1 mirrors-tooltip-wrap">
                                 <!-- <img src="images/glaas_type1.png" alt=""> -->
                                 <p>ClearVision</p>
+                                <span class="tooltiptext">Зеркало с самым лучшим отражением, без заметных глазу оттенков. Самый белый материал
+                                    на планете (отражение света около 100%). Цена на данный вид зеркал ощутимо выше, поскольку за основу берется стекло ClearVision. Используется повсеместно.</span>
                             </div>
-                            <div class="help_glass_items for_option_1">
+                            <div class="help_glass_items for_option_1 mirrors-tooltip-wrap">
                                 <!-- <img src="images/glass3.png" alt=""> -->
                                 <p>Состаренное</p>
                             </div>
-                            <div class="help_glass_items for_option_1">
+                            <div class="help_glass_items for_option_1 mirrors-tooltip-wrap">
                                 <!-- <img src="images/glass4.png" alt=""> -->
                                 <p>Бронза</p>
+                                <span class="tooltiptext">Зеркало на основе тонированного в массе  стекла цвета "Темная бронза", с нанесением амальгамы. Используется в примерочных комнатах,
+                                    в шоурумах и в домашних интерьерах. Часто используют в сочетании с темными породами дерева и с винтажными интерьерами.</span>
                             </div>
-                            <div class="help_glass_items for_option_1">
+                            <div class="help_glass_items for_option_1 mirrors-tooltip-wrap">
                                 <!-- <img src="images/glass5.png" alt=""> -->
                                 <p>Графитовое</p>
+                                <span class="tooltiptext">Зеркало на основе тонированного в массе серого стекла, с нанесением амальгамы. Используется в
+                                    примерочных комнатах, в шоурумах и в домашних интерьерах. Отлично подходит под современные стили интерьеров.</span>
                             </div>
-                            <div class="help_glass_items for_option_1">
-                                <!-- <img src="images/glaas6.png" alt=""> -->
-                                <p>Серебро</p>
-                            </div>
-                            <div class="help_glass_items for_option_1">
+                            <div class="help_glass_items for_option_1 mirrors-tooltip-wrap">
                                 <!-- <img src="images/glaas6.png" alt=""> -->
                                 <p>Эксклюзив</p>
+                                <span class="tooltiptext">Сюда входят эксклюзивные типы зеркал, такие как - состаренные зеркала, зеркало-шпион, кракелюр и цветные зеркала.
+                                    Ввиду сложности согласования деталей, просьба оформить заказ и дождаться звонка специалиста, который проконсультирует и согласует с вами все детали заказа.
+                                    Либо позвоните по нашему контактному телефону, указанному выше.</span>
                             </div>
-                            <div class="help_glass_items for_option_1">
+                            <div class="help_glass_items for_option_1 mirrors-tooltip-wrap">
                                 <!-- <img src="images/glaas6.png" alt=""> -->
                                 <p>Золото</p>
+                                <span class="tooltiptext">Зеркало с эффектным золотым отражением. В наличии 2 типа золотых зеркал - "Шампань" (мягкий тон) и "Обычное золото" (ярко-оранжевое).
+                                    Все нюансы будут согласованы с нашим менеджером, который перезвонит Вам, после оформления заказа.</span>
                             </div>
                         </div>
                         <div class="button_next">

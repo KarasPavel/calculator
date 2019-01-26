@@ -945,7 +945,7 @@ function calculate() {
         //     '</div>');
         $('.Contact_form').append('<div class="buttons_buy_glass d-flex justify-content-center"></div>');
         $('.buttons_buy_glass').append('<button id="makeOrder" class="cost_butt buy_buttons disable">Оформить заказ</button>');
-        $('.buttons_buy_glass').append('<button id="buyProduct" class="cost_butt1 buy_buttons" style="display: none;">В корзину</button>');
+        $('.buttons_buy_glass').append('<button id="buyProduct" class="cost_butt1 buy_buttons">В корзину</button>');
         $(document).find('#calcForm').validate({
             rules: {
                 name: {
@@ -1073,36 +1073,46 @@ function calculate() {
                 _token: $('meta[name="csrf-token"]').attr('content')
             }, function (data, status) {
                 console.log(setOrderData());
-                console.log(data[0].address);
                 console.log(status);
                 order = data;
-                console.log(getCartData());
-                $('#cart').append('<h6 class="popup_choise_h2 forCart"></h6>');
-                $('#cart').append('<button id="0">Х</button>');
-                $('.forCart').empty();
-                $('.forCart').append(getCartData());
+                getCartDescription()
             });
-
             document.location.assign('#win5');
         }
     });
 
-    function getCartData() {
-        let shapeData;
-        if (order[0].orderInfo.shape.name.toString() === 'Круг') {
-            shapeData = order[0].orderInfo.shape.name.toString() + ' ' + order[0].orderInfo.shape.diameter + 'мм, ';
-        } else {
-            shapeData = order[0].orderInfo.shape.name.toString() + order[0].orderInfo.shape.height + 'X' + order[0].orderInfo.shape.width + ' мм, ';
-        }
-        let description;
-        description = order[0].orderInfo.material
-            + ', ' + order[0].orderInfo.product
-            + ', толщина: ' + order[0].orderInfo.depth + 'мм, '
-            + ', форма и размеры: ' + shapeData
-            + 'обработка ' + order[0].orderInfo.format
-            + ', дополнительно: ' + order[0].orderInfo.options
-            + 'Стоимость: ' + order[0].price;
-        return description.toString();
+    $('#cart').on('click', '.button_for_delete_product_from_cart', function () {
+        $.post('deleteProductFromCart/' + this.id, {
+            data: this.id,
+            _token: $('meta[name="csrf-token"]').attr('content')
+        }, function (data, status) {
+            order = data;
+            getCartDescription()
+        })
+    });
+
+    function getCartDescription() {
+        $('#cart_table').empty();
+        order.forEach(function (item, i, order) {
+            let shapeData;
+            if (item.orderInfo.shape.name.toString() === 'Круг') {
+                shapeData = item.orderInfo.shape.name.toString() + ' ' + item.orderInfo.shape.diameter + 'мм, ';
+            } else {
+                shapeData = item.orderInfo.shape.name.toString() + item.orderInfo.shape.height + 'X' + item.orderInfo.shape.width + ' мм, ';
+            }
+            let description;
+            description = item.orderInfo.material
+                + ', ' + item.orderInfo.product
+                + ', толщина: ' + item.orderInfo.depth + 'мм, '
+                + 'форма и размеры: ' + shapeData
+                + 'обработка ' + item.orderInfo.format
+                + ', дополнительно: ' + item.orderInfo.options
+                + '// Стоимость: ' + item.price;
+            $('#cart_table').append('<tr class="cart_table_row' + i + '"></tr>');
+            $('.cart_table_row' + i).append('<td>' + description.toString() + '</td>');
+            $('.cart_table_row' + i).append('<td><button class="button_for_delete_product_from_cart" id="' + i + '">' + i + '</button></td>');
+            // $('#cart').append('<button class="button_for_delete_product_from_cart" id="' + i + '">' + i + '</button>');
+        });
     }
 
     function sendOrder() {
@@ -1110,9 +1120,6 @@ function calculate() {
             data: JSON.stringify(setOrderData()),
             _token: $('meta[name="csrf-token"]').attr('content')
         }, function (data, status) {
-            console.log(setOrderData());
-            console.log(data);
-            console.log(status);
         });
         document.location.assign('#win4');
     }

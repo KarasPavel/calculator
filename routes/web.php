@@ -25,6 +25,7 @@ Route::middleware('auth')->group(function () {
 Route::post('createApplications', 'Admin\ApplicationsController@createApplications')->name('createApplications');
 Route::post('createOrders', 'Admin\OrdersController@createOrders')->name('createOrders');
 Route::post('createCart', 'Admin\CartsController@createCart')->name('createCart');
+Route::post('deleteProductFromCart/{id}', 'Admin\CartsController@deleteProductFromCart')->name('deleteProductFromCart');
 
 
 //uploadPhotoStairs

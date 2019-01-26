@@ -82,9 +82,9 @@
                         </div>
                         <div id="box-calc" class="wraper content actived">
                             <div class="stairs_and_flooring_buttons stairs_and_flooring_buttons_calculator d-flex">
-                                <a class="nav-link" id="glass" data-toggle="tab" href="#">Стекло</a>
-                                <a class="nav-link" id="mirror" data-toggle="tab" href="#">Зеркало</a>
-                                <a class="nav-link" id="triplex" data-toggle="tab" href="#">Триплекс</a>
+                                <a class="nav-link" id="glass"  href="#">Стекло</a>
+                                <a class="nav-link" id="mirror"  href="#">Зеркало</a>
+                                <a class="nav-link" id="triplex"  href="#">Триплекс</a>
                             </div>
                         </div>
                     </div>
@@ -122,9 +122,18 @@
 <div id="good" class="popup popup_choise">
     <div id="cart" class="up_form up_form_popup">
         <h3 class="popup_choise_h2">У Вас в корзине: </h3>
+        <div class='table-responsive'>
+            <table class="table table-hover table-sm">
+                <tbody id="cart_table">
+                </tbody>
+            </table>
+        </div>
     </div>
     <div class="button_forms button_forms_popup">
-        <a href="#">Ok</a>
+        <a href="#close">Ok</a>
+    </div>
+    <div class="button_forms button_forms_popup">
+        <a href="#close">Заказать</a>
     </div>
     <a class="close" title="Закрыть" href="#close"></a>
 </div>

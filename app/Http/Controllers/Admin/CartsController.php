@@ -9,8 +9,13 @@ use Illuminate\Http\Request;
 class CartsController extends Controller
 {
     public function createCart(Request $request){
-        $asd = Cart::addProduct($request);
-//        dd($asd);
-        return $asd;
+        $addProduct = Cart::addProduct($request);
+        return $addProduct;
+    }
+
+    public function deleteProductFromCart($id)
+    {
+        $deleteProduct = Cart::deleteProduct($id);
+        return $deleteProduct;
     }
 }

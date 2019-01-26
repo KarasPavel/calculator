@@ -259,7 +259,7 @@
 		padding: 10px 40px;
 	}
 	.glass_door_items img{
-		display: none !important;		
+		display: none !important;
 	}
 	.glass_door_items_down img{
 		display: none !important;
@@ -332,7 +332,8 @@
 	.homepage-img-video-wrap {
 		position: relative;
 	}
-	.homepage-img-video-wrap iframe {
+	.homepage-img-video-wrap iframe,
+	iframe {
 		border: 10px solid #3e5669;
 	}
 
@@ -363,6 +364,33 @@
 		line-height: 30px;
 		letter-spacing: 5px;
 	}
+
+	/*.glass_door_items img{*/
+		/*display: block !important;*/
+		/*width: 100% !important;*/
+		/*height: unset;*/
+	/*}*/
+	/*.glass_door_item,*/
+	/*.glass_door_item_down {*/
+		/*border-top: none;*/
+		/*border-right: none;*/
+		/*border-left: none;*/
+		/*padding-left: 10px;*/
+		/*padding-right: 10px;*/
+
+	/*}*/
+	/*.glass_door_items_down img,*/
+	/*.glass_door_item_down img{*/
+		/*display: block !important;*/
+	/*}*/
+	/*.glass_door_item_down img {*/
+		/*order: 0;*/
+	/*}*/
+	/*.Glasses_pages_doors,*/
+	/*.glass_door_items_down{*/
+		/*flex-direction: column;*/
+
+	/*}*/
 }
 
 @media screen and (max-width: 420px) {

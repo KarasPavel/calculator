@@ -12,7 +12,7 @@
                 <img src="images/squad_smaler.png" alt="">
                 <span>Надежно</span>
                 <h3>индивидуальное изготовление</h3>
-                <a href="#win2">вызвать замерщика</a>
+                <a href="#win2" class="btn-make-order">вызвать замерщика</a>
             </div>
             <div class="bg-3_pages_howers fartuck_page3">
                 <!-- <a href="#">Бесплатная консультация по телефону
@@ -139,7 +139,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row no-padding">
                 <div class="col-lg-12">
                     <div class="glass_door_items Glasses_pages_doors d-flex">
                         <!-- <div class="glass_door_items_new_img d-flex"> -->
@@ -165,7 +165,7 @@
                             </ul>
                         </div>
                     </div>
-                    <a class="glass_door_item_buttons aprons_items_button" href="#win1">бесплатная консультация</a>
+                    <a class="glass_door_item_buttons aprons_items_button btn-make-order" href="#win1">бесплатная консультация</a>
                 </div>
             </div>
         </div>
@@ -179,7 +179,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row no-padding">
                 <div class="col-lg-12">
                     <div class="glass_door_items_down  d-flex">
                         <div class="glass_door_item_down Glases_page_door">

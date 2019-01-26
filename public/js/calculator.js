@@ -466,6 +466,26 @@ function calculate() {
         $('#shape').show().children().show();
     });
 
+    function showUploadedFileName() {
+        var inputOrigLength,
+            inputOrigfilename;
+
+        $('#shape').on('change', '#fileUpload', function () {
+
+            var labelElement = $(this).next();
+            inputOrigLength = this.files.length;
+
+            if (inputOrigLength !== 0) {
+                inputOrigfilename = this.files[0].name;
+                labelElement.html(inputOrigfilename);
+            }
+            if (inputOrigLength === 0) {
+                labelElement.html('Загрузить чертеж');
+            }
+        });
+    }
+
+
     var shape = {};
 
     function fillShapeDiv() {
@@ -498,6 +518,7 @@ function calculate() {
                 '    <label for="fileUpload">Загрузить чертеж</label></div>' +
                 '    </div>');
             $('#shape_size').append('<div><input id="shape_diameter" name="diameter" type="number" min="1" placeholder="мм"><p>диаметр</p></div>');
+            showUploadedFileName();
         });
         $('#shape').on('click', '#rectangle, #oval, #another', function () {
             $('#item_size_calc').detach();
@@ -515,6 +536,7 @@ function calculate() {
                 '<div><input id="shape_width" type="number" min="1" name="width" placeholder="мм">' +
                 '<p>ширина</p></div>');
             // '</div>');
+            showUploadedFileName();
         })
     }
 
@@ -944,8 +966,8 @@ function calculate() {
         //     '   <textarea name="comment" id="" cols="25" rows="3" placeholder="Комментарий к заказу"></textarea>' +
         //     '</div>');
         $('.Contact_form').append('<div class="buttons_buy_glass d-flex justify-content-center"></div>');
-        $('.buttons_buy_glass').append('<button id="makeOrder" class="cost_butt buy_buttons disable">Оформить заказ</button>');
-        $('.buttons_buy_glass').append('<button id="buyProduct" class="cost_butt1 buy_buttons">В корзину</button>');
+        $('.buttons_buy_glass').append('<button id="makeOrder" class="cost_butt buy_buttons disable btn-make-order">Оформить заказ</button>');
+        $('.buttons_buy_glass').append('<button id="buyProduct" class="cost_butt1 buy_buttons disable-cart btp-put-in-cart">В корзину</button>');
         $(document).find('#calcForm').validate({
             rules: {
                 name: {

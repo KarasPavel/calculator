@@ -82,9 +82,9 @@
                         </div>
                         <div id="box-calc" class="wraper content actived">
                             <div class="stairs_and_flooring_buttons stairs_and_flooring_buttons_calculator d-flex">
-                                <a class="nav-link" id="glass" href="#">Стекло</a>
-                                <a class="nav-link" id="mirror" href="#">Зеркало</a>
-                                <a class="nav-link" id="triplex" href="#">Триплекс</a>
+                                <a class="nav-link" id="glass" href="javascript:void(0);">Стекло</a>
+                                <a class="nav-link" id="mirror" href="javascript:void(0);">Зеркало</a>
+                                <a class="nav-link" id="triplex" href="javascript:void(0);">Триплекс</a>
                             </div>
                         </div>
                     </div>

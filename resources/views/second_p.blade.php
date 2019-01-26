@@ -17,7 +17,7 @@
                 <img src="images/squad_smaler.png" alt="">
                 <span>Надежно</span>
                 <h3>индивидуальное изготовление</h3>
-                <a href="#win2">вызвать замерщика</a>
+                <a href="#win2" class="btn-make-order">вызвать замерщика</a>
             </div>
             <div class="bg-3_pages_howers">
                 <!-- <a href="#">Бесплатная консультация по телефону
@@ -477,7 +477,7 @@
                                 <li>Олеофобное покрытие, триплекс и другие виды обработки</li>
                                 <li>Герметизация двери и фиксация в положении 0 без стопора.</li>
                             </ul>
-                            <a href="#win2">Заказать</a>
+                            <a href="#win2" class="btn-make-order">Заказать</a>
                         </div>
                     </div>
                 </div>

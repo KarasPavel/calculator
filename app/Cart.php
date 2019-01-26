@@ -61,4 +61,15 @@ class Cart extends Model
 //        unset($val[$id]);
         return $value;
     }
+
+    public static function getCart()
+    {
+        $value = Session::get(Session::getId());
+        return $value;
+    }
+
+    public static function resetCart()
+    {
+        Session::forget(Session::getId());;
+    }
 }

@@ -1072,13 +1072,20 @@ function calculate() {
                 data: JSON.stringify(setOrderData()),
                 _token: $('meta[name="csrf-token"]').attr('content')
             }, function (data, status) {
-                console.log(setOrderData());
-                console.log(status);
                 order = data;
                 getCartDescription()
             });
             document.location.assign('#win5');
         }
+    });
+
+    $('#myCart').click(function () {
+        $.post('getCart', {
+            _token: $('meta[name="csrf-token"]').attr('content')
+        }, function (data, status) {
+            order = data;
+            getCartDescription()
+        })
     });
 
     $('#cart').on('click', '.button_for_delete_product_from_cart', function () {
@@ -1091,7 +1098,19 @@ function calculate() {
         })
     });
 
+    var total;
+
+    $('#buyAll').click(function () {
+        $.post('buyFromCart', {
+            _token: $('meta[name="csrf-token"]').attr('content')
+        }, function (data, status) {
+            total = 0;
+            $('#cart_table').empty()
+        })
+    });
+
     function getCartDescription() {
+        total = 0;
         $('#cart_table').empty();
         order.forEach(function (item, i, order) {
             let shapeData;
@@ -1111,8 +1130,9 @@ function calculate() {
             $('#cart_table').append('<tr class="cart_table_row' + i + '"></tr>');
             $('.cart_table_row' + i).append('<td>' + description.toString() + '</td>');
             $('.cart_table_row' + i).append('<td><button class="button_for_delete_product_from_cart" id="' + i + '">' + i + '</button></td>');
-            // $('#cart').append('<button class="button_for_delete_product_from_cart" id="' + i + '">' + i + '</button>');
+            total += item.price;
         });
+        $('#cart_table').append('<p>Итого: ' + total +'</p>')
     }
 
     function sendOrder() {

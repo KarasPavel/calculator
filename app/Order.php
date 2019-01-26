@@ -63,10 +63,32 @@ class Order extends Model
                     'created_at' => Carbon::now()
                 ]);
             return $dbResult;
-        }
-        catch (Exception $e) {
+        } catch (Exception $e) {
             return $e->getMessage();
         }
+    }
+
+    public static function createOrderFromCart($request)
+    {
+        $result = $request;
+        $orderInfo = json_encode($result->orderInfo);
+        $dbResult = DB::table('orders')
+            ->insert([
+                'name' => $result->name,
+                'email' => $result->email,
+                'phone' => $result->phone,
+                'comment' => $result->comment,
+                'address' => $result->address,
+                'delivery' => $result->delivery,
+                'quantity' => $result->quantity,
+                'price' => $result->price,
+                'urgency' => $result->urgency,
+                'order_data' => $orderInfo,
+                'application_status_id' => 1,
+                'order_date' => $result->orderDate,
+                'created_at' => Carbon::now()
+            ]);
+        return $dbResult;
     }
 
     public static function deleteOrder($id)

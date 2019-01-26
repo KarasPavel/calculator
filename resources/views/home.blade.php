@@ -39,7 +39,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row no-padding">
                 <div class="col-lg-3 col-md-6">
                     <a data-fancybox data-src="#selectableModal" href="javascript:;" class="">
                         <div class="services_items">
@@ -181,7 +181,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row no-padding">
                 <div class="col-lg-3 col-md-6">
                     <a data-fancybox data-src="#selectableModal5" href="javascript:;" class="">
                         <div class="services_items">
@@ -345,7 +345,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row no-padding">
                 <div class="col-lg-3 col-md-6">
                     <a data-fancybox data-src="#selectableModal9" href="javascript:;" class="">
                         <div class="services_items">
@@ -558,7 +558,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row homepage-img-video-wrap">
                 {{--<div class="col-lg-12">--}}
                     <div class="video_glass col-12 col-md-6">
                         @if(isset($video) && $video[0]->show === 1)
@@ -569,7 +569,7 @@
                                     allowfullscreen></iframe>
                         @endif
                     </div>
-                        <div class="homepage-img d-none d-md-block col-md-6">
+                        <div class="homepage-img col-12 col-md-6">
                             <img src="images/glass_img.png" alt="">
                         </div>
 
@@ -586,7 +586,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row no-padding">
                 <div class="col-lg-4 col-md-4">
                     <a href="#dushevye_ograjdeniya">
                         <div class="turnkey_items">
@@ -613,7 +613,7 @@
                     </a>
                 </div>
             </div>
-            <div class="row">
+            <div class="row no-padding">
                 <div class="col-lg-4 col-md-4">
                     <a href="#Primery_lestnich">
                         <div class="turnkey_items">
@@ -638,20 +638,6 @@
                         </div>
                     </a>
                 </div>
-            </div>
-        </div>
-    </section>
-    <section>
-        <div class="container">
-            <div class="rov">
-
-            </div>
-        </div>
-    </section>
-    <section>
-        <div class="container">
-            <div class="rov">
-
             </div>
         </div>
     </section>

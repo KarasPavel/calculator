@@ -304,7 +304,7 @@ function calculate() {
         $('#silver').append('<span class="tooltiptext">Обычное зеркало, которое повсеместно используется в частных домах, спорт-залах, общественных ' +
             'местах и т.д. Имеет почти не заметный зеленоватый оттенок. Чтобы проверить какое у Вас зеркало, возьмите белый листок и посмотрите на него в' +
             ' отражении. Если есть зеленца – зеркало серебро.</span>');
-        $('#box-calc-2-2').append('<div id="clearVision" class="help_glass_items calc_content2 tooltip-wrap" data-toggle="tooltip" title="Hooray!"></div>');
+        $('#box-calc-2-2').append('<div id="clearVision" class="help_glass_items calc_content2 tooltip-wrap"></div>');
         $('#clearVision').append('<p>ClearVision</p>');
         $('#clearVision').append('<span class="tooltiptext">Зеркало с самым лучшим отражением, без заметных глазу оттенков. Самый белый материал ' +
             'на планете (отражение света около 100%). Цена на данный вид зеркал ощутимо выше, поскольку за основу берется стекло ClearVision. Используется повсеместно.</span>');
@@ -466,6 +466,26 @@ function calculate() {
         $('#shape').show().children().show();
     });
 
+    function showUploadedFileName() {
+        var inputOrigLength,
+            inputOrigfilename;
+
+        $('#shape').on('change', '#fileUpload', function () {
+
+            var labelElement = $(this).next();
+            inputOrigLength = this.files.length;
+
+            if (inputOrigLength !== 0) {
+                inputOrigfilename = this.files[0].name;
+                labelElement.html(inputOrigfilename);
+            }
+            if (inputOrigLength === 0) {
+                labelElement.html('Загрузить чертеж');
+            }
+        });
+    }
+
+
     var shape = {};
 
     function fillShapeDiv() {
@@ -498,6 +518,7 @@ function calculate() {
                 '    <label for="fileUpload">Загрузить чертеж</label></div>' +
                 '    </div>');
             $('#shape_size').append('<div><input id="shape_diameter" name="diameter" type="number" min="1" placeholder="мм"><p>диаметр</p></div>');
+            showUploadedFileName();
         });
         $('#shape').on('click', '#rectangle, #oval, #another', function () {
             $('#item_size_calc').detach();
@@ -515,6 +536,7 @@ function calculate() {
                 '<div><input id="shape_width" type="number" min="1" name="width" placeholder="мм">' +
                 '<p>ширина</p></div>');
             // '</div>');
+            showUploadedFileName();
         })
     }
 
@@ -599,18 +621,18 @@ function calculate() {
         $('#calc_stege_5').append('<i class="fas fa-angle-down"></i>');
         $('#format').append('<div id="box-calc-5" class="wraper content"></div>');
         $('#box-calc-5').append('<div id="box-calc-5-1" class="stairs_and_flooring_buttons butt_choose_kromka d-flex"></div>');
-        $('#box-calc-5-1').append('<a id="without_processing" class="nav-link" data-toggle="tab" href="#">БЕЗ ОБРАБОТКИ КРОМОК</a>');
+        $('#box-calc-5-1').append('<a id="without_processing" class="nav-link" data-toggle="tab" href="javascript:void(0);">БЕЗ ОБРАБОТКИ КРОМОК</a>');
         $('#format').append('<div class="text-kromka">' +
             '    <p>Кромка будет режуще-острой, а стекло хрупким.' +
             '    <br><span>Будьте осторожны!</span></p>' +
             '    <img src="images/sloy_kromka.png" alt="">' +
             '</div>');
         if (depthId != "three") {
-            $('#box-calc-5-1').append('<a id="with_processing" class="nav-link" data-toggle="tab" href="#">ПОЛИРОВКА КРОМОК</a>');
+            $('#box-calc-5-1').append('<a id="with_processing" class="nav-link" data-toggle="tab" href="javascript:void(0);">ПОЛИРОВКА КРОМОК</a>');
         }
 
         if ((depthId === "four" || depthId === "six" || depthId === "eight" || depthId === "ten" || depthId === "twelve") && shapeId === "rectangle") {
-            $('#box-calc-5-1').append('<a id="facet" class="nav-link" data-toggle="tab" href="#">ФАЦЕТ</a>');
+            $('#box-calc-5-1').append('<a id="facet" class="nav-link" data-toggle="tab" href="javascript:void(0);">ФАЦЕТ</a>');
             $('#with_processing').click(function () {
                 $(".text-kromka").detach();
                 $('#format').append('<div class="text-kromka">' +
@@ -936,16 +958,16 @@ function calculate() {
             '   <textarea name="comment" id="" cols="25" rows="10" placeholder="Комментарий к заказу"></textarea>' +
             '</div>');
         $('.second_row').append('<div class="down_buttons_distances d-flex col-12 col-md-8"></div>');
-        $('.down_buttons_distances').append('<a id="pickup" class="nav-link" data-toggle="tab" href="#">Самовывоз</a>');
-        $('.down_buttons_distances').append('<a id="inMKAD" class="nav-link" data-toggle="tab" href="#">В пределах МКАД</a>');
-        $('.down_buttons_distances').append('<a id="outMKAD" class="nav-link" data-toggle="tab" href="#">Не более 5 км от МКАД</a>');
-        $('.down_buttons_distances').append('<a id="moskowRegion" class="nav-link" data-toggle="tab" href="#">Московская область</a>');
+        $('.down_buttons_distances').append('<a id="pickup" class="nav-link" data-toggle="tab" href="javascript:void(0);">Самовывоз</a>');
+        $('.down_buttons_distances').append('<a id="inMKAD" class="nav-link" data-toggle="tab" href="javascript:void(0);">В пределах МКАД</a>');
+        $('.down_buttons_distances').append('<a id="outMKAD" class="nav-link" data-toggle="tab" href="javascript:void(0);">Не более 5 км от МКАД</a>');
+        $('.down_buttons_distances').append('<a id="moskowRegion" class="nav-link" data-toggle="tab" href="javascript:void(0);">Московская область</a>');
         // $('.second_row').append('<div class="right_texbox">' +
         //     '   <textarea name="comment" id="" cols="25" rows="3" placeholder="Комментарий к заказу"></textarea>' +
         //     '</div>');
         $('.Contact_form').append('<div class="buttons_buy_glass d-flex justify-content-center"></div>');
-        $('.buttons_buy_glass').append('<button id="makeOrder" class="cost_butt buy_buttons disable">Оформить заказ</button>');
-        $('.buttons_buy_glass').append('<button id="buyProduct" class="cost_butt1 buy_buttons">В корзину</button>');
+        $('.buttons_buy_glass').append('<button id="makeOrder" class="cost_butt buy_buttons disable btn-make-order">Оформить заказ</button>');
+        $('.buttons_buy_glass').append('<button id="buyProduct" class="cost_butt1 buy_buttons disable-cart btp-put-in-cart">В корзину</button>');
         $(document).find('#calcForm').validate({
             rules: {
                 name: {

@@ -13,7 +13,7 @@
 
                 <span>Геометрический перфекционизм</span>
                 <h3></h3>
-                <a href="#win2">вызвать замерщика</a>
+                <a href="#win2" class="btn-make-order">вызвать замерщика</a>
             </div>
             <div class="bg-3_pages_howers Glasses_page3">
                 <!-- <a href="#">Бесплатная консультация по телефону
@@ -308,7 +308,7 @@
                             <img src="images/three_page_image/3/1.jpg" alt="">
                             <img src="images/three_page_image/3/2.jpg" alt="">
                         </div>
-                        <a class="glass_door_item_buttons" href="#win1">бесплатная консультация</a>
+                        <a class="glass_door_item_buttons btn-make-order" href="#win1">бесплатная консультация</a>
                         <div class="glass_door_item">
                             <p>Зеркальное панно - это композиция, состоящая из отдельных зеркальных элементов с
                                 широкой, глубокой фаской (фацетом), благодаря которой, создается неповторимая игра

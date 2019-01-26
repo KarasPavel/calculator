@@ -12,7 +12,7 @@
                 <img src="images/squad_smaler.png" alt="">
                 <span>Надежно</span>
                 <h3>индивидуальное изготовление</h3>
-                <a href="#win2">вызвать замерщика</a>
+                <a href="#win2" class="btn-make-order">вызвать замерщика</a>
             </div>
             <div class="bg-3_pages_howers bulckheads3">
                 <!-- <a href="#">Бесплатная консультация по телефону
@@ -407,7 +407,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-4">
-                    <div class="bg_types_door_items">
+                    <div class="bg_types_door_items door-first">
                         <div class="types_of_door_item">
                             <h3>Распашные</h3>
                             <ul class="door_plus">
@@ -425,7 +425,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="bg_types_door_items">
+                    <div class="bg_types_door_items door-second">
                         <div class="types_of_door_item">
                             <h3>Маятниковые</h3>
                             <ul class="door_plus">
@@ -445,7 +445,7 @@
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="bg_types_door_items">
+                    <div class="bg_types_door_items door-third">
                         <div class="types_of_door_item">
                             <h3>Раздвижные</h3>
                             <ul class="door_plus">

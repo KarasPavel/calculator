@@ -538,11 +538,13 @@ function getPages() {
             subscribeForm('.formDynamic a.action_form');
             subscribeForm('.formLower a.action_form');
 
+
+
             bindExpandebleTrue('.help_glass_items.calc_content2', 'help_glass_items--active');
             bindExpandebleTrue('.butt_choose_kromka .nav-link', 'nav-link--active');
             bindExpandebleTrue('.down_buttons_distances a', 'down_buttons_distances--active');
             makeButtonDisableInCalcForm('#calcForm #makeOrder', 'disable');
-            // makeButtonDisableInCalcForm('#calcForm #buyProduct', 'disable-cart');
+            makeButtonDisableInCalcForm('#calcForm #buyProduct', 'disable-cart');
             setActiveShape('.item_size_calc', '');
         });
         $('footer').show();

@@ -140,14 +140,14 @@
                                             <th>Имя</th>
                                             <th>Email</th>
                                             <th>Телефон</th>
-                                            <th>Адресс</th>
-                                            <th>Доставка</th>
-                                            <th>Срочность</th>
+                                            {{--<th>Адресс</th>--}}
+                                            {{--<th>Доставка</th>--}}
+                                            {{--<th>Срочность</th>--}}
                                             <th>Информация о заказе</th>
                                             <th>Дата изготовления</th>
                                             <th>Цена</th>
                                             <th>Комментарий</th>
-                                            <th>Количество</th>
+                                            {{--<th>Количество</th>--}}
                                             <th>Статус</th>
                                             <th>Создан</th>
                                             <th>Обновлен</th>
@@ -172,15 +172,15 @@
                                                 <td>
                                                     {{$value->phone}}
                                                 </td>
-                                                <td>
-                                                    {{$value->address}}
-                                                </td>
-                                                <td>
-                                                    {{$value->delivery}}
-                                                </td>
-                                                <td>
-                                                    {{$value->urgency}}
-                                                </td>
+                                                {{--<td>--}}
+                                                    {{--{{$value->address}}--}}
+                                                {{--</td>--}}
+                                                {{--<td>--}}
+                                                    {{--{{$value->delivery}}--}}
+                                                {{--</td>--}}
+                                                {{--<td>--}}
+                                                    {{--{{$value->urgency}}--}}
+                                                {{--</td>--}}
                                                 <td>
                                                     {{--{{dd(json_decode($value->order_data))}}--}}
                                                     Материал: {{json_decode($value->order_data)->material}}
@@ -205,9 +205,9 @@
                                                 <td>
                                                     {{$value->comment}}
                                                 </td>
-                                                <td>
-                                                    {{$value->quantity}}
-                                                </td>
+                                                {{--<td>--}}
+                                                    {{--{{$value->quantity}}--}}
+                                                {{--</td>--}}
                                                 <td>
                                                     {{$value->status}}
                                                 </td>

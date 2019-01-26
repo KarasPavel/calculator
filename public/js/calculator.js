@@ -510,11 +510,11 @@ function calculate() {
             shapeId = this.id;
             shape['name'] = $(this).find('p').text();
             $('#shape_size').append('<div><input id="shape_height" name="height" type="number" min="1" placeholder="мм">' +
-                                    '<p>высота</p></div>' +
-                                   // '</div>' +
-                                    '<div><input id="shape_width" type="number" min="1" name="width" placeholder="мм">' +
-                                    '<p>ширина</p></div>');
-                                   // '</div>');
+                '<p>высота</p></div>' +
+                // '</div>' +
+                '<div><input id="shape_width" type="number" min="1" name="width" placeholder="мм">' +
+                '<p>ширина</p></div>');
+            // '</div>');
         })
     }
 
@@ -791,7 +791,7 @@ function calculate() {
         hacNum = 0;
         checkQuantityRndHac();
     });
-    
+
     $('#extra').on('change', '#pnt, #snd_bl, #uv_printing, ' +
         '#round_corners, #holes_and_cutouts, #painting, #sand_blasting', function () {
         getOptionalPrice();
@@ -1061,40 +1061,61 @@ function calculate() {
     var option;
 
     $('#order_info').on('click', '#makeOrder', function () {
-        let value;
-        let name;
-        let orderData = {};
-        let orderInfo = {};
-        $('#order_info').find('input').each(function () {
-            value = $(this).val();
-            name = $(this).attr('name');
-            orderData[name] = value;
-        });
-        orderData['comment'] = $('#order_info').find('textarea').val();
-        orderData['delivery'] = deliveryBuy;
-        orderInfo['material'] = material;
-        orderInfo['product'] = product;
-        orderInfo['depth'] = depth;
-        orderInfo['shape'] = shape;
-        orderInfo['format'] = format;
-        orderInfo['options'] = findExtraOptions();
-        orderData['orderInfo'] = orderInfo;
-        orderData['price'] = setPriceValue();
-        orderData['orderDate'] = yyyy + '-' + mm + '-' + dd;
-        orderData['urgency'] = $('#checkboxPrice').is(':checked');
-        if ($('#calcForm').valid()) {
-            console.log(orderData);
-            $.post('createOrders', {
-                data: JSON.stringify(orderData),
-                _token: $('meta[name="csrf-token"]').attr('content')
-            }, function (data, status) {
-                console.log(orderData);
-                console.log(data);
-                console.log(status);
-            });
-            document.location.assign('#win4');
+        if ($('#calcForm').valid() && this.id === 'makeOrder') {
+            sendOrder();
         }
     });
+    var order;
+    $('#order_info').on('click', '#buyProduct', function () {
+        if ($('#calcForm').valid() && this.id === 'buyProduct') {
+            $.post('createCart', {
+                data: JSON.stringify(setOrderData()),
+                _token: $('meta[name="csrf-token"]').attr('content')
+            }, function (data, status) {
+                console.log(setOrderData());
+                console.log(data[0].address);
+                console.log(status);
+                order = data;
+                console.log(getCartData());
+                $('#cart').append('<h6 class="popup_choise_h2 forCart"></h6>');
+                $('#cart').append('<button id="0">Х</button>');
+                $('.forCart').empty();
+                $('.forCart').append(getCartData());
+            });
+
+            document.location.assign('#win5');
+        }
+    });
+
+    function getCartData() {
+        let shapeData;
+        if (order[0].orderInfo.shape.name.toString() === 'Круг') {
+            shapeData = order[0].orderInfo.shape.name.toString() + ' ' + order[0].orderInfo.shape.diameter + 'мм, ';
+        } else {
+            shapeData = order[0].orderInfo.shape.name.toString() + order[0].orderInfo.shape.height + 'X' + order[0].orderInfo.shape.width + ' мм, ';
+        }
+        let description;
+        description = order[0].orderInfo.material
+            + ', ' + order[0].orderInfo.product
+            + ', толщина: ' + order[0].orderInfo.depth + 'мм, '
+            + ', форма и размеры: ' + shapeData
+            + 'обработка ' + order[0].orderInfo.format
+            + ', дополнительно: ' + order[0].orderInfo.options
+            + 'Стоимость: ' + order[0].price;
+        return description.toString();
+    }
+
+    function sendOrder() {
+        $.post('createOrders', {
+            data: JSON.stringify(setOrderData()),
+            _token: $('meta[name="csrf-token"]').attr('content')
+        }, function (data, status) {
+            console.log(setOrderData());
+            console.log(data);
+            console.log(status);
+        });
+        document.location.assign('#win4');
+    }
 
     function findExtraOptions() {
         option = '';
@@ -1132,5 +1153,29 @@ function calculate() {
         return option;
     }
 
+    function setOrderData() {
+        let value;
+        let name;
+        let orderData = {};
+        let orderInfo = {};
+        $('#order_info').find('input').each(function () {
+            value = $(this).val();
+            name = $(this).attr('name');
+            orderData[name] = value;
+        });
+        orderData['comment'] = $('#order_info').find('textarea').val();
+        orderData['delivery'] = deliveryBuy;
+        orderInfo['material'] = material;
+        orderInfo['product'] = product;
+        orderInfo['depth'] = depth;
+        orderInfo['shape'] = shape;
+        orderInfo['format'] = format;
+        orderInfo['options'] = findExtraOptions();
+        orderData['orderInfo'] = orderInfo;
+        orderData['price'] = setPriceValue();
+        orderData['orderDate'] = yyyy + '-' + mm + '-' + dd;
+        orderData['urgency'] = $('#checkboxPrice').is(':checked');
+        return orderData;
+    }
 
 }

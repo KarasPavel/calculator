@@ -22,7 +22,7 @@ function calculate() {
         });
     });
 
-
+    var uploadFile = null;
     var deliveryBuy;
     var totalPrice = 0;
     var offsetHoursTotal = 0;
@@ -1129,13 +1129,14 @@ function calculate() {
                 + '// Стоимость: ' + item.price;
             $('#cart_table').append('<tr class="cart_table_row' + i + '"></tr>');
             $('.cart_table_row' + i).append('<td>' + description.toString() + '</td>');
-            $('.cart_table_row' + i).append('<td><button class="button_for_delete_product_from_cart" id="' + i + '">' + i + '</button></td>');
+            $('.cart_table_row' + i).append('<td><button class="button_for_delete_product_from_cart" id="' + i + '">X</button></td>');
             total += item.price;
         });
-        $('#cart_table').append('<p>Итого: ' + total +'</p>')
+        $('#cart_table').append('<p>Итого: ' + total + '</p>')
     }
 
     function sendOrder() {
+        console.log(setOrderData());
         $.post('createOrders', {
             data: JSON.stringify(setOrderData()),
             _token: $('meta[name="csrf-token"]').attr('content')
@@ -1199,10 +1200,20 @@ function calculate() {
         orderInfo['format'] = format;
         orderInfo['options'] = findExtraOptions();
         orderData['orderInfo'] = orderInfo;
+        orderData['uploadFile'] = uploadFile;
         orderData['price'] = setPriceValue();
         orderData['orderDate'] = yyyy + '-' + mm + '-' + dd;
         orderData['urgency'] = $('#checkboxPrice').is(':checked');
         return orderData;
     }
+
+    $('#shape').on('change', '#fileUpload', function () {
+        if( this.files.length === 0 ) {
+            uploadFile = null;
+        } else {
+            uploadFile = this.files;
+        }
+        console.log(uploadFile);
+    });
 
 }

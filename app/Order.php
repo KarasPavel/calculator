@@ -2,10 +2,12 @@
 
 namespace App;
 
+use App\Services\UploadFileService;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
 
 class Order extends Model
 {
@@ -43,7 +45,16 @@ class Order extends Model
     public static function createOrder(Request $request)
     {
         $result = json_decode($request->data);
+        dd($result->uploadFile);
         $orderInfo = json_encode($result->orderInfo);
+
+        if (!is_null($result->uploadFile)) {
+            $file = new UploadFileService();
+            $file->upload($result);
+            $fileName = $file->newFileName;
+        } else {
+            $fileName = '';
+        }
 
         try {
             $dbResult = DB::table('orders')
@@ -57,6 +68,8 @@ class Order extends Model
                     'quantity' => $result->quantity,
                     'price' => $result->price,
                     'urgency' => $result->urgency,
+                    'upload_file' => $fileName,
+                    'session_id' => Session::getId(),
                     'order_data' => $orderInfo,
                     'application_status_id' => 1,
                     'order_date' => $result->orderDate,
@@ -72,6 +85,13 @@ class Order extends Model
     {
         $result = $request;
         $orderInfo = json_encode($result->orderInfo);
+        if (!is_null($result->uploadFile)) {
+            $file = new UploadFileService();
+            $file->upload($result);
+            $fileName = $file->newFileName;
+        } else {
+            $fileName = '';
+        }
         $dbResult = DB::table('orders')
             ->insert([
                 'name' => $result->name,
@@ -83,6 +103,8 @@ class Order extends Model
                 'quantity' => $result->quantity,
                 'price' => $result->price,
                 'urgency' => $result->urgency,
+                'upload_file' => $fileName,
+                'session_id' => Session::getId(),
                 'order_data' => $orderInfo,
                 'application_status_id' => 1,
                 'order_date' => $result->orderDate,

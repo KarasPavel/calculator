@@ -40,4 +40,8 @@ class CreateOrdersTable extends Migration
     {
         Schema::dropIfExists('orders');
     }
+
+
+//ALTER TABLE orders ADD uplpad_file varchar(100) NULL;
+//ALTER TABLE orders ADD session_id varchar(100) NULL;
 }

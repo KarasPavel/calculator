@@ -10,7 +10,7 @@ class Cart extends Model
 {
     public static function addProduct(Request $request)
     {
-        Session::put(Session::getId(), []);
+//        Session::put(Session::getId(), []);
         $result = json_decode($request->data);
 
 
@@ -41,5 +41,24 @@ class Cart extends Model
 
         $val = Session::get(Session::getId());
         return $val;
+    }
+
+    public static function deleteProduct($id)
+    {
+
+        $value = Session::get(Session::getId());
+//        unset($value[$id]);
+        array_splice($value, $id, 1);
+        Session::put(Session::getId(), []);
+        foreach ($value as $item) {
+            Session::push(Session::getId(), $item);
+        }
+
+
+//        Session::forget(Session::getId());
+//        unset(Session::get(Session::getId())[$id]);
+//        $val = Session::get(Session::getId());
+//        unset($val[$id]);
+        return $value;
     }
 }

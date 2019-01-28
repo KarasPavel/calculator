@@ -36,7 +36,7 @@ class Order extends Model
         return DB::table('orders')
             ->select('orders.id', 'name', 'email', 'phone', 'comment', 'orders.created_at',
                 'orders.updated_at', 'status', 'address', 'delivery', 'price', 'urgency', 'order_data',
-                'quantity', 'order_date')
+                'quantity', 'order_date', 'upload_file')
             ->join('statuses', 'application_status_id', '=', 'statuses.id')
             ->orderByDesc('orders.created_at')
             ->get();

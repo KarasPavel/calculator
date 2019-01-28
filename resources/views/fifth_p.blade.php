@@ -30,10 +30,10 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row no-padding">
                 <div class="col-lg-12">
                     <div class="stairs_and_flooring_buttons stairs_and_flooring_buttons2 d-flex">
-                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <ul class="nav nav-tabs ul-width-100" id="myTab" role="tablist">
                             <li class="nav-item">
                                 <a class="nav-link active" data-toggle="tab" href="#page5_home" role="tab"
                                    aria-controls="home">Скинали с Фотопечатью</a>
@@ -141,10 +141,11 @@
             </div>
             <div class="row no-padding">
                 <div class="col-lg-12">
-                    <div class="glass_door_items Glasses_pages_doors d-flex">
+                    <div class="glass_door_items Glasses_pages_doors img-text-up-container d-flex">
                         <!-- <div class="glass_door_items_new_img d-flex"> -->
-                        <img src="images/five_page_imgBlock/1/1.jpg" alt="">
-
+                        <div class="">
+                            <img src="images/five_page_imgBlock/1/1.jpg" alt="">
+                        </div>
                         <!-- </div> -->
                         <div class="glass_door_item">
                             <p> Наносим специализированные полимерные краски, стойкие
@@ -181,7 +182,7 @@
             </div>
             <div class="row no-padding">
                 <div class="col-lg-12">
-                    <div class="glass_door_items_down  d-flex">
+                    <div class="glass_door_items_down img-text-bottom-container d-flex">
                         <div class="glass_door_item_down Glases_page_door">
                             <p> В работе используем самые лучшие материалы и краски.
                                 Используем самые дорогие и наиболее качественные виды
@@ -200,7 +201,9 @@
                                 <li>Зачастую, молча исправляем не наши косяки =)</li>
                             </ul>
                         </div>
-                        <div class="Glasses_pages_doors"><img src="images/five_page_imgBlock/2/1.jpg" alt=""></div>
+                        <div class="Glasses_pages_doors">
+                            <img src="images/five_page_imgBlock/2/1.jpg" alt="">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -262,9 +265,9 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row no-padding">
                 <div class="col-lg-6 ">
-                    <div class="shower_type_items comparison_glass_items d-flex">
+                    <div class="shower_type_items comparison_glass_items comparison-blocks d-flex">
                         <img class="glasses_img_fastener1" src="images/glaas_type1.png" alt="">
                         <div class="shower_type_item-left fastener_shower_glass comparison_glass">
                             <p>Прозрачное (М1 или бц)</p>
@@ -281,7 +284,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 ">
-                    <div class="shower_type_items comparison_glass_items2 d-flex">
+                    <div class="shower_type_items comparison_glass_items2 comparison-blocks comparison-blocks--bottom d-flex">
 
                         <div class="shower_type_item-right fastener_shower_glass2 comparison_glass2">
                             <p>Осветленное (Crystal или Optiwhite)</p>

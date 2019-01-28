@@ -129,11 +129,9 @@
             </table>
         </div>
     </div>
-    <div class="button_forms button_forms_popup">
-        <a href="#close">Ok</a>
-    </div>
-    <div class="button_forms button_forms_popup">
-        <a href="#close">Заказать</a>
+    <div class="button_forms button_forms_popup buttons-cart">
+        <a href="#close" class="buttons-cart-ok btn-make-order">Ok</a>
+        <a href="#close" class="buttons-cart-make-order btn-make-order">Заказать</a>
     </div>
     <a class="close" title="Закрыть" href="#close"></a>
 </div>

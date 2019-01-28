@@ -22,7 +22,6 @@ function calculate() {
         });
     });
 
-    var uploadFile = null;
     var deliveryBuy;
     var totalPrice = 0;
     var offsetHoursTotal = 0;
@@ -494,8 +493,8 @@ function calculate() {
             $('.Size_calc').append('<div id="item_size_calc" class="item_size_calc shapes-size">' +
                 '    <p>Введите значения</p>' +
                 '    <div id="shape_size" class="input_touch_size"></div>' +
-                '    <div><input type="file" name="fileUpload" id="fileUpload" class="inputfile" />' +
-                '    <label for="fileUpload">Загрузить чертеж</label></div>' +
+                '    <div><form method="post" id="uploadFileForm" enctype="multipart/form-data"><input type="file" name="fileUpload" id="fileUpload" class="inputfile" />' +
+                '    <label for="fileUpload">Загрузить чертеж</label></form></div>' +
                 '    </div>');
             $('#shape_size').append('<div><input id="shape_diameter" name="diameter" type="number" min="1" placeholder="мм"><p>диаметр</p></div>');
         });
@@ -504,8 +503,8 @@ function calculate() {
             $('.Size_calc').append('<div id="item_size_calc" class="item_size_calc shapes-size">' +
                 '    <p>Введите значения</p>' +
                 '    <div id="shape_size" class="input_touch_size"></div>' +
-                '    <div><input type="file" name="fileUpload" id="fileUpload" class="inputfile" />' +
-                '    <label for="fileUpload">Загрузить чертеж</label></div>' +
+                '    <div><form method="post" id="uploadFileForm" enctype="multipart/form-data"><input type="file" name="fileUpload" id="fileUpload" class="inputfile" />' +
+                '    <label for="fileUpload">Загрузить чертеж</label></form></div>' +
                 '    </div>');
             shapeId = this.id;
             shape['name'] = $(this).find('p').text();
@@ -1068,13 +1067,35 @@ function calculate() {
     var order;
     $('#order_info').on('click', '#buyProduct', function () {
         if ($('#calcForm').valid() && this.id === 'buyProduct') {
-            $.post('createCart', {
-                data: JSON.stringify(setOrderData()),
-                _token: $('meta[name="csrf-token"]').attr('content')
-            }, function (data, status) {
-                order = data;
-                getCartDescription()
+            var fd = new FormData();
+            var input = document.getElementById('fileUpload');
+            fd.append('file', input.files[0]);
+            fd.append('_token', $('meta[name="csrf-token"]').attr('content'));
+            fd.append('data', JSON.stringify(setOrderData()));
+
+            $.ajax({
+                url: 'createCart',
+                data: fd,
+                type: 'POST',
+                contentType: false,
+                processData: false,
+                success: function (data) {
+                    order = data;
+                    getCartDescription()
+                },
+
             });
+
+
+
+
+            // $.post('createCart', {
+            //     data: JSON.stringify(setOrderData()),
+            //     _token: $('meta[name="csrf-token"]').attr('content')
+            // }, function (data, status) {
+            //     order = data;
+            //     getCartDescription()
+            // });
             document.location.assign('#win5');
         }
     });
@@ -1136,11 +1157,20 @@ function calculate() {
     }
 
     function sendOrder() {
-        console.log(setOrderData());
-        $.post('createOrders', {
-            data: JSON.stringify(setOrderData()),
-            _token: $('meta[name="csrf-token"]').attr('content')
-        }, function (data, status) {
+        var fd = new FormData();
+        var input = document.getElementById('fileUpload');
+        fd.append('file', input.files[0]);
+        fd.append('_token', $('meta[name="csrf-token"]').attr('content'));
+        fd.append('data', JSON.stringify(setOrderData()));
+        $.ajax({
+            url: 'createOrders',
+            data: fd,
+            type: 'POST',
+            contentType: false,
+            processData: false,
+            success: function (data) {
+            },
+
         });
         document.location.assign('#win4');
     }
@@ -1200,20 +1230,10 @@ function calculate() {
         orderInfo['format'] = format;
         orderInfo['options'] = findExtraOptions();
         orderData['orderInfo'] = orderInfo;
-        orderData['uploadFile'] = uploadFile;
         orderData['price'] = setPriceValue();
         orderData['orderDate'] = yyyy + '-' + mm + '-' + dd;
         orderData['urgency'] = $('#checkboxPrice').is(':checked');
         return orderData;
     }
-
-    $('#shape').on('change', '#fileUpload', function () {
-        if( this.files.length === 0 ) {
-            uploadFile = null;
-        } else {
-            uploadFile = this.files;
-        }
-        console.log(uploadFile);
-    });
 
 }

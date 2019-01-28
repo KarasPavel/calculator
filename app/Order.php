@@ -45,17 +45,15 @@ class Order extends Model
     public static function createOrder(Request $request)
     {
         $result = json_decode($request->data);
-        dd($result->uploadFile);
         $orderInfo = json_encode($result->orderInfo);
 
-        if (!is_null($result->uploadFile)) {
+        if (!is_null($request->file) && $request->file != 'undefined') {
             $file = new UploadFileService();
-            $file->upload($result);
+            $file->upload($request);
             $fileName = $file->newFileName;
         } else {
             $fileName = '';
         }
-
         try {
             $dbResult = DB::table('orders')
                 ->insert([
@@ -85,10 +83,8 @@ class Order extends Model
     {
         $result = $request;
         $orderInfo = json_encode($result->orderInfo);
-        if (!is_null($result->uploadFile)) {
-            $file = new UploadFileService();
-            $file->upload($result);
-            $fileName = $file->newFileName;
+        if (!is_null($result->file)) {
+            $fileName = $result->file;
         } else {
             $fileName = '';
         }

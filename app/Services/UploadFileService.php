@@ -15,17 +15,15 @@ class UploadFileService extends Controller
     public $pathFile;
     public $newFileName;
 
-    public function upload($result)
+    public function upload($request)
     {
-        $this->pathFile = public_path('UploadFiles');
+        $this->pathFile = public_path('uploadFiles/');
         $this->newFileName = self::getGUID()
-            . '.' . $result->uploadFile->getClientOriginalExtension();
+            . '.' . $request->file->getClientOriginalExtension();
         if (!file_exists($this->pathFile)) {
             mkdir($this->pathFile, 0777, true);
         }
-        foreach ($result->uploadFile as $file) {
-            $file->move($this->pathFile, $this->pathFile);
-        }
+        $request->file->move($this->pathFile, $this->newFileName);
     }
 
     public static function getGUID()

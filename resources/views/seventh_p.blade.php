@@ -60,8 +60,8 @@
                                     <img src="images/cost_calc_link1.png" alt="">
                                     <span>Консультация</span></a>
                             </div>
-                            <div style="display: none">
-                                <a href="#">
+                            <div>
+                                <a id="myCart" href="#win5">
                                     <img src="images/cost_calc_link2.png" alt="">
                                     <span>Корзина</span></a>
                             </div>
@@ -133,7 +133,7 @@
         <a href="#close">Ok</a>
     </div>
     <div class="button_forms button_forms_popup">
-        <a href="#close">Заказать</a>
+        <a id="buyAll" href="#close">Заказать</a>
     </div>
     <a class="close" title="Закрыть" href="#close"></a>
 </div>

@@ -2,10 +2,12 @@
 
 namespace App;
 
+use App\Services\UploadFileService;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
 
 class Order extends Model
 {
@@ -45,6 +47,13 @@ class Order extends Model
         $result = json_decode($request->data);
         $orderInfo = json_encode($result->orderInfo);
 
+        if (!is_null($request->file) && $request->file != 'undefined') {
+            $file = new UploadFileService();
+            $file->upload($request);
+            $fileName = $file->newFileName;
+        } else {
+            $fileName = '';
+        }
         try {
             $dbResult = DB::table('orders')
                 ->insert([
@@ -57,16 +66,47 @@ class Order extends Model
                     'quantity' => $result->quantity,
                     'price' => $result->price,
                     'urgency' => $result->urgency,
+                    'upload_file' => $fileName,
+                    'session_id' => Session::getId(),
                     'order_data' => $orderInfo,
                     'application_status_id' => 1,
                     'order_date' => $result->orderDate,
                     'created_at' => Carbon::now()
                 ]);
             return $dbResult;
-        }
-        catch (Exception $e) {
+        } catch (Exception $e) {
             return $e->getMessage();
         }
+    }
+
+    public static function createOrderFromCart($request)
+    {
+        $result = $request;
+        $orderInfo = json_encode($result->orderInfo);
+        if (!is_null($result->file)) {
+            $fileName = $result->file;
+        } else {
+            $fileName = '';
+        }
+        $dbResult = DB::table('orders')
+            ->insert([
+                'name' => $result->name,
+                'email' => $result->email,
+                'phone' => $result->phone,
+                'comment' => $result->comment,
+                'address' => $result->address,
+                'delivery' => $result->delivery,
+                'quantity' => $result->quantity,
+                'price' => $result->price,
+                'urgency' => $result->urgency,
+                'upload_file' => $fileName,
+                'session_id' => Session::getId(),
+                'order_data' => $orderInfo,
+                'application_status_id' => 1,
+                'order_date' => $result->orderDate,
+                'created_at' => Carbon::now()
+            ]);
+        return $dbResult;
     }
 
     public static function deleteOrder($id)

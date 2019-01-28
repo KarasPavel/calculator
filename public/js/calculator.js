@@ -22,7 +22,6 @@ function calculate() {
         });
     });
 
-
     var deliveryBuy;
     var totalPrice = 0;
     var offsetHoursTotal = 0;
@@ -514,8 +513,8 @@ function calculate() {
             $('.Size_calc').append('<div id="item_size_calc" class="item_size_calc shapes-size">' +
                 '    <p>Введите значения</p>' +
                 '    <div id="shape_size" class="input_touch_size"></div>' +
-                '    <div><input type="file" name="fileUpload" id="fileUpload" class="inputfile" />' +
-                '    <label for="fileUpload">Загрузить чертеж</label></div>' +
+                '    <div><form method="post" id="uploadFileForm" enctype="multipart/form-data"><input type="file" name="fileUpload" id="fileUpload" class="inputfile" />' +
+                '    <label for="fileUpload">Загрузить чертеж</label></form></div>' +
                 '    </div>');
             $('#shape_size').append('<div><input id="shape_diameter" name="diameter" type="number" min="1" placeholder="мм"><p>диаметр</p></div>');
             showUploadedFileName();
@@ -525,8 +524,8 @@ function calculate() {
             $('.Size_calc').append('<div id="item_size_calc" class="item_size_calc shapes-size">' +
                 '    <p>Введите значения</p>' +
                 '    <div id="shape_size" class="input_touch_size"></div>' +
-                '    <div><input type="file" name="fileUpload" id="fileUpload" class="inputfile" />' +
-                '    <label for="fileUpload">Загрузить чертеж</label></div>' +
+                '    <div><form method="post" id="uploadFileForm" enctype="multipart/form-data"><input type="file" name="fileUpload" id="fileUpload" class="inputfile" />' +
+                '    <label for="fileUpload">Загрузить чертеж</label></form></div>' +
                 '    </div>');
             shapeId = this.id;
             shape['name'] = $(this).find('p').text();
@@ -1090,17 +1089,46 @@ function calculate() {
     var order;
     $('#order_info').on('click', '#buyProduct', function () {
         if ($('#calcForm').valid() && this.id === 'buyProduct') {
-            $.post('createCart', {
-                data: JSON.stringify(setOrderData()),
-                _token: $('meta[name="csrf-token"]').attr('content')
-            }, function (data, status) {
-                console.log(setOrderData());
-                console.log(status);
-                order = data;
-                getCartDescription()
+            var fd = new FormData();
+            var input = document.getElementById('fileUpload');
+            fd.append('file', input.files[0]);
+            fd.append('_token', $('meta[name="csrf-token"]').attr('content'));
+            fd.append('data', JSON.stringify(setOrderData()));
+
+            $.ajax({
+                url: 'createCart',
+                data: fd,
+                type: 'POST',
+                contentType: false,
+                processData: false,
+                success: function (data) {
+                    order = data;
+                    getCartDescription()
+                },
+
             });
+
+
+
+
+            // $.post('createCart', {
+            //     data: JSON.stringify(setOrderData()),
+            //     _token: $('meta[name="csrf-token"]').attr('content')
+            // }, function (data, status) {
+            //     order = data;
+            //     getCartDescription()
+            // });
             document.location.assign('#win5');
         }
+    });
+
+    $('#myCart').click(function () {
+        $.post('getCart', {
+            _token: $('meta[name="csrf-token"]').attr('content')
+        }, function (data, status) {
+            order = data;
+            getCartDescription()
+        })
     });
 
     $('#cart').on('click', '.button_for_delete_product_from_cart', function () {
@@ -1113,7 +1141,19 @@ function calculate() {
         })
     });
 
+    var total;
+
+    $('#buyAll').click(function () {
+        $.post('buyFromCart', {
+            _token: $('meta[name="csrf-token"]').attr('content')
+        }, function (data, status) {
+            total = 0;
+            $('#cart_table').empty()
+        })
+    });
+
     function getCartDescription() {
+        total = 0;
         $('#cart_table').empty();
         order.forEach(function (item, i, order) {
             let shapeData;
@@ -1132,16 +1172,27 @@ function calculate() {
                 + '// Стоимость: ' + item.price;
             $('#cart_table').append('<tr class="cart_table_row' + i + '"></tr>');
             $('.cart_table_row' + i).append('<td>' + description.toString() + '</td>');
-            $('.cart_table_row' + i).append('<td><button class="button_for_delete_product_from_cart" id="' + i + '">' + i + '</button></td>');
-            // $('#cart').append('<button class="button_for_delete_product_from_cart" id="' + i + '">' + i + '</button>');
+            $('.cart_table_row' + i).append('<td><button class="button_for_delete_product_from_cart" id="' + i + '">X</button></td>');
+            total += item.price;
         });
+        $('#cart_table').append('<p>Итого: ' + total + '</p>')
     }
 
     function sendOrder() {
-        $.post('createOrders', {
-            data: JSON.stringify(setOrderData()),
-            _token: $('meta[name="csrf-token"]').attr('content')
-        }, function (data, status) {
+        var fd = new FormData();
+        var input = document.getElementById('fileUpload');
+        fd.append('file', input.files[0]);
+        fd.append('_token', $('meta[name="csrf-token"]').attr('content'));
+        fd.append('data', JSON.stringify(setOrderData()));
+        $.ajax({
+            url: 'createOrders',
+            data: fd,
+            type: 'POST',
+            contentType: false,
+            processData: false,
+            success: function (data) {
+            },
+
         });
         document.location.assign('#win4');
     }

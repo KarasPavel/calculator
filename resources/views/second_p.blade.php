@@ -34,10 +34,10 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row no-padding">
                 <div class="col-lg-12">
                     <div class="stairs_and_flooring_buttons  d-flex">
-                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <ul class="nav nav-tabs ul-width-100" id="myTab" role="tablist">
                             <li class="nav-item">
                                 <a class="nav-link active" data-toggle="tab" href="#page2_home" role="tab"
                                    aria-controls="home">Угловые и фигурные</a>

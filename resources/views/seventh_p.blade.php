@@ -119,7 +119,7 @@
 </div>
 
 <a href="#x" class="overlay" id="win5"></a>
-<div id="good" class="popup popup_choise">
+<div id="good" class="popup popup_choise popup_cart">
     <div id="cart" class="up_form up_form_popup">
         <h3 class="popup_choise_h2">У Вас в корзине: </h3>
         <div class='table-responsive'>
@@ -129,11 +129,11 @@
             </table>
         </div>
     </div>
-    <div class="button_forms button_forms_popup">
-        <a href="#close">Ok</a>
+    <div class="button_forms button_forms_popup buttons-cart">
+        <a href="#close" class="buttons-cart-ok btn-make-order">Ok</a>
+    {{--</div>--}}
+    {{--<div class="button_forms button_forms_popup">--}}
+        <a id="buyAll" href="#close" class="buttons-cart-make-order btn-make-order">Заказать</a>
     </div>
-    <div class="button_forms button_forms_popup">
-        <a id="buyAll" href="#close">Заказать</a>
-    </div>
-    <a class="close" title="Закрыть" href="#close"></a>
+    <a class="close cart-close" title="Закрыть" href="#close"></a>
 </div>

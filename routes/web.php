@@ -26,6 +26,8 @@ Route::post('createApplications', 'Admin\ApplicationsController@createApplicatio
 Route::post('createOrders', 'Admin\OrdersController@createOrders')->name('createOrders');
 Route::post('createCart', 'Admin\CartsController@createCart')->name('createCart');
 Route::post('deleteProductFromCart/{id}', 'Admin\CartsController@deleteProductFromCart')->name('deleteProductFromCart');
+Route::post('getCart', 'Admin\CartsController@getCart')->name('getCart');
+Route::post('buyFromCart', 'Admin\OrdersController@buyFromCart')->name('buyFromCart');
 
 
 //uploadPhotoStairs

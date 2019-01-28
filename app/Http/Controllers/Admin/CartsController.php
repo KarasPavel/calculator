@@ -18,4 +18,11 @@ class CartsController extends Controller
         $deleteProduct = Cart::deleteProduct($id);
         return $deleteProduct;
     }
+
+    public function getCart()
+    {
+        $getProducts = Cart::getCart();
+        return $getProducts;
+    }
+
 }

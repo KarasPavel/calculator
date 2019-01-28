@@ -1172,10 +1172,10 @@ function calculate() {
                 + '<p>Стоимость: ' + item.price + '</p>';
             $('#cart_table').append('<tr class="cart_table_row' + i + '"></tr>');
             $('.cart_table_row' + i).append('<td>' + description.toString() + '</td>');
-            $('.cart_table_row' + i).append('<td><button class="button_for_delete_product_from_cart" id="' + i + '">X</button></td>');
+            $('.cart_table_row' + i).append('<td class="td-button-close"><button class="button_for_delete_product_from_cart" id="' + i + '">X</button></td>');
             total += item.price;
         });
-        $('#cart_table').append('<p>Итого: ' + total + '</p>')
+        $('#cart_table').append('<td colspan="2" class="cart-total"><span>Итого:</span> ' + total + '</td>')
     }
 
     function sendOrder() {

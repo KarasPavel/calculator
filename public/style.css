@@ -1867,18 +1867,9 @@ a:not([href]):not([tabindex]){
 .date_popup .day{
 	margin-right: 15px;
 }
-.button_forms_popup a{
+.button_forms_popup a {
 	padding: 20px 50px;
 }
-.buttons-cart a {
-	border-radius: 3px;
-	padding: 20px 27px;
-}
-.button_for_delete_product_from_cart {
-	box-shadow: 0 8px 14px rgba(34, 102, 187, 0.21);
-	background-color: #ee921e;
-}
-
 .fancybox-content{
 	box-shadow: 0 0 66px rgba(0, 0, 0, 0.14);
 	background-color: #ebf3f5;
@@ -3687,3 +3678,43 @@ div.head.toggler {
 	border-style: solid;
 	border-color: rgba(0,0,0,0.7) transparent transparent transparent;
 }
+
+/**/
+
+.table td.td-button-close {
+	vertical-align: middle;
+}
+.cart-total {
+	text-align: right;
+}
+.cart-total span {
+	font-weight: bold;
+	font-style: italic;
+}
+.buttons-cart a {
+	border-radius: 3px;
+	padding: 20px 27px;
+}
+.button_for_delete_product_from_cart {
+	color: #ffffff;
+	font-family: "Open Sans";
+	font-size: 13px;
+	font-weight: 300;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 5px;
+	border: none;
+	border-radius: 3px;
+	box-shadow: 0 8px 14px rgba(34, 102, 187, 0.21);
+	background-color: #e01717;
+}
+.popup_cart {
+	max-height: 70vh;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+.cart-close {
+	top: 1px;
+	right: 3px;
+}
+/**/

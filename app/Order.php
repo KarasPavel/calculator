@@ -44,6 +44,7 @@ class Order extends Model
 
     public static function createOrder(Request $request)
     {
+
         $result = json_decode($request->data);
         $orderInfo = json_encode($result->orderInfo);
 
@@ -54,6 +55,37 @@ class Order extends Model
         } else {
             $fileName = '';
         }
+
+        $addresse = 'info@v-t-x.ru';
+        $title = 'Заказ';
+        $order = [
+            'name' => $result->name,
+            'email' => $result->email,
+            'phone' => $result->phone,
+            'comment' => $result->comment,
+            'address' => $result->address,
+            'delivery' => $result->delivery,
+            'quantity' => $result->quantity,
+            'price' => $result->price,
+            'urgency' => $result->urgency,
+            'upload_file' => $fileName,
+            'order_data' => $orderInfo,
+            'application_status_id' => 1,
+            'order_date' => $result->orderDate,
+            'created_at' => Carbon::now()
+        ];
+        $message = 'Добрый день. Получен заказ. Отправитель.' .
+            '    Имя: '. $order['name'] .
+            '    Почта: '. $order['email'] .
+            '    Телефон: '. $order['phone'] .
+            '    Комметарий: '. $order['comment'] .
+            '    Адрес: '. $order['address'] .
+            '    Доставка: '. $order['delivery'] .
+            '    Количество: '. $order['quantity'] .
+            '    Стоимость: '. $order['price'] .
+            '    Информация о заказе: '. $order['order_data'];
+//        mail($addresse, $title, $message);
+
         try {
             $dbResult = DB::table('orders')
                 ->insert([
@@ -88,6 +120,37 @@ class Order extends Model
         } else {
             $fileName = '';
         }
+
+        $addresse = 'info@v-t-x.ru';
+        $title = 'Заказ';
+        $order = [
+            'name' => $result->name,
+            'email' => $result->email,
+            'phone' => $result->phone,
+            'comment' => $result->comment,
+            'address' => $result->address,
+            'delivery' => $result->delivery,
+            'quantity' => $result->quantity,
+            'price' => $result->price,
+            'urgency' => $result->urgency,
+            'upload_file' => $fileName,
+            'order_data' => $orderInfo,
+            'application_status_id' => 1,
+            'order_date' => $result->orderDate,
+            'created_at' => Carbon::now()
+        ];
+        $message = 'Добрый день. Получен заказ. Отправитель.' .
+            '    Имя: '. $order['name'] .
+            '    Почта: '. $order['email'] .
+            '    Телефон: '. $order['phone'] .
+            '    Комметарий: '. $order['comment'] .
+            '    Адрес: '. $order['address'] .
+            '    Доставка: '. $order['delivery'] .
+            '    Количество: '. $order['quantity'] .
+            '    Стоимость: '. $order['price'] .
+            '    Информация о заказе: '. $order['order_data'];
+//        mail($addresse, $title, $message);
+
         $dbResult = DB::table('orders')
             ->insert([
                 'name' => $result->name,

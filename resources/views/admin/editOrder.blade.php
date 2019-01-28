@@ -261,6 +261,19 @@
                                                 <div class="inline-form">
 
                                                     <label for="phone" class="control-label"></label><label
+                                                            class="c-label">File</label><input
+                                                            id="endTime"
+                                                            type="text"
+                                                            name="endTime"
+                                                            value="{{$order[0]->upload_file}}"
+                                                            disabled="true"/>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="inline-form">
+
+                                                    <label for="phone" class="control-label"></label><label
                                                             class="c-label">Urgency</label><input
                                                             id="endTime"
                                                             type="text"

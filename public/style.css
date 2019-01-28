@@ -1841,6 +1841,7 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover,
 .btp-put-in-cart:hover, .btp-put-in-cart:focus {
 	background-color: #0c3c63;
 }
+
 a:not([href]):not([tabindex]){
 	color: #f2f2f2;
 }
@@ -1869,7 +1870,14 @@ a:not([href]):not([tabindex]){
 .button_forms_popup a{
 	padding: 20px 50px;
 }
-
+.buttons-cart a {
+	border-radius: 3px;
+	padding: 20px 27px;
+}
+.button_for_delete_product_from_cart {
+	box-shadow: 0 8px 14px rgba(34, 102, 187, 0.21);
+	background-color: #ee921e;
+}
 
 .fancybox-content{
 	box-shadow: 0 0 66px rgba(0, 0, 0, 0.14);

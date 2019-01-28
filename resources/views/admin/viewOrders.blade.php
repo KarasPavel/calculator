@@ -149,6 +149,7 @@
                                             <th>Комментарий</th>
                                             {{--<th>Количество</th>--}}
                                             <th>Статус</th>
+                                            <th>Файл</th>
                                             <th>Создан</th>
                                             <th>Обновлен</th>
                                             <th>Редактировать</th>
@@ -210,6 +211,9 @@
                                                 {{--</td>--}}
                                                 <td>
                                                     {{$value->status}}
+                                                </td>
+                                                <td>
+                                                    {{$value->upload_file}}
                                                 </td>
                                                 <td>
                                                     {{$value->created_at}}

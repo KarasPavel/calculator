@@ -1217,24 +1217,24 @@ function calculate() {
         order.forEach(function (item, i, order) {
             let shapeData;
             if (item.orderInfo.shape.name.toString() === 'Круг') {
-                shapeData = item.orderInfo.shape.name.toString() + ' ' + item.orderInfo.shape.diameter + 'мм, ';
+                shapeData = item.orderInfo.shape.name.toString() + ' ' + item.orderInfo.shape.diameter + 'мм ';
             } else {
-                shapeData = item.orderInfo.shape.name.toString() + item.orderInfo.shape.height + 'X' + item.orderInfo.shape.width + ' мм, ';
+                shapeData = item.orderInfo.shape.name.toString() + item.orderInfo.shape.height + 'X' + item.orderInfo.shape.width + ' мм ';
             }
             let description;
-            description = item.orderInfo.material
-                + ', ' + item.orderInfo.product
-                + ', толщина: ' + item.orderInfo.depth + 'мм, '
-                + 'форма и размеры: ' + shapeData
-                + 'обработка ' + item.orderInfo.format
-                + ', дополнительно: ' + item.orderInfo.options
-                + '// Стоимость: ' + item.price;
+            description = '<p>' + item.orderInfo.material
+                + ': ' + item.orderInfo.product + '</p>'
+                + '<p>Толщина: ' + item.orderInfo.depth + 'мм</p> '
+                + '<p>Форма и размеры: ' + shapeData + '</p>'
+                + '<p>Обработка: ' + item.orderInfo.format +'</p>'
+                + '<p>Дополнительно:</p><p> ' + item.orderInfo.options + '</p>'
+                + '<p>Стоимость: ' + item.price + '</p>';
             $('#cart_table').append('<tr class="cart_table_row' + i + '"></tr>');
             $('.cart_table_row' + i).append('<td>' + description.toString() + '</td>');
-            $('.cart_table_row' + i).append('<td><button class="button_for_delete_product_from_cart" id="' + i + '">X</button></td>');
+            $('.cart_table_row' + i).append('<td class="td-button-close"><button class="button_for_delete_product_from_cart" id="' + i + '">X</button></td>');
             total += item.price;
         });
-        $('#cart_table').append('<p>Итого: ' + total + '</p>')
+        $('#cart_table').append('<td colspan="2" class="cart-total"><span>Итого:</span> ' + total + '</td>')
     }
 
     function sendOrder() {

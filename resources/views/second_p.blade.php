@@ -458,9 +458,9 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="glass_door_items d-flex">
+            <div class="row no-padding">
+                <div class="col-lg-12 second-blade">
+                    <div class="glass_door_items img-text-up-container d-flex">
                         <div class="glass_door_items_new_img d-flex">
                             <img src="images/Lestnici_img_block/1/1.jpg" alt="">
                             <img src="images/Lestnici_img_block/1/2.jpg" alt="">
@@ -477,7 +477,7 @@
                                 <li>Олеофобное покрытие, триплекс и другие виды обработки</li>
                                 <li>Герметизация двери и фиксация в положении 0 без стопора.</li>
                             </ul>
-                            <a href="#win2" class="btn-make-order">Заказать</a>
+                            <a href="#win2" class="btn-make-order btn-free-consultation">Заказать</a>
                         </div>
                     </div>
                 </div>
@@ -489,9 +489,9 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="glass_door_items_down d-flex">
+            <div class="row no-padding">
+                <div class="col-lg-12 second-blade">
+                    <div class="glass_door_items_down img-text-bottom-container d-flex">
                         <div class="glass_door_item_down">
                             <p>Перегородки и ограждения в душевую кабину стало модно делать не просто так. В
                                 основном их ценят за надежность, вариативность и эстетику, что готовой кабинки
@@ -683,7 +683,7 @@
                                 <label>
                                     <input name="agree" type="checkbox">
                                     <span class="fake-checkbox true" aria-hidden="true"></span>
-                                    <span class="label">Согласие с конфиденциальностью и куки</span>
+                                    <span class="label">Согласие с <a href="docs/PrivacyPolicy.pdf" target="_blank" class="link_to_policy">конфиденциальностью</a> и <a href="#win6" class="link_to_policy">куки</a></span>
                                 </label>
                             </div>
                         </div>

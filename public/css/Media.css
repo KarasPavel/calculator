@@ -27,7 +27,8 @@
 	.cost_calculation__link{
 		justify-content: space-around;
 	}
-	.shower_type_items .glasses_img_fastener2{
+	.shower_type_items .glasses_img_fastener2,
+    .comparison-blocks.shower_type_items img{
 		left: 0;
 	}
 	.advantages_items{
@@ -136,6 +137,11 @@
 	.shower_type_items img{
 		display: none !important;
 	}
+
+    .glass_door_items img, .glass_door_items_down img, .comparison-blocks.shower_type_items img {
+        display: unset !important;
+    }
+
 	.stairs_and_flooring_buttons1{
 		background: unset;
 	}
@@ -219,6 +225,9 @@
 		width: 123%;
 	}
 
+    .skinali_types_of_connectors img {
+        display: unset !important;
+    }
 }
 @media screen and (max-width: 991px) {
 	.iphone_calc img{
@@ -276,8 +285,87 @@
 	.logo{
 		width: 150px;
 	}
+
+    .comparison_glass_items {
+        margin-right: 0;
+    }
+    .comparison_glass_items .comparison_glass,
+    .comparison_glass_items2 .comparison_glass2 {
+        padding: 20px 43px;
+    }
+    .shower_type_item-left,
+    .shower_type_item-right {
+        height: auto;
+    }
+    .skinali_types_of_connectors .connector-type {
+        left: unset !important;
+        width: 100%;
+        padding: 10px 33px;
+    }
+    .skinali_types_of_connectors .galery_kripezh-pos {
+        left: 0;
+    }
+    .connector-block-second {
+        margin-bottom: 0px;
+    }
+
+    .glass_door_items img,
+    .glass_door_items_down img,
+    .comparison-blocks.shower_type_items img {
+        display: unset !important;
+    }
+    .img-text-up-container,
+    .img-text-bottom-container {
+        flex-direction: column;
+    }
+    .img-text-up-container img,
+    .img-text-bottom-container img{
+        height: auto;
+        width: 100% !important;
+        position: static;
+    }
+    .second-blade .img-text-up-container img,
+    .second-blade .img-text-bottom-container img {
+        height: unset;
+        max-height: 200px;
+        width: unset !important;
+        max-width: 50%;
+    }
+
+    .img-text-bottom-container div:first-child {
+        order: 1;
+    }
+    .img-text-bottom-container div:last-child {
+        order:0;
+        margin-bottom: 0;
+    }
+    .img-text-up-container div:last-child,
+    .img-text-bottom-container div:first-child {
+        /*border-top: none;*/
+        /*border-right: none;*/
+        /*border-left: none;*/
+        padding: 10px;
+    }
+    /*.img-text-up-container div:last-child ul,*/
+    /*.img-text-bottom-container div:first-child ul {*/
+        /*display: block;*/
+    /*}*/
+    .img-text-up-container div:last-child ul li,
+    .img-text-bottom-container div:first-child ul li {
+        width: auto;
+    }
+
+    .btn-free-consultation {
+        top: 94%;
+        left: calc(50% - 136px);
+    }
+
 }
 @media screen and (max-width: 767px){
+    .img-text-up-container div:last-child ul,
+    .img-text-bottom-container div:first-child ul {
+        display: block;
+    }
 	.footer_menu{
 		width: 75px;
 		margin: auto;
@@ -353,6 +441,69 @@
 	.tooltiptext {
 		display: none;
 	}
+
+    .btn-free-consultation {
+        top: 90%;
+        left: calc(50% - 136px);
+    }
+
+    .skinali_types_of_connectors .connector-type {
+        left: unset !important;
+        width: 100%;
+        padding: 10px 33px;
+    }
+    .skinali_types_of_connectors .galery_kripezh-pos {
+        left: 0;
+    }
+
+    .comparison_glass_items {
+        margin-right: 0;
+    }
+    .comparison_glass_items .comparison_glass,
+    .comparison_glass_items2 .comparison_glass2 {
+        padding: 20px 25px;
+    }
+    /*ul.ul-width-100, ul.ul-width-100 a.nav-link {*/
+        /*width: 100%;*/
+    /*}*/
+    /*ul.ul-width-100 li.nav-item {*/
+        /*flex: 0 0 50%;*/
+        /*max-width: 50%;*/
+    /*}*/
+
+    .glass_door_items img,
+    .glass_door_items_down img,
+    .comparison-blocks.shower_type_items img {
+        display: unset !important;
+    }
+    .img-text-up-container,
+    .img-text-bottom-container {
+        flex-direction: column;
+    }
+    .img-text-up-container img,
+    .img-text-bottom-container img{
+        height: auto;
+        width: 100% !important;
+        position: static;
+    }
+    .img-text-bottom-container div:first-child {
+        order: 1;
+    }
+    .img-text-bottom-container div:last-child {
+        order:0;
+        margin-bottom: 0;
+    }
+    .img-text-up-container div:last-child,
+    .img-text-bottom-container div:first-child {
+        /*border-top: none;*/
+        /*border-right: none;*/
+        /*border-left: none;*/
+        padding: 10px;
+    }
+    .img-text-up-container div:last-child ul,
+    .img-text-bottom-container div:first-child ul {
+        display: block;
+    }
 }
 
 @media screen and (max-width: 575px) {
@@ -469,7 +620,8 @@
 @media screen and (min-width: 992px) {
 	.glass_door_item,
 	.glass_door_item_down {
-	 	width: 543px;
+	 	/*width: 543px;*/
+        width: 521px;
 	}
 }
 
@@ -487,7 +639,8 @@
 	}
 
 	.glass_door_items img,
-	.glass_door_items_down img{
+	.glass_door_items_down img,
+    .comparison-blocks.shower_type_items img {
 		display: unset !important;
 	}
 	.img-text-up-container,
@@ -553,6 +706,39 @@
 	.comparison-blocks--bottom:last-child div {
 		order: 1;
 	}
+	.btn-free-consultation {
+		top: 90%;
+		left: calc(50% - 136px);
+	}
+	.get-price-fast {
+		flex-direction: column;
+		align-items: center;
+	}
+
+    /*skinali types of fasteners section*/
+    .skinali_types_of_connectors img {
+        display: block !important;
+    }
+    .skinali_types_of_connectors .shower_type_items {
+        flex-direction: column;
+    }
+    .connector-block-first .connector-type {
+        order: 1;
+    }
+    .connector-block-first a.galery_kripezh-pos {
+        order: 0;
+        margin-bottom: 10px;
+    }
+    .connector-block-second a.connector-link {
+        margin-bottom: 10px;
+    }
+    .skinali_types_of_connectors .connector-type {
+        left: unset !important;
+        width: 100%;
+        border-left: none;
+        border-right: none;
+    }
+    /* ___ end of types of fasteners section ___ */
 }
 
 /* ___ delete botstrap paddings ___*/
@@ -562,6 +748,4 @@
 		padding-left: 0;
 	}
 }
-
-
 /*_________________________________*/

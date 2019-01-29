@@ -111,7 +111,7 @@
         <label>
             <input type="checkbox">
             <span class="fake-checkbox" aria-hidden="true"></span>
-            <span class="label">Согласие с конфиденциальностью и куки</span>
+            <span class="label">Согласие с <a href="docs/PrivacyPolicy.pdf" target="_blank" class="link_to_policy">конфиденциальностью</a> и <a href="#win6" class="link_to_policy">куки</a></span>
         </label>
     </div>
     <div class="button_forms button_forms_popup">

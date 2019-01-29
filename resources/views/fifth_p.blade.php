@@ -281,7 +281,6 @@
                                 <li class="orenge-mines">больше отсвечивает солнечные лучи</li>
                             </ul>
                         </div>
-
                     </div>
                 </div>
                 <div class="col-lg-6 ">

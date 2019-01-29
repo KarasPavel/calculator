@@ -232,11 +232,11 @@
                     </div>
                 </div>
             </div>
-            <div class="row doors-left-right-items">
+            <div class="row doors-left-right-items no-padding second-blade">
                 <div class="col-lg-6">
-                    <div class="shower_type_items d-flex">
+                    <div class="shower_type_items comparison-blocks d-flex">
                         <img src="images/img_showers-type.png" alt="">
-                        <div class="shower_type_item-left">
+                        <div class="shower_type_item-left comparison_glass_items comparison_glass">
                             <p>ДУШЕВОЕ ОГРАЖДЕНИЕ VEDITEX</p>
                             <ul>
                                 <li>Срок службы неограничен</li>
@@ -251,8 +251,8 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="shower_type_items d-flex">
-                        <div class="shower_type_item-right">
+                    <div class="shower_type_items comparison-blocks comparison-blocks--bottom d-flex">
+                        <div class="shower_type_item-right comparison_glass2">
                             <p>"Итальянская" или "Чешская" душевая кабина</p>
                             <ul>
                                 <li>Просто купить, везде есть</li>

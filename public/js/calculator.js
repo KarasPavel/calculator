@@ -19,7 +19,7 @@ function calculate() {
             },
             phone: {
                 required: true,
-                digits: true,
+                digits: false,
                 minlength: 18,
                 maxlength: 18,
             },

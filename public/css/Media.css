@@ -249,6 +249,7 @@
 	.bg_types_door_items{
 		margin: 0 auto;
     	width: 250px;
+        margin-bottom: 20px;
 	}
 	.types_of_door_item h3:before{
 		left: 295px;
@@ -327,9 +328,9 @@
     .second-blade .img-text-up-container img,
     .second-blade .img-text-bottom-container img {
         height: unset;
-        max-height: 200px;
-        width: unset !important;
-        max-width: 50%;
+        max-height: 250px;
+        width: 50% !important;
+        object-fit: cover;
     }
 
     .img-text-bottom-container div:first-child {
@@ -358,6 +359,10 @@
     .btn-free-consultation {
         top: 94%;
         left: calc(50% - 136px);
+    }
+    .first-blade .btn-free-consultation,
+    .second-blade .btn-free-consultation{
+             top: 107%;
     }
 
 }
@@ -623,6 +628,40 @@
 	 	/*width: 543px;*/
         width: 521px;
 	}
+    .second-blade .comparison-blocks {
+        position: relative;
+    }
+    .second-blade .comparison-blocks--bottom {
+        justify-content: flex-end;
+    }
+    .second-blade .shower_type_item-left {
+        position: absolute;
+        left: 40%;
+        right: 0;
+        z-index: 3;
+        flex-basis: 60%;
+        padding: 10px 5px 10px 25px;
+    }
+    .second-blade .shower_type_item-right {
+        position: absolute;
+        left: 0;
+        right: 40%;
+        flex-basis: 60%;
+        z-index: 3;
+        padding: 10px 5px 10px 25px;
+        width: auto;
+    }
+    .second-blade .shower_type_item-left li,
+    .second-blade .shower_type_item-right li {
+        margin-bottom: 6px;
+    }
+    .second-blade .shower_type_item-left p,
+    .second-blade .shower_type_item-right p {
+        font-size: 12px;
+        line-height: 22px;
+        letter-spacing: 2px;
+    }
+
 }
 
 @media (max-width: 575px) {

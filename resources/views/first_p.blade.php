@@ -148,9 +148,9 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row no-padding">
                 <div class="col-lg-12">
-                    <div class="glass_door_items d-flex">
+                    <div class="glass_door_items img-text-up-container d-flex">
                         <img src="images/second_page_imageBlock/1/1.jpg" alt="">
                         <div class="glass_door_item">
                             <p> Стекло действительно хрупкий материал, но вот к прочности
@@ -166,7 +166,7 @@
                                 <li>Взломостойкость превышая класс Б3 (70+ ударов пожарным топором в точку)</li>
                                 <li>Ударостойкость выше стандарта А3 (382 ДЖ/38.2кгс/м2)</li>
                             </ul>
-                            <a href="#win1" class="btn-make-order">Заказать</a>
+                            <a href="#win1" class="btn-make-order btn-free-consultation">Заказать</a>
                         </div>
                     </div>
                 </div>
@@ -178,9 +178,9 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row no-padding">
                 <div class="col-lg-12">
-                    <div class="glass_door_items_down d-flex">
+                    <div class="glass_door_items_down d-flex img-text-bottom-container">
                         <div class="glass_door_item_down">
                             <p> Триплекс, благодаря многим слоям, обладает миллионами вариаций декорирования.
                              Внутри слоев можно запечь любые плоские предметы, от купюр и высушенных бабочек до
@@ -233,7 +233,7 @@
                             <label class="truee">
                                 <input name="agree" type="checkbox">
                                 <span class="fake-checkbox " aria-hidden="true"></span>
-                                <span class="label">Согласие с конфиденциальностью и куки</span>
+                                <span class="label">Согласие с <a href="docs/PrivacyPolicy.pdf" target="_blank" class="link_to_policy">конфиденциальностью</a> и <a href="#win6" class="link_to_policy">куки</a></span>
                             </label>
                         </div>
                         <div class="button_forms button_next">

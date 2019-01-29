@@ -248,10 +248,10 @@
                     </div>
                 </div>
             </div>
-            <div class="row glasses-left-right-items">
+            <div class="row glasses-left-right-items skinali_types_of_connectors no-padding">
                 <div class="col-lg-6">
-                    <div class="shower_type_items d-flex">
-                        <div class="shower_type_item-left fastener_shower_glass">
+                    <div class="shower_type_items d-flex connector-block-first">
+                        <div class="shower_type_item-left fastener_shower_glass connector-type">
                             <p>СПЕЦИАЛЬНЫЙ КЛЕЙ</p>
                             <ul>
                                 <li>Выдерживает нагрузку более 220 кг на м2</li>
@@ -270,12 +270,12 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="shower_type_items d-flex">
-                        <a class="galery_kripezh-pos galery_kripezh-pos-right" data-fancybox=""
+                    <div class="shower_type_items d-flex connector-block-second">
+                        <a class="galery_kripezh-pos galery_kripezh-pos-right connector-link" data-fancybox=""
                            href="images/plastin.jpg">
                             <img class="glasses_img_fastener2 imgg_2" src="images/first_fastener.png" alt="">
                         </a>
-                        <div class="shower_type_item-right fastener_shower_glass2">
+                        <div class="shower_type_item-right fastener_shower_glass2 connector-type">
                             <p>КРЕПЕЖНЫЕ ПЛАСТИНЫ</p>
                             <ul>
                                 <li>Не требует сверления зеркала</li>
@@ -710,7 +710,7 @@
                                 <label class="true">
                                     <input name="agree" type="checkbox">
                                     <span class="fake-checkbox " aria-hidden="true"></span>
-                                    <span class="label">Согласие с конфиденциальностью и куки</span>
+                                    <span class="label">Согласие с <a href="docs/PrivacyPolicy.pdf" target="_blank" class="link_to_policy">конфиденциальностью</a> и <a href="#win6" class="link_to_policy">куки</a></span>
                                 </label>
                             </div>
                         </div>

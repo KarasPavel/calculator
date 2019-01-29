@@ -562,7 +562,7 @@
                                     <input type="text" name="name" placeholder="Ваше имя">
                                 </div>
                                 <div class="col-md-6">
-                                    <input type="text" name="phone" placeholder="Ваш телефон">
+                                    <input class="phone_us" type="text" name="phone" placeholder="Ваш телефон">
                                 </div>
                             </div>
                             <div class="down_form down_form_2 row contact-form--row">

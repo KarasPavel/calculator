@@ -215,6 +215,9 @@
 	.white{
 		font-size: 13px;
 	}
+	.tooltip-wrap .tooltiptext, .mirrors-tooltip-wrap .tooltiptext {
+		width: 123%;
+	}
 
 }
 @media screen and (max-width: 991px) {
@@ -270,6 +273,9 @@
 	.white{
 		font-size: 13px;
 	}
+	.logo{
+		width: 150px;
+	}
 }
 @media screen and (max-width: 767px){
 	.footer_menu{
@@ -283,7 +289,7 @@
 		width: 115px;
 	}
 	.navbar-toggler{
-		margin: -2px;
+		margin: -1px;
 	}
 	.header_call-back p{
 		font-size: 15px;
@@ -343,6 +349,9 @@
 	.homepage-img {
 		position: absolute;
 		top: 200px;
+	}
+	.tooltiptext {
+		display: none;
 	}
 }
 
@@ -406,6 +415,34 @@
 	.homepage-img {
 		position: absolute;
 		/*top: 45%;*/
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.logo{
+		width: 100px;
+	}
+	.header_call-back {
+		margin-right: 0;
+	}
+	.header_call-back p{
+		font-size: 13px;
+	}
+	.call-back_header{
+		letter-spacing: 1.3px;
+	}
+	.cost_butt {
+		line-height: 1.2;
+		letter-spacing: 1.6px;
+		padding: 14px;
+	}
+	.cost_butt1 {
+		line-height: 1.2;
+		letter-spacing: 1.6px;
+		padding: 14px;
+	}
+	.buy_buttons:last-child {
+		margin-right: 0;
 	}
 }
 @media screen and (max-width: 556px){

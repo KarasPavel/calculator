@@ -818,7 +818,7 @@ footer{
 }
 .galery_kripezh-pos{
 	position: relative;
-	left: -82px;
+	/*left: -82px;*/
 }
 .request_call_back p{
 	text-align: center;
@@ -1241,7 +1241,7 @@ input[type="checkbox"] {
 .shower_type_items{
 	align-content: center;
 	align-items: center;
-	width: 585px;
+	/*width: 585px;*/
 }
 .shower_type_items img{
 	position: relative;
@@ -1252,7 +1252,7 @@ input[type="checkbox"] {
 .shower_type_item-left{
 	position: relative;
 	z-index: 1;
-	left: -80px;
+	/*left: -80px;*/
 	background-color: #255cad;
 	border: 5px solid #fff;
 	border-image: url(images/border_turnkey_hover.png) 5 round round;
@@ -1312,7 +1312,8 @@ input[type="checkbox"] {
 .shower_type_item-right{
 	position: relative;
 	z-index: 1;
-	left: -20px;
+	/*left: -20px;*/
+    left: 0;
 	background-color: #3e5669;
 	border: 5px solid #000;
 	border-image: url(images/border-right-shower.png) 5 round round;
@@ -1333,7 +1334,7 @@ input[type="checkbox"] {
 }
 .shower_type_item-right p:before{
 	content: '';
-	top: 50px;
+	top: 26px;
 	left: 0;
 	position: absolute;
 	width: 62px;
@@ -1968,7 +1969,7 @@ a:not([href]):not([tabindex]){
 	letter-spacing: 7px;
 }
 .imgg_2{
-	left: 67px !important;
+	/*left: 67px !important;*/
 }
 .orenge_block_calc a{
 	display: inline-block;
@@ -2196,7 +2197,8 @@ a:not([href]):not([tabindex]){
 	left: -55px;
 }
 .comparison_glass_items2 .glasses_img_fastener2{
-	left: 18%;
+	/*left: 18%;*/
+    left: 50px;
 
 }
 .comparison_glass_items .comparison_glass, .comparison_glass_items2 .comparison_glass2{
@@ -2224,13 +2226,13 @@ a:not([href]):not([tabindex]){
 	
 } */
 .comparison_glass2 ul li:nth-child(3):after,  .comparison_glass ul li:nth-child(3):after{
-	content: "";
-	top: 170px;
-	left: 25px;
-	position: absolute;
-	width: 62px;
-	height: 1px;
-	background: rgb(98, 119, 135);
+	/*content: "";*/
+	/*top: 170px;*/
+	/*left: 25px;*/
+	/*position: absolute;*/
+	/*width: 62px;*/
+	/*height: 1px;*/
+	/*background: rgb(98, 119, 135);*/
 }
 
 .comparison_glass_items{
@@ -2239,7 +2241,7 @@ a:not([href]):not([tabindex]){
 	border-style: solid;
 	border-color: rgb(255, 255, 255);
 	border-image: url(images/border_turnkey_hover.png) 5 round;
-	margin-right: 15px;
+	/*margin-right: 15px;*/
 	margin-bottom: 25px;
 }
 .img_items_stairs img{
@@ -3127,14 +3129,14 @@ textarea {
 }
 
 .fartuks-left-right-items .galery_kripezh-pos {
-    left: 8px;
+    /*left: 8px;*/
 }
 .fartuks-left-right-items .shower_type_items .glasses_img_fastener2 {
     left: 0;
 }
 .fartuks-left-right-items .shower_type_item-left {
-    left: 25px;
-    padding: 10px 20px 10px 55px;
+    left: 0;
+    padding: 10px 20px 10px 25px;
 }
 .fartuks-left-right-items .shower_type_item-right {
     padding: 10px 10px 10px 40px;
@@ -3144,17 +3146,17 @@ textarea {
     left: 0;
 }
 .glasses-left-right-items .galery_kripezh-pos {
-    left: 26px;
+    /*left: 26px;*/
 }
 .glasses-left-right-items .galery_kripezh-pos-right {
-    left: -83px;
+    /*left: -83px;*/
 }
 .glasses-left-right-items .shower_type_item-left {
-    left: 40px;
-    padding: 10px 25px 10px 50px;
+    /*left: 40px;*/
+    padding: 10px 25px 10px 30px;
 }
 .glasses-left-right-items .shower_type_item-right {
-    left: -30px;
+    /*left: -30px;*/
     padding: 10px 15px 10px 40px;
 }
 /* calculator page - hover effects for geometric figures */
@@ -3679,7 +3681,7 @@ div.head.toggler {
 	border-color: rgba(0,0,0,0.7) transparent transparent transparent;
 }
 
-/**/
+/*__cart popup__*/
 
 .table td.td-button-close {
 	vertical-align: middle;
@@ -3717,4 +3719,39 @@ div.head.toggler {
 	top: 1px;
 	right: 3px;
 }
-/**/
+/* ___ end of cart popup ___*/
+
+.link_to_policy {
+    color: blue;
+}
+.connector-type p:before {
+    display: none;
+}
+.connector-type ul li {
+    position: relative;
+}
+.connector-type ul li:first-child:before {
+    content: '';
+    top: -5px;
+    left: 0;
+    position: absolute;
+    width: 62px;
+    height: 1px;
+    background: #627787;
+}
+.connector-type ul li:not(.orenge-mines):last-child {
+    /*color: red;*/
+    /*content: '';*/
+    /*top: -5px;*/
+    /*left: 0;*/
+    /*position: absolute;*/
+    /*width: 62px;*/
+    /*height: 1px;*/
+    /*background: #627787;*/
+}
+.connector-block-first {
+    justify-content: flex-end;
+}
+.connector-block-first .connector-type {
+    width: 345px;
+}

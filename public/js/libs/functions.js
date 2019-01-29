@@ -110,7 +110,7 @@ function sendForm() {
                 phone: {
                     required: true,
                     digits: false,
-                    minlength: 17,
+                    minlength: 18,
                     maxlength: 18,
                 },
                 agree: {
@@ -130,7 +130,7 @@ function sendForm() {
                 phone: {
                     required: "Пожалуйста, введите номер телефона",
                     digits: "Поле содержит только цифры",
-                    minlength: "Минимум 10 цифр",
+                    minlength: "Минимум 11 цифр",
                     maxlength: "Максмум 11 цифр",
                 },
                 agree: {

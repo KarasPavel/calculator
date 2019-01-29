@@ -116,7 +116,7 @@
                                                                             placeholder="Адресс"></div>
                                     </div>
                                     <div class="second_row row">
-                                        <div class="col-12 col-md-4"><input name="phone" type="tel"
+                                        <div class="col-12 col-md-4"><input class="phone_us" name="phone" type="tel"
                                                                             placeholder="Телефон"></div>
                                         <div class="col-12 col-md-4"><input name="email" type="email"
                                                                             placeholder="Электронная почта"></div>

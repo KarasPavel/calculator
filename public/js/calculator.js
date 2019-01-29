@@ -20,8 +20,8 @@ function calculate() {
             phone: {
                 required: true,
                 digits: true,
-                minlength: 10,
-                maxlength: 11,
+                minlength: 18,
+                maxlength: 18,
             },
             quantity: {
                 required: true,
@@ -48,7 +48,7 @@ function calculate() {
             phone: {
                 required: "Пожалуйста, введите номер телефона",
                 digits: "Поле содержит только цифры",
-                minlength: "Минимум 10 цифр",
+                minlength: "Минимум 11 цифр",
                 maxlength: "Максмум 11 цифр",
             },
             quantity: {

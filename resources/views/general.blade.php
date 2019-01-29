@@ -281,7 +281,7 @@
                 <a id="designer">Дизайнер</a>
             </div>
             <input type="text" name="name" placeholder="Ваше имя">
-            <input type="text" name="phone" placeholder="Ваш телефон">
+            <input type="text" class="phone_us" name="phone" placeholder="Ваш телефон">
         </div>
         <div class="down_form down_form_popup d-flex">
             <input type="text" name="email" placeholder="Электронная почта">

@@ -3121,8 +3121,14 @@ textarea {
     left: -46px;
     padding: 10px 5px 10px 57px;
 }
+.second-blade .shower_type_item-left {
+	left: 0;
+}
 .doors-left-right-items .shower_type_item-right {
     left: -14px;
+}
+.second-blade .shower_type_item-right {
+	left: 0;
 }
 .doors-left-right-items .shower_type_items img {
     left: -19px;

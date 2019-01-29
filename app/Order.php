@@ -100,7 +100,7 @@ class Order extends Model
             '    Количество: '. $order['quantity'] .
             '    Стоимость: '. $order['price'] .
             '    Информация о заказе: '. $order['order_data'];
-//        mail($addresse, $title, $message);
+        mail($addresse, $title, $message);
 
         try {
             $dbResult = DB::table('orders')
@@ -137,6 +137,22 @@ class Order extends Model
             $fileName = '';
         }
 
+        if (json_decode($orderInfo)->shape->name === 'Круг') {
+            $shapeDescription = 'Диаметр: '. json_decode($orderInfo)->shape->diameter . ' мм ';
+        } else {
+            $shapeDescription = json_decode($orderInfo)->shape->width .
+                ' x ' . json_decode($orderInfo)->shape->height .
+                ' мм ';
+        }
+
+        $orderDescription =
+            'Материал: ' . json_decode($orderInfo)->material .
+            'Вид: ' . json_decode($orderInfo)->product .
+            'Форма: ' . json_decode($orderInfo)->shape->name .
+            'Размеры: ' . $shapeDescription .
+            'Обработка: ' . json_decode($orderInfo)->format .
+            'Дополнительно: ' . json_decode($orderInfo)->options;
+
         $addresse = 'info@v-t-x.ru';
         $title = 'Заказ';
         $order = [
@@ -150,7 +166,7 @@ class Order extends Model
             'price' => $result->price,
             'urgency' => $result->urgency,
             'upload_file' => $fileName,
-            'order_data' => $orderInfo,
+            'order_data' => $orderDescription,
             'application_status_id' => 1,
             'order_date' => $result->orderDate,
             'created_at' => Carbon::now()
@@ -165,7 +181,7 @@ class Order extends Model
             '    Количество: '. $order['quantity'] .
             '    Стоимость: '. $order['price'] .
             '    Информация о заказе: '. $order['order_data'];
-//        mail($addresse, $title, $message);
+        mail($addresse, $title, $message);
 
         $dbResult = DB::table('orders')
             ->insert([

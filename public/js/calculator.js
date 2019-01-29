@@ -6,6 +6,65 @@
 
 function calculate() {
 
+    $(document).find('#calcForm').validate({
+        rules: {
+            name: {
+                required: true,
+                minlength: 2,
+                maxlength: 35,
+            },
+            email: {
+                required: true,
+                email: true,
+            },
+            phone: {
+                required: true,
+                digits: true,
+                minlength: 10,
+                maxlength: 11,
+            },
+            quantity: {
+                required: true,
+                digits: true,
+                min: 1,
+                max: 100,
+            },
+            address: {
+                required: true,
+                minlength: 10,
+                maxlength: 100,
+            },
+        },
+        messages: {
+            name: {
+                required: "Пожалуйста, введите имя",
+                minlength: "Минимум 2 буквы",
+                maxlength: "Максимальное число букв - 35",
+            },
+            email: {
+                required: "Пожалуйста введите свой email",
+                email: "Пожалуйста, введите корректный email",
+            },
+            phone: {
+                required: "Пожалуйста, введите номер телефона",
+                digits: "Поле содержит только цифры",
+                minlength: "Минимум 10 цифр",
+                maxlength: "Максмум 11 цифр",
+            },
+            quantity: {
+                required: "Пожалуйста, введите количество",
+                digits: "Поле содержит только цифры",
+                min: "Минимум 1 шт",
+                max: "Максмум 100 шт",
+            },
+            address: {
+                required: "Пожалуйста, введите адрес",
+                minlength: "Мнимум 10 букв",
+                maxlength: "Максимальное число букв - 100",
+            },
+        }
+    });
+
 
     $('.cost_calc_first_tab').each(function () {
         var el = $(this);
@@ -390,7 +449,8 @@ function calculate() {
         $('#shape').empty();
         $('#format').empty();
         $('#extra').empty();
-        $('#order_info').empty();
+        // $('#order_info').empty();
+        $('#order_info').hide();
         fillDepthDiv();
         $('#depth').show().children().show();
     });
@@ -460,7 +520,8 @@ function calculate() {
         $('#shape').empty();
         $('#format').empty();
         $('#extra').empty();
-        $('#order_info').empty();
+        // $('#order_info').empty();
+        $('#order_info').hide();
         fillShapeDiv();
         $('#shape').show().children().show();
     });
@@ -556,7 +617,8 @@ function calculate() {
         });
         $('#format').empty();
         $('#extra').empty();
-        $('#order_info').empty();
+        // $('#order_info').empty();
+        $('#order_info').hide();
         if ($('#shape_diameter').val() > 0 || $('#shape_height').val() * $('#shape_width').val() > 0) {
             getSquare();
             getPerimeter();
@@ -711,11 +773,12 @@ function calculate() {
             format = this.text;
         }
         $('#extra').empty();
-        $('#order_info').empty();
+        // $('#order_info').empty();
+        $('#order_info').hide();
         setOrderDay();
         fillExtraDiv();
         $('#extra').show().children().show();
-        fillOrderDiv();
+        // fillOrderDiv();
         $('#order_info').show().children().show();
     });
 
@@ -884,7 +947,8 @@ function calculate() {
             } else {
                 rndNum = 0;
                 result1 = 0;
-                $('#order_info').empty();
+                // $('#order_info').empty();
+                $('#order_info').hide();
                 deliveryType = null;
             }
         } else {
@@ -902,7 +966,8 @@ function calculate() {
                 offsetHoursHoles = 0;
                 hacNum = 0;
                 result2 = 0;
-                $('#order_info').empty();
+                // $('#order_info').empty();
+                $('#order_info').hide();
                 deliveryType = null;
             }
         } else {
@@ -911,14 +976,16 @@ function calculate() {
         }
 
         if (result1 * result2 === 1) {
-            $('#order_info').empty();
+            // $('#order_info').empty();
+            $('#order_info').hide();
             deliveryType = null;
             getOptionalPrice()
             setOrderDay();
-            fillOrderDiv();
+            // fillOrderDiv();
             $('#order_info').show().children().show();
         } else {
-            $('#order_info').empty();
+            // $('#order_info').empty();
+            $('#order_info').hide();
             deliveryType = null;
         }
 
@@ -928,104 +995,95 @@ function calculate() {
         // $('#order_info').empty();
         setOrderDay();
         // fillOrderDiv();
-        // $('#order_info').show().children().show();
+        $('#order_info').show().children().show();
     });
 
-    function fillOrderDiv() {
-        deliveryType = null;
-        $('#order_info').append('<form id="calcForm" onsubmit="javascript:return false;"></form>');
-        $('#calcForm').append('<div id="calc_stege_7" class="head toggler"></div>');
-        $('#calc_stege_7').append('<p class="numver_stage">7</p>');
-        $('#calc_stege_7').append('<h4>Информация по заказу</h4>');
-        $('#calc_stege_7').append('<i class="fas fa-angle-down"></i>');
-        $('#calcForm').append('<div id="box-calc-7" class="wraper content"></div>');
-        $('#box-calc-7').append('<div class="Contact_form"></div>');
-        $('.Contact_form').append('<div class="first_row row"></div>');
-        $('.first_row').append('<div class="col-12 col-md-4"><input name="name" type="text" placeholder="Имя"></div>');
-        $('.first_row').append('<div class="col-12 col-md-4"><input id="qntt" name="quantity" type="number" min="1" placeholder="Количество"></div>');
-        $('.first_row').append('<div class="col-12 col-md-4"><input name="address" type="text" placeholder="Адресс"></div>');
-        // $('.Contact_form').append('<div class="second_row d-flex"></div>');
-        $('.Contact_form').append('<div class="second_row row"></div>');
-        // $('.second_row').append('<div class="leftTable"></div>');
-        // $('.leftTable').append('<div class="up_input d-flex "></div>');
-        // $('.up_input').append('<div><input name="phone" type="tel" placeholder="Телефон"></div>');
-        // $('.up_input').append('<div><input name="email" type="email" placeholder="Электронная почта"></div>');
-        $('.second_row').append('<div class="col-12 col-md-4"><input name="phone" type="tel" placeholder="Телефон"></div>');
-        $('.second_row').append('<div class="col-12 col-md-4"><input name="email" type="email" placeholder="Электронная почта"></div>');
-        // $('.leftTable').append('<div class="down_buttons_distances d-flex"></div>');
-        $('.second_row').append('<div class="right_texbox col-12 col-md-4"">' +
-            '   <textarea name="comment" id="" cols="25" rows="10" placeholder="Комментарий к заказу"></textarea>' +
-            '</div>');
-        $('.second_row').append('<div class="down_buttons_distances d-flex col-12 col-md-8"></div>');
-        $('.down_buttons_distances').append('<a id="pickup" class="nav-link" data-toggle="tab" href="javascript:void(0);">Самовывоз</a>');
-        $('.down_buttons_distances').append('<a id="inMKAD" class="nav-link" data-toggle="tab" href="javascript:void(0);">В пределах МКАД</a>');
-        $('.down_buttons_distances').append('<a id="outMKAD" class="nav-link" data-toggle="tab" href="javascript:void(0);">Не более 5 км от МКАД</a>');
-        $('.down_buttons_distances').append('<a id="moskowRegion" class="nav-link" data-toggle="tab" href="javascript:void(0);">Московская область</a>');
-        // $('.second_row').append('<div class="right_texbox">' +
-        //     '   <textarea name="comment" id="" cols="25" rows="3" placeholder="Комментарий к заказу"></textarea>' +
-        //     '</div>');
-        $('.Contact_form').append('<div class="buttons_buy_glass d-flex justify-content-center"></div>');
-        $('.buttons_buy_glass').append('<button id="makeOrder" class="cost_butt buy_buttons disable btn-make-order">Оформить заказ</button>');
-        $('.buttons_buy_glass').append('<button id="buyProduct" class="cost_butt1 buy_buttons disable-cart btp-put-in-cart">В корзину</button>');
-        $(document).find('#calcForm').validate({
-            rules: {
-                name: {
-                    required: true,
-                    minlength: 2,
-                    maxlength: 35,
-                },
-                email: {
-                    required: true,
-                    email: true,
-                },
-                phone: {
-                    required: true,
-                    digits: true,
-                    minlength: 10,
-                    maxlength: 11,
-                },
-                quantity: {
-                    required: true,
-                    digits: true,
-                    min: 1,
-                    max: 100,
-                },
-                address: {
-                    required: true,
-                    minlength: 10,
-                    maxlength: 100,
-                },
-            },
-            messages: {
-                name: {
-                    required: "Пожалуйста, введите имя",
-                    minlength: "Минимум 2 буквы",
-                    maxlength: "Максимальное число букв - 35",
-                },
-                email: {
-                    required: "Пожалуйста введите свой email",
-                    email: "Пожалуйста, введите корректный email",
-                },
-                phone: {
-                    required: "Пожалуйста, введите номер телефона",
-                    digits: "Поле содержит только цифры",
-                    minlength: "Минимум 10 цифр",
-                    maxlength: "Максмум 11 цифр",
-                },
-                quantity: {
-                    required: "Пожалуйста, введите количество",
-                    digits: "Поле содержит только цифры",
-                    min: "Минимум 1 шт",
-                    max: "Максмум 100 шт",
-                },
-                address: {
-                    required: "Пожалуйста, введите адрес",
-                    minlength: "Мнимум 10 букв",
-                    maxlength: "Максимальное число букв - 100",
-                },
-            }
-        });
-    }
+    // function fillOrderDiv() {
+    //     deliveryType = null;
+    //     $('#order_info').append('<form id="calcForm" onsubmit="javascript:return false;"></form>');
+    //     $('#calcForm').append('<div id="calc_stege_7" class="head toggler"></div>');
+    //     $('#calc_stege_7').append('<p class="numver_stage">7</p>');
+    //     $('#calc_stege_7').append('<h4>Информация по заказу</h4>');
+    //     $('#calc_stege_7').append('<i class="fas fa-angle-down"></i>');
+    //     $('#calcForm').append('<div id="box-calc-7" class="wraper content"></div>');
+    //     $('#box-calc-7').append('<div class="Contact_form"></div>');
+    //     $('.Contact_form').append('<div class="first_row row"></div>');
+    //     $('.first_row').append('<div class="col-12 col-md-4"><input name="name" type="text" placeholder="Имя"></div>');
+    //     $('.first_row').append('<div class="col-12 col-md-4"><input id="qntt" name="quantity" type="number" min="1" placeholder="Количество"></div>');
+    //     $('.first_row').append('<div class="col-12 col-md-4"><input name="address" type="text" placeholder="Адресс"></div>');
+    //     $('.Contact_form').append('<div class="second_row row"></div>');
+    //     $('.second_row').append('<div class="col-12 col-md-4"><input name="phone" type="tel" placeholder="Телефон"></div>');
+    //     $('.second_row').append('<div class="col-12 col-md-4"><input name="email" type="email" placeholder="Электронная почта"></div>');
+    //     $('.second_row').append('<div class="right_texbox col-12 col-md-4"">' +
+    //         '   <textarea name="comment" id="" cols="25" rows="10" placeholder="Комментарий к заказу"></textarea>' +
+    //         '</div>');
+    //     $('.second_row').append('<div class="down_buttons_distances d-flex col-12 col-md-8"></div>');
+    //     $('.down_buttons_distances').append('<a id="pickup" class="nav-link" data-toggle="tab" href="javascript:void(0);">Самовывоз</a>');
+    //     $('.down_buttons_distances').append('<a id="inMKAD" class="nav-link" data-toggle="tab" href="javascript:void(0);">В пределах МКАД</a>');
+    //     $('.down_buttons_distances').append('<a id="outMKAD" class="nav-link" data-toggle="tab" href="javascript:void(0);">Не более 5 км от МКАД</a>');
+    //     $('.down_buttons_distances').append('<a id="moskowRegion" class="nav-link" data-toggle="tab" href="javascript:void(0);">Московская область</a>');
+    //     $('.Contact_form').append('<div class="buttons_buy_glass d-flex justify-content-center"></div>');
+    //     $('.buttons_buy_glass').append('<button id="makeOrder" class="cost_butt buy_buttons disable btn-make-order">Оформить заказ</button>');
+    //     $('.buttons_buy_glass').append('<button id="buyProduct" class="cost_butt1 buy_buttons disable-cart btp-put-in-cart">В корзину</button>');
+    //     $(document).find('#calcForm').validate({
+    //         rules: {
+    //             name: {
+    //                 required: true,
+    //                 minlength: 2,
+    //                 maxlength: 35,
+    //             },
+    //             email: {
+    //                 required: true,
+    //                 email: true,
+    //             },
+    //             phone: {
+    //                 required: true,
+    //                 digits: true,
+    //                 minlength: 10,
+    //                 maxlength: 11,
+    //             },
+    //             quantity: {
+    //                 required: true,
+    //                 digits: true,
+    //                 min: 1,
+    //                 max: 100,
+    //             },
+    //             address: {
+    //                 required: true,
+    //                 minlength: 10,
+    //                 maxlength: 100,
+    //             },
+    //         },
+    //         messages: {
+    //             name: {
+    //                 required: "Пожалуйста, введите имя",
+    //                 minlength: "Минимум 2 буквы",
+    //                 maxlength: "Максимальное число букв - 35",
+    //             },
+    //             email: {
+    //                 required: "Пожалуйста введите свой email",
+    //                 email: "Пожалуйста, введите корректный email",
+    //             },
+    //             phone: {
+    //                 required: "Пожалуйста, введите номер телефона",
+    //                 digits: "Поле содержит только цифры",
+    //                 minlength: "Минимум 10 цифр",
+    //                 maxlength: "Максмум 11 цифр",
+    //             },
+    //             quantity: {
+    //                 required: "Пожалуйста, введите количество",
+    //                 digits: "Поле содержит только цифры",
+    //                 min: "Минимум 1 шт",
+    //                 max: "Максмум 100 шт",
+    //             },
+    //             address: {
+    //                 required: "Пожалуйста, введите адрес",
+    //                 minlength: "Мнимум 10 букв",
+    //                 maxlength: "Максимальное число букв - 100",
+    //             },
+    //         }
+    //     });
+    // }
 
     $('#order_info').on('click', '#pickup , #inMKAD, #outMKAD, #moskowRegion', function () {
         deliveryType = this.id;
@@ -1075,7 +1133,8 @@ function calculate() {
         $('#shape').empty();
         $('#format').empty();
         $('#extra').empty();
-        $('#order_info').empty();
+        // $('#order_info').empty();
+        $('#order_info').hide();
         deliveryType = null;
     }
 

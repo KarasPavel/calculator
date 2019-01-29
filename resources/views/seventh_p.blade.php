@@ -98,7 +98,54 @@
                     </div>
                     <div id="extra" class="cost_calc_first_tab toggle">
                     </div>
-                    <div id="order_info" class="cost_calc_first_tab toggle">
+                    <div id="order_info" class="cost_calc_first_tab toggle" style="display: none;">
+                        <form id="calcForm" onsubmit="javascript:return false;">
+                            <div id="calc_stege_7" class="head toggler">
+                                <p class="numver_stage">7</p>
+                                <h4>Информация по заказу</h4>
+                                <i class="fas fa-angle-down"></i>
+                            </div>
+                            <div id="box-calc-7" class="wraper content">
+                                <div class="Contact_form">
+                                    <div class="first_row row">
+                                        <div class="col-12 col-md-4"><input name="name" type="text" placeholder="Имя">
+                                        </div>
+                                        <div class="col-12 col-md-4"><input id="qntt" name="quantity" type="number"
+                                                                            min="1" placeholder="Количество"></div>
+                                        <div class="col-12 col-md-4"><input name="address" type="text"
+                                                                            placeholder="Адресс"></div>
+                                    </div>
+                                    <div class="second_row row">
+                                        <div class="col-12 col-md-4"><input name="phone" type="tel"
+                                                                            placeholder="Телефон"></div>
+                                        <div class="col-12 col-md-4"><input name="email" type="email"
+                                                                            placeholder="Электронная почта"></div>
+                                        <div class="right_texbox col-12 col-md-4"><textarea name="comment" id=""
+                                                                                            cols="25" rows="10"
+                                                                                            placeholder="Комментарий к заказу"></textarea>
+                                        </div>
+                                        <div class="down_buttons_distances d-flex col-12 col-md-8">
+                                            <a id="pickup" class="nav-link" data-toggle="tab"
+                                               href="javascript:void(0);">Самовывоз</a>
+                                            <a id="inMKAD" class="nav-link" data-toggle="tab"
+                                               href="javascript:void(0);">В пределах МКАД</a>
+                                            <a id="outMKAD" class="nav-link" data-toggle="tab"
+                                               href="javascript:void(0);">Не более 5 км от МКАД</a>
+                                            <a id="moskowRegion" class="nav-link" data-toggle="tab"
+                                               href="javascript:void(0);">Московская область</a>
+                                        </div>
+                                    </div>
+                                    <div class="buttons_buy_glass d-flex justify-content-center">
+                                        <button id="makeOrder" class="cost_butt buy_buttons disable btn-make-order">
+                                            Оформить заказ
+                                        </button>
+                                        <button id="buyProduct"
+                                                class="cost_butt1 buy_buttons disable-cart btp-put-in-cart">В корзину
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>

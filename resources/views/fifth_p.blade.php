@@ -140,7 +140,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row no-padding">
+            <div class="row no-padding fifth-blade">
                 <div class="col-lg-12">
                     <div class="glass_door_items Glasses_pages_doors img-text-up-container d-flex">
                         <!-- <div class="glass_door_items_new_img d-flex"> -->

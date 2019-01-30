@@ -320,7 +320,7 @@
 </div>
 
 <a href="#x" class="overlay" id="win6"></a>
-<div id="good" class="popup popup_choise">
+<div id="good" class="popup popup_choise popup-cookie">
     <div class="up_form up_form_popup">
         <h3 class="popup_choise_h2">ПОЛИТИКА ОТСЛЕЖИВАНИЯ ДАННЫХ И COOKIE-ФАЙЛОВ </h3>
     </div>
@@ -343,7 +343,7 @@
             Дата публикации последней редакции 03.12.2018 г.
         </p>
     </div>
-    <a class="close" title="Закрыть" href="#close"></a>
+    <a class="close cookie-close" title="Закрыть" href="javascript:history.back();"></a>
 </div>
 
 <script type="text/javascript" src={{asset("js/jquery-3.3.1.min.js")}}></script>

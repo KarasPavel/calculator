@@ -97,7 +97,9 @@
 	.contacts p{
 		margin-top: 10px;
 	}
-
+	.stairs_and_flooring_buttons a {
+		width: 255px;
+	}
 }
 @media screen and (max-width: 429px){
 	.navbar-toggler{
@@ -179,6 +181,9 @@
 	.Glasses_pages_doors img{
 		width: 50%;
 	}
+	.stairs_and_flooring_buttons {
+		background: none;
+	}
 }
 @media screen and (max-width: 1200px){
 	.shower_type_items{
@@ -228,6 +233,9 @@
     .skinali_types_of_connectors img {
         display: unset !important;
     }
+	.btn_change a {
+		padding: 20px 35px;
+	}
 }
 @media screen and (max-width: 991px) {
 	.iphone_calc img{
@@ -367,6 +375,9 @@
     .second-blade .btn-free-consultation{
              top: 107%;
     }
+	.btn_change a {
+		padding: 20px 25px;
+	}
 
 }
 @media screen and (max-width: 767px){
@@ -575,6 +586,10 @@
 		position: absolute;
 		/*top: 45%;*/
 	}
+	.btn-change-1 a {
+		letter-spacing: 1px;
+		padding: 20px 10px;
+	}
 }
 
 @media screen and (max-width: 320px) {
@@ -602,6 +617,12 @@
 	}
 	.buy_buttons:last-child {
 		margin-right: 0;
+	}
+	.hardware_manufacture h2 {
+		letter-spacing: 4px;
+	}
+	.advantages h2 {
+		letter-spacing: 4px;
 	}
 }
 @media screen and (max-width: 556px){
@@ -664,7 +685,6 @@
         line-height: 22px;
         letter-spacing: 2px;
     }
-
 }
 
 @media (max-width: 575px) {

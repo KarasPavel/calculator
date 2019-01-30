@@ -276,7 +276,7 @@
     <div class="popup popup_choise formTag">
         <div class="up_form up_form_popup">
             <h3 class="popup_choise_h2">ВЫЗОВ СПЕЦИАЛИСТА</h3>
-            <div class="butt_choise  button_forms_popup d-flex">
+            <div class="butt_choise  button_forms_popup btn_change d-flex">
                 <a id="gager">Замершик</a>
                 <a id="designer">Дизайнер</a>
             </div>

@@ -2734,8 +2734,9 @@ iframe{
 	margin-bottom: 35px;
 }
 .butt_choose_kromka a{
-	padding: 24px 0;
+	padding: 17px 10px;
 	width: 100%;
+	height: 54px;
 }
 .butt_choose_kromka a:focus, .butt_choose_kromka a:hover{
 	padding: 16px 0px;
@@ -3447,7 +3448,7 @@ textarea {
 		display: none;
 	}
 	.header_call-back{
-		margin-right: -150px;
+		margin-right: -120px;
 	}
 	.owl-next p,
 	.owl-prev p {
@@ -3579,7 +3580,7 @@ textarea {
 
 @media screen and (max-width: 575px) {
 	.header_call-back{
-		margin-right: -100px;
+		margin-right: -50px;
 	}
 
     #page_calculations {

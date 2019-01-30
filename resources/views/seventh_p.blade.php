@@ -113,7 +113,7 @@
                                         <div class="col-12 col-md-4"><input id="qntt" name="quantity" type="number"
                                                                             min="1" placeholder="Количество"></div>
                                         <div class="col-12 col-md-4"><input name="address" type="text"
-                                                                            placeholder="Адресс"></div>
+                                                                            placeholder="Адрес"></div>
                                     </div>
                                     <div class="second_row row">
                                         <div class="col-12 col-md-4"><input class="phone_us" name="phone" type="tel"
@@ -125,13 +125,13 @@
                                                                                             placeholder="Комментарий к заказу"></textarea>
                                         </div>
                                         <div class="down_buttons_distances d-flex col-12 col-md-8">
-                                            <a id="pickup" class="nav-link" data-toggle="tab"
+                                            <a id="pickup" class="nav-link"
                                                href="javascript:void(0);">Самовывоз</a>
-                                            <a id="inMKAD" class="nav-link" data-toggle="tab"
+                                            <a id="inMKAD" class="nav-link"
                                                href="javascript:void(0);">В пределах МКАД</a>
-                                            <a id="outMKAD" class="nav-link" data-toggle="tab"
+                                            <a id="outMKAD" class="nav-link"
                                                href="javascript:void(0);">Не более 5 км от МКАД</a>
-                                            <a id="moskowRegion" class="nav-link" data-toggle="tab"
+                                            <a id="moskowRegion" class="nav-link"
                                                href="javascript:void(0);">Московская область</a>
                                         </div>
                                     </div>
@@ -180,7 +180,7 @@
         <a href="#close" class="buttons-cart-ok btn-make-order">Ok</a>
     {{--</div>--}}
     {{--<div class="button_forms button_forms_popup">--}}
-        <a id="buyAll" href="#close" class="buttons-cart-make-order btn-make-order">Заказать</a>
+        <a id="buyAll" href="javascript:void(0);" class="buttons-cart-make-order btn-make-order">Заказать</a>
     </div>
     <a class="close cart-close" title="Закрыть" href="#close"></a>
 </div>

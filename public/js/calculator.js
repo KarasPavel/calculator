@@ -639,8 +639,10 @@ function calculate() {
     function getPerimeter() {
         if (shapeId === 'oval') {
             perimeter = (parseInt($('#shape_height').val()) + parseInt($('#shape_width').val())) * 3 / 1000;
-        } else if (shapeId === 'circle' || shapeId === 'another') {
+        } else if (shapeId === 'circle') {
             perimeter = $('#shape_diameter').val() * 3.14159 * 1.3 / 1000;
+        } else if (shapeId === 'another') {
+            perimeter = (parseInt($('#shape_height').val()) + parseInt($('#shape_width').val())) * 2 * 1.3 / 1000;
         } else {
             perimeter = (parseInt($('#shape_height').val()) + parseInt($('#shape_width').val())) * 2 / 1000;
         }
@@ -682,14 +684,14 @@ function calculate() {
         $('#calc_stege_5').append('<i class="fas fa-angle-down"></i>');
         $('#format').append('<div id="box-calc-5" class="wraper content"></div>');
         $('#box-calc-5').append('<div id="box-calc-5-1" class="stairs_and_flooring_buttons butt_choose_kromka d-flex"></div>');
-        $('#box-calc-5-1').append('<a id="without_processing" class="nav-link" data-toggle="tab" href="javascript:void(0);">БЕЗ ОБРАБОТКИ КРОМОК</a>');
+        $('#box-calc-5-1').append('<a id="without_processing" class="nav-link" href="javascript:void(0);">БЕЗ ОБРАБОТКИ КРОМОК</a>');
         $('#format').append('<div class="text-kromka">' +
             '    <p>Кромка будет режуще-острой, а стекло хрупким.' +
             '    <br><span>Будьте осторожны!</span></p>' +
             '    <img src="images/sloy_kromka.png" alt="">' +
             '</div>');
         if (depthId != "three") {
-            $('#box-calc-5-1').append('<a id="with_processing" class="nav-link" data-toggle="tab" href="javascript:void(0);">ПОЛИРОВКА КРОМОК</a>');
+            $('#box-calc-5-1').append('<a id="with_processing" class="nav-link" href="javascript:void(0);">ПОЛИРОВКА КРОМОК</a>');
         }
 
         if ((depthId === "four" || depthId === "six" || depthId === "eight" || depthId === "ten" || depthId === "twelve") && shapeId === "rectangle") {
@@ -1209,6 +1211,7 @@ function calculate() {
             total = 0;
             $('#cart_table').empty()
         })
+        document.location.assign('#win4');
     });
 
     function getCartDescription() {

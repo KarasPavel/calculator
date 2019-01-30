@@ -148,7 +148,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row no-padding">
+            <div class="row no-padding first-blade">
                 <div class="col-lg-12">
                     <div class="glass_door_items img-text-up-container d-flex">
                         <img src="images/second_page_imageBlock/1/1.jpg" alt="">

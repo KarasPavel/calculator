@@ -3438,7 +3438,7 @@ textarea {
 		display: none;
 	}
 	.header_call-back{
-		margin-right: -150px;
+		margin-right: -120px;
 	}
 	.owl-next p,
 	.owl-prev p {
@@ -3580,7 +3580,7 @@ textarea {
 
 @media screen and (max-width: 575px) {
 	.header_call-back{
-		margin-right: -100px;
+		margin-right: -50px;
 	}
 
     #page_calculations {
@@ -3760,4 +3760,8 @@ div.head.toggler {
 }
 .connector-block-first .connector-type {
     width: 345px;
+}
+
+.r1 {
+	display: inline-block;
 }

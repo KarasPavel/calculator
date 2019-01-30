@@ -113,7 +113,7 @@
                                         <div class="col-12 col-md-4"><input id="qntt" name="quantity" type="number"
                                                                             min="1" placeholder="Количество"></div>
                                         <div class="col-12 col-md-4"><input name="address" type="text"
-                                                                            placeholder="Адресс"></div>
+                                                                            placeholder="Адрес"></div>
                                     </div>
                                     <div class="second_row row">
                                         <div class="col-12 col-md-4"><input name="phone" type="tel"
@@ -180,7 +180,7 @@
         <a href="#close" class="buttons-cart-ok btn-make-order">Ok</a>
     {{--</div>--}}
     {{--<div class="button_forms button_forms_popup">--}}
-        <a id="buyAll" href="#close" class="buttons-cart-make-order btn-make-order">Заказать</a>
+        <a id="buyAll" href="javascript:void(0);" class="buttons-cart-make-order btn-make-order">Заказать</a>
     </div>
     <a class="close cart-close" title="Закрыть" href="#close"></a>
 </div>

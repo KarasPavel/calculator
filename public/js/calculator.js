@@ -639,8 +639,10 @@ function calculate() {
     function getPerimeter() {
         if (shapeId === 'oval') {
             perimeter = (parseInt($('#shape_height').val()) + parseInt($('#shape_width').val())) * 3 / 1000;
-        } else if (shapeId === 'circle' || shapeId === 'another') {
+        } else if (shapeId === 'circle') {
             perimeter = $('#shape_diameter').val() * 3.14159 * 1.3 / 1000;
+        } else if (shapeId === 'another') {
+            perimeter = (parseInt($('#shape_height').val()) + parseInt($('#shape_width').val())) * 2 * 1.3 / 1000;
         } else {
             perimeter = (parseInt($('#shape_height').val()) + parseInt($('#shape_width').val())) * 2 / 1000;
         }
@@ -1209,6 +1211,8 @@ function calculate() {
             total = 0;
             $('#cart_table').empty()
         })
+        document.location.assign('#win4');
+
     });
 
     function getCartDescription() {

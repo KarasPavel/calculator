@@ -695,7 +695,7 @@ function calculate() {
         }
 
         if ((depthId === "four" || depthId === "six" || depthId === "eight" || depthId === "ten" || depthId === "twelve") && shapeId === "rectangle") {
-            $('#box-calc-5-1').append('<a id="facet" class="nav-link" data-toggle="tab" href="javascript:void(0);">ФАЦЕТ</a>');
+            $('#box-calc-5-1').append('<a id="facet" class="nav-link" href="javascript:void(0);">ФАЦЕТ</a>');
             $('#with_processing').click(function () {
                 $(".text-kromka").detach();
                 $('#format').append('<div class="text-kromka">' +

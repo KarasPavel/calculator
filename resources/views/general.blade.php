@@ -256,14 +256,14 @@
         <div class="down_form down_form_popup d-flex">
             <input type="text" name="email" placeholder="Электронная почта">
         </div>
-        <div class="checkbox">
+        <div class="checkbox checkbox-win1">
             <label>
                 <input name="agree" required type="checkbox">
                 <span class="fake-checkbox true" aria-hidden="true"></span>
                 <span class="label">Согласие с <a href="docs/PrivacyPolicy.pdf" target="_blank" class="link_to_policy">конфиденциальностью</a> и <a href="#win6" class="link_to_policy">куки</a></span>
             </label>
         </div>
-        <div class="button_forms button_forms_popup">
+        <div class="button_forms button_forms-win1 button_forms_popup">
             <a class="action_form disable" href="javascript:void(0);">отправить</a>
         </div>
         <a class="close" title="Закрыть" href="#close"></a>
@@ -292,7 +292,7 @@
             {{--</label>--}}
             {{--</div>--}}
         </div>
-        <div class="checkbox">
+        <div class="checkbox checkbox-win2">
             <label class="truee">
                 <input name="agree" required type="checkbox">
                 <span class="fake-checkbox " aria-hidden="true"></span>
@@ -300,7 +300,7 @@
             </label>
         </div>
 
-        <div class="button_forms button_forms_popup">
+        <div class="button_forms button_forms-win2 button_forms_popup">
             <a class="action_form disable" href="javascript:void(0);">Заказать</a>
             {{--<a href="#win3">Заказать</a>--}}
         </div>

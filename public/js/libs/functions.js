@@ -3,7 +3,42 @@ $(document).ready(function () {
     subscribeForm('.formTag a.action_form');
     bindExpandebleTrue('#box-calc .nav-link', 'nav-link--active');
     bindExpandebleTrue('.help_glass_items.calc_content2', 'help_glass_items--active');
+
+    validateCheckbox ('.checkbox-win1', '.button_forms-win1 > a' );
+    validateCheckbox ('.checkbox-win2', '.button_forms-win2 > a' );
+    validateCheckbox ('.checkbox-first-blade', '.button_forms-first-blade > a' );
+    validateCheckbox ('.checkbox-second-blade', '.button_forms-second-blade > a' );
+    validateCheckbox ('.checkbox-fourth-blade', '.button_forms-fourth-blade > a' );
+    validateCheckbox ('.checkbox-third-blade', '.button_forms-third-blade > a' );
+    validateCheckbox ('.checkbox-fifth-blade', '.button_forms-fifth-blade > a' );
 });
+
+function validateCheckbox (parentElement, buttonSelector ) {
+    $(parentElement).on('mouseup', function(event) {
+        option5 = '';
+        option5 = $(this).find('p').text();
+        console.log(event.target);
+
+        var currentCheckStatus = $(this).find('input[type="checkbox"]').attr('check');
+        if (typeof currentCheckStatus !== 'undefined') {
+            $(this).find('input[type="checkbox"]').removeAttr('check');
+            $(buttonSelector).addClass('disable');
+        } else {
+            $(this).find('input[type="checkbox"]').attr('check', 'true');
+            $(buttonSelector).removeClass('disable');
+        }
+        if ( $(event.target).prop('tagName') == 'A' ) {
+            if (typeof currentCheckStatus === 'undefined') {
+                $(this).find('input[type="checkbox"]').removeAttr('check');
+                $(buttonSelector).addClass('disable');
+            }
+            if (typeof currentCheckStatus !== 'undefined') {
+                $(this).find('input[type="checkbox"]').attr('check', 'true');
+                $(buttonSelector).removeClass('disable');
+            }
+        }
+    });
+}
 
 function sendForm() {
     var dataInput = {};
@@ -35,18 +70,29 @@ function sendForm() {
         $(this).addClass('help_glass_items-active');
     });
 
-    $('.checkbox').on('mouseup', function() {
-        // option5 = '';
-        // option5 = $(this).find('p').text();
-        var currentCheckStatus = $(this).find('input[type="checkbox"]').attr('check');
-        if (typeof currentCheckStatus !== 'undefined') {
-             $(this).find('input[type="checkbox"]').removeAttr('check');
-            $('.button_next > a ').addClass('disable');
-        } else {
-            $(this).find('input[type="checkbox"]').attr('check', 'true');
-            $('.button_next > a ').removeClass('disable');
-        }
-    });
+    // $('.checkbox').on('mouseup', function(event) {
+    //     option5 = '';
+    //     option5 = $(this).find('p').text();
+    //     console.log(event.target);
+    //
+    //     var currentCheckStatus = $(this).find('input[type="checkbox"]').attr('check');
+    //     if (typeof currentCheckStatus !== 'undefined') {
+    //          $(this).find('input[type="checkbox"]').removeAttr('check');
+    //         $('.button_next > a ').addClass('disable');
+    //     } else {
+    //         $(this).find('input[type="checkbox"]').attr('check', 'true');
+    //         $('.button_next > a ').removeClass('disable');
+    //     }
+    // });
+
+    validateCheckbox ('.checkbox-win1', '.button_forms-win1 > a' );
+    validateCheckbox ('.checkbox-win2', '.button_forms-win2 > a' );
+    validateCheckbox ('.checkbox-first-blade', '.button_forms-first-blade > a' );
+    validateCheckbox ('.checkbox-second-blade', '.button_forms-second-blade > a' );
+    validateCheckbox ('.checkbox-fourth-blade', '.button_forms-fourth-blade > a' );
+    validateCheckbox ('.checkbox-third-blade', '.button_forms-third-blade > a' );
+    validateCheckbox ('.checkbox-fifth-blade', '.button_forms-fifth-blade > a' );
+
 
 
 
@@ -147,20 +193,20 @@ function sendForm() {
         });
     });
 }
-$(document).ready(function(){
-    $('.checkbox').on('mouseup', function() {
-        var currentCheckStatus = $(this).find('input[type="checkbox"]').attr('check');
-        if (typeof currentCheckStatus !== 'undefined') {
-            $(this).find('input[type="checkbox"]').removeAttr('check');
-            $('.button_forms > a ').removeClass('disable');
-
-        } else {
-            $(this).find('input[type="checkbox"]').attr('check', 'true');
-            $('.button_forms > a ').addClass('disable');
-
-        }
-    });
-});
+// $(document).ready(function(){
+//     $('.checkbox').on('mouseup', function() {
+//         var currentCheckStatus = $(this).find('input[type="checkbox"]').attr('check');
+//         if (typeof currentCheckStatus !== 'undefined') {
+//             $(this).find('input[type="checkbox"]').removeAttr('check');
+//             $('.button_forms > a ').removeClass('disable');
+//
+//         } else {
+//             $(this).find('input[type="checkbox"]').attr('check', 'true');
+//             $('.button_forms > a ').addClass('disable');
+//
+//         }
+//     });
+// });
 
 function subscribeForm(formSelector) {
     var dataInput = {};

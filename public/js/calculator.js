@@ -341,7 +341,7 @@ function calculate() {
             "дать комментарии, рассказать как это будет выглядеть, сколько будет стоить и какие есть возможности реализации Вашего проекта.</p>");
         $('#material').append('<a href="tel:+74996772067" class="contacts">+7 (499) 677-20-67</a>');
         $('#material').append('<a href="mailto:info@v-t-x.ru" class="contacts">info@v-t-x.ru</a>');
-        $('#material').append('<div class="button_forms button_forms_popup"><a href="#win1" class="action_form">Консультация и расчет</a></div>');
+        $('#material').append('<div class="button_forms button_forms_popup btn-change-1"><a href="#win1" class="action_form">Консультация и расчет</a></div>');
         setOrderDay();
         unfillingDivs();
     });

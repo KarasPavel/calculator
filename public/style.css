@@ -2728,8 +2728,9 @@ iframe{
 	margin-bottom: 35px;
 }
 .butt_choose_kromka a{
-	padding: 24px 0;
+	padding: 17px 10px;
 	width: 100%;
+	height: 54px;
 }
 .butt_choose_kromka a:focus, .butt_choose_kromka a:hover{
 	padding: 16px 0px;
@@ -3760,8 +3761,4 @@ div.head.toggler {
 }
 .connector-block-first .connector-type {
     width: 345px;
-}
-
-.r1 {
-	display: inline-block;
 }

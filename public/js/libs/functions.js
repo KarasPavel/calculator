@@ -34,18 +34,17 @@ function sendForm() {
         $('.help_glass_items').removeClass('help_glass_items-active');
         $(this).addClass('help_glass_items-active');
     });
+
     $('.checkbox').on('mouseup', function() {
-        option5 = '';
-        option5 = $(this).find('p').text();
+        // option5 = '';
+        // option5 = $(this).find('p').text();
         var currentCheckStatus = $(this).find('input[type="checkbox"]').attr('check');
         if (typeof currentCheckStatus !== 'undefined') {
-            $(this).find('input[type="checkbox"]').removeAttr('check');
+             $(this).find('input[type="checkbox"]').removeAttr('check');
             $('.button_next > a ').addClass('disable');
-
         } else {
             $(this).find('input[type="checkbox"]').attr('check', 'true');
             $('.button_next > a ').removeClass('disable');
-
         }
     });
 

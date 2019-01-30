@@ -334,7 +334,9 @@
         position: static;
     }
     .second-blade .img-text-up-container img,
-    .second-blade .img-text-bottom-container img {
+    .second-blade .img-text-bottom-container img,
+    .third-blade .img-text-up-container img,
+    .third-blade .img-text-bottom-container img{
         height: unset;
         max-height: 250px;
         width: 50% !important;
@@ -364,7 +366,8 @@
         width: auto;
     }
 
-    .btn-free-consultation {
+    .btn-free-consultation,
+    .fifth-blade .btn-free-consultation {
         top: 94%;
         left: calc(50% - 136px);
     }

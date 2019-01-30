@@ -1453,8 +1453,9 @@ input[type="checkbox"] {
 }
 .glass_door_item p:before{
 	content: '';
-	top: 65px;
-	left: 0;
+	/*top: 65px;*/
+    bottom: -15px;
+    left: 0;
 	position: absolute;
 	width: 62px;
 	height: 1px;
@@ -1532,7 +1533,8 @@ input[type="checkbox"] {
 }
 .glass_door_item_down p:before{
 	content: '';
-	top: 80px;
+	/*top: 80px;*/
+    bottom: -15px;
 	left: 0;
 	position: absolute;
 	width: 62px;
@@ -2180,6 +2182,10 @@ a:not([href]):not([tabindex]){
 .aprons_items_button{
 	top: 273px;
 	left: 40%;
+}
+.fifth-blade .btn-free-consultation {
+    top: 285px;
+    left: calc(50% - 171px );
 }
 .kripezh{
 	justify-content: space-around;
@@ -3134,6 +3140,9 @@ textarea {
 .doors-left-right-items .shower_type_items img {
     left: -19px;
 }
+.second-blade .shower_type_items img {
+    left: 0px;
+}
 
 .fartuks-left-right-items .galery_kripezh-pos {
     /*left: 8px;*/
@@ -3524,20 +3533,10 @@ textarea {
 	.popup, .popup2 {
 		left: 80%;
 	}
-
-	/*.Size_calc {*/
-		/*flex-wrap: wrap;*/
-	/*}*/
-	/*#rectangle,*/
-	/*#circle,*/
-	/*#oval,*/
-	/*#another{*/
-		/*flex-basis: 24%;*/
-		/*margin: 0;*/
-	/*}*/
-	/*#item_size_calc {*/
-		/*margin: 0 auto;*/
-	/*}*/
+    .popup_cart,
+    .popup-cookie {
+        left: 50%;
+    }
 	.Size_calc #rectangle img {
 		width: 117px;
 	}
@@ -3717,12 +3716,14 @@ div.head.toggler {
 	box-shadow: 0 8px 14px rgba(34, 102, 187, 0.21);
 	background-color: #e01717;
 }
-.popup_cart {
+.popup_cart,
+.popup-cookie {
 	max-height: 70vh;
 	overflow-y: auto;
 	overflow-x: hidden;
 }
-.cart-close {
+.cart-close,
+.cookie-close {
 	top: 1px;
 	right: 3px;
 }

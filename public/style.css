@@ -378,7 +378,7 @@ label[for="fileUpload"] {
 	font-family: "Open Sans";
 	font-size: 35px;
 	font-weight: 300;
-	line-height: 24.99px;
+	line-height: 35px;
 	text-transform: uppercase;
 	/* Text style for "Изделия пр" */
 	letter-spacing: 7px;
@@ -395,7 +395,7 @@ label[for="fileUpload"] {
 	display: block;
 	border: 7px solid #fff;
 	height: 300px;
-	width: 350px;
+	/*width: 350px;*/
 	overflow: hidden;
 
 }.turnkey_items img{
@@ -3479,10 +3479,20 @@ textarea {
     }
     #circle:hover .img-container:after,
     .circle--active .img-container:after {
-        width: 105px;
-        top: 15px;
-        left: 7px;
+		width: 99px;
+		top: 18px;
+		left: 12px;
     }
+	#oval:hover .img-container:after,
+	.oval--active .img-container:after {
+		height: 77px;
+		top: 28px;
+		left: 13px;
+		width: 97px;
+	}
+	#another:hover .img-container:after, .another--active .img-container:after {
+		background-size: initial;
+	}
     .text-kromka {
         flex-direction: column;
     }
@@ -3599,15 +3609,15 @@ textarea {
         flex-basis: 49%;
         margin: 0;
     }
-    #rectangle:hover .img-container:after,
-    .rectangle--active .img-container:after {
-        width: 129px;
-        left: calc(50% - 65px);
-    }
-    #oval:hover .img-container:after, .oval--active .img-container:after {
-        width: 123px;
-        left: calc(50% - 61px);
-    }
+	#rectangle:hover .img-container:after,
+	.rectangle--active .img-container:after {
+		width: 118px;
+		left: calc(50% - 60px);
+	}
+	#oval:hover .img-container:after, .oval--active .img-container:after {
+		width: 98px;
+		left: calc(50% - 49px);
+	}
     #circle:hover .img-container:after,
     .circle--active .img-container:after {
         left: calc(50% - 52px);

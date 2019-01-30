@@ -11,34 +11,8 @@ $(document).ready(function () {
     validateCheckbox ('.checkbox-fourth-blade', '.button_forms-fourth-blade > a' );
     validateCheckbox ('.checkbox-third-blade', '.button_forms-third-blade > a' );
     validateCheckbox ('.checkbox-fifth-blade', '.button_forms-fifth-blade > a' );
+    isVideoVisible ();
 });
-
-function validateCheckbox (parentElement, buttonSelector ) {
-    $(parentElement).on('mouseup', function(event) {
-        option5 = '';
-        option5 = $(this).find('p').text();
-        console.log(event.target);
-
-        var currentCheckStatus = $(this).find('input[type="checkbox"]').attr('check');
-        if (typeof currentCheckStatus !== 'undefined') {
-            $(this).find('input[type="checkbox"]').removeAttr('check');
-            $(buttonSelector).addClass('disable');
-        } else {
-            $(this).find('input[type="checkbox"]').attr('check', 'true');
-            $(buttonSelector).removeClass('disable');
-        }
-        if ( $(event.target).prop('tagName') == 'A' ) {
-            if (typeof currentCheckStatus === 'undefined') {
-                $(this).find('input[type="checkbox"]').removeAttr('check');
-                $(buttonSelector).addClass('disable');
-            }
-            if (typeof currentCheckStatus !== 'undefined') {
-                $(this).find('input[type="checkbox"]').attr('check', 'true');
-                $(buttonSelector).removeClass('disable');
-            }
-        }
-    });
-}
 
 function sendForm() {
     var dataInput = {};
@@ -592,6 +566,8 @@ function getPages() {
             makeButtonDisableInCalcForm('#calcForm #buyProduct', 'disable-cart');
             setActiveShape('.item_size_calc', '');
             $('.phone_us').mask('+7 (000) 000-00-00', {placeholder: "+7(___)___-__-__"});
+
+            isVideoVisible ();
         });
         $('footer').show();
     });
@@ -750,6 +726,45 @@ function makeButtonDisableInCalcForm (buttonSelector, disabledClass) {
             } else {
                 $(buttonSelector).addClass(disabledClass);
                 $(buttonSelector).addClass(disabledClass);
+            }
+        }
+    });
+}
+
+function isVideoVisible () {
+    var videoIframe = $('.homepage-img-video-wrap .video_glass iframe');
+    var fullSection = $('#glass_reliability');
+    if (videoIframe.length === 0) {
+        $(fullSection).css('display', 'none');
+        console.log('if');
+    } else {
+        $(fullSection).css('display', 'block');
+        console.log('else');
+    }
+}
+
+function validateCheckbox (parentElement, buttonSelector ) {
+    $(parentElement).on('mouseup', function(event) {
+        option5 = '';
+        option5 = $(this).find('p').text();
+        console.log(event.target);
+
+        var currentCheckStatus = $(this).find('input[type="checkbox"]').attr('check');
+        if (typeof currentCheckStatus !== 'undefined') {
+            $(this).find('input[type="checkbox"]').removeAttr('check');
+            $(buttonSelector).addClass('disable');
+        } else {
+            $(this).find('input[type="checkbox"]').attr('check', 'true');
+            $(buttonSelector).removeClass('disable');
+        }
+        if ( $(event.target).prop('tagName') == 'A' ) {
+            if (typeof currentCheckStatus === 'undefined') {
+                $(this).find('input[type="checkbox"]').removeAttr('check');
+                $(buttonSelector).addClass('disable');
+            }
+            if (typeof currentCheckStatus !== 'undefined') {
+                $(this).find('input[type="checkbox"]').attr('check', 'true');
+                $(buttonSelector).removeClass('disable');
             }
         }
     });

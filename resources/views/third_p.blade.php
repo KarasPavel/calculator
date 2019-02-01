@@ -156,9 +156,9 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="glass_door_items d-flex">
+            <div class="row no-padding">
+                <div class="col-lg-12 third-blade">
+                    <div class="glass_door_items img-text-up-container d-flex">
                         <div class="glass_door_items_new_img d-flex">
                             <img src="images/three_page_image/1/1.jpg" alt="">
                             <img src="images/three_page_image/1/2.jpg" alt="">
@@ -211,9 +211,9 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="glass_door_items_down d-flex">
+            <div class="row no-padding">
+                <div class="col-lg-12 third-blade">
+                    <div class="glass_door_items_down img-text-bottom-container d-flex">
                         <div class="glass_door_item_down Glases_page_door">
                             <p> Мы изготавливаем как малые зеркала по размерам,
                                 так и сложные технические изделия. Например,
@@ -248,10 +248,10 @@
                     </div>
                 </div>
             </div>
-            <div class="row glasses-left-right-items">
+            <div class="row glasses-left-right-items skinali_types_of_connectors no-padding">
                 <div class="col-lg-6">
-                    <div class="shower_type_items d-flex">
-                        <div class="shower_type_item-left fastener_shower_glass">
+                    <div class="shower_type_items d-flex connector-block-first">
+                        <div class="shower_type_item-left fastener_shower_glass connector-type">
                             <p>СПЕЦИАЛЬНЫЙ КЛЕЙ</p>
                             <ul>
                                 <li>Выдерживает нагрузку более 220 кг на м2</li>
@@ -270,12 +270,12 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="shower_type_items d-flex">
-                        <a class="galery_kripezh-pos galery_kripezh-pos-right" data-fancybox=""
+                    <div class="shower_type_items d-flex connector-block-second">
+                        <a class="galery_kripezh-pos galery_kripezh-pos-right connector-link" data-fancybox=""
                            href="images/plastin.jpg">
                             <img class="glasses_img_fastener2 imgg_2" src="images/first_fastener.png" alt="">
                         </a>
-                        <div class="shower_type_item-right fastener_shower_glass2">
+                        <div class="shower_type_item-right fastener_shower_glass2 connector-type">
                             <p>КРЕПЕЖНЫЕ ПЛАСТИНЫ</p>
                             <ul>
                                 <li>Не требует сверления зеркала</li>
@@ -301,14 +301,14 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="glass_door_items Glasses_pages_doors d-flex">
+            <div class="row no-padding">
+                <div class="col-lg-12 third-blade">
+                    <div class="glass_door_items Glasses_pages_doors img-text-up-container d-flex">
                         <div class="glass_door_items_new_img d-flex">
                             <img src="images/three_page_image/3/1.jpg" alt="">
                             <img src="images/three_page_image/3/2.jpg" alt="">
                         </div>
-                        <a class="glass_door_item_buttons btn-make-order" href="#win1">бесплатная консультация</a>
+                        <a class="glass_door_item_buttons btn-make-order btn-free-consultation" href="#win1">бесплатная консультация</a>
                         <div class="glass_door_item">
                             <p>Зеркальное панно - это композиция, состоящая из отдельных зеркальных элементов с
                                 широкой, глубокой фаской (фацетом), благодаря которой, создается неповторимая игра
@@ -698,7 +698,7 @@
                                     <input type="text" name="name" placeholder="Ваше имя">
                                 </div>
                                 <div class="col-md-6">
-                                    <input type="text" name="phone" placeholder="Ваш телефон">
+                                    <input class="phone_us" type="text" name="phone" placeholder="Ваш телефон">
                                 </div>
                             </div>
                             <div class="down_form down_form_2 row contact-form--row">
@@ -706,15 +706,15 @@
                                     <input type="text" name="email" placeholder="Электронная почта">
                                 </div>
                             </div>
-                            <div class="checkbox">
+                            <div class="checkbox checkbox-third-blade">
                                 <label class="true">
                                     <input name="agree" type="checkbox">
                                     <span class="fake-checkbox " aria-hidden="true"></span>
-                                    <span class="label">Согласие с конфиденциальностью и куки</span>
+                                    <span class="label">Согласие с <a href="docs/PrivacyPolicy.pdf" target="_blank" class="link_to_policy">конфиденциальностью</a> и <a href="#win6" class="link_to_policy">куки</a></span>
                                 </label>
                             </div>
                         </div>
-                        <div class="button_next">
+                        <div class="button_next button_forms-third-blade">
                             {{--<a class="next__block">отправить</a>--}}
                             <a class="action_form disable" href="javascript:void(0);" role="button" aria-disabled="true">отправить</a>
                         </div>

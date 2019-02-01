@@ -116,7 +116,7 @@
                                                                             placeholder="Адрес"></div>
                                     </div>
                                     <div class="second_row row">
-                                        <div class="col-12 col-md-4"><input name="phone" type="tel"
+                                        <div class="col-12 col-md-4"><input class="phone_us" name="phone" type="tel"
                                                                             placeholder="Телефон"></div>
                                         <div class="col-12 col-md-4"><input name="email" type="email"
                                                                             placeholder="Электронная почта"></div>
@@ -125,13 +125,13 @@
                                                                                             placeholder="Комментарий к заказу"></textarea>
                                         </div>
                                         <div class="down_buttons_distances d-flex col-12 col-md-8">
-                                            <a id="pickup" class="nav-link" data-toggle="tab"
+                                            <a id="pickup" class="nav-link"
                                                href="javascript:void(0);">Самовывоз</a>
-                                            <a id="inMKAD" class="nav-link" data-toggle="tab"
+                                            <a id="inMKAD" class="nav-link"
                                                href="javascript:void(0);">В пределах МКАД</a>
-                                            <a id="outMKAD" class="nav-link" data-toggle="tab"
+                                            <a id="outMKAD" class="nav-link"
                                                href="javascript:void(0);">Не более 5 км от МКАД</a>
-                                            <a id="moskowRegion" class="nav-link" data-toggle="tab"
+                                            <a id="moskowRegion" class="nav-link"
                                                href="javascript:void(0);">Московская область</a>
                                         </div>
                                     </div>

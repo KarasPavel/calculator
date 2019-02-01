@@ -41,7 +41,7 @@ class ApplicationsController extends Controller
         $request->validate([
             'name' => 'required|string|min:2|max:100',
             'email' => 'nullable|email|max:100',
-            'phone' => 'required|min:10|max:11',
+            'phone' => 'required|min:10|max:100',
             'specialist' => 'nullable|min:1|max:3|size:1',
         ]);
 

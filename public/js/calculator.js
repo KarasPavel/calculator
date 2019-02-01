@@ -19,9 +19,9 @@ function calculate() {
             },
             phone: {
                 required: true,
-                digits: true,
-                minlength: 10,
-                maxlength: 11,
+                digits: false,
+                minlength: 18,
+                maxlength: 18,
             },
             quantity: {
                 required: true,
@@ -48,7 +48,7 @@ function calculate() {
             phone: {
                 required: "Пожалуйста, введите номер телефона",
                 digits: "Поле содержит только цифры",
-                minlength: "Минимум 10 цифр",
+                minlength: "Минимум 11 цифр",
                 maxlength: "Максмум 11 цифр",
             },
             quantity: {
@@ -341,7 +341,7 @@ function calculate() {
             "дать комментарии, рассказать как это будет выглядеть, сколько будет стоить и какие есть возможности реализации Вашего проекта.</p>");
         $('#material').append('<a href="tel:+74996772067" class="contacts">+7 (499) 677-20-67</a>');
         $('#material').append('<a href="mailto:info@v-t-x.ru" class="contacts">info@v-t-x.ru</a>');
-        $('#material').append('<div class="button_forms button_forms_popup"><a href="#win1" class="action_form">Консультация и расчет</a></div>');
+        $('#material').append('<div class="button_forms button_forms_popup btn-change-1"><a href="#win1" class="action_form">Консультация и расчет</a></div>');
         setOrderDay();
         unfillingDivs();
     });
@@ -684,18 +684,18 @@ function calculate() {
         $('#calc_stege_5').append('<i class="fas fa-angle-down"></i>');
         $('#format').append('<div id="box-calc-5" class="wraper content"></div>');
         $('#box-calc-5').append('<div id="box-calc-5-1" class="stairs_and_flooring_buttons butt_choose_kromka d-flex"></div>');
-        $('#box-calc-5-1').append('<a id="without_processing" class="nav-link" data-toggle="tab" href="javascript:void(0);">БЕЗ ОБРАБОТКИ КРОМОК</a>');
+        $('#box-calc-5-1').append('<a id="without_processing" class="nav-link" href="javascript:void(0);">БЕЗ ОБРАБОТКИ КРОМОК</a>');
         $('#format').append('<div class="text-kromka">' +
             '    <p>Кромка будет режуще-острой, а стекло хрупким.' +
             '    <br><span>Будьте осторожны!</span></p>' +
             '    <img src="images/sloy_kromka.png" alt="">' +
             '</div>');
         if (depthId != "three") {
-            $('#box-calc-5-1').append('<a id="with_processing" class="nav-link" data-toggle="tab" href="javascript:void(0);">ПОЛИРОВКА КРОМОК</a>');
+            $('#box-calc-5-1').append('<a id="with_processing" class="nav-link" href="javascript:void(0);">ПОЛИРОВКА КРОМОК</a>');
         }
 
         if ((depthId === "four" || depthId === "six" || depthId === "eight" || depthId === "ten" || depthId === "twelve") && shapeId === "rectangle") {
-            $('#box-calc-5-1').append('<a id="facet" class="nav-link" data-toggle="tab" href="javascript:void(0);">ФАЦЕТ</a>');
+            $('#box-calc-5-1').append('<a id="facet" class="nav-link" href="javascript:void(0);">ФАЦЕТ</a>');
             $('#with_processing').click(function () {
                 $(".text-kromka").detach();
                 $('#format').append('<div class="text-kromka">' +
@@ -1212,7 +1212,6 @@ function calculate() {
             $('#cart_table').empty()
         })
         document.location.assign('#win4');
-
     });
 
     function getCartDescription() {

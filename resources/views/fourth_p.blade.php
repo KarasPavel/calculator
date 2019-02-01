@@ -618,7 +618,7 @@
                                     <input type="text" name="name" placeholder="Ваше имя">
                                 </div>
                                 <div class="col-md-6">
-                                    <input type="text" name="phone" placeholder="Ваш телефон">
+                                    <input class="phone_us" type="text" name="phone" placeholder="Ваш телефон">
                                 </div>
                             </div>
                             <div class="down_form down_form_2 row contact-form--row">
@@ -626,15 +626,15 @@
                                     <input type="text" name="email" placeholder="Электронная почта">
                                 </div>
                             </div>
-                            <div class="checkbox">
+                            <div class="checkbox checkbox-fourth-blade">
                                 <label class=truee>
                                     <input name="agree" type="checkbox">
                                     <span class="fake-checkbox " aria-hidden="true"></span>
-                                    <span class="label">Согласие с конфиденциальностью и куки</span>
+                                    <span class="label">Согласие с <a href="docs/PrivacyPolicy.pdf" target="_blank" class="link_to_policy">конфиденциальностью</a> и <a href="#win6" class="link_to_policy">куки</a></span>
                                 </label>
                             </div>
                         </div>
-                        <div class="button_next">
+                        <div class="button_next button_forms-fourth-blade">
                             {{--<a class="next__block">отправить</a>--}}
                             <a class="action_form disable" href="javascript:void(0);">отправить</a>
                         </div>

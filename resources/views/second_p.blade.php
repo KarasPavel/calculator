@@ -232,11 +232,11 @@
                     </div>
                 </div>
             </div>
-            <div class="row doors-left-right-items">
+            <div class="row doors-left-right-items no-padding second-blade">
                 <div class="col-lg-6">
-                    <div class="shower_type_items d-flex">
+                    <div class="shower_type_items comparison-blocks d-flex">
                         <img src="images/img_showers-type.png" alt="">
-                        <div class="shower_type_item-left">
+                        <div class="shower_type_item-left comparison_glass_items comparison_glass">
                             <p>ДУШЕВОЕ ОГРАЖДЕНИЕ VEDITEX</p>
                             <ul>
                                 <li>Срок службы неограничен</li>
@@ -251,8 +251,8 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="shower_type_items d-flex">
-                        <div class="shower_type_item-right">
+                    <div class="shower_type_items comparison-blocks comparison-blocks--bottom d-flex">
+                        <div class="shower_type_item-right comparison_glass2">
                             <p>"Итальянская" или "Чешская" душевая кабина</p>
                             <ul>
                                 <li>Просто купить, везде есть</li>
@@ -458,9 +458,9 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="glass_door_items d-flex">
+            <div class="row no-padding">
+                <div class="col-lg-12 second-blade">
+                    <div class="glass_door_items img-text-up-container d-flex">
                         <div class="glass_door_items_new_img d-flex">
                             <img src="images/Lestnici_img_block/1/1.jpg" alt="">
                             <img src="images/Lestnici_img_block/1/2.jpg" alt="">
@@ -477,7 +477,7 @@
                                 <li>Олеофобное покрытие, триплекс и другие виды обработки</li>
                                 <li>Герметизация двери и фиксация в положении 0 без стопора.</li>
                             </ul>
-                            <a href="#win2" class="btn-make-order">Заказать</a>
+                            <a href="#win2" class="btn-make-order btn-free-consultation">Заказать</a>
                         </div>
                     </div>
                 </div>
@@ -489,9 +489,9 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="glass_door_items_down d-flex">
+            <div class="row no-padding">
+                <div class="col-lg-12 second-blade">
+                    <div class="glass_door_items_down img-text-bottom-container d-flex">
                         <div class="glass_door_item_down">
                             <p>Перегородки и ограждения в душевую кабину стало модно делать не просто так. В
                                 основном их ценят за надежность, вариативность и эстетику, что готовой кабинки
@@ -671,7 +671,7 @@
                                     <input type="text" name="name" placeholder="Ваше имя">
                                 </div>
                                 <div class="col-md-6">
-                                    <input type="text" name="phone" placeholder="Ваш телефон">
+                                    <input class="phone_us" type="text" name="phone" placeholder="Ваш телефон">
                                 </div>
                             </div>
                             <div class="down_form down_form_2 row contact-form--row">
@@ -679,15 +679,15 @@
                                     <input type="text" name="email" placeholder="Электронная почта">
                                 </div>
                             </div>
-                            <div class="checkbox">
+                            <div class="checkbox checkbox-second-blade">
                                 <label>
                                     <input name="agree" type="checkbox">
                                     <span class="fake-checkbox true" aria-hidden="true"></span>
-                                    <span class="label">Согласие с конфиденциальностью и куки</span>
+                                    <span class="label">Согласие с <a href="docs/PrivacyPolicy.pdf" target="_blank" class="link_to_policy">конфиденциальностью</a> и <a href="#win6" class="link_to_policy">куки</a></span>
                                 </label>
                             </div>
                         </div>
-                        <div class="button_next">
+                        <div class="button_next button_forms-second-blade">
                             {{--<a class="next__block" >отправить</a>--}}
                             <a class="action_form disable" href="javascript:void(0);">отправить</a>
                         </div>

@@ -3,6 +3,15 @@ $(document).ready(function () {
     subscribeForm('.formTag a.action_form');
     bindExpandebleTrue('#box-calc .nav-link', 'nav-link--active');
     bindExpandebleTrue('.help_glass_items.calc_content2', 'help_glass_items--active');
+
+    validateCheckbox ('.checkbox-win1', '.button_forms-win1 > a' );
+    validateCheckbox ('.checkbox-win2', '.button_forms-win2 > a' );
+    validateCheckbox ('.checkbox-first-blade', '.button_forms-first-blade > a' );
+    validateCheckbox ('.checkbox-second-blade', '.button_forms-second-blade > a' );
+    validateCheckbox ('.checkbox-fourth-blade', '.button_forms-fourth-blade > a' );
+    validateCheckbox ('.checkbox-third-blade', '.button_forms-third-blade > a' );
+    validateCheckbox ('.checkbox-fifth-blade', '.button_forms-fifth-blade > a' );
+    isVideoVisible ();
 });
 
 function sendForm() {
@@ -34,20 +43,30 @@ function sendForm() {
         $('.help_glass_items').removeClass('help_glass_items-active');
         $(this).addClass('help_glass_items-active');
     });
-    $('.checkbox').on('mouseup', function() {
-        option5 = '';
-        option5 = $(this).find('p').text();
-        var currentCheckStatus = $(this).find('input[type="checkbox"]').attr('check');
-        if (typeof currentCheckStatus !== 'undefined') {
-            $(this).find('input[type="checkbox"]').removeAttr('check');
-            $('.button_next > a ').addClass('disable');
 
-        } else {
-            $(this).find('input[type="checkbox"]').attr('check', 'true');
-            $('.button_next > a ').removeClass('disable');
+    // $('.checkbox').on('mouseup', function(event) {
+    //     option5 = '';
+    //     option5 = $(this).find('p').text();
+    //     console.log(event.target);
+    //
+    //     var currentCheckStatus = $(this).find('input[type="checkbox"]').attr('check');
+    //     if (typeof currentCheckStatus !== 'undefined') {
+    //          $(this).find('input[type="checkbox"]').removeAttr('check');
+    //         $('.button_next > a ').addClass('disable');
+    //     } else {
+    //         $(this).find('input[type="checkbox"]').attr('check', 'true');
+    //         $('.button_next > a ').removeClass('disable');
+    //     }
+    // });
 
-        }
-    });
+    validateCheckbox ('.checkbox-win1', '.button_forms-win1 > a' );
+    validateCheckbox ('.checkbox-win2', '.button_forms-win2 > a' );
+    validateCheckbox ('.checkbox-first-blade', '.button_forms-first-blade > a' );
+    validateCheckbox ('.checkbox-second-blade', '.button_forms-second-blade > a' );
+    validateCheckbox ('.checkbox-fourth-blade', '.button_forms-fourth-blade > a' );
+    validateCheckbox ('.checkbox-third-blade', '.button_forms-third-blade > a' );
+    validateCheckbox ('.checkbox-fifth-blade', '.button_forms-fifth-blade > a' );
+
 
 
 
@@ -110,7 +129,7 @@ function sendForm() {
                 phone: {
                     required: true,
                     digits: false,
-                    minlength: 17,
+                    minlength: 18,
                     maxlength: 18,
                 },
                 agree: {
@@ -130,7 +149,7 @@ function sendForm() {
                 phone: {
                     required: "Пожалуйста, введите номер телефона",
                     digits: "Поле содержит только цифры",
-                    minlength: "Минимум 10 цифр",
+                    minlength: "Минимум 11 цифр",
                     maxlength: "Максмум 11 цифр",
                 },
                 agree: {
@@ -148,20 +167,20 @@ function sendForm() {
         });
     });
 }
-$(document).ready(function(){
-    $('.checkbox').on('mouseup', function() {
-        var currentCheckStatus = $(this).find('input[type="checkbox"]').attr('check');
-        if (typeof currentCheckStatus !== 'undefined') {
-            $(this).find('input[type="checkbox"]').removeAttr('check');
-            $('.button_forms > a ').removeClass('disable');
-
-        } else {
-            $(this).find('input[type="checkbox"]').attr('check', 'true');
-            $('.button_forms > a ').addClass('disable');
-
-        }
-    });
-});
+// $(document).ready(function(){
+//     $('.checkbox').on('mouseup', function() {
+//         var currentCheckStatus = $(this).find('input[type="checkbox"]').attr('check');
+//         if (typeof currentCheckStatus !== 'undefined') {
+//             $(this).find('input[type="checkbox"]').removeAttr('check');
+//             $('.button_forms > a ').removeClass('disable');
+//
+//         } else {
+//             $(this).find('input[type="checkbox"]').attr('check', 'true');
+//             $('.button_forms > a ').addClass('disable');
+//
+//         }
+//     });
+// });
 
 function subscribeForm(formSelector) {
     var dataInput = {};
@@ -546,6 +565,9 @@ function getPages() {
             makeButtonDisableInCalcForm('#calcForm #makeOrder', 'disable');
             makeButtonDisableInCalcForm('#calcForm #buyProduct', 'disable-cart');
             setActiveShape('.item_size_calc', '');
+            $('.phone_us').mask('+7 (000) 000-00-00', {placeholder: "+7(___)___-__-__"});
+
+            isVideoVisible ();
         });
         $('footer').show();
     });
@@ -704,6 +726,45 @@ function makeButtonDisableInCalcForm (buttonSelector, disabledClass) {
             } else {
                 $(buttonSelector).addClass(disabledClass);
                 $(buttonSelector).addClass(disabledClass);
+            }
+        }
+    });
+}
+
+function isVideoVisible () {
+    var videoIframe = $('.homepage-img-video-wrap .video_glass iframe');
+    var fullSection = $('#glass_reliability');
+    if (videoIframe.length === 0) {
+        $(fullSection).css('display', 'none');
+        console.log('if');
+    } else {
+        $(fullSection).css('display', 'block');
+        console.log('else');
+    }
+}
+
+function validateCheckbox (parentElement, buttonSelector ) {
+    $(parentElement).on('mouseup', function(event) {
+        option5 = '';
+        option5 = $(this).find('p').text();
+        console.log(event.target);
+
+        var currentCheckStatus = $(this).find('input[type="checkbox"]').attr('check');
+        if (typeof currentCheckStatus !== 'undefined') {
+            $(this).find('input[type="checkbox"]').removeAttr('check');
+            $(buttonSelector).addClass('disable');
+        } else {
+            $(this).find('input[type="checkbox"]').attr('check', 'true');
+            $(buttonSelector).removeClass('disable');
+        }
+        if ( $(event.target).prop('tagName') == 'A' ) {
+            if (typeof currentCheckStatus === 'undefined') {
+                $(this).find('input[type="checkbox"]').removeAttr('check');
+                $(buttonSelector).addClass('disable');
+            }
+            if (typeof currentCheckStatus !== 'undefined') {
+                $(this).find('input[type="checkbox"]').attr('check', 'true');
+                $(buttonSelector).removeClass('disable');
             }
         }
     });

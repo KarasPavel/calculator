@@ -188,10 +188,10 @@
             <div class="d-none d-md-block col-lg-4 col-md-3">
                 <div class="footer_menu">
                     <ul>
-                        <li><a href="#">Контакты</a></li>
-                        <li><a href="#">Технические условия</a></li>
-                        <li><a href="#">Политика конфеденциальности</a></li>
-                        <li><a href="#">Политика cookie</a></li>
+                        <li><a href="#kontakty">Контакты</a></li>
+                        <li><a href="#"><a href="docs/TechnicalConditions.pdf" target="_blank">Технические условия</a></li>
+                        <li><a href="#"><a href="docs/PrivacyPolicy.pdf" target="_blank">Политика конфеденциальности</a></li>
+                        <li><a href="#"><a href="#win6">Политика cookie</a></li>
                         <li><a href="#">Отзывы</a></li>
                     </ul>
                 </div>
@@ -256,14 +256,14 @@
         <div class="down_form down_form_popup d-flex">
             <input type="text" name="email" placeholder="Электронная почта">
         </div>
-        <div class="checkbox">
+        <div class="checkbox checkbox-win1">
             <label>
                 <input name="agree" required type="checkbox">
                 <span class="fake-checkbox true" aria-hidden="true"></span>
-                <span class="label">Согласие с конфиденциальностью и куки</span>
+                <span class="label">Согласие с <a href="docs/PrivacyPolicy.pdf" target="_blank" class="link_to_policy">конфиденциальностью</a> и <a href="#win6" class="link_to_policy">куки</a></span>
             </label>
         </div>
-        <div class="button_forms button_forms_popup">
+        <div class="button_forms button_forms-win1 button_forms_popup">
             <a class="action_form disable" href="javascript:void(0);">отправить</a>
         </div>
         <a class="close" title="Закрыть" href="#close"></a>
@@ -276,12 +276,12 @@
     <div class="popup popup_choise formTag">
         <div class="up_form up_form_popup">
             <h3 class="popup_choise_h2">ВЫЗОВ СПЕЦИАЛИСТА</h3>
-            <div class="butt_choise  button_forms_popup d-flex">
+            <div class="butt_choise  button_forms_popup btn_change d-flex">
                 <a id="gager">Замершик</a>
                 <a id="designer">Дизайнер</a>
             </div>
             <input type="text" name="name" placeholder="Ваше имя">
-            <input type="text" name="phone" placeholder="Ваш телефон">
+            <input type="text" class="phone_us" name="phone" placeholder="Ваш телефон">
         </div>
         <div class="down_form down_form_popup d-flex">
             <input type="text" name="email" placeholder="Электронная почта">
@@ -292,15 +292,15 @@
             {{--</label>--}}
             {{--</div>--}}
         </div>
-        <div class="checkbox">
+        <div class="checkbox checkbox-win2">
             <label class="truee">
                 <input name="agree" required type="checkbox">
                 <span class="fake-checkbox " aria-hidden="true"></span>
-                <span class="label">Согласие с конфиденциальностью и куки</span>
+                <span class="label">Согласие с <a href="docs/PrivacyPolicy.pdf" target="_blank" class="link_to_policy">конфиденциальностью</a> и <a href="#win6" class="link_to_policy">куки</a></span>
             </label>
         </div>
 
-        <div class="button_forms button_forms_popup">
+        <div class="button_forms button_forms-win2 button_forms_popup">
             <a class="action_form disable" href="javascript:void(0);">Заказать</a>
             {{--<a href="#win3">Заказать</a>--}}
         </div>
@@ -319,6 +319,32 @@
     <a class="close" title="Закрыть" href="#close"></a>
 </div>
 
+<a href="#x" class="overlay" id="win6"></a>
+<div id="good" class="popup popup_choise popup-cookie">
+    <div class="up_form up_form_popup">
+        <h3 class="popup_choise_h2">ПОЛИТИКА ОТСЛЕЖИВАНИЯ ДАННЫХ И COOKIE-ФАЙЛОВ </h3>
+    </div>
+    <div>
+        <p>Администрация сайта использует сookie-файлы, представляющие собой текстовые
+            файлы, размещаемые на Вашем компьютере или мобильном устройстве, которые помогают
+            Администрации сайта анализировать, как пользователи используют услуги сайта, и аналогичные
+            технологии (например, веб-маяки, идентификаторы устройства, пиксельные и рекламные теги),
+            чтобы распознавать Вас и/или подключение Ваших устройств, когда Вы используете различные устройства
+            и услуги. Кроме того, эти данные помогают Администрации сайта улучшать предлагаемые услуги,
+            маркетинг, аналитику или функциональные возможности сайта. Использование cookie-файлов является
+            стандартной практикой в Интернете. Хотя большинство веб-браузеров автоматически принимают cookie-файлы, окончательное решение,
+            принимать их или нет, остается за Вами. Вы можете настроить параметры браузера, чтобы не допускать прием сookieфайлов или получать уведомление при каждой отправке Вам сookie-файла. Вы можете запретить использование сookie-файлов, выбрав соответствующие параметры в веб-браузере. Однако обратите внимание, что в этом случае Вы не сможете пользоваться всеми функциональными возможностями сайта. </p>
+        <p>
+            Когда Вы посещаете какую-либо из служб сайта, серверы Администрации сайта регистрируют в журнале Ваш глобальный IP-адрес, представляющий собой номер, который автоматически назначается для сети, частью которой является Ваш компьютер или мобильное устройство.
+        </p>
+        <p>
+            Электронный адрес для обращений: <a href="mailto:info@v-t-x.ru ">info@v-t-x.ru</a>
+            <br>
+            Дата публикации последней редакции 03.12.2018 г.
+        </p>
+    </div>
+    <a class="close cookie-close" title="Закрыть" href="javascript:history.back();"></a>
+</div>
 
 <script type="text/javascript" src={{asset("js/jquery-3.3.1.min.js")}}></script>
 <script type="text/javascript" src={{asset("js/bootstrap.min.js")}}></script>

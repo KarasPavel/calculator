@@ -91,6 +91,7 @@
                                     <img src="{{$value->photo}}" alt="1">
                                     <p></p>
                                 </div>
+                            </a>
                         @endif
                     @endforeach
                 </div>
@@ -139,7 +140,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row no-padding">
+            <div class="row no-padding fifth-blade">
                 <div class="col-lg-12">
                     <div class="glass_door_items Glasses_pages_doors img-text-up-container d-flex">
                         <!-- <div class="glass_door_items_new_img d-flex"> -->
@@ -166,7 +167,7 @@
                             </ul>
                         </div>
                     </div>
-                    <a class="glass_door_item_buttons aprons_items_button btn-make-order" href="#win1">бесплатная консультация</a>
+                    <a class="glass_door_item_buttons aprons_items_button btn-make-order btn-free-consultation" href="#win1">бесплатная консультация</a>
                 </div>
             </div>
         </div>
@@ -280,7 +281,6 @@
                                 <li class="orenge-mines">больше отсвечивает солнечные лучи</li>
                             </ul>
                         </div>
-
                     </div>
                 </div>
                 <div class="col-lg-6 ">
@@ -312,10 +312,10 @@
                     </div>
                 </div>
             </div>
-            <div class="row fartuks-left-right-items">
+            <div class="row fartuks-left-right-items skinali_types_of_connectors no-padding">
                 <div class="col-lg-6">
-                    <div class="shower_type_items d-flex">
-                        <div class="shower_type_item-left fastener_shower_glass">
+                    <div class="shower_type_items d-flex connector-block-first">
+                        <div class="shower_type_item-left fastener_shower_glass connector-type">
                             <p>СПЕЦИАЛЬНЫЙ КЛЕЙ</p>
                             <ul>
                                 <li>Выдерживает нагрузку более 220 кг на м2</li>
@@ -341,11 +341,11 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="shower_type_items d-flex">
-                        <a data-fancybox="" href="images/second_fastener_big.jpg">
+                    <div class="shower_type_items d-flex connector-block-second">
+                        <a data-fancybox="" href="images/second_fastener_big.jpg" class="connector-link">
                             <img class="glasses_img_fastener2" src="images/second_fastener.png" alt="">
                         </a>
-                        <div class="shower_type_item-right fastener_shower_glass2">
+                        <div class="shower_type_item-right fastener_shower_glass2 connector-type">
                             <p>ТОЧЕЧНЫЙ КРЕПЕЖ</p>
                             <ul>
                                 <li>простой и понятный монтаж</li>
@@ -374,7 +374,7 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-12">
-                        <div class="help_glaas_type kripezh d-flex">
+                        <div class="help_glaas_type kripezh get-price-fast d-flex">
                             <div class="help_glass_items for_option_1">
                                 <img src="images/types_kripezh1.png" alt="">
                                 <p>Креежная пластина</p>
@@ -562,7 +562,7 @@
                                     <input type="text" name="name" placeholder="Ваше имя">
                                 </div>
                                 <div class="col-md-6">
-                                    <input type="text" name="phone" placeholder="Ваш телефон">
+                                    <input class="phone_us" type="text" name="phone" placeholder="Ваш телефон">
                                 </div>
                             </div>
                             <div class="down_form down_form_2 row contact-form--row">
@@ -570,15 +570,15 @@
                                     <input type="text" name="email" placeholder="Электронная почта">
                                 </div>
                             </div>
-                            <div class="checkbox">
+                            <div class="checkbox checkbox-fifth-blade">
                                 <label class="truee">
                                     <input name="agree" type="checkbox">
                                     <span class="fake-checkbox" aria-hidden="true"></span>
-                                    <span class="label">Согласие с конфиденциальностью и куки</span>
+                                    <span class="label">Согласие с <a href="docs/PrivacyPolicy.pdf" target="_blank" class="link_to_policy">конфиденциальностью</a> и <a href="#win6" class="link_to_policy">куки</a></span>
                                 </label>
                             </div>
                         </div>
-                        <div class="button_next">
+                        <div class="button_next button_forms-fifth-blade">
                             {{--<a class="next__block">отправить</a>--}}
                             <a class="action_form disable" href="javascript:void(0);">отправить</a>
                         </div>

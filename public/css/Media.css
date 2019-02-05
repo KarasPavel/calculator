@@ -655,6 +655,7 @@
 	}
     .second-blade .comparison-blocks {
         position: relative;
+		min-height: 348px;
     }
     .second-blade .comparison-blocks--bottom {
         justify-content: flex-end;

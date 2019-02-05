@@ -343,7 +343,7 @@ label[for="fileUpload"] {
 	width: 182px;
 	height: 182px;
 	border-radius: 50%;
-	transform: rotate(-90deg);
+	/*transform: rotate(-90deg);*/
 }
 .advantages_items p{
 	color: #717171;

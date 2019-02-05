@@ -615,7 +615,7 @@
             </div>
             <div class="row no-padding">
                 <div class="col-lg-4 col-md-4">
-                    <a href="#Primery_lestnich">
+                    <a href="#lestnicy_i_poly">
                         <div class="turnkey_items">
                             <img src="images/Napolnene_home/2_lestnitsi_i_tripleks.jpg" alt="1">
                             <p>Лестницы</p>
@@ -623,7 +623,7 @@
                     </a>
                 </div>
                 <div class="col-lg-4 col-md-4">
-                    <a href="">
+                    <a href="javascript:void(0);">
                         <div class="turnkey_items">
                             <img src="images/Napolnene_home/rezka_i_obrabotka.jpg" alt="1">
                             <p>Резка и Обработка</p>

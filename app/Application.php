@@ -28,6 +28,7 @@ class Application extends Model
     public static function createApplication(Request $request)
     {
         $addresse = 'info@v-t-x.ru';
+        $addresse2 = 'skrypnik.andrii@gmail.com';
         $title = 'Заявка';
         $application = [
             'name' => $request->name,
@@ -38,11 +39,14 @@ class Application extends Model
             'application_status_id' => 1,
             'created_at' => Carbon::now(),
         ];
-        $message = 'Добрый день. Получена заявка. Отправитель.' .
-            '    Имя: '. $application['name'] .
-            '    Почта: '. $application['email'] .
-            '    Телефон: '. $application['telephone'];
+        $message = 'Добрый день. Получена заявка. Отправитель.' . "\r\n" .
+            '    Имя: '. $application['name'] . "\r\n" .
+            '    Почта: '. $application['email'] . "\r\n" .
+            '    Телефон: '. $application['telephone'] . "\r\n" .
+            '    Комментарий: '. $application['comment'];
+           
         mail($addresse, $title, $message);
+        mail($addresse2, $title, $message);
         return DB::table('applications')
             ->insert([
                 'name' => $request->name,

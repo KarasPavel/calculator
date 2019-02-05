@@ -233,7 +233,7 @@
                             <label class="truee">
                                 <input name="agree" type="checkbox">
                                 <span class="fake-checkbox " aria-hidden="true"></span>
-                                <span class="label">Согласие с <a href="docs/PrivacyPolicy.pdf" target="_blank" class="link_to_policy">конфиденциальностью</a> и <a href="#win6" class="link_to_policy">куки</a></span>
+                                <span class="label">Согласие с <a href="docs/PrivacyPolicy.pdf" target="_blank" class="link_to_policy">конфиденциальностью</a> и <a href="#win6" class="link_to_policy">cookies</a></span>
                             </label>
                         </div>
                         <div class="button_forms button_forms-first-blade button_next">

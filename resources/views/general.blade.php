@@ -5,6 +5,8 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>Veditex</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Description" content="Veditex">
+    <meta name="Keywords" content="Veditex">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css"
           integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
     <link rel="stylesheet" href={{asset("css/bootstrap.min.css")}}>
@@ -79,7 +81,7 @@
                         <a class="nav-link" href=""><i class="fas fa-bookmark"></i>Главная страница</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="#lestnicy_i_poly"><i class="fas fa-shoe-prints"></i>Лестницы и
+                        <a class="nav-link" href="#lestnicy_i_poly"><i class="fas fa-layer-group"></i>Лестницы и
                             Стеклянные полы</a>
                     </li>
                     <li class="nav-item">
@@ -87,7 +89,7 @@
                             ограждения</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#zerkalnoe_panno"><i class="fas fa-hourglass-start"></i>Зеркальное
+                        <a class="nav-link" href="#zerkalnoe_panno"><i class="fas fa-dice-d20"></i>Зеркальное
                             панно</a>
                     <li class="nav-item">
                         <a class="nav-link" href="#peregorodki_i_dveri"><i class="fas fa-door-open"></i>Перегородки и
@@ -95,7 +97,7 @@
                     </li>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#skinali"><i class="fas fa-expand-arrows-alt"></i>Скинали</a>
+                        <a class="nav-link" href="#skinali"><i class="fas fa-chess-board"></i>Скинали</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#raschet_stoimosti"><i class="fas fa-calculator"></i>Расчет стоимости</a>
@@ -260,7 +262,7 @@
             <label>
                 <input name="agree" required type="checkbox">
                 <span class="fake-checkbox true" aria-hidden="true"></span>
-                <span class="label">Согласие с <a href="docs/PrivacyPolicy.pdf" target="_blank" class="link_to_policy">конфиденциальностью</a> и <a href="#win6" class="link_to_policy">куки</a></span>
+                <span class="label">Согласие с <a href="docs/PrivacyPolicy.pdf" target="_blank" class="link_to_policy">конфиденциальностью</a> и <a href="#win6" class="link_to_policy">cookies</a></span>
             </label>
         </div>
         <div class="button_forms button_forms-win1 button_forms_popup">
@@ -288,7 +290,7 @@
             {{--<div class="checkbox">--}}
             {{--<input name="agree" type="checkbox" id="checkbox18" v-model="checked">--}}
             {{--<label for="checkbox18">--}}
-            {{--<a href="#">Сгласие с конфиденциальностью и куки</a>--}}
+            {{--<a href="#">Согласие с конфиденциальностью и cookies</a>--}}
             {{--</label>--}}
             {{--</div>--}}
         </div>
@@ -296,7 +298,7 @@
             <label class="truee">
                 <input name="agree" required type="checkbox">
                 <span class="fake-checkbox " aria-hidden="true"></span>
-                <span class="label">Согласие с <a href="docs/PrivacyPolicy.pdf" target="_blank" class="link_to_policy">конфиденциальностью</a> и <a href="#win6" class="link_to_policy">куки</a></span>
+                <span class="label">Согласие с <a href="docs/PrivacyPolicy.pdf" target="_blank" class="link_to_policy">конфиденциальностью</a> и <a href="#win6" class="link_to_policy">cookies</a></span>
             </label>
         </div>
 

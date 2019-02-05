@@ -52,12 +52,26 @@ class Order extends Model
             $file = new UploadFileService();
             $file->upload($request);
             $fileName = $file->newFileName;
+            $filePath = $file->pathFile;
         } else {
             $fileName = '';
+            $filePath = '';
         }
 
+        $file = $filePath . $fileName;
+
+        $separator = md5(time());
+
+        $eol = "\r\n";
+
+        $headers = "From: name <test@test.com>" . $eol;
+        $headers .= "MIME-Version: 1.0" . $eol;
+        $headers .= "Content-Type: multipart/mixed; boundary=\"" . $separator . "\"" . $eol;
+        $headers .= "Content-Transfer-Encoding: 7bit" . $eol;
+        $headers .= "This is a MIME encoded message." . $eol;
+
         if (json_decode($orderInfo)->shape->name === 'Круг') {
-            $shapeDescription = 'Диаметр: '. json_decode($orderInfo)->shape->diameter . ' мм ';
+            $shapeDescription = 'Диаметр: ' . json_decode($orderInfo)->shape->diameter . ' мм ';
         } else {
             $shapeDescription = json_decode($orderInfo)->shape->width .
                 ' x ' . json_decode($orderInfo)->shape->height .
@@ -65,14 +79,18 @@ class Order extends Model
         }
 
         $orderDescription =
-            'Материал: ' . json_decode($orderInfo)->material .
-            'Вид: ' . json_decode($orderInfo)->product .
-            'Форма: ' . json_decode($orderInfo)->shape->name .
-            'Размеры: ' . $shapeDescription .
-            'Обработка: ' . json_decode($orderInfo)->format .
+            'Материал: ' . json_decode($orderInfo)->material . $eol .
+            'Вид: ' . json_decode($orderInfo)->product . $eol .
+            'Форма: ' . json_decode($orderInfo)->shape->name . $eol .
+            'Размеры: ' . $shapeDescription . $eol .
+            'Обработка: ' . json_decode($orderInfo)->format . $eol .
             'Дополнительно: ' . json_decode($orderInfo)->options;
 
         $addresse = 'info@v-t-x.ru';
+        $addresse2 = 'skrypnik.andrii@gmail.com';
+        $addresse3 = 'veditex@yandex.ru';
+        $addresse4 = 'vadichko@mail.ru';
+        $addresse5 = 'westerlandiya@mail.ru';
         $title = 'Заказ';
         $order = [
             'name' => $result->name,
@@ -90,17 +108,38 @@ class Order extends Model
             'order_date' => $result->orderDate,
             'created_at' => Carbon::now()
         ];
-        $message = 'Добрый день. Получен заказ. Отправитель.' .
-            '    Имя: '. $order['name'] .
-            '    Почта: '. $order['email'] .
-            '    Телефон: '. $order['phone'] .
-            '    Комметарий: '. $order['comment'] .
-            '    Адрес: '. $order['address'] .
-            '    Доставка: '. $order['delivery'] .
-            '    Количество: '. $order['quantity'] .
-            '    Стоимость: '. $order['price'] .
-            '    Информация о заказе: '. $order['order_data'];
-        mail($addresse, $title, $message);
+        $message = 'Добрый день. Получен заказ. Отправитель.' . $eol .
+            '    Имя: ' . $order['name'] . $eol .
+            '    Почта: ' . $order['email'] . $eol .
+            '    Телефон: ' . $order['phone'] . $eol .
+            '    Комметарий: ' . $order['comment'] . $eol .
+            '    Адрес: ' . $order['address'] . $eol .
+            '    Доставка: ' . $order['delivery'] . $eol .
+            '    Количество: ' . $order['quantity'] . $eol .
+            '    Стоимость: ' . $order['price'] . $eol .
+            '    Информация о заказе: ' . $order['order_data'];
+
+        $body = "--" . $separator . $eol;
+        $body .= "Content-Type: text/plain; charset=\"iso-8859-1\"" . $eol;
+        $body .= "Content-Transfer-Encoding: 8bit" . $eol;
+        $body .= $eol . $message . $eol . $eol;
+
+        if ($fileName != '') {
+            $content = file_get_contents($file);
+            $content = chunk_split(base64_encode($content));
+            $body .= "--" . $separator . $eol;
+            $body .= "Content-Type: application/octet-stream; name=\"" . $fileName . "\"" . $eol;
+            $body .= $eol ."Content-Transfer-Encoding: base64" . $eol;
+            $body .= "Content-Disposition: attachment" . $eol . $eol;
+            $body .= $eol. $content . $eol . $eol;
+            $body .= "--" . $separator . "--";
+        }
+        
+        mail($addresse, $title, $body, $headers);
+        mail($addresse2, $title, $body, $headers);
+        mail($addresse3, $title, $body, $headers);
+        mail($addresse4, $title, $body, $headers);
+        mail($addresse5, $title, $body, $headers);
 
         try {
             $dbResult = DB::table('orders')
@@ -133,12 +172,26 @@ class Order extends Model
         $orderInfo = json_encode($result->orderInfo);
         if (!is_null($result->file)) {
             $fileName = $result->file;
+            $filePath = public_path('uploadFiles/');
         } else {
             $fileName = '';
+            $filePath = '';
         }
 
+        $file = $filePath . $fileName;
+
+        $separator = md5(time());
+
+        $eol = "\r\n";
+
+        $headers = "From: name <test@test.com>" . $eol;
+        $headers .= "MIME-Version: 1.0" . $eol;
+        $headers .= "Content-Type: multipart/mixed; boundary=\"" . $separator . "\"" . $eol;
+        $headers .= "Content-Transfer-Encoding: 7bit" . $eol . $eol;
+        $headers .= "This is a MIME encoded message." . $eol;
+
         if (json_decode($orderInfo)->shape->name === 'Круг') {
-            $shapeDescription = 'Диаметр: '. json_decode($orderInfo)->shape->diameter . ' мм ';
+            $shapeDescription = 'Диаметр: ' . json_decode($orderInfo)->shape->diameter . ' мм ';
         } else {
             $shapeDescription = json_decode($orderInfo)->shape->width .
                 ' x ' . json_decode($orderInfo)->shape->height .
@@ -146,14 +199,18 @@ class Order extends Model
         }
 
         $orderDescription =
-            'Материал: ' . json_decode($orderInfo)->material .
-            'Вид: ' . json_decode($orderInfo)->product .
-            'Форма: ' . json_decode($orderInfo)->shape->name .
-            'Размеры: ' . $shapeDescription .
-            'Обработка: ' . json_decode($orderInfo)->format .
+            'Материал: ' . json_decode($orderInfo)->material . $eol .
+            'Вид: ' . json_decode($orderInfo)->product . $eol .
+            'Форма: ' . json_decode($orderInfo)->shape->name . $eol .
+            'Размеры: ' . $shapeDescription . $eol .
+            'Обработка: ' . json_decode($orderInfo)->format . $eol .
             'Дополнительно: ' . json_decode($orderInfo)->options;
 
         $addresse = 'info@v-t-x.ru';
+        $addresse2 = 'skrypnik.andrii@gmail.com';
+        $addresse3 = 'veditex@yandex.ru';
+        $addresse4 = 'vadichko@mail.ru';
+        $addresse5 = 'westerlandiya@mail.ru';
         $title = 'Заказ';
         $order = [
             'name' => $result->name,
@@ -171,17 +228,38 @@ class Order extends Model
             'order_date' => $result->orderDate,
             'created_at' => Carbon::now()
         ];
-        $message = 'Добрый день. Получен заказ. Отправитель.' .
-            '    Имя: '. $order['name'] .
-            '    Почта: '. $order['email'] .
-            '    Телефон: '. $order['phone'] .
-            '    Комметарий: '. $order['comment'] .
-            '    Адрес: '. $order['address'] .
-            '    Доставка: '. $order['delivery'] .
-            '    Количество: '. $order['quantity'] .
-            '    Стоимость: '. $order['price'] .
-            '    Информация о заказе: '. $order['order_data'];
-        mail($addresse, $title, $message);
+        $message = 'Добрый день. Получен заказ. Отправитель.' . $eol .
+            '    Имя: ' . $order['name'] . $eol .
+            '    Почта: ' . $order['email'] . $eol .
+            '    Телефон: ' . $order['phone'] . $eol .
+            '    Комметарий: ' . $order['comment'] . $eol .
+            '    Адрес: ' . $order['address'] . $eol .
+            '    Доставка: ' . $order['delivery'] . $eol .
+            '    Количество: ' . $order['quantity'] . $eol .
+            '    Стоимость: ' . $order['price'] . $eol .
+            '    Информация о заказе: ' . $order['order_data'];
+
+        $body = "--" . $separator . $eol;
+        $body .= "Content-Type: text/plain; charset=\"iso-8859-1\"" . $eol;
+        $body .= "Content-Transfer-Encoding: 8bit" . $eol;
+        $body .= $eol . $message . $eol . $eol;
+
+        if ($fileName != '') {
+            $content = file_get_contents($file);
+            $content = chunk_split(base64_encode($content));
+            $body .= "--" . $separator . $eol;
+            $body .= "Content-Type: application/octet-stream; name=\"" . $fileName . "\"" . $eol;
+            $body .= $eol ."Content-Transfer-Encoding: base64" . $eol;
+            $body .= "Content-Disposition: attachment" . $eol . $eol;
+            $body .= $eol . $content . $eol . $eol;
+            $body .= "--" . $separator . "--";
+        }
+        
+        mail($addresse, $title, $body, $headers);
+        mail($addresse2, $title, $body, $headers);
+        mail($addresse3, $title, $body, $headers);
+        mail($addresse4, $title, $body, $headers);
+        mail($addresse5, $title, $body, $headers);
 
         $dbResult = DB::table('orders')
             ->insert([

@@ -524,25 +524,25 @@
             <div class="row">
                 <div class="col-lg-3 col-md-6">
                     <div class="advantages_items">
-                        <img src="images/adv1.png" alt="">
+                        <img src="images/plus1.png" alt="">
                         <p class="cursor_text">Мы не самая бюджетная компания на рынке. Вы можете найти сотни вариантов более дешевых пластиковых и модульных перегородок, которые даже близко не сравнятся с характеристиками нашей продукции. Мы гордимся тем, что за оплаченные деньги Вы получите изделие, за которое не стыдно. Уверяем, что пресловутое соотношение "цена/качество" у нас самое лучшее.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="advantages_items">
-                        <img src="images/adv2.png" alt="">
+                        <img src="images/plus2.png" alt="">
                         <p class="cursor_text">Работаем с общественными местами большой проходимостью. Например, маятниковые двери, которые мы производим стоят в Московском метрополитене, МЦК, торговых центрах, расчитаны на более чем 20 лет службы при милионной проходимости. При этом закаленное стекло - пожаростойкий материал, применяемый не только для эстетики.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="advantages_items">
-                        <img src="images/adv3.png" alt="">
+                        <img src="images/plus3.png" alt="">
                         <p class="cursor_text">В нашей компании работают люди с существенным опытом работы в стекольной промышленности. Вы можете быть уверены в профессионализме наших рабочих и монтажников. Мы работаем в сфере уже не первый год, сталкивались с большим количеством проблем и всегда находили решения. Опыт - это не пустой звук, особенно в нашем ремесле.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="advantages_items">
-                        <img src="images/adv4.png" alt="">
+                        <img src="images/plus4.png" alt="">
                         <p class="cursor_text">Используем первоклассное сырье от ведущих мировых брендов - AGC (Япония), Guardian (Великобритания), Pilkington (Великобритания). Обработка изделий, так же ведется на Итальянском и Немецком оборудовании, зарекомендовавших себя как лучшие на рынке, дающее точные размеры и превосходное качество изделий.</p>
                     </div>
                 </div>
@@ -608,7 +608,7 @@
                     <a href="#skinali">
                         <div class="turnkey_items">
                             <img src="images/Napolnene_home/6_skinali_i_fartuki.jpg" alt="1">
-                            <p>Скинали и Фартуки</p>
+                            <p>Кухонные фартуки</p>
                         </div>
                     </a>
                 </div>
@@ -617,7 +617,7 @@
                 <div class="col-lg-4 col-md-4">
                     <a href="#Primery_lestnich">
                         <div class="turnkey_items">
-                            <img src="images/Napolnene_home/2_lestnitsi i tripleks.jpg" alt="1">
+                            <img src="images/Napolnene_home/2_lestnitsi_i_tripleks.jpg" alt="1">
                             <p>Лестницы</p>
                         </div>
                     </a>

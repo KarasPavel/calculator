@@ -86,11 +86,12 @@ class Order extends Model
             'Обработка: ' . json_decode($orderInfo)->format . $eol .
             'Дополнительно: ' . json_decode($orderInfo)->options;
 
-        $addresse = 'info@v-t-x.ru';
-        $addresse2 = 'skrypnik.andrii@gmail.com';
-        $addresse3 = 'veditex@yandex.ru';
+        $addresse3 = 'info@v-t-x.ru';
+        $addresse = 'skrypnik.andrii@gmail.com';
+        $addresse2 = 'veditex@yandex.ru';
         $addresse4 = 'vadichko@mail.ru';
         $addresse5 = 'westerlandiya@mail.ru';
+
         $title = 'Заказ';
         $order = [
             'name' => $result->name,
@@ -120,7 +121,7 @@ class Order extends Model
             '    Информация о заказе: ' . $order['order_data'];
 
         $body = "--" . $separator . $eol;
-        $body .= "Content-Type: text/plain; charset=\"iso-8859-1\"" . $eol;
+        $body .= "Content-Type: text/plain; charset=\"UTF-8\"" . $eol;
         $body .= "Content-Transfer-Encoding: 8bit" . $eol;
         $body .= $eol . $message . $eol . $eol;
 
@@ -129,9 +130,9 @@ class Order extends Model
             $content = chunk_split(base64_encode($content));
             $body .= "--" . $separator . $eol;
             $body .= "Content-Type: application/octet-stream; name=\"" . $fileName . "\"" . $eol;
-            $body .= $eol ."Content-Transfer-Encoding: base64" . $eol;
+            $body .= "Content-Transfer-Encoding: base64" . $eol;
             $body .= "Content-Disposition: attachment" . $eol . $eol;
-            $body .= $eol. $content . $eol . $eol;
+            $body .= $eol . $content . $eol . $eol;
             $body .= "--" . $separator . "--";
         }
         
@@ -187,7 +188,7 @@ class Order extends Model
         $headers = "From: name <test@test.com>" . $eol;
         $headers .= "MIME-Version: 1.0" . $eol;
         $headers .= "Content-Type: multipart/mixed; boundary=\"" . $separator . "\"" . $eol;
-        $headers .= "Content-Transfer-Encoding: 7bit" . $eol . $eol;
+        $headers .= "Content-Transfer-Encoding: 7bit" . $eol;
         $headers .= "This is a MIME encoded message." . $eol;
 
         if (json_decode($orderInfo)->shape->name === 'Круг') {
@@ -206,6 +207,7 @@ class Order extends Model
             'Обработка: ' . json_decode($orderInfo)->format . $eol .
             'Дополнительно: ' . json_decode($orderInfo)->options;
 
+        
         $addresse = 'info@v-t-x.ru';
         $addresse2 = 'skrypnik.andrii@gmail.com';
         $addresse3 = 'veditex@yandex.ru';
@@ -240,7 +242,7 @@ class Order extends Model
             '    Информация о заказе: ' . $order['order_data'];
 
         $body = "--" . $separator . $eol;
-        $body .= "Content-Type: text/plain; charset=\"iso-8859-1\"" . $eol;
+        $body .= "Content-Type: text/plain; charset=\"UTF-8\"" . $eol;
         $body .= "Content-Transfer-Encoding: 8bit" . $eol;
         $body .= $eol . $message . $eol . $eol;
 
@@ -249,12 +251,13 @@ class Order extends Model
             $content = chunk_split(base64_encode($content));
             $body .= "--" . $separator . $eol;
             $body .= "Content-Type: application/octet-stream; name=\"" . $fileName . "\"" . $eol;
-            $body .= $eol ."Content-Transfer-Encoding: base64" . $eol;
+            $body .= "Content-Transfer-Encoding: base64" . $eol;
             $body .= "Content-Disposition: attachment" . $eol . $eol;
             $body .= $eol . $content . $eol . $eol;
             $body .= "--" . $separator . "--";
         }
         
+
         mail($addresse, $title, $body, $headers);
         mail($addresse2, $title, $body, $headers);
         mail($addresse3, $title, $body, $headers);

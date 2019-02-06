@@ -89,12 +89,20 @@ function sendForm() {
         let opt4_4;
         let opt4_5;
         let opt4_6;
-        $('#chbx1').is(':checked') ? opt4_1 = 'Доставка изделия' : opt4_1 = '';
-        $('#chbx2').is(':checked') ? opt4_2 = 'Монтаж (Установка)' : opt4_2 = '';
-        $('#chbx3').is(':checked') ? opt4_3 = 'Зеркало в ванну' : opt4_3 = '';
-        $('#chbx4').is(':checked') ? opt4_4 = 'Гидрофобное покрытие/антигрязь' : opt4_4 = '';
-        $('#chbx5').is(':checked') ? opt4_5 = 'Стеклянные полки/дверцы' : opt4_5 = '';
-        $('#chbx6').is(':checked') ? opt4_6 = 'Выезд дизайнера/подбор рисунка' : opt4_6 = '';
+
+        $('#chbx1').is(':checked') ? opt4_1 = $('#chbx1').closest('label').find('span.label').text(): opt4_1 = '';
+        $('#chbx2').is(':checked') ? opt4_2 = $('#chbx2').closest('label').find('span.label').text(): opt4_2 = '';
+        $('#chbx3').is(':checked') ? opt4_3 = $('#chbx3').closest('label').find('span.label').text(): opt4_3 = '';
+        $('#chbx4').is(':checked') ? opt4_4 = $('#chbx4').closest('label').find('span.label').text(): opt4_4 = '';
+        $('#chbx5').is(':checked') ? opt4_5 = $('#chbx5').closest('label').find('span.label').text(): opt4_5 = '';
+        $('#chbx6').is(':checked') ? opt4_6 = $('#chbx6').closest('label').find('span.label').text(): opt4_6 = '';
+
+        // $('#chbx1').is(':checked') ? opt4_1 = 'Доставка изделия' : opt4_1 = '';
+        // $('#chbx2').is(':checked') ? opt4_2 = 'Монтаж (Установка)' : opt4_2 = '';
+        // $('#chbx3').is(':checked') ? opt4_3 = 'Зеркало в ванну' : opt4_3 = '';
+        // $('#chbx4').is(':checked') ? opt4_4 = 'Гидрофобное покрытие/антигрязь' : opt4_4 = '';
+        // $('#chbx5').is(':checked') ? opt4_5 = 'Стеклянные полки/дверцы' : opt4_5 = '';
+        // $('#chbx6').is(':checked') ? opt4_6 = 'Выезд дизайнера/подбор рисунка' : opt4_6 = '';
         option4 =
             opt4_1 + ' ' + '\n' + ' ' +
             opt4_2 + ' ' + '\n' + ' ' +
@@ -223,12 +231,20 @@ function subscribeForm(formSelector) {
         let opt4_4;
         let opt4_5;
         let opt4_6;
-        $('#chbx1').is(':checked') ? opt4_1 = 'Доставка изделия' : opt4_1 = '';
-        $('#chbx2').is(':checked') ? opt4_2 = 'Монтаж (Установка)' : opt4_2 = '';
-        $('#chbx3').is(':checked') ? opt4_3 = 'Зеркало в ванну' : opt4_3 = '';
-        $('#chbx4').is(':checked') ? opt4_4 = 'Гидрофобное покрытие/антигрязь' : opt4_4 = '';
-        $('#chbx5').is(':checked') ? opt4_5 = 'Стеклянные полки/дверцы' : opt4_5 = '';
-        $('#chbx6').is(':checked') ? opt4_6 = 'Выезд дизайнера/подбор рисунка' : opt4_6 = '';
+
+        $('#chbx1').is(':checked') ? opt4_1 = $('#chbx1').closest('label').find('span.label').text(): opt4_1 = '';
+        $('#chbx2').is(':checked') ? opt4_2 = $('#chbx2').closest('label').find('span.label').text(): opt4_2 = '';
+        $('#chbx3').is(':checked') ? opt4_3 = $('#chbx3').closest('label').find('span.label').text(): opt4_3 = '';
+        $('#chbx4').is(':checked') ? opt4_4 = $('#chbx4').closest('label').find('span.label').text(): opt4_4 = '';
+        $('#chbx5').is(':checked') ? opt4_5 = $('#chbx5').closest('label').find('span.label').text(): opt4_5 = '';
+        $('#chbx6').is(':checked') ? opt4_6 = $('#chbx6').closest('label').find('span.label').text(): opt4_6 = '';
+
+        // $('#chbx1').is(':checked') ? opt4_1 = 'Доставка изделия' : opt4_1 = '';
+        // $('#chbx2').is(':checked') ? opt4_2 = 'Монтаж (Установка)' : opt4_2 = '';
+        // $('#chbx3').is(':checked') ? opt4_3 = 'Зеркало в ванну' : opt4_3 = '';
+        // $('#chbx4').is(':checked') ? opt4_4 = 'Гидрофобное покрытие/антигрязь' : opt4_4 = '';
+        // $('#chbx5').is(':checked') ? opt4_5 = 'Стеклянные полки/дверцы' : opt4_5 = '';
+        // $('#chbx6').is(':checked') ? opt4_6 = 'Выезд дизайнера/подбор рисунка' : opt4_6 = '';
         option4 =
             opt4_1 + ' ' + '\n' + ' ' +
             opt4_2 + ' ' + '\n' + ' ' +

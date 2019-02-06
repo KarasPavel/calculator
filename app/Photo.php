@@ -38,57 +38,57 @@ class Photo extends Model
     {
         switch ($request->type) {
             case 'лестницы':
-                return '/images/Stairs/1/';
+                return 'images/Stairs/1/';
             case 'полы':
-                return '/images/Stairs/2/';
+                return 'images/Stairs/2/';
             case 'бронирование':
-                return '/images/Stairs/3/';
+                return 'images/Stairs/3/';
             case 'эксклюзив':
-                return '/images/Stairs/4/';
+                return 'images/Stairs/4/';
             case 'угловые и фигурные':
-                return '/images/Showers/1/';
+                return 'images/Showers/1/';
             case 'прямые душевые':
-                return '/images/Showers/2/';
+                return 'images/Showers/2/';
             case 'форма трапеции':
-                return '/images/Showers/3/';
+                return 'images/Showers/3/';
             case 'двери ниша':
-                return '/images/Showers/4/';
+                return 'images/Showers/4/';
             case 'глухие перегородки':
-                return '/images/Showers/5/';
+                return 'images/Showers/5/';
             case 'ограждения в ванную':
-                return '/images/Showers/6/';
+                return 'images/Showers/6/';
             case 'с раздвижной дверью':
-                return '/images/Showers/7/';
+                return 'images/Showers/7/';
             case 'эксклюзив и опт':
-                return '/images/Showers/8/';
+                return 'images/Showers/8/';
             case 'зеркала на заказ':
-                return '/images/Glasses/1/';
+                return 'images/Glasses/1/';
             case 'зеркальное панно':
-                return '/images/Glasses/2/';
+                return 'images/Glasses/2/';
             case 'оптовые заказы':
-                return '/images/Glasses/3/';
+                return 'images/Glasses/3/';
             case 'эксклюзив решения':
-                return '/images/Glasses/4/';
+                return 'images/Glasses/4/';
             case 'распашные двери':
-                return '/images/Door/1/';
+                return 'images/Door/1/';
             case 'перегородки':
-                return '/images/Door/2/';
+                return 'images/Door/2/';
             case 'маятниковые двери':
-                return '/images/Door/3/';
+                return 'images/Door/3/';
             case 'раздвижные двери':
-                return '/images/Door/4/';
+                return 'images/Door/4/';
             case 'ограждения':
-                return '/images/Door/5/';
+                return 'images/Door/5/';
             case 'двери в коробках':
-                return '/images/Door/6/';
+                return 'images/Door/6/';
             case 'эксклюзивные решения':
-                return '/images/Door/7/';
+                return 'images/Door/7/';
             case 'скинали с фотопечатью':
-                return '/images/Fartucks/1/';
+                return 'images/Fartucks/1/';
             case 'одноцветные фартуки':
-                return '/images/Fartucks/2/';
+                return 'images/Fartucks/2/';
             case 'скинали с подсветкой':
-                return '/images/Fartucks/3/';
+                return 'images/Fartucks/3/';
         }
     }
 
@@ -96,57 +96,57 @@ class Photo extends Model
     {
         switch ($request->type) {
             case 'лестницы':
-                return '/images/Stairs/1/small/';
+                return 'images/Stairs/1/small/';
             case 'полы':
-                return '/images/Stairs/2/small/';
+                return 'images/Stairs/2/small/';
             case 'бронирование':
-                return '/images/Stairs/3/small/';
+                return 'images/Stairs/3/small/';
             case 'эксклюзив':
-                return '/images/Stairs/4/small/';
+                return 'images/Stairs/4/small/';
             case 'угловые и фигурные':
-                return '/images/Showers/1/small/';
+                return 'images/Showers/1/small/';
             case 'прямые душевые':
-                return '/images/Showers/2/small/';
+                return 'images/Showers/2/small/';
             case 'форма трапеции':
-                return '/images/Showers/3/small/';
+                return 'images/Showers/3/small/';
             case 'двери ниша':
-                return '/images/Showers/4/small/';
+                return 'images/Showers/4/small/';
             case 'глухие перегородки':
-                return '/images/Showers/5/small/';
+                return 'images/Showers/5/small/';
             case 'ограждения в ванную':
-                return '/images/Showers/6/small/';
+                return 'images/Showers/6/small/';
             case 'с раздвижной дверью':
-                return '/images/Showers/7/small/';
+                return 'images/Showers/7/small/';
             case 'эксклюзив и опт':
-                return '/images/Showers/8/small/';
+                return 'images/Showers/8/small/';
             case 'зеркала на заказ':
-                return '/images/Glasses/1/small/';
+                return 'images/Glasses/1/small/';
             case 'зеркальное панно':
-                return '/images/Glasses/2/small/';
+                return 'images/Glasses/2/small/';
             case 'оптовые заказы':
-                return '/images/Glasses/3/small/';
+                return 'images/Glasses/3/small/';
             case 'эксклюзив решения':
-                return '/images/Glasses/4/small/';
+                return 'images/Glasses/4/small/';
             case 'распашные двери':
-                return '/images/Door/1/small/';
+                return 'images/Door/1/small/';
             case 'перегородки':
-                return '/images/Door/2/small/';
+                return 'images/Door/2/small/';
             case 'маятниковые двери':
-                return '/images/Door/3/small/';
+                return 'images/Door/3/small/';
             case 'раздвижные двери':
-                return '/images/Door/4/small/';
+                return 'images/Door/4/small/';
             case 'ограждения':
-                return '/images/Door/5/small/';
+                return 'images/Door/5/small/';
             case 'двери в коробках':
-                return '/images/Door/6/small/';
+                return 'images/Door/6/small/';
             case 'эксклюзивные решения':
-                return '/images/Door/7/small/';
+                return 'images/Door/7/small/';
             case 'скинали с фотопечатью':
-                return '/images/Fartucks/1/small/';
+                return 'images/Fartucks/1/small/';
             case 'одноцветные фартуки':
-                return '/images/Fartucks/2/small/';
+                return 'images/Fartucks/2/small/';
             case 'скинали с подсветкой':
-                return '/images/Fartucks/3/small/';
+                return 'images/Fartucks/3/small/';
         }
     }
 

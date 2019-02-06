@@ -223,7 +223,7 @@
             <div class="row">
                 <div class="col-lg-3 col-md-6">
                     <div class="advantages_items">
-                        <img src="images/fartuk-adv2.png" alt="">
+                        <img src="images/fartuk-plus2.png" alt="">
                         <p class="cursor_text">Используем технологию прямой печати изображений на стекле, яркими и контрастными чернилами с ультрафиолетовым отверждением.
                             Благодяря технологии, картинка обладает неограниченным сроком службы, крайне устойчива к механическим повреждениям и не боится сильных перепадов температуры.
                             Как многие конкуренты, мы НЕ обманываем Вас и предоставляем реальную УФ-печать, а не дешевые пленки, облезающие через год эксплуатации или до первой сырости в швах.
@@ -232,7 +232,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="advantages_items">
-                        <img src="images/fartuk-adv4.png" alt="">
+                        <img src="images/fartuk-plus4.png" alt="">
                         <p class="cursor_text">Стекло очень легко отмывается без дополнительных инструментов и моющих средств. При этом, стекло и фотопечать устойчивы к бытовой химии,
                             ведь стекло - это один из самых химически-нейтральных материалов на планете.
                         </p>
@@ -240,7 +240,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="advantages_items">
-                        <img src="images/adv4.png" alt="">
+                        <img src="images/plus4.png" alt="">
                         <p class="cursor_text">Стекло не только красиво, оно и крайне прочно. После закалки, стекло приобретает устойчивость к температурам от -52 до +200 градусов (C),
                             выдерживает нагрузки до 140 кг и может выдержать удар сковородкой или кастрюлей, что не редкость, например на кухне.
                         </p>
@@ -248,7 +248,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="advantages_items">
-                        <img src="images/fartuk-adv3.png" alt="">
+                        <img src="images/fartuk-plus3.png" alt="">
                         <p class="cursor_text">Мы используем Английское и Японское сырье высшей марки, таких брендов как - AGC (Япония), Guardian (Великобритания), Pilkington (Великобритания).
                             Стандартно на кухонный фартук идет закаленное стекло толщиной 6мм.</p>
                     </div>
@@ -574,7 +574,7 @@
                                 <label class="truee">
                                     <input name="agree" type="checkbox">
                                     <span class="fake-checkbox" aria-hidden="true"></span>
-                                    <span class="label">Согласие с <a href="docs/PrivacyPolicy.pdf" target="_blank" class="link_to_policy">конфиденциальностью</a> и <a href="#win6" class="link_to_policy">куки</a></span>
+                                    <span class="label">Согласие с <a href="docs/PrivacyPolicy.pdf" target="_blank" class="link_to_policy">конфиденциальностью</a> и <a href="#win6" class="link_to_policy">cookies</a></span>
                                 </label>
                             </div>
                         </div>

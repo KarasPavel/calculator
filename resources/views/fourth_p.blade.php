@@ -214,7 +214,7 @@
             <div class="row">
                 <div class="col-lg-3 col-md-6">
                     <div class="advantages_items">
-                        <img src="images/adv1.png" alt="">
+                        <img src="images/plus1.png" alt="">
                         <p class="cursor_text">Мы не самая бюджетная компания на рынке.
                             Вы можете найти сотни вариантов более дешевых пластиковых и модульных перегородок,
                             которые даже
@@ -225,7 +225,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="advantages_items">
-                        <img src="images/adv2.png" alt="">
+                    	<img src="images/plus2.png" alt="маятниковые двери"/>                        
                         <p class="cursor_text">Работаем с общественными местами большой проходимостью.
                             Например, маятниковые двери, которые мы производим стоят в Московском метрополитене,
                             МЦК, торговых центрах, расчитаны на более чем 20 лет службы при милионной проходимости.
@@ -235,7 +235,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="advantages_items">
-                        <img src="images/adv3.png" alt="">
+                        <img src="images/plus3.png" alt="">
                         <p class="cursor_text">В нашей компании работают люди с существенным опытом работы в
                             стекольной промышленности.
                             Вы можете быть уверены в профессионализме наших рабочих и монтажников.
@@ -246,7 +246,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="advantages_items">
-                        <img src="images/adv4.png" alt="">
+                        <img src="images/plus4.png" alt="">
                         <p class="cursor_text">Используем первоклассное сырье от ведущих мировых брендов -
                             AGC (Япония), Guardian (Великобритания), Pilkington (Великобритания).
                             Обработка изделий, так же ведется на Итальянском и Немецком оборудовании,
@@ -630,7 +630,7 @@
                                 <label class=truee>
                                     <input name="agree" type="checkbox">
                                     <span class="fake-checkbox " aria-hidden="true"></span>
-                                    <span class="label">Согласие с <a href="docs/PrivacyPolicy.pdf" target="_blank" class="link_to_policy">конфиденциальностью</a> и <a href="#win6" class="link_to_policy">куки</a></span>
+                                    <span class="label">Согласие с <a href="docs/PrivacyPolicy.pdf" target="_blank" class="link_to_policy">конфиденциальностью</a> и <a href="#win6" class="link_to_policy">cookies</a></span>
                                 </label>
                             </div>
                         </div>

@@ -63,7 +63,12 @@ class Order extends Model
 
         $eol = "\r\n";
 
+<<<<<<< HEAD
         $headers = "MIME-Version: 1.0" . $eol;
+=======
+        $headers = "From: name <test@test.com>" . $eol;
+        $headers .= "MIME-Version: 1.0" . $eol;
+>>>>>>> 5fde8f9bb9f11fc783b428795fe6ce729c0af4b3
         $headers .= "Content-Type: multipart/mixed; boundary=\"" . $separator . "\"" . $eol;
         $headers .= "Content-Transfer-Encoding: 7bit" . $eol;
         $headers .= "This is a MIME encoded message." . $eol;
@@ -84,7 +89,12 @@ class Order extends Model
             'Обработка: ' . json_decode($orderInfo)->format . $eol .
             'Дополнительно: ' . json_decode($orderInfo)->options;
 
-        $addresse = 'info@v-t-x.ru';
+        $addresse3 = 'info@v-t-x.ru';
+        $addresse = 'skrypnik.andrii@gmail.com';
+        $addresse2 = 'veditex@yandex.ru';
+        $addresse4 = 'vadichko@mail.ru';
+        $addresse5 = 'westerlandiya@mail.ru';
+
         $title = 'Заказ';
         $order = [
             'name' => $result->name,
@@ -114,9 +124,15 @@ class Order extends Model
             '    Информация о заказе: ' . $order['order_data'];
 
         $body = "--" . $separator . $eol;
+<<<<<<< HEAD
         $body .= "Content-Type: text/plain; charset=\"iso-8859-1\"" . $eol;
         $body .= "Content-Transfer-Encoding: 8bit" . $eol;
         $body .= $message . $eol;
+=======
+        $body .= "Content-Type: text/plain; charset=\"UTF-8\"" . $eol;
+        $body .= "Content-Transfer-Encoding: 8bit" . $eol;
+        $body .= $eol . $message . $eol . $eol;
+>>>>>>> 5fde8f9bb9f11fc783b428795fe6ce729c0af4b3
 
         if ($fileName != '') {
             $content = file_get_contents($file);
@@ -124,12 +140,25 @@ class Order extends Model
             $body .= "--" . $separator . $eol;
             $body .= "Content-Type: application/octet-stream; name=\"" . $fileName . "\"" . $eol;
             $body .= "Content-Transfer-Encoding: base64" . $eol;
+<<<<<<< HEAD
             $body .= "Content-Disposition: attachment" . $eol;
             $body .= $content . $eol;
             $body .= "--" . $separator . "--";
         }
 
         mail($addresse, $title, $body, $headers);
+=======
+            $body .= "Content-Disposition: attachment" . $eol . $eol;
+            $body .= $eol . $content . $eol . $eol;
+            $body .= "--" . $separator . "--";
+        }
+
+        mail($addresse, $title, $body, $headers);
+        mail($addresse2, $title, $body, $headers);
+        mail($addresse3, $title, $body, $headers);
+        mail($addresse4, $title, $body, $headers);
+        mail($addresse5, $title, $body, $headers);
+>>>>>>> 5fde8f9bb9f11fc783b428795fe6ce729c0af4b3
 
         try {
             $dbResult = DB::table('orders')
@@ -174,7 +203,12 @@ class Order extends Model
 
         $eol = "\r\n";
 
+<<<<<<< HEAD
         $headers = "MIME-Version: 1.0" . $eol;
+=======
+        $headers = "From: name <test@test.com>" . $eol;
+        $headers .= "MIME-Version: 1.0" . $eol;
+>>>>>>> 5fde8f9bb9f11fc783b428795fe6ce729c0af4b3
         $headers .= "Content-Type: multipart/mixed; boundary=\"" . $separator . "\"" . $eol;
         $headers .= "Content-Transfer-Encoding: 7bit" . $eol;
         $headers .= "This is a MIME encoded message." . $eol;
@@ -195,7 +229,12 @@ class Order extends Model
             'Обработка: ' . json_decode($orderInfo)->format . $eol .
             'Дополнительно: ' . json_decode($orderInfo)->options;
 
+
         $addresse = 'info@v-t-x.ru';
+        $addresse2 = 'skrypnik.andrii@gmail.com';
+        $addresse3 = 'veditex@yandex.ru';
+        $addresse4 = 'vadichko@mail.ru';
+        $addresse5 = 'westerlandiya@mail.ru';
         $title = 'Заказ';
         $order = [
             'name' => $result->name,
@@ -225,9 +264,15 @@ class Order extends Model
             '    Информация о заказе: ' . $order['order_data'];
 
         $body = "--" . $separator . $eol;
+<<<<<<< HEAD
         $body .= "Content-Type: text/plain; charset=\"iso-8859-1\"" . $eol;
         $body .= "Content-Transfer-Encoding: 8bit" . $eol;
         $body .= $message . $eol;
+=======
+        $body .= "Content-Type: text/plain; charset=\"UTF-8\"" . $eol;
+        $body .= "Content-Transfer-Encoding: 8bit" . $eol;
+        $body .= $eol . $message . $eol . $eol;
+>>>>>>> 5fde8f9bb9f11fc783b428795fe6ce729c0af4b3
 
         if ($fileName != '') {
             $content = file_get_contents($file);
@@ -235,12 +280,26 @@ class Order extends Model
             $body .= "--" . $separator . $eol;
             $body .= "Content-Type: application/octet-stream; name=\"" . $fileName . "\"" . $eol;
             $body .= "Content-Transfer-Encoding: base64" . $eol;
+<<<<<<< HEAD
             $body .= "Content-Disposition: attachment" . $eol;
             $body .= $content . $eol;
             $body .= "--" . $separator . "--";
         }
 
         mail($addresse, $title, $body, $headers);
+=======
+            $body .= "Content-Disposition: attachment" . $eol . $eol;
+            $body .= $eol . $content . $eol . $eol;
+            $body .= "--" . $separator . "--";
+        }
+
+
+        mail($addresse, $title, $body, $headers);
+        mail($addresse2, $title, $body, $headers);
+        mail($addresse3, $title, $body, $headers);
+        mail($addresse4, $title, $body, $headers);
+        mail($addresse5, $title, $body, $headers);
+>>>>>>> 5fde8f9bb9f11fc783b428795fe6ce729c0af4b3
 
         $dbResult = DB::table('orders')
             ->insert([

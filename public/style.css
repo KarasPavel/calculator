@@ -343,7 +343,7 @@ label[for="fileUpload"] {
 	width: 182px;
 	height: 182px;
 	border-radius: 50%;
-	transform: rotate(-90deg);
+	/*transform: rotate(-90deg);*/
 }
 .advantages_items p{
 	color: #717171;
@@ -1272,8 +1272,20 @@ input[type="checkbox"] {
 	margin-bottom: 10px;
 }
 .shower_type_item-left p:before{
+	/*content: '';*/
+	/*top: 34px;*/
+	/*left: 0;*/
+	/*position: absolute;*/
+	/*width: 62px;*/
+	/*height: 1px;*/
+	/*background: #648dc8;*/
+}
+.second-blade .shower_type_item-left ul {
+	position: relative;
+}
+.second-blade .shower_type_item-left ul:before{
 	content: '';
-	top: 34px;
+	top: -5px;
 	left: 0;
 	position: absolute;
 	width: 62px;
@@ -1333,8 +1345,20 @@ input[type="checkbox"] {
 	letter-spacing: 2.6px;
 }
 .shower_type_item-right p:before{
+	/*content: '';*/
+	/*top: 26px;*/
+	/*left: 0;*/
+	/*position: absolute;*/
+	/*width: 62px;*/
+	/*height: 1px;*/
+	/*background: #627787;*/
+}
+.second-blade .shower_type_item-right ul {
+	position: relative;
+}
+.second-blade .shower_type_item-right ul:before{
 	content: '';
-	top: 26px;
+	top: -5px;
 	left: 0;
 	position: absolute;
 	width: 62px;

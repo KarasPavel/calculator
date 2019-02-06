@@ -285,7 +285,7 @@
             <div class="row">
                 <div class="col-lg-3 col-md-6">
                     <div class="advantages_items">
-                        <img src="images/showers-adv1.png" alt="">
+                        <img src="images/showers-plus1.png" alt="">
                         <p class="cursor_text">У нас используется каленое травмобезопасное стекло выдерживающее нагрузки до 270кгс/м2, в зависимости от комплектации.
                             Стекло, толщиной 8-12мм невозможно "просто так" разбить голыми руками, на него можно спокойно облокотится. Даже в случае разбития оно не нанесет таких
                             травм как обычное стекло, поскольку разлетится в мелкую крошку.</p>
@@ -293,7 +293,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="advantages_items">
-                        <img src="images/showers-adv2.png" alt="">
+                        <img src="images/showers-plus2.png" alt="">
                         <p class="cursor_text">Мы подбираем комплектацию фурнитуры полностью индивидуально, консультируем, а наш замерщик привезет Вам на осмотр несколько вариантов "вживую".
                             Вы точно будете знать что за фурнитура у Вас будет стоять и какого она качества. В отличии от многих компаний, в основном, мы используем фурнитуру из латунных сплавов и
                             нержавеющей стали с гальваническим покрытием.</p>
@@ -301,14 +301,14 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="advantages_items">
-                        <img src="images/showers-adv3.png" alt="">
+                        <img src="images/showers-plus3.png" alt="">
                         <p class="cursor_text">Наносим олеофобное защитное покрытие на стекло, ускоряющее стекание воды и уменьшающее количество отпечатков рук с грязью на стекле.
                             Особенно это актуально для городов и мест с высоким содержанием извести/хлора в воде, поскользу они образуют тот самый белый налет на стекло, который так тяжело отмывается.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="advantages_items">
-                        <img src="images/showers-adv4.png" alt="">
+                        <img src="images/showers-plus4.png" alt="">
                         <p class="cursor_text">Неограниченный срок службы. Вся конструкция представляет из себя комплекс простых механизмов и стекла, которые обладают крайне впечатляющими показателями долговечности.
                             При чем, речь идет об эксплуатации. Иными словами, изделие при активном использовании сохраняет свои качества многие годы. Фурнитура не тускнеет, а стекло не меняется вовсе.</p>
                     </div>
@@ -683,7 +683,7 @@
                                 <label>
                                     <input name="agree" type="checkbox">
                                     <span class="fake-checkbox true" aria-hidden="true"></span>
-                                    <span class="label">Согласие с <a href="docs/PrivacyPolicy.pdf" target="_blank" class="link_to_policy">конфиденциальностью</a> и <a href="#win6" class="link_to_policy">куки</a></span>
+                                    <span class="label">Согласие с <a href="docs/PrivacyPolicy.pdf" target="_blank" class="link_to_policy">конфиденциальностью</a> и <a href="#win6" class="link_to_policy">cookies</a></span>
                                 </label>
                             </div>
                         </div>

@@ -349,7 +349,7 @@
             <div class="row">
                 <div class="col-lg-3 col-md-6">
                     <div class="advantages_items">
-                        <img src="images/mirrors-adv2.png" alt="">
+                        <img src="images/mirrors-plus.png" alt="">
                         <p class="cursor_text">Зеркальное панно делается из отдельных элементов и подгоняется
                             вручную, чтобы обеспечить минимальные зазоры, при этом сохранив идеально ровный, яркий
                             блеск, в отличии от гравировки на зеркале, которая создает неровную тусклую грань,
@@ -358,7 +358,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="advantages_items">
-                        <img src="images/showers-adv1.png" alt="">
+                        <img src="images/showers-plus1.png" alt="">
                         <p class="cursor_text">Для зеркал мы используем только влагостойкое сырье.
                             А гидрофобное покрытие, которое мы наносим, обеспечит лучшую защиту
                             от пыли, воды и грязи, позволяя
@@ -367,7 +367,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="advantages_items">
-                        <img src="images/adv3.png" alt="">
+                        <img src="images/plus3.png" alt="">
                         <p class="cursor_text">Зеркальное панно делают для невероятной по своей красоте
                             игры бликов, красоты рисунка и эстетики геометрических линий. Это не просто
                             зеркало. Это исключительно, творческая и кропотливая работа, к которой допускаются
@@ -380,7 +380,7 @@
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <div class="advantages_items">
-                        <img src="images/adv4.png" alt="">
+                        <img src="images/plus4.png" alt="">
                         <p class="cursor_text">Для изготовления зеркального панно применяется
                             зеркала различного типа и цвета высшей марки. Зеркала дополнительно
                             полируются, на них наносят защитные покрытия и они проходят доп. проверки,
@@ -710,7 +710,7 @@
                                 <label class="true">
                                     <input name="agree" type="checkbox">
                                     <span class="fake-checkbox " aria-hidden="true"></span>
-                                    <span class="label">Согласие с <a href="docs/PrivacyPolicy.pdf" target="_blank" class="link_to_policy">конфиденциальностью</a> и <a href="#win6" class="link_to_policy">куки</a></span>
+                                    <span class="label">Согласие с <a href="docs/PrivacyPolicy.pdf" target="_blank" class="link_to_policy">конфиденциальностью</a> и <a href="#win6" class="link_to_policy">cookies</a></span>
                                 </label>
                             </div>
                         </div>

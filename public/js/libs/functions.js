@@ -89,32 +89,18 @@ function sendForm() {
         let opt4_4;
         let opt4_5;
         let opt4_6;
-<<<<<<< HEAD
-
-        $('#chbx1').is(':checked') ? opt4_1 = $('#chbx1').closest('label').find('span.label').text(): opt4_1 = '';
-        $('#chbx2').is(':checked') ? opt4_2 = $('#chbx2').closest('label').find('span.label').text(): opt4_2 = '';
-        $('#chbx3').is(':checked') ? opt4_3 = $('#chbx3').closest('label').find('span.label').text(): opt4_3 = '';
-        $('#chbx4').is(':checked') ? opt4_4 = $('#chbx4').closest('label').find('span.label').text(): opt4_4 = '';
-        $('#chbx5').is(':checked') ? opt4_5 = $('#chbx5').closest('label').find('span.label').text(): opt4_5 = '';
-        $('#chbx6').is(':checked') ? opt4_6 = $('#chbx6').closest('label').find('span.label').text(): opt4_6 = '';
-
-=======
->>>>>>> 5fde8f9bb9f11fc783b428795fe6ce729c0af4b3
         // $('#chbx1').is(':checked') ? opt4_1 = 'Доставка изделия' : opt4_1 = '';
         // $('#chbx2').is(':checked') ? opt4_2 = 'Монтаж (Установка)' : opt4_2 = '';
         // $('#chbx3').is(':checked') ? opt4_3 = 'Зеркало в ванну' : opt4_3 = '';
         // $('#chbx4').is(':checked') ? opt4_4 = 'Гидрофобное покрытие/антигрязь' : opt4_4 = '';
         // $('#chbx5').is(':checked') ? opt4_5 = 'Стеклянные полки/дверцы' : opt4_5 = '';
         // $('#chbx6').is(':checked') ? opt4_6 = 'Выезд дизайнера/подбор рисунка' : opt4_6 = '';
-<<<<<<< HEAD
-=======
         $('#chbx1').is(':checked') ? opt4_1 = $('#chbx1').closest('label').find('span.label').text(): opt4_1 = '';
         $('#chbx2').is(':checked') ? opt4_2 = $('#chbx2').closest('label').find('span.label').text(): opt4_2 = '';
         $('#chbx3').is(':checked') ? opt4_3 = $('#chbx3').closest('label').find('span.label').text(): opt4_3 = '';
         $('#chbx4').is(':checked') ? opt4_4 = $('#chbx4').closest('label').find('span.label').text(): opt4_4 = '';
         $('#chbx5').is(':checked') ? opt4_5 = $('#chbx5').closest('label').find('span.label').text(): opt4_5 = '';
         $('#chbx6').is(':checked') ? opt4_6 = $('#chbx6').closest('label').find('span.label').text(): opt4_6 = '';
->>>>>>> 5fde8f9bb9f11fc783b428795fe6ce729c0af4b3
         option4 =
             opt4_1 + ' ' + '\n' + ' ' +
             opt4_2 + ' ' + '\n' + ' ' +
@@ -243,32 +229,18 @@ function subscribeForm(formSelector) {
         let opt4_4;
         let opt4_5;
         let opt4_6;
-<<<<<<< HEAD
-
-        $('#chbx1').is(':checked') ? opt4_1 = $('#chbx1').closest('label').find('span.label').text(): opt4_1 = '';
-        $('#chbx2').is(':checked') ? opt4_2 = $('#chbx2').closest('label').find('span.label').text(): opt4_2 = '';
-        $('#chbx3').is(':checked') ? opt4_3 = $('#chbx3').closest('label').find('span.label').text(): opt4_3 = '';
-        $('#chbx4').is(':checked') ? opt4_4 = $('#chbx4').closest('label').find('span.label').text(): opt4_4 = '';
-        $('#chbx5').is(':checked') ? opt4_5 = $('#chbx5').closest('label').find('span.label').text(): opt4_5 = '';
-        $('#chbx6').is(':checked') ? opt4_6 = $('#chbx6').closest('label').find('span.label').text(): opt4_6 = '';
-
-=======
->>>>>>> 5fde8f9bb9f11fc783b428795fe6ce729c0af4b3
         // $('#chbx1').is(':checked') ? opt4_1 = 'Доставка изделия' : opt4_1 = '';
         // $('#chbx2').is(':checked') ? opt4_2 = 'Монтаж (Установка)' : opt4_2 = '';
         // $('#chbx3').is(':checked') ? opt4_3 = 'Зеркало в ванну' : opt4_3 = '';
         // $('#chbx4').is(':checked') ? opt4_4 = 'Гидрофобное покрытие/антигрязь' : opt4_4 = '';
         // $('#chbx5').is(':checked') ? opt4_5 = 'Стеклянные полки/дверцы' : opt4_5 = '';
         // $('#chbx6').is(':checked') ? opt4_6 = 'Выезд дизайнера/подбор рисунка' : opt4_6 = '';
-<<<<<<< HEAD
-=======
         $('#chbx1').is(':checked') ? opt4_1 = $('#chbx1').closest('label').find('span.label').text(): opt4_1 = '';
         $('#chbx2').is(':checked') ? opt4_2 = $('#chbx2').closest('label').find('span.label').text(): opt4_2 = '';
         $('#chbx3').is(':checked') ? opt4_3 = $('#chbx3').closest('label').find('span.label').text(): opt4_3 = '';
         $('#chbx4').is(':checked') ? opt4_4 = $('#chbx4').closest('label').find('span.label').text(): opt4_4 = '';
         $('#chbx5').is(':checked') ? opt4_5 = $('#chbx5').closest('label').find('span.label').text(): opt4_5 = '';
         $('#chbx6').is(':checked') ? opt4_6 = $('#chbx6').closest('label').find('span.label').text(): opt4_6 = '';
->>>>>>> 5fde8f9bb9f11fc783b428795fe6ce729c0af4b3
         option4 =
             opt4_1 + ' ' + '\n' + ' ' +
             opt4_2 + ' ' + '\n' + ' ' +
@@ -569,7 +541,7 @@ $(document).ready(function () {
        type: 'POST',
        headers: { "cache-control": "no-cache" }
     });
-
+    
     $('#buttonNavigation1').find('p').html(knopki[page + 1] + '<br>' + 'следующая страница');
     $('#buttonNavigation2').find('p').html(knopki[page - 1] + '<br>' + 'предыдущая страница');
     getPages(function() {
@@ -594,7 +566,7 @@ function getPages(callbackFunction) {
         // sendForm();
         // subscribeForm('.formDynamic a.action_form');
         // subscribeForm('.formLower a.action_form');
-
+        
         $('main').fadeOut(500, function () {
             $('main').empty().append(responce).slideDown("slow");
             calculate();

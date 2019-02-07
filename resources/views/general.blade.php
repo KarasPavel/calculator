@@ -359,6 +359,9 @@
 
 <script type="text/javascript">
     $.fancybox.defaults.hash = false;
+
+    validateCheckbox ('.checkbox-win1', '.button_forms-win1 > a' );
+    validateCheckbox ('.checkbox-win2', '.button_forms-win2 > a' );
 </script>
 
 </body>

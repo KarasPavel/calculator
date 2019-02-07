@@ -39,7 +39,7 @@ class Order extends Model
                 'quantity', 'order_date', 'upload_file')
             ->join('statuses', 'application_status_id', '=', 'statuses.id')
             ->orderByDesc('orders.created_at')
-            ->get();
+            ->paginate(25);
     }
 
     public static function createOrder(Request $request)

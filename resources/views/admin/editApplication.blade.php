@@ -70,7 +70,7 @@
                         <h2><a title=""><i class="fa fa-desktop"></i><span>Заказы</span></a></h2>
                         <div class="sub-menu">
                             <ul>
-                                <li><a href="blank.html" title="">Все заказы</a></li>
+                                <li><a href="{{route('viewOrders')}}" title="">Все заказы</a></li>
                             </ul>
                         </div>
                     </div>
@@ -126,7 +126,7 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="main-title">
-                                <h1>Update account</h1>
+                                <h1>Редактирование заявки</h1>
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -140,7 +140,7 @@
                                 <div class="widget-area">
                                     <div class="wizard-form-h">
                                         <form id="step-1">
-                                            <h2 class="StepTitle">Account Information</h2>
+                                            <h2 class="StepTitle">Информация о заявке</h2>
                                             <div class="col-md-6">
                                                 <div class="inline-form">
 
@@ -196,12 +196,12 @@
                                                 <div class="inline-form">
 
                                                     <label for="phone" class="control-label"></label><label
-                                                            class="c-label">Comment</label><input
+                                                            class="c-label">Comment</label><p
                                                             id="endTime"
                                                             type="text"
                                                             name="endTime"
-                                                            value="{{$application[0]->comment}}"
-                                                            disabled="true"/>
+                                                            class="editorder-comment"
+                                                    >{{$application[0]->comment}}</p>
 
                                                 </div>
                                             </div>
@@ -249,8 +249,8 @@
                                                 {{--</div>--}}
                                             {{--</div>--}}
                                             <div class="col-md-6">
-                                                <div class="inline-form">
-                                                    <button type="submit" class="btn btn-success">Update</button>
+                                                <div class="inline-form inline-form-button">
+                                                    <button type="submit" class="btn btn-success">Сохранить</button>
                                                 </div>
                                             </div>
                                         {{ csrf_field()}}

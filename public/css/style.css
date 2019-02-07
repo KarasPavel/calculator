@@ -9362,6 +9362,9 @@ address a,
 .dropdown > a > span.gray:before{
 	border-left-color:#878889;
 }
+
+
+/********** additional styles for tables, buttons *************/
 th {
     cursor: pointer;
 }

@@ -4,13 +4,6 @@ $(document).ready(function () {
     bindExpandebleTrue('#box-calc .nav-link', 'nav-link--active');
     bindExpandebleTrue('.help_glass_items.calc_content2', 'help_glass_items--active');
 
-    validateCheckbox ('.checkbox-win1', '.button_forms-win1 > a' );
-    validateCheckbox ('.checkbox-win2', '.button_forms-win2 > a' );
-    validateCheckbox ('.checkbox-first-blade', '.button_forms-first-blade > a' );
-    validateCheckbox ('.checkbox-second-blade', '.button_forms-second-blade > a' );
-    validateCheckbox ('.checkbox-fourth-blade', '.button_forms-fourth-blade > a' );
-    validateCheckbox ('.checkbox-third-blade', '.button_forms-third-blade > a' );
-    validateCheckbox ('.checkbox-fifth-blade', '.button_forms-fifth-blade > a' );
     isVideoVisible ();
 });
 
@@ -58,18 +51,6 @@ function sendForm() {
     //         $('.button_next > a ').removeClass('disable');
     //     }
     // });
-
-    validateCheckbox ('.checkbox-win1', '.button_forms-win1 > a' );
-    validateCheckbox ('.checkbox-win2', '.button_forms-win2 > a' );
-    validateCheckbox ('.checkbox-first-blade', '.button_forms-first-blade > a' );
-    validateCheckbox ('.checkbox-second-blade', '.button_forms-second-blade > a' );
-    validateCheckbox ('.checkbox-fourth-blade', '.button_forms-fourth-blade > a' );
-    validateCheckbox ('.checkbox-third-blade', '.button_forms-third-blade > a' );
-    validateCheckbox ('.checkbox-fifth-blade', '.button_forms-fifth-blade > a' );
-
-
-
-
 
     // $('.true').click(function () {
     //     option3 = '';
@@ -585,6 +566,12 @@ function getPages(callbackFunction) {
             $('.phone_us').mask('+7 (000) 000-00-00', {placeholder: "+7(___)___-__-__"});
 
             isVideoVisible ();
+
+            validateCheckbox ('.checkbox-first-blade', '.button_forms-first-blade > a' );
+            validateCheckbox ('.checkbox-second-blade', '.button_forms-second-blade > a' );
+            validateCheckbox ('.checkbox-fourth-blade', '.button_forms-fourth-blade > a' );
+            validateCheckbox ('.checkbox-third-blade', '.button_forms-third-blade > a' );
+            validateCheckbox ('.checkbox-fifth-blade', '.button_forms-fifth-blade > a' );
         });
         $('footer').show();
         if (callbackFunction) {
@@ -763,8 +750,6 @@ function isVideoVisible () {
 
 function validateCheckbox (parentElement, buttonSelector ) {
     $(parentElement).on('mouseup', function(event) {
-        option5 = '';
-        option5 = $(this).find('p').text();
 
         var currentCheckStatus = $(this).find('input[type="checkbox"]').attr('check');
         if (typeof currentCheckStatus !== 'undefined') {
@@ -778,8 +763,7 @@ function validateCheckbox (parentElement, buttonSelector ) {
             if (typeof currentCheckStatus === 'undefined') {
                 $(this).find('input[type="checkbox"]').removeAttr('check');
                 $(buttonSelector).addClass('disable');
-            }
-            if (typeof currentCheckStatus !== 'undefined') {
+            } else {
                 $(this).find('input[type="checkbox"]').attr('check', 'true');
                 $(buttonSelector).removeClass('disable');
             }

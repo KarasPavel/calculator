@@ -133,7 +133,11 @@
 
                                 <div class="streaming-table">
                                     <span id="found" class="label label-info"></span>
-                                    <table id="stream_table" class='table table-striped table-bordered'>
+
+                                    <div class="form-group">
+                                        <input type="text" class="form-control pull-right" id="search" placeholder="Поиск по таблице">
+                                    </div>
+                                    <table id="stream_table" class='table table-striped table-bordered sort'>
                                         <thead>
                                         <tr>
                                             <th>№</th>
@@ -238,12 +242,12 @@
 
                                         </tbody>
                                     </table>
+                                    {{ $allOrders->links() }}
                                     <div id="summary">
                                         <div>
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
 
@@ -430,9 +434,11 @@
             <script src={{asset("js/streaming-mustache.js")}} type="text/javascript"></script>
             <script type="text/javascript" src={{asset("js/admin/jquery-1.11.1.js")}}></script>
             <script type="text/javascript" src={{asset("js/admin/script.js")}}></script>
+            <script type="text/javascript" src={{asset("js/admin/search.js")}}></script>
             <script type="text/javascript" src={{asset("js/admin/bootstrap.js")}}></script>
             <script type="text/javascript" src={{asset("js/admin/enscroll.js")}}></script>
             <!-- Streaming Table -->
+
         </div>
     </div>
 </div>

@@ -70,7 +70,7 @@
                         <h2><a title=""><i class="fa fa-desktop"></i><span>Заказы</span></a></h2>
                         <div class="sub-menu">
                             <ul>
-                                <li><a href="blank.html" title="">Все заказы</a></li>
+                                <li><a href="{{route('viewOrders')}}" title="">Все заказы</a></li>
                             </ul>
                         </div>
                     </div>
@@ -126,7 +126,7 @@
                     <div class="row">
                         <div class="col-md-6">
                             <div class="main-title">
-                                <h1>Update account</h1>
+                                <h1>Редактирование заказа</h1>
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -140,7 +140,7 @@
                                 <div class="widget-area">
                                     <div class="wizard-form-h">
                                         <form id="step-1">
-                                            <h2 class="StepTitle">Account Information</h2>
+                                            <h2 class="StepTitle">Информация о заказе</h2>
                                             <div class="col-md-6">
                                                 <div class="inline-form">
 
@@ -299,23 +299,24 @@
                                             <div class="col-md-6">
                                                 <div class="inline-form">
                                                     <label for="phone" class="control-label"></label><label
-                                                            class="c-label">Order_date</label><input
+                                                            class="c-label">Order_date</label><p
                                                             id="endTime"
                                                             type="text"
                                                             name="endTime"
-                                                            value="Материал: {{json_decode($order[0]->order_data)->material}}
-                                                                    Вид: {{json_decode($order[0]->order_data)->product}}
-                                                                    Толщина: {{json_decode($order[0]->order_data)->depth}}
-                                                                    Форма: {{json_decode($order[0]->order_data)->shape->name}}
-                                                                    Размеры:
-                                                                            {{json_decode($order[0]->order_data)->shape->name === 'Круг' ?
-                                                                            'Диаметр: '. json_decode($order[0]->order_data)->shape->diameter .
-                                                                            ' мм ' : json_decode($order[0]->order_data)->shape->width .
-                                                                            ' x ' . json_decode($order[0]->order_data)->shape->height .
-                                                                            ' мм '}}
-                                                                    Обработка: {{json_decode($order[0]->order_data)->format}}
-                                                                    Дополнительно: {{json_decode($order[0]->order_data)->options}}"
-                                                            disabled="true"/>
+                                                            class="editorder-comment"
+                                                            >Материал: {{json_decode($order[0]->order_data)->material}}<br>
+                                                            Вид: {{json_decode($order[0]->order_data)->product}}<br>
+                                                            Толщина: {{json_decode($order[0]->order_data)->depth}}<br>
+                                                            Форма: {{json_decode($order[0]->order_data)->shape->name}}<br>
+                                                            Размеры:
+                                                                    {{json_decode($order[0]->order_data)->shape->name === 'Круг' ?
+                                                                    'Диаметр: '. json_decode($order[0]->order_data)->shape->diameter .
+                                                                    ' мм ' : json_decode($order[0]->order_data)->shape->width .
+                                                                    ' x ' . json_decode($order[0]->order_data)->shape->height .
+                                                                    ' мм '}}<br>
+                                                            Обработка: {{json_decode($order[0]->order_data)->format}}<br>
+                                                            Дополнительно: {{json_decode($order[0]->order_data)->options}}
+                                                        </p>
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
@@ -333,8 +334,8 @@
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
-                                                <div class="inline-form">
-                                                    <button type="submit" class="btn btn-success">Update</button>
+                                                <div class="inline-form inline-form-button">
+                                                    <button type="submit" class="btn btn-success">Сохранить</button>
                                                 </div>
                                             </div>
                                             {{ csrf_field()}}

@@ -22,7 +22,7 @@ class Application extends Model
             ->join('specialists', 'specialist_id', '=', 'specialists.id')
             ->join('statuses', 'application_status_id', '=', 'statuses.id')
             ->orderByDesc('applications.created_at')
-            ->get();
+            ->paginate(25);
     }
 
     public static function createApplication(Request $request)

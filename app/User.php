@@ -44,7 +44,7 @@ class User extends Authenticatable
             ->select('users.id', 'users.name', 'display_name', 'email','users.created_at')
             ->join('role_user', 'user_id', '=', 'users.id')
             ->join('roles', 'role_id', '=', 'roles.id')
-            ->orderByDesc('users.created_at')
+            ->orderBy('users.id')
             ->paginate(10);
     }
 

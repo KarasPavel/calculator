@@ -153,7 +153,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
-                                                <div class="inline-form">
+                                                <div class="inline-form inline-form-button">
                                                     <button type="submit" class="btn btn-success">Сохранить</button>
                                                 </div>
                                             </div>

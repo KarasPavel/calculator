@@ -70,7 +70,7 @@
                         <h2><a title=""><i class="fa fa-desktop"></i><span>Заказы</span></a></h2>
                         <div class="sub-menu">
                             <ul>
-                                <li><a href="blank.html" title="">Все заказы</a></li>
+                                <li><a href="{{route('viewOrders')}}" title="">Все заказы</a></li>
                             </ul>
                         </div>
                     </div>
@@ -176,7 +176,7 @@
                                                 </div>
                                             </div>
                                             <div class="col-md-6">
-                                                <div class="inline-form">
+                                                <div class="inline-form inline-form-button">
                                                     <button type="submit" class="btn btn-success">Загрузить</button>
                                                 </div>
                                             </div>

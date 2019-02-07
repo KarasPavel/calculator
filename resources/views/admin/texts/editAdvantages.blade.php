@@ -70,7 +70,7 @@
                         <h2><a title=""><i class="fa fa-desktop"></i><span>Заказы</span></a></h2>
                         <div class="sub-menu">
                             <ul>
-                                <li><a href="blank.html" title="">Все заказы</a></li>
+                                <li><a href="{{route('viewOrders')}}" title="">Все заказы</a></li>
                             </ul>
                         </div>
                     </div>

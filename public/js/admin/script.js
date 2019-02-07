@@ -217,8 +217,7 @@ $(document).ready(function() {
 	$(".responsive-header > ul > li > ul > li").removeClass('opened');
 	$(this).next('ul').slideDown();
 	$(this).next('ul').parent().toggleClass('opened');
-	});	
-
+	});
 
 
 });

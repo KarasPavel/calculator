@@ -9362,3 +9362,16 @@ address a,
 .dropdown > a > span.gray:before{
 	border-left-color:#878889;
 }
+th {
+    cursor: pointer;
+}
+p.editorder-comment {
+    color: #000;
+    margin-top: 7px;
+    padding: 6px 20px 14px;
+    font-size: 14px;
+    min-height: 37px;
+}
+.inline-form-button {
+    border: none;
+}

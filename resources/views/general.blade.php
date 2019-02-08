@@ -89,12 +89,12 @@
                             ограждения</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#zerkalnoe_panno"><i class="fas fa-dice-d20"></i>Зеркальное
-                            панно</a>
-                    <li class="nav-item">
                         <a class="nav-link" href="#peregorodki_i_dveri"><i class="fas fa-door-open"></i>Перегородки и
                             ограждения</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#zerkalnoe_panno"><i class="fas fa-dice-d20"></i>Зеркальное
+                            панно</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#skinali"><i class="fas fa-chess-board"></i>Скинали</a>

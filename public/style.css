@@ -3110,7 +3110,7 @@ textarea {
 	/*transition:.25s ease-in-out;*/
 }
 .owl-dots .owl-dot:nth-child(2)::before{
-	content:'Лестицы и Полы';
+	content:'Лестницы и Полы';
 	-webkit-box-sizing:border-box;
 	box-sizing:border-box;
 	display:block;

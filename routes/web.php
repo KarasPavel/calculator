@@ -36,6 +36,10 @@ Route::middleware('role:admin|junior_admin|manager')->group(function () {
 
     Route::get('admin/dashboard', 'Admin\AdminController@dashboard')->name('dashboard');
 
+    //Change password
+    Route::get('admin/changePassword', 'Admin\AdminController@changePassword')->name('changePassword');
+    Route::post('admin/updatePassword', 'Admin\AdminController@updatePassword')->name('updatePassword');
+
     //Route::get('admin/test', 'Admin\AdminController@test')->name('test');
     //User-admin routes
     Route::get('admin/createUser', 'Admin\AdminController@createUser')->name('createUser');

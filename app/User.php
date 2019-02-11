@@ -3,12 +3,14 @@
 namespace App;
 
 //use http\Env\Request;
+use App\Http\Requests\passwordRequest;
 use Carbon\Carbon;
 use Illuminate\Http\Request;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
 use Laratrust\Traits\LaratrustUserTrait;
 
 class User extends Authenticatable
@@ -96,6 +98,20 @@ class User extends Authenticatable
             ->update([
                 'role_id' => $request->role
             ]);
+    }
+
+    public static function updatePassword(passwordRequest $request)
+    {
+        $current_password = $request->current_password;
+        $user = User::find(json_decode($request->user)->id)->first();
+        if (Hash::check($current_password, $user->password)) {
+            $user->password = Hash::make($request->password);
+            $user->save();
+            return true;
+        } else {
+            return false;
+        }
+
     }
 
     /**

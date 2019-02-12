@@ -41,6 +41,7 @@
             <div class="profile drop-list">
                 <ul>
                     {{--<li><a href="profile.html" title=""><i class="fa fa-user"></i> Profile</a></li>--}}
+                    <li><a href={{ route('changePassword') }} title=""><i class="fa fa-info"></i>Сменить пароль</a></li>
                     <li><a href={{ route('logout') }} title=""><i class="fa fa-info"></i>Выйти</a></li>
                 </ul>
             </div><!-- Profile DropDown -->

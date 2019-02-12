@@ -28,7 +28,6 @@ class Application extends Model
     public static function createApplication(Request $request)
     {
         $addresse = 'info@v-t-x.ru';
-        $addresse2 = 'skrypnik.andrii@gmail.com';
         $title = 'Заявка';
         $application = [
             'name' => $request->name,
@@ -46,7 +45,6 @@ class Application extends Model
             '    Комментарий: '. $application['comment'];
            
         mail($addresse, $title, $message);
-        mail($addresse2, $title, $message);
         return DB::table('applications')
             ->insert([
                 'name' => $request->name,

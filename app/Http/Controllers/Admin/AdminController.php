@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 
+use App\Http\Requests\passwordRequest;
 use App\Role;
 use App\User;
 use Illuminate\Http\Request;
@@ -22,6 +23,23 @@ class AdminController extends Controller
     {
         $user = Auth::user();
         return view('admin/dashboard', ['user' => $user]);
+    }
+
+    public function changePassword()
+    {
+        $user = Auth::user();
+        return view('admin/changePassword', ['user' => $user]);
+    }
+
+    public function updatePassword(passwordRequest $request)
+    {
+        $result = User::updatePassword($request);
+        if ($result) {
+            return redirect()->back()->with('message', 'DONE!');
+        } else {
+            return redirect()->back()->with('message', 'WRONG OLD PASSWORD! TRY AGAIN!');
+        }
+
     }
 
     /**

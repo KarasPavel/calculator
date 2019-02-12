@@ -87,10 +87,8 @@ class Order extends Model
             'Дополнительно: ' . json_decode($orderInfo)->options;
 
         $addresse3 = 'info@v-t-x.ru';
-        $addresse = 'skrypnik.andrii@gmail.com';
         $addresse2 = 'veditex@yandex.ru';
         $addresse4 = 'vadichko@mail.ru';
-        $addresse5 = 'westerlandiya@mail.ru';
 
         $title = 'Заказ';
         $order = [
@@ -136,11 +134,9 @@ class Order extends Model
             $body .= "--" . $separator . "--";
         }
         
-        mail($addresse, $title, $body, $headers);
         mail($addresse2, $title, $body, $headers);
         mail($addresse3, $title, $body, $headers);
         mail($addresse4, $title, $body, $headers);
-        mail($addresse5, $title, $body, $headers);
 
         try {
             $dbResult = DB::table('orders')
@@ -209,10 +205,8 @@ class Order extends Model
 
         
         $addresse = 'info@v-t-x.ru';
-        $addresse2 = 'skrypnik.andrii@gmail.com';
         $addresse3 = 'veditex@yandex.ru';
         $addresse4 = 'vadichko@mail.ru';
-        $addresse5 = 'westerlandiya@mail.ru';
         $title = 'Заказ';
         $order = [
             'name' => $result->name,
@@ -259,10 +253,8 @@ class Order extends Model
         
 
         mail($addresse, $title, $body, $headers);
-        mail($addresse2, $title, $body, $headers);
         mail($addresse3, $title, $body, $headers);
         mail($addresse4, $title, $body, $headers);
-        mail($addresse5, $title, $body, $headers);
 
         $dbResult = DB::table('orders')
             ->insert([

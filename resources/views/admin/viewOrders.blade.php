@@ -216,8 +216,11 @@
                                                 <td>
                                                     {{$value->status}}
                                                 </td>
+                                                {{--<td>--}}
+                                                    {{--{{$value->upload_file}}--}}
+                                                {{--</td>--}}
                                                 <td>
-                                                    {{$value->upload_file}}
+                                                    <a href="{{asset('uploadFiles/'.$value->upload_file)}}">{{$value->upload_file}}</a>
                                                 </td>
                                                 <td>
                                                     {{$value->created_at}}

@@ -16,7 +16,7 @@ class CreateOrdersTable extends Migration
         Schema::create('orders', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name');
-            $table->integer('phone');
+            $table->string('phone', 50);
             $table->string('email');
             $table->string('address');
             $table->enum('delivery',['Самовывоз','В пределах МКАД','Не более 5 км от МКАД','Московская область']);
@@ -27,6 +27,8 @@ class CreateOrdersTable extends Migration
             $table->string('comment')->nullable();
             $table->integer('application_status_id')->unsigned();
             $table->date('order_date');
+            $table->string('upload_file');
+            $table->string('session_id');
             $table->timestamps();
         });
     }
